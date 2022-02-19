@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
 
-export default SideNavContext = createContext({
+const SideNavContext = createContext({
   sideNav: "",
   setSideNav: (sideNavText: string) => {}
 });
@@ -18,3 +18,5 @@ function SideNavProvider({ children }) => {
 
 export { SideNavContext, SideNavProvider };
 */
+
+export default SideNavContext;

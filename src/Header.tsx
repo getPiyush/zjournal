@@ -1,17 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { SideNavContext } from "./Contexts";
 
 type HeaderProps = {
   updateSideNav: (name: string) => void;
 };
 
 export default function Header({ updateSideNav }: HeaderProps) {
-  const [selectedSideNav, setSelectedSideNav] = useState("");
 
   const location = useLocation().pathname;
-  const linkClicked = (event: React.MouseEvent<HTMLButtonElement>) => {
-    setSelectedSideNav((event.target as any).getAttribute("buttonflag"));
+  const linkClicked = (event: React.MouseEvent<HTMLAnchorElement>) => {
+  const target : any = event.target;
+  updateSideNav(target.getAttribute("button-flag"));
+
   };
   return (
     <header>
@@ -85,7 +85,7 @@ export default function Header({ updateSideNav }: HeaderProps) {
                   data-bs-target="#offcanvasRight"
                   aria-controls="offcanvasRight"
                   onClick={linkClicked}
-                  buttonflag="categories"
+                  button-flag="categories"
                 >
                   Categories
                 </a>
@@ -99,7 +99,7 @@ export default function Header({ updateSideNav }: HeaderProps) {
                   data-bs-target="#offcanvasRight"
                   aria-controls="offcanvasRight"
                   onClick={linkClicked}
-                  buttonflag="blogs"
+                  button-flag="blogs"
                 >
                   Blogs
                 </a>
