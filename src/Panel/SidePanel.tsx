@@ -2,11 +2,15 @@ import React, { useContext } from "react";
 import Blogs from "./Blogs";
 import Categories from "./Categories";
 
-export default function Panel() {
+type HeaderProps = {
+  selectedNav: string;
+};
+
+export default function SidePanel({ selectedNav }: HeaderProps) {
   // const sideNavState = useContext(SideNavContext);
   // console.log("sideNavState", sideNavState);
-  const getSideContent = (selectedNav: string) => {
-    if (selectedNav === "blog") {
+  const getSideContent = (nav: string) => {
+    if (nav === "blogs") {
       return <Blogs />;
     } else {
       return <Categories />;
@@ -22,7 +26,7 @@ export default function Panel() {
           id="offcanvasRight"
           aria-labelledby="offcanvasRightLabel"
         >
-          {getSideContent("blog")}
+          {getSideContent(selectedNav)}
         </div>
       </div>
     </React.Fragment>
