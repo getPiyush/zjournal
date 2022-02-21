@@ -40,9 +40,9 @@ export default function Header({ updateSideNav }: HeaderProps) {
             <ul className="navbar-nav mb-2 mb-md-0">
               <li className="nav-item">
                 <Link
-                  className={`nav-link ${location === "/home" ? "active" : ""}`}
+                  className={`nav-link ${location === "/web/home" ? "active" : ""}`}
                   aria-current="page"
-                  to="/home"
+                  to="/web/home"
                 >
                   Home
                 </Link>
@@ -50,10 +50,10 @@ export default function Header({ updateSideNav }: HeaderProps) {
               <li className="nav-item">
                 <Link
                   className={`nav-link ${
-                    location === "/aboutus" ? "active" : ""
+                    location === "/web/aboutus" ? "active" : ""
                   }`}
                   aria-current="page"
-                  to="/aboutus"
+                  to="/web/aboutus"
                 >
                   About Us
                 </Link>
@@ -61,17 +61,17 @@ export default function Header({ updateSideNav }: HeaderProps) {
               <li className="nav-item">
                 <Link
                   className={`nav-link ${
-                    location === "/contactus" ? "active" : ""
+                    location === "/web/contactus" ? "active" : ""
                   }`}
-                  to="/contactus"
+                  to="/web/contactus"
                 >
                   Contact Us
                 </Link>
               </li>
               <li className="nav-item">
                 <Link
-                  className={`nav-link ${location === "/iqa" ? "active" : ""}`}
-                  to="/iqa"
+                  className={`nav-link ${location === "/web/iqa" ? "active" : ""}`}
+                  to="/web/iqa"
                 >
                   Interview Q&amp;A
                 </Link>

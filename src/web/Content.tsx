@@ -1,8 +1,10 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
 import Home from "./Home";
 import Article from "./Article";
+
+
 export default function Content() {
   const location = useLocation().pathname;
   const preventDefaultDelegate = (e: any) => {
@@ -22,12 +24,12 @@ export default function Content() {
 
   return (
     <main className="flex-shrink-0">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="home" element={<Home />} />
-        <Route path="article" element={<Article />} />
-        <Route path="/*" element={<Home />} />
+      <Routes> 
+        <Route path="home" element={<Home/>} />
+        <Route path="article" element={<Article/>} />
+        <Route path="/*" element={<Home/>} />
       </Routes>
+    
     </main>
   );
 }

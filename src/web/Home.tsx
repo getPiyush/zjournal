@@ -18,7 +18,7 @@ export default function Home() {
           Genetic regulatory networks are dynamic systems which describe the
           interactions among gene products (mRNAs and proteins)
           <br />
-          <Link to="/article">...</Link>
+          <Link to="/web/article">...</Link>
         </p>
       </div>
       <div className="container">
@@ -28,7 +28,7 @@ export default function Home() {
           genetic regulatory networks. Based on this model, stability of genetic
           regulatory networks has been intensively studied, which is believed
           useful in designing and controlling genetic regulatory networks
-          <br /> <Link to="/article">...</Link>
+          <br /> <Link to="/web/article">...</Link>
         </p>
         <p>
           <h4>Delayed Genetic Regulatory Networks</h4>
@@ -36,7 +36,7 @@ export default function Home() {
           genetic regulatory networks. Based on this model, stability of genetic
           regulatory networks has been intensively studied, which is believed
           useful in designing and controlling genetic regulatory networks
-          <br /> <Link to="/article">...</Link>
+          <br /> <Link to="/web/article">...</Link>
         </p>
       </div>
 
@@ -50,7 +50,7 @@ export default function Home() {
             believed useful in designing and controlling genetic regulatory
             networks
             <br />
-            <Link to="/article">...</Link>
+            <Link to="/web/article">...</Link>
           </div>
           <div className="p-3 col  m-1 border">
             <h4>Delayed Genetic Regulatory Networks</h4>
@@ -60,7 +60,7 @@ export default function Home() {
             believed useful in designing and controlling genetic regulatory
             networks
             <br />
-            <Link to="/article">...</Link>
+            <Link to="/web/article">...</Link>
           </div>
         </div>
       </div>

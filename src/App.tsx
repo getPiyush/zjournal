@@ -1,6 +1,6 @@
 import "./styles.css";
-import LandingPage from "./LandingPage";
+import AppRoot from "./AppRoot";
 
 export default function App() {
-  return <LandingPage />;
+  return <AppRoot />;
 }
