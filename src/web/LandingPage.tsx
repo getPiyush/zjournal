@@ -13,7 +13,7 @@ export default function LandingPage() {
       <Header updateSideNav={function (name: string): void {
         setSelectedSideNav(name);
       } } />
-      <Content />
+      <Content/>
       <SidePanel selectedNav={selectedSideNav} />
       <Footer />
     </React.Fragment>

@@ -1,4 +1,86 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+/* stylelint-disable selector-list-comma-newline-after */
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+main > .container {
+  padding: 24px 16px 0;
+}
+
+body {
+  font-family: Georgia, "Times New Roman",
+    serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+}
+
+.disable-text-selection {
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+.navbar {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  border-bottom: 1px solid rgb(13 110 253 / 25%) !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+  margin: 0px 8px 0px 8px;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  color: #1f76a8;
+  font-weight: 550;
+  border-bottom: 2px solid black;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #1f76a8;
+  font-weight: 500;
+  border-bottom: 2px solid black;
+}
+
+.blog-header-logo {
+  line-height: 1;
+  color: #2485bd;
+  font-family: "Playfair Display", Georgia, "Times New Roman",
+    serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-size: 1.25rem;
+}
+.blog-header-logo .logo-subtext {
+  font-size: 0.75rem;
+  color: #080808;
+  padding-top: 0.2rem;
+  padding-left: 0.1rem;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman",
+    serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  padding-top: 16px;
+}
+.small-text {
+  font-size: 0.75rem;
+}
+
+img {
+  padding: 16px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 851px) {
+  main > .container {
+    padding: 32px 16px 0;
+  }
 }
