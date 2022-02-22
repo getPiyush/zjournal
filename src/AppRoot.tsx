@@ -3,9 +3,6 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import LandingPage from "./web/LandingPage";
 import Admin from "./admin";
 
-import Home from './web/Home';
-import Article
- from "./web/Article";
 export default function AppRoot() {
 
   return (

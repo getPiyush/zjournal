@@ -1,7 +1,10 @@
+import Editor from "./editor";
 
 export default function Admin() {
  
   return (
-    <div>Admin</div>
+    <div id="editor" className="admin">
+      <Editor/>
+    </div>
   );
 }

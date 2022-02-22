@@ -1,0 +1,20 @@
+{
+    "articles": [
+        {
+            "id": 1,
+            "title": "Article Topic Header",
+            "author": "Piyush Praharaj",
+            "content": "<img src='https://learn-biology.com/wp-content/uploads/2018/12/05a_genetic-engineering-overview-lettered.png'/><h4>Abstract</h4> Time delay arising in a genetic regulatory network may cause the instability. This paper is concerned with the stability analysis of genetic regulatory networks with interval time-varying delays. Firstly, a relaxed double integral inequality, named as Wirtinger-type double integral inequality (WTDII), is established to estimate the double integral term appearing in the derivative of Lyapunov-Krasovskii functional with a triple integral term. And it is proved theoretically that the proposed WTDII is tighter than the widely used Jensen-based double inequality and the recently developed Wiringter-based double inequality. Then, by applying the WTDII to the stability analysis of a delayed genetic regulatory network, together"
+        }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "body": "some comment",
+            "postId": 1
+        }
+    ],
+    "profile": {
+        "name":"ee"
+    }
+}
