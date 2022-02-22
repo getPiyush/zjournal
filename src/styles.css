@@ -84,3 +84,13 @@ img {
     padding: 32px 16px 0;
   }
 }
+
+
+
+.admin .editor .row{
+  padding: 8px;
+}
+
+.admin .editor input{
+  font-size: 2rem;
+}

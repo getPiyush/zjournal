@@ -1,4 +1,60 @@
-export default function Article() {
+import { ArticleT } from "../../Types";
+import { randomSentense } from "random-sentence";
+
+const articleObject: ArticleT = {
+  id: "987391391bbjgj27819391",
+  title: "Article Topic Header",
+  categryId: "73131v3u13t7",
+  author: "Piyush praharaj",
+  dateCreated: new Date(),
+  dateModified: new Date(),
+  content: [
+    {
+      componenType: "img",
+      data: "https://learn-biology.com/wp-content/uploads/2018/12/05a_genetic-engineering-overview-lettered.png",
+      altText: "None",
+    },
+    {
+      componenType: "h4",
+      data: "Abstract",
+    },
+    {
+      componenType: "p",
+      data: "Time delay arising in a genetic regulatory network may cause the instability. This paper is concerned with the stability analysis of genetic regulatory networks with interval time-varying delays. Firstly, a relaxed double integral inequality, named as Wirtinger-type double integral inequality (WTDII), is established to estimate the double integral term appearing in the derivative of Lyapunov-Krasovskii functional with a triple integral term. And it is proved theoretically that the proposed WTDII is tighter than the widely used Jensen-based double inequality and the recently developed Wiringter-based double inequality. Then, by applying the WTDII to the stability analysis of a delayed genetic regulatory network, together with the usage of useful information of regulatory functions, several delay-range- and delay-rate-dependent (or delay-rate-independent) criteria are derived in terms of linear matrix inequalities. Finally, an example is carried out to verify the effectiveness of the proposed method and also to show the advantages of the established stability criteria through the comparison with some literature.",
+    },
+    {
+      componenType: "h4",
+      data: "1. Introduction",
+    },
+    {
+      componenType: "p",
+      data: "Time delay arising in a genetic regulatory network may cause the instability. This paper is concerned with the stability analysis of genetic regulatory networks with interval time-varying delays. Firstly, a relaxed double integral inequality, named as Wirtinger-type double integral inequality (WTDII), is established to estimate the double integral term appearing in the derivative of Lyapunov-Krasovskii functional with a triple integral term. And it is proved theoretically that the proposed WTDII is tighter than the widely used Jensen-based double inequality and the recently developed Wiringter-based double inequality. Then, by applying the WTDII to the stability analysis of a delayed genetic regulatory network, together with the usage of useful information of regulatory functions, several delay-range- and delay-rate-dependent (or delay-rate-independent) criteria are derived in terms of linear matrix inequalities. Finally, an example is carried out to verify the effectiveness of the proposed method and also to show the advantages of the established stability criteria through the comparison with some literature.",
+    },
+    {
+      componenType: "img",
+      data: "https://learn-biology.com/wp-content/uploads/2018/12/04_1920px-Insulin_glucose_metabolism_w-numbers-and-labels-1024x572.png",
+      altText: "None",
+    },
+    {
+      componenType: "h4",
+      data: "2. Problem Formulation and Preliminary",
+    },
+    {
+      componenType: "img",
+      data: "https://learn-biology.com/wp-content/uploads/2018/12/04_1920px-Insulin_glucose_metabolism_w-numbers-and-labels-1024x572.png",
+      altText: "None",
+    },
+    {
+      componenType: "p",
+      data: "Time delay arising in a genetic regulatory network may cause the instability. This paper is concerned with the stability analysis of genetic regulatory networks with interval time-varying delays. Firstly, a relaxed double integral inequality, named as Wirtinger-type double integral inequality (WTDII), is established to estimate the double integral term appearing in the derivative of Lyapunov-Krasovskii functional with a triple integral term. And it is proved theoretically that the proposed WTDII is tighter than the widely used Jensen-based double inequality and the recently developed Wiringter-based double inequality. Then, by applying the WTDII to the stability analysis of a delayed genetic regulatory network, together with the usage of useful information of regulatory functions, several delay-range- and delay-rate-dependent (or delay-rate-independent) criteria are derived in terms of linear matrix inequalities. Finally, an example is carried out to verify the effectiveness of the proposed method and also to show the advantages of the established stability criteria through the comparison with some literature.",
+    },
+  ],
+};
+
+export default function Article( article:ArticleT) {
+
+  
+
   return (
     <div className="container disable-text-selection">
       <h1 className="mt-5">Article Topic Header</h1>
