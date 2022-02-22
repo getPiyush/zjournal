@@ -1,6 +1,7 @@
 // This page will hold all the types
 
 export type ComponentObject = {
+  componentId?: string;
   componenType: string;
   data: string | string[];
   altText?: string;
