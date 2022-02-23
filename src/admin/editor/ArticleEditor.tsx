@@ -1,16 +1,25 @@
 import React, { useState } from "react";
-import { ComponentObject } from "../../Types";
+import { ArticleT, ComponentObject } from "../../Types";
 
 import {
   populateComponentFromCode,
   getUid,
   getComponentFromId,
-  setComponentById
+  setComponentById,
 } from "../../utils/componentUtil";
+
 import ArticleContainerEditor from "./ArticleContainerEditor";
 import EditPrompt from "./EditPrompt";
 
-export default function Editor() {
+type ArticleEditorProps = {
+  articleIn: ArticleT;
+  setPreview: (article: ArticleT) => void;
+};
+
+export default function ArticleEditor({
+  articleIn,
+  setPreview,
+}: ArticleEditorProps) {
   const components = [
     "h2",
     "h3",
@@ -19,9 +28,12 @@ export default function Editor() {
     "Image",
     "Paragraph",
     "List",
-    "Table"
+    "Table",
   ];
   const sampleText = "The quick brown fox, jumps over a lazy dog.!?";
+
+  const [article, setArticle] = useState(articleIn);
+
   const [content, setContent] = useState([]);
   const [editMode, setEditMode] = useState(false);
   const [selectedElement, setSelectedElement] = useState("h2");
@@ -37,17 +49,16 @@ export default function Editor() {
     const target: any = event.currentTarget;
     const componentId = target.getAttribute("id");
 
-    const editComponent = getComponentFromId(componentId, content);
+    const newEditComponent = getComponentFromId(componentId, content);
 
-    console.log(editComponent);
-    if (editComponent) {
-      setEditcomponent(editComponent);
+    if (newEditComponent && !editMode) {
+      setEditcomponent(newEditComponent);
       setEditMode(true);
     }
   };
 
   const onPreviewClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    console.log("Previewing Final Result");
+    setPreview(article);
   };
 
   const onEditCancel = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -56,12 +67,13 @@ export default function Editor() {
   const onEditUpdate = (editComponent) => {
     setEditcomponent(editComponent);
     setEditMode(false);
-    const updatedComponent = setComponentById(
+    const updatedComponents = setComponentById(
       editComponent.componentId,
       content,
       editComponent
     );
-    setContent(updatedComponent);
+    setContent(updatedComponents);
+    setArticle({ ...article, content: updatedComponents });
   };
 
   const onAddElementClick = () => {
@@ -75,9 +87,18 @@ export default function Editor() {
     let component: ComponentObject = {
       componentId: getUid(),
       componenType: selectedElement,
-      data: dynamicData
+      data: dynamicData,
     };
     setContent([...content, component]);
+    setArticle({ ...article, content: content });
+  };
+
+  const titleChanged = (event: React.ChangeEvent<HTMLInputElement>) => {
+    // @todoo add validation
+    const titleValue = event.target.value;
+    if (titleValue.split(/\r/g).length > 0) {
+      setArticle({ ...article, title: titleValue });
+    }
   };
 
   return (
@@ -93,6 +114,8 @@ export default function Editor() {
             className="form-control"
             id="exampleFormControlInput1"
             placeholder="This is a sample title"
+            value={article.title}
+            onChange={titleChanged}
           />
         </div>
       </div>
@@ -139,7 +162,11 @@ export default function Editor() {
           </button>
         </div>
         <div className="col">
-          <button className="btn btn-primary btn-sm" onClick={onPreviewClick}>
+          <button
+            className="btn btn-primary btn-sm"
+            onClick={onPreviewClick}
+            disabled={article.title === "" || article.content.length === 0}
+          >
             <i className="bi bi-camera-fill"></i>&nbsp;&nbsp;Preview
           </button>
         </div>
@@ -156,7 +183,7 @@ export default function Editor() {
         </div>
       )}
       <div className="row">
-        <div className="col">
+        <div className="col edit-area">
           <ArticleContainerEditor
             componentClicked={onComponentClick}
             containerJson={content}

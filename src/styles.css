@@ -93,8 +93,16 @@ img {
   font-size: 2rem;
 }
 
+.edit-area {
+  border: 1px solid #26f126;
+}
 .component-hover:hover {
   border: 1px solid #edb24d;
-  padding: 16px;
+  padding: 8px;
   background: #d4e4e4;
+}
+
+.edit-prompt .card-footer {
+  display: flex;
+  justify-content: space-between;
 }
