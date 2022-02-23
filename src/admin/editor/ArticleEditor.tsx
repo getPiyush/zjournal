@@ -6,7 +6,9 @@ import {
   getUid,
   getComponentFromId,
   setComponentById,
+  deleteComponent
 } from "../../utils/componentUtil";
+import SidePanel from "../../web/Panel/SidePanel";
 
 import ArticleContainerEditor from "./ArticleContainerEditor";
 import EditPrompt from "./EditPrompt";
@@ -40,6 +42,7 @@ export default function ArticleEditor({
     "Good Manufacturing Practices (GMP)",
     "Quality Control",
   ];
+
   const [article, setArticle] = useState(articleIn);
 
   const [content, setContent] = useState(articleIn.content);
@@ -47,9 +50,11 @@ export default function ArticleEditor({
   const [selectedElement, setSelectedElement] = useState("h2");
   const [editComponent, setEditcomponent] = useState(null);
 
-  const onElementSelect = (event: React.MouseEvent<HTMLAnchorElement>) => {
+  const onElementDropdownSelect = (
+    event: React.MouseEvent<HTMLAnchorElement>
+  ) => {
     const target: any = event.currentTarget;
-    const componentCode = target.getAttribute('component-code');
+    const componentCode = target.getAttribute("component-code");
     setSelectedElement(componentCode);
   };
 
@@ -65,10 +70,9 @@ export default function ArticleEditor({
 
     const newEditComponent = getComponentFromId(componentId, content);
 
-    if (newEditComponent && !editMode) {
-      setEditcomponent(newEditComponent);
-      setEditMode(true);
-    }
+    setEditcomponent(newEditComponent);
+    setEditMode(true);
+    showHdeOffCanvas(true);
   };
 
   const onPreviewClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -79,7 +83,9 @@ export default function ArticleEditor({
 
   const onEditCancel = (event: React.MouseEvent<HTMLButtonElement>) => {
     setEditMode(false);
+    showHdeOffCanvas(false);
   };
+
   const onEditUpdate = (editComponent) => {
     setEditcomponent(editComponent);
     setEditMode(false);
@@ -90,6 +96,18 @@ export default function ArticleEditor({
     );
     setContent(updatedComponents);
     setArticle({ ...article, content: updatedComponents });
+    showHdeOffCanvas(false);
+  };
+
+  const onDelete = (editComponent) => {
+    setEditMode(false);
+    const updatedComponents = deleteComponent(
+      editComponent.componentId,
+      content
+    );
+    setContent(updatedComponents);
+    setArticle({ ...article, content: updatedComponents });
+    showHdeOffCanvas(false);
   };
 
   const onAddElementClick = () => {
@@ -117,120 +135,149 @@ export default function ArticleEditor({
     }
   };
 
-  return (
-    <div id="editor" className="editor container">
-      <div className="row">
-        <div className="col">
-          <h1>Article Editor</h1>
-          <label htmlFor="exampleFormControlInput1" className="form-label">
-            Title
-          </label>
-          <input
-            type="email"
-            className="form-control"
-            id="exampleFormControlInput1"
-            placeholder="This is a sample title"
-            value={article.title}
-            onChange={titleChanged}
-          />
-        </div>
-      </div>
-      <div className="row">
-        <div className="col editor-action-col-start">
-          <div className="dropdown" style={{ width: "100% !important" }}>
-            <button
-              className="btn btn-sm btn-outline-dark dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton1"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              style={{ width: "100% !important" }}
-            >
-              Select component <b>{selectedElement}</b> for Article
-            </button>
-            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              {components.map((componentCode) => {
-                console.log(componentCode, selectedElement);
-                return (
-                  <li>
-                    <a
-                      className={`dropdown-item ${
-                        componentCode === selectedElement ? "active" : ""
-                      }`}
-                      href="#"
-                      component-code={componentCode}
-                      onClick={onElementSelect}
-                    >
-                      {populateComponentFromCode(componentCode, sampleText)}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-          <button
-            className="btn btn-primary btn-sm"
-            onClick={onAddElementClick}
-          >
-            <i className="bi bi-plus-circle-fill"></i>&nbsp;&nbsp;Add
-          </button>
-        </div>
-        <div className="col editor-action-col-end">
-          <div className="dropdown padding-lr-8">
-            <button
-              className="btn btn-sm btn-outline-dark dropdown-toggle"
-              type="button"
-              id="categoryDropDown"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              {article.categryId}
-            </button>
-            <ul className="dropdown-menu" aria-labelledby="categoryDropDown">
-              {categories.map((category) => (
-                <li>
-                  <a
-                    className={`dropdown-item ${
-                      category === article.categryId ? "active" : ""
-                    }`}
-                    href="#"
-                    onClick={onCategorySelect}
-                  >
-                    {category}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+  const showHdeOffCanvas = (flag) => {
+    const myOffcanvas = document.getElementById("offcanvasRight");
+    const bsOffcanvas = new globalThis.bootstrap.Offcanvas(myOffcanvas);
+    if (flag) {
+      bsOffcanvas.show();
+    } else {
+      bsOffcanvas.hide();
+    }
+    myOffcanvas.addEventListener("hidden.bs.offcanvas", function () {
+      setEditMode(false);
+    });
+  };
 
-          <button
-            className="btn btn-primary btn-sm"
-            onClick={onPreviewClick}
-            disabled={article.title === "" || article.content.length === 0}
-          >
-            <i className="bi bi-camera-fill"></i>&nbsp;&nbsp;Preview
-          </button>
-        </div>
-      </div>
-      {editMode && (
+  return (
+    <React.Fragment>
+      <div id="editor" className="editor container">
         <div className="row">
           <div className="col">
-            <EditPrompt
-              onUpdate={onEditUpdate}
-              onCancel={onEditCancel}
-              component={editComponent}
+            <h1>Article Editor</h1>
+            <label htmlFor="exampleFormControlInput1" className="form-label">
+              Title
+            </label>
+            <input
+              type="email"
+              className="form-control"
+              id="exampleFormControlInput1"
+              placeholder="This is a sample title"
+              value={article.title}
+              onChange={titleChanged}
             />
           </div>
         </div>
-      )}
-      <div className="row">
-        <div className="col edit-area">
-          <ArticleContainerEditor
-            componentClicked={onComponentClick}
-            containerJson={content}
-          />
+        <div className="row">
+          <div className="col editor-action-col-start">
+            <div className="dropdown" style={{ width: "100% !important" }}>
+              <button
+                className="btn btn-sm btn-outline-dark dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style={{ width: "100% !important" }}
+              >
+                Select component <b>{selectedElement}</b> for Article
+              </button>
+              <ul
+                className="dropdown-menu"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                {components.map((componentCode) => {
+                  return (
+                    <li>
+                      <a
+                        className={`dropdown-item ${
+                          componentCode === selectedElement ? "active" : ""
+                        }`}
+                        href="#"
+                        component-code={componentCode}
+                        onClick={onElementDropdownSelect}
+                      >
+                        {populateComponentFromCode(componentCode, sampleText)}
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+            <button
+              className="btn btn-primary btn-sm"
+              onClick={onAddElementClick}
+            >
+              <i className="bi bi-plus-circle-fill"></i>&nbsp;&nbsp;Add
+            </button>
+          </div>
+          <div className="col editor-action-col-end">
+            <div className="dropdown padding-lr-8">
+              <button
+                className="btn btn-sm btn-outline-dark dropdown-toggle"
+                type="button"
+                id="categoryDropDown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                {article.categryId}
+              </button>
+              <ul className="dropdown-menu" aria-labelledby="categoryDropDown">
+                {categories.map((category) => (
+                  <li>
+                    <a
+                      className={`dropdown-item ${
+                        category === article.categryId ? "active" : ""
+                      }`}
+                      href="#"
+                      onClick={onCategorySelect}
+                    >
+                      {category}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <button
+              className="btn btn-primary btn-sm"
+              onClick={onPreviewClick}
+              disabled={article.title === "" || article.content.length === 0}
+            >
+              <i className="bi bi-camera-fill"></i>&nbsp;&nbsp;Preview
+            </button>
+          </div>
+        </div>
+        {/*editMode && (
+          <div className="row">
+            <div className="col">
+              <EditPrompt
+                onUpdate={onEditUpdate}
+                onCancel={onEditCancel}
+                component={editComponent}
+              />
+            </div>
+          </div>
+        )*/}
+        <div className="row">
+          <div className="col edit-area">
+            <ArticleContainerEditor
+              componentClicked={onComponentClick}
+              containerJson={content}
+            />
+          </div>
         </div>
       </div>
-    </div>
+      <SidePanel
+        pageContent={
+          editMode && (
+            <EditPrompt
+              onUpdate={onEditUpdate}
+              onCancel={onEditCancel}
+              onDelete={onDelete}
+              component={editComponent}
+            />
+          )
+        }
+      />
+    </React.Fragment>
   );
 }

@@ -5,6 +5,7 @@ import { getUid } from "../utils/componentUtil";
 
 import Article from "../web/Article/Article";
 import Footer from "../web/Footer";
+import SidePanel from "../web/Panel/SidePanel";
 import ArticleEditor from "./editor/ArticleEditor";
 import Header from "./Header";
 

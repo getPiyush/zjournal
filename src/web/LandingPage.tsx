@@ -14,7 +14,7 @@ export default function LandingPage() {
         setSelectedSideNav(name);
       } } />
       <Content/>
-      <SidePanel selectedNav={selectedSideNav} />
+      <SidePanel pageContent={selectedSideNav} />
       <Footer />
     </React.Fragment>
   );
