@@ -85,12 +85,16 @@ img {
   }
 }
 
-
-
-.admin .editor .row{
+.admin .editor .row {
   padding: 8px;
 }
 
-.admin .editor input{
+.admin .editor input {
   font-size: 2rem;
+}
+
+.component-hover:hover {
+  border: 1px solid #edb24d;
+  padding: 16px;
+  background: #d4e4e4;
 }

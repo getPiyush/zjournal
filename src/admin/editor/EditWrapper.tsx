@@ -7,13 +7,11 @@ type EditWrapperProps = {
 export default function EditWrapper({
   id,
   children,
-  componentClicked,
+  componentClicked
 }: EditWrapperProps) {
   return (
     <div
-      className="hover-overlay"
-      data-bs-toggle="modal"
-      data-bs-target="#staticBackdrop"
+      className="component-hover"
       role="button"
       id={id}
       onClick={componentClicked}
