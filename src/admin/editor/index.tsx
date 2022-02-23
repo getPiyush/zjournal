@@ -19,7 +19,7 @@ export default function Editor() {
     "Image",
     "Paragraph",
     "List",
-    "Table",
+    "Table"
   ];
   const sampleText = "The quick brown fox, jumps over a lazy dog.!?";
   const [content, setContent] = useState([]);
@@ -46,7 +46,6 @@ export default function Editor() {
     }
   };
 
-  
   const onPreviewClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     console.log("Previewing Final Result");
   };
@@ -57,9 +56,12 @@ export default function Editor() {
   const onEditUpdate = (editComponent) => {
     setEditcomponent(editComponent);
     setEditMode(false);
-    const updatedComponent = setComponentById(editComponent.componentId,content,editComponent);
+    const updatedComponent = setComponentById(
+      editComponent.componentId,
+      content,
+      editComponent
+    );
     setContent(updatedComponent);
-
   };
 
   const onAddElementClick = () => {
@@ -73,7 +75,7 @@ export default function Editor() {
     let component: ComponentObject = {
       componentId: getUid(),
       componenType: selectedElement,
-      data: dynamicData,
+      data: dynamicData
     };
     setContent([...content, component]);
   };
@@ -132,14 +134,12 @@ export default function Editor() {
             className="btn btn-primary btn-sm"
             onClick={onAddElementClick}
           >
-            <i className="bi bi-plus-circle-fill"></i>&nbsp;&nbsp;Add <b>{selectedElement}</b> to Article
+            <i className="bi bi-plus-circle-fill"></i>&nbsp;&nbsp;Add{" "}
+            <b>{selectedElement}</b> to Article
           </button>
         </div>
         <div className="col">
-          <button
-            className="btn btn-primary btn-sm"
-            onClick={onPreviewClick}
-          >
+          <button className="btn btn-primary btn-sm" onClick={onPreviewClick}>
             <i className="bi bi-camera-fill"></i>&nbsp;&nbsp;Preview
           </button>
         </div>
@@ -156,7 +156,7 @@ export default function Editor() {
         </div>
       )}
       <div className="row">
-        <div className="col" style={{ backgroundColor: "#f9f9e5" }}>
+        <div className="col">
           <ArticleContainerEditor
             componentClicked={onComponentClick}
             containerJson={content}
