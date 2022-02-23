@@ -31,18 +31,32 @@ export default function ArticleEditor({
     "Table",
   ];
   const sampleText = "The quick brown fox, jumps over a lazy dog.!?";
-
+  const categories = [
+    "Production",
+    "Quality Assurance",
+    "Engineering",
+    "Validation and Qualification",
+    "Microbiology",
+    "Good Manufacturing Practices (GMP)",
+    "Quality Control",
+  ];
   const [article, setArticle] = useState(articleIn);
 
-  const [content, setContent] = useState([]);
+  const [content, setContent] = useState(articleIn.content);
   const [editMode, setEditMode] = useState(false);
   const [selectedElement, setSelectedElement] = useState("h2");
   const [editComponent, setEditcomponent] = useState(null);
 
   const onElementSelect = (event: React.MouseEvent<HTMLAnchorElement>) => {
     const target: any = event.currentTarget;
-    const componentCode = target.getAttribute("component-code");
+    const componentCode = target.getAttribute('component-code');
     setSelectedElement(componentCode);
+  };
+
+  const onCategorySelect = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    const target: any = event.currentTarget;
+    const category = target.innerText;
+    setArticle({ ...article, categryId: category });
   };
 
   const onComponentClick = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -58,7 +72,9 @@ export default function ArticleEditor({
   };
 
   const onPreviewClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    setPreview(article);
+    const finalarticle = { ...article, content: content };
+    setArticle(finalarticle);
+    setPreview(finalarticle);
   };
 
   const onEditCancel = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -120,7 +136,7 @@ export default function ArticleEditor({
         </div>
       </div>
       <div className="row">
-        <div className="col">
+        <div className="col editor-action-col-start">
           <div className="dropdown" style={{ width: "100% !important" }}>
             <button
               className="btn btn-sm btn-outline-dark dropdown-toggle"
@@ -130,10 +146,11 @@ export default function ArticleEditor({
               aria-expanded="false"
               style={{ width: "100% !important" }}
             >
-              Selected <b>{selectedElement}</b> from the drop down
+              Select component <b>{selectedElement}</b> for Article
             </button>
             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               {components.map((componentCode) => {
+                console.log(componentCode, selectedElement);
                 return (
                   <li>
                     <a
@@ -151,17 +168,41 @@ export default function ArticleEditor({
               })}
             </ul>
           </div>
-        </div>
-        <div className="col">
           <button
             className="btn btn-primary btn-sm"
             onClick={onAddElementClick}
           >
-            <i className="bi bi-plus-circle-fill"></i>&nbsp;&nbsp;Add{" "}
-            <b>{selectedElement}</b> to Article
+            <i className="bi bi-plus-circle-fill"></i>&nbsp;&nbsp;Add
           </button>
         </div>
-        <div className="col">
+        <div className="col editor-action-col-end">
+          <div className="dropdown padding-lr-8">
+            <button
+              className="btn btn-sm btn-outline-dark dropdown-toggle"
+              type="button"
+              id="categoryDropDown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              {article.categryId}
+            </button>
+            <ul className="dropdown-menu" aria-labelledby="categoryDropDown">
+              {categories.map((category) => (
+                <li>
+                  <a
+                    className={`dropdown-item ${
+                      category === article.categryId ? "active" : ""
+                    }`}
+                    href="#"
+                    onClick={onCategorySelect}
+                  >
+                    {category}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           <button
             className="btn btn-primary btn-sm"
             onClick={onPreviewClick}

@@ -85,6 +85,27 @@ img {
   }
 }
 
+/*article*/
+.sub-header {
+  color: #1f76a8;
+  display: flex;
+  justify-content: space-between;
+}
+
+.editor-action-col-start {
+  display: flex;
+  justify-content: flex-start;
+}
+.editor-action-col-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.padding-lr-8 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
 .admin .editor .row {
   padding: 8px;
 }
@@ -105,4 +126,10 @@ img {
 .edit-prompt .card-footer {
   display: flex;
   justify-content: space-between;
+}
+
+.top-action-box {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid;
 }
