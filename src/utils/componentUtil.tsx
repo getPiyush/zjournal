@@ -28,19 +28,29 @@ export const getComponentFromId = (
 };
 
 export const setComponentById = (
-    id: string,
-    compArray: ComponentObject[],
-    component:ComponentObject
-  ) => {
-    let resultArray: ComponentObject[] = [...compArray];
-    compArray.forEach((element,index) => {
-      if (id === element.componentId) {
-        resultArray[index] = component;
-        return false;
-      }
-    });
-    return resultArray;
-  };
+  id: string,
+  compArray: ComponentObject[],
+  component: ComponentObject
+) => {
+  let resultArray: ComponentObject[] = [...compArray];
+  compArray.forEach((element, index) => {
+    if (id === element.componentId) {
+      resultArray[index] = component;
+      return false;
+    }
+  });
+  return resultArray;
+};
+
+export const deleteComponent = (id: string, compArray: ComponentObject[]) => {
+  let resultArray: ComponentObject[] = [];
+  compArray.forEach((element) => {
+    if (id !== element.componentId) {
+      resultArray.push(element);
+    }
+  });
+  return resultArray;
+};
 
 export const populateComponentFromCode = (code: string, text: string) => {
   let comp: any;
@@ -59,6 +69,20 @@ export const populateComponentFromCode = (code: string, text: string) => {
       break;
     case "H5":
       comp = <h5 data-testid="output-element">{text}</h5>;
+      break;
+    case "IMAGE":
+      comp = (
+        <div data-testid="output-element">
+          Image <i className="bi bi-file-image"></i>
+        </div>
+      );
+      break;
+    case "PARAGRAPH":
+      comp = (
+        <div data-testid="output-element">
+          Paragraph <i className="bi bi-paragraph"></i>
+        </div>
+      );
       break;
 
     default:
