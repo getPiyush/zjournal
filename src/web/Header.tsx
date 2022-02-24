@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import { Logo } from "./Logo";
 
 type HeaderProps = {
   updateSideNav: (name: string) => void;
@@ -17,11 +18,7 @@ export default function Header({ updateSideNav }: HeaderProps) {
     <header>
       <nav className="navbar navbar-expand-md navbar-light fixed-top bg-light">
         <div className="container-fluid">
-          <span className="blog-header blog-header-logo">
-            Pharmaceutical Updates
-            <div className="logo-subtext">by Chandrasekhar Panda</div>
-          </span>
-
+          <Logo/>
           <button
             className="btn  btn-sm navbar-toggler"
             type="button"

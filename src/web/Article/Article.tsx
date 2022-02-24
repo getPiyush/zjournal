@@ -11,8 +11,14 @@ export default function Article({ data }: ArticleProps) {
     <div className="container disable-text-selection">
       <h1 className="mt-5">{data.title}</h1>
       <div className="sub-header">
-        <span>By {data.author} on {data.dateCreated.toDateString()}</span>
-        <span className="badge rounded-pill bg-success">{data.categryId}</span>
+        <span>
+          By {data.author} on {data.dateCreated.toDateString()}
+        </span>
+        <div>
+          <span className="badge rounded-pill bg-success">
+            {data.categryId}
+          </span>
+        </div>
       </div>
       <ArticleContainer containerJson={data.content} />
     </div>
