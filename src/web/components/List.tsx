@@ -8,6 +8,7 @@ export const List = ({ listData }: ListProps) => {
   if (typeof listData.data !== "string") {
     return (
       <div
+        className="list-component"
         id={listData.componenType + "_" + listData.componentId}
         key={"key_" + listData.componentId}
       >
