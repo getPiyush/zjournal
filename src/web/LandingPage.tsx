@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import Content from "./Content";
-import SidePanel from "./Panel/SidePanel";
+import SidePanel from "./components/Panel/SidePanel";
 import Footer from "./Footer";
 
 export default function LandingPage() {

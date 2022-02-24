@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 import { ComponentObject } from "../../Types";
+import { ListEditor } from "./ListEditor";
 
 type EditPromptProps = {
   component: ComponentObject;
@@ -13,32 +14,29 @@ export default function EditPrompt({
   component,
   onCancel,
   onUpdate,
-  onDelete
+  onDelete,
 }: EditPromptProps) {
   const [compData, setCompData] = useState(component.data);
 
-  const [setDelete, setDeleteState] = useState(false);
+  const [outComp, setOutComp] = useState(component);
 
   const onUpdateClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    const editComponent = { ...component, data: compData };
+    const editComponent = { ...outComp, data: compData };
     onUpdate(editComponent);
   };
 
   const onDeleteClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    const editComponent = { ...component, data: compData };
+    const editComponent = { ...outComp, data: compData };
     onDelete(editComponent);
   };
-  
 
   const dataChanged = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     // @todoo add validation
     setCompData(event.target.value);
   };
 
-  return (
-    <div id="editPrompt" className="alert alert-light">
-      <h3>Editing {component.componenType}</h3>
-      <hr />
+  const getDefaultComponent = () => {
+    return (
       <div className="padding-lr-8">
         <textarea
           className="form-control"
@@ -49,6 +47,28 @@ export default function EditPrompt({
           {compData}
         </textarea>
       </div>
+    );
+  };
+
+  const listComponentUpdated = (compData:ComponentObject) =>{
+    console.log(compData);
+    setOutComp(compData);
+    setCompData(compData.data);
+  }
+
+  const getEditComponent = () => {
+    if (component.componenType === "List") {
+      return <ListEditor listData={outComp} updateListData={listComponentUpdated}/>;
+    } else {
+      return getDefaultComponent();
+    }
+  };
+
+  return (
+    <div id="editPrompt" className="alert alert-light">
+      <h3>Editing {component.componenType}</h3>
+      <hr />
+      {getEditComponent()}
       <hr />
       <div className="editor-action-col-end">
         <button
@@ -67,7 +87,8 @@ export default function EditPrompt({
             data-bs-target="#deleteConfirmation"
             aria-expanded="false"
             aria-controls="deleteConfirmation"
-          ><i className="bi bi-trash"></i>
+          >
+            <i className="bi bi-trash"></i>
           </button>
         </div>
         <div className="padding-lr-8">
@@ -84,8 +105,10 @@ export default function EditPrompt({
       <div className="collapse" id="deleteConfirmation">
         <div className="card card-body">
           <div className="editor-action-col-end"></div>
-          <div><b>Are you sure want to delete?</b></div>
-          <br/>
+          <div>
+            <b>Are you sure want to delete?</b>
+          </div>
+          <br />
           <button
             className="btn btn-primary btn-sm"
             type="button"
@@ -96,8 +119,8 @@ export default function EditPrompt({
           >
             No
           </button>
-          
-          <hr/>
+
+          <hr />
           <button
             onClick={onDeleteClick}
             type="button"
@@ -106,7 +129,6 @@ export default function EditPrompt({
           >
             Yes
           </button>
-          
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import EditWrapper from "../admin/editor/EditWrapper";
 import { ComponentObject } from "../Types";
+import { List } from "../web/components/List";
 
 export const getUid = () =>
   Date.now().toString(36) + Math.random().toString(36).substr(2);
@@ -85,6 +86,14 @@ export const populateComponentFromCode = (code: string, text: string) => {
       );
       break;
 
+    case "LIST":
+      comp = (
+        <div data-testid="output-element">
+          List <i className="bi bi-card-list"></i>
+        </div>
+      );
+      break;
+
     default:
       comp = <span data-testid="output-element">{code}</span>;
       break;
@@ -159,6 +168,10 @@ const getComponentFromObject = (
           {obj.data}
         </p>
       );
+      break;
+
+    case "LIST":
+      comp = <List listData={obj} />;
       break;
 
     default:

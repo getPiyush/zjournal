@@ -6,9 +6,9 @@ import {
   getUid,
   getComponentFromId,
   setComponentById,
-  deleteComponent
+  deleteComponent,
 } from "../../utils/componentUtil";
-import SidePanel from "../../web/Panel/SidePanel";
+import SidePanel from "../../web/components/Panel/SidePanel";
 
 import ArticleContainerEditor from "./ArticleContainerEditor";
 import EditPrompt from "./EditPrompt";
@@ -87,6 +87,7 @@ export default function ArticleEditor({
   };
 
   const onEditUpdate = (editComponent) => {
+    console.log(editComponent);
     setEditcomponent(editComponent);
     setEditMode(false);
     const updatedComponents = setComponentById(
@@ -111,7 +112,7 @@ export default function ArticleEditor({
   };
 
   const onAddElementClick = () => {
-    const defaultHeader = "Click to Update Header";
+    const defaultHeader = "Click to Update Text";
     const defaultContent = "Click to Update Content";
     const defaultImage = "images/placeholder-image.png";
     let dynamicData = defaultHeader;
@@ -122,13 +123,13 @@ export default function ArticleEditor({
       componentId: getUid(),
       componenType: selectedElement,
       data: dynamicData,
+      numbered: false,
     };
     setContent([...content, component]);
     setArticle({ ...article, content: content });
   };
 
   const titleChanged = (event: React.ChangeEvent<HTMLInputElement>) => {
-    // @todoo add validation
     const titleValue = event.target.value;
     if (titleValue.split(/\r/g).length > 0) {
       setArticle({ ...article, title: titleValue });

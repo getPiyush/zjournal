@@ -5,6 +5,7 @@ export type ComponentObject = {
   componenType: string;
   data: string | string[];
   altText?: string;
+  numbered?: boolean;
 };
 
 export type ArticleT = {

@@ -2,15 +2,15 @@ import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
 import Home from "./Home";
-import Article from "./Article/Article";
+import Article from "./components/Article/Article";
 
 import { ArticleT } from "../Types";
 
 const articleObject: ArticleT = {
   id: "987391391bbjgj27819391",
   title: "Article Topic Header",
-  categryId: "73131v3u13t7",
-  author: "Piyush praharaj",
+  categryId: "Microbiology",
+  author: "Piyush Plaban Praharaj",
   dateCreated: new Date(),
   dateModified: new Date(),
   content: [
@@ -72,7 +72,16 @@ const articleObject: ArticleT = {
     },
     {
       componenType: "list",
-      data: "Note that if you use the expression if(c) to check if an argument is not initialized, you",
+      numbered:true,
+      data: [
+        "Production",
+        "Quality Assurance",
+        "Engineering",
+        "Validation and Qualification",
+        "Microbiology",
+        "Good Manufacturing Practices (GMP)",
+        "Quality Control"
+      ],
     },
   ],
 };
