@@ -79,17 +79,15 @@ img {
   padding: 16px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 851px) {
-  main > .container {
-    padding: 32px 16px 0;
-  }
-}
-
 /*article*/
+.article-viewer {
+  margin-top: 32px;
+}
 .sub-header {
   color: #1f76a8;
   display: flex;
-  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .editor-action-col-start {
@@ -132,4 +130,21 @@ img {
   display: flex;
   justify-content: flex-end;
   border-bottom: 1px solid;
+}
+
+.list-editor_item{
+  display: flex;
+}
+
+.list-editor_item, button{
+  margin: 4px;
+}
+
+@media screen and (min-width: 767px) and (max-width: 846px) {
+  main > .container {
+    padding: 32px 16px 0;
+  }
+  .article-viewer {
+    margin-top: 64px !important;
+  }
 }

@@ -1,4 +1,4 @@
-import { ArticleT } from "../../Types";
+import { ArticleT } from "../../../Types";
 import ArticleContainer from "./ArticleContainer";
 
 type ArticleProps = {
@@ -8,14 +8,14 @@ type ArticleProps = {
 export default function Article({ data }: ArticleProps) {
   console.log(data);
   return (
-    <div className="container disable-text-selection">
-      <h1 className="mt-5">{data.title}</h1>
+    <div className="container article-viewer disable-text-selection">
+      <h1>{data.title}</h1>
       <div className="sub-header">
         <span>
-          By {data.author} on {data.dateCreated.toDateString()}
+          By <b>{data.author}</b> on {data.dateCreated.toDateString()}
         </span>
         <div>
-          <span className="badge rounded-pill bg-success">
+          <span className="badge bg-success">
             {data.categryId}
           </span>
         </div>
