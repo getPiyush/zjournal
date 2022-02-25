@@ -1,24 +1,24 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import { updatePage } from "../contexts/JournalActions";
+import { useJournal } from "../contexts/JournalContext";
 import { Logo } from "./components/Logo";
 
-type HeaderProps = {
-  updateSideNav: (name: string) => void;
-};
-
-export default function Header({ updateSideNav }: HeaderProps) {
+export default function Header() {
+  const { dispatch } = useJournal();
 
   const location = useLocation().pathname;
-  const linkClicked = (event: React.MouseEvent<HTMLAnchorElement>) => {
-  const target : any = event.target;
-  updateSideNav(target.getAttribute("button-flag"));
 
+  const linkClicked = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    const target: any = event.target;
+    const buttonFlag = target.getAttribute("button-flag");
+    updatePage(dispatch, buttonFlag);
   };
   return (
     <header>
       <nav className="navbar navbar-expand-md navbar-light fixed-top bg-light">
         <div className="container-fluid">
-          <Logo/>
+          <Logo />
           <button
             className="btn  btn-sm navbar-toggler"
             type="button"
@@ -37,7 +37,9 @@ export default function Header({ updateSideNav }: HeaderProps) {
             <ul className="navbar-nav mb-2 mb-md-0">
               <li className="nav-item">
                 <Link
-                  className={`nav-link ${location === "/web/home" ? "active" : ""}`}
+                  className={`nav-link ${
+                    location === "/web/home" ? "active" : ""
+                  }`}
                   aria-current="page"
                   to="/web/home"
                 >
@@ -67,7 +69,9 @@ export default function Header({ updateSideNav }: HeaderProps) {
               </li>
               <li className="nav-item">
                 <Link
-                  className={`nav-link ${location === "/web/iqa" ? "active" : ""}`}
+                  className={`nav-link ${
+                    location === "/web/iqa" ? "active" : ""
+                  }`}
                   to="/web/iqa"
                 >
                   Interview Q&amp;A

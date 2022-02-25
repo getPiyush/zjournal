@@ -1,6 +1,10 @@
 import React from "react";
+import { useJournal } from "../../../contexts/JournalContext";
 
 export default function Categories() {
+  const { state: state } = useJournal();
+
+  console.log(state.journal);
   return (
     <React.Fragment>
       <div className="offcanvas-header">
@@ -13,26 +17,14 @@ export default function Categories() {
         ></button>
       </div>
       <div className="offcanvas-body">
-        <ul>
-          <li>
-            <a href="#">Production</a>
-          </li>
-          <li>
-            <a href="#">Quality Assurance</a>
-          </li>
-          <li>
-            <a href="#">Engineering</a>
-          </li>
-          <li>
-            <a href="#">Validation and Qualification</a>
-          </li>
-          <li>
-            <a href="#">Microbiology Good Manufacturing Practices (GMP)</a>
-          </li>
-          <li>
-            <a href="#">Quality Control</a>
-          </li>
-        </ul>
+        <ol>
+          {state?.journal?.categories.length > 0 &&
+            state.journal.categories.map((category) => (
+              <li>
+                <a href="#">{category}</a>
+              </li>
+            ))}
+        </ol>
       </div>
     </React.Fragment>
   );

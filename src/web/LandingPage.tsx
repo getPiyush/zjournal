@@ -1,20 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import Header from "./Header";
 import Content from "./Content";
 import SidePanel from "./components/Panel/SidePanel";
 import Footer from "./Footer";
+import { useJournal } from "../contexts/JournalContext";
+import { getJournalFromDB } from "../contexts/JournalActions";
 
 export default function LandingPage() {
-  const [selectedSideNav, setSelectedSideNav] = useState("");
 
+  const { dispatch } = useJournal();
 
+  useEffect(() => {
+    getJournalFromDB(dispatch);
+  }, []);
+
+  
   return (
     <React.Fragment>
-      <Header updateSideNav={function (name: string): void {
-        setSelectedSideNav(name);
-      } } />
-      <Content/>
-      <SidePanel pageContent={selectedSideNav} />
+      <Header />
+      <Content />
+      <SidePanel />
       <Footer />
     </React.Fragment>
   );

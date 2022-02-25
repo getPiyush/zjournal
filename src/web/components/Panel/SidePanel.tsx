@@ -2,11 +2,10 @@ import React, { useContext } from "react";
 import Blogs from "./Blogs";
 import Categories from "./Categories";
 
-type SidePanelProps = {
-  pageContent: JSX.Element | string;
-};
+import { useJournal } from "../../../contexts/JournalContext";
 
-export default function SidePanel({ pageContent }: SidePanelProps) {
+export default function SidePanel() {
+  const { state: state } = useJournal();
   const getSideContent = (nav: string) => {
     if (nav === "blogs") {
       return <Blogs />;
@@ -24,7 +23,7 @@ export default function SidePanel({ pageContent }: SidePanelProps) {
           id="offcanvasRight"
           aria-labelledby="offcanvasRightLabel"
         >
-          {typeof(pageContent)==='string'?getSideContent(pageContent):pageContent}
+          {state?.journal?.selectedPage && getSideContent(state.journal.selectedPage)}
         </div>
       </div>
     </React.Fragment>

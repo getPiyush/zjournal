@@ -8,10 +8,10 @@ import {
   setComponentById,
   deleteComponent,
 } from "../../utils/componentUtil";
-import SidePanel from "../../web/components/Panel/SidePanel";
 
 import ArticleContainerEditor from "./ArticleContainerEditor";
 import EditPrompt from "./EditPrompt";
+import SidePanelContainer from "./SidePanelContainer";
 
 type ArticleEditorProps = {
   articleIn: ArticleT;
@@ -247,17 +247,6 @@ export default function ArticleEditor({
             </button>
           </div>
         </div>
-        {/*editMode && (
-          <div className="row">
-            <div className="col">
-              <EditPrompt
-                onUpdate={onEditUpdate}
-                onCancel={onEditCancel}
-                component={editComponent}
-              />
-            </div>
-          </div>
-        )*/}
         <div className="row">
           <div className="col edit-area">
             <ArticleContainerEditor
@@ -267,7 +256,8 @@ export default function ArticleEditor({
           </div>
         </div>
       </div>
-      <SidePanel
+
+      <SidePanelContainer
         pageContent={
           editMode && (
             <EditPrompt

@@ -7,8 +7,7 @@ export default function AppRoot() {
 
   return (
     <main className="flex-shrink-0">
-        <Routes>
-            
+        <Routes>           
             <Route path="/" element={<Navigate replace to='/web/home'/>}></Route>
             <Route path='web/*' element={<LandingPage/>}/>
             <Route path="admin" element={<Admin/>}/>
