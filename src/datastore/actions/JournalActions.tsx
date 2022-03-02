@@ -1,12 +1,12 @@
-import axios, { AxiosResponse } from "axios";
+import { getJournalAPI } from "../api";
 
 export const updatePage = (dispatch, page:string) =>{
     dispatch({ type: "update_page", value: page });
 }
 
 export const getJournalFromDB = (dispatch) =>{
-
-    axios.get('http://localhost:3004/journal')
+  dispatch({ type: "update_journal_loading"});
+    getJournalAPI()
       .then(function (response ) {
         dispatch({ type: "update_journal", value:response.data});
       })
@@ -15,7 +15,7 @@ export const getJournalFromDB = (dispatch) =>{
         dispatch({ type: "update_journal_error" });
       })
       .then(function () {
-        // always executed
+//
       });  
 
     

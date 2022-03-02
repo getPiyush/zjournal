@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { updatePage } from "../contexts/JournalActions";
-import { useJournal } from "../contexts/JournalContext";
+import { updatePage } from "../datastore/actions/JournalActions";
+import { useJournal } from "../datastore/contexts/JournalContext";
 import { Logo } from "./components/Logo";
 
 export default function Header() {

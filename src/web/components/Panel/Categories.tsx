@@ -1,10 +1,8 @@
 import React from "react";
-import { useJournal } from "../../../contexts/JournalContext";
+import { useJournal } from "../../../datastore/contexts/JournalContext";
 
 export default function Categories() {
   const { state: state } = useJournal();
-
-  console.log(state.journal);
   return (
     <React.Fragment>
       <div className="offcanvas-header">

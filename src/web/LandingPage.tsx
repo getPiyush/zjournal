@@ -3,8 +3,8 @@ import Header from "./Header";
 import Content from "./Content";
 import SidePanel from "./components/Panel/SidePanel";
 import Footer from "./Footer";
-import { useJournal } from "../contexts/JournalContext";
-import { getJournalFromDB } from "../contexts/JournalActions";
+import { useJournal } from "../datastore/contexts/JournalContext";
+import { getJournalFromDB } from "../datastore/actions/JournalActions";
 
 export default function LandingPage() {
 

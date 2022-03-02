@@ -1,6 +1,44 @@
 {
   "articles": [
     {
+      "id": "l043ho1m9wfm9pzmnmo",
+      "author": "Piyush Praharaj",
+      "title": "Russia's unprovoked attack on Ukraine",
+      "dateCreated": "2022-02-26T17:06:13.882Z",
+      "dateModified": "2022-02-26T17:06:13.882Z",
+      "categryId": "Quality Control",
+      "content": [
+        {
+          "componentId": "l043hvdedlksyiv271q",
+          "componenType": "h2",
+          "data": "David O'Sullivan , European Policy Centre\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l043i41xehuvpu5dgod",
+          "componenType": "List",
+          "data": [
+            "The European Policy Centre strongly condemns Russia’s unprovoked invasion of Ukraine. Its latest",
+            "Our mission and work as an organisation are dedicated to upholding and advocating democracy",
+            "The time that we thought an all-out war could never touch Europe again is over."
+          ],
+          "numbered": true
+        },
+        {
+          "componentId": "l043l1t1sv4cvd4lvj",
+          "componenType": "Image",
+          "data": "https://th.bing.com/th/id/OIF.3zquymNudo0s7YF4zJuPFg?pid=ImgDet&rs=1",
+          "numbered": false
+        },
+        {
+          "componentId": "l043lkwgh0o2pxo8ey8",
+          "componenType": "Paragraph",
+          "data": "The European Policy Centre strongly condemns Russia’s unprovoked invasion of Ukraine. Its latest acts of military aggression are horrific, unjustified and are in gross violation of international law. There is no doubt their attack will lead to immense human suffering and loss of life.\n\nIt is the people of Ukraine that are now at the forefront of our minds. As they brave death and destruction and valiantly defend their country against Russian terror, we stand by Ukraine and unequivocally support its right as a sovereign state to determine its own future. In the words of European Commission President von der Leyen, “we will not let Russia replace the rule of law with the rule of force and ruthlessness”.\n\nOur mission and work as an organisation are dedicated to upholding and advocating democracy, international cooperation, solidarity, and truth-telling – all the things Putin’s regime abhors and is trying to undo with this act of war. In solidarity with our Ukrainian friends and to keep the free Ukrainian voice in the debate, we are offering free EPC membership to any Ukrainian institution, think tank, and NGO committed to a free and democratic Ukraine.\n\nMake no mistake. What is happening in Ukraine is a direct threat to the global and European security orders put in place 75 years ago. It is a direct threat to the European Union and what it stands for. It is a direct threat to independent liberal democracies everywhere and the values we hold dear: freedom, plurality, equality and respect for the rule of law.\n\nThe time that we thought an all-out war could never touch Europe again is over. But although the situation is bleak, we must take heart in the renewed resolve of the EU and the transatlantic alliance to act together and defend those values. Every time we honour our commitments to our partners, our agreements and our ideals, we prove the likes of Putin wrong and demonstrate that the way forward is not by brute power. In the face of relentless obfuscation and blind aggression, the European Policy Centre is more committed than ever to championing those ideas.",
+          "numbered": false
+        }
+      ]
+    },
+    {
       "id": "kzzua95cipc28wgefia",
       "author": "Piyush Praharaj",
       "title": "What is Genetics?",

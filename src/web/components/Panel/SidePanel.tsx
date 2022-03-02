@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Blogs from "./Blogs";
 import Categories from "./Categories";
 
-import { useJournal } from "../../../contexts/JournalContext";
+import { useJournal } from "../../../datastore/contexts/JournalContext";
 
 export default function SidePanel() {
   const { state: state } = useJournal();

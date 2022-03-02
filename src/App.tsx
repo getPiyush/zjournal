@@ -1,6 +1,6 @@
 import "./styles.css";
 import AppRoot from "./AppRoot";
-import { JournalProvider } from "./contexts/JournalContext";
+import { JournalProvider } from "./datastore/contexts/JournalContext";
 
 export default function App() {
   return (
