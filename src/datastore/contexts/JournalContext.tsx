@@ -1,27 +1,35 @@
 import * as React from "react";
+import { ArticleT, Journal } from "../../Types";
+import { getUid } from "../../utils/componentUtil";
 
 type Action =
   | { type: "update_journal"; value: Journal }
   | { type: "update_journal_loading" }
   | { type: "update_journal_error" }
   | { type: "update_page"; value: string }
-  | { type: "reset_page" };
+  | { type: "reset_page" }
+  | { type: "update_current_article"; value: ArticleT };
 type Dispatch = (action: Action) => void;
 
-type Journal = {
-  title: string;
-  selectedPage: string;
-  currentArticle: string;
-  categories: string[];
+const defaultArticle = {
+  id: getUid(),
+  author: "Piyush Praharaj",
+  title: "",
+  dateCreated: new Date(),
+  dateModified: new Date(),
+  categryId: "NONE",
+  content: [],
 };
+
 const defaultJournal = {
   title: "zJournal Default Title",
   selectedPage: "home",
-  currentArticle: "12i3u1yb113182b8s7b",
+  currentArticle: defaultArticle,
   categories: [],
+  components:[]
 };
 
-type State = { journal: Journal, status: string };
+type State = { journal: Journal; status: string };
 
 type JournalProviderProps = { children: React.ReactNode };
 
@@ -30,15 +38,13 @@ const JournalStateContext = React.createContext<
 >(undefined);
 
 function journalReducer(state: State, action: Action) {
-  console.log(action);
   switch (action.type) {
-
     case "update_journal_loading": {
-      return { status: "loading", journal:state.journal };
+      return { status: "loading", journal: state.journal };
     }
 
     case "update_journal_error": {
-      return { status: "error", journal:state.journal };
+      return { status: "error", journal: state.journal };
     }
 
     case "update_journal": {
@@ -46,11 +52,24 @@ function journalReducer(state: State, action: Action) {
     }
 
     case "update_page": {
-      return { journal: { ...state.journal, selectedPage: action.value }, status:"" };
+      return {
+        journal: { ...state.journal, selectedPage: action.value },
+        status: "",
+      };
     }
 
     case "reset_page": {
-      return { journal: { ...state.journal, selectedPage: "home" }, status:"" };
+      return {
+        journal: { ...state.journal, selectedPage: "home" },
+        status: "",
+      };
+    }
+
+    case "update_current_article": {
+      return {
+        journal: { ...state.journal, currentArticle: action.value },
+        status: "",
+      };
     }
 
     default: {
@@ -62,10 +81,9 @@ function journalReducer(state: State, action: Action) {
 function JournalProvider({ children }: JournalProviderProps) {
   const [state, dispatch] = React.useReducer(journalReducer, {
     journal: defaultJournal,
-    status: ""
+    status: "",
   });
-  // NOTE: you *might* need to memoize this value
-  // Learn more in http://kcd.im/optimize-context
+
   const value = { state, dispatch };
   return (
     <JournalStateContext.Provider value={value}>

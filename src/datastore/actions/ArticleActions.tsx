@@ -1,11 +1,8 @@
 import { getArticleByCategoryAPI } from "../api";
 
-export const updatePage = (dispatch, page:string) =>{
-    dispatch({ type: "update_page", value: page });
-}
 
-export const getArticlesBycategory = (dispatch, category:string) =>{
-
+export const getArticlesBycategory = (dispatch,category:string) =>{
+  dispatch({ type: "get_article_by_category_loading"});
     getArticleByCategoryAPI(category)
       .then(function (response ) {
         dispatch({ type: "get_article_by_category", value:response.data});

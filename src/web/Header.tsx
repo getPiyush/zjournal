@@ -5,14 +5,13 @@ import { useJournal } from "../datastore/contexts/JournalContext";
 import { Logo } from "./components/Logo";
 
 export default function Header() {
-  const { dispatch } = useJournal();
-
+  const {dispatch} = useJournal();
   const location = useLocation().pathname;
 
   const linkClicked = (event: React.MouseEvent<HTMLAnchorElement>) => {
     const target: any = event.target;
     const buttonFlag = target.getAttribute("button-flag");
-    updatePage(dispatch, buttonFlag);
+    updatePage(buttonFlag, dispatch);
   };
   return (
     <header>

@@ -5,6 +5,8 @@ import Home from "./Home";
 import Article from "./components/Article/Article";
 
 import { ArticleT } from "../Types";
+import { useJournal } from "../datastore/contexts/JournalContext";
+import { Spinner } from "./components/Spinner";
 
 const articleObject: ArticleT = {
   id: "987391391bbjgj27819391",
@@ -72,7 +74,7 @@ const articleObject: ArticleT = {
     },
     {
       componenType: "list",
-      numbered:true,
+      numbered: true,
       data: [
         "Production",
         "Quality Assurance",
@@ -80,14 +82,19 @@ const articleObject: ArticleT = {
         "Validation and Qualification",
         "Microbiology",
         "Good Manufacturing Practices (GMP)",
-        "Quality Control"
+        "Quality Control",
       ],
     },
   ],
 };
 
 export default function Content() {
+  const { state } = useJournal();
+
+  const showLoader = state.status === "loading";
+
   const location = useLocation().pathname;
+
   const preventDefaultDelegate = (e: any) => {
     e.preventDefault();
   };
@@ -95,7 +102,6 @@ export default function Content() {
   useEffect(() => {
     // Update the document title using the browser API
     // disable right click
-    console.log("location is", location);
     if (location !== "/article") {
       document.removeEventListener("contextmenu", preventDefaultDelegate);
     } else {
@@ -105,6 +111,7 @@ export default function Content() {
 
   return (
     <main className="flex-shrink-0">
+      {showLoader && <Spinner />}
       <Routes>
         <Route path="home" element={<Home />} />
         <Route path="article" element={<Article data={articleObject} />} />

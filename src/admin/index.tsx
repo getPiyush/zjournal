@@ -8,7 +8,7 @@ import Header from "./Header";
 
 export default function Admin() {
 
-  const { dispatch } = useJournal();
+  const {dispatch} = useJournal();
 
   useEffect(() => {
     getJournalFromDB(dispatch);

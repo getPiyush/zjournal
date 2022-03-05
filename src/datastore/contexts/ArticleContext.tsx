@@ -2,7 +2,9 @@ import * as React from "react";
 import { ArticleT } from "../../Types";
 
 type Action =
-  | { type: "update_article"; value: ArticleT }
+  | { type: "get_article_by_category"; value: ArticleT[] }
+  | {type:"get_article_by_category_loading"}
+  | {type:"get_article_by_category_error"}
   | { type: "add_article"; value: ArticleT };
 
 type Dispatch = (action: Action) => void;
@@ -17,33 +19,42 @@ const defaultArticle = {
   content: []
 };
 
-type State = { article: ArticleT };
+type State = { articles: ArticleT[],  status: string };
 
-type ArticleProviderProps = { children: React.ReactNode };
 
 const ArticleStateContext = React.createContext<
   { state: State; dispatch: Dispatch } | undefined
 >(undefined);
 
 function articleReducer(state: State, action: Action) {
-  console.log(action);
   switch (action.type) {
-    case "update_article": {
-      return { article: action.value };
+
+
+    case "get_article_by_category_loading": {
+      return { status: "loading", articles:state.articles };
     }
 
+    case "get_article_by_category": {
+      return { articles: action.value, status: "success" };
+    }
+
+    case "get_article_by_category_error": {
+      return {  status: "error", articles: state.articles };
+    }
     default: {
       throw new Error(`Unhandled action type: ${action}`);
     }
   }
 }
 
+type ArticleProviderProps = { children: React.ReactNode };
+
 function ArticleProvider({ children }: ArticleProviderProps) {
   const [state, dispatch] = React.useReducer(articleReducer, {
-    article: defaultArticle,
+    articles: [defaultArticle],
+    status:""
   });
-  // NOTE: you *might* need to memoize this value
-  // Learn more in http://kcd.im/optimize-context
+
   const value = { state, dispatch };
   return (
     <ArticleStateContext.Provider value={value}>

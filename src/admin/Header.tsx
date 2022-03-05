@@ -10,7 +10,7 @@ export default function Header() {
           <img
             width="50px"
             style={{ padding: "8px" }}
-            src="images/favicons/apple-touch-icon-57x57-precomposed.png"
+            src="/images/favicons/apple-touch-icon-57x57-precomposed.png"
           />
           Admin Panel
         </a>

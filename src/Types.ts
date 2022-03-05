@@ -18,3 +18,11 @@ export type ArticleT = {
   content: ComponentObject[];
 
 } 
+
+export type Journal = {
+  title: string;
+  selectedPage: string;
+  currentArticle: ArticleT;
+  categories: string[];
+  components: string[];
+};
