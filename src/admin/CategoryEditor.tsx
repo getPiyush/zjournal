@@ -32,7 +32,7 @@ export default function CategoryEditor() {
           <div className="category-body">
             <div className="list-group">
               {state?.journal?.categories.length > 0 &&
-                state.journal.categories.map((category) => (
+                state.journal.categories.map((category, index) => (
                   <a
                     className={
                       category === selectedCategory
@@ -41,6 +41,7 @@ export default function CategoryEditor() {
                     }
                     onClick={() => setSelectedcategory(category)}
                     href="#"
+                    key={`key_${index}_${category.replace(/[^A-Z0-9]/gi, "_")}`}
                   >
                     {category}
                   </a>

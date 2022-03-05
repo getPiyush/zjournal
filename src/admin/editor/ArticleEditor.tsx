@@ -137,13 +137,13 @@ export default function ArticleEditor({
       <div className="row">
         <div className="col">
           <div className="top-action-box">
-          <button
-            className="btn btn-primary btn-sm"
-            onClick={onPreviewClick}
-            disabled={article.title === "" || article.content.length === 0}
-          >
-            <i className="bi bi-camera-fill"></i>&nbsp;&nbsp;Preview
-          </button>
+            <button
+              className="btn btn-primary btn-sm"
+              onClick={onPreviewClick}
+              disabled={article.title === "" || article.content.length === 0}
+            >
+              <i className="bi bi-camera-fill"></i>&nbsp;&nbsp;Preview
+            </button>
           </div>
         </div>
       </div>
@@ -176,9 +176,14 @@ export default function ArticleEditor({
               Select component <b>{selectedElement}</b> for Article
             </button>
             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              {jState.journal?.components?.map((componentCode) => {
+              {jState.journal?.components?.map((componentCode, index) => {
                 return (
-                  <li>
+                  <li
+                    key={`key_${index}_${componentCode.replace(
+                      /[^A-Z0-9]/gi,
+                      "_"
+                    )}`}
+                  >
                     <a
                       className={`dropdown-item ${
                         componentCode === selectedElement ? "active" : ""
@@ -213,8 +218,10 @@ export default function ArticleEditor({
               {article.categryId}
             </button>
             <ul className="dropdown-menu" aria-labelledby="categoryDropDown">
-              {jState.journal?.categories?.map((category) => (
-                <li>
+              {jState.journal?.categories?.map((category, index) => (
+                <li
+                  key={`key_${index}_${category.replace(/[^A-Z0-9]/gi, "_")}`}
+                >
                   <a
                     className={`dropdown-item ${
                       category === article.categryId ? "active" : ""

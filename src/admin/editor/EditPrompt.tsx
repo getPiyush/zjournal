@@ -51,7 +51,7 @@ export default function EditPrompt({
   };
 
   const listComponentUpdated = (compData: ComponentObject) => {
-    console.log(compData);
+   // console.log(compData);
     setOutComp(compData);
     setCompData(compData.data);
   };
@@ -67,7 +67,7 @@ export default function EditPrompt({
   };
 
   return (
-    <div id="editPrompt" className="alert alert-light">
+    <div id="editPrompt" className="alert alert-light scrollable">
       <h3>Editing {component.componenType}</h3>
       <hr />
       {getEditComponent()}

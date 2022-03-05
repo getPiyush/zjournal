@@ -22,8 +22,6 @@ export default function ArticleContainer({
     setEditMode(false);
   };
 
-  console.log("Creating New Article...??", article);
-
   const hidePreview = () => {
     setEditMode(true);
   };

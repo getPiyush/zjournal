@@ -14,15 +14,19 @@ export const List = ({ listData }: ListProps) => {
       >
         {listData.numbered && (
           <ol type="1">
-            {listData.data.map((item) => (
-              <li>{item}</li>
+            {listData.data.map((item, index) => (
+              <li key={`key_${index}_${item.replace(/[^A-Z0-9]/gi, "_")}`}>
+                {item}
+              </li>
             ))}
           </ol>
         )}
         {!listData.numbered && (
           <ul>
-            {listData.data.map((item) => (
-              <li>{item}</li>
+            {listData.data.map((item, index) => (
+              <li key={`key_${index}_${item.replace(/[^A-Z0-9]/gi, "_")}`}>
+                {item}
+              </li>
             ))}
           </ul>
         )}
