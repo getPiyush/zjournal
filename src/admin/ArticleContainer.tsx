@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ArticleT } from "../Types";
 import Article from "../web/components/Article/Article";
 import ArticleEditor from "./editor/ArticleEditor";
+import { PageTitle } from "./PageTitle";
 
 type ArticleContainerProps = {
   inArticle: ArticleT;
@@ -21,13 +22,21 @@ export default function ArticleContainer({
     setEditMode(false);
   };
 
+  console.log("Creating New Article...??", article);
+
   const hidePreview = () => {
     setEditMode(true);
   };
 
   return (
-    <div>
-      {editMode && (
+    <div id="editor" className="editor container">      
+    <div className="row">
+        <div className="col">
+        <PageTitle title="Article Editor"/>        </div>
+      </div>
+      <div className="row">
+        <div className="col">
+        {editMode && (
         <ArticleEditor articleIn={article} setPreview={showPreview} />
       )}
       {!editMode && (
@@ -39,7 +48,8 @@ export default function ArticleContainer({
           </div>
           <Article data={article} />
         </React.Fragment>
-      )}
+      )}        </div>
+      </div>
     </div>
   );
 }

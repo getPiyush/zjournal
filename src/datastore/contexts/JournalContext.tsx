@@ -11,7 +11,7 @@ type Action =
   | { type: "update_current_article"; value: ArticleT };
 type Dispatch = (action: Action) => void;
 
-const defaultArticle = {
+const defaultArticle:ArticleT = {
   id: getUid(),
   author: "Piyush Praharaj",
   title: "",
@@ -19,6 +19,7 @@ const defaultArticle = {
   dateModified: new Date(),
   categryId: "NONE",
   content: [],
+  origin:"local"
 };
 
 const defaultJournal = {

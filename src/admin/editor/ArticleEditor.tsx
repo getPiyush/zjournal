@@ -134,10 +134,8 @@ export default function ArticleEditor({
 
   return (
     <React.Fragment>
-      <div id="editor" className="editor container">
         <div className="row">
           <div className="col">
-            <h1>Article Editor</h1>
             <label htmlFor="exampleFormControlInput1" className="form-label">
               Title
             </label>
@@ -238,7 +236,6 @@ export default function ArticleEditor({
             />
           </div>
         </div>
-      </div>
 
       <SidePanelContainer
         pageContent={

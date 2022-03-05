@@ -3,9 +3,10 @@ import { getArticlesBycategory } from "../datastore/actions/ArticleActions";
 import { useArticle } from "../datastore/contexts/ArticleContext";
 import { useJournal } from "../datastore/contexts/JournalContext";
 import ArticlePreview from "./editor/ArticlePreview";
+import { PageTitle } from "./PageTitle";
 
 export default function CategoryEditor() {
-  const { state: state} = useJournal();
+  const { state: state } = useJournal();
 
   const { dispatch, state: articleData } = useArticle();
 
@@ -21,6 +22,11 @@ export default function CategoryEditor() {
 
   return (
     <div className="container">
+      <div className="row">
+        <div className="col">
+          <PageTitle title="Categories" />
+        </div>
+      </div>
       <div className="row">
         <div className="col-3">
           <div className="category-body">
@@ -47,7 +53,7 @@ export default function CategoryEditor() {
             <div className="row">
               <div className="col">
                 <h4>{selectedCategory}</h4>
-                <hr/>
+                <hr />
               </div>
             </div>
             <div className="row">
@@ -57,9 +63,7 @@ export default function CategoryEditor() {
                     <ArticlePreview data={article} />
                   ))
                 ) : (
-                  <div>
-                    No article in this category
-                  </div>
+                  <div>No article in this category</div>
                 )}
               </div>
             </div>

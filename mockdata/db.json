@@ -631,409 +631,418 @@
       "dateModified": "2022-03-05T03:03:27.113Z",
       "categryId": "Production",
       "content": [
-          {
-              "componentId": "l0d9hqlz3m5fv0yu09j",
-              "componenType": "h3",
-              "data": "Babies are adorable. \n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9iat43bvvmq9q5mb",
-              "componenType": "Paragraph",
-              "data": "Even if they may be technically monsters. I mean even human babies can wring out every piece of your soul. So there is no surprise these monster babies are terrifying and some of them even have scary powers to go along with their appearance. From medusa’s daughter to a little phoenix, it is honestly so nice to see these unique pieces of art.",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9ijuvowxutz7i55a",
-              "componenType": "Paragraph",
-              "data": "The artist behind these art pieces is Siswanto and they wanted to create something new rather than just putting a twist on the already old creatures. I mean who hasn’t seen recreations of Medusa or a Hydra? So why not take it in a new direction and see something new? So if you are ready to take a look at some weirdly adorable babies, just scroll below to enjoy.",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9jsuby94yr4as8m",
-              "componenType": "h3",
-              "data": "#1 Gargoyle and Medusa.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9k45npwvbujyns9",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/medusa-gargoyle.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9l2nummqdaulvnam",
-              "componenType": "h2",
-              "data": "#2 Hippogriff Foal.",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9l615p1p1yuhahw8",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/hippogriff.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9le61igirnvy5nio",
-              "componenType": "h3",
-              "data": "#3 Hydra Snakelet.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9lj30dipviiiuh9q",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/hydra.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9ln4jfe49ojozwdf",
-              "componenType": "h3",
-              "data": "#4 Simurgh Pup.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9lq0sbe8a47o0itk",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/simurph.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9nzctw2y7sjmhjme",
-              "componenType": "h3",
-              "data": "#5 Nightmare.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9o2yjjwywnqb5t7k",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/nightmare.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9o6d0zinzz9ycvu",
-              "componenType": "h3",
-              "data": "#6 Dragon Turtlette.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9o9e8zwfeou2bsl",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/dragon-turtlette.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9oc48u7fahi08az",
-              "componenType": "h3",
-              "data": "#7 Medusa’s Daughter.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9oezutf2zvwpnzc",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/medusa-daughter.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9qzdmzbce5o6v5yb",
-              "componenType": "h3",
-              "data": "#8 Phoenix.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9r3dwxi3r5ekuj7c",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/phoenix.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9re7l8h7qkng49er",
-              "componenType": "h3",
-              "data": "#9 Minotaur.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9rhde1e643toxsvj",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/minatour.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9rkb44j6dxrkr159",
-              "componenType": "h3",
-              "data": "#10 Kraken Paralarvae.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9rnfmmrrkzcm916h",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/kraken-baby.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9rr1wg8mdjplmvwe",
-              "componenType": "h3",
-              "data": "#11 Satyr Foal.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9ru0v6trwu04i4s3",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/satyr-foal.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9rwpt7obbzlmjidu",
-              "componenType": "h3",
-              "data": "#12 Sea Lion Puppy.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9s02kua950o0hvp",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/sea-lion-pup.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9s387ob2ozcly19e",
-              "componenType": "h3",
-              "data": "#13 Unicorn Foal.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9s6q43uw1p1bxohn",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/unicorn-foal.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9s8za676ud4wjf1c",
-              "componenType": "h3",
-              "data": "#14 Elder Godspawn.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9sbv7gku6o1gnn0h",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/elder-godspawn.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9za0kx3ih0akt2s",
-              "componenType": "h3",
-              "data": "#15 Owlbear.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9zh3vexm88pc2ynv",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/owlbear.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9zk4qz5mupl5ilxr",
-              "componenType": "h3",
-              "data": "#16 Centaur.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9zptw7tqyyzdim8c",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/centaur.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9zt1cophovdfv0b",
-              "componenType": "h3",
-              "data": "#17 Myconid Sporeling.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0d9zw0dm9r8jzoh1o",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/sporeling.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0da002qg5q36bvg4hl",
-              "componenType": "h3",
-              "data": "#18 Lizardfolk Whelp.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0da03445g3r0bil1nt",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/lizardfolk.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0da05x44vsvv97xuww",
-              "componenType": "h3",
-              "data": "#19 Tatzelwurm Kit.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0da08t5so2grkzwsz",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/tatzelwurm.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0da0c5b9emmptdaoko",
-              "componenType": "h3",
-              "data": "#20 Griffin Hatchlings.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0da0fvkqka8vc48zql",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/griffin.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0da0iwwarricfo3ofj",
-              "componenType": "h3",
-              "data": "#21 Harpy Child.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0da0lz83uxqgzm5o0y",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/harpy-child.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0da0p0t1vpn8x7fwst",
-              "componenType": "h3",
-              "data": "#22 Beithir Hatchling.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0da0sb6m96vtwagfoj",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/beithir-hatchling.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0da0v999mij2tw58l7",
-              "componenType": "h3",
-              "data": "#23 Cocktrice.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0da0xwqv0ts3pvn8rm",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/cocktrice.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0da110dn5fxwwqphzs",
-              "componenType": "h3",
-              "data": "#24 Hound Archon Puppy.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0da13pp8sgpu8xhlm4",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/hound-archon.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0da16bnq3riia7ejk",
-              "componenType": "h3",
-              "data": "#25 Peryton Hinulus.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0da1a4vqxyb931kie",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/peryton.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0da1de2lznypy53jhp",
-              "componenType": "h3",
-              "data": "#26 Tarasque Hatchling.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0da1gbfu32qr727sro",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/tarasque.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0da1j7hhra3p4ys3q4",
-              "componenType": "h3",
-              "data": "#27 Gargoyle Mouldling.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0da1mc5oc2pzmuk3p8",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/gargoyle-mouldling.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0da1pvc1jc1e9due1e",
-              "componenType": "h3",
-              "data": "#28 Pegasus Foal.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0da1sex4alsjojev4l",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/pegasus-foal.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0da39kdxi48etvasy",
-              "componenType": "Paragraph",
-              "data": "Baby Beastiary is a client project back from when I was working at Caravan Studio. It was for a crowdfunding project by Metal Weave Games. They came up with an idea for a baby creatures’ RPG book and I helped them with the visuals.",
-              "numbered": false
-          },
-          {
-              "componentId": "l0dabodjm6mpo0fnpd",
-              "componenType": "Paragraph",
-              "data": "I contributed the most on volume 1 and volume 2, and I helped with art direction. Through this project, I’ve learned a lot about not only how to create baby versions of different creatures that are already well known, but I also learned how to really observe [various little animal details], like their gestures, how they move and the proportions [of their bodies]. -Siswanto",
-              "numbered": false
-          },
-          {
-              "componentId": "l0dae0oiipzuvwdb8rm",
-              "componenType": "h3",
-              "data": "#29 Androsphynx and Gynosphynx.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0dae3pp590tgv7l249",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/androsphynx.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0dae6h6dyudz2abd3",
-              "componenType": "h3",
-              "data": "#30 Djinayni.\n",
-              "numbered": false
-          },
-          {
-              "componentId": "l0dae99rl7e41985sn",
-              "componenType": "Image",
-              "data": "https://creepy.com/wp-content/uploads/2021/07/djinayni.jpg",
-              "numbered": false
-          },
-          {
-              "componentId": "l0dagnhmee2edz4hnlf",
-              "componenType": "Paragraph",
-              "data": "I don’t think I have ever seen monster babies and I can’t say I am disappointed. I would have never imagined them looking like this but then again I don’t go around imagining monster babies or thinking about how Medusa would pro0create. Because the implications there are just horrendous. So let us leave it at that and enjoy these beautiful works of art.",
-              "numbered": false
-          }
+        {
+          "componentId": "l0d9hqlz3m5fv0yu09j",
+          "componenType": "h3",
+          "data": "Babies are adorable. \n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9iat43bvvmq9q5mb",
+          "componenType": "Paragraph",
+          "data": "Even if they may be technically monsters. I mean even human babies can wring out every piece of your soul. So there is no surprise these monster babies are terrifying and some of them even have scary powers to go along with their appearance. From medusa’s daughter to a little phoenix, it is honestly so nice to see these unique pieces of art.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9ijuvowxutz7i55a",
+          "componenType": "Paragraph",
+          "data": "The artist behind these art pieces is Siswanto and they wanted to create something new rather than just putting a twist on the already old creatures. I mean who hasn’t seen recreations of Medusa or a Hydra? So why not take it in a new direction and see something new? So if you are ready to take a look at some weirdly adorable babies, just scroll below to enjoy.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9jsuby94yr4as8m",
+          "componenType": "h3",
+          "data": "#1 Gargoyle and Medusa.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9k45npwvbujyns9",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/medusa-gargoyle.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9l2nummqdaulvnam",
+          "componenType": "h2",
+          "data": "#2 Hippogriff Foal.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9l615p1p1yuhahw8",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/hippogriff.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9le61igirnvy5nio",
+          "componenType": "h3",
+          "data": "#3 Hydra Snakelet.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9lj30dipviiiuh9q",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/hydra.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9ln4jfe49ojozwdf",
+          "componenType": "h3",
+          "data": "#4 Simurgh Pup.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9lq0sbe8a47o0itk",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/simurph.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9nzctw2y7sjmhjme",
+          "componenType": "h3",
+          "data": "#5 Nightmare.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9o2yjjwywnqb5t7k",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/nightmare.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9o6d0zinzz9ycvu",
+          "componenType": "h3",
+          "data": "#6 Dragon Turtlette.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9o9e8zwfeou2bsl",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/dragon-turtlette.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9oc48u7fahi08az",
+          "componenType": "h3",
+          "data": "#7 Medusa’s Daughter.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9oezutf2zvwpnzc",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/medusa-daughter.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9qzdmzbce5o6v5yb",
+          "componenType": "h3",
+          "data": "#8 Phoenix.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9r3dwxi3r5ekuj7c",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/phoenix.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9re7l8h7qkng49er",
+          "componenType": "h3",
+          "data": "#9 Minotaur.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9rhde1e643toxsvj",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/minatour.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9rkb44j6dxrkr159",
+          "componenType": "h3",
+          "data": "#10 Kraken Paralarvae.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9rnfmmrrkzcm916h",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/kraken-baby.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9rr1wg8mdjplmvwe",
+          "componenType": "h3",
+          "data": "#11 Satyr Foal.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9ru0v6trwu04i4s3",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/satyr-foal.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9rwpt7obbzlmjidu",
+          "componenType": "h3",
+          "data": "#12 Sea Lion Puppy.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9s02kua950o0hvp",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/sea-lion-pup.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9s387ob2ozcly19e",
+          "componenType": "h3",
+          "data": "#13 Unicorn Foal.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9s6q43uw1p1bxohn",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/unicorn-foal.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9s8za676ud4wjf1c",
+          "componenType": "h3",
+          "data": "#14 Elder Godspawn.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9sbv7gku6o1gnn0h",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/elder-godspawn.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9za0kx3ih0akt2s",
+          "componenType": "h3",
+          "data": "#15 Owlbear.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9zh3vexm88pc2ynv",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/owlbear.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9zk4qz5mupl5ilxr",
+          "componenType": "h3",
+          "data": "#16 Centaur.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9zptw7tqyyzdim8c",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/centaur.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9zt1cophovdfv0b",
+          "componenType": "h3",
+          "data": "#17 Myconid Sporeling.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0d9zw0dm9r8jzoh1o",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/sporeling.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0da002qg5q36bvg4hl",
+          "componenType": "h3",
+          "data": "#18 Lizardfolk Whelp.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0da03445g3r0bil1nt",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/lizardfolk.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0da05x44vsvv97xuww",
+          "componenType": "h3",
+          "data": "#19 Tatzelwurm Kit.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0da08t5so2grkzwsz",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/tatzelwurm.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0da0c5b9emmptdaoko",
+          "componenType": "h3",
+          "data": "#20 Griffin Hatchlings.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0da0fvkqka8vc48zql",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/griffin.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0da0iwwarricfo3ofj",
+          "componenType": "h3",
+          "data": "#21 Harpy Child.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0da0lz83uxqgzm5o0y",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/harpy-child.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0da0p0t1vpn8x7fwst",
+          "componenType": "h3",
+          "data": "#22 Beithir Hatchling.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0da0sb6m96vtwagfoj",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/beithir-hatchling.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0da0v999mij2tw58l7",
+          "componenType": "h3",
+          "data": "#23 Cocktrice.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0da0xwqv0ts3pvn8rm",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/cocktrice.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0da110dn5fxwwqphzs",
+          "componenType": "h3",
+          "data": "#24 Hound Archon Puppy.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0da13pp8sgpu8xhlm4",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/hound-archon.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0da16bnq3riia7ejk",
+          "componenType": "h3",
+          "data": "#25 Peryton Hinulus.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0da1a4vqxyb931kie",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/peryton.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0da1de2lznypy53jhp",
+          "componenType": "h3",
+          "data": "#26 Tarasque Hatchling.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0da1gbfu32qr727sro",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/tarasque.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0da1j7hhra3p4ys3q4",
+          "componenType": "h3",
+          "data": "#27 Gargoyle Mouldling.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0da1mc5oc2pzmuk3p8",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/gargoyle-mouldling.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0da1pvc1jc1e9due1e",
+          "componenType": "h3",
+          "data": "#28 Pegasus Foal.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0da1sex4alsjojev4l",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/pegasus-foal.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0da39kdxi48etvasy",
+          "componenType": "Paragraph",
+          "data": "Baby Beastiary is a client project back from when I was working at Caravan Studio. It was for a crowdfunding project by Metal Weave Games. They came up with an idea for a baby creatures’ RPG book and I helped them with the visuals.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0dabodjm6mpo0fnpd",
+          "componenType": "Paragraph",
+          "data": "I contributed the most on volume 1 and volume 2, and I helped with art direction. Through this project, I’ve learned a lot about not only how to create baby versions of different creatures that are already well known, but I also learned how to really observe [various little animal details], like their gestures, how they move and the proportions [of their bodies]. -Siswanto",
+          "numbered": false
+        },
+        {
+          "componentId": "l0dae0oiipzuvwdb8rm",
+          "componenType": "h3",
+          "data": "#29 Androsphynx and Gynosphynx.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0dae3pp590tgv7l249",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/androsphynx.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0dae6h6dyudz2abd3",
+          "componenType": "h3",
+          "data": "#30 Djinayni.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0dae99rl7e41985sn",
+          "componenType": "Image",
+          "data": "https://creepy.com/wp-content/uploads/2021/07/djinayni.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0dagnhmee2edz4hnlf",
+          "componenType": "Paragraph",
+          "data": "I don’t think I have ever seen monster babies and I can’t say I am disappointed. I would have never imagined them looking like this but then again I don’t go around imagining monster babies or thinking about how Medusa would pro0create. Because the implications there are just horrendous. So let us leave it at that and enjoy these beautiful works of art.",
+          "numbered": false
+        }
       ]
-  }
+    }
   ],
   "journal": {
     "title": "zJournal Default Title from mock server",
     "selectedPage": "home",
-    "currentArticle": {},
+    "currentArticle": {
+      "id": "l0d9gt5574sh2c54t5l",
+      "author": "Piyush Praharaj",
+      "title": "No Title",
+      "dateCreated": "2022-03-05T03:03:27.113Z",
+      "dateModified": "2022-03-05T03:03:27.113Z",
+      "categryId": "Production",
+      "content": [],
+      "source": "local"
+    },
     "categories": [
       "Production",
       "Quality Assurance",
@@ -1043,7 +1052,7 @@
       "Good Manufacturing Practices (GMP)",
       "Quality Control"
     ],
-    "components" : [
+    "components": [
       "h2",
       "h3",
       "h4",

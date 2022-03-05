@@ -16,7 +16,7 @@ export type ArticleT = {
   dateModified: Date;
   categryId: string;
   content: ComponentObject[];
-
+  origin: "server" | "local";
 } 
 
 export type Journal = {
