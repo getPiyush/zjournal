@@ -9,6 +9,7 @@
   ],
   "main": "src/index.tsx",
   "dependencies": {
+    "axios": "^0.26.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-router-dom": "6.2.1",
@@ -19,6 +20,7 @@
     "@types/jest": "^27.4.0",
     "@types/react": "17.0.20",
     "@types/react-dom": "17.0.9",
+    "concurrently": "^7.0.0",
     "json-server": "^0.17.0",
     "random-sentence": "^1.0.4",
     "typescript": "4.4.2"
@@ -28,7 +30,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "mockserver": "json-server --watch mockdata/db.json --port 3004"
+    "server": "json-server --watch mockdata/db.json --port 3004",
+    "dev": "concurrently \"yarn start\" \"yarn server\""
   },
   "browserslist": [
     ">0.2%",

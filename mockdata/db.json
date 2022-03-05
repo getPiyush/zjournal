@@ -1,6 +1,44 @@
 {
   "articles": [
     {
+      "id": "l043ho1m9wfm9pzmnmo",
+      "author": "Piyush Praharaj",
+      "title": "Russia's unprovoked attack on Ukraine",
+      "dateCreated": "2022-02-26T17:06:13.882Z",
+      "dateModified": "2022-02-26T17:06:13.882Z",
+      "categryId": "Quality Control",
+      "content": [
+        {
+          "componentId": "l043hvdedlksyiv271q",
+          "componenType": "h2",
+          "data": "David O'Sullivan , European Policy Centre\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l043i41xehuvpu5dgod",
+          "componenType": "List",
+          "data": [
+            "The European Policy Centre strongly condemns Russia’s unprovoked invasion of Ukraine. Its latest",
+            "Our mission and work as an organisation are dedicated to upholding and advocating democracy",
+            "The time that we thought an all-out war could never touch Europe again is over."
+          ],
+          "numbered": true
+        },
+        {
+          "componentId": "l043l1t1sv4cvd4lvj",
+          "componenType": "Image",
+          "data": "https://th.bing.com/th/id/OIF.3zquymNudo0s7YF4zJuPFg?pid=ImgDet&rs=1",
+          "numbered": false
+        },
+        {
+          "componentId": "l043lkwgh0o2pxo8ey8",
+          "componenType": "Paragraph",
+          "data": "The European Policy Centre strongly condemns Russia’s unprovoked invasion of Ukraine. Its latest acts of military aggression are horrific, unjustified and are in gross violation of international law. There is no doubt their attack will lead to immense human suffering and loss of life.\n\nIt is the people of Ukraine that are now at the forefront of our minds. As they brave death and destruction and valiantly defend their country against Russian terror, we stand by Ukraine and unequivocally support its right as a sovereign state to determine its own future. In the words of European Commission President von der Leyen, “we will not let Russia replace the rule of law with the rule of force and ruthlessness”.\n\nOur mission and work as an organisation are dedicated to upholding and advocating democracy, international cooperation, solidarity, and truth-telling – all the things Putin’s regime abhors and is trying to undo with this act of war. In solidarity with our Ukrainian friends and to keep the free Ukrainian voice in the debate, we are offering free EPC membership to any Ukrainian institution, think tank, and NGO committed to a free and democratic Ukraine.\n\nMake no mistake. What is happening in Ukraine is a direct threat to the global and European security orders put in place 75 years ago. It is a direct threat to the European Union and what it stands for. It is a direct threat to independent liberal democracies everywhere and the values we hold dear: freedom, plurality, equality and respect for the rule of law.\n\nThe time that we thought an all-out war could never touch Europe again is over. But although the situation is bleak, we must take heart in the renewed resolve of the EU and the transatlantic alliance to act together and defend those values. Every time we honour our commitments to our partners, our agreements and our ideals, we prove the likes of Putin wrong and demonstrate that the way forward is not by brute power. In the face of relentless obfuscation and blind aggression, the European Policy Centre is more committed than ever to championing those ideas.",
+          "numbered": false
+        }
+      ]
+    },
+    {
       "id": "kzzua95cipc28wgefia",
       "author": "Piyush Praharaj",
       "title": "What is Genetics?",
@@ -502,100 +540,518 @@
       "dateModified": "2022-02-24T19:01:50.471Z",
       "categryId": "Engineering",
       "content": [
+        {
+          "componentId": "l01ctyva045rjqlwmiaq",
+          "componenType": "List",
+          "data": [
+            "NASA's image shows the same star but captured 18 times by the space telescope",
+            "Dots of starlight are arranged like the honeycomb shape of its big golden mirror",
+            "Lift-off of the next-gen telescope from Guiana finally occurred on Christmas Day"
+          ],
+          "numbered": false
+        },
+        {
+          "componentId": "l01cvv0b6zihflkn65g",
+          "componenType": "Paragraph",
+          "data": "NASA's James Webb space telescope has snapped an incredible photo of a single star from all 18 of its mirrors – confirming the spacecraft can now see starlight.\n\nThe new photo shows the 18 unfocused copies of a single sun-like star – called HD 84406 in the constellation Ursa Major – in a hexagonal formation, similar to the honeycomb shape of James Webb's primary mirror. \n\nThis stunning shot marks the first stage of aligning James Webb's 21-foot primary mirror, which consists of 18 hexagonal segments of gold-plated beryllium metal. \n\nNext, the telescope will bring the 18 images into focus before aligning them into one, perfectly clear image of the star. \n\nJames Webb Space Telescope blasted off from Guiana Space Centre on Christmas Day and settled into its orbit one million miles from our planet last month.\n\nThe $10 billion (£7.4 billion) observatory is currently undergoing a three-month 'alignment process' to be ready to observe the universe.   ",
+          "numbered": false
+        },
+        {
+          "componentId": "l01cwezf0l3vp1emb4c",
+          "componenType": "Image",
+          "data": "https://i.dailymail.co.uk/1s/2022/02/21/08/54452619-10534523-image-a-1_1645432328564.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l01cx6k3hkgjxwn6pkn",
+          "componenType": "Paragraph",
+          "data": "This early Webb alignment image, called an 'image array', shows dots of starlight arranged in a pattern similar to the honeycomb shape of the primary mirror",
+          "numbered": false
+        },
+        {
+          "componentId": "l01cy9we1mxffebsmxi",
+          "componenType": "Image",
+          "data": "https://i.dailymail.co.uk/1s/2022/02/21/09/54452617-10534523-This_image_mosaic_which_shows_18_randomly_positioned_copies_of_t-a-10_1645435551133.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l01cywko1xe3q7gxn14j",
+          "componenType": "Paragraph",
+          "data": "This image mosaic, which shows 18 randomly positioned copies of the same star, served as the starting point for the alignment process",
+          "numbered": false
+        },
+        {
+          "componentId": "l01czjtdqg2tfb0dvnq",
+          "componenType": "Image",
+          "data": "https://i.dailymail.co.uk/1s/2022/01/13/12/52586629-10398373-It_is_supported_by_three_shallow_carbon_fiber_tubes_or_struts_th-a-3_1642076896334.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l01d07fvmoq11gh8da8",
+          "componenType": "Paragraph",
+          "data": "James Webb's primary mirror consists of 18 hexagonal segments of gold-plated beryllium metal, and measures 21 feet 4 inches (6.5 metres) in diameter. It is supported by three shallow carbon fiber tubes, or struts, that extend outwards",
+          "numbered": false
+        },
+        {
+          "componentId": "l01d0tn9enubniyri1",
+          "componenType": "Paragraph",
+          "data": "NASA has described the new photo, which it refers to as 'image array', in a newly-published blog post.",
+          "numbered": false
+        },
+        {
+          "componentId": "l01d2egmhkqs37g74ki",
+          "componenType": "h4",
+          "data": "Instruments on the James Webb Space Telescope",
+          "numbered": false
+        },
+        {
+          "componentId": "l01d2xay8y8yrpsot0f",
+          "componenType": "List",
+          "data": [
+            "NIRCam (Near InfraRed Camera) an infrared imager from the edge of the visible through the near infrared",
+            "NIRSpec (Near InfraRed Spectrograph) will also perform spectroscopy over the same wavelength range.",
+            "MIRI (Mid-InfraRed Instrument) will measure the mid-to-long-infrared wavelength range from 5 to 27 micrometers.",
+            "FGS/NIRISS (Fine Guidance Sensor and Near Infrared Imager and Slitless Spectrograph), is used to stabilize the line-of-sight of the observatory during science observations."
+          ],
+          "numbered": false
+        },
+        {
+          "componentId": "l01d5s2drlek6yi2qb",
+          "componenType": "Paragraph",
+          "data": "It's the result of all 18 of the primary mirror's segments reflecting light from the star back at its secondary mirror and into the telescope's main camera, called the Near-Infrared Camera (NIRCam).\n\n'The resulting image shows that the team has moved each of Webb's 18 primary mirror segments to bring 18 unfocused copies of a single star into a planned hexagonal formation,' NASA said.\n\n'With the image array complete, the team has now begun the second phase of alignment: \"Segment Alignment\".'\n\nDuring Segment Alignment, the James Webb engineers on the ground will update the alignment of the secondary mirror to make each individual dot of starlight more focused. \n\nWhen this 'global alignment' is complete, the team will begin the third phase, called 'Image Stacking', which will bring the 18 spots of light on top of each other to create one composite of HD 84406. \n\n'We steer the segment dots into this array so that they have the same relative locations as the physical mirrors,' said Matthew Lallo, systems scientist at the Space Telescope Science Institute, the mission operations center for James Webb.\n\n'During global alignment and Image Stacking, this familiar arrangement gives the wavefront team an intuitive and natural way of visualising changes in the segment spots in the context of the entire primary mirror. \n\n'We can now actually watch the primary mirror slowly form into its precise, intended shape!' \n\nAnother version of the new image shows each dot of starlight labeled with the corresponding mirror segment that captured it.  ",
+          "numbered": false
+        }
+      ]
+    },
+    {
+      "id": "l0d9gt5574sh2c54t5l",
+      "author": "Piyush Praharaj",
+      "title": "Artist Illustrates Mystical Creatures As Babies And They Look ‘Dangerously’ Cute",
+      "dateCreated": "2022-03-05T03:03:27.113Z",
+      "dateModified": "2022-03-05T03:03:27.113Z",
+      "categryId": "Production",
+      "content": [
           {
-              "componentId": "l01ctyva045rjqlwmiaq",
-              "componenType": "List",
-              "data": [
-                  "NASA's image shows the same star but captured 18 times by the space telescope",
-                  "Dots of starlight are arranged like the honeycomb shape of its big golden mirror",
-                  "Lift-off of the next-gen telescope from Guiana finally occurred on Christmas Day"
-              ],
+              "componentId": "l0d9hqlz3m5fv0yu09j",
+              "componenType": "h3",
+              "data": "Babies are adorable. \n",
               "numbered": false
           },
           {
-              "componentId": "l01cvv0b6zihflkn65g",
+              "componentId": "l0d9iat43bvvmq9q5mb",
               "componenType": "Paragraph",
-              "data": "NASA's James Webb space telescope has snapped an incredible photo of a single star from all 18 of its mirrors – confirming the spacecraft can now see starlight.\n\nThe new photo shows the 18 unfocused copies of a single sun-like star – called HD 84406 in the constellation Ursa Major – in a hexagonal formation, similar to the honeycomb shape of James Webb's primary mirror. \n\nThis stunning shot marks the first stage of aligning James Webb's 21-foot primary mirror, which consists of 18 hexagonal segments of gold-plated beryllium metal. \n\nNext, the telescope will bring the 18 images into focus before aligning them into one, perfectly clear image of the star. \n\nJames Webb Space Telescope blasted off from Guiana Space Centre on Christmas Day and settled into its orbit one million miles from our planet last month.\n\nThe $10 billion (£7.4 billion) observatory is currently undergoing a three-month 'alignment process' to be ready to observe the universe.   ",
+              "data": "Even if they may be technically monsters. I mean even human babies can wring out every piece of your soul. So there is no surprise these monster babies are terrifying and some of them even have scary powers to go along with their appearance. From medusa’s daughter to a little phoenix, it is honestly so nice to see these unique pieces of art.",
               "numbered": false
           },
           {
-              "componentId": "l01cwezf0l3vp1emb4c",
+              "componentId": "l0d9ijuvowxutz7i55a",
+              "componenType": "Paragraph",
+              "data": "The artist behind these art pieces is Siswanto and they wanted to create something new rather than just putting a twist on the already old creatures. I mean who hasn’t seen recreations of Medusa or a Hydra? So why not take it in a new direction and see something new? So if you are ready to take a look at some weirdly adorable babies, just scroll below to enjoy.",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9jsuby94yr4as8m",
+              "componenType": "h3",
+              "data": "#1 Gargoyle and Medusa.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9k45npwvbujyns9",
               "componenType": "Image",
-              "data": "https://i.dailymail.co.uk/1s/2022/02/21/08/54452619-10534523-image-a-1_1645432328564.jpg",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/medusa-gargoyle.jpg",
               "numbered": false
           },
           {
-              "componentId": "l01cx6k3hkgjxwn6pkn",
-              "componenType": "Paragraph",
-              "data": "This early Webb alignment image, called an 'image array', shows dots of starlight arranged in a pattern similar to the honeycomb shape of the primary mirror",
+              "componentId": "l0d9l2nummqdaulvnam",
+              "componenType": "h2",
+              "data": "#2 Hippogriff Foal.",
               "numbered": false
           },
           {
-              "componentId": "l01cy9we1mxffebsmxi",
+              "componentId": "l0d9l615p1p1yuhahw8",
               "componenType": "Image",
-              "data": "https://i.dailymail.co.uk/1s/2022/02/21/09/54452617-10534523-This_image_mosaic_which_shows_18_randomly_positioned_copies_of_t-a-10_1645435551133.jpg",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/hippogriff.jpg",
               "numbered": false
           },
           {
-              "componentId": "l01cywko1xe3q7gxn14j",
-              "componenType": "Paragraph",
-              "data": "This image mosaic, which shows 18 randomly positioned copies of the same star, served as the starting point for the alignment process",
+              "componentId": "l0d9le61igirnvy5nio",
+              "componenType": "h3",
+              "data": "#3 Hydra Snakelet.\n",
               "numbered": false
           },
           {
-              "componentId": "l01czjtdqg2tfb0dvnq",
+              "componentId": "l0d9lj30dipviiiuh9q",
               "componenType": "Image",
-              "data": "https://i.dailymail.co.uk/1s/2022/01/13/12/52586629-10398373-It_is_supported_by_three_shallow_carbon_fiber_tubes_or_struts_th-a-3_1642076896334.jpg",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/hydra.jpg",
               "numbered": false
           },
           {
-              "componentId": "l01d07fvmoq11gh8da8",
+              "componentId": "l0d9ln4jfe49ojozwdf",
+              "componenType": "h3",
+              "data": "#4 Simurgh Pup.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9lq0sbe8a47o0itk",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/simurph.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9nzctw2y7sjmhjme",
+              "componenType": "h3",
+              "data": "#5 Nightmare.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9o2yjjwywnqb5t7k",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/nightmare.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9o6d0zinzz9ycvu",
+              "componenType": "h3",
+              "data": "#6 Dragon Turtlette.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9o9e8zwfeou2bsl",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/dragon-turtlette.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9oc48u7fahi08az",
+              "componenType": "h3",
+              "data": "#7 Medusa’s Daughter.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9oezutf2zvwpnzc",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/medusa-daughter.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9qzdmzbce5o6v5yb",
+              "componenType": "h3",
+              "data": "#8 Phoenix.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9r3dwxi3r5ekuj7c",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/phoenix.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9re7l8h7qkng49er",
+              "componenType": "h3",
+              "data": "#9 Minotaur.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9rhde1e643toxsvj",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/minatour.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9rkb44j6dxrkr159",
+              "componenType": "h3",
+              "data": "#10 Kraken Paralarvae.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9rnfmmrrkzcm916h",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/kraken-baby.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9rr1wg8mdjplmvwe",
+              "componenType": "h3",
+              "data": "#11 Satyr Foal.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9ru0v6trwu04i4s3",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/satyr-foal.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9rwpt7obbzlmjidu",
+              "componenType": "h3",
+              "data": "#12 Sea Lion Puppy.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9s02kua950o0hvp",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/sea-lion-pup.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9s387ob2ozcly19e",
+              "componenType": "h3",
+              "data": "#13 Unicorn Foal.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9s6q43uw1p1bxohn",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/unicorn-foal.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9s8za676ud4wjf1c",
+              "componenType": "h3",
+              "data": "#14 Elder Godspawn.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9sbv7gku6o1gnn0h",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/elder-godspawn.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9za0kx3ih0akt2s",
+              "componenType": "h3",
+              "data": "#15 Owlbear.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9zh3vexm88pc2ynv",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/owlbear.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9zk4qz5mupl5ilxr",
+              "componenType": "h3",
+              "data": "#16 Centaur.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9zptw7tqyyzdim8c",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/centaur.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9zt1cophovdfv0b",
+              "componenType": "h3",
+              "data": "#17 Myconid Sporeling.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0d9zw0dm9r8jzoh1o",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/sporeling.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0da002qg5q36bvg4hl",
+              "componenType": "h3",
+              "data": "#18 Lizardfolk Whelp.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0da03445g3r0bil1nt",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/lizardfolk.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0da05x44vsvv97xuww",
+              "componenType": "h3",
+              "data": "#19 Tatzelwurm Kit.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0da08t5so2grkzwsz",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/tatzelwurm.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0da0c5b9emmptdaoko",
+              "componenType": "h3",
+              "data": "#20 Griffin Hatchlings.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0da0fvkqka8vc48zql",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/griffin.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0da0iwwarricfo3ofj",
+              "componenType": "h3",
+              "data": "#21 Harpy Child.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0da0lz83uxqgzm5o0y",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/harpy-child.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0da0p0t1vpn8x7fwst",
+              "componenType": "h3",
+              "data": "#22 Beithir Hatchling.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0da0sb6m96vtwagfoj",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/beithir-hatchling.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0da0v999mij2tw58l7",
+              "componenType": "h3",
+              "data": "#23 Cocktrice.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0da0xwqv0ts3pvn8rm",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/cocktrice.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0da110dn5fxwwqphzs",
+              "componenType": "h3",
+              "data": "#24 Hound Archon Puppy.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0da13pp8sgpu8xhlm4",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/hound-archon.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0da16bnq3riia7ejk",
+              "componenType": "h3",
+              "data": "#25 Peryton Hinulus.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0da1a4vqxyb931kie",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/peryton.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0da1de2lznypy53jhp",
+              "componenType": "h3",
+              "data": "#26 Tarasque Hatchling.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0da1gbfu32qr727sro",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/tarasque.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0da1j7hhra3p4ys3q4",
+              "componenType": "h3",
+              "data": "#27 Gargoyle Mouldling.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0da1mc5oc2pzmuk3p8",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/gargoyle-mouldling.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0da1pvc1jc1e9due1e",
+              "componenType": "h3",
+              "data": "#28 Pegasus Foal.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0da1sex4alsjojev4l",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/pegasus-foal.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0da39kdxi48etvasy",
               "componenType": "Paragraph",
-              "data": "James Webb's primary mirror consists of 18 hexagonal segments of gold-plated beryllium metal, and measures 21 feet 4 inches (6.5 metres) in diameter. It is supported by three shallow carbon fiber tubes, or struts, that extend outwards",
+              "data": "Baby Beastiary is a client project back from when I was working at Caravan Studio. It was for a crowdfunding project by Metal Weave Games. They came up with an idea for a baby creatures’ RPG book and I helped them with the visuals.",
               "numbered": false
           },
           {
-              "componentId": "l01d0tn9enubniyri1",
+              "componentId": "l0dabodjm6mpo0fnpd",
               "componenType": "Paragraph",
-              "data": "NASA has described the new photo, which it refers to as 'image array', in a newly-published blog post.",
+              "data": "I contributed the most on volume 1 and volume 2, and I helped with art direction. Through this project, I’ve learned a lot about not only how to create baby versions of different creatures that are already well known, but I also learned how to really observe [various little animal details], like their gestures, how they move and the proportions [of their bodies]. -Siswanto",
               "numbered": false
           },
           {
-              "componentId": "l01d2egmhkqs37g74ki",
-              "componenType": "h4",
-              "data": "Instruments on the James Webb Space Telescope",
+              "componentId": "l0dae0oiipzuvwdb8rm",
+              "componenType": "h3",
+              "data": "#29 Androsphynx and Gynosphynx.\n",
               "numbered": false
           },
           {
-              "componentId": "l01d2xay8y8yrpsot0f",
-              "componenType": "List",
-              "data": [
-                  "NIRCam (Near InfraRed Camera) an infrared imager from the edge of the visible through the near infrared",
-                  "NIRSpec (Near InfraRed Spectrograph) will also perform spectroscopy over the same wavelength range.",
-                  "MIRI (Mid-InfraRed Instrument) will measure the mid-to-long-infrared wavelength range from 5 to 27 micrometers.",
-                  "FGS/NIRISS (Fine Guidance Sensor and Near Infrared Imager and Slitless Spectrograph), is used to stabilize the line-of-sight of the observatory during science observations."
-              ],
+              "componentId": "l0dae3pp590tgv7l249",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/androsphynx.jpg",
               "numbered": false
           },
           {
-              "componentId": "l01d5s2drlek6yi2qb",
+              "componentId": "l0dae6h6dyudz2abd3",
+              "componenType": "h3",
+              "data": "#30 Djinayni.\n",
+              "numbered": false
+          },
+          {
+              "componentId": "l0dae99rl7e41985sn",
+              "componenType": "Image",
+              "data": "https://creepy.com/wp-content/uploads/2021/07/djinayni.jpg",
+              "numbered": false
+          },
+          {
+              "componentId": "l0dagnhmee2edz4hnlf",
               "componenType": "Paragraph",
-              "data": "It's the result of all 18 of the primary mirror's segments reflecting light from the star back at its secondary mirror and into the telescope's main camera, called the Near-Infrared Camera (NIRCam).\n\n'The resulting image shows that the team has moved each of Webb's 18 primary mirror segments to bring 18 unfocused copies of a single star into a planned hexagonal formation,' NASA said.\n\n'With the image array complete, the team has now begun the second phase of alignment: \"Segment Alignment\".'\n\nDuring Segment Alignment, the James Webb engineers on the ground will update the alignment of the secondary mirror to make each individual dot of starlight more focused. \n\nWhen this 'global alignment' is complete, the team will begin the third phase, called 'Image Stacking', which will bring the 18 spots of light on top of each other to create one composite of HD 84406. \n\n'We steer the segment dots into this array so that they have the same relative locations as the physical mirrors,' said Matthew Lallo, systems scientist at the Space Telescope Science Institute, the mission operations center for James Webb.\n\n'During global alignment and Image Stacking, this familiar arrangement gives the wavefront team an intuitive and natural way of visualising changes in the segment spots in the context of the entire primary mirror. \n\n'We can now actually watch the primary mirror slowly form into its precise, intended shape!' \n\nAnother version of the new image shows each dot of starlight labeled with the corresponding mirror segment that captured it.  ",
+              "data": "I don’t think I have ever seen monster babies and I can’t say I am disappointed. I would have never imagined them looking like this but then again I don’t go around imagining monster babies or thinking about how Medusa would pro0create. Because the implications there are just horrendous. So let us leave it at that and enjoy these beautiful works of art.",
               "numbered": false
           }
       ]
   }
   ],
-  "categories": [
-    "Production",
-    "Quality Assurance",
-    "Engineering",
-    "Validation and Qualification",
-    "Microbiology",
-    "Good Manufacturing Practices (GMP)",
-    "Quality Control"
-  ],
-  "profile": {
-    "name": "ee"
+  "journal": {
+    "title": "zJournal Default Title from mock server",
+    "selectedPage": "home",
+    "currentArticle": {},
+    "categories": [
+      "Production",
+      "Quality Assurance",
+      "Engineering",
+      "Validation and Qualification",
+      "Microbiology",
+      "Good Manufacturing Practices (GMP)",
+      "Quality Control"
+    ],
+    "components" : [
+      "h2",
+      "h3",
+      "h4",
+      "h5",
+      "Image",
+      "Paragraph",
+      "List",
+      "Table"
+    ]
   }
 }

@@ -27,6 +27,12 @@ body {
   border-bottom: 1px solid rgb(13 110 253 / 25%) !important;
 }
 
+.footer{
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  border-top: 1px solid rgb(13 110 253 / 25%) !important;
+}
+
 .navbar-nav .nav-item .nav-link {
   margin: 0px 8px 0px 8px;
 }

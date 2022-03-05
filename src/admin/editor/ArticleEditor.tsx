@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useJournal } from "../../datastore/contexts/JournalContext";
 import { ArticleT, ComponentObject } from "../../Types";
 
 import {
@@ -8,10 +9,10 @@ import {
   setComponentById,
   deleteComponent,
 } from "../../utils/componentUtil";
-import SidePanel from "../../web/components/Panel/SidePanel";
 
 import ArticleContainerEditor from "./ArticleContainerEditor";
 import EditPrompt from "./EditPrompt";
+import SidePanelContainer from "./SidePanelContainer";
 
 type ArticleEditorProps = {
   articleIn: ArticleT;
@@ -22,29 +23,11 @@ export default function ArticleEditor({
   articleIn,
   setPreview,
 }: ArticleEditorProps) {
-  const components = [
-    "h2",
-    "h3",
-    "h4",
-    "h5",
-    "Image",
-    "Paragraph",
-    "List",
-    "Table",
-  ];
   const sampleText = "The quick brown fox, jumps over a lazy dog.!?";
-  const categories = [
-    "Production",
-    "Quality Assurance",
-    "Engineering",
-    "Validation and Qualification",
-    "Microbiology",
-    "Good Manufacturing Practices (GMP)",
-    "Quality Control",
-  ];
+
+  const { state: jState } = useJournal();
 
   const [article, setArticle] = useState(articleIn);
-
   const [content, setContent] = useState(articleIn.content);
   const [editMode, setEditMode] = useState(false);
   const [selectedElement, setSelectedElement] = useState("h2");
@@ -114,7 +97,7 @@ export default function ArticleEditor({
   const onAddElementClick = () => {
     const defaultHeader = "Click to Update Text";
     const defaultContent = "Click to Update Content";
-    const defaultImage = "images/placeholder-image.png";
+    const defaultImage = "/images/placeholder-image.png";
     let dynamicData = defaultHeader;
     if (selectedElement === "Image") dynamicData = defaultImage;
     if (selectedElement === "Paragraph") dynamicData = defaultContent;
@@ -185,7 +168,7 @@ export default function ArticleEditor({
                 className="dropdown-menu"
                 aria-labelledby="dropdownMenuButton1"
               >
-                {components.map((componentCode) => {
+                {jState.journal?.components?.map((componentCode) => {
                   return (
                     <li>
                       <a
@@ -222,7 +205,7 @@ export default function ArticleEditor({
                 {article.categryId}
               </button>
               <ul className="dropdown-menu" aria-labelledby="categoryDropDown">
-                {categories.map((category) => (
+                {jState.journal?.categories?.map((category) => (
                   <li>
                     <a
                       className={`dropdown-item ${
@@ -247,17 +230,6 @@ export default function ArticleEditor({
             </button>
           </div>
         </div>
-        {/*editMode && (
-          <div className="row">
-            <div className="col">
-              <EditPrompt
-                onUpdate={onEditUpdate}
-                onCancel={onEditCancel}
-                component={editComponent}
-              />
-            </div>
-          </div>
-        )*/}
         <div className="row">
           <div className="col edit-area">
             <ArticleContainerEditor
@@ -267,7 +239,8 @@ export default function ArticleEditor({
           </div>
         </div>
       </div>
-      <SidePanel
+
+      <SidePanelContainer
         pageContent={
           editMode && (
             <EditPrompt
