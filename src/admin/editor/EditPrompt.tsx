@@ -41,7 +41,7 @@ export default function EditPrompt({
         <textarea
           className="form-control"
           id="dataInputTextAres"
-          rows={3}
+          rows={10}
           onChange={dataChanged}
         >
           {compData}
@@ -50,15 +50,17 @@ export default function EditPrompt({
     );
   };
 
-  const listComponentUpdated = (compData:ComponentObject) =>{
+  const listComponentUpdated = (compData: ComponentObject) => {
     console.log(compData);
     setOutComp(compData);
     setCompData(compData.data);
-  }
+  };
 
   const getEditComponent = () => {
     if (component.componenType === "List") {
-      return <ListEditor listData={outComp} updateListData={listComponentUpdated}/>;
+      return (
+        <ListEditor listData={outComp} updateListData={listComponentUpdated} />
+      );
     } else {
       return getDefaultComponent();
     }
@@ -73,7 +75,7 @@ export default function EditPrompt({
       <div className="editor-action-col-end">
         <button
           type="button"
-          className="btn btn-secondary btn-lg"
+          className="btn btn-secondary btn-md"
           data-bs-dismiss="offcanvas"
           onClick={onCancel}
         >
@@ -81,7 +83,7 @@ export default function EditPrompt({
         </button>
         <div className="padding-lr-8">
           <button
-            className="btn btn-primary btn-lg btn-danger"
+            className="btn btn-primary btn-md btn-danger"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#deleteConfirmation"
@@ -96,7 +98,7 @@ export default function EditPrompt({
             onClick={onUpdateClick}
             type="button"
             data-bs-dismiss="offcanvas"
-            className="btn btn-primary btn-lg"
+            className="btn btn-primary btn-md"
           >
             Update
           </button>

@@ -28,7 +28,7 @@ export default function CategoryEditor() {
         </div>
       </div>
       <div className="row">
-        <div className="col-3">
+        <div className="col-5">
           <div className="category-body">
             <div className="list-group">
               {state?.journal?.categories.length > 0 &&
@@ -48,7 +48,7 @@ export default function CategoryEditor() {
             </div>
           </div>
         </div>
-        <div className="col-6">
+        <div className="col">
           <div className="container">
             <div className="row">
               <div className="col">
