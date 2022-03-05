@@ -210,3 +210,10 @@ export const populateContentFromJsonArray = (
     </React.Fragment>
   );
 };
+
+
+export const getDate = (date: Date | string) => {
+  let dateOut = new Date(date);
+  if (typeof date === "string") dateOut = new Date(date);
+  return dateOut.toDateString();
+};
