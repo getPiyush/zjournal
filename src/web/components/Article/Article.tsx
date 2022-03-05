@@ -12,7 +12,7 @@ export default function Article({ data }: ArticleProps) {
       <h1>{data.title}</h1>
       <div className="sub-header">
         <span>
-          By <b>{data.author}</b> on {data.dateCreated.toDateString()}
+          By <b>{data.author}</b> on {data?.dateCreated?.toDateString()}
         </span>
         <div>
           <span className="badge bg-success">

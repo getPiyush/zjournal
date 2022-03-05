@@ -5,7 +5,7 @@ import { useJournal } from "../datastore/contexts/JournalContext";
 import ArticlePreview from "./editor/ArticlePreview";
 
 export default function CategoryEditor() {
-  const { state: state } = useJournal();
+  const { state: state} = useJournal();
 
   const { dispatch, state: articleData } = useArticle();
 
