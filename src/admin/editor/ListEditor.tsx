@@ -4,7 +4,7 @@ import { ComponentObject } from "../../Types";
 
 type ListProps = {
   listData: ComponentObject;
-  updateListData : (data: ComponentObject) => void;
+  updateListData: (data: ComponentObject) => void;
 };
 
 export const ListEditor = ({ listData, updateListData }: ListProps) => {
@@ -12,7 +12,7 @@ export const ListEditor = ({ listData, updateListData }: ListProps) => {
   if (typeof listData.data !== "string") {
     listProp = listData.data;
   } else {
-    listProp = [listData.data];
+    listProp = [listData.data];           
   }
 
   const [list, setList] = useState(listProp);
@@ -22,10 +22,10 @@ export const ListEditor = ({ listData, updateListData }: ListProps) => {
     updateComponent();
   }, [list, numbered]);
 
-  const updateComponent = () =>{
-      const updatedComponent = {...listData, data:list, numbered: numbered};
-      updateListData(updatedComponent);
-  }
+  const updateComponent = () => {
+    const updatedComponent = { ...listData, data: list, numbered: numbered };
+    updateListData(updatedComponent);
+  };
 
   const checkSelected = () => {
     setNumbered(!numbered);
@@ -60,10 +60,8 @@ export const ListEditor = ({ listData, updateListData }: ListProps) => {
     return (
       <div className="list-editor_item">
         <input
-          type="email"
           className="form-control"
           id={index + "_exampleFormControlInput1"}
-          placeholder="This is a sample title"
           value={text}
           onChange={textChanged}
         />
@@ -93,7 +91,7 @@ export const ListEditor = ({ listData, updateListData }: ListProps) => {
 
   return (
     <div
-      className="list-editor"
+      className="list-editor container"
       id={listData.componenType + "_" + listData.componentId}
       key={"key_" + listData.componentId}
     >
@@ -113,15 +111,21 @@ export const ListEditor = ({ listData, updateListData }: ListProps) => {
       <div>
         {numbered && (
           <ol type="1">
+            {/**  */}
             {list.map((item, index) => (
-              <li>{getEditItem(index, item)}</li>
+              <li>
+                {getEditItem(index, item)}
+              </li>
             ))}
           </ol>
         )}
         {!numbered && (
           <ul>
+            {/**  key={`key_${index}_${item.replace(/[^A-Z0-9]/gi, "_")}`} */}
             {list.map((item, index) => (
-              <li>{getEditItem(index, item)}</li>
+              <li>
+                {getEditItem(index, item)}
+              </li>
             ))}
           </ul>
         )}

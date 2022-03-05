@@ -17,6 +17,13 @@ export default function EditorContainer() {
     updateCurrentArticle(article, dispatch);
   };
 
+  console.log("Creating New Article...??", jState.journal.currentArticle);
+
+  if(!jState.journal.currentArticle.id)
+  {
+    console.log("Creating New Article...");
+  }
+
   const showLoader = jState.status === "loading" || aState.status === "loading";
 
   return (

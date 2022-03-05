@@ -134,93 +134,9 @@ export default function ArticleEditor({
 
   return (
     <React.Fragment>
-      <div id="editor" className="editor container">
-        <div className="row">
-          <div className="col">
-            <h1>Article Editor</h1>
-            <label htmlFor="exampleFormControlInput1" className="form-label">
-              Title
-            </label>
-            <input
-              type="email"
-              className="form-control"
-              id="exampleFormControlInput1"
-              placeholder="This is a sample title"
-              value={article.title}
-              onChange={titleChanged}
-            />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col editor-action-col-start">
-            <div className="dropdown" style={{ width: "100% !important" }}>
-              <button
-                className="btn btn-sm btn-outline-dark dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                style={{ width: "100% !important" }}
-              >
-                Select component <b>{selectedElement}</b> for Article
-              </button>
-              <ul
-                className="dropdown-menu"
-                aria-labelledby="dropdownMenuButton1"
-              >
-                {jState.journal?.components?.map((componentCode) => {
-                  return (
-                    <li>
-                      <a
-                        className={`dropdown-item ${
-                          componentCode === selectedElement ? "active" : ""
-                        }`}
-                        href="#"
-                        component-code={componentCode}
-                        onClick={onElementDropdownSelect}
-                      >
-                        {populateComponentFromCode(componentCode, sampleText)}
-                      </a>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-            <button
-              className="btn btn-primary btn-sm"
-              onClick={onAddElementClick}
-            >
-              <i className="bi bi-plus-circle-fill"></i>&nbsp;&nbsp;Add
-            </button>
-          </div>
-          <div className="col editor-action-col-end">
-            <div className="dropdown padding-lr-8">
-              <button
-                className="btn btn-sm btn-outline-dark dropdown-toggle"
-                type="button"
-                id="categoryDropDown"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                {article.categryId}
-              </button>
-              <ul className="dropdown-menu" aria-labelledby="categoryDropDown">
-                {jState.journal?.categories?.map((category) => (
-                  <li>
-                    <a
-                      className={`dropdown-item ${
-                        category === article.categryId ? "active" : ""
-                      }`}
-                      href="#"
-                      onClick={onCategorySelect}
-                    >
-                      {category}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
+      <div className="row">
+        <div className="col">
+          <div className="top-action-box">
             <button
               className="btn btn-primary btn-sm"
               onClick={onPreviewClick}
@@ -230,13 +146,103 @@ export default function ArticleEditor({
             </button>
           </div>
         </div>
-        <div className="row">
-          <div className="col edit-area">
-            <ArticleContainerEditor
-              componentClicked={onComponentClick}
-              containerJson={content}
-            />
+      </div>
+      <div className="row">
+        <div className="col">
+          <label htmlFor="exampleFormControlInput1" className="form-label">
+            Title
+          </label>
+          <input
+            type="email"
+            className="form-control"
+            id="exampleFormControlInput1"
+            placeholder="This is a sample title"
+            value={article.title}
+            onChange={titleChanged}
+          />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col editor-action-col-start">
+          <div className="dropdown" style={{ width: "100% !important" }}>
+            <button
+              className="btn btn-sm btn-outline-dark dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style={{ width: "100% !important" }}
+            >
+              Select component <b>{selectedElement}</b> for Article
+            </button>
+            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              {jState.journal?.components?.map((componentCode, index) => {
+                return (
+                  <li
+                    key={`key_${index}_${componentCode.replace(
+                      /[^A-Z0-9]/gi,
+                      "_"
+                    )}`}
+                  >
+                    <a
+                      className={`dropdown-item ${
+                        componentCode === selectedElement ? "active" : ""
+                      }`}
+                      href="#"
+                      component-code={componentCode}
+                      onClick={onElementDropdownSelect}
+                    >
+                      {populateComponentFromCode(componentCode, sampleText)}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
+          <button
+            className="btn btn-primary btn-sm"
+            onClick={onAddElementClick}
+          >
+            <i className="bi bi-plus-circle-fill"></i>&nbsp;&nbsp;Add
+          </button>
+        </div>
+        <div className="col editor-action-col-end">
+          <div className="dropdown padding-lr-8">
+            <button
+              className="btn btn-sm btn-outline-dark dropdown-toggle"
+              type="button"
+              id="categoryDropDown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              {article.categryId}
+            </button>
+            <ul className="dropdown-menu" aria-labelledby="categoryDropDown">
+              {jState.journal?.categories?.map((category, index) => (
+                <li
+                  key={`key_${index}_${category.replace(/[^A-Z0-9]/gi, "_")}`}
+                >
+                  <a
+                    className={`dropdown-item ${
+                      category === article.categryId ? "active" : ""
+                    }`}
+                    href="#"
+                    onClick={onCategorySelect}
+                  >
+                    {category}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col edit-area">
+          <ArticleContainerEditor
+            componentClicked={onComponentClick}
+            containerJson={content}
+          />
         </div>
       </div>
 

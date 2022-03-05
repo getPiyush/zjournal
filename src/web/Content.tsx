@@ -9,7 +9,7 @@ import { useJournal } from "../datastore/contexts/JournalContext";
 import { Spinner } from "./components/Spinner";
 
 const articleObject: ArticleT = {
-  id: "987391391bbjgj27819391",
+  id: "00000000000000",
   title: "Article Topic Header",
   categryId: "Microbiology",
   author: "Piyush Plaban Praharaj",
@@ -86,6 +86,7 @@ const articleObject: ArticleT = {
       ],
     },
   ],
+  origin:"local"
 };
 
 export default function Content() {

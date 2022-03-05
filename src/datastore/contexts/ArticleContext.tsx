@@ -3,24 +3,24 @@ import { ArticleT } from "../../Types";
 
 type Action =
   | { type: "get_article_by_category"; value: ArticleT[] }
-  | {type:"get_article_by_category_loading"}
-  | {type:"get_article_by_category_error"}
+  | { type: "get_article_by_category_loading" }
+  | { type: "get_article_by_category_error" }
   | { type: "add_article"; value: ArticleT };
 
 type Dispatch = (action: Action) => void;
 
-const defaultArticle = {
-  id: "kzzua95cipc28wgefia",
+const defaultArticle: ArticleT = {
+  id: "000000000000000000",
   author: "Piyush Praharaj",
-  title: "What is Genetics?",
+  title: "No Title Assigned",
   dateCreated: new Date(),
-  dateModified:new Date(),
-  categryId: "Microbiology",
-  content: []
+  dateModified: new Date(),
+  categryId: "Production",
+  content: [],
+  origin: "local",
 };
 
-type State = { articles: ArticleT[],  status: string };
-
+type State = { articles: ArticleT[]; status: string };
 
 const ArticleStateContext = React.createContext<
   { state: State; dispatch: Dispatch } | undefined
@@ -28,10 +28,8 @@ const ArticleStateContext = React.createContext<
 
 function articleReducer(state: State, action: Action) {
   switch (action.type) {
-
-
     case "get_article_by_category_loading": {
-      return { status: "loading", articles:state.articles };
+      return { status: "loading", articles: state.articles };
     }
 
     case "get_article_by_category": {
@@ -39,7 +37,7 @@ function articleReducer(state: State, action: Action) {
     }
 
     case "get_article_by_category_error": {
-      return {  status: "error", articles: state.articles };
+      return { status: "error", articles: state.articles };
     }
     default: {
       throw new Error(`Unhandled action type: ${action}`);
@@ -52,7 +50,7 @@ type ArticleProviderProps = { children: React.ReactNode };
 function ArticleProvider({ children }: ArticleProviderProps) {
   const [state, dispatch] = React.useReducer(articleReducer, {
     articles: [defaultArticle],
-    status:""
+    status: "",
   });
 
   const value = { state, dispatch };

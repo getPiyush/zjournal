@@ -3,9 +3,10 @@ import { getArticlesBycategory } from "../datastore/actions/ArticleActions";
 import { useArticle } from "../datastore/contexts/ArticleContext";
 import { useJournal } from "../datastore/contexts/JournalContext";
 import ArticlePreview from "./editor/ArticlePreview";
+import { PageTitle } from "./PageTitle";
 
 export default function CategoryEditor() {
-  const { state: state} = useJournal();
+  const { state: state } = useJournal();
 
   const { dispatch, state: articleData } = useArticle();
 
@@ -22,11 +23,16 @@ export default function CategoryEditor() {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-3">
+        <div className="col">
+          <PageTitle title="Categories" />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-5">
           <div className="category-body">
             <div className="list-group">
               {state?.journal?.categories.length > 0 &&
-                state.journal.categories.map((category) => (
+                state.journal.categories.map((category, index) => (
                   <a
                     className={
                       category === selectedCategory
@@ -35,6 +41,7 @@ export default function CategoryEditor() {
                     }
                     onClick={() => setSelectedcategory(category)}
                     href="#"
+                    key={`key_${index}_${category.replace(/[^A-Z0-9]/gi, "_")}`}
                   >
                     {category}
                   </a>
@@ -42,12 +49,12 @@ export default function CategoryEditor() {
             </div>
           </div>
         </div>
-        <div className="col-6">
+        <div className="col">
           <div className="container">
             <div className="row">
               <div className="col">
                 <h4>{selectedCategory}</h4>
-                <hr/>
+                <hr />
               </div>
             </div>
             <div className="row">
@@ -57,9 +64,7 @@ export default function CategoryEditor() {
                     <ArticlePreview data={article} />
                   ))
                 ) : (
-                  <div>
-                    No article in this category
-                  </div>
+                  <div>No article in this category</div>
                 )}
               </div>
             </div>

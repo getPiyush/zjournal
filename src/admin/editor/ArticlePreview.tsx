@@ -13,19 +13,21 @@ export default function ArticlePreview({ data }: ArticleProps) {
   const { dispatch } = useJournal();
   let navigate = useNavigate();
 
-
   const editArticle = () => {
     updateCurrentArticle(data, dispatch);
-    navigate("/admin/editor")
+    navigate("/admin/editor");
   };
   let breaker = false;
   return (
     <React.Fragment>
-      {data.content.map((item) => {
+      {data.content.map((item, index) => {
         if (item.componenType === "Image" && !breaker) {
           breaker = true;
           return (
-            <div className="card mb-3">
+            <div
+              className="card mb-3"
+              key={`key_${index}_${data.title.replace(/[^A-Z0-9]/gi, "_")}`}
+            >
               <div className="card-body">
                 <h5 className="card-title">{data.title}</h5>
                 <img className="card-img-top" src={`${item.data}`} alt="..." />

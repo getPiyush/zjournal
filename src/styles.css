@@ -27,7 +27,7 @@ body {
   border-bottom: 1px solid rgb(13 110 253 / 25%) !important;
 }
 
-.footer{
+.footer {
   background-color: #f8f8f8;
   border-color: #e7e7e7;
   border-top: 1px solid rgb(13 110 253 / 25%) !important;
@@ -123,6 +123,10 @@ img {
   font-size: 2rem;
 }
 
+.admin .editor .list-editor input {
+  font-size: 1rem;
+}
+
 .edit-area {
   border: 1px solid #26f126;
 }
@@ -130,6 +134,10 @@ img {
   border: 1px solid #edb24d;
   padding: 8px;
   background: #d4e4e4;
+}
+
+.scrollable {
+  overflow-y: scroll;
 }
 
 .edit-prompt .card-footer {
@@ -143,11 +151,12 @@ img {
   border-bottom: 1px solid;
 }
 
-.list-editor_item{
+.list-editor_item {
   display: flex;
 }
 
-.list-editor_item, button{
+.list-editor_item,
+button {
   margin: 4px;
 }
 
