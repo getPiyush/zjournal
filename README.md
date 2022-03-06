@@ -1,4 +1,10 @@
 # zjournal
+### _Journalism made simple_
+zjournal is an application to create personal Journal/Blog.
+
+We are trying to make the setup as simple as possible.
+
+Made completely with React and Typescript.
 
 install application : 
 ```sh
