@@ -19,3 +19,9 @@ yarn dev
 | ------ | ------ |
 | Journal | http://localhost:3000/ |
 | Journal Admin |  http://localhost:3000/admin/|
+
+### Todo
+- Article Component ```<Table>``` implementation
+- Publish/UnPublish Article
+- Templates
+- Web Integration
