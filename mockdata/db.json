@@ -7,6 +7,7 @@
       "dateCreated": "2022-02-26T17:06:13.882Z",
       "dateModified": "2022-02-26T17:06:13.882Z",
       "categryId": "Quality Control",
+      "origin": "server",
       "content": [
         {
           "componentId": "l043hvdedlksyiv271q",
@@ -45,6 +46,7 @@
       "dateCreated": "2022-02-23T17:37:26.736Z",
       "dateModified": "2022-02-23T17:37:26.736Z",
       "categryId": "Microbiology",
+      "origin": "server",
       "content": [
         {
           "componentId": "kzzub1tx0hbm42de41sv",
@@ -110,18 +112,25 @@
       "author": "Piyush praharaj",
       "dateCreated": "2022-02-23T21:53:44.760Z",
       "dateModified": "2022-02-23T21:53:44.760Z",
+      "origin": "server",
       "content": [
         {
           "componenType": "Image",
           "data": "https://learn-biology.com/wp-content/uploads/2018/12/05a_genetic-engineering-overview-lettered.png",
           "altText": "None"
         },
-        { "componenType": "h4", "data": "Abstract" },
+        {
+          "componenType": "h4",
+          "data": "Abstract"
+        },
         {
           "componenType": "Paragraph",
           "data": "Time delay arising in a genetic regulatory network may cause the instability. This paper is concerned with the stability analysis of genetic regulatory networks with interval time-varying delays. Firstly, a relaxed double integral inequality, named as Wirtinger-type double integral inequality (WTDII), is established to estimate the double integral term appearing in the derivative of Lyapunov-Krasovskii functional with a triple integral term. And it is proved theoretically that the proposed WTDII is tighter than the widely used Jensen-based double inequality and the recently developed Wiringter-based double inequality. Then, by applying the WTDII to the stability analysis of a delayed genetic regulatory network, together with the usage of useful information of regulatory functions, several delay-range- and delay-rate-dependent (or delay-rate-independent) criteria are derived in terms of linear matrix inequalities. Finally, an example is carried out to verify the effectiveness of the proposed method and also to show the advantages of the established stability criteria through the comparison with some literature."
         },
-        { "componenType": "h4", "data": "1. Introduction" },
+        {
+          "componenType": "h4",
+          "data": "1. Introduction"
+        },
         {
           "componenType": "Paragraph",
           "data": "Time delay arising in a genetic regulatory network may cause the instability. This paper is concerned with the stability analysis of genetic regulatory networks with interval time-varying delays. Firstly, a relaxed double integral inequality, named as Wirtinger-type double integral inequality (WTDII), is established to estimate the double integral term appearing in the derivative of Lyapunov-Krasovskii functional with a triple integral term. And it is proved theoretically that the proposed WTDII is tighter than the widely used Jensen-based double inequality and the recently developed Wiringter-based double inequality. Then, by applying the WTDII to the stability analysis of a delayed genetic regulatory network, together with the usage of useful information of regulatory functions, several delay-range- and delay-rate-dependent (or delay-rate-independent) criteria are derived in terms of linear matrix inequalities. Finally, an example is carried out to verify the effectiveness of the proposed method and also to show the advantages of the established stability criteria through the comparison with some literature."
@@ -174,6 +183,7 @@
       "dateCreated": "2022-02-24T05:18:53.907Z",
       "dateModified": "2022-02-24T05:18:53.907Z",
       "categryId": "Quality Control",
+      "origin": "server",
       "content": [
         {
           "componentId": "l00jckorqirc694van",
@@ -259,6 +269,7 @@
       "dateCreated": "2022-02-24T07:58:14.239Z",
       "dateModified": "2022-02-24T07:58:14.239Z",
       "categryId": "Quality Control",
+      "origin": "server",
       "content": [
         {
           "componentId": "l00p2ycsze3830tuylh",
@@ -499,6 +510,7 @@
       "dateCreated": "2022-02-24T09:53:30.821Z",
       "dateModified": "2022-02-24T09:53:30.821Z",
       "categryId": "Microbiology",
+      "origin": "server",
       "content": [
         {
           "componentId": "l00t6ow0gkwqwh6s5w9",
@@ -539,6 +551,7 @@
       "dateCreated": "2022-02-24T19:01:50.471Z",
       "dateModified": "2022-02-24T19:01:50.471Z",
       "categryId": "Engineering",
+      "origin": "server",
       "content": [
         {
           "componentId": "l01ctyva045rjqlwmiaq",
@@ -620,6 +633,72 @@
           "componenType": "Paragraph",
           "data": "It's the result of all 18 of the primary mirror's segments reflecting light from the star back at its secondary mirror and into the telescope's main camera, called the Near-Infrared Camera (NIRCam).\n\n'The resulting image shows that the team has moved each of Webb's 18 primary mirror segments to bring 18 unfocused copies of a single star into a planned hexagonal formation,' NASA said.\n\n'With the image array complete, the team has now begun the second phase of alignment: \"Segment Alignment\".'\n\nDuring Segment Alignment, the James Webb engineers on the ground will update the alignment of the secondary mirror to make each individual dot of starlight more focused. \n\nWhen this 'global alignment' is complete, the team will begin the third phase, called 'Image Stacking', which will bring the 18 spots of light on top of each other to create one composite of HD 84406. \n\n'We steer the segment dots into this array so that they have the same relative locations as the physical mirrors,' said Matthew Lallo, systems scientist at the Space Telescope Science Institute, the mission operations center for James Webb.\n\n'During global alignment and Image Stacking, this familiar arrangement gives the wavefront team an intuitive and natural way of visualising changes in the segment spots in the context of the entire primary mirror. \n\n'We can now actually watch the primary mirror slowly form into its precise, intended shape!' \n\nAnother version of the new image shows each dot of starlight labeled with the corresponding mirror segment that captured it.  ",
           "numbered": false
+        }
+      ]
+    },
+    {
+      "id": "8974984b3948b239b2398",
+      "author": "Piyush Praharaj",
+      "title": "What is Genetics?",
+      "dateCreated": "2022-02-23T17:37:26.736Z",
+      "dateModified": "2022-02-23T17:37:26.736Z",
+      "categryId": "Quality Control",
+      "origin": "server",
+      "content": [
+        {
+          "componentId": "kzzub1tx0hbm42de41sv",
+          "componenType": "h3",
+          "data": "Introduction"
+        },
+        {
+          "componentId": "kzzubo6uaimg915aw3",
+          "componenType": "Paragraph",
+          "data": "Genetics is the branch of biology concerned with the study of the DNA of organisms, how their DNA manifests as genes, and how those genes are inherited by offspring. Genes are passed to offspring in both sexual and asexual reproduction, and over time natural selection can accumulate variations amongst individuals on the group level, in the process known as evolution."
+        },
+        {
+          "componentId": "kzzuc63b92ahk1tva0d",
+          "componenType": "Image",
+          "data": "https://d1g9yur4m4naub.cloudfront.net/image-handler/ts/20210310090038/ri/673/picture/2021/3/shutterstock_1718584090.jpg"
+        },
+        {
+          "componentId": "kzzucz660i83g399buw",
+          "componenType": "h3",
+          "data": "History of Genetics"
+        },
+        {
+          "componentId": "kzzudasliqf86fe7jhd",
+          "componenType": "Paragraph",
+          "data": "Ancient peoples from around the world recognized that a child inherited their appearance and propensity for certain personality traits from their parents, though could not demonstrate the mechanism without modern knowledge of atoms, molecules, and biochemistry.\\n\\nMany of the theories developed at this time speculated that the semen of the father contained the “seed”, while the reflection of the mother’s personality may or may not have been present within the child, with her contribution being limited to bearing the child.\\n\\nDuring the 4th century, BC Aristotle wrote several texts regarding the origin and history of animals, making numerous astute observations regarding the degree of relatedness between animals that would not be significantly expanded upon until the sixteenth or seventeenth centuries. He would also have purported the ancient Greek theory of the four humors, these being one of the few aspects that might be passed from parents to children.\\n\\nThe circumstances of conception and development were thought significantly more critical to the resulting traits of the child up until the end of the eighteenth century, and until Charles Darwin, in the mid-nineteenth, for heredity to emerge as a central problem in biology. At this point, the properties that an individual inherits became less separated from ones inherited on the species-level in the eyes of science, and modern 20th-century molecular biology generated a plethora of supporting information that confirmed the relationship between individual variation and evolution"
+        },
+        {
+          "componentId": "kzzuec20v7zdtrqmr0t",
+          "componenType": "h3",
+          "data": "Inheritance"
+        },
+        {
+          "componentId": "kzzuep7vyb0zemnhmh",
+          "componenType": "Paragraph",
+          "data": "Inheritance refers to the passing of traits from one generation to the other, both by asexual and sexual reproduction. Gametes are the reproductive cells of an organism, which is sperm in males and ova in females. Each of these carries 23 of the 46 chromosomes needed to create a complete human genome, and come together to form a zygote.\\n\\nSeveral mechanisms to develop genetic variation occur at each of these stages. Before the gametes are formed homologous chromosomes exchange genetic material, resulting in new combinations of genes on each chromosome. Then during the generation of the gametes by meiosis, the homologous chromosomes are distributed randomly, ensuring that each gamete is unique."
+        },
+        {
+          "componentId": "kzzufaf68qnajl0dwzf",
+          "componenType": "Image",
+          "data": "https://d1g9yur4m4naub.cloudfront.net/image-handler/ts/20210310085914/ri/673/picture/2021/3/shutterstock_1504135007.jpg"
+        },
+        {
+          "componentId": "kzzugg8ft8oyyc6vnfn",
+          "componenType": "Paragraph",
+          "data": "Since people possess a homologous pair of each chromosome, usually one from the father and one from the mother, many genes are presented twice. Variations in the sequence of these genes are called alleles, and differing alleles may interact in a variety of ways depending on the chromosome on which they are located, resulting in a wide range of phenotypic effects.\\n\\nOne allele may be dominant while the other is recessive, eye color often being cited, with the brown allele being dominant over the blue allele. This phenomenon has been modeled by the Punnett square for almost a century, before any real knowledge of DNA. As the square suggests, two parents of identical eye color are likely to replicate the color in their child, while a mixed coloring has a 25% chance of producing blue-eyed children.\\n\\nIn truth many genes are competing simultaneously and being expressed differentially, also impacted by post-transcriptional factors and epigenetics, making the precise phenotype expressed more difficult to predict when accounting for these subtleties.\\n\\nAdvances in genetic technology are opening new avenues in terms of personalized medicine, efficient and reliable diagnosis, and highly accurate predictions based on genetic determinants. Broad genetic testing can now be undertaken on a clinically relevant time scale, allowing most DNA-related disorders such as cancer to be specifically identified and combated."
+        },
+        {
+          "componentId": "kzzuh3b0lokqoaag2u",
+          "componenType": "h3",
+          "data": "Recent Developments in Genetics"
+        },
+        {
+          "componentId": "kzzuhfcunahwn5oh7u",
+          "componenType": "Paragraph",
+          "data": "However, many detailed links between genetic variants and phenotypes are still not fully understood, and the quantity of data generated by genome sequencing notably outstrips our ability to interpret it. Input from multiple disciplines is increasingly important to obtaining and interpreting such information, and many tools have been developed to capture relevant genomic sequences by classical laboratory and in-silico methods.\\n\\nThe Global Alliance for Genomics and Health predicts that over 60 million people will have had their genome sequenced in a medical context by 2025, and direct consumer testing for purposes other than immediate medical concerns is becoming increasingly popular as the general public becomes more interested in the predictive ability of genomic sequencing. Providers of these services promise insight into one's health and genetic ancestry, though many privacy concerns have been raised regarding this practice.\\n\\nA recent analysis of these companies in the UK found that 15 did not comply with the UK Human Genetics Commission principles for good practice regarding consumer information. One such company based in the USA promised to identify an individual’s “genetic superpower”, and subsequently failed to recognize that a received sample was in fact sourced from a dog, suggesting that the customer would likely be talented at basketball.\\n\\nGene editing using CRISPR-Cas9 is now not only a reality in in vitro experiments but also in human subjects, as on November 25th 2018 He Jianku of the Southern University of Science and Technology, China, announced that two babies had been born with edited C-C chemokine receptor type 5 (CCR5) genes. This modification supposedly rendered the subjects immune to HIV infection, though the reasoning behind this has been challenged by many researchers in the field, and the research was considered risky and unethical in general. He has since been widely condemned for how the research was conducted and has lost his research post and been sentenced to prison time.\\n\\nIt is difficult to predict the moral standards of the future with regards to gene tailoring of children, though it is certain that it will be possible. If so, parents of the future may be able to choose which of their genes are inherited by their children, or even introduce entirely new traits into their genetic lineage."
         }
       ]
     },
@@ -1041,7 +1120,7 @@
       "dateModified": "2022-03-05T03:03:27.113Z",
       "categryId": "Production",
       "content": [],
-      "source": "local"
+      "origin": "local"
     },
     "categories": [
       "Production",
@@ -1062,5 +1141,59 @@
       "List",
       "Table"
     ]
-  }
+  },
+  "testJson": [
+    {
+      "name": "hello",
+      "id": "qwkleewqjweqwieqoiqweowq"
+    },
+    {
+      "name": "Annna",
+      "id": "g00eNoH"
+    },
+    {
+      "name": "piyush",
+      "id": "dfrFUJf"
+    },
+    {
+      "name": "piyush",
+      "id": "V6Au1Y3"
+    },
+    {
+      "name": "piyush",
+      "id": "eU37LZP"
+    },
+    {
+      "name": "piyush",
+      "id": "0A9719_"
+    },
+    {
+      "name": "piyush",
+      "id": "xs2jzQm"
+    },
+    {
+      "name": "piyush",
+      "id": "iiAAGLh"
+    },
+    {
+      "name": "piyush",
+      "id": "pXjaKxc"
+    },
+    {
+      "name": "piyush",
+      "id": "fmBNgcs"
+    },
+    {
+      "name": "piyush",
+      "id": "_5fiA3O"
+    },
+    {
+      "name": "Annna",
+      "id": "P_fczcj"
+    },
+    {
+      "name": "piyush",
+      "id": "CanB_xf"
+    }
+  ]
 }

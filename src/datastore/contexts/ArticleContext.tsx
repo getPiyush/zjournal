@@ -5,6 +5,12 @@ type Action =
   | { type: "get_article_by_category"; value: ArticleT[] }
   | { type: "get_article_by_category_loading" }
   | { type: "get_article_by_category_error" }
+  | { type: "add_article_loading" }
+  | { type: "add_article_success" }
+  | { type: "add_article_error" }
+  | { type: "update_article_loading" }
+  | { type: "update_article_success" }
+  | { type: "update_article_error" }
   | { type: "add_article"; value: ArticleT };
 
 type Dispatch = (action: Action) => void;
@@ -39,6 +45,33 @@ function articleReducer(state: State, action: Action) {
     case "get_article_by_category_error": {
       return { status: "error", articles: state.articles };
     }
+
+    // add article
+    case "add_article_loading": {
+      return { status: "loading", articles: state.articles };
+    }
+
+    case "add_article_success": {
+      return { status: "success", articles: state.articles };
+    }
+
+    case "add_article_error": {
+      return { status: "error", articles: state.articles };
+    }
+
+    // update article
+    case "update_article_loading": {
+      return { status: "loading", articles: state.articles };
+    }
+
+    case "update_article_success": {
+      return { status: "success", articles: state.articles };
+    }
+
+    case "update_article_error": {
+      return { status: "error", articles: state.articles };
+    }
+
     default: {
       throw new Error(`Unhandled action type: ${action}`);
     }

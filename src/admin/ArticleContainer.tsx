@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ArticleT } from "../Types";
 import Article from "../web/components/Article/Article";
 import ArticleEditor from "./editor/ArticleEditor";
+import SaveButton from "./editor/SaveButton";
 import { PageTitle } from "./PageTitle";
 
 type ArticleContainerProps = {
@@ -27,26 +28,32 @@ export default function ArticleContainer({
   };
 
   return (
-    <div id="editor" className="editor container">      
-    <div className="row">
+    <div id="editor" className="editor container">
+      <div className="row">
         <div className="col">
-        <PageTitle title="Article Editor"/>        </div>
+          <PageTitle title="Article Editor" />{" "}
+        </div>
       </div>
       <div className="row">
         <div className="col">
-        {editMode && (
-        <ArticleEditor articleIn={article} setPreview={showPreview} />
-      )}
-      {!editMode && (
-        <React.Fragment>
-          <div className="top-action-box">
-            <button className="btn btn-primary btn-sm" onClick={hidePreview}>
-              <i className="bi bi-pencil"></i>&nbsp;&nbsp;Edit
-            </button>
-          </div>
-          <Article data={article} />
-        </React.Fragment>
-      )}        </div>
+          {editMode && (
+            <ArticleEditor articleIn={article} setPreview={showPreview} />
+          )}
+          {!editMode && (
+            <React.Fragment>
+              <div className="top-action-box">
+                <SaveButton article={article} />
+                <button
+                  className="btn btn-primary btn-sm"
+                  onClick={hidePreview}
+                >
+                  <i className="bi bi-pencil"></i>&nbsp;&nbsp;Edit
+                </button>
+              </div>
+              <Article data={article} />
+            </React.Fragment>
+          )}{" "}
+        </div>
       </div>
     </div>
   );
