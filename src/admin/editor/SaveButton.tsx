@@ -16,7 +16,7 @@ type SaveButtonProps = {
     const saveArticle = () =>{
         if(article.origin==="local"){
             console.log("Adding new Article", article);
-            addArticleToDB(dispatch, {...article, origin:"server"});
+            addArticleToDB(dispatch, {...article,id:'', origin:"server"});
         }
         else{
             console.log("Updating Article", article);
