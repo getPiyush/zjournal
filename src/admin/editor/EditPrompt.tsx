@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 import { ComponentObject } from "../../Types";
 import { ListEditor } from "./ListEditor";
+import { TableEditor } from "./TableEditor";
 
 type EditPromptProps = {
   component: ComponentObject;
@@ -50,8 +51,8 @@ export default function EditPrompt({
     );
   };
 
-  const listComponentUpdated = (compData: ComponentObject) => {
-   // console.log(compData);
+  const childComponentUpdated = (compData: ComponentObject) => {
+    // console.log(compData);
     setOutComp(compData);
     setCompData(compData.data);
   };
@@ -59,7 +60,14 @@ export default function EditPrompt({
   const getEditComponent = () => {
     if (component.componenType === "List") {
       return (
-        <ListEditor listData={outComp} updateListData={listComponentUpdated} />
+        <ListEditor listData={outComp} updateListData={childComponentUpdated} />
+      );
+    } else if (component.componenType === "Table") {
+      return (
+        <TableEditor
+          tableData={outComp}
+          updateTableData={childComponentUpdated}
+        />
       );
     } else {
       return getDefaultComponent();
