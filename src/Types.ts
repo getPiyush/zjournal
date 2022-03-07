@@ -17,6 +17,7 @@ export type ArticleT = {
   categryId: string;
   content: ComponentObject[];
   origin: "server" | "local";
+  published: boolean;
 } 
 
 export type Journal = {

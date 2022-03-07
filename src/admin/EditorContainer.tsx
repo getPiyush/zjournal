@@ -17,9 +17,8 @@ export default function EditorContainer() {
     updateCurrentArticle(article, dispatch);
   };
 
-  console.log("Creating New Article...??", jState.journal.currentArticle);
 
-  if(!jState.journal.currentArticle.id)
+  if(!jState.journal.currentArticle)
   {
     console.log("Creating New Article...");
   }

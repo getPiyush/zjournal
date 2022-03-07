@@ -119,8 +119,8 @@ img {
   padding: 8px;
 }
 
-.admin .editor input {
-  font-size: 2rem;
+.admin .editor .article-title-input {
+  font-size: 1.5rem;
 }
 
 .admin .editor .list-editor input {
