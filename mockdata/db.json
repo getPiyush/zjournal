@@ -1917,6 +1917,36 @@
       ],
       "origin": "server",
       "published": false
+    },
+    {
+      "id": "7rQblCw",
+      "author": "Piyush Praharaj",
+      "title": "Table Test",
+      "dateCreated": "2022-03-07T19:17:24.748Z",
+      "dateModified": "2022-03-07T19:28:54.585Z",
+      "categryId": "Production",
+      "content": [
+        {
+          "componentId": "l0h356antr9v912xa1",
+          "componenType": "Table",
+          "data": "#|Name|Age |Sex|Reason\n1|Ravindra Jadeja|45 |Male| Beat Himself to death\n2|Deepika Padu|45 |Female|Killed by controversy\n3|Sachin Tendulkar|53 |Male|Killed in Chille due to homelessness/extreme weather\n4|Md Yunus|25 |Male|Beaten to death by fans\n5|Salman Khan|63 |Male|Suicide due to failed commitment",
+          "numbered": false
+        },
+        {
+          "componentId": "l0h370jx1ija44s58tu",
+          "componenType": "Image",
+          "data": "https://www.ikea.com/in/en/images/products/nodeland-coffee-table-medium-brown__0974637_pe812499_s5.jpg?f=s",
+          "numbered": false
+        },
+        {
+          "componentId": "l0h3io0bmty12gm8bh",
+          "componenType": "Table",
+          "data": "#|Name|Age |Sex|Reason\n1|Ravindra Jadeja|45 |Male| Beat Himself to death\n2|Deepika Padu|45 |Female|Killed by controversy\n3|Sachin Tendulkar|53 |Male|Killed in Chille due to homelessness/extreme weather\n4|Md Yunus|25 |Male|Beaten to death by fans\n5|Salman Khan|63 |Male|Suicide due to failed commitment",
+          "numbered": true
+        }
+      ],
+      "origin": "server",
+      "published": false
     }
   ],
   "journal": {

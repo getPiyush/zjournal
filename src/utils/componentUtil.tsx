@@ -2,6 +2,7 @@ import React from "react";
 import EditWrapper from "../admin/editor/EditWrapper";
 import { ComponentObject } from "../Types";
 import { List } from "../web/components/List";
+import { Table } from "../web/components/Table";
 
 export const getUid = () =>
   Date.now().toString(36) + Math.random().toString(36).substr(2);
@@ -176,12 +177,7 @@ const getComponentFromObject = (
 
     default:
       comp = (
-        <pre
-          id={obj.componenType + "_" + obj.componentId}
-          key={"key_" + obj.componentId}
-        >
-          {obj.data}
-        </pre>
+       <Table tableData={obj} />
       );
       break;
   }
