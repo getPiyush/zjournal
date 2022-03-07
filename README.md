@@ -22,6 +22,6 @@ yarn dev
 
 ### Todo
 - Article Component ```<Table>``` implementation
-- Publish/UnPublish Article
+- ~~Publish/UnPublish Article~~
 - Templates
 - Web Integration
