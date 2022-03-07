@@ -21,7 +21,7 @@ yarn dev
 | Journal Admin |  http://localhost:3000/admin/|
 
 ### Todo
-- Article Component ```<Table>``` implementation
+- ~~Article Component ```<Table>``` implementation~~
 - ~~Publish/UnPublish Article~~
 - Templates
 - Web Integration
