@@ -120,6 +120,10 @@ export default function ArticleEditor({
     }
   };
 
+  const publishStatusUpdated = () =>{
+    setArticle({ ...article, published: !article.published });
+  }
+
   const showHdeOffCanvas = (flag) => {
     const myOffcanvas = document.getElementById("offcanvasRight");
     const bsOffcanvas = new globalThis.bootstrap.Offcanvas(myOffcanvas);
@@ -156,7 +160,7 @@ export default function ArticleEditor({
           </label>
           <input
             type="email"
-            className="form-control"
+            className="form-control article-title-input"
             id="exampleFormControlInput1"
             placeholder="This is a sample title"
             value={article.title}
@@ -209,6 +213,7 @@ export default function ArticleEditor({
           </button>
         </div>
         <div className="col editor-action-col-end">
+
           <div className="dropdown padding-lr-8">
             <button
               className="btn btn-sm btn-outline-dark dropdown-toggle"
@@ -236,6 +241,18 @@ export default function ArticleEditor({
                 </li>
               ))}
             </ul>
+          </div>
+          <div className="form-check form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              id="publichedCheckSwitch"
+              checked={article.published}
+              onChange={publishStatusUpdated}
+            />
+            <label className="form-check-label" htmlFor="publichedCheckSwitch">
+              Published
+            </label>
           </div>
         </div>
       </div>

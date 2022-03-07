@@ -8,6 +8,7 @@
       "dateModified": "2022-02-26T17:06:13.882Z",
       "categryId": "Quality Control",
       "origin": "server",
+      "published": true,
       "content": [
         {
           "componentId": "l043hvdedlksyiv271q",
@@ -47,6 +48,7 @@
       "dateModified": "2022-02-23T17:37:26.736Z",
       "categryId": "Microbiology",
       "origin": "server",
+      "published": true,
       "content": [
         {
           "componentId": "kzzub1tx0hbm42de41sv",
@@ -113,6 +115,7 @@
       "dateCreated": "2022-02-23T21:53:44.760Z",
       "dateModified": "2022-02-23T21:53:44.760Z",
       "origin": "server",
+      "published": true,
       "content": [
         {
           "componenType": "Image",
@@ -184,6 +187,7 @@
       "dateModified": "2022-02-24T05:18:53.907Z",
       "categryId": "Quality Control",
       "origin": "server",
+      "published": true,
       "content": [
         {
           "componentId": "l00jckorqirc694van",
@@ -270,6 +274,7 @@
       "dateModified": "2022-02-24T07:58:14.239Z",
       "categryId": "Quality Control",
       "origin": "server",
+      "published": true,
       "content": [
         {
           "componentId": "l00p2ycsze3830tuylh",
@@ -511,6 +516,7 @@
       "dateModified": "2022-02-24T09:53:30.821Z",
       "categryId": "Microbiology",
       "origin": "server",
+      "published": true,
       "content": [
         {
           "componentId": "l00t6ow0gkwqwh6s5w9",
@@ -552,6 +558,7 @@
       "dateModified": "2022-02-24T19:01:50.471Z",
       "categryId": "Engineering",
       "origin": "server",
+      "published": true,
       "content": [
         {
           "componentId": "l01ctyva045rjqlwmiaq",
@@ -644,6 +651,7 @@
       "dateModified": "2022-02-23T17:37:26.736Z",
       "categryId": "Validation and Qualification",
       "origin": "server",
+      "published": true,
       "content": [
         {
           "componentId": "kzzub1tx0hbm42de41sv",
@@ -707,7 +715,7 @@
       "author": "Piyush Praharaj",
       "title": "Artist Illustrates Mystical Creatures As Babies And They Look ‘Dangerously’ Cute",
       "dateCreated": "2022-03-05T03:03:27.113Z",
-      "dateModified": "2022-03-05T03:03:27.113Z",
+      "dateModified": "2022-03-07T07:21:18.017Z",
       "categryId": "Production",
       "content": [
         {
@@ -1107,7 +1115,8 @@
           "numbered": false
         }
       ],
-      "origin": "server"
+      "origin": "server",
+      "published": true
     },
     {
       "id": "79837128371983112793987981273",
@@ -1258,12 +1267,13 @@
           "numbered": false
         }
       ],
-      "origin": "server"
+      "origin": "server",
+      "published": true
     },
     {
       "id": "hs0Gvdf",
       "author": "Piyush Praharaj",
-      "title": "dasdasdas",
+      "title": "This is a bad ass article!",
       "dateCreated": "2022-03-06T20:36:01.465Z",
       "dateModified": "2022-03-06T20:36:01.465Z",
       "categryId": "Quality Assurance",
@@ -1271,11 +1281,18 @@
         {
           "componentId": "l0fqieahyagack3o1ut",
           "componenType": "h2",
-          "data": "Click to Update Text",
+          "data": "Its all about Kick Ass",
+          "numbered": false
+        },
+        {
+          "componentId": "l0g8nvdlutjiqvig75s",
+          "componenType": "Image",
+          "data": "https://www.wired.com/images_blogs/underwire/2010/01/kick_ass_teaser_670.jpg",
           "numbered": false
         }
       ],
-      "origin": "server"
+      "origin": "server",
+      "published": true
     },
     {
       "id": "_yM3J9o",
@@ -1426,14 +1443,15 @@
           "numbered": false
         }
       ],
-      "origin": "server"
+      "origin": "server",
+      "published": true
     },
     {
       "id": "Dth_CIu",
       "author": "Piyush Praharaj",
       "title": "In Search of ERP for the Pharmaceutical Industry",
       "dateCreated": "2022-03-05T03:03:27.113Z",
-      "dateModified": "2022-03-05T03:03:27.113Z",
+      "dateModified": "2022-03-07T07:27:14.700Z",
       "categryId": "Quality Assurance",
       "content": [
         {
@@ -1577,7 +1595,8 @@
           "numbered": false
         }
       ],
-      "origin": "server"
+      "origin": "server",
+      "published": false
     },
     {
       "id": "A9G4MGI",
@@ -1728,14 +1747,15 @@
           "numbered": false
         }
       ],
-      "origin": "server"
+      "origin": "server",
+      "published": true
     },
     {
       "id": "ia3N1Wm",
       "author": "Piyush Praharaj",
       "title": "Zim drugs market projected to grow",
       "dateCreated": "2022-03-06T20:52:20.862Z",
-      "dateModified": "2022-03-06T20:52:20.862Z",
+      "dateModified": "2022-03-07T07:26:55.131Z",
       "categryId": "Good Manufacturing Practices (GMP)",
       "content": [
         {
@@ -1769,7 +1789,134 @@
           "numbered": false
         }
       ],
-      "origin": "server"
+      "origin": "server",
+      "published": false
+    },
+    {
+      "id": "mJxFy-9",
+      "author": "Piyush Praharaj",
+      "title": "The Guardian’s nifty old-article trick is a reminder of how news organizations can use metadata to limit misinformation",
+      "dateCreated": "2022-03-05T03:03:27.113Z",
+      "dateModified": "2022-03-07T07:29:40.381Z",
+      "categryId": "Production",
+      "content": [
+        {
+          "componentId": "l0fs65lfm3q8dh2wd09",
+          "componenType": "h3",
+          "data": "This is a great idea: In order to reduce the number of its old stories that get recirculated as new",
+          "numbered": false
+        },
+        {
+          "componentId": "l0gdmtlgpy2jj2xiry",
+          "componenType": "Image",
+          "data": "https://www.niemanlab.org/images/guardian-1969-darker.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0gdpvkl6tglskr7gzb",
+          "componenType": "Paragraph",
+          "data": "For some time now we’ve been aware of certain issues around social sharing in particular. Shorn of context like the date, accurate and responsible reporting can mislead. As an example, almost every February we see a sudden spike in referral from Facebook to a six-year-old story about horsemeat in a supermarket’s meat products. Originally published in February 2013, it’s generally discovered via search, the reader notices the month of publication but not the year and kicks off an annual, minor viral moment.",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true
+    },
+    {
+      "id": "AdpPbqI",
+      "author": "Piyush Praharaj",
+      "title": "qwewqeq e qweqweq weqw",
+      "dateCreated": "2022-03-06T21:23:01.832Z",
+      "dateModified": "2022-03-07T07:28:46.826Z",
+      "categryId": "Production",
+      "content": [
+        {
+          "componentId": "l0fs6xw1ahxybir6uo9",
+          "componenType": "h2",
+          "data": "Click to Update Text",
+          "numbered": false
+        },
+        {
+          "componentId": "l0fs6y1lqx7tp6o5pej",
+          "componenType": "h2",
+          "data": "Click to Update Text",
+          "numbered": false
+        },
+        {
+          "componentId": "l0fs6y5r3qblburxg1j",
+          "componenType": "h2",
+          "data": "Click to Update Text",
+          "numbered": false
+        },
+        {
+          "componentId": "l0fs70a5h6u357fnmn7",
+          "componenType": "h5",
+          "data": "Click to Update Text",
+          "numbered": false
+        },
+        {
+          "componentId": "l0fs70fpticn09jkhm9",
+          "componenType": "h5",
+          "data": "Click to Update Text",
+          "numbered": false
+        },
+        {
+          "componentId": "l0fs70sopcb5rvhugpl",
+          "componenType": "h5",
+          "data": "Click to Update Text",
+          "numbered": false
+        },
+        {
+          "componentId": "l0fs73k7xcj7regmvfi",
+          "componenType": "List",
+          "data": "Click to Update Text",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": false
+    },
+    {
+      "id": "4_TuJYn",
+      "author": "Piyush Praharaj",
+      "title": "test article",
+      "dateCreated": "2022-03-05T03:03:27.113Z",
+      "dateModified": "2022-03-07T07:29:18.996Z",
+      "categryId": "Production",
+      "content": [
+        {
+          "componentId": "l0g7rovmew98ihpa2s5",
+          "componenType": "h2",
+          "data": "Click to Update Text",
+          "numbered": false
+        },
+        {
+          "componentId": "l0g7rpsixyit7eoxc2g",
+          "componenType": "h2",
+          "data": "Click to Update Text",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": false
+    },
+    {
+      "id": "VdGLtuw",
+      "author": "Piyush Praharaj",
+      "title": "qweqweeq qweq eqw eqee",
+      "dateCreated": "2022-03-05T03:03:27.113Z",
+      "dateModified": "2022-03-07T07:29:28.630Z",
+      "categryId": "Production",
+      "content": [
+        {
+          "componentId": "l0g7um1j2xky18kaw4f",
+          "componenType": "h2",
+          "data": "Click to Update Text",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": false
     }
   ],
   "journal": {
@@ -1803,6 +1950,18 @@
       "Paragraph",
       "List",
       "Table"
+    ]
+  },
+  "template": {
+    "articles": [
+      "_yM3J9o",
+      "ia3N1Wm",
+      "l00jcbtfouv42pfnbw",
+      "kzzua95cipc28wgefia",
+      "l00t5hhhg3cw6ppf48v",
+      "8974984b3948b239b2398",
+      "987391391bbjgj27819391",
+      "A9G4MGI"
     ]
   },
   "testJson": [

@@ -1,6 +1,6 @@
 import * as React from "react";
+import { defaultJournal } from "../../ApplicationConstants";
 import { ArticleT, Journal } from "../../Types";
-import { getUid } from "../../utils/componentUtil";
 
 type Action =
   | { type: "update_journal"; value: Journal }
@@ -10,25 +10,6 @@ type Action =
   | { type: "reset_page" }
   | { type: "update_current_article"; value: ArticleT };
 type Dispatch = (action: Action) => void;
-
-const defaultArticle:ArticleT = {
-  id: getUid(),
-  author: "Piyush Praharaj",
-  title: "",
-  dateCreated: new Date(),
-  dateModified: new Date(),
-  categryId: "NONE",
-  content: [],
-  origin:"local"
-};
-
-const defaultJournal = {
-  title: "zJournal Default Title",
-  selectedPage: "home",
-  currentArticle: defaultArticle,
-  categories: [],
-  components:[]
-};
 
 type State = { journal: Journal; status: string };
 

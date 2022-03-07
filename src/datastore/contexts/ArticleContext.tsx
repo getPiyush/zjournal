@@ -1,4 +1,5 @@
 import * as React from "react";
+import { defaultArticle } from "../../ApplicationConstants";
 import { ArticleT } from "../../Types";
 
 type Action =
@@ -15,16 +16,6 @@ type Action =
 
 type Dispatch = (action: Action) => void;
 
-const defaultArticle: ArticleT = {
-  id: "000000000000000000",
-  author: "Piyush Praharaj",
-  title: "No Title Assigned",
-  dateCreated: new Date(),
-  dateModified: new Date(),
-  categryId: "Production",
-  content: [],
-  origin: "local",
-};
 
 type State = { articles: ArticleT[]; status: string };
 
