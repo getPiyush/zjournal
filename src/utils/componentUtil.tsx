@@ -1,4 +1,6 @@
 import React from "react";
+import ReactHtmlParser from 'react-html-parser';
+
 import EditWrapper from "../admin/editor/EditWrapper";
 import { ComponentObject } from "../Types";
 import { List } from "../web/components/List";
@@ -115,7 +117,7 @@ const getComponentFromObject = (
           id={obj.componenType + "_" + obj.componentId}
           key={"key_" + obj.componentId}
         >
-          {obj.data}
+          {ReactHtmlParser(obj.data)}
         </h1>
       );
       break;
@@ -125,7 +127,7 @@ const getComponentFromObject = (
           id={obj.componenType + "_" + obj.componentId}
           key={"key_" + obj.componentId}
         >
-          {obj.data}
+           {ReactHtmlParser(obj.data)}
         </h2>
       );
       break;
@@ -135,7 +137,7 @@ const getComponentFromObject = (
           id={obj.componenType + "_" + obj.componentId}
           key={"key_" + obj.componentId}
         >
-          {obj.data}
+           {ReactHtmlParser(obj.data)}
         </h3>
       );
       break;
@@ -145,10 +147,22 @@ const getComponentFromObject = (
           id={obj.componenType + "_" + obj.componentId}
           key={"key_" + obj.componentId}
         >
-          {obj.data}
+           {ReactHtmlParser(obj.data)}
         </h4>
       );
       break;
+
+      case "H5":
+        comp = (
+          <h5
+            id={obj.componenType + "_" + obj.componentId}
+            key={"key_" + obj.componentId}
+          >
+             {ReactHtmlParser(obj.data)}
+          </h5>
+        );
+        break;
+
     case "IMAGE":
       comp = (
         <img
@@ -166,7 +180,7 @@ const getComponentFromObject = (
           id={obj.componenType + "_" + obj.componentId}
           key={"key_" + obj.componentId}
         >
-          {obj.data}
+          {ReactHtmlParser(obj.data)}
         </p>
       );
       break;
@@ -175,9 +189,14 @@ const getComponentFromObject = (
       comp = <List listData={obj} />;
       break;
 
+      
+    case "TABLE":
+      comp =  <Table tableData={obj} />;
+      break;
+
     default:
       comp = (
-       <Table tableData={obj} />
+       <span>{ReactHtmlParser(obj.data)}</span>
       );
       break;
   }
