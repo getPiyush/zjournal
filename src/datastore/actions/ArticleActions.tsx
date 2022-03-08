@@ -1,9 +1,26 @@
 import { ArticleT } from "../../Types";
 import {
+  getArticleByIdAPI,
   addArticleAPI,
   getArticleByCategoryAPI,
   updateArticleAPI,
 } from "../api";
+
+export const getArticleById = (dispatch, id: string) => {
+  dispatch({ type: "get_article_by_id_loading" });
+  getArticleByIdAPI(id)
+    .then(function (response) {
+      console.log("response is",response);
+      dispatch({ type: "get_article_by_id", value: response.data });
+    })
+    .catch(function (error) {
+      console.log(error);
+      dispatch({ type: "get_article_by_id_error" });
+    })
+    .then(function () {
+      // always executed
+    });
+};
 
 export const getArticlesBycategory = (dispatch, category: string) => {
   dispatch({ type: "get_article_by_category_loading" });

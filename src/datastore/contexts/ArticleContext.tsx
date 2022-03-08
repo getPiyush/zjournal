@@ -3,6 +3,9 @@ import { defaultArticle } from "../../ApplicationConstants";
 import { ArticleT } from "../../Types";
 
 type Action =
+  | { type: "get_article_by_id"; value: ArticleT }
+  | { type: "get_article_by_id_loading" }
+  | { type: "get_article_by_id_error" }
   | { type: "get_article_by_category"; value: ArticleT[] }
   | { type: "get_article_by_category_loading" }
   | { type: "get_article_by_category_error" }
@@ -16,7 +19,6 @@ type Action =
 
 type Dispatch = (action: Action) => void;
 
-
 type State = { articles: ArticleT[]; status: string };
 
 const ArticleStateContext = React.createContext<
@@ -25,6 +27,18 @@ const ArticleStateContext = React.createContext<
 
 function articleReducer(state: State, action: Action) {
   switch (action.type) {
+    case "get_article_by_id_loading": {
+      return { status: "loading", articles: state.articles };
+    }
+  
+    case "get_article_by_id": {
+      return { articles: [action.value], status: "success" };
+    }
+  
+    case "get_article_by_id_error": {
+      return { status: "error", articles: state.articles };
+    }
+  
     case "get_article_by_category_loading": {
       return { status: "loading", articles: state.articles };
     }
