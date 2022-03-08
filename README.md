@@ -24,5 +24,6 @@ yarn dev
 - ~~Article Component ```<Table>``` implementation~~
 - ~~Publish/UnPublish Article~~
 - ~~HTML Parser Implementation (can put html code in texts)~~
+- ~~Article by ID URL~~
 - Templates
 - Web Integration
