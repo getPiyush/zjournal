@@ -1299,7 +1299,7 @@
       "author": "Piyush Praharaj",
       "title": "Understanding the Scope of Quality Assurance in the Pharmaceutical Industry",
       "dateCreated": "2022-03-05T03:03:27.113Z",
-      "dateModified": "2022-03-05T03:03:27.113Z",
+      "dateModified": "2022-03-08T11:58:48.368Z",
       "categryId": "Quality Assurance",
       "content": [
         {
@@ -1341,7 +1341,7 @@
         {
           "componentId": "l0fq1cwd6gd1hrnm5r7",
           "componenType": "Paragraph",
-          "data": "The ultimate objective of any pharmaceutical manufacturer is to create a product that will keep the public safe. A properly manufactured medication has the potential to greatly improve someone’s life. Creating a quality product has a profound impact on the overall health and well-being of society. \n\n\nHowever, if quality assurance is not up to par, the medication that should be saving someone’s life can end up threatening it or causing irreversible harm. Every team member involved in pharmaceutical quality assurance should always keep the person taking the medication in mind. \n\n\nStrict quality control is required to meet this objective. This includes thorough employee training, continuous improvement of quality management systems, minimizing or eliminating deviation, documenting control, carrying out internal audits, and periodic management reviews. ",
+          "data": "The ultimate objective of any pharmaceutical manufacturer is to create a product that will keep the public safe. A properly manufactured medication has the potential to greatly improve someone’s life. Creating a quality product has a profound impact on the overall health and well-being of society. \n\n\nHowever, if quality assurance is not up to par, the medication that should be saving someone’s life can end up threatening it or causing irreversible harm. Every team member involved in pharmaceutical quality assurance should always keep the person taking the medication in mind. \n<br/>\n\n<b>Strict </b>quality control is required to meet this objective. This includes thorough employee training, continuous improvement of quality management systems, minimizing or eliminating deviation, documenting control, carrying out internal audits, and periodic management reviews. ",
           "numbered": false
         },
         {
@@ -1795,15 +1795,15 @@
     {
       "id": "mJxFy-9",
       "author": "Piyush Praharaj",
-      "title": "The Guardian’s nifty old-article trick is a reminder of how news organizations can use metadata to limit misinformation",
+      "title": "The Guardian’s nifty old-article trick is a <i>reminder </i>of how news organizations can use metadata to limit misinformation",
       "dateCreated": "2022-03-05T03:03:27.113Z",
-      "dateModified": "2022-03-07T07:29:40.381Z",
+      "dateModified": "2022-03-08T12:07:14.916Z",
       "categryId": "Production",
       "content": [
         {
           "componentId": "l0fs65lfm3q8dh2wd09",
           "componenType": "h3",
-          "data": "This is a great idea: In order to reduce the number of its old stories that get recirculated as new",
+          "data": "<i>This is a great idea</i>: In order to reduce the number of its old stories that get recirculated as new",
           "numbered": false
         },
         {
@@ -1815,7 +1815,7 @@
         {
           "componentId": "l0gdpvkl6tglskr7gzb",
           "componenType": "Paragraph",
-          "data": "For some time now we’ve been aware of certain issues around social sharing in particular. Shorn of context like the date, accurate and responsible reporting can mislead. As an example, almost every February we see a sudden spike in referral from Facebook to a six-year-old story about horsemeat in a supermarket’s meat products. Originally published in February 2013, it’s generally discovered via search, the reader notices the month of publication but not the year and kicks off an annual, minor viral moment.",
+          "data": "For some time now we’ve been aware of certain issues around social sharing in particular. Shorn of context like the date, accurate and responsible reporting can mislead. As an example, almost every February we see a sudden spike in referral from <b>Facebook</b> to a six-year-old story about horsemeat in a supermarket’s <u>meat products</u>. \n<br/>\nOriginally published in <b>February 2013</b>, it’s generally discovered via search, the reader notices the month of publication but not the year and kicks off an annual, minor viral moment.",
           "numbered": false
         }
       ],
@@ -1825,80 +1825,440 @@
     {
       "id": "AdpPbqI",
       "author": "Piyush Praharaj",
-      "title": "qwewqeq e qweqweq weqw",
+      "title": "SOP Corrective Action and Preventive Action",
       "dateCreated": "2022-03-06T21:23:01.832Z",
-      "dateModified": "2022-03-07T07:28:46.826Z",
+      "dateModified": "2022-03-08T11:40:54.754Z",
       "categryId": "Production",
       "content": [
         {
-          "componentId": "l0fs6xw1ahxybir6uo9",
-          "componenType": "h2",
-          "data": "Click to Update Text",
+          "componentId": "l0hwtecmpheczc4834",
+          "componenType": "Table",
+          "data": "Solubility |\tApproximate volume of solvent in milliliters per gram of solute\nVery soluble\tLess than 1 part (< 1)\nFreely soluble |\tFrom 1 to 10 parts (1 : 10)\nSoluble\tFrom 10 to 30 parts (10 : 30)\nSparingly soluble|\tFrom 30 to 100 parts (30 : 100)\nSlightly soluble|\tFrom 100 to 1000 parts (100 : 1000)\nVery slightly soluble|\tFrom 1000 to 10000 parts (1000 : 10000)\nPractically insoluble|\tMore than 10000 parts (> 10000)",
+          "numbered": true
+        },
+        {
+          "componentId": "l0i283bilihygg8qqw",
+          "componenType": "Image",
+          "data": "https://pharmaceuticalindustrydotblog.files.wordpress.com/2021/11/new-doc-02-nov-2021-3.29-pm-1.jpg?w=1568",
           "numbered": false
         },
         {
-          "componentId": "l0fs6y1lqx7tp6o5pej",
-          "componenType": "h2",
-          "data": "Click to Update Text",
+          "componentId": "l0i28omma6mnimymu1",
+          "componenType": "Image",
+          "data": "https://pharmaceuticalindustrydotblog.files.wordpress.com/2021/11/new-doc-02-nov-2021-3.29-pm-11.jpg?w=1534",
           "numbered": false
         },
         {
-          "componentId": "l0fs6y5r3qblburxg1j",
-          "componenType": "h2",
-          "data": "Click to Update Text",
-          "numbered": false
-        },
-        {
-          "componentId": "l0fs70a5h6u357fnmn7",
-          "componenType": "h5",
-          "data": "Click to Update Text",
-          "numbered": false
-        },
-        {
-          "componentId": "l0fs70fpticn09jkhm9",
-          "componenType": "h5",
-          "data": "Click to Update Text",
-          "numbered": false
-        },
-        {
-          "componentId": "l0fs70sopcb5rvhugpl",
-          "componenType": "h5",
-          "data": "Click to Update Text",
-          "numbered": false
-        },
-        {
-          "componentId": "l0fs73k7xcj7regmvfi",
-          "componenType": "List",
-          "data": "Click to Update Text",
+          "componentId": "l0i28p9e6zv3k8oufp3",
+          "componenType": "Image",
+          "data": "https://pharmaceuticalindustrydotblog.files.wordpress.com/2021/11/new-doc-02-nov-2021-3.30-pm-1-1.jpg?w=1534",
           "numbered": false
         }
       ],
       "origin": "server",
-      "published": false
+      "published": true
     },
     {
       "id": "4_TuJYn",
       "author": "Piyush Praharaj",
-      "title": "test article",
+      "title": "Cleaning Validation in Pharmaceutical Industry",
       "dateCreated": "2022-03-05T03:03:27.113Z",
-      "dateModified": "2022-03-07T07:29:18.996Z",
+      "dateModified": "2022-03-08T12:04:04.471Z",
       "categryId": "Production",
       "content": [
         {
-          "componentId": "l0g7rovmew98ihpa2s5",
-          "componenType": "h2",
+          "componentId": "l0hxpq89xbwnawyyiz",
+          "componenType": "h5",
+          "data": "Guideline ",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hxq7xs5c48und4hr5",
+          "componenType": "Paragraph",
+          "data": "Health Products and Food Branch Inspectorate  Cleaning Validation Guideline-   Health Canada.\n\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hxqrbfmc11c7ej0e",
+          "componenType": "h5",
+          "data": "Cleaning Validation:",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hxr7slbxcozfpsf18",
+          "componenType": "Paragraph",
+          "data": "Cleaning validation is documented evidence that an approved cleaning procedure will provide equipment which is suitable for processing medicinal products.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hxreezgvujujyebw7",
+          "componenType": "h5",
+          "data": "Types of contaminants",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hxryfysugnbr9q9xj",
+          "componenType": "List",
+          "data": [
+            "Chemical – Residues of the previous product ",
+            "Biological – Microorganisms",
+            " Physical    – Particulate matter"
+          ],
+          "numbered": false
+        },
+        {
+          "componentId": "l0hxtmqywyoz3jkvtj",
+          "componenType": "h5",
+          "data": "Solubility of API shall be mentioned as per following Table:",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hxukj2mwfq2v2g62a",
+          "componenType": "Table",
+          "data": "Solubility |\tApproximate volume of solvent in milliliters per gram of solute\nVery soluble\tLess than 1 part (< 1)\nFreely soluble |\tFrom 1 to 10 parts (1 : 10)\nSoluble\tFrom 10 to 30 parts (10 : 30)\nSparingly soluble|\tFrom 30 to 100 parts (30 : 100)\nSlightly soluble|\tFrom 100 to 1000 parts (100 : 1000)\nVery slightly soluble|\tFrom 1000 to 10000 parts (1000 : 10000)\nPractically insoluble|\tMore than 10000 parts (> 10000)",
+          "numbered": true
+        },
+        {
+          "componentId": "l0hxv4ut4dgsnl1em8o",
+          "componenType": "h5",
+          "data": "LD50 of API shall be mentioned as per following Table",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hxvekg7cjo8420gfg",
+          "componenType": "Table",
+          "data": "Probable oral Lethal dose for humans (Mg/ kg) |\tIncluded descriptive terms\n>15000\t| Practically non toxic\n5000-15000\t| Slightly toxic\n500-5000\t| Moderately toxic\n50-500\t| Very toxic\n5-50\t| Extremely toxic\n<5\t| Super toxic",
+          "numbered": true
+        },
+        {
+          "componentId": "l0hxx6zxtbf29o92b1d",
+          "componenType": "h5",
+          "data": "Cleanability of API shall be mentioned as per following Table",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hxxi61jjotwzf384j",
+          "componenType": "Table",
+          "data": "Solubility\t| Approximate volume of solvent in milliliters per gram of solute\t| Cleanability Index\nVery soluble|\tLess than 1 part (< 1)\t|Easily cleanable\nFreely soluble|\tFrom 1 to 10 parts (1 : 10)\t|Easily cleanable\nSoluble\t|From 10 to 30 parts (10 : 30)\t|Easily cleanable\nSparingly soluble|\tFrom 30 to 100 parts (30 : 100)|\tHard to clean\nSlightly soluble\t|From 100 to 1000 parts (100 : 1000)\t|Hard to clean\nVery slightly soluble\t|From 1000 to 10000 parts (1000 : 10000)\t|Mechanical water forced required\nPractically Insoluble\t|More than 10000 parts (> 10000)\t|Mechanical water forced required",
+          "numbered": true
+        },
+        {
+          "componentId": "l0hyhgvro54t1g9j32d",
+          "componenType": "h5",
+          "data": "All equipments parts shall be identified as per rational criteria and categories as per bellow\n\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hyhksqatm7xrrncfs",
+          "componenType": "List",
+          "data": [
+            "Hard to clean ",
+            "Direct contact with product",
+            " No direct contact with product"
+          ],
+          "numbered": false
+        },
+        {
+          "componentId": "l0hyhocvmas9br9q318",
+          "componenType": "h5",
+          "data": "<u>Sampling Techniques :</u>\n\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hyhsd1bbbmyhmx9q7",
+          "componenType": "h5",
+          "data": "Visual Inspection (Method For Validation of Cleaning of Equipments)\n\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hyhxb1dmxmr59gyyw",
+          "componenType": "Paragraph",
+          "data": "After cleaning of the equipment visual inspection shall be done using a torch held inclined to the  surface being inspected, and a mirror (attached to stainless steel rod) to inspect the surface of  equipment. Visual inspection shall be done by unaided naked eye.\n\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hyidtgmpt00uu2pig",
+          "componenType": "h5",
+          "data": "For visual cleaning",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hyiijl3tgrzbaekol",
+          "componenType": "Paragraph",
+          "data": "Verify the cleanliness of the product contact surfaces. Verify the cleanliness of hard to clean areas.\n\nVerify all the product contact dismantled parts before and after assembling.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hylrhdr7oktyh0f9",
+          "componenType": "h5",
+          "data": "Surface Swab Sampling:\n\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hymi0k3r14y42ius6",
+          "componenType": "Paragraph",
+          "data": "The direct Sampling technique is also commonly referred to as “Direct Surface Sampling” method.   This is done by Swabbing Technique using Swabs. The direct surface sampling method is the preferred technique.\n\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hympmdmvwdizge6vd",
+          "componenType": "h5",
+          "data": "Sampling Procedure:\n\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hyncz4hxa5sn9yqha",
+          "componenType": "Paragraph",
+          "data": "Surface sampling is identified as a sampling method considering the design, size and number of equipment.\n\nAfter the completion of equipment cleaning, visual inspection shall be done.\n\nIn case, the surface of equipment is difficult to inspect, a mirror attached to a stick shall be used to inspect the cleanliness of equipment.\n\nComplete product contact surface area shall be sampled for critical hard to clean area/ critical accessories like spray gun, punch, dies, and butter fly valve etc.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hyo7e9qf88v76zchp",
+          "componenType": "h5",
+          "data": "Swab Sampling for Chemical analysis:\n\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hyodbk4xvby2w4tis",
+          "componenType": "Paragraph",
+          "data": "After visual inspection is found satisfactory swab sampling shall be carried out. Wear hand gloves and nose mask before commencing swab sampling.\n\nThe swab must be wetted in purified water or suitable diluents.\n\nSwab area shall be measured with the help of template for swabbing and  the area must be 5cm x 5cm  or as per protocol.\n\nSwabbing shall be done by parallel horizontal and then tilt the swab and do vertical strokes  as  described below to assure that the entire area is swabbed.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hyp67jodl1opbe1z",
+          "componenType": "Image",
+          "data": "https://pharmaceuticalindustrydotblog.files.wordpress.com/2021/12/1640446714953.jpg?w=1024",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hyptxymxq6h4vei4",
+          "componenType": "Paragraph",
+          "data": "After swabbing, place the swab into a stoppered test tube, wrap with aluminum foil and label the test tube for identification of swab sample.\n\nSwab samples must be collected from different areas of equipment as stated in the cleaning validation protocol.\n\nSend the stoppered test tube with swab to Quality Control Laboratory for analysis.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hyqz00jnnzbpdabi9",
+          "componenType": "h5",
+          "data": "Swab sampling for Microbial analysis",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hyr3d764vmifvj699",
+          "componenType": "Paragraph",
+          "data": "Wear sterile hand gloves and nose mask before commencing swab sampling to avoid the microbiological contamination. Sterile cotton swab shall be used for swabbing.\n\nThe sterile cotton swab shall be soaked in sterile saline.\n\nSwabbing shall be done by parallel horizontal and then tilt the swab and do vertical  strokes  as  described below to assure that the entire area is swabbed.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hyr5s5kne0z6296nh",
+          "componenType": "Image",
+          "data": "https://pharmaceuticalindustrydotblog.files.wordpress.com/2021/12/1640447206497.jpg?w=2048",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hyr7m7x001ei8ngvm",
+          "componenType": "Paragraph",
+          "data": "Swab area shall be measured for swabbing and the area must be 5cm x 6cm.\n\nMicrobial swab sample shall be collected before chemical swab.\n\nSwabbing shall be done on the surface of equipments and the area is different from the area of swab taken for chemical analysis.\n\nAfter swabbing, place the swab into a sterilized stoppered test tube and label the test tube for identification of swab sample.\n\nSwab samples must be collected from different areas of equipment as stated in the cleaning validation protocol.\n\nSend the sterile stoppered test tube with swab to Quality Control – Microbiology Laboratory for analysis.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hytopyss1p50ko3z9",
+          "componenType": "h5",
           "data": "Click to Update Text",
           "numbered": false
         },
         {
-          "componentId": "l0g7rpsixyit7eoxc2g",
-          "componenType": "h2",
-          "data": "Click to Update Text",
+          "componentId": "l0hytuwbamla2rkfvcf",
+          "componenType": "Paragraph",
+          "data": "After visual inspection is found satisfactory, the equipment shall be rinsed with the volume of rinsing solvent (purified water) as described in respective cleaning validation protocol (rinse sample shall be performed whenever necessary).\n\nRinse sample shall be collected in the bottles used for the collection of routine purified water samples.\n\nAfter the collection of rinse sample, (stopper) close the bottle and label it for identification of rinse sample. Send the rinse sample bottle to Quality Control Laboratory for analysis.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hytx0eyuveoy3dxx",
+          "componenType": "Image",
+          "data": "https://pharmaceuticalindustrydotblog.files.wordpress.com/2021/12/image-1.png",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hyukd79gzks6543qg",
+          "componenType": "Image",
+          "data": "https://pharmaceuticalindustrydotblog.files.wordpress.com/2021/12/image-2.png",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hyunuemk8pg3nijd9",
+          "componenType": "Paragraph",
+          "data": "Product Container Lid for Example\n\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hywr00cbyhtic7wik",
+          "componenType": "h5",
+          "data": "Method of analysis:\n\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hyxfwzxacp7k05t6b",
+          "componenType": "Paragraph",
+          "data": "Methods of analysis used for determination of possible contaminant residues must be specific and sensitive.\n\nThe selection of analytical methods shall be validated for at least below  mentioned parameters based  on at least the following but not limited to;",
+          "numbered": false
+        },
+        {
+          "componentId": "l0hyyywpkp00yurspln",
+          "componenType": "List",
+          "data": [
+            "Precision",
+            "Specificity",
+            " Linearity and Range",
+            "Limit of Detection",
+            "Limit of Quantification",
+            " Stability of solutions",
+            "Recovery from Equipment Surface."
+          ],
+          "numbered": false
+        },
+        {
+          "componentId": "l0i1hahwfnd8pysxp",
+          "componenType": "h5",
+          "data": "<u>FOR WORST CASE APPROACH;</u>",
+          "numbered": false
+        },
+        {
+          "componentId": "l0i1hi0uzq3yvk5nc7",
+          "componenType": "h5",
+          "data": "10 PPM Criteria:",
+          "numbered": false
+        },
+        {
+          "componentId": "l0i1hkblr6h248a08wm",
+          "componenType": "Paragraph",
+          "data": "MACO =[Mac10] x [Swab Area]/[Shared equipment surface area between products]\n\nWhere,\n\nMac10     = 10 ppm x Minimum Batch Size of Product ‘B’ in kg.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0i1hraa07d727opihi4",
+          "componenType": "h5",
+          "data": "Dose Criteria :\n\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0i1hznnd1xxxyjsrqq",
+          "componenType": "Image",
+          "data": "https://pharmaceuticalindustrydotblog.files.wordpress.com/2021/12/1640447962814.jpg?w=1998",
+          "numbered": false
+        },
+        {
+          "componentId": "l0i1tvc6677popdjqkd",
+          "componenType": "h5",
+          "data": "<u>ACCEPTABILITY LIMITS:</u>\n\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0i1tw4tw4q39wluvj",
+          "componenType": "h5",
+          "data": "Visual inspection criteria:\n\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0i1u1gyzm01tdluhd",
+          "componenType": "Paragraph",
+          "data": "No quantity of residue should be visible to naked eyes on the equipment after cleaning procedures are performed (i.e. less than 100 mcg /25 cm2).",
+          "numbered": false
+        },
+        {
+          "componentId": "l0i1uakt757iwr8r19j",
+          "componenType": "h5",
+          "data": "10ppm criteria:",
+          "numbered": false
+        },
+        {
+          "componentId": "l0i1ucppt7u2sc7kwni",
+          "componenType": "Paragraph",
+          "data": "Not more than 10ppm of active pharmaceutical ingredient of previous product is permitted in next product.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0i1uk5rlvdkunwhb1k",
+          "componenType": "h5",
+          "data": "Dose based criteria:",
+          "numbered": false
+        },
+        {
+          "componentId": "l0i1uvmw4gqxcl35w0h",
+          "componenType": "Paragraph",
+          "data": "Not more than 1/1000 of minimum daily therapeutic dose of  the  previous  product in the maximum daily dose of the next product The acceptability limits for microbiological sample shall be determined based on;",
+          "numbered": false
+        },
+        {
+          "componentId": "l0i1v2jn67y6jl86fuj",
+          "componenType": "Table",
+          "data": "Parameters\t|Limit Dirty Equipment Surfaces\t|Limit Cleaned Equipment Surfaces\nTotal Aerobic Microbial Count (TAMC)\t|NMT 1000 cfu/swab\tNMT |100 cfu/ swab|\nTotal    Combined    Yeasts    and Molds Count (TYMC)\t|Less Than 10 cfu/swab|\tLess Than 10 cfu/ swab",
+          "numbered": true
+        },
+        {
+          "componentId": "l0i1vadtj9hfyk946u9",
+          "componenType": "h5",
+          "data": "Re-validation:",
+          "numbered": false
+        },
+        {
+          "componentId": "l0i1vg6mwrv91084wm",
+          "componenType": "Paragraph",
+          "data": "Re-validation shall be performed in case of any change, (at least the following but not limited to)",
+          "numbered": false
+        },
+        {
+          "componentId": "l0i1vmcfr9fe7bnfqjj",
+          "componenType": "List",
+          "data": [
+            "Introduction of a new facility, equipment, process or product.",
+            "Change in cleaning procedure.",
+            "Change in cleaning agent used for cleaning.",
+            "Reduction in minimum batch size and lowest dose of the product i.e change in  MACO  limit.",
+            "Major Modification in processing equipment.",
+            "Periodic revalidation after every three years.",
+            "Change in regulatory requirements."
+          ],
+          "numbered": false
+        },
+        {
+          "componentId": "l0i1vwzgqyxi9zvhhhj",
+          "componenType": "h5",
+          "data": "Dirty Equipment Hold Time (DEHT) ",
+          "numbered": false
+        },
+        {
+          "componentId": "l0i1vzc4bp1u99jv91w",
+          "componenType": "Paragraph",
+          "data": "The time from the end of manufacturing till the beginning of\n\nthe cleaning process of equipment (also called things like “soiled hold time”)\n\nThe Hold Time Study of Dirty Equipments shall be carried out by keeping equipment in idle for a  period of 24 hours in dirty condition. (The Maximum possible hold period under normal conditions) to evaluate microbial contamination on equipment surface and effectiveness of cleaning process.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0i1w62pftemgssoejm",
+          "componenType": "h5",
+          "data": "Clean Equipment Hold Time (CEHT) ",
+          "numbered": false
+        },
+        {
+          "componentId": "l0i1wah1ip1j08xcm1",
+          "componenType": "Paragraph",
+          "data": "The time from the end of equipment cleaning till subsequent use of equipment (subsequent use includes product manufacturing).\n\nThe Hold Time Study of Clean Equipments shall be carried out after completion of  “Type  B  Cleaning”, visual inspection by keeping equipment in idle clean condition up to 72 hours to establish  the expiry of cleaning in view of microbiology.\n\nAfter the equipments surfaces are found visually clean, sampling and testing shall be carried out for Microbiological enumeration Tests and residual determination (chemical analysis) on the cleaned equipment surfaces at 0 hour interval, then sampling and testing shall be carried out only for Microbiological enumeration Tests at rest intervals as per the sampling plan. (i.e., after 24 hours, 48 hours and 72 hours).",
+          "numbered": false
+        },
+        {
+          "componentId": "l0i1wlf3q3vzf40ijb",
+          "componenType": "h5",
+          "data": "Dirty Equipment Hold Time Period      : 24 Hours",
+          "numbered": false
+        },
+        {
+          "componentId": "l0i1wombrm2ov2fq9ki",
+          "componenType": "h5",
+          "data": "Cleaned Equipment Hold Time Period : 48  Hours",
           "numbered": false
         }
       ],
       "origin": "server",
-      "published": false
+      "published": true
     },
     {
       "id": "VdGLtuw",
@@ -1923,13 +2283,13 @@
       "author": "Piyush Praharaj",
       "title": "Table Test",
       "dateCreated": "2022-03-07T19:17:24.748Z",
-      "dateModified": "2022-03-07T19:28:54.585Z",
+      "dateModified": "2022-03-08T12:10:02.883Z",
       "categryId": "Production",
       "content": [
         {
           "componentId": "l0h356antr9v912xa1",
           "componenType": "Table",
-          "data": "#|Name|Age |Sex|Reason\n1|Ravindra Jadeja|45 |Male| Beat Himself to death\n2|Deepika Padu|45 |Female|Killed by controversy\n3|Sachin Tendulkar|53 |Male|Killed in Chille due to homelessness/extreme weather\n4|Md Yunus|25 |Male|Beaten to death by fans\n5|Salman Khan|63 |Male|Suicide due to failed commitment",
+          "data": "#|Name|Age |Sex|Reason\n1|Ravindra Jadeja|45 |Male| Beat Himself to <b>death</b>\n2|Deepika Padu|45 |Female|Killed by controversy\n3|Sachin Tendulkar|53 |Male|Killed in Chille due to homelessness/extreme weather\n4|Md Yunus|25 |Male|Beaten to death by fans\n5|Salman Khan|63 |Male|Suicide due to failed commitment",
           "numbered": false
         },
         {

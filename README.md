@@ -23,5 +23,6 @@ yarn dev
 ### Todo
 - ~~Article Component ```<Table>``` implementation~~
 - ~~Publish/UnPublish Article~~
+- ~~HTML Parser Implementation (can put html code in texts)~~
 - Templates
 - Web Integration

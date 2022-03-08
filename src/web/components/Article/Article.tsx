@@ -1,3 +1,5 @@
+import ReactHtmlParser from 'react-html-parser';
+
 import { ArticleT } from "../../../Types";
 import { getDate } from "../../../utils/componentUtil";
 import ArticleContainer from "./ArticleContainer";
@@ -9,7 +11,7 @@ type ArticleProps = {
 export default function Article({ data }: ArticleProps) {
   return (
     <div className="container article-viewer disable-text-selection">
-      <h1>{data.title}</h1>
+      <h1>{ReactHtmlParser(data.title)}</h1>
       <div className="sub-header">
         <span>
           By <b>{data.author}</b> on {getDate(data.dateCreated)}

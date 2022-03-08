@@ -1,3 +1,4 @@
+import ReactHtmlParser from 'react-html-parser';
 import { ComponentObject } from "../../Types";
 
 type ListProps = {
@@ -16,7 +17,7 @@ export const List = ({ listData }: ListProps) => {
           <ol type="1">
             {listData.data.map((item, index) => (
               <li key={`key_${index}_${item.replace(/[^A-Z0-9]/gi, "_")}`}>
-                {item}
+                {ReactHtmlParser(item)}
               </li>
             ))}
           </ol>
@@ -25,7 +26,7 @@ export const List = ({ listData }: ListProps) => {
           <ul>
             {listData.data.map((item, index) => (
               <li key={`key_${index}_${item.replace(/[^A-Z0-9]/gi, "_")}`}>
-                {item}
+                {ReactHtmlParser(item)}
               </li>
             ))}
           </ul>
@@ -39,7 +40,7 @@ export const List = ({ listData }: ListProps) => {
         key={"key_" + listData.componentId}
       >
         <ul>
-          <li>{listData.data}</li>
+          <li> {ReactHtmlParser(listData.data)}</li>
         </ul>
       </div>
     );

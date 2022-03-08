@@ -1,3 +1,4 @@
+import ReactHtmlParser from 'react-html-parser';
 import { ComponentObject } from "../../Types";
 import { getUid } from "../../utils/componentUtil";
 
@@ -18,7 +19,7 @@ export const Table = ({ tableData }: TableProps) => {
             <thead>
             <tr>
               {columnData.map((item) => (
-                <th scope="col">{item}</th>
+                <th scope="col">{ReactHtmlParser(item)}</th>
               ))}
             </tr>
             </thead>
@@ -28,7 +29,7 @@ export const Table = ({ tableData }: TableProps) => {
                 return (
                     <tr>
                       {columnData.map((item) => (
-                        <td>{item}</td>
+                        <td>{ReactHtmlParser(item)}</td>
                       ))}
                     </tr>
                   );
