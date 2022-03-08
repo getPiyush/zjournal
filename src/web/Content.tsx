@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
 import Home from "./Home";
@@ -34,6 +34,8 @@ export default function Content() {
       <Routes>
         <Route path="home" element={<Home />} />
         <Route path="article" element={<Article data={state.journal.currentArticle} />} />
+        <Route path="article/*" element={<Article data={state.journal.currentArticle} />} />
+
         <Route path="/*" element={<Home />} />
       </Routes>
     </main>

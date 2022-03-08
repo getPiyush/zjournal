@@ -13,7 +13,7 @@ export const getJournalAPI = () => {
 }
 
 export const getArticleByIdAPI = (id: string) => {
-    const url = `${getArticleAPIPath}?id=${id}`;
+    const url = `${getArticleAPIPath}/${id}`;
     return axios.get(url);
 }
 

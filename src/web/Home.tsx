@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -18,7 +17,7 @@ export default function Home() {
           Genetic regulatory networks are dynamic systems which describe the
           interactions among gene products (mRNAs and proteins)
           <br />
-          <Link to="/web/article">...</Link>
+          <a href="/web/article/kzzua95cipc28wgefia">...</a>
         </p>
       </div>
       <div className="container">
@@ -28,7 +27,7 @@ export default function Home() {
           genetic regulatory networks. Based on this model, stability of genetic
           regulatory networks has been intensively studied, which is believed
           useful in designing and controlling genetic regulatory networks
-          <br /> <Link to="/web/article">...</Link>
+          <br /> <a href="/web/article/hs0Gvdf">...</a>
         </p>
         <p>
           <h4>Delayed Genetic Regulatory Networks</h4>
@@ -36,7 +35,7 @@ export default function Home() {
           genetic regulatory networks. Based on this model, stability of genetic
           regulatory networks has been intensively studied, which is believed
           useful in designing and controlling genetic regulatory networks
-          <br /> <Link to="/web/article">...</Link>
+          <br /> <a href="/web/article/987391391bbjgj27819391">...</a>
         </p>
       </div>
 
@@ -50,7 +49,7 @@ export default function Home() {
             believed useful in designing and controlling genetic regulatory
             networks
             <br />
-            <Link to="/web/article">...</Link>
+            <a href="/web/article/l01cqn0nl53z5w6r6w8">...</a>
           </div>
           <div className="p-3 col  m-1 border">
             <h4>Delayed Genetic Regulatory Networks</h4>
@@ -60,7 +59,7 @@ export default function Home() {
             believed useful in designing and controlling genetic regulatory
             networks
             <br />
-            <Link to="/web/article">...</Link>
+            <a href="/web/article/4_TuJYn">...</a>
           </div>
         </div>
       </div>
