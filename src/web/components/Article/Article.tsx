@@ -30,6 +30,7 @@ export default function Article({ data }: ArticleProps) {
     console.log("articleData is", articleData);
     if (isWebArticle && articleData.status === "success" && articleData.articles.length > 0) {
       setArticle(articleData.articles[0]);
+      window.document.title = articleData.articles[0].title;
     } else if (isWebArticle && articleData.status === "error") {
       setArticle(null);
     }

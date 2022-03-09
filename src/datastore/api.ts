@@ -17,8 +17,8 @@ export const getArticleByIdAPI = (id: string) => {
     return axios.get(url);
 }
 
-export const getArticleByCategoryAPI = (category: string) => {
-    const url = `${getArticleAPIPath}?categryId=${category}`;
+export const getArticleByCategoryAPI = (category: string, web:boolean) => {
+    const url = `${getArticleAPIPath}?categryId=${category}${web?`&published=true`:``}`;
     return axios.get(url);
 }
 

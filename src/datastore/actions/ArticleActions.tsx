@@ -22,9 +22,9 @@ export const getArticleById = (dispatch, id: string) => {
     });
 };
 
-export const getArticlesBycategory = (dispatch, category: string) => {
+export const getArticlesBycategory = (dispatch, category: string, web?: boolean) => {
   dispatch({ type: "get_article_by_category_loading" });
-  getArticleByCategoryAPI(category)
+  getArticleByCategoryAPI(category, web)
     .then(function (response) {
       dispatch({ type: "get_article_by_category", value: response.data });
     })
