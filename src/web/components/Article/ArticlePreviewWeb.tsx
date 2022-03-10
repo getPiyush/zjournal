@@ -2,7 +2,7 @@ import React from "react";
 import ReactHtmlParser from "react-html-parser";
 
 import { ArticleT } from "../../../Types";
-import { getDate } from "../../../utils/componentUtil";
+import { getDate, sliceWords } from "../../../utils/componentUtil";
 
 type ArticleProps = {
   data: ArticleT;
@@ -35,8 +35,8 @@ export default function ArticlePreviewWeb({ data }: ArticleProps) {
             }
 
             if (item.componenType === "Paragraph" && !contentArray[1]) {
-              contentArray[1] = item.data.slice(0,200);
-              return <div className="card-text">{contentArray[1]}... <a href={`article/${data.id}`}>read more</a></div>;
+              contentArray[1] =  sliceWords(item.data,0,200);
+              return <div className="card-text">{ ReactHtmlParser(contentArray[1])}... <a href={`article/${data.id}`}>read more</a></div>;
             }
           })}
         </div>

@@ -1,8 +1,8 @@
 import React from "react";
-import ReactHtmlParser from 'react-html-parser';
+import ReactHtmlParser from "react-html-parser";
 
 import EditWrapper from "../admin/editor/EditWrapper";
-import { ComponentObject } from "../Types";
+import { ArticleT, ComponentObject } from "../Types";
 import { List } from "../web/components/List";
 import { Table } from "../web/components/Table";
 
@@ -29,6 +29,17 @@ export const getComponentFromId = (
     }
   });
   return resultElement;
+};
+
+export const getArticleFromId = (id: string, artArray: ArticleT[]) => {
+  let resultArticle: ArticleT = null;
+  artArray.forEach((article) => {
+    if (id === article.id) {
+      resultArticle = article;
+      return false;
+    }
+  });
+  return resultArticle;
 };
 
 export const setComponentById = (
@@ -127,7 +138,7 @@ const getComponentFromObject = (
           id={obj.componenType + "_" + obj.componentId}
           key={"key_" + obj.componentId}
         >
-           {ReactHtmlParser(obj.data)}
+          {ReactHtmlParser(obj.data)}
         </h2>
       );
       break;
@@ -137,7 +148,7 @@ const getComponentFromObject = (
           id={obj.componenType + "_" + obj.componentId}
           key={"key_" + obj.componentId}
         >
-           {ReactHtmlParser(obj.data)}
+          {ReactHtmlParser(obj.data)}
         </h3>
       );
       break;
@@ -147,21 +158,21 @@ const getComponentFromObject = (
           id={obj.componenType + "_" + obj.componentId}
           key={"key_" + obj.componentId}
         >
-           {ReactHtmlParser(obj.data)}
+          {ReactHtmlParser(obj.data)}
         </h4>
       );
       break;
 
-      case "H5":
-        comp = (
-          <h5
-            id={obj.componenType + "_" + obj.componentId}
-            key={"key_" + obj.componentId}
-          >
-             {ReactHtmlParser(obj.data)}
-          </h5>
-        );
-        break;
+    case "H5":
+      comp = (
+        <h5
+          id={obj.componenType + "_" + obj.componentId}
+          key={"key_" + obj.componentId}
+        >
+          {ReactHtmlParser(obj.data)}
+        </h5>
+      );
+      break;
 
     case "IMAGE":
       comp = (
@@ -189,15 +200,12 @@ const getComponentFromObject = (
       comp = <List listData={obj} />;
       break;
 
-      
     case "TABLE":
-      comp =  <Table tableData={obj} />;
+      comp = <Table tableData={obj} />;
       break;
 
     default:
-      comp = (
-       <span>{ReactHtmlParser(obj.data)}</span>
-      );
+      comp = <span>{ReactHtmlParser(obj.data)}</span>;
       break;
   }
   return editable ? (
@@ -226,9 +234,35 @@ export const populateContentFromJsonArray = (
   );
 };
 
-
 export const getDate = (date: Date | string) => {
   let dateOut = new Date(date);
   if (typeof date === "string") dateOut = new Date(date);
   return dateOut.toDateString();
+};
+
+export const getMonths = (from: string, to: string) => {
+  const fromDate = new Date(from);
+  const toDate = new Date(to);
+
+  const fromYear = fromDate.getFullYear();
+  const fromMonth = fromDate.getMonth();
+  const toYear = toDate.getFullYear();
+  const toMonth = toDate.getMonth();
+
+  const months = [];
+
+  for (let year = fromYear; year <= toYear; year++) {
+    let month = year === fromYear ? fromMonth : 0;
+    const monthLimit = year === toYear ? toMonth : 11;
+    for (; month <= monthLimit; month++) {
+      months.push({ year, month });
+    }
+  }
+  return months;
+};
+// const sample = getMonths(new Date('2022-07-28'), new Date('2023-03-20'));
+// console.log(sample);
+
+export const sliceWords = (str, start, end) => {
+  return str.slice(str.indexOf(" ", start), str.indexOf(" ", end));
 };

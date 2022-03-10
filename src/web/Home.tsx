@@ -1,65 +1,46 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { applicationProperties } from "../ApplicationConstants";
+import { getArticlesByIds } from "../datastore/actions/ArticleActions";
+import { useArticle } from "../datastore/contexts/ArticleContext";
+import { useJournal } from "../datastore/contexts/JournalContext";
+import { getArticleFromId } from "../utils/componentUtil";
+import ArticlePreviewWeb from "./components/Article/ArticlePreviewWeb";
+import ArticleCard from "./components/Home/ArticleCard";
+import HeroArticle from "./components/Home/HeroArticle";
 
 export default function Home() {
+  const { state: jState } = useJournal();
+  const { dispatch, state: articleData } = useArticle();
+
+  useEffect(() => {
+    if (jState.journal.templateArticles.length > 0)
+      getArticlesByIds(dispatch, jState.journal.templateArticles);
+  }, [jState]);
+
+
+  window.document.title = `Home - ${applicationProperties.title}`;
+
+  const getArticleFromIndex = (index) =>{
+    console.log("getArticleFromId",jState.journal,articleData.articles);
+    return getArticleFromId( jState.journal.templateArticles[index],articleData.articles)
+  }
+
   return (
     <React.Fragment>
+      {articleData.articles && getArticleFromIndex(0) && <HeroArticle article={getArticleFromIndex(0)}/>}
+
       <div className="container">
-        <h1 className="mt-5">Highlighted Topic Header</h1>
-        <p className="lead">
-          When you eat carbohydrates (foods with starch or sugar: click here for
-          a tutorial about carbohydrates) your digestive system will convert
-          what you’ve eaten into
-          <img
-            className="img-fluid"
-            alt="Responsive image"
-            src="https://learn-biology.com/wp-content/uploads/2018/12/04_1920px-Insulin_glucose_metabolism_w-numbers-and-labels-1024x572.png"
-          />
-          Genetic regulatory networks are dynamic systems which describe the
-          interactions among gene products (mRNAs and proteins)
-          <br />
-          <a href="/web/article/kzzua95cipc28wgefia">...</a>
-        </p>
-      </div>
-      <div className="container">
-        <p>
-          <h4>Delayed Genetic Regulatory Networks</h4>
-          Recently nonlinear differential equations have been proposed to model
-          genetic regulatory networks. Based on this model, stability of genetic
-          regulatory networks has been intensively studied, which is believed
-          useful in designing and controlling genetic regulatory networks
-          <br /> <a href="/web/article/hs0Gvdf">...</a>
-        </p>
-        <p>
-          <h4>Delayed Genetic Regulatory Networks</h4>
-          Recently nonlinear differential equations have been proposed to model
-          genetic regulatory networks. Based on this model, stability of genetic
-          regulatory networks has been intensively studied, which is believed
-          useful in designing and controlling genetic regulatory networks
-          <br /> <a href="/web/article/987391391bbjgj27819391">...</a>
-        </p>
+      {articleData.articles && getArticleFromIndex(1) && <ArticleCard article={getArticleFromIndex(1)}/>}
+      {articleData.articles && getArticleFromIndex(2) && <ArticleCard article={getArticleFromIndex(2)}/>}
       </div>
 
       <div className="container">
         <div className="row">
-          <div className="p-3 col  m-1 border">
-            <h5>Delayed Genetic Regulatory Networks</h5>
-            Recently nonlinear differential equations have been proposed to
-            model genetic regulatory networks. Based on this model, stability of
-            genetic regulatory networks has been intensively studied, which is
-            believed useful in designing and controlling genetic regulatory
-            networks
-            <br />
-            <a href="/web/article/l01cqn0nl53z5w6r6w8">...</a>
+          <div className="p-3 col  m-1">
+          {articleData.articles && getArticleFromIndex(3) && <ArticleCard article={getArticleFromIndex(3)}/>}
           </div>
-          <div className="p-3 col  m-1 border">
-            <h4>Delayed Genetic Regulatory Networks</h4>
-            Recently nonlinear differential equations have been proposed to
-            model genetic regulatory networks. Based on this model, stability of
-            genetic regulatory networks has been intensively studied, which is
-            believed useful in designing and controlling genetic regulatory
-            networks
-            <br />
-            <a href="/web/article/4_TuJYn">...</a>
+          <div className="p-3 col  m-1 ">
+          {articleData.articles && getArticleFromIndex(4) && <ArticleCard article={getArticleFromIndex(4)}/>}
           </div>
         </div>
       </div>

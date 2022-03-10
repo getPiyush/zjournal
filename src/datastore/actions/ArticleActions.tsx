@@ -4,6 +4,8 @@ import {
   addArticleAPI,
   getArticleByCategoryAPI,
   updateArticleAPI,
+  getArticleByIdsAPI,
+  getArticleByMonthAPI,
 } from "../api";
 
 export const getArticleById = (dispatch, id: string) => {
@@ -16,6 +18,21 @@ export const getArticleById = (dispatch, id: string) => {
     .catch(function (error) {
       console.log(error);
       dispatch({ type: "get_article_by_id_error" });
+    })
+    .then(function () {
+      // always executed
+    });
+};
+
+export const getArticlesByIds = (dispatch, ids: string[]) => {
+  dispatch({ type: "get_article_by_ids_loading" });
+  getArticleByIdsAPI(ids)
+    .then(function (response) {
+      dispatch({ type: "get_article_by_ids_success", value: response.data });
+    })
+    .catch(function (error) {
+      console.log(error);
+      dispatch({ type: "get_article_by_ids_error" });
     })
     .then(function () {
       // always executed
@@ -36,6 +53,23 @@ export const getArticlesBycategory = (dispatch, category: string, web?: boolean)
       // always executed
     });
 };
+
+
+export const getArticlesByBlogDate = (dispatch, blogDate: string, web?: boolean) => {
+  dispatch({ type: "get_article_by_blog_date_loading" });
+  getArticleByMonthAPI(blogDate, web)
+    .then(function (response) {
+      dispatch({ type: "get_article_by_blog_date", value: response.data });
+    })
+    .catch(function (error) {
+      console.log(error);
+      dispatch({ type: "get_article_by_blog_date_error" });
+    })
+    .then(function () {
+      // always executed
+    });
+};
+
 
 export const addArticleToDB = (dispatch, article: ArticleT) => {
   dispatch({ type: "add_article_loading" });
