@@ -19,7 +19,7 @@ export default function Categories() {
           {state?.journal?.categories.length > 0 &&
             state.journal.categories.map((category) => (
               <li>
-                <a href="#">{category}</a>
+                <a href={`/web/articles?categoryId=${category}`}>{category}</a>
               </li>
             ))}
         </ol>

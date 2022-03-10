@@ -18,7 +18,7 @@ export type ArticleT = {
   content: ComponentObject[];
   origin: "server" | "local";
   published: boolean;
-} 
+}
 
 export type Journal = {
   title: string;
@@ -26,4 +26,5 @@ export type Journal = {
   currentArticle: ArticleT;
   categories: string[];
   components: string[];
+  templateArticles: string[];
 };

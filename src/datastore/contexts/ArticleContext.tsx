@@ -6,9 +6,15 @@ type Action =
   | { type: "get_article_by_id"; value: ArticleT }
   | { type: "get_article_by_id_loading" }
   | { type: "get_article_by_id_error" }
+  | { type: "get_article_by_ids_success"; value: ArticleT[] }
+  | { type: "get_article_by_ids_loading" }
+  | { type: "get_article_by_ids_error" }
   | { type: "get_article_by_category"; value: ArticleT[] }
   | { type: "get_article_by_category_loading" }
   | { type: "get_article_by_category_error" }
+  | { type: "get_article_by_blog_date"; value: ArticleT[] }
+  | { type: "get_article_by_blog_date_loading" }
+  | { type: "get_article_by_blog_date_error" }
   | { type: "add_article_loading" }
   | { type: "add_article_success" }
   | { type: "add_article_error" }
@@ -39,6 +45,19 @@ function articleReducer(state: State, action: Action) {
       return { status: "error", articles: state.articles };
     }
   
+    case "get_article_by_ids_loading": {
+      return { status: "loading", articles: state.articles };
+    }
+
+    case "get_article_by_ids_success": {
+      return { articles: action.value, status: "success" };
+    }
+
+    case "get_article_by_ids_error": {
+      return { status: "error", articles: state.articles };
+    }
+
+
     case "get_article_by_category_loading": {
       return { status: "loading", articles: state.articles };
     }
@@ -48,6 +67,18 @@ function articleReducer(state: State, action: Action) {
     }
 
     case "get_article_by_category_error": {
+      return { status: "error", articles: state.articles };
+    }
+
+    case "get_article_by_blog_date_loading": {
+      return { status: "loading", articles: state.articles };
+    }
+  
+    case "get_article_by_blog_date": {
+      return { articles: action.value, status: "success" };
+    }
+  
+    case "get_article_by_blog_date_error": {
       return { status: "error", articles: state.articles };
     }
 

@@ -1,9 +1,15 @@
 import { ArticleT, Journal } from "./Types";
 
+export const applicationProperties = {
+  title:"Pharmaceutical Updates by Chandrasekhar Panda",
+  author:"Chandrasekhar Panda",
+  startDate: "2022-02-01"
+}
+
 
   export const defaultArticle:ArticleT = {
     id: '',
-    author: "Piyush Praharaj",
+    author: applicationProperties.author,
     title: "",
     dateCreated: new Date(),
     dateModified: new Date(),
@@ -18,6 +24,23 @@ import { ArticleT, Journal } from "./Types";
     selectedPage: "home",
     currentArticle: defaultArticle,
     categories: [],
-    components:[]
+    components:[],
+    templateArticles:[]
   };
+
+  
+  export const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
   

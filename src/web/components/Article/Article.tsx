@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactHtmlParser from "react-html-parser";
 import { useLocation } from "react-router-dom";
+import { applicationProperties } from "../../../ApplicationConstants";
 import { getArticleById } from "../../../datastore/actions/ArticleActions";
 import { useArticle } from "../../../datastore/contexts/ArticleContext";
 
@@ -30,6 +31,7 @@ export default function Article({ data }: ArticleProps) {
     console.log("articleData is", articleData);
     if (isWebArticle && articleData.status === "success" && articleData.articles.length > 0) {
       setArticle(articleData.articles[0]);
+      window.document.title =  `${articleData.articles[0].title} - ${applicationProperties.title}`;
     } else if (isWebArticle && articleData.status === "error") {
       setArticle(null);
     }

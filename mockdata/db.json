@@ -109,11 +109,11 @@
     },
     {
       "id": "987391391bbjgj27819391",
-      "title": "Article Topic Header",
+      "title": "How Genetic Engineering Impacts Our Life",
       "categryId": "Engineering",
       "author": "Piyush praharaj",
       "dateCreated": "2022-02-23T21:53:44.760Z",
-      "dateModified": "2022-02-23T21:53:44.760Z",
+      "dateModified": "2022-03-09T12:06:41.871Z",
       "origin": "server",
       "published": true,
       "content": [
@@ -182,9 +182,9 @@
     {
       "id": "l00jcbtfouv42pfnbw",
       "author": "Piyush Praharaj",
-      "title": "Hello Title",
+      "title": "Never feed these foods to you pet",
       "dateCreated": "2022-02-24T05:18:53.907Z",
-      "dateModified": "2022-02-24T05:18:53.907Z",
+      "dateModified": "2022-03-10T09:24:13.692Z",
       "categryId": "Quality Control",
       "origin": "server",
       "published": true,
@@ -192,7 +192,7 @@
         {
           "componentId": "l00jckorqirc694van",
           "componenType": "h2",
-          "data": "Never feed these foods to you pet"
+          "data": "How important is it?"
         },
         {
           "componentId": "l00jcxnja5p5i8enerv",
@@ -2283,8 +2283,8 @@
       "author": "Piyush Praharaj",
       "title": "Table Test",
       "dateCreated": "2022-03-07T19:17:24.748Z",
-      "dateModified": "2022-03-08T12:10:02.883Z",
-      "categryId": "Production",
+      "dateModified": "2022-03-10T10:46:30.554Z",
+      "categryId": "Good Manufacturing Practices (GMP)",
       "content": [
         {
           "componentId": "l0h356antr9v912xa1",
@@ -2306,7 +2306,100 @@
         }
       ],
       "origin": "server",
-      "published": false
+      "published": true
+    },
+    {
+      "id": "Ahx1hN-",
+      "author": "Piyush Praharaj",
+      "title": "Test Article",
+      "dateCreated": "2022-03-05T03:03:27.113Z",
+      "dateModified": "2022-03-10T11:08:11.011Z",
+      "categryId": "Good Manufacturing Practices (GMP)",
+      "content": [
+        {
+          "componentId": "l0kvmfvn8pqsy9164",
+          "componenType": "Paragraph",
+          "data": "<p><b>User requirement specification (URS) </b>is a list of all the requirements from the user, like equipment to be purchased. After the preparation of the list, the documents are sent to the manufacturer to get the required materials as per the given criteria.\n</p>\n<p>\nThe user department will raise the indent for his requirement regarding machine equipment or software. He/She will give all the requirements in the format of URS, which include the functional and technical specifications for the machine equipment or software. This specification in the written format is defined as URS. It shall be very specific.\n</p><p>\nThere should not be any confusion during the preparation for approval. Functional as well as technical aspects shall be clearly mentioned. The number of spare change parts required shall be mentioned in URS.\n</p><p>\nUsers should also give the details of other areas which are going to affect if the machine is procured or which are the other areas that need to modify such as the environmental (AHU) control system. Also, keep in mind whether this modification is possible and feasible; is it going to impact the other existing system. URS is a supporting document for the preparation of design qualifications.\n</p>",
+          "numbered": false
+        }
+      ],
+      "origin": "server"
+    },
+    {
+      "id": "xnNr_jD",
+      "author": "Piyush Praharaj",
+      "title": "User Requirement specification (URS) of Equipment’s in Pharmaceutical",
+      "dateCreated": "2022-03-05T03:03:27.113Z",
+      "dateModified": "2022-03-10T11:09:20.152Z",
+      "categryId": "Good Manufacturing Practices (GMP)",
+      "content": [
+        {
+          "componentId": "l0kvmfvn8pqsy9164",
+          "componenType": "Paragraph",
+          "data": "<p><b>User requirement specification (URS) </b>is a list of all the requirements from the user, like equipment to be purchased. After the preparation of the list, the documents are sent to the manufacturer to get the required materials as per the given criteria.\n</p>\n<p>\nThe user department will raise the indent for his requirement regarding machine equipment or software. He/She will give all the requirements in the format of URS, which include the functional and technical specifications for the machine equipment or software. This specification in the written format is defined as URS. It shall be very specific.\n</p><p>\nThere should not be any confusion during the preparation for approval. Functional as well as technical aspects shall be clearly mentioned. The number of spare change parts required shall be mentioned in URS.\n</p><p>\nUsers should also give the details of other areas which are going to affect if the machine is procured or which are the other areas that need to modify such as the environmental (AHU) control system. Also, keep in mind whether this modification is possible and feasible; is it going to impact the other existing system. URS is a supporting document for the preparation of design qualifications.\n</p>",
+          "numbered": false
+        },
+        {
+          "componentId": "l0kvq2t11udp2m1pyle",
+          "componenType": "h5",
+          "data": "User requirement specification for equipment.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0kvqhybk58415plq2c",
+          "componenType": "Paragraph",
+          "data": "<b>The following point must be included in URS:\n</b>",
+          "numbered": false
+        },
+        {
+          "componentId": "l0kvr7c53ll758fe9s6",
+          "componenType": "List",
+          "data": [
+            "Name of the user department",
+            "Location",
+            "Machine/equipment/software name",
+            "Purpose of the machine/equipment/software",
+            "Other areas of impact (AHU, movement, and space)",
+            "Parameters to be considered for the URS.",
+            "Model making Name with specification, and quantity with the remark.",
+            "Capacity: give the detailed specification and quantity likes requirement in Kilogram or liters.",
+            "The material of construction: give details about the material of construction like Stainless steel and its grades.",
+            "Give details about Instruments on machine likes Metal detector, Camera inspection system, and pinhole detector, etc.",
+            "Required calibration details with the specification with remarks",
+            "Details specification: baffles, Dia, punches, Guide track, cutter, and channel.",
+            "Specified details about required tools",
+            "Documentation like  Qualification/ manuals",
+            "Environmental: (Include the temperature and humidity of the area ) / health safety requirements (like MCB and safety Guard) and Control (Specify needs of equipment, interfaces, output forms (e.g., USB)",
+            "Critical control points"
+          ],
+          "numbered": false
+        },
+        {
+          "componentId": "iouwer23789weioryoweerwo",
+          "componenType": "Paragraph",
+          "data": "<b>Others:\n</b>",
+          "numbered": false
+        },
+        {
+          "componentId": "werwewe098r908wer0",
+          "componenType": "List",
+          "data": [
+            "Utilities. Utilities. Define the kind of power supply to use for the equipment, the requirement of UPS, or other utility requirements. Include water system, quality, or compressed gas, if required.",
+            "Availability. Limitation of operation time for the equipment",
+            "Supporting Documents. Operating manuals, warranty, parts, spare parts, circuit diagrams.",
+            "User requirement specification document Shall be signed by an authorized person in the column prepared by, reviewed by, and approved by. In the end, review, revise, and approve the URS. The next step is the design qualification."
+          ],
+          "numbered": false
+        },
+        {
+          "componentId": "l0kw086548yf70rd3yn",
+          "componenType": "Paragraph",
+          "data": "<b>Conclusion : </b>When a system is being created, User Requirements Specifications are a valuable tool for ensuring the system will do what users need it to try to do. ",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true
     }
   ],
   "journal": {
@@ -2340,72 +2433,13 @@
       "Paragraph",
       "List",
       "Table"
-    ]
-  },
-  "template": {
-    "articles": [
-      "_yM3J9o",
+    ],
+    "templateArticles": [
+      "4_TuJYn",
+      "xnNr_jD",
       "ia3N1Wm",
       "l00jcbtfouv42pfnbw",
-      "kzzua95cipc28wgefia",
-      "l00t5hhhg3cw6ppf48v",
-      "8974984b3948b239b2398",
-      "987391391bbjgj27819391",
-      "A9G4MGI"
+      "l00t5hhhg3cw6ppf48v"
     ]
-  },
-  "testJson": [
-    {
-      "name": "hello",
-      "id": "qwkleewqjweqwieqoiqweowq"
-    },
-    {
-      "name": "Annna",
-      "id": "g00eNoH"
-    },
-    {
-      "name": "piyush",
-      "id": "dfrFUJf"
-    },
-    {
-      "name": "piyush",
-      "id": "V6Au1Y3"
-    },
-    {
-      "name": "piyush",
-      "id": "eU37LZP"
-    },
-    {
-      "name": "piyush",
-      "id": "0A9719_"
-    },
-    {
-      "name": "piyush",
-      "id": "xs2jzQm"
-    },
-    {
-      "name": "piyush",
-      "id": "iiAAGLh"
-    },
-    {
-      "name": "piyush",
-      "id": "pXjaKxc"
-    },
-    {
-      "name": "piyush",
-      "id": "fmBNgcs"
-    },
-    {
-      "name": "piyush",
-      "id": "_5fiA3O"
-    },
-    {
-      "name": "Annna",
-      "id": "P_fczcj"
-    },
-    {
-      "name": "piyush",
-      "id": "CanB_xf"
-    }
-  ]
+  }
 }

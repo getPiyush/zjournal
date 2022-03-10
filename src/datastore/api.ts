@@ -17,8 +17,19 @@ export const getArticleByIdAPI = (id: string) => {
     return axios.get(url);
 }
 
-export const getArticleByCategoryAPI = (category: string) => {
-    const url = `${getArticleAPIPath}?categryId=${category}`;
+export const getArticleByIdsAPI = (ids: string[]) => {
+    const idUrl = ids.join('&id=');
+    const url = `${getArticleAPIPath}?id=${idUrl}`;
+    return axios.get(url);
+}
+
+export const getArticleByCategoryAPI = (category: string, web:boolean) => {
+    const url = `${getArticleAPIPath}?categryId=${category}${web?`&published=true`:``}`;
+    return axios.get(url);
+}
+
+export const getArticleByMonthAPI = (blogDate: string, web:boolean) => {
+    const url = `${getArticleAPIPath}?dateCreated_like=${blogDate}${web?`&published=true`:``}`;
     return axios.get(url);
 }
 
