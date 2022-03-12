@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useArticle } from "../../datastore/contexts/ArticleContext";
 import { useJournal } from "../../datastore/contexts/JournalContext";
 import { ArticleT, ComponentObject } from "../../Types";
 
@@ -25,6 +26,18 @@ export default function ArticleEditor({
   setPreview,
 }: ArticleEditorProps) {
   const sampleText = "The quick brown fox, jumps over a lazy dog.!?";
+
+  const { state: aState } = useArticle();
+
+  useEffect(() => {
+    if (
+      aState.status === "add_article_success" &&
+      article.id === "" &&
+      aState.articles.length > 0
+    ) {
+      setArticle(aState.articles[0]);
+    }
+  }, [aState]);
 
   const { state: jState } = useJournal();
 
@@ -71,7 +84,6 @@ export default function ArticleEditor({
   };
 
   const onEditUpdate = (editComponent) => {
-    console.log(editComponent);
     setEditcomponent(editComponent);
     setEditMode(false);
     const updatedComponents = setComponentById(
@@ -120,9 +132,9 @@ export default function ArticleEditor({
     }
   };
 
-  const publishStatusUpdated = () =>{
+  const publishStatusUpdated = () => {
     setArticle({ ...article, published: !article.published });
-  }
+  };
 
   const showHdeOffCanvas = (flag) => {
     const myOffcanvas = document.getElementById("offcanvasRight");
@@ -213,7 +225,6 @@ export default function ArticleEditor({
           </button>
         </div>
         <div className="col editor-action-col-end">
-
           <div className="dropdown padding-lr-8">
             <button
               className="btn btn-sm btn-outline-dark dropdown-toggle"

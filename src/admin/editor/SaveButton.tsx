@@ -14,10 +14,8 @@ export default function SaveButton({ article }: SaveButtonProps) {
 
   const saveArticle = () => {
     if (article.origin === "local") {
-      console.log("Adding new Article", article);
       addArticleToDB(dispatch, { ...article, id: "", origin: "server" });
     } else {
-      console.log("Updating Article", article);
       updateArticleinDB(dispatch, { ...article, dateModified: new Date() });
     }
   };

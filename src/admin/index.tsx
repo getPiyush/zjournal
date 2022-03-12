@@ -12,6 +12,7 @@ export default function Admin() {
 
   useEffect(() => {
     getJournalFromDB(dispatch);
+    window.document.title = "zJournal Admin Panel";
   }, []);
 
   return (

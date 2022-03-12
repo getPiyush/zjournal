@@ -52,7 +52,6 @@ export default function EditPrompt({
   };
 
   const childComponentUpdated = (compData: ComponentObject) => {
-    // console.log(compData);
     setOutComp(compData);
     setCompData(compData.data);
   };
