@@ -260,8 +260,7 @@ export const getMonths = (from: string, to: string) => {
   }
   return months;
 };
-// const sample = getMonths(new Date('2022-07-28'), new Date('2023-03-20'));
-// console.log(sample);
+
 
 export const sliceWords = (str, start, end) => {
   return str.slice(str.indexOf(" ", start), str.indexOf(" ", end));

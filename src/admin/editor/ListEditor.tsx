@@ -44,7 +44,6 @@ export const ListEditor = ({ listData, updateListData }: ListProps) => {
 
   const onDeleteClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     const itemIndex = Number(event.currentTarget.id.split("_")[0]);
-    console.log("deleting ", itemIndex);
     let newList = [...list];
     newList.splice(itemIndex, 1);
     setList(newList);

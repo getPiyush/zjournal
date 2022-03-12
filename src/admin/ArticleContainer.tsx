@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useArticle } from "../datastore/contexts/ArticleContext";
 import { ArticleT } from "../Types";
 import Article from "../web/components/Article/Article";
 import ArticleEditor from "./editor/ArticleEditor";
@@ -14,6 +15,18 @@ export default function ArticleContainer({
   inArticle,
   setOutArticle,
 }: ArticleContainerProps) {
+  const { state: aState } = useArticle();
+
+  useEffect(() => {
+    if (
+      aState.status === "add_article_success" &&
+      article.id === "" &&
+      aState.articles.length > 0
+    ) {
+      setArticle(aState.articles[0]);
+    }
+  }, [aState]);
+
   const [article, setArticle] = useState(inArticle);
   const [editMode, setEditMode] = useState(true);
 

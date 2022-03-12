@@ -16,7 +16,7 @@ export default function Articles() {
   const [params] = useSearchParams();
   const categoryId = params.getAll("categoryId")[0];
   const blogDate = params.getAll("blogdate")[0];
-  console.log("useSearchParams()=", categoryId, blogDate);
+
   const isArticleByCategory =
     path.search("/articles") !== -1 && categoryId && categoryId !== "";
 

@@ -16,7 +16,7 @@ type Action =
   | { type: "get_article_by_blog_date_loading" }
   | { type: "get_article_by_blog_date_error" }
   | { type: "add_article_loading" }
-  | { type: "add_article_success" }
+  | { type: "add_article_success",  value: ArticleT  }
   | { type: "add_article_error" }
   | { type: "update_article_loading" }
   | { type: "update_article_success" }
@@ -88,7 +88,7 @@ function articleReducer(state: State, action: Action) {
     }
 
     case "add_article_success": {
-      return { status: "success", articles: state.articles };
+      return { status: "add_article_success", articles: [action.value] };
     }
 
     case "add_article_error": {
