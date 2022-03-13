@@ -2404,19 +2404,116 @@
     {
       "id": "tdnGPZX",
       "author": "Chandrasekhar Panda",
-      "title": "No Title sdfsd",
+      "title": "Into the Duct: An Unusual Source of Bacteremia",
       "dateCreated": "2022-03-05T03:03:27.113Z",
-      "dateModified": "2022-03-10T17:55:01.176Z",
+      "dateModified": "2022-03-13T20:22:17.387Z",
       "categryId": "Validation and Qualification",
       "content": [
         {
           "componentId": "l0l9atbeystdnlts04",
           "componenType": "h2",
-          "data": "Click to Update Text",
+          "data": "Presentation\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0ppp3rs02rr7oevvh0u",
+          "componenType": "Paragraph",
+          "data": "A 52-year-old male presented to the hospital with a 3-day history of high-grade fever (over 39.0°C), arthralgia, and headache. He was diagnosed with acute pancreatitis for the first time at 28 years of age. Since then, he has been admitted several times due to chronic pancreatitis. The cause of chronic pancreatitis had been assumed to be alcohol consumption. Three months prior, he received an endoscopic ultrasound-fine needle aspiration to evaluate a mass in the pancreatic head, which yielded no evidence of malignancy. He denied abdominal pain, back pain, nausea or vomiting, or diarrhea. His other medical history included diabetes mellitus, but he did not take any medication or have any allergies. He was a current 52.5 pack-year smoker and was drinking 2 units of alcoholic beverage per day. There was no family history of pancreatic disease.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0ppprl5a2haf5feoek",
+          "componenType": "h2",
+          "data": "Assessment",
+          "numbered": false
+        },
+        {
+          "componentId": "l0ppq1aby358am5mp2s",
+          "componenType": "Paragraph",
+          "data": "On physical examination, his blood pressure was 96/66 mmHg, pulse rate was 89 bpm, respiratory rate was 18 breaths per min, body temperature was 38.1°C, and oxygen saturation was 97% in ambient air. The conjunctiva was anicteric. The neck was supple. There were no murmurs or rales upon chest auscultation. His abdomen was not distended, and there was no abdominal tenderness. There was no erythema on the joints or skin. Blood tests revealed a white blood cell count within normal range (6,360/mm3) and severely decreased platelet counts (4.9 × 109/mm3). There was no elevation in serum aminotransferases or amylase levels (51 U/L); however, the C-reactive protein level was highly elevated (28.59 mg/dL). There was no pyuria or bacteriuria on urinalysis. The chest and abdominal computed tomography (CT) without contrast showed multiple calcified lesions in the pancreas, a dilated pancreatic duct, and slight peripancreatic fat stranding, and there were otherwise no findings that could explain the cause of his symptoms and signs. Transthoracic echocardiography showed no abnormality.\n<br/><br/>\nAlthough slight peripancreatic fat stranding was detected on the CT, acute pancreatitis or acute on chronic pancreatitis were not considered as a cause of fever because there was no abdominal pain and serum amylase level was normal. Instead, systemic symptoms such as fever, headache, arthralgia, relatively low blood pressure, and remarkably decreased platelet counts with elevated C-reactive protein levels indicated bacteremia. After taking blood and urine cultures, the patient was admitted and started receiving intravenous cefmetazole (1 g twice a day).\n<br/><br/>\nOn day 2, the blood cultures turned out to be positive for Enterobacteriaceae (identified as Escherichia coli on day 4), whereas the urine culture was sterile. An intra-abdominal abscess was considered as the source of bacteremia; however, the contrast-enhanced abdominal CT and abdominal ultrasound showed no additional findings. The patient was treated for bacteremia of unknown origin.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0ppsdkcblj13e8mw6n",
+          "componenType": "h2",
+          "data": "Diagnosis",
+          "numbered": false
+        },
+        {
+          "componentId": "l0ppslra1ecpqh4y8nqj",
+          "componenType": "Paragraph",
+          "data": "The patient's condition did not improve despite effective antimicrobial therapy, even on day 5. At the time, the pancreas was considered as a possible source of bacteremia based on the patient's background. The follow-up serum amylase level on day 6 increased (295 U/L). The diffusion-weighted images in the magnetic resonance cholangiopancreatography showed high intensity in the pancreatic duct, suggesting infection in the pancreatic duct (Figure 1). There was no abnormal finding in the bile duct.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0pptevkkacwcepb93c",
+          "componenType": "Image",
+          "data": "https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/15b05d87-9c8e-44a8-ac43-5567b021a74b/gr1.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0ppujswjv0okv4pmyf",
+          "componenType": "Paragraph",
+          "data": "\n<b>Figure 1</b> Diffusion-weighted images in the magnetic resonance cholangiopancreatography showing high intensity in the pancreatic duct.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0ppvt9fvwqnjnr7iqn",
+          "componenType": "Paragraph",
+          "data": "On day 7, endoscopic retrograde cholangiopancreatography was conducted, wherein a pruritic discharge from the papilla of Vater was detected (Figure 2). Following the incision of the sphincter of Oddi, the cholangiopancreatography revealed several filling defects suggestive of pancreatic stones and caudal dilatation of the pancreatic duct (Figure 3). There was no abnormal finding in the bile duct. The procedure was finished with the placement of an endoscopic nasopancreatic drainage tube. The pancreatic juice from the drainage tube was cultured and turned out to be positive for E coli. The patient was diagnosed with acute obstructive suppurative pancreatic ductitis (AOSPD).",
+          "numbered": false
+        },
+        {
+          "componentId": "l0ppwlw9mkxz2c14ps9",
+          "componenType": "Image",
+          "data": "https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/bfb8c16f-8910-4132-aabe-ba0954c4448b/gr2.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0ppx1ib1k8k27ti0u6",
+          "componenType": "Paragraph",
+          "data": "<b>Figure 2</b> Pruritic discharge draining from the sphincter of Vater.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0ppy59c05l6k87h1ex",
+          "componenType": "Image",
+          "data": "https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/0109b023-7aa9-41e3-b0ab-339fd08dc5be/gr3.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0ppylktkmgoke6zdp",
+          "componenType": "Paragraph",
+          "data": "<b>Figure 3</b> Cholangiopancreatography revealing several filling defects suggestive of pancreatic stones and caudal dilatation of the pancreatic duct.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0ppzhnllef0jsajmbo",
+          "componenType": "h2",
+          "data": "Management",
+          "numbered": false
+        },
+        {
+          "componentId": "l0ppzz06lgew68g8nw",
+          "componenType": "Paragraph",
+          "data": "After the drainage, the patient's condition improved. On day 18, he was transferred to a tertiary university hospital for further treatment, where he received extracorporeal shock wave lithotripsy to remove the pancreatic stones. He was finally discharged a week after transfer and has been well for 4 months.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0pq0urbjmhbe45q5oa",
+          "componenType": "h2",
+          "data": "Discussion",
+          "numbered": false
+        },
+        {
+          "componentId": "l0pq14vpg2m31v3ld19",
+          "componenType": "Paragraph",
+          "data": "Obstructive suppurative pancreatic ductitis is defined as suppuration in the main pancreatic duct without a concurrently infected pseudocyst or pancreatic abscess.1,2 The typical presentation of AOSPD is an acute fever over 38.0°C with abdominal pain developed in a male aged 50 to 60 years who is a smoker and habitual drinker with a history of chronic pancreatitis.1 The other possible risk factors of AOSPD are diabetes mellitus, the presence of intraductal pancreatic stones, and prior pancreatic procedures.1,2 Fever, markedly elevated CRP level, and relatively lower serum amylase level at clinical onset are characteristic of AOSPD with chronic pancreatitis compared with acute on chronic pancreatitis.1 The essential finding to diagnose AOSPD is a confirmation of pancreatic duct obstruction with evidence of infection in the pancreatic duct, such as pancreatic pus or positive pancreatic juice culture.1,  2,  3 Because AOSPD can result in severe sepsis and requires drainage of the pancreatic duct,1 the timely correct diagnosis is essential.\n<br/><br/>\nIn this case, the lack of abdominal pain, the cardinal feature of AOSPD, seemed to distract the physicians’ diagnostic process. This hindered the timely effective drainage therapy for AOSPD. Abdominal pain was reported to be observed in 95% of patients with AOSPD;1 therefore, the lack of abdominal pain can be a high risk of diagnostic errors in patients with AOSPD. However, except for abdominal pain, there were almost all the typical characteristics for AOSPD, such as chronic pancreatitis, smoking, habitual drinking, prior pancreatic procedure, low amylase level, high CRP level, dilated pancreatic duct, and pancreatic stones fever, in our patient.1 The same was true of the previously reported case of AOSPD without abdominal pain.1 Besides, retrospectively, the peripancreatic fat stranding on the CT should have been recognized as a clue for AOSPD in this case. Indeed, although the prevalence was low, peripancreatic fat stranding has been reported to be observed in patients with AOSPD.1,2 Therefore, AOSPD should be considered as a differential diagnosis in patients with chronic pancreatitis who have several characteristics of AOSPD even though they do not have abdominal pain.\n<br/><br/>\nIn conclusion, AOSPD should be thought of as a differential diagnosis in patients with bacteremia of unknown origin, when patients have a history of chronic pancreatitis and other several characteristics of AOSPD, even they do not have abdominal pain. Because these patients require drainage of the pancreatic duct when antibiotic therapy fails, a timely correct diagnosis of AOSPD is necessary. The essential action for the diagnosis of AOSPD is “into the duct”.",
           "numbered": false
         }
       ],
-      "origin": "server"
+      "origin": "server",
+      "published": true
     },
     {
       "id": "lLX8vvw",
@@ -2591,6 +2688,60 @@
       ],
       "origin": "server",
       "published": false
+    },
+    {
+      "id": "zRMj9V5",
+      "author": "Chandrasekhar Panda",
+      "title": "Can medical product development be better aligned with global needs?",
+      "dateCreated": "2022-03-13T19:49:35.549Z",
+      "dateModified": "2022-03-13T20:08:49.153Z",
+      "categryId": "Good Manufacturing Practices (GMP)",
+      "content": [
+        {
+          "componentId": "l0ppftnwevvhmx6harw",
+          "componenType": "Paragraph",
+          "data": "Go to any pharmacy and you’ll see a dizzying array of shampoos and facial moisturizers with new kinds emerging all the time. There is no medical need for more ways to wash your hair or moisturize your skin, but the huge financial returns guarantee continual investment by companies into rebranding. By contrast, there are many disabling or fatal diseases for which we desperately need new medical products (such as medicines, vaccines, and diagnostics)—yet few, or none, are available and the product development pipeline is bare.1 2 Even when these medical products do become available, often they reach high income-countries first, with a time lag of up to several decades before they become available in lower income settings. How has such inequity arisen and how can it be addressed?",
+          "numbered": false
+        },
+        {
+          "componentId": "l0ppglozdrylrg9r8sh",
+          "componenType": "h4",
+          "data": "How drug companies determine whether to engage in product development",
+          "numbered": false
+        },
+        {
+          "componentId": "l0ppgv8k5v2hcnu9vue",
+          "componenType": "Paragraph",
+          "data": "Typically, market analyses are performed by pharmaceutical companies. These analyses lead to value propositions and business cases for developing new products based on technologies those companies have either developed, or for which they have licensed intellectual property. These analyses—together with assessments of “end-user” (patient) preferences, and assessments of regulatory pathways—drive research and development (R&D) investments. In traditional for-profit product R&D, the unmet medical need is factored in only partially, including through the end-user preferences and the company’s assessment of likely regulatory authority perspectives. In some cases, governments or multilateral agencies can be large scale procurers (i.e., they will purchase the product), and in this situation their preferences may be given more weight.\n<br/>\nHowever, at present, only a small proportion of global health R&D spending (around 2%) is on the compelling medical problems faced by LMICs.\n<br/>\nOne way to improve this alignment, so that product development meets the world’s medical needs, is for funders and companies to be guided by WHO target product profiles (TPPs). These profiles describe the desired characteristics of a product aimed at tackling a specific disease or diseases. These “state intended use, target populations, and other desired attributes of products, including safety and efficacy-related characteristics.”3\n<br/>\nFor example, in 2008, WHO developed a TPP that laid out the minimum specifications for a vaccine that would save lives by preventing a common type of pneumonia caused by Streptococcus pneumoniae. In 2014, WHO published a TPP for Ebola vaccines. In both cases, the needed vaccines have been developed, licensed, and provided to those most at risk following the preferences articulated by the WHO TPP documents.\n<br/>\nThese two examples show the value of TPPs. If government funders, philanthropists, and industry groups wishing to maximize the public health value of their R&D were to align their funding with WHO TPPs, they would accelerate the production and availability of technologies to curb illness and death.\n<br/>\nWHO TPPs span the most compelling use cases for HIV, malaria, tuberculosis, and a number of neglected, vaccine-preventable and emerging infectious diseases. They are developed in all cases with a group of the world’s leading experts including scientists, product developers, public health experts, regulators, and end users from countries in different income levels.\n<br/>\nA WHO TPP document should inform product developers, regulatory agencies, procurement agencies, and funders on R&D and public health priorities. It is intended to facilitate the most expeditious development of products addressing the greatest and most urgent public health need. WHO TPPs recognise that access, equity, and affordability are integral parts of the innovation process and need to be considered at all stages, not just after a product is developed.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0ppjckmtjkyzm8l2ca",
+          "componenType": "h4",
+          "data": "Using TPPs to guide development of vaccines for emerging infectious diseases",
+          "numbered": false
+        },
+        {
+          "componentId": "l0ppjpovmljfug06jnh",
+          "componenType": "Paragraph",
+          "data": "Novel pathogens regularly emerge from the animal-human interface, and some, such as SARS-CoV-2, will cause pandemics with incalculable social and economic cost. Yet product development in this area has been highly neglected for decades. CEPI, the Coalition for Epidemic Preparedness Innovations, receives public and philanthropic funding to advance needed vaccines for emerging infectious diseases that cause serious outbreaks. In discussions between CEPI and WHO, CEPI agreed to refer to WHO’s list of priority pathogens for investment and to advocate that vaccine development should align with WHO TPPs. In CEPI’s review of applications for funding, developers are asked to report on how their vaccine development is aligned with WHO TPP elements. In parallel, developers are encouraged to liaise with WHO early in the process to ensure that data generated will be in line with WHO’s expectations. At the same time, WHO and Gavi, the Vaccine Alliance (Gavi) hold financing discussions and WHO engages with CEPI on its access terms (to ensure that any CEPI vaccines will be accessible to low- and middle-income countries).\n<br/>\nThis end-to-end process can accelerate timelines from R&D to use by several years. A concrete example of a development direction from WHO in this area would be the focus on one dose vaccines that prevent transmission as well as disease, wherever possible. While two dose vaccines that prevent disease alone are acceptable for licensure by regulators, one dose transmission-blocking vaccines have much greater value for public health programmes. WHO has made TPPs available to guide needed covid-19 diagnostics, therapeutics, and vaccines during the ongoing pandemic.\n<br/>\nAnother example is the development of new antibiotics for highly resistant bacteria. Safe and effective antibiotics to treat otherwise incurable highly resistant, fatal bacterial infections are a compelling medical need. However, drug development in this area remains highly neglected. WHO has developed a priority list of the most compelling cases for antibiotic development, and has produced TPPs outlining minimum specifications for needed antibiotics. Ongoing horizon scanning has indicated that the existence of WHO TPPs is driving investment into the needed area, although greater investment and engagement are still needed.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0ppl4zwk1toiatalag",
+          "componenType": "h4",
+          "data": "A major need for development of WHO TPPs for priority non-communicable disease indications",
+          "numbered": false
+        },
+        {
+          "componentId": "l0ppllyi0faakul3od28",
+          "componenType": "Paragraph",
+          "data": "To date, no WHO TPPs have been developed outside infectious diseases. This is despite the fact that there are many and urgent needs for medical product development for non-communicable diseases. For example, generating data on suitability of products or devices for use in lower incomes settings can be pivotal in the pathway to use and WHO TPPs can be used to articulate these data needs. Thus, WHO TPPs can drive, not only novel product development, but also data generation that can optimize low- and middle-income country use cases for products already available in higher income settings. Certain cancers, diabetes, and hypertension all have priority indications that could serve as the basis for WHO TPP development",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true
     }
   ],
   "journal": {

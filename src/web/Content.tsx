@@ -7,6 +7,8 @@ import Article from "./components/Article/Article";
 import { useJournal } from "../datastore/contexts/JournalContext";
 import { Spinner } from "./components/Spinner";
 import Articles from "./components/Article/Articles";
+import ContactUs from "./ContactUs";
+import AboutUs from "./AboutUs";
 
 export default function Content() {
   const { state } = useJournal();
@@ -34,6 +36,8 @@ export default function Content() {
       {showLoader && <Spinner />}
       <Routes>
         <Route path="home" element={<Home />} />
+        <Route path="contactus" element={<ContactUs />} />
+        <Route path="aboutus" element={<AboutUs/>}/>
         <Route path="article" element={<Article data={state.journal.currentArticle} />} />
         <Route path="article/*" element={<Article data={state.journal.currentArticle} />} />
         <Route path="articles/*" element={<Articles/>} />
