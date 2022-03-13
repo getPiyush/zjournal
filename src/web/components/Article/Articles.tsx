@@ -67,7 +67,8 @@ export default function Articles() {
     <div className="container article-viewer">
       {articleData.status !== "loading" && articleData.status !== "error" ? (
         <div className="container article-viewer disable-text-selection">
-          <h1>{title}</h1>
+          <h2>{title}</h2>
+          <hr/>
           {articleData.articles.length > 0 &&
             articleData.articles.map((article) => {
               return <ArticlePreviewWeb data={article} />;

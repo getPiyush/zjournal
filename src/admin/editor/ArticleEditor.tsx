@@ -193,7 +193,7 @@ export default function ArticleEditor({
             >
               Select component <b>{selectedElement}</b> for Article
             </button>
-            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <ul className="dropdown-menu dropdown-preview" aria-labelledby="dropdownMenuButton1">
               {jState.journal?.components?.map((componentCode, index) => {
                 return (
                   <li

@@ -4,12 +4,24 @@
 /* Not required for template or sticky footer method. */
 
 main > .container {
-  padding: 24px 16px 0;
+  padding: 40px 16px 0;
 }
 
 body {
-  font-family: Georgia, "Times New Roman",
-    serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-family: "Source Serif 4", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+b {
+  font-weight: 800;
 }
 
 .disable-text-selection {
@@ -39,13 +51,13 @@ body {
 
 .navbar-nav .nav-item .nav-link.active {
   color: #1f76a8;
-  font-weight: 550;
+  font-weight: 800;
   border-bottom: 2px solid black;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
   color: #1f76a8;
-  font-weight: 500;
+  font-weight: 700;
   border-bottom: 2px solid black;
 }
 
@@ -67,16 +79,6 @@ body {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman",
-    serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
-  padding-top: 16px;
-}
 .small-text {
   font-size: 0.75rem;
 }
@@ -115,6 +117,21 @@ img {
   padding-right: 8px;
 }
 
+.admin {
+  font-family: "Public Sans", sans-serif;
+}
+
+.admin .article-viewer {
+  font-family: "Source Serif 4", sans-serif;
+}
+
+.admin .edit-area {
+  font-family: "Source Serif 4", sans-serif;
+}
+.admin .dropdown-preview {
+  font-family: "Source Serif 4", sans-serif;
+}
+
 .admin .editor .row {
   padding: 8px;
 }
@@ -127,7 +144,7 @@ img {
   font-size: 1rem;
 }
 
-.admin .admin-module-title{
+.admin .admin-module-title {
   color: #1f76a8;
   margin: 16px 0px 16px 0px;
 }
@@ -172,4 +189,14 @@ button {
   .article-viewer {
     margin-top: 64px !important;
   }
+}
+
+.contact-us, .about-us {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+
+  margin: auto;
+  padding: 16px;
+  max-width: 500px;
+  min-width: 200px;
 }
