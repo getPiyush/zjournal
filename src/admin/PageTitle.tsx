@@ -3,5 +3,9 @@ type PageTitleProps = {
 };
 
 export const PageTitle = ({ title }: PageTitleProps) => {
-  return <h4 className="admin-module-title">{title}</h4>
+  return (
+    <div className="admin-module-title">
+      <h4>{title}</h4> <hr />
+    </div>
+  );
 };

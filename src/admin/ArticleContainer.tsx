@@ -41,7 +41,7 @@ export default function ArticleContainer({
   };
 
   return (
-    <div id="editor" className="editor container">
+    <div id="article_editor" className="editor container">
       <div className="row">
         <div className="col">
           <PageTitle title="Article Editor" />{" "}
