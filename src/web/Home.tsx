@@ -4,7 +4,6 @@ import { getArticlesByIds } from "../datastore/actions/ArticleActions";
 import { useArticle } from "../datastore/contexts/ArticleContext";
 import { useJournal } from "../datastore/contexts/JournalContext";
 import { getArticleFromId } from "../utils/componentUtil";
-import ArticlePreviewWeb from "./components/Article/ArticlePreviewWeb";
 import ArticleCard from "./components/Home/ArticleCard";
 import HeroArticle from "./components/Home/HeroArticle";
 

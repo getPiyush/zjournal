@@ -9,6 +9,7 @@ import { Spinner } from "./components/Spinner";
 import Articles from "./components/Article/Articles";
 import ContactUs from "./ContactUs";
 import AboutUs from "./AboutUs";
+import LoadingPage from "./components/Loader/LoadingPage";
 
 export default function Content() {
   const { state } = useJournal();
@@ -22,8 +23,6 @@ export default function Content() {
   };
 
   useEffect(() => {
-    // Update the document title using the browser API
-    // disable right click
     if (location !== "/article") {
       document.removeEventListener("contextmenu", preventDefaultDelegate);
     } else {
@@ -33,7 +32,7 @@ export default function Content() {
 
   return (
     <main className="flex-shrink-0">
-      {showLoader && <Spinner />}
+      {showLoader && <LoadingPage />}
       <Routes>
         <Route path="home" element={<Home />} />
         <Route path="contactus" element={<ContactUs />} />
