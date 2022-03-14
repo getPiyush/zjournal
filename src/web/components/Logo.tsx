@@ -1,8 +1,8 @@
 export const Logo = () => {
   return (
     <span className="blog-header blog-header-logo">
-      Pharmaceutical Updates
-      <div className="logo-subtext">by Chandrasekhar Panda</div>
+      <b>Pharmaceutical Updates</b>
+      <div className="logo-subtext"><i>by Chandrasekhar Panda</i></div>
     </span>
   );
 };

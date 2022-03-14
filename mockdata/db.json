@@ -513,7 +513,7 @@
       "author": "Piyush Praharaj",
       "title": "19-year-old student’s legs, fingers amputated after eating leftover Chinese food",
       "dateCreated": "2022-02-24T09:53:30.821Z",
-      "dateModified": "2022-02-24T09:53:30.821Z",
+      "dateModified": "2022-03-14T07:57:20.287Z",
       "categryId": "Microbiology",
       "origin": "server",
       "published": true,
@@ -521,7 +521,7 @@
         {
           "componentId": "l00t6ow0gkwqwh6s5w9",
           "componenType": "Paragraph",
-          "data": "Why didn't Centre make arrangements to bring back students stuck in Ukraine…\nDivyanka Tripathi is NOT interested in playing 'submissive, helpless…\n\nA 19-year-old student had his legs and fingers amputated after eating leftover Chinese takeout food from a restaurant in Boston, US."
+          "data": "A 19-year-old student had his legs and fingers amputated after eating leftover Chinese takeout food from a restaurant in Boston, US."
         },
         {
           "componentId": "l00t6x85ze2jt7hbfz8",
@@ -1755,7 +1755,7 @@
       "author": "Piyush Praharaj",
       "title": "Zim drugs market projected to grow",
       "dateCreated": "2022-03-06T20:52:20.862Z",
-      "dateModified": "2022-03-07T07:26:55.131Z",
+      "dateModified": "2022-03-14T07:57:39.689Z",
       "categryId": "Good Manufacturing Practices (GMP)",
       "content": [
         {
@@ -1790,7 +1790,7 @@
         }
       ],
       "origin": "server",
-      "published": false
+      "published": true
     },
     {
       "id": "mJxFy-9",
@@ -1863,7 +1863,7 @@
       "author": "Piyush Praharaj",
       "title": "Cleaning Validation in Pharmaceutical Industry",
       "dateCreated": "2022-03-05T03:03:27.113Z",
-      "dateModified": "2022-03-08T12:04:04.471Z",
+      "dateModified": "2022-03-14T08:02:37.406Z",
       "categryId": "Production",
       "content": [
         {
@@ -1875,7 +1875,7 @@
         {
           "componentId": "l0hxq7xs5c48und4hr5",
           "componenType": "Paragraph",
-          "data": "Health Products and Food Branch Inspectorate  Cleaning Validation Guideline-   Health Canada.\n\n",
+          "data": "Health Products and Food Branch Inspectorate  Cleaning Validation Guideline-   Health Canada.\n<br/>\nPurchase department will get technical information regarding the material through vendor questionnaire from the vendor which includes the brief manufacturing process, TSE/BSE free declaration, impurity profile, residual solvent information, GMO free declaration, Melamine free declaration, Gluten free declaration and stability data/shelf life statement etc. as applicable depending upon the type of material.\n\n",
           "numbered": false
         },
         {
@@ -2263,20 +2263,99 @@
     {
       "id": "VdGLtuw",
       "author": "Piyush Praharaj",
-      "title": "qweqweeq qweq eqw eqee",
+      "title": "Testing Mobile Interface",
       "dateCreated": "2022-03-05T03:03:27.113Z",
-      "dateModified": "2022-03-07T07:29:28.630Z",
+      "dateModified": "2022-03-14T07:35:46.142Z",
       "categryId": "Production",
       "content": [
         {
           "componentId": "l0g7um1j2xky18kaw4f",
           "componenType": "h2",
-          "data": "Click to Update Text",
+          "data": "Legible",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qdoxr3lny9wdhii1h",
+          "componenType": "Paragraph",
+          "data": "The terms legible refers to the requirements that data is clear, easily understandable, and free from overwriting and unauthorized changes, and allow a clear picture of the sequencing of steps or events in the record so that all activities conducted can be fully reconstructed by the people reviewing these records at any point during the records retention period set.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qdq6vs5rwpkn45bqf",
+          "componenType": "Image",
+          "data": "https://3.imimg.com/data3/LG/FR/MY-2983795/pharma-equipment-250x250.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qdrlo7yk12osys2c",
+          "componenType": "Paragraph",
+          "data": "Personnel should be kept up to date about the application of good documentation practices (GDP) to ensure that the principles of ALCOA and ALCOA-plus are understood and applied to electronic data in the same manner that has historically been applied to paper records. Good documentation requirements for manual and electronic records include the following, as applicable",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qdt41t1miq3wsqi1g",
+          "componenType": "h4",
+          "data": "Contemporaneous",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qdu162gdjzh6uxvmh",
+          "componenType": "Paragraph",
+          "data": "Data should be recorded concurrently at the time of performing the activity and recordings such as in-process, environmental should maintain as and when an activity is carried out along with signatures, date and time.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qduqqiw2pslqfqvte",
+          "componenType": "Image",
+          "data": "https://5.imimg.com/data5/KC/BY/MY-38301902/pharmaceutical-ss-water-storage-tank-500x500.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qdv6at5qq8xc8wpuu",
+          "componenType": "h4",
+          "data": "General Requirements for GMP Documentation",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qdvan99kuqsfljx8j",
+          "componenType": "Paragraph",
+          "data": "This chapter covers different levels and types of GMP documentation, including paper and\nelectronic records related to manufacturing, testing, packing of pharmaceutical products, APIs,\nexcipients, dietary supplements, food ingredients and medical devices.\n<br/><br/>\nThese documents and records consist of raw data, reports, protocols, procedures, deviations, investigations, batch records, formats, and records related to trainings, equipments and retention for manufacturing and analytical controls.\n<br/><br/>\nData integrity should always be given utmost importance which means the extent to which all data is complete, consistent and accurate throughout the data life cycle. Controls should be in place and any data integrity incident, if noticed; an appropriate corrective action should be taken to prevent recurrence of the same. Attempts to cover-up mistakes are considered as ‘data integrity’ issues and should be prohibited at all levels.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qdvdb3eprns41om6h",
+          "componenType": "Image",
+          "data": "https://technophar.com/wp-content/uploads/2018/11/6-Leading-Innovations-from-Pharmaceutical-Machinery-Manufacturers-.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qdzc1lnhryeki5cua",
+          "componenType": "List",
+          "data": [
+            "System must have a collection of technological & procedural controls to protect data within the system to ensure that all records are authentic, incompatible and (where applicable) confidential. In lab situation this include lab results used to determine quality, safety, strength, efficacy or purity and in manufacturing this includes all decisions related to product release and product quality.",
+            "Controls should be in place, needed for the identification, storage, protection, back-up, archive, retrieval, retention time, and disposal and to protect the integrity of its records. Access to these records should be consistent with confidentiality and records should be readily available.",
+            "All Technical activities should be carried out with valid, correct and current effective versions of instruction documents and recording formats should have an identification number and a version number (where appropriate), allowing the sufficient space to record entries etc.",
+            "Original observations, data, and calculations should be recorded at the time of activity performed, without any bias or prejudice. These records also include the identity of personnel responsible for the performance of activity.",
+            "Automated data capture or printers should be attached and connected to equipment, such as balances, to ensure independent and timely recording of the data. User access rights to automated systems should be restricted to prevent data amendments (or audit trail).",
+            "Ability to change any clock used for recording timed events, for example, system clocks in electronic systems and process instrumentation should be restricted."
+          ],
+          "numbered": false
+        },
+        {
+          "componentId": "l0qe1f8qan7u9hguw05",
+          "componenType": "h4",
+          "data": "Data Collection and Recording",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qe1zm4t52zpaa1oa",
+          "componenType": "Paragraph",
+          "data": "Good data and records management practices are critical elements of the quality system and a systematic approach should be implemented to provide a high level of assurance that throughout the product life cycle, all GMP records and data are complete and reliable.\n <br/><br/>\nLaboratory information management system(s) (LIMS) includes the management of data and information contained in both computerized and non-computerized systems should be well defined in quality standard procedures.",
           "numbered": false
         }
       ],
       "origin": "server",
-      "published": false
+      "published": true
     },
     {
       "id": "7rQblCw",
@@ -2520,13 +2599,19 @@
       "author": "Chandrasekhar Panda",
       "title": "Test Article",
       "dateCreated": "2022-03-10T17:41:39.974Z",
-      "dateModified": "2022-03-10T17:41:39.974Z",
+      "dateModified": "2022-03-14T08:15:30.613Z",
       "categryId": "Production",
       "content": [
         {
           "componentId": "l0la1yefdqyi0dotch9",
           "componenType": "h2",
-          "data": "Click to Update Text",
+          "data": "Chandrasekhar Panda",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qfkiqycbq4jbfxg4m",
+          "componenType": "Image",
+          "data": "https://deejayfarm.com/wp-content/uploads/2019/10/Profile-pic.jpg",
           "numbered": false
         }
       ],

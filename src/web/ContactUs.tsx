@@ -1,7 +1,15 @@
+import "react-phone-input-2/lib/style.css";
+import PhoneInput from "react-phone-input-2";
 import { applicationProperties } from "../ApplicationConstants";
+import { useState } from "react";
 
 export default function ContactUs() {
   window.document.title = `Contact Us - ${applicationProperties.title}`;
+  const [value, setValue] = useState();
+
+  const phoneNoChaged = (phoneNo) => {
+    setValue(phoneNo);
+  };
 
   return (
     <div className="contact-us container">
@@ -28,6 +36,17 @@ export default function ContactUs() {
               className="form-control"
               id="emailInput"
               placeholder="name@example.com"
+            />
+          </div>
+          <div className="mb-3">
+            <label className="form-label">Phone Number</label>
+            <PhoneInput
+             inputClass="form-control"
+              country={"in"}
+              preferredCountries={["in", "uk", "us"]}
+              placeholder="Enter phone number"
+              value={value}
+              onChange={phoneNoChaged}
             />
           </div>
           <div className="mb-3">
