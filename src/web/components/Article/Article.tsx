@@ -8,6 +8,7 @@ import { useArticle } from "../../../datastore/contexts/ArticleContext";
 import { ArticleT } from "../../../Types";
 import { getDate } from "../../../utils/componentUtil";
 import { PageNotFound } from "../../PageNotFound";
+import LoadingPage from "../Loader/LoadingPage";
 import ArticleContainer from "./ArticleContainer";
 
 type ArticleProps = {
@@ -46,14 +47,7 @@ export default function Article({ data }: ArticleProps) {
 
   const getNoArticle = () => {
     return articleData.status === "loading" ? (
-      <h4>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        ...
-      </h4>
+      <LoadingPage/>
     ) : (
       <PageNotFound />
     );

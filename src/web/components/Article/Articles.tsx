@@ -9,6 +9,7 @@ import {
 import { useArticle } from "../../../datastore/contexts/ArticleContext";
 
 import { PageNotFound } from "../../PageNotFound";
+import LoadingPage from "../Loader/LoadingPage";
 import ArticlePreviewWeb from "./ArticlePreviewWeb";
 
 export default function Articles() {
@@ -51,14 +52,7 @@ export default function Articles() {
     return articleData.status === "error" ? (
       <PageNotFound />
     ) : (
-      <h4>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        ...
-      </h4>
+     <LoadingPage/>
     );
   };
 
