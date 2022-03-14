@@ -9,6 +9,8 @@ main > .container {
 
 body {
   font-family: "Source Serif 4", sans-serif;
+  /**font-family: "Public Sans", sans-serif;*/
+  /** font-family: 'Noto Serif Display', serif; */
 }
 
 h1,
@@ -64,8 +66,7 @@ b {
 .blog-header-logo {
   line-height: 1;
   color: #2485bd;
-  font-family: "Playfair Display", Georgia, "Times New Roman",
-    serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-family: "Noto Serif Display", serif;
   font-size: 1.25rem;
 }
 .blog-header-logo .logo-subtext {
@@ -191,7 +192,8 @@ button {
   }
 }
 
-.contact-us, .about-us {
+.contact-us,
+.about-us {
   padding-top: 80px !important;
   padding-bottom: 80px !important;
 
