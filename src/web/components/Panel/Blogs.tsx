@@ -37,13 +37,13 @@ export default function Blogs() {
           <span className="fst-italic">Elsewhere</span>
           <ol className="list-unstyled">
             <li>
-              <a href="#">GitHub</a>
+              <a href="https://github.com/getPiyush">GitHub</a>
             </li>
             <li>
-              <a href="#">Twitter</a>
+              <a href="https://twitter.com/getPiyush">Twitter</a>
             </li>
             <li>
-              <a href="#">Facebook</a>
+              <a href="https://www.facebook.com/getPiyush">Facebook</a>
             </li>
           </ol>
         </div>

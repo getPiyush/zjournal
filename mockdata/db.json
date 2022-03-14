@@ -2651,26 +2651,107 @@
     {
       "id": "Sp3NClw",
       "author": "Chandrasekhar Panda",
-      "title": "qsdasdasds asdasdas",
+      "title": "Top 20 Pharmaceutical Companies in India 2022",
       "dateCreated": "2022-03-10T17:47:39.512Z",
-      "dateModified": "2022-03-10T17:56:22.648Z",
+      "dateModified": "2022-03-14T11:32:17.249Z",
       "categryId": "Microbiology",
       "content": [
         {
-          "componentId": "l0la9cdbwr9hpm1key",
-          "componenType": "h2",
-          "data": "Click to Update Text",
+          "componentId": "l0qmdq0slw9ly6k2zf",
+          "componenType": "Image",
+          "data": "https://static.startuptalky.com/2021/09/Pharmaceutical-Companies-in-India-Startuptalky.jpg",
           "numbered": false
         },
         {
-          "componentId": "l0la9ci36q5zfzrnowi",
-          "componenType": "h2",
-          "data": "Click to Update Text",
+          "componentId": "l0qm6ncj3ix526r5tt8",
+          "componenType": "Paragraph",
+          "data": "Due to the COVID-19 pandemic, healthcare facilities and medicines have become the need of the hour. India, the second-largest populated country, has also seen numerous cases of Covid-19 and the numbers are still growing. India's pharma sector is also growing and changing lives by providing the necessary amenities. According to the Ministry of Chemicals and Fertilizers, the turnover of pharmaceutical companies in India was 18.12 billion USD in 2018 and 19.14 billion USD in the fiscal year 2019. The domestic drug market recorded sales worth 2.15 billion USD in April 2021. It has increased 51.5% compared to $1.42 billion in April 2020. The moving annual turnover is $20.88 billion as of April 2021, up from $19.64 billion in April 2020.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qm6w18td4gw7estw",
+          "componenType": "Paragraph",
+          "data": "Generic drugs from top pharma companies account for 20% of global exports in terms of volume, making India the largest provider of generic medicines globally. The Indian pharmaceutical market is expected to be worth 33.18 billion USD and will reach 9th position in the global pharma market by 2023. Here, we have listed some of the best pharmaceutical companies, which manufacture exemplary pharmaceutical products in India and are ruling India's pharma sector",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qm7ywb25x21tgrcme",
+          "componenType": "List",
+          "data": [
+            "Sun Pharmaceutical Industries",
+            "Divi's Laboratories",
+            "Dr. Reddy's Laboratories",
+            "Cipla Limited",
+            "Emcure Pharmaceuticals",
+            "Biocon Limited",
+            "Torrent Pharma",
+            "Lupin Limited",
+            "Cadila Healthcare Limited",
+            "Aurobindo Pharma Limited",
+            "Intas Pharmaceuticals Limited",
+            "Glenmark Pharma Limited",
+            "Innovexia Life Sciences Pvt. Ltd.",
+            "Biophar Lifesciences Pvt.Ltd.",
+            "Mankind Pharma Limited",
+            "Piramal Enterprises Limited",
+            "Laurus Labs Ltd.",
+            "Abbott India Ltd.",
+            "Alkem Laboratories",
+            "Alembic Pharmaceuticals"
+          ],
+          "numbered": true
+        },
+        {
+          "componentId": "l0qmff44z0ftswtea4",
+          "componenType": "h4",
+          "data": "Sun Pharmaceutical Industries\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qmgc1hn4ta7rmareq",
+          "componenType": "Image",
+          "data": "https://static.startuptalky.com/2021/05/Sun-Pharmaceutical-Top-Pharmaceutical-Companies-StartupTalky.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qmgf5lzjl9jfcjhy",
+          "componenType": "Paragraph",
+          "data": "<b>\nFounded: 1983<br/>\nOwner: Dilip Shanghvi<br/>\nHeadquarters: Goregaon, Mumbai<br/>\nRevenue: $4.7 billion (FY20)<br/>\n</b>",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qmiccb7ycl1h25ke",
+          "componenType": "Paragraph",
+          "data": "Sun Pharmaceutical Industries' revenue was $4.7 billion in 2020. It is a leading multinational pharmaceutical company in India. Sun Pharma was established in the year 1983. It was founded by Mr. Dilip Shanghvi, who is also the MD of Sun Pharmaceuticals. The company started offering products to treat psychiatric ailments. Now, the company also offers formulations in various therapeutic, gastroenterology, and diabetology.\n<br/>\nSun Pharmaceutical Industries is the largest pharmaceutical company in India based on overall revenue. It is the fourth largest global specialty generic pharmaceutical company in the world. It also sells Carbamazepine, Etodolac, and Clorazepate as well as anti-cancer, steroids, peptides, sex hormones, and controlled substances. Its subsidiaries include Ranbaxy Laboratories, Sun Petrochemical Pvt. Ltd, Sun Ophthalmic Inc, Alkaloida Chemical Company Zrt, Chattem Chemicals Inc. This pharmacy business sells affordable medicines in over 150 countries across 6 continents.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qmizwyxdqzgoxlc7a",
+          "componenType": "h4",
+          "data": "Divi's Laboratories\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qmj90hthambtmzal",
+          "componenType": "Image",
+          "data": "https://static.startuptalky.com/2021/05/Divi-s-Laboratories-Top-Pharmaceutical-Companies-StartupTalky.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qmjc0mfz29g25g4gb",
+          "componenType": "Paragraph",
+          "data": "<b>\nFounded: 1990\n<br/>\nOwner: Murali Divi\n<br/>\nHeadquarters: Hyderabad\n<br/>\nRevenue: $780 million (FY20)<br/>\n</b>\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qmjffei9wwx27h7t",
+          "componenType": "Paragraph",
+          "data": "Divi’s Laboratories Limited is an Indian multinational pharmaceutical company based in Hyderabad, India. Divi's Laboratories was founded in 1990. Divi's Laboratories Ltd. manufactures active pharmaceutical ingredients (APIs) and intermediates. This pharmaceutical company in India is engaged in the manufacture of leading generic compounds, Nutraceutical ingredients, custom synthesis of APIs, and intermediates for global innovator companies. Divi’s Laboratories is one of the largest API companies in the world, with $780 million revenue in 2020, and exporting to more than 95 countries.",
           "numbered": false
         }
       ],
       "origin": "server",
-      "published": false
+      "published": true
     },
     {
       "id": "xRQDz-Q",

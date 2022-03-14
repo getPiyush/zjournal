@@ -26,12 +26,12 @@ export default function Articles() {
   const { dispatch, state: articleData } = useArticle();
 
   let title = "";
-  if (isArticleByCategory) title = "Showing Articles Related to " + categoryId;
+  if (isArticleByCategory) title = `${categoryId}`;
 
   if (isArticleByBlog) {
     const yearMonth = blogDate.split("-");
     title =
-      `Showing Articles for ${months[Number(yearMonth[1])-1]} ${yearMonth[0]}`;
+      `${months[Number(yearMonth[1])-1]} ${yearMonth[0]} `;
   }
   window.document.title = `${title} - ${applicationProperties.title}`;
 
@@ -67,7 +67,7 @@ export default function Articles() {
     <div className="container article-viewer">
       {articleData.status !== "loading" && articleData.status !== "error" ? (
         <div className="container article-viewer disable-text-selection">
-          <h2>{title}</h2>
+          <h2>{title} <i>Articles</i></h2>
           <hr/>
           {articleData.articles.length > 0 &&
             articleData.articles.map((article) => {
