@@ -30,8 +30,7 @@ export default function Articles() {
 
   if (isArticleByBlog) {
     const yearMonth = blogDate.split("-");
-    title =
-      `${months[Number(yearMonth[1])-1]} ${yearMonth[0]} `;
+    title = `${months[Number(yearMonth[1]) - 1]} ${yearMonth[0]} `;
   }
   window.document.title = `${title} - ${applicationProperties.title}`;
 
@@ -49,7 +48,9 @@ export default function Articles() {
   };
 
   const getNoArticle = () => {
-    return articleData.status === "loading" ? (
+    return articleData.status === "error" ? (
+      <PageNotFound />
+    ) : (
       <h4>
         <br />
         <br />
@@ -58,8 +59,6 @@ export default function Articles() {
         <br />
         ...
       </h4>
-    ) : (
-      <PageNotFound />
     );
   };
 
@@ -67,8 +66,10 @@ export default function Articles() {
     <div className="container article-viewer">
       {articleData.status !== "loading" && articleData.status !== "error" ? (
         <div className="container article-viewer disable-text-selection">
-          <h2>{title} <i>Articles</i></h2>
-          <hr/>
+          <h2>
+            {title} <i>Articles</i>
+          </h2>
+          <hr />
           {articleData.articles.length > 0 &&
             articleData.articles.map((article) => {
               return <ArticlePreviewWeb data={article} />;
