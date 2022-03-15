@@ -10,6 +10,7 @@
   "main": "src/index.tsx",
   "dependencies": {
     "axios": "^0.26.0",
+    "crypto-js": "^4.1.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-html-parser": "^2.0.2",
@@ -33,7 +34,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "server": "json-server --watch mockdata/db.json --port 3004",
+    "server": "json-server --watch mockdata/db.json --port 3004 --middlewares mockdata/authenticator.js",
     "dev": "concurrently \"yarn start\" \"yarn server\""
   },
   "browserslist": [

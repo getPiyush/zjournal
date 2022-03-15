@@ -95,7 +95,7 @@ img {
 
 /*article*/
 .article-viewer {
- min-height: 85vh;
+  min-height: 85vh;
 }
 .sub-header {
   color: #1f76a8;
@@ -203,4 +203,11 @@ button {
   padding: 16px;
   max-width: 500px;
   min-width: 200px;
+}
+
+/** Printing content not allowed */
+@media print {
+  body {
+   display:none;
+  }
 }
