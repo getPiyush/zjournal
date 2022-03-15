@@ -49,27 +49,35 @@ export default function Articles() {
   };
 
   const getNoArticle = () => {
-    return articleData.status === "error" ? (
-      <PageNotFound />
-    ) : (
-     <LoadingPage/>
-    );
+    return articleData.status === "error" ? <PageNotFound /> : <LoadingPage />;
   };
 
   return (
     <div className="container article-viewer">
       {articleData.status !== "loading" && articleData.status !== "error" ? (
         <div className="container article-viewer disable-text-selection">
-          <h2>
-            {title} <i>Articles</i>
-          </h2>
-          <hr />
-          {articleData.articles.length > 0 &&
-            articleData.articles.map((article) => {
-              return <ArticlePreviewWeb data={article} />;
-            })}
+          <div className="row">
+            <div className="col">
+              <h2>
+                {title} <i>Articles</i>
+              </h2>
+              <hr />
+            </div>
+          </div>
+          <div className="row">
+            {articleData.articles.length > 0 &&
+              articleData.articles.map((article, index) => {
+                return  <div className="col-md-6"><ArticlePreviewWeb data={article} /></div>;
+              })}
+          </div>
 
-          {articleData.articles.length === 0 && <PageNotFound />}
+          {articleData.articles.length === 0 && (
+            <div className="row">
+              <div className="col">
+                <PageNotFound />
+              </div>
+            </div>
+          )}
         </div>
       ) : (
         getNoArticle()

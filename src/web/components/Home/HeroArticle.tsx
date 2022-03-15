@@ -11,8 +11,9 @@ type ArticleProps = {
 export default function HeroArticle({ article }: ArticleProps) {
   let contentArray = [null, null];
   return (
-    <div className="container">
-      <h1 className="mt-5">{ReactHtmlParser(article.title)}</h1>
+    <div className="card border-light mb-3">
+      <div className="card-body">
+      <h1>{ReactHtmlParser(article.title)}</h1>
       Created:<b>{getDate(article.dateCreated)}</b>
       <p className="lead">
         {article.content.map((item) => {
@@ -46,6 +47,7 @@ export default function HeroArticle({ article }: ArticleProps) {
           )}
         </div>
       </p>
+      </div>
     </div>
   );
 }

@@ -10,6 +10,7 @@ import Articles from "./components/Article/Articles";
 import ContactUs from "./ContactUs";
 import AboutUs from "./AboutUs";
 import LoadingPage from "./components/Loader/LoadingPage";
+import InterviewQA from "./InterviewAQ";
 
 export default function Content() {
   const { state } = useJournal();
@@ -37,6 +38,7 @@ export default function Content() {
         <Route path="home" element={<Home />} />
         <Route path="contactus" element={<ContactUs />} />
         <Route path="aboutus" element={<AboutUs/>}/>
+        <Route path="iqa" element={<InterviewQA />} />
         <Route path="article" element={<Article data={state.journal.currentArticle} />} />
         <Route path="article/*" element={<Article data={state.journal.currentArticle} />} />
         <Route path="articles/*" element={<Articles/>} />

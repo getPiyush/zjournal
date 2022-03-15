@@ -87,14 +87,15 @@ export default function Article({ data }: ArticleProps) {
               <ArticleContainer containerJson={article.content} />
             </div>
           </div>
-
-          <div className="row">
-            <div className="col sub-header">
-              <i>
-                Last Updated on <b>{getDate(article.dateCreated)}</b>
-              </i>
+          {article.dateCreated !== article.dateModified && (
+            <div className="row">
+              <div className="col sub-header">
+                <i>
+                  Last Updated on <b>{getDate(article.dateModified)}</b>
+                </i>
+              </div>
             </div>
-          </div>
+          )}
         </div>
       ) : (
         getNoArticle()
