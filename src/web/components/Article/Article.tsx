@@ -8,6 +8,7 @@ import { useArticle } from "../../../datastore/contexts/ArticleContext";
 import { ArticleT } from "../../../Types";
 import { getDate } from "../../../utils/componentUtil";
 import { PageNotFound } from "../../PageNotFound";
+import LoadingPage from "../Loader/LoadingPage";
 import ArticleContainer from "./ArticleContainer";
 
 type ArticleProps = {
@@ -17,7 +18,8 @@ type ArticleProps = {
 export default function Article({ data }: ArticleProps) {
   const path = useLocation().pathname;
   const articleId = path.split("/")[3];
-  const isWebArticle = path.search("/article") !== -1 && articleId && articleId !== "";
+  const isWebArticle =
+    path.search("/article") !== -1 && articleId && articleId !== "";
 
   const { dispatch, state: articleData } = useArticle();
 
@@ -28,9 +30,13 @@ export default function Article({ data }: ArticleProps) {
   }, []);
 
   useEffect(() => {
-    if (isWebArticle && articleData.status === "success" && articleData.articles.length > 0) {
+    if (
+      isWebArticle &&
+      articleData.status === "success" &&
+      articleData.articles.length > 0
+    ) {
       setArticle(articleData.articles[0]);
-      window.document.title =  `${articleData.articles[0].title} - ${applicationProperties.title}`;
+      window.document.title = `${articleData.articles[0].title} - ${applicationProperties.title}`;
     } else if (isWebArticle && articleData.status === "error") {
       setArticle(null);
     }
@@ -46,14 +52,7 @@ export default function Article({ data }: ArticleProps) {
 
   const getNoArticle = () => {
     return articleData.status === "loading" ? (
-      <h4>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        ...
-      </h4>
+      <LoadingPage />
     ) : (
       <PageNotFound />
     );
@@ -63,16 +62,40 @@ export default function Article({ data }: ArticleProps) {
     <div className="container article-viewer">
       {article && article.title !== "" ? (
         <div className="container article-viewer disable-text-selection">
-          <h1>{ReactHtmlParser(article.title)}</h1>
-          <div className="sub-header">
-            <span>
-              By <b>{article.author}</b> on {getDate(article.dateCreated)}
-            </span>
-            <div>
-              <span className="badge bg-success">{article.categryId}</span>
+          <div className="row">
+            <div className="col">
+              {" "}
+              <h1>{ReactHtmlParser(article.title)}</h1>
             </div>
           </div>
-          <ArticleContainer containerJson={article.content} />
+          <div className="row">
+            <div className="col">
+              {" "}
+              <div className="sub-header">
+                <span>
+                  By <b>{article.author}</b> on {getDate(article.dateCreated)}
+                </span>
+                <div>
+                  <span className="badge bg-success">{article.categryId}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col">
+              {" "}
+              <ArticleContainer containerJson={article.content} />
+            </div>
+          </div>
+          {article.dateCreated !== article.dateModified && (
+            <div className="row">
+              <div className="col sub-header">
+                <i>
+                  Last Updated on <b>{getDate(article.dateModified)}</b>
+                </i>
+              </div>
+            </div>
+          )}
         </div>
       ) : (
         getNoArticle()

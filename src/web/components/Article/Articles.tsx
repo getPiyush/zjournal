@@ -9,6 +9,7 @@ import {
 import { useArticle } from "../../../datastore/contexts/ArticleContext";
 
 import { PageNotFound } from "../../PageNotFound";
+import LoadingPage from "../Loader/LoadingPage";
 import ArticlePreviewWeb from "./ArticlePreviewWeb";
 
 export default function Articles() {
@@ -26,12 +27,11 @@ export default function Articles() {
   const { dispatch, state: articleData } = useArticle();
 
   let title = "";
-  if (isArticleByCategory) title = "Showing Articles Related to " + categoryId;
+  if (isArticleByCategory) title = `${categoryId}`;
 
   if (isArticleByBlog) {
     const yearMonth = blogDate.split("-");
-    title =
-      `Showing Articles for ${months[Number(yearMonth[1])-1]} ${yearMonth[0]}`;
+    title = `${months[Number(yearMonth[1]) - 1]} ${yearMonth[0]} `;
   }
   window.document.title = `${title} - ${applicationProperties.title}`;
 
@@ -49,32 +49,35 @@ export default function Articles() {
   };
 
   const getNoArticle = () => {
-    return articleData.status === "loading" ? (
-      <h4>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        ...
-      </h4>
-    ) : (
-      <PageNotFound />
-    );
+    return articleData.status === "error" ? <PageNotFound /> : <LoadingPage />;
   };
 
   return (
     <div className="container article-viewer">
       {articleData.status !== "loading" && articleData.status !== "error" ? (
         <div className="container article-viewer disable-text-selection">
-          <h2>{title}</h2>
-          <hr/>
-          {articleData.articles.length > 0 &&
-            articleData.articles.map((article) => {
-              return <ArticlePreviewWeb data={article} />;
-            })}
+          <div className="row">
+            <div className="col">
+              <h2>
+                {title} <i>Articles</i>
+              </h2>
+              <hr />
+            </div>
+          </div>
+          <div className="row">
+            {articleData.articles.length > 0 &&
+              articleData.articles.map((article, index) => {
+                return  <div className="col-md-6"><ArticlePreviewWeb data={article} /></div>;
+              })}
+          </div>
 
-          {articleData.articles.length === 0 && <PageNotFound />}
+          {articleData.articles.length === 0 && (
+            <div className="row">
+              <div className="col">
+                <PageNotFound />
+              </div>
+            </div>
+          )}
         </div>
       ) : (
         getNoArticle()

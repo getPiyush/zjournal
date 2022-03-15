@@ -13,12 +13,14 @@ export const PageNotFound = () => {
 
   return (
     <div className="px-4 py-5 my-5 text-center">
-      <h1 className="display-5 fw-bold">404 - Article not Found!</h1>
+      <h1 className="display-5 fw-bold">404 / Content not Found!</h1>
       <div className="col-lg-6 mx-auto">
         <p className="lead mb-4">
-          It seems like you have hit a wrong article page or the article is
+          It seems like you have hit a wrong article/page or the article is
           suspended permanently/temporarily.
           <br />
+          If you are searching for something please change the search text and try again.
+          <br/>
           However you can goto another page or try one of below options.
         </p>
         <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">

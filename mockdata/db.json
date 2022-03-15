@@ -113,7 +113,7 @@
       "categryId": "Engineering",
       "author": "Piyush praharaj",
       "dateCreated": "2022-02-23T21:53:44.760Z",
-      "dateModified": "2022-03-09T12:06:41.871Z",
+      "dateModified": "2022-03-15T03:41:48.065Z",
       "origin": "server",
       "published": true,
       "content": [
@@ -1451,7 +1451,7 @@
       "author": "Piyush Praharaj",
       "title": "In Search of ERP for the Pharmaceutical Industry",
       "dateCreated": "2022-03-05T03:03:27.113Z",
-      "dateModified": "2022-03-07T07:27:14.700Z",
+      "dateModified": "2022-03-15T05:03:20.717Z",
       "categryId": "Quality Assurance",
       "content": [
         {
@@ -1593,10 +1593,16 @@
           "componenType": "Paragraph",
           "data": "Have questions? Get in touch with the CfPIE team today.\n\n",
           "numbered": false
+        },
+        {
+          "componentId": "l0ro4kea2pv407vjc8u",
+          "componenType": "Paragraph",
+          "data": "ଆଜି ମଧ୍ୟ ଦୁଇ ଦେଶର ପ୍ରତିନିଧି ଦଳ ଯୁଦ୍ଧକୁ ନେଇ ବୈଠକ କରିବେ । ଆଜିର ଆଲୋଚନାରେ କିଛି ସମାଧାନର ବାଟ ବାହାରିବ ବୋଲି ଅନୁମାନ କରାଯାଉଛି । ସେପଟେ ଆଜି ବି ୟୁକ୍ରେନ-ରୁଷ ମଧ୍ୟ​ରେ ଘମାଘୋଟ ଲଢ଼େଉ ଜାରି ରହିଛି । ୟୁକ୍ରେନ୍‌ ଉପରେ ମିଶାଇଲ ମାଡ଼ କରୁଛି ରୁଷ । ୟୁକ୍ରେନ୍‌ ମଧ୍ୟ ରୁଷକୁ କଡ଼ା ଜବାବ ଦେଉଛି । ରୁଷର ୧୦୦ ସୈନିକଙ୍କୁ ହତ୍ୟାକରିଛି ବୋଲି ୟୁକ୍ରେନ୍‌ ଆଜି ତାର ଦାବି ରଖିଛି ।",
+          "numbered": false
         }
       ],
       "origin": "server",
-      "published": false
+      "published": true
     },
     {
       "id": "A9G4MGI",
@@ -2390,19 +2396,26 @@
     {
       "id": "Ahx1hN-",
       "author": "Piyush Praharaj",
-      "title": "Test Article",
+      "title": "\"हनुमान चालीसा तक ठीक है, लेकिन घर का खाना नहीं मिलेगा...\" : चित्रा रामकृष्ण से कोर्ट",
       "dateCreated": "2022-03-05T03:03:27.113Z",
-      "dateModified": "2022-03-10T11:08:11.011Z",
+      "dateModified": "2022-03-15T05:30:46.687Z",
       "categryId": "Good Manufacturing Practices (GMP)",
       "content": [
         {
-          "componentId": "l0kvmfvn8pqsy9164",
+          "componentId": "l0rp3lkhc2lj3n9mt6",
+          "componenType": "Image",
+          "data": "https://c.ndtvimg.com/2022-02/nq8s06b4_chitra-ramkrishna-reuters_625x300_13_February_22.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0rp4b1qxb402765sf",
           "componenType": "Paragraph",
-          "data": "<p><b>User requirement specification (URS) </b>is a list of all the requirements from the user, like equipment to be purchased. After the preparation of the list, the documents are sent to the manufacturer to get the required materials as per the given criteria.\n</p>\n<p>\nThe user department will raise the indent for his requirement regarding machine equipment or software. He/She will give all the requirements in the format of URS, which include the functional and technical specifications for the machine equipment or software. This specification in the written format is defined as URS. It shall be very specific.\n</p><p>\nThere should not be any confusion during the preparation for approval. Functional as well as technical aspects shall be clearly mentioned. The number of spare change parts required shall be mentioned in URS.\n</p><p>\nUsers should also give the details of other areas which are going to affect if the machine is procured or which are the other areas that need to modify such as the environmental (AHU) control system. Also, keep in mind whether this modification is possible and feasible; is it going to impact the other existing system. URS is a supporting document for the preparation of design qualifications.\n</p>",
+          "data": "<p><b>नई दिल्ली: </b>न्यायाधीश संजीव अग्रवाल ने कहा, \"हर कैदी एक जैसा होता है. वह जो रही हैं, उसकी वजह से वह वीआईपी कैदी नहीं हो सकती. नियमों को नहीं बदला जा सकता है.\" हालांकि, अदालत ने उन्हें एक प्रार्थना पुस्तक, हनुमान चालीसा और भगवद गीता की एक प्रति ले जाने की अनुमति दी है.\n</p>\n<p>\n पूर्व नेशनल स्टॉक एक्सचेंज (एनएसई) प्रमुख चित्रा रामकृष्ण को 14 दिनों के लिए जेल भेज दिया गया है. उन पर एक व्यक्ति जिसे हिमालयी योगी बताया गया, के साथ निजी जानकारी साझा करना का आरोप लगा है. साल 2013 से एनएसई का नेतृत्व कर रही 59 वर्षीय चित्रा रामकृष्ण को केंद्रीय जांच ब्यूरो (सीबीआई) ने बाजार में हेरफेर और घोटाले के चलते पूछताछ के बाद 24 फरवरी को गिरफ्तार किया था. दरअसल, साल 2018 में एक मामला दर्ज हुआ था, जिसमें कुछ दलालों को व्यापार में अनुचित लाभ मिला था. एजेंसी अब मार्केट एक्सचेंजों के कंप्यूटर सर्वर से स्टॉक ब्रोकरों को सूचना के लीक होने के आरोपों की जांच कर रही है, जिसे \"सह-स्थान घोटाला\" के रूप में जाना जाने लगा है. \n</p><p>\nचित्रा रामकृष्ण ने जमानत की मांग करते हुए एक याचिका दायर की थी, जिसमें कहा गया था कि एजेंसी अब उनकी हिरासत की मांग नहीं कर सकती है. लेकिन सीबीआई ने इसका विरोध करते हुए तर्क दिया कि वह एक प्रभावशाली व्यक्ति हैं और उनकी विदेश यात्राओं और मामले के अन्य पहलुओं पर जांच अभी भी जारी है. एजेंसी ने तर्क दिया, \"इसलिए हम चाहते हैं कि उसे न्यायिक हिरासत में भेजा जाए.\" \n</p><p>\nअदालत ने जेल कस्टडी को मंजूरी दे दी है और उनके द्वारा घर के भोजन और अन्य सुविधाओं के लिए किए गए अनुरोध को भी खारिज कर दिया. न्यायाधीश संजीव अग्रवाल ने कहा, \"हर कैदी एक जैसा होता है. वह जो रही हैं, उसकी वजह से वह वीआईपी कैदी नहीं हो सकती. नियमों को नहीं बदला जा सकता है.\" हालांकि, अदालत ने उन्हें एक प्रार्थना पुस्तक, हनुमान चालीसा और भगवद गीता की एक प्रति ले जाने की अनुमति दी है.\n<br/><br/>\nबता दें कि रामकृष्णा को सीबीआई ने दिल्ली के एक स्टॉकब्रोकर के खिलाफ करीब चार साल की जांच के बाद गिरफ्तार किया था. गिरफ्तारी बाजार नियामक भारतीय प्रतिभूति और विनिमय बोर्ड (सेबी) द्वारा एक रिपोर्ट जारी करने के बाद हुई, जिसमें एनएसई के शीर्ष प्रबंधन द्वारा सत्ता के कथित दुरुपयोग का संकेत दिया गया था.\n<br/><br/>\nरिपोर्ट में कहा गया है कि रामकृष्णा को लगभग 20 वर्षों तक सभी व्यक्तिगत और व्यावसायिक मामलों में एक रहस्यमय \"हिमालयी योगी\" द्वारा निर्देशित किया गया था. बाद में \"योगी\" का खुलासा स्टॉक एक्सचेंज के एक पूर्व अधिकारी आनंद सुब्रमण्यम के रूप में हुआ, जिसे बाजार में हेरफेर के मामले में गिरफ्तार किया गया था.\n</p>\n",
           "numbered": false
         }
       ],
-      "origin": "server"
+      "origin": "server",
+      "published": true
     },
     {
       "id": "xnNr_jD",
@@ -2597,182 +2610,287 @@
     {
       "id": "lLX8vvw",
       "author": "Chandrasekhar Panda",
-      "title": "Test Article",
+      "title": "କେଶ ପାଇଁ ରସୁଣ",
       "dateCreated": "2022-03-10T17:41:39.974Z",
-      "dateModified": "2022-03-14T08:15:30.613Z",
+      "dateModified": "2022-03-15T05:02:17.062Z",
       "categryId": "Production",
       "content": [
         {
-          "componentId": "l0la1yefdqyi0dotch9",
-          "componenType": "h2",
-          "data": "Chandrasekhar Panda",
+          "componentId": "l0ro0usdu5byl7245m8",
+          "componenType": "Image",
+          "data": "https://www.samajalive.in/wp-content/uploads/2020/12/the-3-best-essential-oils-for-hair-4-640x430-1.jpg",
           "numbered": false
         },
         {
-          "componentId": "l0qfkiqycbq4jbfxg4m",
-          "componenType": "Image",
-          "data": "https://deejayfarm.com/wp-content/uploads/2019/10/Profile-pic.jpg",
+          "componentId": "l0ro18ehsnq9q7glpcs",
+          "componenType": "Paragraph",
+          "data": "<b>ରସୁଣ ପେଷ୍ଟ </b><br/>\nରସୁଣ ପେଷ୍ଟ କେଶ ମୂଳରେ ଲଗାଇ ୨୦ ମିନିଟ ରଖନ୍ତୁ। ଏହାପରେ ଏହାକୁ ଧୋଇ ଦିଅନ୍ତୁ। ଏହା କେଶ ପାଇଁ ଖୁବ ଉତ୍ତମ ଅଟେ। ଏହାକୁ ସପ୍ତାହକୁ ଥରେ ନିଶ୍ଚୟ ଲଗାନ୍ତୁ।\n<br/><b>ମହୁ ଓ ରସୁଣ </b><br/>\n୨ଚାମଚ ମହୁରେ ୩ ଚାମଚ ରସୁଣ ପେଷ୍ଟ ମିଶାଇ କେଶ ମୂଳରେ ଲଗାନ୍ତୁ। ୧୫ ମିନିଟ ରଖିବା ପରେ ସାମ୍ପୁ କରି ଦିଅନ୍ତୁ। ଏହାକୁ ସପ୍ତାହକୁ ୨ ଥର ଲଗାନ୍ତୁ।\n<br/><b>ଘିକୁଆଁରୀ ଓ ରସୁଣ </b><br/>\n୨ ଚାମଚ ଘିକୁଆଁରୀ ରସରେ ୩ ଚାମଚ ରସୁଣ ପେଷ୍ଟ ମିଶାଇ ଏହାକୁ କେଶର ମୂଳରେ ଲଗାନ୍ତୁ। ଏହାପରେ ଏହାକୁ ୧୫ ରୁ ୨୦ ମିନିଟ ରଖନ୍ତୁ। ନିର୍ଦ୍ଧାରିତ ସମୟ ପରେ କେଶକୁ ଧୋଇ ଦିଅନ୍ତୁ। ଏହା ରୂପିକୁ ସମ୍ପୂର୍ଣ୍ଣ ଦୂର କରିଥାଏ।\n<br/><b>ସେଓର ସିରକା ଓ ରସୁଣ ରସ </b><br/>\n୧ ଚାମଚର ରସୁଣ ରସରେ ୨ ଚାମଚ ସେଓର ସିରକା ମିଶାଇ ଏହାକୁ କେଶ ମୂଳରେ ଲଗାଇ ୨୦ ମିନିଟ ରଖନ୍ତୁ। ଏହା ପରେ ସାମ୍ପୁ କରି ଦିଅନ୍ତୁ। ଏହା ମଧ୍ୟ କେଶରୁ ରୂପି ଦୂର କରିଥାଏ।\n<br/><b>ରସୁଣ ପେଷ୍ଟ ଓ ଲେମ୍ବୁ ରସ </b><br/>\nରସୁଣ ପେଷ୍ଟ ଓ ଲେମ୍ବୁ ରସକୁ କେଶର ମୂଳରେ ଲଗାନ୍ତୁ। ଏହାକୁ ୧୫ ରୁ ୨୦ ମିନିଟ ରଖିବା ପରେ ଧୋଇ ଦିଅନ୍ତୁ। ସପ୍ତାହକୁ ଥରେ ଏହାକୁ ନିଶ୍ଚୟ ଲଗାନ୍ତୁ। ଏପରି କରିବା ଦ୍ୱାରା ରୂପି ଜନିତ ସମସ୍ୟାରୁ ମୁକ୍ତି ମିଳିଥାଏ।",
           "numbered": false
         }
       ],
       "origin": "server",
-      "published": false
+      "published": true
     },
     {
       "id": "UOmh_Q5",
       "author": "Chandrasekhar Panda",
-      "title": "qwewqeqwe",
+      "title": "ଢିଙ୍କିଆରେ ଜେଏସଡବ୍ଲୁ ପ୍ରକଳ୍ପକୁ ଅନୁମତି ପ୍ରସଂଗ, ୪ ସପ୍ତାହ ଭିତରେ ଜବାବ ଦାଖଲ ପାଇଁ କେନ୍ଦ୍ର ଓ ରାଜ୍ୟକୁ ନିର୍ଦ୍ଦେଶ",
       "dateCreated": "2022-03-10T17:45:39.138Z",
-      "dateModified": "2022-03-10T17:54:42.842Z",
+      "dateModified": "2022-03-15T05:12:08.406Z",
       "categryId": "Microbiology",
       "content": [
         {
-          "componentId": "l0la70fff2g9xc28ruf",
-          "componenType": "h2",
-          "data": "Click to Update Text",
+          "componentId": "l0rofhbm0ckg4tsju42",
+          "componenType": "Image",
+          "data": "https://www.samajalive.in/wp-content/uploads/2022/03/jsw-750x430.webp",
           "numbered": false
         },
         {
-          "componentId": "l0la70qcqk08kvpe0ph",
-          "componenType": "h2",
-          "data": "Click to Update Text",
+          "componentId": "l0rofywjyw6lmnribjh",
+          "componenType": "Paragraph",
+          "data": "କଟକ: ଜଗତସିଂହପୁର ଜିଲ୍ଲା‌ର ଢିଙ୍କିଆରେ ପୂର୍ବରୁ ପୋସ୍କୋ ପ୍ରକଳ୍ପକୁ ପ୍ରଦାନ କରାଯାଇଥିବା ଫରେଷ୍ଟ କ୍ଲିୟରାନ୍ସକୁ ୨୦୧୯ରେ ଜେଏସଡବ୍ଲୁ ପ୍ରକଳ୍ପକୁ ଟ୍ରାନ୍ସଫର କରାଯିବା ବେଆଇନ ବୋଲି ଦର୍ଶାଇ ଦାୟର ଜନସ୍ବାର୍ଥ ଆବେଦନକୁ ହାଇକୋର୍ଟ ବିଚାର ପାଇଁ ଗ୍ରହଣ କରି ଜବାବ ତଲବ କରିଛନ୍ତି। କେନ୍ଦ୍ର ଓ ରାଜ୍ୟ ସରକାରଙ୍କୁ ହାଇକୋର୍ଟ ନୋଟିସ୍ ଜାରି କରିଛନ୍ତି। ଚାରି ସପ୍ତାହ ଭିତରେ କେନ୍ଦ୍ର ଓ ରାଜ୍ୟ ସରକାର ମାମଲାରେ ଜବାବ ଦାଖଲ କରିବେ। ଏହାପରେ ଆବେଦନକାରୀ ଚାହିଁଲେ ପ୍ରତିଜବାବ ଦାଖଲ କରି ପାରିବେ ବୋଲି ମୁଖ୍ୟ ବିଚାରପତି ଡକ୍ଟର ଜଷ୍ଟିସ ଏସ.ମୁରଲୀଧର ଓ ଜଷ୍ଟିସ ଆର.କେ.ପଟ୍ଟନାୟକଙ୍କୁ ନେଇ ଗଠିତ ଖଣ୍ଡପୀଠ ବାସୁଦେବ ଖଣ୍ଡୱାଲଙ୍କ ଆବେଦନର ଶୁଣାଣି କରି ନିର୍ଦ୍ଦେଶ ଦେଇଛନ୍ତି।",
           "numbered": false
         },
         {
-          "componentId": "l0la70w0gj1cpki21f",
-          "componenType": "h2",
-          "data": "Click to Update Text",
+          "componentId": "l0rogdedfx74d9gi6rt",
+          "componenType": "Paragraph",
+          "data": "ମେ ୯କୁ ମାମଲାର ପରବର୍ତ୍ତୀ ଶୁଣାଣି ପାଇଁ ଧାର୍ଯ୍ୟ କରାଯାଇଛି। ମାମଲାର ବିବରଣୀରୁ ପ୍ରକାଶ ଯେ ଢିଙ୍କିଆରେ ପୋସ୍କୋ ପ୍ରକଳ୍ପ ପାଇଁ ସରକାର ପ୍ରଦାନ କରିଥିବା ଜମିରେ କିଛି ଜଙ୍ଗଲ କିଶମ ଜମି ରହିଥିଲା। ଏଥି ପାଇଁ ରାଜ୍ୟ ସରକାରଙ୍କ ଅନୁମୋଦନକ୍ରମେ କେନ୍ଦ୍ର ସରକାର ପୋସ୍କୋ ପ୍ରକଳ୍ପକୁ ଫରେଷ୍ଟ କଂଜରଭେସନ୍ ଆଇନ ଅନୁସାରେ ଫରେଷ୍ଟ କ୍ଲିୟରାନ୍ସ ୨୦୧୧, ମେ ୪ରେ ପ୍ରଦାନ କରିଥିଲେ। ପରବର୍ତ୍ତୀ ସମୟରେ ପୋସ୍କୋ ପ୍ରକଳ୍ପ ବନ୍ଦ ରହିଥିଲା। ପୋସ୍କୋ ପାଇଁ ପ୍ରଦାନ କରାଯାଇଥିବା ଜମିରେ ଜେଏସଡଡବ୍ଲୁ ପ୍ରକଳ୍ପ ଲାଗି ସରକାର ଅନୁମତି ଦେଇଥିଲେ। ପୂର୍ବରୁ ପୋସ୍କୋକୁ ମିଳିଥିବା ଫରେଷ୍ଟ କ୍ଲିୟରାନ୍ସକୁ ଜେଏସଡବ୍ଲୁକୁ ଟ୍ରାନ୍ସଫର ପାଇଁ ରାଜ୍ୟ ସରକାର ସୁପାରିସ କରିଥିଲେ। ଏହାପରେ କେନ୍ଦ୍ର ସରକାରଙ୍କ ଅନୁମତିରେ ପୂର୍ବରୁ ପେସ୍କୋକୁ ପ୍ରଦାନ କରାଯାଇଥିବା ଫରେଷ୍ଟ କ୍ଲିୟରାନ୍ସକୁ ଜେଏସଡବ୍ଲୁ ପ୍ରକଳ୍ପକୁ ଟ୍ରାନ୍ସଫର କରାଯାଇଥିଲା। ଏପରି ଫରେଷ୍ଟ କ୍ଲିୟରାନ୍ସ ଟ୍ରାନ୍ସଫର ପ୍ରସଂଗ ବେଆଇନ ଓ ଏହା ଫରେଷ୍ଟ କଂଜରଭେସନ୍ ଆକ୍ଟର ଉଲ୍ଲଂଘନ କରୁଛି ବୋଲି ଦର୍ଶାଇ ଆବେଦନକାରୀ ହାଇକୋର୍ଟଙ୍କ ଦ୍ବାରସ୍ଥ ହୋଇଛନ୍ତି। ମାମଲାରେ କେନ୍ଦ୍ର ପରିବେଶ, ଜଙ୍ଗଲ ଓ ଜଳବାୟୁ ପରିବର୍ତ୍ତନ ମନ୍ତ୍ରଣାଳୟ, ରାଜ୍ୟ ଜଙ୍ଗଲ ଓ ପରିବେଶ ବିଭାଗ, ଜଗତସିଂହପୁର ଜିଲ୍ଲାପାଳ ଓ ଅନ୍ୟମାନଙ୍କୁ ପକ୍ଷଭୁକ୍ତ କରାଯାଇଛି।",
           "numbered": false
         }
       ],
       "origin": "server",
-      "published": false
+      "published": true
     },
     {
       "id": "Sp3NClw",
       "author": "Chandrasekhar Panda",
-      "title": "qsdasdasds asdasdas",
+      "title": "Top 20 Pharmaceutical Companies in India 2022",
       "dateCreated": "2022-03-10T17:47:39.512Z",
-      "dateModified": "2022-03-10T17:56:22.648Z",
+      "dateModified": "2022-03-14T11:32:17.249Z",
       "categryId": "Microbiology",
       "content": [
         {
-          "componentId": "l0la9cdbwr9hpm1key",
-          "componenType": "h2",
-          "data": "Click to Update Text",
+          "componentId": "l0qmdq0slw9ly6k2zf",
+          "componenType": "Image",
+          "data": "https://static.startuptalky.com/2021/09/Pharmaceutical-Companies-in-India-Startuptalky.jpg",
           "numbered": false
         },
         {
-          "componentId": "l0la9ci36q5zfzrnowi",
-          "componenType": "h2",
-          "data": "Click to Update Text",
+          "componentId": "l0qm6ncj3ix526r5tt8",
+          "componenType": "Paragraph",
+          "data": "Due to the COVID-19 pandemic, healthcare facilities and medicines have become the need of the hour. India, the second-largest populated country, has also seen numerous cases of Covid-19 and the numbers are still growing. India's pharma sector is also growing and changing lives by providing the necessary amenities. According to the Ministry of Chemicals and Fertilizers, the turnover of pharmaceutical companies in India was 18.12 billion USD in 2018 and 19.14 billion USD in the fiscal year 2019. The domestic drug market recorded sales worth 2.15 billion USD in April 2021. It has increased 51.5% compared to $1.42 billion in April 2020. The moving annual turnover is $20.88 billion as of April 2021, up from $19.64 billion in April 2020.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qm6w18td4gw7estw",
+          "componenType": "Paragraph",
+          "data": "Generic drugs from top pharma companies account for 20% of global exports in terms of volume, making India the largest provider of generic medicines globally. The Indian pharmaceutical market is expected to be worth 33.18 billion USD and will reach 9th position in the global pharma market by 2023. Here, we have listed some of the best pharmaceutical companies, which manufacture exemplary pharmaceutical products in India and are ruling India's pharma sector",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qm7ywb25x21tgrcme",
+          "componenType": "List",
+          "data": [
+            "Sun Pharmaceutical Industries",
+            "Divi's Laboratories",
+            "Dr. Reddy's Laboratories",
+            "Cipla Limited",
+            "Emcure Pharmaceuticals",
+            "Biocon Limited",
+            "Torrent Pharma",
+            "Lupin Limited",
+            "Cadila Healthcare Limited",
+            "Aurobindo Pharma Limited",
+            "Intas Pharmaceuticals Limited",
+            "Glenmark Pharma Limited",
+            "Innovexia Life Sciences Pvt. Ltd.",
+            "Biophar Lifesciences Pvt.Ltd.",
+            "Mankind Pharma Limited",
+            "Piramal Enterprises Limited",
+            "Laurus Labs Ltd.",
+            "Abbott India Ltd.",
+            "Alkem Laboratories",
+            "Alembic Pharmaceuticals"
+          ],
+          "numbered": true
+        },
+        {
+          "componentId": "l0qmff44z0ftswtea4",
+          "componenType": "h4",
+          "data": "Sun Pharmaceutical Industries\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qmgc1hn4ta7rmareq",
+          "componenType": "Image",
+          "data": "https://static.startuptalky.com/2021/05/Sun-Pharmaceutical-Top-Pharmaceutical-Companies-StartupTalky.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qmgf5lzjl9jfcjhy",
+          "componenType": "Paragraph",
+          "data": "<b>\nFounded: 1983<br/>\nOwner: Dilip Shanghvi<br/>\nHeadquarters: Goregaon, Mumbai<br/>\nRevenue: $4.7 billion (FY20)<br/>\n</b>",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qmiccb7ycl1h25ke",
+          "componenType": "Paragraph",
+          "data": "Sun Pharmaceutical Industries' revenue was $4.7 billion in 2020. It is a leading multinational pharmaceutical company in India. Sun Pharma was established in the year 1983. It was founded by Mr. Dilip Shanghvi, who is also the MD of Sun Pharmaceuticals. The company started offering products to treat psychiatric ailments. Now, the company also offers formulations in various therapeutic, gastroenterology, and diabetology.\n<br/>\nSun Pharmaceutical Industries is the largest pharmaceutical company in India based on overall revenue. It is the fourth largest global specialty generic pharmaceutical company in the world. It also sells Carbamazepine, Etodolac, and Clorazepate as well as anti-cancer, steroids, peptides, sex hormones, and controlled substances. Its subsidiaries include Ranbaxy Laboratories, Sun Petrochemical Pvt. Ltd, Sun Ophthalmic Inc, Alkaloida Chemical Company Zrt, Chattem Chemicals Inc. This pharmacy business sells affordable medicines in over 150 countries across 6 continents.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qmizwyxdqzgoxlc7a",
+          "componenType": "h4",
+          "data": "Divi's Laboratories\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qmj90hthambtmzal",
+          "componenType": "Image",
+          "data": "https://static.startuptalky.com/2021/05/Divi-s-Laboratories-Top-Pharmaceutical-Companies-StartupTalky.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qmjc0mfz29g25g4gb",
+          "componenType": "Paragraph",
+          "data": "<b>\nFounded: 1990\n<br/>\nOwner: Murali Divi\n<br/>\nHeadquarters: Hyderabad\n<br/>\nRevenue: $780 million (FY20)<br/>\n</b>\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0qmjffei9wwx27h7t",
+          "componenType": "Paragraph",
+          "data": "Divi’s Laboratories Limited is an Indian multinational pharmaceutical company based in Hyderabad, India. Divi's Laboratories was founded in 1990. Divi's Laboratories Ltd. manufactures active pharmaceutical ingredients (APIs) and intermediates. This pharmaceutical company in India is engaged in the manufacture of leading generic compounds, Nutraceutical ingredients, custom synthesis of APIs, and intermediates for global innovator companies. Divi’s Laboratories is one of the largest API companies in the world, with $780 million revenue in 2020, and exporting to more than 95 countries.",
           "numbered": false
         }
       ],
       "origin": "server",
-      "published": false
+      "published": true
     },
     {
       "id": "xRQDz-Q",
       "author": "Chandrasekhar Panda",
-      "title": "qsdasdasds asdasdas sdfsfsdfsd",
+      "title": "ମହିଳା ଦିବସ ଅବସରରେ ମହିଳା ପୁଲିସ କର୍ମଚାରୀଙ୍କୁ ଆରକ୍ଷୀ ମହାନିର୍ଦ୍ଦେଶକଙ୍କ ଶୁଭେଚ୍ଛା",
       "dateCreated": "2022-03-10T17:47:39.512Z",
-      "dateModified": "2022-03-10T17:55:23.847Z",
+      "dateModified": "2022-03-15T05:15:12.846Z",
       "categryId": "Validation and Qualification",
       "content": [
         {
-          "componentId": "l0la9cdbwr9hpm1key",
-          "componenType": "h2",
-          "data": "Click to Update Text",
-          "numbered": false
-        },
-        {
-          "componentId": "l0la9ci36q5zfzrnowi",
-          "componenType": "h2",
-          "data": "Click to Update Text",
-          "numbered": false
-        },
-        {
-          "componentId": "l0la9cowrc1w0rylr2",
-          "componenType": "h2",
-          "data": "Click to Update Text",
-          "numbered": false
-        },
-        {
           "componentId": "l0laaerwgrzq6zdqxg",
           "componenType": "Image",
-          "data": "/images/placeholder-image.png",
+          "data": "https://www.samajalive.in/wp-content/uploads/2021/05/odisha-police-650x430.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0rojkkgqujbleq0w7",
+          "componenType": "Paragraph",
+          "data": "ଅର୍ନ୍ତଜାତୀୟ ମହିଳା ଦିବସ ଅବସରରେ ରାଜ୍ୟ ଆରକ୍ଷୀ ମହାନିର୍ଦ୍ଦେଶକ ସୁନୀଲ କୁମାର ବଂସଲ ଓଡ଼ିଶା ପୁଲିସ ଅଧିନରେ କାର୍ଯ୍ୟ କରୁଥିବା ସମସ୍ତ ମହିଳା ଅଧିକାରୀ ଓ କର୍ମଚାରୀଙ୍କୁ ଶୁଭେଚ୍ଛା ଓ ଅଭିନନ୍ଦନ ଜଣାଇଛନ୍ତି। ସେମାନଙ୍କ କର୍ତବ୍ୟ ପରାୟଣତା, ନିଷ୍ଠା ଏବଂ ନେତୃତ୍ୱ ଯୋଗୁଁ ସୁସ୍ଥ ସମାଜ ଗଠନ ହେବାରେ ସହାୟକ ହୋଇପାରିଛି। ଆଗାମୀ ଦିନରେ ମଧ୍ୟ ସେମାନଙ୍କର ଏହି ଅବଦାନ ସମାଜକୁ ଏକ ନୂତନ ଦିଗକୁ ନେଇପାରିବ ବୋଲି ଡିଜିପି ଶ୍ରୀ ବଂସଲ ଆଶାପ୍ରକଟ କରିଛନ୍ତି। ସାରା ରାଜ୍ୟର ବିଭିନ୍ନ ଅଞ୍ଚଳରେ ଏସ୍‍ପି, ଏସ୍‍ଡିପିଓ, ଆଇଆଇସି, ଏସ୍‍ଆଇ, କନେଷ୍ଟବଳ ଏବଂ ହୋମ୍‍ଗାର୍ଡ ଭାବେ କାର୍ଯ୍ୟ କରୁଥିବା ମହିଳାଙ୍କୁ ଡିଜିପି ପ୍ରଶଂସା କରିବା ସହ ସେମାନଙ୍କ ଅବଦାନ ସମଗ୍ର ପୁଲିସ ବିଭାଗକୁ ରୁଦ୍ଧିମନ୍ତ କରି ପାରିଛି ଡିଜିପି ମତବ୍ୟକ୍ତ କରିଛନ୍ତି।\n<br/><br/>\nସୂଚନାଯୋଗ୍ୟ ଯେ, ବର୍ତମାନ ସାରା ରାଜ୍ୟରେ ୧ ଶହରୁ ଊର୍ଦ୍ଧ୍ବ ଥାନା ଅଧିକାରୀ, ଉପଖଣ୍ଡ ପୁଲିସ ଅଧିକାରୀ ଏବଂ ଆରକ୍ଷୀ ଅଧିକ୍ଷକ ଭାବେ ମହିଳାମାନେ କାର୍ଯ୍ୟ କରୁଛନ୍ତି। ଯାହାକି ଆମ ଦେଶର ଅନ୍ୟ ରାଜ୍ୟ ତୁଳନାରେ ସର୍ବାଧିକ କହିଲେ ଅତ୍ୟୁକ୍ତି ହେବ ନାହିଁ। ଏହି ଅବସରରେ ଡିଜିପି ଶ୍ରୀ ବଂସଲ ଥାନାକୁ ଅଭିଯୋଗ ନେଇ ଆସୁଥିବା ଲୋକଙ୍କୁ ଉତ୍ତମ ବ୍ୟବହାର ଏବଂ ସୁସ୍ଥ ପରିବେଶ ଗଠନ କରିବା ଉପରେ ଗୁରୁତ୍ୱ ପ୍ରଦାନ କରିଛନ୍ତି। ଏହାବ୍ୟତୀତ ଥାନାରେ କାର୍ଯ୍ୟ କରୁଥିବା ମହିଳା ଅଧିକାରୀ ଓ କର୍ମଚାରୀଙ୍କ ଆତ୍ମବିଶ୍ୱାସ ବଢାଇବାକୁ ମଧ୍ୟ ଡିଜିପି ଶ୍ରୀ ବଂସଲ ସମସ୍ତଙ୍କୁ ନିବେଦନ କରିଛନ୍ତି।",
           "numbered": false
         }
       ],
       "origin": "server",
-      "published": false
+      "published": true
     },
     {
       "id": "RV3gq8_",
       "author": "Chandrasekhar Panda",
-      "title": "dffdasdasd as das",
+      "title": "America: खेल-खेल में गन चला बैठा 3 साल का मासूम बच्चा, गोली लगने से गई मां की जान",
       "dateCreated": "2022-03-10T17:49:37.838Z",
-      "dateModified": "2022-03-10T17:55:37.280Z",
+      "dateModified": "2022-03-15T05:18:59.590Z",
       "categryId": "Validation and Qualification",
       "content": [
         {
-          "componentId": "l0labti10ibg0288phww",
-          "componenType": "h2",
-          "data": "Click to Update Text",
+          "componentId": "l0rommctosz44ig2cxi",
+          "componenType": "Paragraph",
+          "data": "खेलते खेलते बच्चे के हाथों से ट्रिगर दब गया और उसकी 22 वर्षीय मां डेजाह बेनेट को गर्दन में गोली जाकर लग गई. हालांकि बच्चे की मां को शिकागो के एक अस्पताल ले जाया गया जहां उसे मृत घोषित कर दिया गया.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0ronal6fb3ze2zvo28",
+          "componenType": "Image",
+          "data": "https://c.ndtvimg.com/2019-01/k0915tug_gun-generic-pixabay-650_625x300_31_January_19.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0ronhn2w5udp3fhua9",
+          "componenType": "Paragraph",
+          "data": "<b>वॉशिंटन: </b>अमेरिका (America) के शिकागो में एक तीन साल के बच्चे ने अपनी मां (Mother) की गोली मारकर हत्या कर दी है. बताया जा रहा था कि मासूम बच्चा पिता की बंदूक से खेल रहा था, उसी दौरान यह हादसा घटा. गोली गर्दन के पिछले हिस्से में लगी, जिसके बाद महिला को शिकागो के एक अस्पताल (Hospital) ले जाया गया. जहां उसे मृत घोषित कर दिया गया. पुलिस ने भी शनिवार को हुई इस घटना की पुष्टि की है.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0rooblxtgh6ssb0t3",
+          "componenType": "Paragraph",
+          "data": "शनिवार की शाम को यह दुर्घटना मिडवेस्टर्न शहर के एक उपनगर, डोल्टन में एक सुपरमार्केट की पार्किंग में हुई. बच्चा कार के पीछे बच्चे की सीट पर बैठा था, जिसके सामने उसके माता-पिता थे. इसी बीच बच्चा खेलते खेलते पिता की पिस्तौल पर हाथ रखने में कामयाब हो गया. स्थानीय पुलिस प्रमुख रॉबर्ट कॉलिन्स ने एएफपी को बताया कि बच्चा कार के अंदर उससे खेलने लगा. इसी दौरान बच्चा ट्रिगर दबा बैठा.\n<br/>\nबच्चे के दबाते ही गोली उसकी 22 वर्षीय मां डेजाह बेनेट की गर्दन (Neck) के पिछले हिस्से में लग गई. जिसके बाद उसे शिकागो के एक अस्पताल ले जाया गया जहां उसे मृत घोषित कर दिया गया. उधर, कोलिन्स ने कहा कि बच्चे के पिता को हिरासत में ले लिया है. पुलिस जांच कर रही है कि क्या उनके पास कानूनी रूप से बंदूक है और क्या उन पर आरोप होना चाहिए.\n<br/><br/>\nएक अनुमान के मुताबिक नाबालिगों द्वारा अनजाने में फायरिंग हर साल औसतन 350 मौतों का कारण बनती है. अमेरिका में बंदूक खरीदना और रखना बेहद आसान है. एवरीटाउन फॉर गन की हालिया रिपोर्ट के अनुसार, \"हर साल, यूएस में सैकड़ों बच्चे अलमारी और नाइटस्टैंड दराज में असुरक्षित, भरी हुई बंदूकें, बैकपैक्स और पर्स में, या बस छोड़ दिए जाते हैं और गलती से गोली चल जाती है.. ",
           "numbered": false
         }
       ],
       "origin": "server",
-      "published": false
+      "published": true
     },
     {
       "id": "f2NWQbQ",
       "author": "Chandrasekhar Panda",
-      "title": "sd aas dsadasdsadas",
+      "title": "ରୁଷର ୧୦୦ ସୈନିକଙ୍କୁ ହତ୍ୟା କଲା ୟୁକ୍ରେନ୍‌",
       "dateCreated": "2022-03-10T17:49:55.232Z",
-      "dateModified": "2022-03-10T17:55:59.994Z",
+      "dateModified": "2022-03-15T05:05:21.769Z",
       "categryId": "Engineering",
       "content": [
         {
-          "componentId": "l0lac6ywl3u9g8k3ewg",
-          "componenType": "h2",
-          "data": "Click to Update Text",
+          "componentId": "l0ro6reqx6u5l7xy6hk",
+          "componenType": "Image",
+          "data": "https://www.samajalive.in/wp-content/uploads/2022/03/ukraine-russia-war-650x430.jpg",
           "numbered": false
         },
         {
-          "componentId": "l0lac74cz7jgtl327wo",
-          "componenType": "h2",
-          "data": "Click to Update Text",
+          "componentId": "l0ro6yer4jjixlra6nw",
+          "componenType": "Paragraph",
+          "data": "<b>କିଭ୍‌: </b>୨୦ ଦିନରେ ପହଞ୍ଚିଲା ୟୁକ୍ରେନ୍‌-ରୁଷ ଯୁଦ୍ଧ । ଦୁଇ ଦେଶ ମଧ୍ୟରେ ଚାଲିଛି ଘମାଘୋଟ ଲାଢ଼େଇ । ରୁଷ ସେନା ୟୁକ୍ରେନ୍‌ ଉପରେ ଅହରହ ଆକ୍ରମଣ କରୁଛନ୍ତି । ଆଜି ରୁଷ ୟୁକ୍ରେନର ଖାରକିଭ ସହରରେ ବଡ଼ ଧରଣର ବିସ୍ଫୋରଣ କରୁଛି । ଖାରକିଭରେ ମିଶାଇଲ ଆକ୍ରମଣ କରି ବଡ଼ ବଡ଼ ଅଟ୍ଟାଳିକା ନଷ୍ଟ କରୁଥିବା ସୂଚନା ମିଳିଛି । ଖାଲି ସେତିକି ନୁ​‌ହେଁ ରୁଷ ଖାରକିଭ ସହ ୟୁକ୍ରେନ୍‌ର ଅନ୍ୟ କିଛି ସହରରେ ମଧ୍ୟ ଆକ୍ରମଣ କରୁଛି । ଏହି ଆକ୍ରମଣରେ ୟୁକ୍ରେନର ବହୁ ସମ୍ପତ୍ତି ନଷ୍ଟ ହେଉଥିବା ମଧ୍ୟ ଦେଖିବାକୁ ମିଳିଛି । ଅନ୍ୟପଟେ ରୁଷର ଆକ୍ରମଣକୁ କଡ଼ା ଜବାବ ଦେଉଛି ୟୁକ୍ରେନ୍‌ । ୟୁକ୍ରେନ୍‌ ରୁଷର ୧୦୦ ସୈନିକଙ୍କୁ ହତ୍ୟା କରିଥିବା ଦାବି କରିଛି । ତାହା ସହ ୟୁକ୍ରେନ୍‌ ମଧ୍ୟ ଆହୁରି କହିଛି ରୁଷର ୬ଟି ଲଢ଼ୁଆ ଗାଡ଼ିକୁ ନଷ୍ଟ କରିଛି ।",
+          "numbered": false
+        },
+        {
+          "componentId": "l0ro7ir4h8zvgyjz7a",
+          "componenType": "Paragraph",
+          "data": "ଗତ ୧୯ ଦିନ ହେଲା ଦୁଇ ଦେଶ ମଧ୍ୟରେ ଘମାଘୋଟ ଯୁଦ୍ଧ ଲାଗି ରହିଛି । ଏହାରି ଭିତରେ ଦୁଇ ଦେଶର ଅନେକ ସୈନିକଙ୍କ ସହ ସାଧାରଣ ଲୋକଙ୍କ ମୃତ୍ୟୁ ହେଲାଣି । ଦୁଇ ଦେଶର ଅର୍ଥନୀତି ଉପରେ ମଧ୍ୟ ପ୍ରଭାବ ପଡ଼ିଲାଣି । ତଥାପି ଦୁଇ ଦେଶ ମଧ୍ୟରେ ଯୁଦ୍ଧ ଥମିବାର ନାଁ ନେଉନାହିଁ । ଉଭୟ ଦେଶର ପ୍ରତିନିଧି ମାନଙ୍କ ସହ ଏନେଇ ଆଲୋଚନା ହେଉଛି । ତଥାପି କୌଣସି ସୁଫଳ ମିଳିପାରୁନାହିଁ । ୪ଥର ଯୁଦ୍ଧକୁ ନେଇ ଦୁଇ ଦେଶ ମଧ୍ୟରେ ଆଲୋଚନା ହୋଇଥିଲା । ଗତକାଲି ଦୁଇ ଦେଶର ପ୍ରତିନିଧ ବୈଠକ ବସିଥିଲେ । ହେଲେ କୌଣସି ସମାଧାନର ବାଟ ବାହାରି ପାରିନଥିବା ବେଳେ, ଆଜି ଯୁଦ୍ଧକୁ ନେଇ ପୁଣି ଉଭୟ ଦେଶ ମଧ୍ୟରେ ଆଲୋଚନା ହେବା ନେଇ ଜଣାପଡ଼ିଛି ।",
           "numbered": false
         }
       ],
       "origin": "server",
-      "published": false
+      "published": true
     },
     {
       "id": "P9IW8VJ",
       "author": "Chandrasekhar Panda",
-      "title": "piyush",
+      "title": "ହୋଟେଲକୁ ଯାଉଛି ଚିଲିକା ପକ୍ଷୀ ମାଂସ",
       "dateCreated": "2022-03-10T17:51:32.818Z",
-      "dateModified": "2022-03-10T17:56:44.154Z",
+      "dateModified": "2022-03-15T05:08:02.820Z",
       "categryId": "Engineering",
       "content": [
         {
-          "componentId": "l0lae9p6yr1mln5rb6s",
-          "componenType": "h2",
-          "data": "Click to Update Text",
+          "componentId": "l0ro98omo6pbo7j2u7c",
+          "componenType": "Paragraph",
+          "data": "<b>ଖୋର୍ଦ୍ଧା:</b> ନୀଳାମ୍ବୁ ଚିଲିକାର ସମ୍ମୋହନରେ ଆକର୍ଷିତ ହୋଇ ଦୀର୍ଘପଥ ଅତିକ୍ରମ କରି ଆସୁଥିବା ବିଦେଶୀ ପକ୍ଷୀ ଏଠାରେ ନିରାପଦ ନୁହନ୍ତି। ୧୬ ନମ୍ବର ଜାତୀୟ ରାଜପଥ ରାତାମାଟି ଛକ ନିକଟରୁ ଶନିବାର ବିପୁଳ ସଂଖ୍ୟାରେ ମୃତ ପକ୍ଷୀର ଉଦ୍ଧାର କରାଯାଇଛି। ଶତାଧିକ ମୃତପକ୍ଷୀକୁ ରାସ୍ତା ପାର୍ଶ୍ବରେ କିଏ ପକାଇଲା, ବନ୍ୟପ୍ରାଣୀ ବିଭାଗ ଏହି ପକ୍ଷୀଙ୍କୁ ମାରିଥିବା ଶିକାରୀଙ୍କ ପାଖରେ ପହଞ୍ଚିପାରୁଛି କି ନାହିଁ ତାହାକୁ ନେଇ ମଧ୍ୟ ଚର୍ଚ୍ଚା ହେଉଛି। ଏବେ ନୂଆବର୍ଷ ଆସୁଥିବାରୁ ଏବଂ ବଡ଼ବଡ଼ ନାମୀଦାମୀ ହୋଟେଲ ତଥା କ୍ଲବ ଓ ଧନୀଧନାଢ଼୍ୟ ମହଲରେ ଏହାର ଚାହିଦା ଥିବା ଆଲୋଚନା ହେଉଥିବାବେଳେ ଏସବୁ ପକ୍ଷୀକୁ ବିଭିନ୍ନ ଉପାୟରେ ଶିକାରୀମାନେ ମାରି ସେମାନଙ୍କ ନିକଟରେ ପହଞ୍ଚାଇବାର ସୁବନ୍ଦୋବସ୍ତ ହେଉଥିବା ଅଭି​‌େ​ଯାଗ ହେଉଛି। ଏଥିରେ କିଛି ଉଚ୍ଚ ପଦରେ ଥିବା ପୁଲିସ ଓ ବନ କର୍ମଚାରୀ ଥିବା ମଧ୍ୟ କୁହାଯାଉଛି।",
           "numbered": false
         },
         {
-          "componentId": "l0lae9tvwbpc56obk4g",
-          "componenType": "h2",
-          "data": "Click to Update Text",
+          "componentId": "l0ro9swx7ibpnah4pga",
+          "componenType": "Image",
+          "data": "https://www.samajalive.in/wp-content/uploads/2021/12/chilika-birds-750x430.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0roa75av7yhz01kaoj",
+          "componenType": "Paragraph",
+          "data": "ରତାମାଟି ଛକରୁ ଶତାଧିକ ମୃତ ପକ୍ଷୀଙ୍କ ମୃତଦେହ ଠାବ କରାଯାଇଛି। ଚିଲିକା କୁଳଠାରୁ ରତାମାଟି ଛକ ଅତିକମରେ ୧୫ କିମି ହେବ। ଏତେ ଦୂରକୁ ଏତେ ସଂଖ୍ୟାର ପକ୍ଷୀ ବିନା ଗାଡ଼ିରେ ଆଣିହେବନି। ଏତେ ଚଢ଼େଇ କିଏ ମାରୁଛି, କୋଉଁଠି ବିକ୍ରି କରାଯାଉଛି ତାହା ତଦନ୍ତ ସାପେକ୍ଷ। ଏଥି ପାଇଁ ଏକ ରାକେଟ କାମ କରୁଛି। ବ୍ୟବଚ୍ଛେଦ ପରେ ମୃତ ପକ୍ଷୀଗୁଡିକୁ ପୋତାଯାଇଛି।",
+          "numbered": false
+        },
+        {
+          "componentId": "l0roaldcj1ge8fcanuk",
+          "componenType": "Paragraph",
+          "data": "ଚଳିତବର୍ଷ ଆରମ୍ଭରୁ ୪୫ଟି ମୃତ ପକ୍ଷୀ ପୂର୍ବରୁ ଜବତ କରାଯାଇଥିବା ବେଳେ ଆଠ ଜଣଙ୍କୁ କୋର୍ଟଚାଲାଣ କରାଯାଇଛି। ବନ୍ୟପ୍ରାଣୀ ସୁରକ୍ଷା ଆଇନ ୧୯୭୦ ଧାରା ୯ ଓ ୪୯ ଅନୁଯାଇ ପକ୍ଷୀ ହତ୍ୟାରେ ସମ୍ପୃକ୍ତ ବ୍ୟକ୍ତିଙ୍କ ନାମରେ କେଶ ରୁଜୁ କରିବାରେ ନିୟମ ରହିଛି। ପୁଣି ଏହି ଆଇନ ଧାରା ୫୧ ଅନୁଯାୟୀ ୩ରୁ ୭ବର୍ଷ କାରାଦଣ୍ଡର ବ୍ୟବସ୍ଥା ଥିଲେ ମଧ୍ୟ ଏହି ରେଞ୍ଜ ଇଲାକାର କୈାଣସି ଅପରାଧି ଶିକାରୀଙ୍କୁ ଏପରି ଦଣ୍ଡ ମିଳିବାର ନଜିର ନାହିଁ। ଆବଶ୍ୟକ ସଚେତନତା ଓ ସୁରକ୍ଷା କର୍ମୀଙ୍କ ଅଭାବରୁ ମାତ୍ରାଧିକ ପକ୍ଷୀ ଶିକାର ବଢ଼ି ଚାଲିଛି। ଫାଶ ଓ ଗୁଳି ଅପେକ୍ଷା ଖାଦ୍ୟରେ ବିଷ ପ୍ରୟୋଗକରି ପକ୍ଷୀ ହତ୍ୟା କରିବାର ଦାନବୀୟ କୈାଶଳକୁ ଏବେ ଶିକାରୀମାନେ ଆପଣଉଛନ୍ତି। ଫସଲରେ ପୋକ ମାରିବାକୁ ମିଳୁଥିବା ଫ୍ଲୁରାଡନ କୀଟନାଶକକୁ ପକ୍ଷୀଙ୍କ ଖାଦ୍ୟରେ ମିଶାଇ ଚିଲିକା ନାଶି ଅଞ୍ଚଳରେ ଥୁଆ ଯାଉଛି। ଯାହାକୁ ଖାଇ ଶହ ଶହ ପକ୍ଷୀ ମରୁଛନ୍ତି। ଶିକାରୀ ବିଷ ଥୁଆ ସ୍ଥାନରୁ କେତୋଟି ମଲା ପକ୍ଷୀ ଗୋଟାଇ ଆଣୁଥିବା ବେଳେ ବିଷ ଜ୍ୱାଳା ସହିନପାରି ପଲ ପଲ ପକ୍ଷୀ ଏଣେ ତେଣେ ପଡ଼ି ମରୁଛନ୍ତି। ୧୧ ବର୍ଗ କି.ମି ହ୍ରଦର ବାଲୁଗାଁ ,ଚିଲିକା ବନ୍ୟପ୍ରାଣୀ ଖଣ୍ଡ(ଡିଭିଜନ)କୁ ବାଲୁଗାଁ, ଟାଙ୍ଗୀ,ରମ୍ଭା, ସାତପଡ଼ା, ନୂଆପଡ଼ା ଏପରି ୫ଟି ରେଞ୍ଜରେ ବିଭକ୍ତ କରାଯାଇଛି। ଟାଙ୍ଗୀ ରେଞ୍ଜରେ ଅଧିକ ପକ୍ଷୀ ଶିକାର ହେଉଥିବା ବେଳେ ଅନ୍ୟ ୪ଟି ରେଞ୍ଜରେ କାଁ ଭାଁ ପକ୍ଷୀ ଶିକାର ହେଉଥିବା ଜଣାପଡ଼ିଛି।\n<br/><br/>\nସରଳସିଂହ ଗେଟ ନିକଟବର୍ତ୍ତୀ ଭାଷାରା ପାହଡଠାରୁ ଦେଇପୁର ଆଳିପଡ଼ା ପର୍ଯ୍ୟନ୍ତ ଉପକୂଳର ଦୈର୍ଘ୍ୟ ୬୮କି.ମି. ଏବଂ ଉପକୁଳଠାରୁ ଚିଲିକା ପାଣି ଭିତରକୁ ୫ କିମି ପର୍ଯ୍ୟନ୍ତ ଟାଙ୍ଗୀ ରେଞ୍ଜରେ ଯାଉଛି। ପକ୍ଷୀଙ୍କ ସୁରକ୍ଷା ପାଇଁ ଟାଙ୍ଗୀ ରେଞ୍ଜ ଅଞ୍ଚଳର ସୋରଣ, ମଙ୍ଗଳାଯୋଡ଼ି, ଦେଇପୁର, ଦୋଛିଆଁ, ଭୁଷଣ୍ଡପୁର, ବାଲିପାଟପୁର, ଅଭିମାନପୁର, ସୁନ୍ଦରପୁର, ବରୁଣପଡ଼ା, ବାଲିନାସି, ନଇରି ଆଦି ସ୍ଥାନରେ ୧୧ଟି କ୍ୟାମ୍ପ କରାଯାଇଛି। ଗୋଟିଏ କ୍ୟାମ୍ପରେ ଜଣେ ଫରେଷ୍ଟର କିମ୍ବା ଜଣେ ଗାର୍ଡ ଦାୟିତ୍ୱରେ ରହୁଥିବା ବେଳେ ପ୍ରତି କ୍ୟାମ୍ପ ପାଇଁ ୩ ଜଣ ଲେଖାଏଁ ଠିକା କର୍ମଚାରୀ ଦାୟିତ୍ୱରେ ରଖାଯାଇଛି। ଏହା ସହିତ ଚିଲିକା ପାଣିରେ ଡଙ୍ଗା ଦ୍ୱାରା ବୁଲିବା ପାଇଁ ଭ୍ରାମ୍ୟାମାଣ ସ୍କାର୍ଡ ଗଠନ କରାଯାଇଛି। ସ୍ୱାର୍ଡ ପାଇଁ ୮ଜଣଙ୍କୁ ଠିକା କର୍ମଚାରୀ ନିୟୋଜିତ ହୋଇଛନ୍ତି। ଏତେ ବଡ଼ ଅଞ୍ଚଳକୁ ଜଣେ ବନାଞ୍ଚଳ ଅଫିସର, ତିନିଜଣ ଫରେଷ୍ଟର ଓ ୮ଜଣ ଗାର୍ଡ ଥିବା ଜଣାପଡ଼ିଛି।\n<br/><br/>\nଏ ନେଇ ଟାଙ୍ଗୀ ଚୁଡାମଣି ମୁର୍ମୁଙ୍କୁ ପଚାରିବାରେ ସେ କହିଲେ ରତାମାଟି ଛକ ନିକଟରୁ ୨୯ଟି ମୃତ ପକ୍ଷୀ ଦବତ କରାଯାଇଛି। କିଏ ଏହି ଚଢେଇ ମାରିଲା ତାର ତତନ୍ତ ଚାଲିଛି। ପୁଣି ଏପିଆର ଫୋର୍ସ ସହାୟତା ଦେବା ପାଇଁ ଚିଲିକା ବଣ୍ୟପ୍ରାଣୀ ବିଭାଗ ଡିଏଫଓ ଜରିଆରେ ଲେଖାଯାଇଛି। ପାଇଁ ପକ୍ଷୀ ହତ୍ୟା ଦ୍ୱାରା ପ୍ରକୃତିର ଭାରସାମ୍ୟ ଓ ଜୈବବିଧତା ଗଭୀର ଭାବେ ପ୍ରଭାବିତ ହେଉଛି। ବିଦେଶାଗତ ପକ୍ଷୀମାନଙ୍କର ମାଂସ ଭକ୍ଷଣଦ୍ୱାରା ବ୍ଲାଡ ଫ୍ଲୁ ବ୍ୟାପିବାର ଆଶଙ୍କା ରହିଛି ବୋଲି ଚିକିତ୍ସା ବିଜ୍ଞାନୀମାନେ କହୁଛନ୍ତି। ବିରଳ ପ୍ରଜାତିର ବିଲୁପ୍ତ ହେଇଯାଉଥିବା ପକ୍ଷୀଙ୍କୁ ବଞ୍ଚାଇବା ପାଇଁ ମାନବ ସମ୍ବଳ ବୃଦ୍ଧି ସୁରକ୍ଷା ବ୍ୟବସ୍ଥା କଡ଼ାକଡ଼ି ସହ ଏହାର ଉଚ୍ଚସ୍ତରୀୟ ତଦନ୍ତ କରି ବିହିତ କାର୍ଯ୍ୟାନୁଷ୍ଠାନ ଗ୍ରହଣ କରିବାକୁ ପରିବେଶବିତ ମତ ଦେଉଛନ୍ତି।",
           "numbered": false
         }
       ],
       "origin": "server",
-      "published": false
+      "published": true
     },
     {
       "id": "zRMj9V5",
@@ -2822,6 +2940,24 @@
           "componentId": "l0ppllyi0faakul3od28",
           "componenType": "Paragraph",
           "data": "To date, no WHO TPPs have been developed outside infectious diseases. This is despite the fact that there are many and urgent needs for medical product development for non-communicable diseases. For example, generating data on suitability of products or devices for use in lower incomes settings can be pivotal in the pathway to use and WHO TPPs can be used to articulate these data needs. Thus, WHO TPPs can drive, not only novel product development, but also data generation that can optimize low- and middle-income country use cases for products already available in higher income settings. Certain cancers, diabetes, and hypertension all have priority indications that could serve as the basis for WHO TPP development",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true
+    },
+    {
+      "id": "joQiWHz",
+      "author": "Chandrasekhar Panda",
+      "title": "ଭିଜିଲାନ୍ସ ଜାଲରେ ଆଉ ଜଣେ ବାବୁ, ଚାଲିଛି ୬ଟି ସ୍ଥାନ​‌ରେ ଚଢ଼ାଉ",
+      "dateCreated": "2022-03-15T04:51:47.419Z",
+      "dateModified": "2022-03-15T04:55:41.226Z",
+      "categryId": "Microbiology",
+      "content": [
+        {
+          "componentId": "l0rnuotcwp62uyxiyn",
+          "componenType": "Paragraph",
+          "data": "ମାଲକାନଗିରି: ରାଜ୍ୟରେ ସକ୍ରିୟ ରହିଛି ଭିଜିଲାନ୍ସ । ପ୍ରତ୍ୟେକ ଦିନ କିଛି ଅସାଧୁ ସରାକାରୀ ବାବୁଙ୍କ ଘରେ ଭିଜିଲାନ୍ସ ଚଢ଼ାଉ କରୁଛି । ଗତକାଲି ଜଣେ ସରାକାରୀ ଅଧିକାରୀଙ୍କ ଘରେ ଭିଜିଲାନ୍ସ ଚଢ଼ାଉ କରିଥିବା ବେଳେ, ଆଜି ଭିଲିଲାନ୍ସ ଜାଲରେ ଆଉ ଜଣେ ବାବୁ ପଡ଼ିଛନ୍ତି । ମାଲକାନଗିରି ଜିଲ୍ଳା ମୁଖ୍ୟ କୃଷି ଅଧିକାରୀଙ୍କ ଘରେ ଭିଜିଲାନ୍ସ ଚଢ଼ାଉ କରୁଛି । ଆୟ ବହର୍ଭୂତ ସମ୍ପତ୍ତି ଠୁଳ ଅଭିଯୋଗରେ କୃଷି ଅଧିକାରୀ ଏମ୍‌ ଆନନ୍ଦ ରାଓଙ୍କ ଘରେ ଚାଲିଛି ଚଢ଼ାଉ । ଏକ କାଳୀନ ୬ଟି ସ୍ଥାନରେ ଭିଜିଲାନ୍ସ ଟିମ୍‌ ଟିକିନିଖି ଯାଞ୍ଚ କରୁଛି । ମାଲକାନଗିରି ସମେତ ନବରଙ୍ଗପୁର ଓ ବିଶାଖାପାଟଣାରେ ଚାଲିଛି ଚଢ଼ାଉ । କାର୍ଯ୍ୟାଳୟ ସହ ପୈତୃକ ଘରେ ମଧ୍ୟ ଚଢ଼ାଉ କରାଯାଉଥିବା ସୂଚନା ମଳିଛି ।  ତେବେ ଏଯାଏ ଏମ୍‌ ଆନନ୍ଦଙ୍କ ଘରୁ କେତେ ସମ୍ପତ୍ତି ଜବତ ହୋଇଛି ଭିଭିଲାନ୍ସ ସୂଚନା ଦେଇନାହିଁ ।",
           "numbered": false
         }
       ],
