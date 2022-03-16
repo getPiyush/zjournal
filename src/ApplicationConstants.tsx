@@ -3,7 +3,8 @@ import { ArticleT, Journal } from "./Types";
 export const applicationProperties = {
   title:"Pharmaceutical Updates by Chandrasekhar Panda",
   author:"Chandrasekhar Panda",
-  startDate: "2022-02-01"
+  startDate: "2022-02-01",
+  appPassword:"JagaBaliaShreekhetra"
 }
 
 
