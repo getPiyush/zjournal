@@ -14,28 +14,31 @@ const getArticleAPIPath = `${server}/articles`;
 const getPassPhase = (appPassword) => {
     const date = new Date();
     const message = date.getUTCHours() + "$" + date.getUTCDate() + "$" + date.getUTCMinutes() + "$" + date.getUTCDay();
+    // console.log("Client passphase ", message);
     return HmacSHA1(message, appPassword);
 }
 
 // encryption
-const encryotedToken = getPassPhase(applicationProperties.appPassword)
+// const encryotedToken = getPassPhase(applicationProperties.appPassword)
 
-const header = {
-    headers: {
-        "Zjournal-Secure-Token": encryotedToken
-    }
+const getParams = () => {
+    return {
+        headers: {
+            "Zjournal-Secure-Token": getPassPhase(applicationProperties.appPassword)
+        }
+    };
 }
 
 const getRequest = (url) => {
-    return axios.get(url, header);
+    return axios.get(url, getParams());
 }
 
 const putRequest = (url, obj) => {
-    return axios.put(url, obj, header);
+    return axios.put(url, obj, getParams());
 }
 
 const postRequest = (url, obj) => {
-    return axios.post(url, obj, header);
+    return axios.post(url, obj, getParams());
 }
 
 

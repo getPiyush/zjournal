@@ -4,6 +4,7 @@ const appPassword = "JagaBaliaShreekhetra"
 const getPassPhase = () => {
     const date = new Date();
     const message = date.getUTCHours() + "$" + date.getUTCDate() + "$" + date.getUTCMinutes() + "$" + date.getUTCDay();
+   //  console.log("Server passphase ",message);
     return sha512(message, appPassword).toString();
 }
 

@@ -648,7 +648,7 @@
       "author": "Piyush Praharaj",
       "title": "Using the Fetch API",
       "dateCreated": "2022-02-23T17:37:26.736Z",
-      "dateModified": "2022-02-23T17:37:26.736Z",
+      "dateModified": "2022-03-16T16:11:29.536Z",
       "categryId": "Validation and Qualification",
       "origin": "server",
       "published": true,
@@ -661,7 +661,7 @@
         {
           "componentId": "kzzubo6uaimg915aw3",
           "componenType": "Paragraph",
-          "data": "The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses. It also provides a global fetch() method that provides an easy, logical way to fetch resources asynchronously across the network.\n\nThis kind of functionality was previously achieved using XMLHttpRequest. Fetch provides a better alternative that can be easily used by other technologies such as Service Workers. Fetch also provides a single logical place to define other HTTP-related concepts such as CORS and extensions to HTTP."
+          "data": "The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses. It also provides a global fetch() method that provides an easy, logical way to fetch resources asynchronously across the network.\n<br/><br/>\nThis kind of functionality was previously achieved using XMLHttpRequest. Fetch provides a better alternative that can be easily used by other technologies such as Service Workers. Fetch also provides a single logical place to define other HTTP-related concepts such as CORS and extensions to HTTP."
         },
         {
           "componentId": "kzzuc63b92ahk1tva0d",
@@ -2972,6 +2972,30 @@
       ],
       "origin": "server",
       "published": true
+    },
+    {
+      "id": "LjFKoJb",
+      "author": "Chandrasekhar Panda",
+      "title": "Test Article",
+      "dateCreated": "2022-03-16T16:11:51.139Z",
+      "dateModified": "2022-03-16T16:11:51.139Z",
+      "categryId": "Validation and Qualification",
+      "content": [
+        {
+          "componentId": "l0trh8wkrvwldjgbs2",
+          "componenType": "h2",
+          "data": "Click to Update Text",
+          "numbered": false
+        },
+        {
+          "componentId": "l0trh91ftpwal8os6fh",
+          "componenType": "h2",
+          "data": "Click to Update Text",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": false
     }
   ],
   "journal": {
