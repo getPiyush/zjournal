@@ -11,10 +11,14 @@ const server = 'http://' + host + ':' + port;
 const getJournalAPIPath = `${server}/journal`;
 const getArticleAPIPath = `${server}/articles`;
 
+const getPassPhase = (appPassword) => {
+    const date = new Date();
+    const message = date.getUTCHours() + "$" + date.getUTCDate() + "$" + date.getUTCMinutes() + "$" + date.getUTCDay();
+    return HmacSHA1(message, appPassword);
+}
+
 // encryption
-const date = new Date();
-const message = date.getUTCFullYear()+"$"+date.getUTCDate()+"$"+date.getUTCMonth()+"$"+date.getUTCDay();
-const encryotedToken = HmacSHA1(message, applicationProperties.appPassword)
+const encryotedToken = getPassPhase(applicationProperties.appPassword)
 
 const header = {
     headers: {
@@ -27,11 +31,11 @@ const getRequest = (url) => {
 }
 
 const putRequest = (url, obj) => {
-    return axios.put(url, obj);
+    return axios.put(url, obj, header);
 }
 
 const postRequest = (url, obj) => {
-    return axios.post(url, obj);
+    return axios.post(url, obj, header);
 }
 
 
