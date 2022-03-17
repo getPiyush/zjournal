@@ -5,7 +5,7 @@ import { applicationProperties } from "../ApplicationConstants";
 import { ArticleT } from "../Types";
 
 const host = window.location.host.split(":")[0];
-const port = "3004";
+const port = "8080";
 const server = 'http://' + host + ':' + port;
 
 const getJournalAPIPath = `${server}/journal`;

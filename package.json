@@ -34,7 +34,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "server": "json-server --watch mockdata/db.json --port 3004 --middlewares mockdata/authenticator.js",
+    "server": "json-server --watch mockdata/db.json --port 8080 --middlewares mockdata/authenticator.js",
     "dev": "concurrently \"yarn start\" \"yarn server\""
   },
   "browserslist": [
