@@ -1,5 +1,6 @@
 import axios from "axios";
 import HmacSHA1 from 'crypto-js/hmac-sha512';
+
 import { applicationProperties } from "../ApplicationConstants";
 
 import { ArticleT } from "../Types";
@@ -14,7 +15,7 @@ const getArticleAPIPath = `${server}/articles`;
 const getPassPhase = (appPassword) => {
     const date = new Date();
     const message = date.getUTCHours() + "$" + date.getUTCDate() + "$" + date.getUTCMinutes() + "$" + date.getUTCDay();
-    // console.log("Client passphase ", message);
+    // // console.log("Client passphase ", message);
     return HmacSHA1(message, appPassword);
 }
 

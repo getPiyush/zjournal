@@ -19,7 +19,7 @@ export default function Home() {
   window.document.title = `Home - ${applicationProperties.title}`;
 
   const getArticleFromIndex = (index) => {
-    console.log("getArticleFromId", jState.journal, articleData.articles);
+    // console.log("getArticleFromId", jState.journal, articleData.articles);
     return getArticleFromId(
       jState.journal.templateArticles[index],
       articleData.articles
