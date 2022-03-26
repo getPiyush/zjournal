@@ -156,6 +156,10 @@ img {
   margin: 16px 0px 16px 0px;
 }
 
+.admin .form-switch {
+  padding-top: 8px;
+}
+
 .edit-area {
   border: 1px solid #26f126;
 }
@@ -195,7 +199,7 @@ button {
   }
 }
 
-.contact-us{
+.contact-us {
   padding: 100px 32px 32px 32px !important;
   min-height: 93vh !important;
   margin: auto;
@@ -213,6 +217,6 @@ button {
 /** Printing content not allowed */
 @media print {
   body {
-   display:none;
+    display: none;
   }
 }
