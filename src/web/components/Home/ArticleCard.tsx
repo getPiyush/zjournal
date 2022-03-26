@@ -1,6 +1,6 @@
 import ReactHtmlParser from "react-html-parser";
 import { ArticleT } from "../../../Types";
-import { getDate, sliceWords } from "../../../utils/componentUtil";
+import { getDate, removeHTML, sliceWords } from "../../../utils/componentUtil";
 
 type ArticleCardProps = {
   article: ArticleT;
@@ -17,25 +17,34 @@ export default function ArticleCard({ article }: ArticleCardProps) {
         <div className="card-text">
           Created:<b>{getDate(article.dateCreated)}</b>{" "}
         </div>
-        {article.content.map((item) => {
+        {article.content.map((item, index) => {
           if (item.componenType === "Image" && !contentArray[0]) {
             contentArray[0] = item.data;
             return (
               <img
+                key={`articlecomp_${index}_${item.componenType}`}
                 className="card-img-top"
                 alt={ReactHtmlParser(article.title)}
+                title={ReactHtmlParser(article.title)}
                 src={`${contentArray[0]}`}
               />
             );
           }
 
           if (item.componenType === "Paragraph" && !contentArray[1]) {
-            contentArray[1] = sliceWords(item.data,0,200);
-            return <div className="card-text">{ ReactHtmlParser(contentArray[1])}... </div>;
+            contentArray[1] = sliceWords(removeHTML(item.data), 0, 200);
+            return (
+              <div
+                key={`articlecomp_${index}_${item.componenType}`}
+                className="card-text"
+              >
+                {ReactHtmlParser(contentArray[1])}...{" "}
+              </div>
+            );
           }
         })}
         <a className="card-link" href={`article/${article.id}`}>
-         more..
+          more..
         </a>
       </div>
     </div>

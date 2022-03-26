@@ -67,7 +67,7 @@ export default function Articles() {
           <div className="row">
             {articleData.articles.length > 0 &&
               articleData.articles.map((article, index) => {
-                return  <div className="col-md-6"><ArticlePreviewWeb data={article} /></div>;
+                return  <div key={`article_${index}_${article.id}`} className="col-md-6"><ArticlePreviewWeb data={article} /></div>;
               })}
           </div>
 

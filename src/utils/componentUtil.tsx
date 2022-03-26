@@ -197,15 +197,15 @@ const getComponentFromObject = (
       break;
 
     case "LIST":
-      comp = <List listData={obj} />;
+      comp = <List   key={"key_" + obj.componentId} listData={obj} />;
       break;
 
     case "TABLE":
-      comp = <Table tableData={obj} />;
+      comp = <Table   key={"key_" + obj.componentId} tableData={obj} />;
       break;
 
     default:
-      comp = <span>{ReactHtmlParser(obj.data)}</span>;
+      comp = <span   key={"key_" + obj.componentId}>{ReactHtmlParser(obj.data)}</span>;
       break;
   }
   return editable ? (
@@ -261,7 +261,10 @@ export const getMonths = (from: string, to: string) => {
   return months;
 };
 
-
 export const sliceWords = (str, start, end) => {
   return str.slice(str.indexOf(" ", start), str.indexOf(" ", end));
+};
+
+export const removeHTML = (htmlStr) => {
+  return htmlStr.replace(/<\/?[^>]+(>|$)/g, "");
 };

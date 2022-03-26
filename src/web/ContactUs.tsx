@@ -41,7 +41,8 @@ export default function ContactUs() {
           <div className="mb-3">
             <label className="form-label">Phone Number</label>
             <PhoneInput
-             inputClass="form-control"
+              inputClass="form-control"
+              inputStyle={{width:'100%'}}
               country={"in"}
               preferredCountries={["in", "uk", "us"]}
               placeholder="Enter phone number"
