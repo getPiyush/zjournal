@@ -1,9 +1,7 @@
 import axios from "axios";
-import HmacSHA1 from 'crypto-js/hmac-sha512';
-
-import { applicationProperties } from "../ApplicationConstants";
 
 import { ArticleT } from "../Types";
+import { getPassPhase } from "../utils/crypto";
 
 const host = window.location.host.split(":")[0];
 const port = "8080";
@@ -12,12 +10,7 @@ const server = 'http://' + host + ':' + port;
 const getJournalAPIPath = `${server}/journal`;
 const getArticleAPIPath = `${server}/articles`;
 
-const getPassPhase = (appPassword) => {
-    const date = new Date();
-    const message = date.getUTCHours() + "$" + date.getUTCDate() + "$" + date.getUTCMinutes() + "$" + date.getUTCDay();
-    // // console.log("Client passphase ", message);
-    return HmacSHA1(message, appPassword);
-}
+
 
 // encryption
 // const encryotedToken = getPassPhase(applicationProperties.appPassword)
@@ -25,7 +18,7 @@ const getPassPhase = (appPassword) => {
 const getParams = () => {
     return {
         headers: {
-            "Zjournal-Secure-Token": getPassPhase(applicationProperties.appPassword)
+            "Zjournal-Secure-Token": getPassPhase()
         }
     };
 }

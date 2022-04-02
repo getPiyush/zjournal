@@ -5,19 +5,20 @@ type ConfirmationButtonProps = {
   confirmationMessage: string;
   confirmationClick: () => void;
   iconComp: JSX.Element;
-  disabled:boolean;
+  disabled: boolean;
 };
+
 
 export default function ConfirmationButton({
   buttonText,
   confirmationMessage,
   confirmationClick,
   iconComp,
-  disabled
+  disabled,
 }: ConfirmationButtonProps) {
   const buttonId = getUid();
   return (
-    <div id={`prompt${buttonId}`}>
+    <div id={`prompt${buttonId}`} className="confirmation-button">
       <button
         className="btn btn-danger btn-sm"
         type="button"
@@ -27,11 +28,11 @@ export default function ConfirmationButton({
         aria-controls={`btn${buttonId}`}
         disabled={disabled}
       >
-        {iconComp}&nbsp;&nbsp;{buttonText}
+        {iconComp}
+        {buttonText !== "" && `  ${buttonText}`}
       </button>
       <div
-        className="collapse"
-        style={{ position: "absolute" }}
+        className="collapse confirmation-button-prompt"
         id={`btn${buttonId}`}
       >
         <div className="card card-body">

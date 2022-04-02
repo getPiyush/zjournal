@@ -23,8 +23,10 @@ export type ArticleT = {
 export type Journal = {
   title: string;
   selectedPage: string;
+  loggedIn?: boolean;
   currentArticle: ArticleT;
   categories: string[];
   components: string[];
   templateArticles: string[];
+  adminDetails?: { id: string, passPhase: string }
 };

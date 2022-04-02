@@ -1,6 +1,6 @@
 import { ArticleT } from "../../Types";
 import { getJournalAPI } from "../api";
-import { decryptData } from "../crypto";
+import { decryptData } from "../../utils/crypto";
 
 export const updatePage = (page: string, dispatch) => {
   dispatch({ type: "update_page", value: page });

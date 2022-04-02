@@ -4,7 +4,25 @@ export const applicationProperties = {
   title:"Pharmaceutical Updates by Chandrasekhar Panda",
   author:"Chandrasekhar Panda",
   startDate: "2022-02-01",
-  appPassword:"JagaBaliaShreekhetra"
+  appPassword:"JagaBaliaShreekhetra",
+  fonts:[
+    {
+      font: "Source Serif 4",
+      weights: [200, '200i',300, '300i',400, '400i',500, '500i',600, '600i',700, '700i',800, '800i',900, '900i'],
+    },
+    {
+      font: "Public Sans",
+      weights: [200, '200i',300, '300i',400, '400i',500, '500i',600, '600i',700, '700i',800, '800i',900, '900i'],
+    },
+    {
+      font: "Noto Serif Display",
+      weights: [200, '200i',300, '300i',400, '400i',500, '500i',600, '600i',700, '700i',800, '800i',900, '900i'],
+    },
+    {
+      font: "Merriweather",
+      weights: [200, '200i',300, '300i',400, '400i',500, '500i',600, '600i',700, '700i',800, '800i',900, '900i'],
+    }
+  ]
 }
 
 
@@ -24,6 +42,7 @@ export const applicationProperties = {
     title: "zJournal Default Title",
     selectedPage: "home",
     currentArticle: defaultArticle,
+    loggedIn:false,
     categories: [],
     components:[],
     templateArticles:[]

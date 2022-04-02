@@ -100,15 +100,6 @@ export default function EditPrompt({
           >
             <i className="bi bi-trash"></i>
           </button>
-       { /**   <ConfirmationButton
-              buttonText={null}
-              confirmationClick={onDeleteClick}
-              confirmationMessage="Are you sure want to delete?"
-              iconComp={ <i className="bi bi-trash"></i>}
-              disabled={false}
-            />
-            */
-       }
 
         </div>
         <div className="padding-lr-8">

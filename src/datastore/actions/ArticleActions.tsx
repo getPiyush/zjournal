@@ -7,7 +7,7 @@ import {
   getArticleByIdsAPI,
   getArticleByMonthAPI,
 } from "../api";
-import { decryptData } from "../crypto";
+import { decryptData } from "../../utils/crypto";
 
 export const getArticleById = (dispatch, id: string) => {
   dispatch({ type: "get_article_by_id_loading" });
