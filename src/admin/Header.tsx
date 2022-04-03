@@ -1,6 +1,11 @@
 import { Link, useLocation } from "react-router-dom";
+import ConfirmationButton from "./editor/ConfirmationButton";
 
-export default function Header() {
+type HeaderProps = {
+  onLogout: () => void;
+};
+
+export default function Header({ onLogout }: HeaderProps) {
   const location = useLocation().pathname;
 
   return (
@@ -25,7 +30,7 @@ export default function Header() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div className="collapse navbar-collapse header-links" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link
@@ -61,6 +66,13 @@ export default function Header() {
               </Link>
             </li>
           </ul>
+          <ConfirmationButton
+              buttonText="Logout"
+              confirmationClick={onLogout}
+              confirmationMessage="Are you sure want to log out?"
+              iconComp={<i className="bi bi-x-square-fill"/>}
+              disabled={false}
+            />
         </div>
       </div>
     </nav>

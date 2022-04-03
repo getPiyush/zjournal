@@ -4,13 +4,12 @@ import { updateCurrentArticle } from "../datastore/actions/JournalActions";
 import { useArticle } from "../datastore/contexts/ArticleContext";
 import { useJournal } from "../datastore/contexts/JournalContext";
 import { ArticleT } from "../Types";
-import { getUid } from "../utils/componentUtil";
 import { Spinner } from "../web/components/Spinner";
 import ArticleContainer from "./ArticleContainer";
 import CategoryEditor from "./CategoryEditor";
 import Templates from "./Templates";
 
-export default function EditorContainer() {
+export default function AdminContainer() {
   const { state: jState, dispatch } = useJournal();
   const { state: aState } = useArticle();
 

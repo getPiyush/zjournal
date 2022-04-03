@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { defaultArticle } from "../../ApplicationConstants";
 import { useArticle } from "../../datastore/contexts/ArticleContext";
 import { useJournal } from "../../datastore/contexts/JournalContext";
 import { ArticleT, ComponentObject } from "../../Types";
@@ -12,6 +13,7 @@ import {
 } from "../../utils/componentUtil";
 
 import ArticleContainerEditor from "./ArticleContainerEditor";
+import ConfirmationButton from "./ConfirmationButton";
 import EditPrompt from "./EditPrompt";
 import SaveButton from "./SaveButton";
 import SidePanelContainer from "./SidePanelContainer";
@@ -76,6 +78,11 @@ export default function ArticleEditor({
     const finalarticle = { ...article, content: content };
     setArticle(finalarticle);
     setPreview(finalarticle);
+  };
+
+  const onResetClick = () => {
+    setArticle(defaultArticle);
+    setContent([]);
   };
 
   const onEditCancel = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -162,6 +169,13 @@ export default function ArticleEditor({
             >
               <i className="bi bi-camera-fill"></i>&nbsp;&nbsp;Preview
             </button>
+            <ConfirmationButton
+              buttonText="Reset"
+              confirmationClick={onResetClick}
+              confirmationMessage="Are you sure want to reset?"
+              iconComp={<i className="bi bi-arrow-clockwise"/>}
+              disabled={article.title === "" || article.content.length === 0}
+            />
           </div>
         </div>
       </div>
@@ -180,7 +194,7 @@ export default function ArticleEditor({
           />
         </div>
       </div>
-      <div className="row">
+      <div className="row mt-2 mb-2">
         <div className="col editor-action-col-start">
           <div className="dropdown" style={{ width: "100% !important" }}>
             <button
@@ -193,7 +207,10 @@ export default function ArticleEditor({
             >
               Select component <b>{selectedElement}</b> for Article
             </button>
-            <ul className="dropdown-menu dropdown-preview" aria-labelledby="dropdownMenuButton1">
+            <ul
+              className="dropdown-menu dropdown-preview"
+              aria-labelledby="dropdownMenuButton1"
+            >
               {jState.journal?.components?.map((componentCode, index) => {
                 return (
                   <li

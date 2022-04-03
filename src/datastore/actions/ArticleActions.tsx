@@ -7,16 +7,16 @@ import {
   getArticleByIdsAPI,
   getArticleByMonthAPI,
 } from "../api";
+import { decryptData } from "../../utils/crypto";
 
 export const getArticleById = (dispatch, id: string) => {
   dispatch({ type: "get_article_by_id_loading" });
   getArticleByIdAPI(id)
     .then(function (response) {
-      console.log("response is",response);
-      dispatch({ type: "get_article_by_id", value: response.data });
+      dispatch({ type: "get_article_by_id", value:  decryptData(response.data.zjData) });
     })
     .catch(function (error) {
-      console.log(error);
+      // console.log(error);
       dispatch({ type: "get_article_by_id_error" });
     })
     .then(function () {
@@ -28,10 +28,10 @@ export const getArticlesByIds = (dispatch, ids: string[]) => {
   dispatch({ type: "get_article_by_ids_loading" });
   getArticleByIdsAPI(ids)
     .then(function (response) {
-      dispatch({ type: "get_article_by_ids_success", value: response.data });
+      dispatch({ type: "get_article_by_ids_success", value:  decryptData(response.data.zjData) });
     })
     .catch(function (error) {
-      console.log(error);
+      // console.log(error);
       dispatch({ type: "get_article_by_ids_error" });
     })
     .then(function () {
@@ -43,10 +43,10 @@ export const getArticlesBycategory = (dispatch, category: string, web?: boolean)
   dispatch({ type: "get_article_by_category_loading" });
   getArticleByCategoryAPI(category, web)
     .then(function (response) {
-      dispatch({ type: "get_article_by_category", value: response.data });
+      dispatch({ type: "get_article_by_category", value: decryptData(response.data.zjData) });
     })
     .catch(function (error) {
-      console.log(error);
+      // console.log(error);
       dispatch({ type: "get_article_by_category_error" });
     })
     .then(function () {
@@ -59,10 +59,10 @@ export const getArticlesByBlogDate = (dispatch, blogDate: string, web?: boolean)
   dispatch({ type: "get_article_by_blog_date_loading" });
   getArticleByMonthAPI(blogDate, web)
     .then(function (response) {
-      dispatch({ type: "get_article_by_blog_date", value: response.data });
+      dispatch({ type: "get_article_by_blog_date", value:  decryptData(response.data.zjData)});
     })
     .catch(function (error) {
-      console.log(error);
+      // console.log(error);
       dispatch({ type: "get_article_by_blog_date_error" });
     })
     .then(function () {
@@ -75,10 +75,10 @@ export const addArticleToDB = (dispatch, article: ArticleT) => {
   dispatch({ type: "add_article_loading" });
   addArticleAPI(article)
     .then(function (response) {
-      dispatch({ type: "add_article_success", value: response.data });
+      dispatch({ type: "add_article_success", value: decryptData(response.data.zjData) });
     })
     .catch(function (error) {
-      console.log(error);
+      // console.log(error);
       dispatch({ type: "add_article_error" });
     })
     .then(function () {
@@ -90,10 +90,10 @@ export const updateArticleinDB = (dispatch, article: ArticleT) => {
   dispatch({ type: "update_article_loading" });
   updateArticleAPI(article)
     .then(function (response) {
-      dispatch({ type: "update_article_success", value: response.data });
+      dispatch({ type: "update_article_success", value:  decryptData(response.data.zjData) });
     })
     .catch(function (error) {
-      console.log(error);
+      // console.log(error);
       dispatch({ type: "update_article_error" });
     })
     .then(function () {

@@ -2,7 +2,7 @@ import React from "react";
 import ReactHtmlParser from "react-html-parser";
 
 import { ArticleT } from "../../../Types";
-import { getDate, sliceWords } from "../../../utils/componentUtil";
+import { getDate, removeHTML, sliceWords } from "../../../utils/componentUtil";
 
 type ArticleProps = {
   data: ArticleT;
@@ -29,11 +29,12 @@ export default function ArticlePreviewWeb({ data }: ArticleProps) {
               <b>{getDate(data.dateModified)}</b>
             </div>
           )}
-          {data.content.map((item) => {
+          {data.content.map((item, index) => {
             if (item.componenType === "Image" && !contentArray[0]) {
               contentArray[0] = item.data;
               return (
                 <img
+                  key={`articlecomp_${index}_${data.id}`}
                   className="card-img-top"
                   src={`${contentArray[0]}`}
                   alt="..."
@@ -42,9 +43,9 @@ export default function ArticlePreviewWeb({ data }: ArticleProps) {
             }
 
             if (item.componenType === "Paragraph" && !contentArray[1]) {
-              contentArray[1] = sliceWords(item.data, 0, 200);
+              contentArray[1] = sliceWords(removeHTML(item.data), 0, 200);
               return (
-                <div className="card-text">
+                <div  key={`articlecomp_${index}_${data.id}`} className="card-text">
                   {ReactHtmlParser(contentArray[1])}...{" "}
                   <a href={`article/${data.id}`}>read more</a>
                 </div>

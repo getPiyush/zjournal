@@ -17,8 +17,8 @@ export default function Categories() {
       <div className="offcanvas-body">
         <ol>
           {state?.journal?.categories.length > 0 &&
-            state.journal.categories.map((category) => (
-              <li>
+            state.journal.categories.map((category, index) => (
+              <li key={`category_${index}_${category}`}>
                 <a href={`/web/articles?categoryId=${category}`}>{category}</a>
               </li>
             ))}

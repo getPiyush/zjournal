@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 import { ComponentObject } from "../../Types";
+import ConfirmationButton from "./ConfirmationButton";
 import { ListEditor } from "./ListEditor";
 import { TableEditor } from "./TableEditor";
 
@@ -26,7 +27,7 @@ export default function EditPrompt({
     onUpdate(editComponent);
   };
 
-  const onDeleteClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const onDeleteClick = () => {
     const editComponent = { ...outComp, data: compData };
     onDelete(editComponent);
   };
@@ -99,6 +100,7 @@ export default function EditPrompt({
           >
             <i className="bi bi-trash"></i>
           </button>
+
         </div>
         <div className="padding-lr-8">
           <button

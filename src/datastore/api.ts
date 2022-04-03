@@ -1,37 +1,38 @@
 import axios from "axios";
-import HmacSHA1 from 'crypto-js/hmac-sha512';
-import { applicationProperties } from "../ApplicationConstants";
 
 import { ArticleT } from "../Types";
+import { getPassPhase } from "../utils/crypto";
 
 const host = window.location.host.split(":")[0];
-const port = "3004";
+const port = "8080";
 const server = 'http://' + host + ':' + port;
 
 const getJournalAPIPath = `${server}/journal`;
 const getArticleAPIPath = `${server}/articles`;
 
-// encryption
-const date = new Date();
-const message = date.getUTCFullYear()+"$"+date.getUTCDate()+"$"+date.getUTCMonth()+"$"+date.getUTCDay();
-const encryotedToken = HmacSHA1(message, applicationProperties.appPassword)
 
-const header = {
-    headers: {
-        "Zjournal-Secure-Token": encryotedToken
-    }
+
+// encryption
+// const encryotedToken = getPassPhase(applicationProperties.appPassword)
+
+const getParams = () => {
+    return {
+        headers: {
+            "Zjournal-Secure-Token": getPassPhase()
+        }
+    };
 }
 
 const getRequest = (url) => {
-    return axios.get(url, header);
+    return axios.get(url, getParams());
 }
 
 const putRequest = (url, obj) => {
-    return axios.put(url, obj);
+    return axios.put(url, obj, getParams());
 }
 
 const postRequest = (url, obj) => {
-    return axios.post(url, obj);
+    return axios.post(url, obj, getParams());
 }
 
 

@@ -5,7 +5,7 @@
       "author": "Piyush Praharaj",
       "title": "Russia's unprovoked attack on Ukraine",
       "dateCreated": "2022-02-26T17:06:13.882Z",
-      "dateModified": "2022-02-26T17:06:13.882Z",
+      "dateModified": "2022-04-02T14:40:02.303Z",
       "categryId": "Quality Control",
       "origin": "server",
       "published": true,
@@ -29,7 +29,7 @@
         {
           "componentId": "l043l1t1sv4cvd4lvj",
           "componenType": "Image",
-          "data": "https://th.bing.com/th/id/OIF.3zquymNudo0s7YF4zJuPFg?pid=ImgDet&rs=1",
+          "data": "https://images.indianexpress.com/2022/02/putin-3-1-1.jpg",
           "numbered": false
         },
         {
@@ -648,7 +648,7 @@
       "author": "Piyush Praharaj",
       "title": "Using the Fetch API",
       "dateCreated": "2022-02-23T17:37:26.736Z",
-      "dateModified": "2022-02-23T17:37:26.736Z",
+      "dateModified": "2022-03-16T16:11:29.536Z",
       "categryId": "Validation and Qualification",
       "origin": "server",
       "published": true,
@@ -661,7 +661,7 @@
         {
           "componentId": "kzzubo6uaimg915aw3",
           "componenType": "Paragraph",
-          "data": "The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses. It also provides a global fetch() method that provides an easy, logical way to fetch resources asynchronously across the network.\n\nThis kind of functionality was previously achieved using XMLHttpRequest. Fetch provides a better alternative that can be easily used by other technologies such as Service Workers. Fetch also provides a single logical place to define other HTTP-related concepts such as CORS and extensions to HTTP."
+          "data": "The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses. It also provides a global fetch() method that provides an easy, logical way to fetch resources asynchronously across the network.\n<br/><br/>\nThis kind of functionality was previously achieved using XMLHttpRequest. Fetch provides a better alternative that can be easily used by other technologies such as Service Workers. Fetch also provides a single logical place to define other HTTP-related concepts such as CORS and extensions to HTTP."
         },
         {
           "componentId": "kzzuc63b92ahk1tva0d",
@@ -1275,7 +1275,7 @@
       "author": "Piyush Praharaj",
       "title": "This is a bad ass article!",
       "dateCreated": "2022-03-06T20:36:01.465Z",
-      "dateModified": "2022-03-06T20:36:01.465Z",
+      "dateModified": "2022-03-25T16:43:24.406Z",
       "categryId": "Quality Assurance",
       "content": [
         {
@@ -1288,6 +1288,30 @@
           "componentId": "l0g8nvdlutjiqvig75s",
           "componenType": "Image",
           "data": "https://www.wired.com/images_blogs/underwire/2010/01/kick_ass_teaser_670.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l16nds02wsgwuxxh9ti",
+          "componenType": "Paragraph",
+          "data": "Kick-Ass is a 2010 black comedy superhero film directed by Matthew Vaughn from a screenplay by Jane Goldman and Vaughn. It is based on the comic book of the same name[a] by Mark Millar and John Romita, Jr.<br/>\n<br/>\nIt tells the story of an ordinary teenager, Dave Lizewski (Aaron Johnson), who sets out to become a real-life superhero, calling himself \"Kick-Ass\". Dave gets caught up in a bigger fight when he meets Big Daddy (Nicolas Cage), a former cop who, in his quest to bring down the crime boss Frank D'Amico (Mark Strong) and his son Red Mist (Christopher Mintz-Plasse), has trained his eleven-year-old daughter (Chloë Grace Moretz) to be the ruthless vigilante Hit-Girl.\n<br/><br/>\nThe film was released in the United Kingdom on 26 March 2010, by Universal Pictures, and in the United States on 16 April, by Lionsgate. Despite having generated some controversy for its profanity and violence performed by a child, Kick-Ass was well received by both critics and audiences. In 2011 it won the Empire Award for Best British Film. The film has gained a strong cult following since its release on DVD and Blu-ray.\n<br/><br/>\nA sequel, written and directed by Jeff Wadlow and produced by Vaughn, was released in August 2013, with Johnson, Mintz-Plasse, and Moretz reprising their roles. In 2018, Vaughn announced his intentions to reboot the series.",
+          "numbered": false
+        },
+        {
+          "componentId": "l16nekaozzz21uc3cq9",
+          "componenType": "Paragraph",
+          "data": "<iframe src=\"https://www.youtube.com/embed/2rpXHqnGDXo\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+          "numbered": false
+        },
+        {
+          "componentId": "l16nfob39qz2i25mhyr",
+          "componenType": "h4",
+          "data": "Plot",
+          "numbered": false
+        },
+        {
+          "componentId": "l16nfz3kugxepfn8cv",
+          "componenType": "Paragraph",
+          "data": "Dave Lizewski is an ordinary teenager who lives in Staten Island, New York. Inspired by comic books, Dave plans to become a real-life superhero. He purchases and modifies a scuba diving suit and arms himself with batons. During his first outing, he gets stabbed and hit by a car. After recovering, he gains a capacity to endure pain and enhanced durability due to having some bones replaced with metal. In his absence from school, a rumor spreads that he is gay. As a result, his longtime crush, Katie Deauxma, immediately attempts to become his friend. Unhappy with the misunderstanding, Dave nevertheless appreciates the opportunity to get closer to Katie.\n<br/><br/>\nDave returns to crime-fighting and gains notoriety after saving a man from a gang attack. Calling himself \"Kick-Ass\", he sets up a Myspace account where he can be contacted for help. Responding to a request from Katie, he confronts a drug dealer, Rasul, who has been harassing her. At Rasul's place, Kick-Ass is quickly overwhelmed by Rasul's thugs. Before they can kill him, two costumed vigilantes, Hit-Girl and her father, Big Daddy, intervene, easily slaughter the thugs and leave with their money. After coming home, Dave realizes he is in over his head and plans to give up crime-fighting. However, Hit-Girl and Big Daddy pay him a visit and encourage him.\n<br/><br/>\nBig Daddy's real identity is Damon Macready, formerly an honest cop. Framed by Mafia boss Frank D'Amico, he was jailed. His wife committed suicide, leaving behind his daughter Mindy. Against the protest of his former partner Marcus Williams, Damon trains himself and Mindy as preparation for getting revenge on Frank. They have been undermining Frank's operations by raiding his warehouses, robbing his money and destroying his drugs.\n<br/><br/>\nFrank believes Kick-Ass is responsible for the attacks and targets him, though he accidentally kills a party entertainer who is dressed like Kick-Ass. Frank's son, Chris, suggests a different approach. He poses as a new vigilante, \"Red Mist\", and befriends Kick-Ass. He plans to lure Kick-Ass into Frank's lumber warehouse and unmask him. However, they find the warehouse on fire and Frank's men dead. Red Mist retrieves a hidden camera he earlier placed in the warehouse, and he sees recorded footage of Big Daddy killing the men and burning the warehouse. Red Mist and Kick-Ass part ways. D'Amico watches the footage and learns of Big Daddy.\n<br/><br/>\nFollowing the event, Dave decides to quit being Kick-Ass. He reveals his identity to Katie and clears up the misunderstanding about him being gay. She forgives him and becomes his girlfriend. However, Red Mist contacts him again and tricks him into revealing Big Daddy and Hit-Girl's location. At one of Big Daddy's safe houses, Red Mist shoots Hit-Girl out of a window, and Frank's men capture Big Daddy and Kick-Ass.\n<br/><br/>\nFrank intends to have his thugs torture and execute his captives in a live Internet broadcast. While Kick-Ass and Big Daddy are being beaten by Frank's gangsters, Hit-Girl, having survived the shooting, storms the hideout and kills all of the gangsters. During the fight, one thug sets Big Daddy on fire. Big Daddy and Mindy say a tearful farewell before he dies of his burns.\n<br/><br/>\nKick-Ass and Hit-Girl resolve to defeat Frank D'Amico once and for all. Hit-Girl infiltrates Frank's headquarters and kills numerous guards and henchmen before running out of bullets. When she is cornered by the thugs, Kick-Ass arrives on a jet pack fitted with miniguns and kills the remaining thugs. Kick-Ass and Hit-Girl then take on Frank and Red Mist. Kick-Ass fights Red Mist, which results in them knocking each other out. Frank overpowers an exhausted Hit-Girl. Before he can kill her, Kick-Ass regains consciousness and blasts Frank out of the window with a bazooka, killing him. Red Mist then regains consciousness, grabs his father's Samurai sword and pursues Kick-Ass in order to continue their fight just in time to see Kick-Ass and Hit Girl fly away on the jet pack. Dave and Mindy retire from crime-fighting; Marcus becomes Mindy's guardian, and she enrolls at Dave's school. Meanwhile, Chris sits in his father's office, dressed in an upgraded suit, preparing to seek his revenge on Kick-Ass for killing his father. Facing the camera, he says, \"as a great man once said, wait'll they get a load of me\", before firing a gun at the screen.",
           "numbered": false
         }
       ],
@@ -2861,7 +2885,7 @@
       "author": "Chandrasekhar Panda",
       "title": "ହୋଟେଲକୁ ଯାଉଛି ଚିଲିକା ପକ୍ଷୀ ମାଂସ",
       "dateCreated": "2022-03-10T17:51:32.818Z",
-      "dateModified": "2022-03-15T05:08:02.820Z",
+      "dateModified": "2022-03-16T18:59:31.883Z",
       "categryId": "Engineering",
       "content": [
         {
@@ -2897,7 +2921,7 @@
       "author": "Chandrasekhar Panda",
       "title": "Can medical product development be better aligned with global needs?",
       "dateCreated": "2022-03-13T19:49:35.549Z",
-      "dateModified": "2022-03-13T20:08:49.153Z",
+      "dateModified": "2022-03-17T19:54:54.038Z",
       "categryId": "Good Manufacturing Practices (GMP)",
       "content": [
         {
@@ -2941,6 +2965,24 @@
           "componenType": "Paragraph",
           "data": "To date, no WHO TPPs have been developed outside infectious diseases. This is despite the fact that there are many and urgent needs for medical product development for non-communicable diseases. For example, generating data on suitability of products or devices for use in lower incomes settings can be pivotal in the pathway to use and WHO TPPs can be used to articulate these data needs. Thus, WHO TPPs can drive, not only novel product development, but also data generation that can optimize low- and middle-income country use cases for products already available in higher income settings. Certain cancers, diabetes, and hypertension all have priority indications that could serve as the basis for WHO TPP development",
           "numbered": false
+        },
+        {
+          "componentId": "l0ver0fsvu49hn1ou4c",
+          "componenType": "Image",
+          "data": "https://bfc.nl/wp-content/uploads/2019/03/shutterstock_1107222143.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0vetjrjisi7dq27fxj",
+          "componenType": "Paragraph",
+          "data": "Even if you use those laundry detergents that promise you your white clothes will come out whiter than white, you can’t avoid greyish spots and yellow armpits. With every wash, white clothes seem to become duller and greyer. So, how do you stop this process? It’s very simple; all you need is a type of medicine everyone probably has in their medicine cabinet. The only thing you need to make sure your laundry comes out perfectly white again is five aspirin tablets of 325 milligrams each.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0veuo3zc54jec9ztwh",
+          "componenType": "Paragraph",
+          "data": "<b>Aspirin</b>\nPut the tablets in a large bowl or tub of hot water to let them dissolve. Stir this aspirin water until all of the tablets have completely dissolved. To make sure the tablets dissolve faster, you can also crumble them up before putting them in the water. Next, place the dull, white clothes in the bowl or tub with the aspirin water and leave them to soak there for eight hours. You can also just add a few aspirins to the washing machine, but the soaking method works better. After you’ve let the clothes soak, you still have to wash them in the washing machine like you normally would.\n<br/><br/>\nWant to know how to make sure dark and coloured clothes keep their colour properly without going dull? Go to the next page for a handy tip involving black pepper!",
+          "numbered": false
         }
       ],
       "origin": "server",
@@ -2951,7 +2993,7 @@
       "author": "Chandrasekhar Panda",
       "title": "ଭିଜିଲାନ୍ସ ଜାଲରେ ଆଉ ଜଣେ ବାବୁ, ଚାଲିଛି ୬ଟି ସ୍ଥାନ​‌ରେ ଚଢ଼ାଉ",
       "dateCreated": "2022-03-15T04:51:47.419Z",
-      "dateModified": "2022-03-15T04:55:41.226Z",
+      "dateModified": "2022-03-25T16:32:58.598Z",
       "categryId": "Microbiology",
       "content": [
         {
@@ -2959,15 +3001,385 @@
           "componenType": "Paragraph",
           "data": "ମାଲକାନଗିରି: ରାଜ୍ୟରେ ସକ୍ରିୟ ରହିଛି ଭିଜିଲାନ୍ସ । ପ୍ରତ୍ୟେକ ଦିନ କିଛି ଅସାଧୁ ସରାକାରୀ ବାବୁଙ୍କ ଘରେ ଭିଜିଲାନ୍ସ ଚଢ଼ାଉ କରୁଛି । ଗତକାଲି ଜଣେ ସରାକାରୀ ଅଧିକାରୀଙ୍କ ଘରେ ଭିଜିଲାନ୍ସ ଚଢ଼ାଉ କରିଥିବା ବେଳେ, ଆଜି ଭିଲିଲାନ୍ସ ଜାଲରେ ଆଉ ଜଣେ ବାବୁ ପଡ଼ିଛନ୍ତି । ମାଲକାନଗିରି ଜିଲ୍ଳା ମୁଖ୍ୟ କୃଷି ଅଧିକାରୀଙ୍କ ଘରେ ଭିଜିଲାନ୍ସ ଚଢ଼ାଉ କରୁଛି । ଆୟ ବହର୍ଭୂତ ସମ୍ପତ୍ତି ଠୁଳ ଅଭିଯୋଗରେ କୃଷି ଅଧିକାରୀ ଏମ୍‌ ଆନନ୍ଦ ରାଓଙ୍କ ଘରେ ଚାଲିଛି ଚଢ଼ାଉ । ଏକ କାଳୀନ ୬ଟି ସ୍ଥାନରେ ଭିଜିଲାନ୍ସ ଟିମ୍‌ ଟିକିନିଖି ଯାଞ୍ଚ କରୁଛି । ମାଲକାନଗିରି ସମେତ ନବରଙ୍ଗପୁର ଓ ବିଶାଖାପାଟଣାରେ ଚାଲିଛି ଚଢ଼ାଉ । କାର୍ଯ୍ୟାଳୟ ସହ ପୈତୃକ ଘରେ ମଧ୍ୟ ଚଢ଼ାଉ କରାଯାଉଥିବା ସୂଚନା ମଳିଛି ।  ତେବେ ଏଯାଏ ଏମ୍‌ ଆନନ୍ଦଙ୍କ ଘରୁ କେତେ ସମ୍ପତ୍ତି ଜବତ ହୋଇଛି ଭିଭିଲାନ୍ସ ସୂଚନା ଦେଇନାହିଁ ।",
           "numbered": false
+        },
+        {
+          "componentId": "l16n0r4kqzgubfpmna",
+          "componenType": "Image",
+          "data": "https://d267x6x6dh1ejh.cloudfront.net/posts/argusnews-card-c48319af-bc1d-4462-8584-888834c0d5dd.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l16n5hv09kxw1mh1h4r",
+          "componenType": "Paragraph",
+          "data": "ରାଜରାସ୍ତାରେ ଧାରଣା ଦେଲେ ଓଡିଶା କଳା ଓ କ୍ରୀଡା ଶିକ୍ଷକ ସଂଘ। ଦୀର୍ଘ ୯ ବର୍ଷ ଧରି ସ୍କୁଲରେ ପାର୍ଟ ଟାଇମ ଭାବେ କାମ କରୁଥିଲେ ବି ଏବେ ପର୍ଯ୍ୟନ୍ତ ସେମାନଙ୍‌କୁ ସ୍ଥାୟୀ ନିଯୁକ୍ତି ମିଳୁନାହିଁ।\n<br/><br/>\nକୋଭିଡ କାର୍ଯ୍ୟଠୁ ଆରମ୍ଭ କରି ଇଲେକସନ କାମ ସବୁଠି ଆଗରେ ରହି କାର୍ଯ୍ୟ କରୁଛନ୍ତି । ଏହା ସହ ପିଲାମାନଙ୍କୁ କଳା ଓ କ୍ରୀଡା ଦିଗରେ ବଢାଇବାରେ ଶିକ୍ଷକମାନେ ଆଗକୁ ରହିଥିଲେ ମଧ୍ୟ ସେମାନଙ୍କୁ ସ୍ଥାୟୀ ନିଯୁକ୍ତି ମିଳିନାହିଁ ଓ ଦରମା ମଧ୍ୟ ସଠିକ ମିଳୁନଥିବା ଅଭିଯୋଗ ହୋଇଛି।",
+          "numbered": false
+        },
+        {
+          "componentId": "l16n6m56duu0d92iefb",
+          "componenType": "Image",
+          "data": "https://d267x6x6dh1ejh.cloudfront.net/posts/argusnews--6cbc2017-c909-4ca8-818b-e7c9a6000ddf_optimal.GIF",
+          "numbered": false
         }
       ],
       "origin": "server",
       "published": true
+    },
+    {
+      "id": "LjFKoJb",
+      "author": "Chandrasekhar Panda",
+      "title": "Test Article",
+      "dateCreated": "2022-03-16T16:11:51.139Z",
+      "dateModified": "2022-03-16T16:11:51.139Z",
+      "categryId": "Validation and Qualification",
+      "content": [
+        {
+          "componentId": "l0trh8wkrvwldjgbs2",
+          "componenType": "h2",
+          "data": "Click to Update Text",
+          "numbered": false
+        },
+        {
+          "componentId": "l0trh91ftpwal8os6fh",
+          "componenType": "h2",
+          "data": "Click to Update Text",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": false
+    },
+    {
+      "id": "OqW296s",
+      "author": "Chandrasekhar Panda",
+      "title": "స్కూల్‌పై దాడి.. 21 మంది మృతి, 25 మందికి గాయాలు",
+      "dateCreated": "2022-03-05T03:03:27.113Z",
+      "dateModified": "2022-03-17T20:02:50.155Z",
+      "categryId": "Production",
+      "content": [
+        {
+          "componentId": "l0vf19nugdi0lhw044h",
+          "componenType": "Paragraph",
+          "data": "ఉక్రెయిన్‌పై రష్యా యుద్ద కాండ కొనసాగుతోంది. పబ్లిక్ ప్లేసులు, స్కూళ్లపై కూడా దాడులకు తెగబడుతుంది. ఉక్రెయిన్‌పై దాడులు ఆపాలని అంతర్జాతీయ న్యాయస్థానం ఆదేశించినా.. రష్యా లెక్కచేయడం లేదు. గురువారం ఉక్రెయిన్‌పై దాడులను మరింత తీవ్రతరం చేసింది. ఖార్కివ్‌ వెలుపల ఉన్న నగరమైన మెరెఫాలో ఒక స్కూల్‌, సాంస్కృతిక కేంద్రంపై రష్యా సైనిక దళాలు కాల్పులు జరిపాయి.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0vf1mgsr2dc79zn9oo",
+          "componenType": "Image",
+          "data": "https://telugu.oneindia.com/img/2022/03/putin-1647542168.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0vf234q8swqxznfo9k",
+          "componenType": "Paragraph",
+          "data": "రష్యా దళాల దాడితో 21 మంది మరణించారు. మరో 25 మంది గాయపడ్డారు. వీరిలో పది మంది పరిస్థితి సీరియస్‌గా ఉన్నట్లు తెలుస్తొంది. ఉక్రెయిన్‌లోని రెండో పెద్ద నగరమైన ఖార్కివ్‌ను పూర్తిగా స్వాధీనం చేసుకోవడానికి రష్యా దళాలు వారం రోజులుగా తెగ ప్రయత్నిస్తున్నాయి. వాయుసేన దాడులతో రష్యా విరుచుకుపడుతుంది. ఈ నగరంలో చాలా భాగం బాగా ధ్వంసమైంది.\n<br/><br/>\nఉక్రెయిన్‌పై దాడులను నిలిపివేయాలనే అంతర్జాతీయ కోర్టు ఆదేశాలను రష్యా తిరస్కరించింది. ఉక్రెయిన్‌తో జరుగుతున్న చర్చల్లో పురోగతిపై వస్తున్న వార్తలను కూడా రష్యా ఖండించింది. హాలీవుడ్‌ నటుడు ఆర్నాల్డ్ స్క్వార్జెనెగర్ రష్యన్ సైనికులను ఉద్దేశించి ఒక వీడియోను విడుదల చేశారు. తెలివిలేని యుద్ధం కోసం రష్యా సైనికులు తమ జీవితాలను త్యాగం చేస్తున్నారని కామెంట్ చేశారు. యుద్ధాన్ని ఆపాలని రష్యా అధ్యక్షుడు పుతిన్‌ను కోరారు. రష్యా ప్రజలు అంటే తనకు ఎంతో ప్రేమని అన్నారు. అందుకే వారికి వాస్తవం తెలియజేసేందుకు ఈ వీడియో ఇస్తున్నానని ట్విట్టర్‌లో పేర్కొన్నారు. ఉక్రెయిన్‌పై రష్యా దాడిని నిలిపివేయాలని అంతర్జాతీయ న్యాయస్థానం రష్యాను నిన్న ఆదేశించింది. రష్యా దురాక్రమణపై ఉక్రెయిన్‌ చేసిన ఫిర్యాదుపై నెదర్లాండ్స్‌ హేగ్‌లోని ప్రపంచ కోర్టు బుధవారం స్పష్టంచేసింది. ఐసీజే ఆదేశంపై ఉక్రెయిన్‌ అధ్యక్షుడు జెలెన్‌స్కీ హర్షం వ్యక్తం చేశారు. కానీ ఏం లాభం రష్యా మత్రం వినిపించుకోవడం లేదు.\n\nRead more at: https://telugu.oneindia.com/news/international/21-reported-dead-after-school-airstrike-at-mariupol-314572.html",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true
+    },
+    {
+      "id": "DldNYAk",
+      "author": "Chandrasekhar Panda",
+      "title": "అంతరిక్షాన్ని నడిపేదెవరు ? రష్యా-ఉక్రెయిన్ పోరుతో కొత్త ప్రశ్నలు-పరస్పర తోడు లేకుండా",
+      "dateCreated": "2022-03-05T03:03:27.113Z",
+      "dateModified": "2022-03-17T20:11:25.009Z",
+      "categryId": "Microbiology",
+      "content": [
+        {
+          "componentId": "l0vf19nugdi0lhw044h",
+          "componenType": "Paragraph",
+          "data": "ఉక్రెయిన్ పై రష్యా దండయాత్ర, అనంతరం చోటు చేసుకుంటున్న పరిణామాలు ప్రపంచ చరిత్ర గతిని మార్చేలా కనిపిస్తున్నాయి. ముఖ్యంగా అంతరిక్ష ప్రయోగాలు, వాటి నిర్వహణ విషయంలో ప్రపంచ దేశాల నిర్ణయాల్ని తీవ్రంగా ప్రభావితం చేసేలా కనిపిస్తున్నాయి. ప్రస్తుతం అంతర్జాతీయ అంరిక్ష కేంద్రంతో పాటు అంతరిక్షంలో పలు ప్రయోగాలకు పరస్పర సహకారం అందించుకుంటున్న దేశాలు తాజా యుద్ధంతో వేరుబాట పట్టడంతో వాటి భవిష్యత్తుపై ఆందోళన వ్యక్తమవుతోంది.",
+          "numbered": false
+        },
+        {
+          "componentId": "l0vf1mgsr2dc79zn9oo",
+          "componenType": "Image",
+          "data": "https://telugu.oneindia.com/img/2022/03/war31-1647434847.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0vf234q8swqxznfo9k",
+          "componenType": "Paragraph",
+          "data": "<b>అంతరిక్షంలో ప్రపంచదేశాలు</b>\n ప్రపంచ దేశాల మధ్య వివిధ అంశాల్లో భిన్న వాదనలు, వైఖరులు ఉన్నప్పటికీ అంతరిక్షం విషయంలో మాత్రం ఇప్పటివరకూ ఏకాభిప్రాయమే ఉంది. అంతరిక్షంలో ఎక్కువ విషయాల్ని తెలుసుకోవాలన్న జిజ్ఞాసతో పాటు ఇతరుల కంటే పైచేయి సాధించాలనే ఆరాటమే ఉంది. దీంతో అంతరిక్ష ప్రయోగాల కోసం అందరికీ ఉపయోగపడేలా కొన్ని ఉమ్మడి ఏర్పాట్లు కూడా చేసుకున్నాయి. అలా ఏర్పాటు చేసిందే అంతర్జాతీయ అంతరిక్ష కేంద్రం (ఐఎస్ఎస్). ఇప్పుడు ఉక్రెయిన్ తో రష్యా యుద్ధం నేపథ్యంలో ఆ దేశంపై అంతర్జాతీయంగా విధిస్తున్న ఆంక్షలతో ఈ వ్యవహారం బెడిసి కొట్టేలా కనిపిస్తోంది.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0vfar5riivutr7bz3",
+          "componenType": "Image",
+          "data": "https://telugu.oneindia.com/img/2022/03/war21-1647434813.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0vfbpla14ud02v3dak",
+          "componenType": "Paragraph",
+          "data": "<b>ఐఎస్ఎస్ కుప్పకూ</b> లుతుందని రష్యా హెచ్చరిక ఉక్రెయిన్ పై తమ దాడి నేపథ్యంలో ప్రపంచ దేశాలు విధిస్తున్న ఆంక్షలతో రష్యా ఎదురుదాడికి దిగుతోంది. ఈ క్రమంలో ఇప్పటివరకూ అంతరిక్షంలో ఉన్న అంతర్జాతీయ అంతరిక్ష కేంద్రానికి తాము అందిస్తున్న సహకారం పునస్సమీక్షించుకునేందుకు రష్యా సిద్దమవుతోంది. అదే జరిగితే అంతర్జాతీయ అంతరిక్ష కేంద్రం కుప్పకూలే ప్రమాదం ఉందంటూ రష్యా అంతరిక్ష పరిశోధనా సంస్ధ రాస్ కాస్మోస్ హెచ్చరికలు జారీ చేస్తోంది. దీంతో రష్యాపై దూకుడుగా ఆంక్షలు విధిస్తున్న యూఎస్ తో పాటు మిగిలిన పశ్చిమ దేశాలు, యూరప్ దేశాలు కూడా ఇప్పుడు ఆలోచనలో పడుతున్నాయి.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0vfe2pyu94uah99t",
+          "componenType": "Image",
+          "data": "https://telugu.oneindia.com/img/2022/03/war11-1647434882.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0vfe5n1znl3oj84i3",
+          "componenType": "Paragraph",
+          "data": "<b>తెరపైకి స్పేస్ ఎక్స్ రష్యాపై </b>పశ్చిమదేశాలు విధిస్తున్న ఆంక్షలతో ఆ దేశ ఆర్దిక వ్యవస్ధ కుప్పకూలి అంతర్జాతీయ అంతరిక్ష కేంద్రానికి సహకారం అందించలేని పరిస్ధితులు ఎదురైతే అప్పుడు ఏం జరుగుతుందనే దానిపై ఆందోళన వ్యకమవుతోంది. అయితే ఈ నేపథ్యంలో రష్యా హ్యాండిస్తే అంతర్జాతీయ అంతరిక్ష కేంద్రానికి తాము సహకారం అందిస్తామని ఎలాన్ మస్క్ కు చెందిన స్పేస్ ఎక్స్ సంస్ధ ప్రకటించింది. ఇప్పటికే అంతరిక్షానికి టూరిజం ప్రమోట్ చేస్తున్న స్పేస్ ఎక్స్.. ఐఎస్ఎస్ విషయంలోనూ తమ సహకారం ఉంటుందని వెల్లడించింది. అయితే ఈ ప్రైవేటు సంస్ధను నమ్ముకుని మిగతా దేశాలు ఐఎస్ఎస్ ను ఎంతకాలం నిర్వహిస్తాయనే ప్రశ్నలు తలెత్తుతున్నాయి\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0vffesxbcveyfi7zws",
+          "componenType": "Image",
+          "data": "https://telugu.oneindia.com/img/2022/03/war1-1647434916.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0vfg2dp7jbnx65vxkl",
+          "componenType": "Paragraph",
+          "data": "<b>అంతరిక్షంపై ఆధిపత్య పోరు ? </b><br/>భూమిపై అయితే దేశాలుగా పంచుకుని ఎక్కడికక్కడ ప్రభుత్వాలు పాలిస్తున్నాయి. అవసరమైతే పక్క దేశాలపై యుద్ధాలు చేసి ఆధిపత్యం సాధిస్తున్నాయి. కానీ అంతరిక్షంపై ఆ ఆటలేవీ చెల్లవు. ఇప్పటివరకైతే అంతరిక్షాన్ని శాంతియుత అవసరాలకు వాడుకోవాలనే పరస్పర ఒప్పందాలతో అందరూ ప్రయోగాలు చేస్తున్నారు. కానీ దీనిపై సంపూర్ణ ఆధిపత్యం కాదు కదా ఓ మూలన కూడా ఆక్రమించుకోవడానికి కానీ ఆధిపత్యం సాగించడానికి కూడా వీల్లేదు. ఎందుకంటే అంతరిక్షం భూమిలా చిన్నదేమీ కాదు. ఎవరి అంచనాలకు అందని విషయాలు ఎన్నో ఉంటాయి. వాటిపై అందరూ ప్రయోగాల దశలోనే ఉన్నారు. ఇలాంటి పరిస్ధితుల్లో రష్యా ఉక్రెయిన్ పోరుతో తలెత్తిన పరిస్ధితులు ప్రపంచ దేశాల్ని ఆధిపత్య పోరు దిశగా నెడుతున్నాయి. గతంలో ఉమ్మడిగా పనిచేసేందుకు ఒప్పందం చేసుకున్న యూఎస్, బ్రిటన్, రష్యా ఇప్పుడు విడిపోతున్నాయి. కానీ పరస్పర సహకారం లేకుండా ఆధిపత్యం కాదు కదా.. కనీసం ప్రయోగాల విషయంలోనూ ముందడుగు వేయలేని పరిస్ధితులు నెలకొనేలా కనిపిస్తున్నాయి.",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true
+    },
+    {
+      "id": "PmoMmCS",
+      "author": "Chandrasekhar Panda",
+      "title": "அஜித்துடன் புகைப்படம் எடுத்துக்கொண்ட பிரபல காமெடி நடிகர்..வில்லன் லுக்கில் மிரட்டும் அஜித்..!",
+      "dateCreated": "2022-03-05T03:03:27.113Z",
+      "dateModified": "2022-03-18T03:01:40.102Z",
+      "categryId": "Good Manufacturing Practices (GMP)",
+      "content": [
+        {
+          "componentId": "l0vtyuir6owc8lejb9g",
+          "componenType": "Paragraph",
+          "data": "அஜித்துடன் எடுத்துக்கொண்ட புகைப்படத்தி வெளியிட்ட நகைச்சுவை நடிகர் அம்பானி ஷங்கர்",
+          "numbered": false
+        },
+        {
+          "componentId": "l0vtyx0j3buj6j0nhag",
+          "componenType": "Image",
+          "data": "https://static.langimg.com/thumb/msid-90302651,imgsize-14212,width-700,height-525,resizemode-75/samayam-tamil.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0vtz08eqf7f3vyburl",
+          "componenType": "Paragraph",
+          "data": "நடிகர் அஜித் தற்போது தன் அடுத்த படத்திற்காக தயாராகிக்கொண்டிருக்கின்றார். சமீபத்தில் வெளியான வலிமை படம் வசூல் சாதனை படைத்தாலும் அப்படத்திற்கு எதிர்மறை விமர்சனங்கள் வந்தது. இதைத்தொடர்ந்து தன் அடுத்த படத்தில் எதிர்மறை விமர்சனங்கள் இன்றி ஒரு மெகாஹிட் படத்தை கொடுத்துவிடவேண்டும் என அஜித் வேலை செய்து வருகின்றார்.\n<br/><br/>\nAK61 என் அழைக்கப்படும் இப்படத்திற்காக அஜித் தன் உடல் எடையை 25 கிலோ வரை குறைத்து ஸ்லிம்மாக மாறவுள்ளார். மேலும் இப்படத்தில் வில்லன், ஹீரோ என இரு கதாபாத்திரங்களில் அஜித் நடிப்பதாக தகவல்கள் வந்தன.\n",
+          "numbered": false
+        },
+        {
+          "componentId": "l0vu0xt1575taaprau8",
+          "componenType": "Image",
+          "data": "https://static.langimg.com/thumb/msid-90302667,width-680,resizemode-3/samayam-tamil.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l0vu1h4worky3528mle",
+          "componenType": "Paragraph",
+          "data": "சமீபத்தில் இவரின் புது லுக் இணையத்தில் செம வைரலானது. இதையடுத்து விக்னேஷ் சிவன் இயக்கத்திலும் அஜித் நடிக்கவிருக்கிறார். இப்படத்தின் அறிவிப்பு விரைவில் வெளியாகவுள்ளது.\nஇந்நிலையில் தற்போது அஜித்தின் லேட்டஸ்ட் புகைப்படம் சமூகத்தளங்களில் வைரலாகிவருகின்றது.\n<br/><br/>\nஅஜித்துடன் நகைச்சுவை நடிகர் அம்பானி ஷங்கர் புகைப்படம் எடுத்துக்கொண்டார். அந்த புகைப்படத்தை அவர் தனது ட்விட்டர் பக்கத்தில் வெளியிட்டுள்ளார்.\nகடைசியாக அஜித்துடன் ஜீ படத்தில் அம்பானி ஷங்கர் நடித்திருந்தார்.\n\n<br/><br/>\n\nஅதன் பிறகு சுமார் பல ஆண்டுகள் கழித்து அஜித்தை சந்தித்தபோது இந்த புகைப்படத்தை அவர் எடுத்துக்கொண்டதாக தெரிகிறது. தற்போது இந்த புகைப்படம் அஜித் ரசிகர்களால் அதிகம் பகிரப்பட்டு வருவது குறிப்பிடத்தக்கது.",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true
+    },
+    {
+      "id": "D-p3yvY",
+      "author": "Chandrasekhar Panda",
+      "title": "No Titlekjhkhkjkh",
+      "dateCreated": "2022-03-05T03:03:27.113Z",
+      "dateModified": "2022-03-05T03:03:27.113Z",
+      "categryId": "Production",
+      "content": [
+        {
+          "componentId": "l0vuecqe2336jgw5zoe",
+          "componenType": "h2",
+          "data": "Click to Update Text",
+          "numbered": false
+        }
+      ],
+      "origin": "server"
+    },
+    {
+      "id": "UopbFXg",
+      "author": "Chandrasekhar Panda",
+      "title": "What sanctions are being imposed on Russia over Ukraine invasion?",
+      "dateCreated": "2022-03-25T16:45:29.621Z",
+      "dateModified": "2022-03-25T17:38:38.795Z",
+      "categryId": "Quality Assurance",
+      "content": [
+        {
+          "componentId": "l16nn7o480a57z2ceru",
+          "componenType": "h2",
+          "data": "What are sanctions?",
+          "numbered": false
+        },
+        {
+          "componentId": "l16nnbftry0cc22lcck",
+          "componenType": "Paragraph",
+          "data": "Sanctions are penalties imposed by one country on another, to stop it acting aggressively, or breaking international law.\n<br/>\nThey are among the toughest actions nations can take, short of going to war.",
+          "numbered": false
+        },
+        {
+          "componentId": "l16nne0cqxtmo3g1xp",
+          "componenType": "Image",
+          "data": "https://ichef.bbci.co.uk/news/976/cpsprodpb/1DEC/production/_123706670_chanel.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l16nnivtvji7bjmt53h",
+          "componenType": "Paragraph",
+          "data": "<b>Measures designed to damage Russia's economy have been introduced by countries opposed to its invasion of Ukraine.</b><br/>\n\nThis has led to higher prices for Russian households and shortages of some goods.",
+          "numbered": false
+        },
+        {
+          "componentId": "l16p5zu4692p04fay7a",
+          "componenType": "h2",
+          "data": "What sanctions have been imposed on Russia?",
+          "numbered": false
+        },
+        {
+          "componentId": "l16p7sn8cr0aw53j1rk",
+          "componenType": "Paragraph",
+          "data": "<b>Military goods and mercenaries</b>\n<br/><br/>\nA ban on the export of dual-use goods - items with both a civilian and military purpose, such as vehicle parts - has been imposed by the UK, EU and US.\n\nThis is reportedly having an impact on some Russian manufacturers.\nUkraine says Russia's main armoured vehicle factory has run out of parts to make and repair tanks. It also says a tractor plant has stopped production because of a shortage of foreign-made parts.\n<br/>The UK is also imposing sanctions on Russia's Wagner Group - a private military firm thought to function as an arms-length unit of the Russian military.\n<br/><br/>\n<b>Flights</b>\n<br/><br/>\nAll Russian flights have been banned from US, UK, EU and Canadian airspace.\nThe UK has also banned private jets chartered by Russians.\n<br/><br/>\n<b>Luxury goods</b>\n<br/><br/>\nThe UK says it will ban the export of luxury goods to Russia - including vehicles, high-end fashion and art. The EU has already imposed a ban.\nThe UK will also put a 35% tax on some imports from Russia, including vodka.\n<br/><br/>\n<b>Targeting individuals</b>\n<br/><br/>\nThe US, EU and UK have together sanctioned over 1,000 Russian individuals and businesses, including wealthy business leaders known as oligarchs, who are considered close to the Kremlin.\n<br/><br/>\nOne high-profile oligarch sanctioned by the UK is Chelsea FC owner Roman Abramovich.",
+          "numbered": false
+        },
+        {
+          "componentId": "l16pct45ptw77cp5x2o",
+          "componenType": "Image",
+          "data": "https://ichef.bbci.co.uk/news/976/cpsprodpb/09E4/production/_123623520_mediaitem123623518.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l16pde57rhvpdfig9h9",
+          "componenType": "Paragraph",
+          "data": "Assets belonging to Russian President Vladimir Putin and his foreign minister Sergei Lavrov are also being frozen in the US, EU, UK and Canada.\n<br/>\nHowever, many Russian oligarchs have put their properties and wealth under other names, which means they may be beyond the reach of the UK's sanctions.\n<br/><br/>\n<b>Oil and gas</b>\n\nThe US is banning all Russian oil and gas imports and the UK will phase out Russian oil imports by the end of 2022.\n<br/>\nThe EU, which gets a quarter of its oil and 40% of its gas from Russia, says it will switch to alternative supplies and make Europe independent from Russian energy \"well before 2030\".\n<br/><br/>\nGermany has put on hold permission for the Nord Stream 2 gas pipeline from Russia to open.\n\n<br/><br/>\n<b>Financial measures</b>\n\nWestern countries have frozen the assets of Russia's central bank, to stop it using its $630bn (£470bn) of foreign currency reserves.\n<br/><br/>\nThis has caused the value of the rouble to slump by 22% since the start of the year. That, in turn, has pushed up the price of imported goods and led to a 14% rise in Russia's rate of inflation.\n<br/><br/>\nSome Russian banks are being removed from the international financial messaging system Swift, which is used to transfer money across borders. This will delay payments to Russia for energy exports.\n<br/><br/>\n<b>Other UK sanctions include:</b>\n<br/><br/>\nmajor Russian banks excluded from the UK financial system\nall Russian banks have had their assets frozen\nthe Russian state and major companies are not be able to raise finance or borrow money in the UK\na limit placed on deposits Russians can make at UK banks\nThe EU also said it would target 70% of the Russian banking market and key state-owned firms.\n<br/><br/>\n<h2>What are companies doing?</h2>\nA growing number of international companies including McDonald's, Coca-Cola and Starbucks have suspended trading in Russia.\n<br/><br/>\nAfter facing fierce criticism for continuing to operate in Russia, Nestle has withdrawn some of its brands including KitKat and Nesquik, but will still sell \"essential foods\".\n<br/><br/>\nHowever, a number of other Western brands including Marks and Spencer, Burger King, and hotel groups Marriott and Accor say they can't pull out from Russia because their businesses there operate under complex franchise deals.\n<br/>\nGrowing numbers of firms pull back from Russia\n<br/>\n<h2>How has Russia reacted to sanctions?</h2>\n<br/><br/>\nRussia's President Putin has said he will make \"unfriendly\" nations pay for their imports of Russian gas in roubles, which would push up the value of the currency.\n<br/>\nRussia has banned exports of more than 200 products until the end of 2022, including telecoms, medical, vehicle, agricultural, electrical equipment and timber.\n<br/>\nIn addition it is blocking interest payments to foreign investors who hold government bonds, and banning Russian firms from paying overseas shareholders.\n<br/><br/>\nIt has stopped foreign investors who hold billions of dollars worth of Russian stocks and bonds from selling them.\nThe UK is also limiting the sale of \"golden visas\", which allowed wealthy Russians to get British residency rights.",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true
+    },
+    {
+      "id": "yNjy_EV",
+      "author": "Chandrasekhar Panda",
+      "title": "mhiiyoiyoi",
+      "dateCreated": "2022-03-26T05:44:11.552Z",
+      "dateModified": "2022-03-26T05:44:11.552Z",
+      "categryId": "Production",
+      "content": [
+        {
+          "componentId": "l17fkali0m5axlfqvusd",
+          "componenType": "h2",
+          "data": "Click to Update Text",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": false
+    },
+    {
+      "id": "EiO2M9i",
+      "author": "Chandrasekhar Panda",
+      "title": "TMC Building: বাইপাসের ধারে তৈরি হচ্ছে নতুন অস্থায়ী তৃণমূল ভবন, জানালেন মমতা",
+      "dateCreated": "2022-03-05T03:03:27.113Z",
+      "dateModified": "2022-03-28T18:16:11.102Z",
+      "categryId": "Good Manufacturing Practices (GMP)",
+      "content": [
+        {
+          "componentId": "l1b14xjlqhki7qysbqm",
+          "componenType": "Paragraph",
+          "data": "কাজ চালাতে দক্ষিণ কলকাতায় একটি নতুন বাড়ি ভাড়া নেওয়ার কথাও জানান তিনি। এর পরই দলের নতুন দফতর নিয়ে যে পরিকল্পনা গ্রহণ করা হয়েছিল, তা পুনর্বিবেচনা করা শুরু হয়।",
+          "numbered": false
+        },
+        {
+          "componentId": "l1b15b3l915w4f6wyd",
+          "componenType": "Image",
+          "data": "https://assets.telegraphindia.com/abp/2022/Mar/1646726867_mamata-live.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l1b15zpa3xpsuh3tf4q",
+          "componenType": "Paragraph",
+          "data": "নতুন অস্থায়ী তৃণমূল ভবন তৈরি হচ্ছে বাইপাসের ধারে। মেট্রোপলিটানে একটি ধাবার পাশে সেটি হবে। সেখানে একটি দোতলা বাড়ি পাওয়া গিয়েছে। সেটিকেই ব্যবহারযোগ্য করে নেওয়া হচ্ছে। থাকবে অফিসঘর, নেতৃত্বের বসার ঘর। সোমবার এমনটাই জানিয়েছেন তৃণমূলনেত্রী মমতা বন্দ্যোপাধ্যায়।\n<br/><br/>\nদিন কয়েক আগেই তৃণমূলনেত্রী জানিয়েছিলেন, বৈভব বা বাহুল্যের তৃণমূল ভবনে সায় নেই তাঁর। এক বৈঠকে উপস্থিত নেতাদের উদ্দেশে মমতা বলেছিলেন, “আমাদের দল মা- মাটি- মানুষের দল। এটা আমাদের স্লোগান। সরকারের মনোভাবও তাই। আমাদের দলের অফিসে বাহুল্য থাকতে পারে না।” কাজ চালাতে দক্ষিণ কলকাতায় একটি নতুন বাড়ি ভাড়া নেওয়ার কথাও জানান তিনি। এর পরই দলের নতুন দফতর নিয়ে যে পরিকল্পনা গ্রহণ করা হয়েছিল, তা পুনর্বিবেচনা করা শুরু হয়।",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true
+    },
+    {
+      "id": "pK84Yab",
+      "author": "Chandrasekhar Panda",
+      "title": "Rampurhat Clash: বগটুই-কাণ্ড: রামপুরহাটের প্রাক্তন এসডিপিও-কে চার ঘণ্টা ধরে জিজ্ঞাসাবাদ সিবিআই-এর",
+      "dateCreated": "2022-03-05T03:03:27.113Z",
+      "dateModified": "2022-03-28T18:18:32.318Z",
+      "categryId": "Validation and Qualification",
+      "content": [
+        {
+          "componentId": "l1b14xjlqhki7qysbqm",
+          "componenType": "Paragraph",
+          "data": "সিবিআই সূত্রে খবর, সায়ন ছাড়াও রামপুরহাট থানার এক জন এএসআই-কেও জিজ্ঞাসাবাদ করা হয়েছে।",
+          "numbered": false
+        },
+        {
+          "componentId": "l1b15b3l915w4f6wyd",
+          "componenType": "Image",
+          "data": "https://assets.telegraphindia.com/abp/2022/Mar/1648132168_syan.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "l1b15zpa3xpsuh3tf4q",
+          "componenType": "Paragraph",
+          "data": "বীরভূমের বগটুই-কাণ্ডের তদন্তে নেমে সোমবার বেশ কয়েক জনকে ডেকে জি়জ্ঞাসাবাদ করল সিবিআই। যাঁদের তলব করা হয়েছে, সেই তালিকায় ছিলেন রামপুরহাটের প্রাক্তন এসডিপিও সায়ন আহমেদকেও।\n<br/><br/>\n\nসোমবার বিকেল সাড়ে ৪টে নাগাদ ডাকা হয়েছিল সায়নকে। সূত্রের খবর, সময় মতোই রামপুরহাটে কেন্দ্রীয় তদন্তকারী সংস্থার অস্থায়ী ক্যাম্পে পৌঁছে গিয়েছিলেন তিনি। এর পর প্রায় চার ঘণ্টা ধরে সায়নকে জিজ্ঞাসাবাদ করেন তদন্তকারী আধিকারিকরা। তবে জেরায় সংস্থার আধিকারিকেরা কী কী বিষয়ের উপর গুরুত্ব দিয়েছেন, তা স্পষ্ট নয়।\n<br/><br/>\n\nসিবিআই সূত্রে খবর, সায়ন ছাড়াও রামপুরহাট থানার এক জন এএসআই-কেও জিজ্ঞাসাবাদ করা হয়েছে। ডেকে পাঠানো হয়েছিল রামপুরহাট হাসপাতালের এক চিকিৎসককে। ঘটনার পর আহতদের যখন হাসপাতালে নিয়ে যাওয়া হয়। সেই সময় রোগীদের দেখার দায়িত্বে ছিলেন ওই চিকিৎসক।\n<br/><br/>\n\nগত সোমবার রাতে বগটুই গ্রামের কয়েকটি বাড়িতে অগ্নিসংযোগের জেরে আট জনের মৃত্যুর ঘটনার পরেই রামপুরহাটের আইসি ত্রিদীপ প্রামাণিক এবং এসডিপিও সায়নকে ‘ক্লোজ’ করেছিল রাজ্য পুলিশ। রাজ্য পুলিশের ডিজিপি মনোজ মালবীয় ওই সিদ্ধান্তের কথা ঘোষণা করেছিলেন। গত বৃহস্পতিবার রামপুরহাটে গিয়ে মমতা বন্দ্যোপাধ্যায়ও বলেছিলেন, ‘‘আইসি ও এসডিপিও নিজের দায়িত্ব পালন করেনি।’’ ওই দুই পুলিশ অফিসারকে ভর্ৎসনাও করতে দেখা গিয়েছিল মুখ্যমন্ত্রীকে। ঘটনাচক্রে, এর পর বৃহস্পতিবারই কর্তব্যে গাফিলতির কারণে ত্রিদীপ আর সায়নকেকে বরখাস্ত করা হয়।\n<br/><br/>\n\nনতুন অস্থায়ী তৃণমূল ভবন তৈরি হচ্ছে বাইপাসের ধারে। মেট্রোপলিটানে একটি ধাবার পাশে সেটি হবে। সেখানে একটি দোতলা বাড়ি পাওয়া গিয়েছে। সেটিকেই ব্যবহারযোগ্য করে নেওয়া হচ্ছে। থাকবে অফিসঘর, নেতৃত্বের বসার ঘর। সোমবার এমনটাই জানিয়েছেন তৃণমূলনেত্রী মমতা বন্দ্যোপাধ্যায়।\n<br/><br/>\nদিন কয়েক আগেই তৃণমূলনেত্রী জানিয়েছিলেন, বৈভব বা বাহুল্যের তৃণমূল ভবনে সায় নেই তাঁর। এক বৈঠকে উপস্থিত নেতাদের উদ্দেশে মমতা বলেছিলেন, “আমাদের দল মা- মাটি- মানুষের দল। এটা আমাদের স্লোগান। সরকারের মনোভাবও তাই। আমাদের দলের অফিসে বাহুল্য থাকতে পারে না।” কাজ চালাতে দক্ষিণ কলকাতায় একটি নতুন বাড়ি ভাড়া নেওয়ার কথাও জানান তিনি। এর পরই দলের নতুন দফতর নিয়ে যে পরিকল্পনা গ্রহণ করা হয়েছিল, তা পুনর্বিবেচনা করা শুরু হয়।",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true
+    },
+    {
+      "id": "00R5x25",
+      "author": "Chandrasekhar Panda",
+      "title": "test title",
+      "dateCreated": "2022-03-05T03:03:27.113Z",
+      "dateModified": "2022-04-02T14:38:49.697Z",
+      "categryId": "Validation and Qualification",
+      "content": [
+        {
+          "componentId": "l1hylyui1alzjt91jco",
+          "componenType": "h2",
+          "data": "Click to Update Text",
+          "numbered": false
+        }
+      ],
+      "origin": "server"
+    },
+    {
+      "id": "ldQ_ive",
+      "author": "Chandrasekhar Panda",
+      "title": "test title",
+      "dateCreated": "2022-03-05T03:03:27.113Z",
+      "dateModified": "2022-03-05T03:03:27.113Z",
+      "categryId": "Production",
+      "content": [
+        {
+          "componentId": "l1hylyui1alzjt91jco",
+          "componenType": "h2",
+          "data": "Click to Update Text",
+          "numbered": false
+        }
+      ],
+      "origin": "server"
     }
   ],
   "journal": {
     "title": "zJournal Default Title from mock server",
     "selectedPage": "home",
+    "loggedIn": false,
     "currentArticle": {
       "id": "l0d9gt5574sh2c54t5l",
       "author": "Chandrasekhar Panda",
@@ -2998,11 +3410,16 @@
       "Table"
     ],
     "templateArticles": [
+      "zRMj9V5",
       "4_TuJYn",
       "xnNr_jD",
-      "ia3N1Wm",
-      "l00jcbtfouv42pfnbw",
-      "l00t5hhhg3cw6ppf48v"
-    ]
+      "A9G4MGI",
+      "_yM3J9o",
+      "OqW296s"
+    ],
+    "adminDetails": {
+      "id": "e0da85ff1b5040a7c3fb550b7247078d967f46820a461d8124d77bdf11054b9900739fdd4601e9808c459b91def95d197e01b5184ab15b2132ab5fcad75d6597",
+      "passPhase": "9b332ecf5ecf2506c22a78d076e5af7fb56899487d45f98600bfc823a42c27b8d1776027c5f7cc15b3a43779369b9a43937bfa354e9e26ad6b8c3c22b1467246"
+    }
   }
 }
