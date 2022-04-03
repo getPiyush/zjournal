@@ -22,13 +22,6 @@ export default function Admin() {
 
   const validateCreds = (userDetailsIn) => {
     const { adminDetails } = jState.journal;
-    console.log(userDetailsIn, jState.journal.adminDetails);
-    console.log(adminDetails.id, adminDetails.passPhase);
-    console.log(
-      encryptString(userDetailsIn.userid),
-      encryptString(userDetailsIn.password)
-    );
-
     if (
       encryptString(userDetailsIn.userid) === adminDetails.id &&
       encryptString(userDetailsIn.password) === adminDetails.passPhase
