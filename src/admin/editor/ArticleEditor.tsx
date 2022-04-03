@@ -15,7 +15,6 @@ import {
 import ArticleContainerEditor from "./ArticleContainerEditor";
 import ConfirmationButton from "./ConfirmationButton";
 import EditPrompt from "./EditPrompt";
-import SaveButton from "./SaveButton";
 import SidePanelContainer from "./SidePanelContainer";
 
 type ArticleEditorProps = {
@@ -161,7 +160,7 @@ export default function ArticleEditor({
       <div className="row">
         <div className="col">
           <div className="top-action-box">
-            <SaveButton article={article} />
+            <span>Edit Article</span>
             <button
               className="btn btn-primary btn-sm"
               onClick={onPreviewClick}

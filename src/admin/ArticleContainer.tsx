@@ -16,6 +16,9 @@ export default function ArticleContainer({
   setOutArticle,
 }: ArticleContainerProps) {
   const { state: aState } = useArticle();
+  
+  const [article, setArticle] = useState(inArticle);
+  const [editMode, setEditMode] = useState(true);
 
   useEffect(() => {
     if (
@@ -26,9 +29,6 @@ export default function ArticleContainer({
       setArticle(aState.articles[0]);
     }
   }, [aState]);
-
-  const [article, setArticle] = useState(inArticle);
-  const [editMode, setEditMode] = useState(true);
 
   const showPreview = (updatedArticle: ArticleT) => {
     setArticle(updatedArticle);

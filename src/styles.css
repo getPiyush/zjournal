@@ -93,6 +93,7 @@ img {
 /*article*/
 .article-viewer {
   min-height: 85vh;
+  overflow-wrap: break-word;
 }
 
 .sub-header {

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
+import { defaultArticle } from "../ApplicationConstants";
 import { updateCurrentArticle } from "../datastore/actions/JournalActions";
 import { useArticle } from "../datastore/contexts/ArticleContext";
 import { useJournal } from "../datastore/contexts/JournalContext";
@@ -19,6 +20,15 @@ export default function AdminContainer() {
 
   const showLoader = jState.status === "loading" || aState.status === "loading";
 
+  const getValidatedArticle = (article: ArticleT) => {
+    return article.dateCreated &&
+      article.dateModified &&
+      article.author !== "" &&
+      article.id !== ""
+      ? article
+      : defaultArticle;
+  };
+
   return (
     <main className="flex-shrink-0">
       <div id="editor" className="admin">
@@ -30,7 +40,7 @@ export default function AdminContainer() {
             path="editor"
             element={
               <ArticleContainer
-                inArticle={jState?.journal?.currentArticle}
+                inArticle={getValidatedArticle(jState?.journal?.currentArticle)}
                 setOutArticle={updateJournalArticle}
               />
             }
