@@ -182,7 +182,6 @@ img {
 .top-action-box {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid;
 }
 
 .list-editor_item {

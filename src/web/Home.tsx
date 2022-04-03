@@ -4,6 +4,7 @@ import { getArticlesByIds } from "../datastore/actions/ArticleActions";
 import { useArticle } from "../datastore/contexts/ArticleContext";
 import { useJournal } from "../datastore/contexts/JournalContext";
 import { getArticleFromId } from "../utils/componentUtil";
+import { ArticleScroller } from "./components/ArticleScroller";
 import ArticleCard from "./components/Home/ArticleCard";
 import HeroArticle from "./components/Home/HeroArticle";
 
@@ -55,6 +56,11 @@ export default function Home() {
             {articleData.articles && getArticleFromIndex(4) && (
               <ArticleCard article={getArticleFromIndex(4)} />
             )}
+          </div>
+        </div>
+        <div className="row">
+          <div className="col">
+            <ArticleScroller/>
           </div>
         </div>
       </div>
