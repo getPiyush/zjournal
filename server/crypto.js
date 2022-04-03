@@ -1,3 +1,5 @@
+const process = require("process");
+
 const CryptoJS = require("crypto-js");
 let sha512 = require("crypto-js/hmac-sha512");
 

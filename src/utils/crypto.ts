@@ -5,8 +5,13 @@ import { applicationProperties } from "../ApplicationConstants";
 const { appPassword } = applicationProperties;
 
 export const decryptData = (data) => {
-  const bytes = CryptoJS.AES.decrypt(data, appPassword);
-  return JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
+
+  if (process.env.NODE_ENV === "production") {
+    const bytes = CryptoJS.AES.decrypt(data, appPassword);
+    return JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
+  }
+
+  return data;
 };
 
 export const encryptAES = (stringData) => {

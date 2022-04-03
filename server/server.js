@@ -10,6 +10,8 @@ const server = jsonServer.create();
 // const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
 
+const env = (process.argv && process.argv.includes("--production")) ? "production" : "development";
+
 server.use(middlewares);
 server.use(auth.authenticatorMiddleWare);
 server.use(router);
@@ -19,7 +21,7 @@ server.listen(8080, () => {
 
 router.render = (req, res) => {
   const response = JSON.stringify(res.locals.data);
-  const encryptedData = encryptAES(response);
+  const encryptedData = env === "production" ? encryptAES(response) : res.locals.data;
   res.jsonp({
     zjData: encryptedData,
   });
