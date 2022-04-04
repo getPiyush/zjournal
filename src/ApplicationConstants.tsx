@@ -45,7 +45,8 @@ export const applicationProperties = {
     loggedIn:false,
     categories: [],
     components:[],
-    templateArticles:[]
+    templateArticles:[],
+    templateData:""
   };
 
   
