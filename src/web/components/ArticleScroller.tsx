@@ -28,7 +28,11 @@ export const ArticleScroller = () => {
       ))}
       <div className="row">
         <div className="col">
-          <button onClick={addArticles}>+</button>
+          <div className="d-grid gap-2">
+            <button  onClick={addArticles} className="btn btn-link" type="button">
+              Show More
+            </button>
+          </div>
         </div>
       </div>
     </div>
