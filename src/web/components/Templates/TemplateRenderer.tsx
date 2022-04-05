@@ -8,13 +8,13 @@ import HeroArticle from "../Home/HeroArticle";
 type TemplateRendererProps = {
   dataString: string;
   invalidArticleError: (articleId: string) => void;
-  mode:"view"|"edit";
+  mode: "view" | "edit";
 };
 
 export const TemplateRenderer = ({
   dataString,
   invalidArticleError,
-  mode
+  mode,
 }: TemplateRendererProps) => {
   const { dispatch, state: articleData } = useArticle();
 
@@ -32,7 +32,7 @@ export const TemplateRenderer = ({
     }
   }, [articleData]);
 
-  const invalidArticle = (id) => (
+  const invalidArticleCard = (id) => (
     <div className="card border-danger mb-3">
       <div className="card-body text-danger">
         <h5 className="card-title">Invalid Article</h5>
@@ -40,6 +40,15 @@ export const TemplateRenderer = ({
           The article id : <b>{id}</b> is invald/corrupt, <br />
           Please use a valid article id.
         </p>
+      </div>
+    </div>
+  );
+
+  const articleLoadingCard = () => (
+    <div className="card border-secondary mb-3">
+      <div className="card-body">
+        <h5 className="card-title">Loading Article</h5>
+        <p className="card-text">Please wait while the Article gets loaded..</p>
       </div>
     </div>
   );
@@ -54,13 +63,16 @@ export const TemplateRenderer = ({
             <div className="row">
               {columnData.map((articleId, colIndex) => {
                 const article = getArticleFromId(articleId, articles);
-                let articleComp = mode==="edit"?invalidArticle(articleId):<div>Loading Articles ...</div>;
+                let articleComp =
+                  mode === "edit"
+                    ? invalidArticleCard(articleId)
+                    : articleLoadingCard();
                 if (article && article.id) {
                   articleComp =
                     index === 0 && columnData.length === 1 ? (
                       <HeroArticle mode={mode} article={article} />
                     ) : (
-                      <ArticleCard  mode={mode} article={article} />
+                      <ArticleCard mode={mode} article={article} />
                     );
                 } else {
                   invalidArticleError(articleId);
