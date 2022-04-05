@@ -8,11 +8,13 @@ import HeroArticle from "../Home/HeroArticle";
 type TemplateRendererProps = {
   dataString: string;
   invalidArticleError: (articleId: string) => void;
+  mode:"view"|"edit";
 };
 
 export const TemplateRenderer = ({
   dataString,
   invalidArticleError,
+  mode
 }: TemplateRendererProps) => {
   const { dispatch, state: articleData } = useArticle();
 
@@ -52,13 +54,13 @@ export const TemplateRenderer = ({
             <div className="row">
               {columnData.map((articleId, colIndex) => {
                 const article = getArticleFromId(articleId, articles);
-                let articleComp = invalidArticle(articleId);
+                let articleComp = mode==="edit"?invalidArticle(articleId):<div>Loading Articles ...</div>;
                 if (article && article.id) {
                   articleComp =
                     index === 0 && columnData.length === 1 ? (
-                      <HeroArticle article={article} />
+                      <HeroArticle mode={mode} article={article} />
                     ) : (
-                      <ArticleCard article={article} />
+                      <ArticleCard  mode={mode} article={article} />
                     );
                 } else {
                   invalidArticleError(articleId);

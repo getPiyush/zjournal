@@ -24,8 +24,8 @@ export default function Templates() {
 
   const updateTemplate = () => {
     // @todoo add validation
-    setTemplateData(textData);
     setInvalidArticles([]);
+    setTemplateData(textData);
   };
 
   const saveTemplate = () => {
@@ -99,6 +99,7 @@ export default function Templates() {
             <TemplateRenderer
               invalidArticleError={invalidArticleFound}
               dataString={updatedTemplateData}
+              mode="edit"
             />
           </div>
         </div>

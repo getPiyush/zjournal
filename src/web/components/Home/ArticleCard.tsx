@@ -4,8 +4,10 @@ import { getDate, removeHTML, sliceWords } from "../../../utils/componentUtil";
 
 type ArticleCardProps = {
   article: ArticleT;
+  mode?:"view"|"edit";
+
 };
-export default function ArticleCard({ article }: ArticleCardProps) {
+export default function ArticleCard({ article, mode="view" }: ArticleCardProps) {
   let contentArray = [null, null];
   return (
     <div
@@ -43,9 +45,13 @@ export default function ArticleCard({ article }: ArticleCardProps) {
             );
           }
         })}
+        {mode==="view" && 
         <a className="card-link" href={`article/${article.id}`}>
           more..
         </a>
+        }
+        {mode==="edit" && <a target="_blank" href={`/web/article/${article.id}`}>more..</a>}
+         {mode==="edit" && <div className="card-footer mt-2"><div className="badge bg-dark">{article.id}</div></div>}
       </div>
     </div>
   );

@@ -25,6 +25,7 @@ export default function Home() {
           <TemplateRenderer
             invalidArticleError={invalidArticleFound}
             dataString={jState.journal.templateData}
+            mode="view"
           />
         </div>
       </div>
