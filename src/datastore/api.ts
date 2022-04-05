@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import { ArticleT } from "../Types";
+import { ArticleT, Journal } from "../Types";
 import { getPassPhase } from "../utils/crypto";
 
 const host = window.location.host.split(":")[0];
@@ -36,10 +36,27 @@ const postRequest = (url, obj) => {
 }
 
 
+/**
+ * 
+Journal APIS
+ */
+
 export const getJournalAPI = () => {
     return getRequest(getJournalAPIPath);
 }
 
+
+export const updateJournalAPI = (journal: Journal) => {
+    const url = `${getJournalAPIPath}`;
+    return putRequest(url, journal);
+}
+
+
+
+/**
+ * 
+Article APIS
+ */
 export const getArticleByIdAPI = (id: string) => {
     const url = `${getArticleAPIPath}/${id}`;
     return getRequest(url);

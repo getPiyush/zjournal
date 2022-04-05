@@ -14,18 +14,27 @@ export default function Home() {
 
   window.document.title = `Home - ${applicationProperties.title}`;
 
+  const invalidArticleFound = (articleId: string) => {
+    console.log("Invalid Article Found ", articleId);
+  };
+
   return (
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <TemplateRenderer dataString={jState.journal.templateData}/>
-          </div>
+    <div className="container">
+      <div className="row">
+        <div className="col">
+          <TemplateRenderer
+            invalidArticleError={invalidArticleFound}
+            dataString={jState.journal.templateData}
+          />
         </div>
-        <div className="row">
+      </div>
+      {/** 
+        * <div className="row">
           <div className="col">
             <ArticleScroller/>
           </div>
         </div>
-      </div>
+        */}
+    </div>
   );
 }

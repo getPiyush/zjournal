@@ -7,9 +7,13 @@ import HeroArticle from "../Home/HeroArticle";
 
 type TemplateRendererProps = {
   dataString: string;
+  invalidArticleError: (articleId: string) => void;
 };
 
-export const TemplateRenderer = ({ dataString }: TemplateRendererProps) => {
+export const TemplateRenderer = ({
+  dataString,
+  invalidArticleError,
+}: TemplateRendererProps) => {
   const { dispatch, state: articleData } = useArticle();
 
   const [rowData, setRowData] = useState([]);
@@ -21,7 +25,6 @@ export const TemplateRenderer = ({ dataString }: TemplateRendererProps) => {
   }, [dataString]);
 
   useEffect(() => {
-    console.log(articleData);
     if (articleData.status === "success") {
       setRowData(dataString.split("\n"));
     }
@@ -32,7 +35,8 @@ export const TemplateRenderer = ({ dataString }: TemplateRendererProps) => {
       <div className="card-body text-danger">
         <h5 className="card-title">Invalid Article</h5>
         <p className="card-text">
-          The article id : <b>{id}</b> is invald/corrupt, <br/>Please use a valid article id.
+          The article id : <b>{id}</b> is invald/corrupt, <br />
+          Please use a valid article id.
         </p>
       </div>
     </div>
@@ -50,15 +54,14 @@ export const TemplateRenderer = ({ dataString }: TemplateRendererProps) => {
                 const article = getArticleFromId(articleId, articles);
                 let articleComp = invalidArticle(articleId);
                 if (article && article.id) {
-                  articleComp = (
-                    
-                      index === 0 && columnData.length === 1 ? (
-                        <HeroArticle article={article} />
-                      ) : (
-                        <ArticleCard article={article} />
-                      )
-                   
-                  );
+                  articleComp =
+                    index === 0 && columnData.length === 1 ? (
+                      <HeroArticle article={article} />
+                    ) : (
+                      <ArticleCard article={article} />
+                    );
+                } else {
+                  invalidArticleError(articleId);
                 }
                 return <div className="col">{articleComp}</div>;
               })}
