@@ -28,5 +28,6 @@ export type Journal = {
   categories: string[];
   components: string[];
   templateArticles: string[];
+  templateData:string,
   adminDetails?: { id: string, passPhase: string }
 };

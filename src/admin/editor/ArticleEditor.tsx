@@ -176,20 +176,20 @@ export default function ArticleEditor({
               disabled={article.title === "" || article.content.length === 0}
             />
           </div>
+          <hr/>
         </div>
       </div>
       <div className="row">
         <div className="col">
-          <label htmlFor="exampleFormControlInput1" className="form-label">
-            Title
-          </label>
           <input
-            type="email"
+            type="text"
             className="form-control article-title-input"
-            id="exampleFormControlInput1"
+            id="Article Title"
             placeholder="This is a sample title"
             value={article.title}
             onChange={titleChanged}
+            title="Article Title"
+            required
           />
         </div>
       </div>

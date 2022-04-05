@@ -3,7 +3,10 @@ import { defaultJournal } from "../../ApplicationConstants";
 import { ArticleT, Journal } from "../../Types";
 
 type Action =
-  | { type: "update_journal"; value: Journal }
+  | { type: "get_journal_success"; value: Journal }
+  | { type: "get_journal_loading" }
+  | { type: "get_journal_error" }
+  | { type: "update_journal_success"; value: Journal }
   | { type: "update_journal_loading" }
   | { type: "update_journal_error" }
   | { type: "update_page"; value: string }
@@ -21,6 +24,18 @@ const JournalStateContext = React.createContext<
 
 function journalReducer(state: State, action: Action) {
   switch (action.type) {
+    case "get_journal_loading": {
+      return { status: "loading", journal: state.journal };
+    }
+
+    case "get_journal_error": {
+      return { status: "error", journal: state.journal };
+    }
+
+    case "update_journal_success": {
+      return { status: "success", journal: action.value };
+    }
+
     case "update_journal_loading": {
       return { status: "loading", journal: state.journal };
     }
@@ -29,8 +44,8 @@ function journalReducer(state: State, action: Action) {
       return { status: "error", journal: state.journal };
     }
 
-    case "update_journal": {
-      return { journal: action.value, status: "success" };
+    case "get_journal_success": {
+      return { status: "success", journal: action.value };
     }
 
     case "update_page": {

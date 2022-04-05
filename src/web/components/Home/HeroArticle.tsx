@@ -6,9 +6,10 @@ import { getDate, removeHTML, sliceWords } from "../../../utils/componentUtil";
 
 type ArticleProps = {
   article: ArticleT;
+  mode?:"view"|"edit";
 };
 
-export default function HeroArticle({ article }: ArticleProps) {
+export default function HeroArticle({ article, mode="view" }: ArticleProps) {
   let contentArray = [null, null];
   return (
     <div className="card border-light mb-3">
@@ -47,7 +48,10 @@ export default function HeroArticle({ article }: ArticleProps) {
               <div>
                 {ReactHtmlParser(sliceWords(contentArray[1], 200, 500))}
                 ..
-                <a href={`article/${article.id}`}>more..</a>
+                {mode==="view" && <a href={`article/${article.id}`}>more..</a>}
+                {mode==="edit" && <a target="_blank" href={`/web/article/${article.id}`}>more..</a>}
+                {mode==="edit" && <div className="card-footer mt-2"><div className="badge bg-dark">{article.id}</div></div>}
+
               </div>
             )}
           </div>

@@ -63,6 +63,7 @@ export default function ArticleContainer({
                   <i className="bi bi-pencil"></i>&nbsp;&nbsp;Edit
                 </button>
               </div>
+              <hr/>
               <Article data={article} />
             </React.Fragment>
           )}{" "}

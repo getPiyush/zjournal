@@ -1,5 +1,5 @@
-import { ArticleT } from "../../Types";
-import { getJournalAPI } from "../api";
+import { ArticleT, Journal } from "../../Types";
+import { getJournalAPI, updateJournalAPI } from "../api";
 import { decryptData } from "../../utils/crypto";
 
 export const updatePage = (page: string, dispatch) => {
@@ -11,16 +11,37 @@ export const updateCurrentArticle = (article: ArticleT, dispatch) => {
 };
 
 export const getJournalFromDB = (dispatch) => {
-  dispatch({ type: "update_journal_loading" });
+  dispatch({ type: "get_journal_loading" });
   getJournalAPI()
     .then(function (response) {
-      dispatch({ type: "update_journal", value:  decryptData(response.data.zjData) });
+      dispatch({
+        type: "get_journal_success",
+        value: decryptData(response.data.zjData),
+      });
+    })
+    .catch(function (error) {
+      // console.log(error);
+      dispatch({ type: "get_journal_error" });
+    })
+    .then(function () {
+      //
+    });
+};
+
+export const updateJournalinDB = (dispatch, journal: Journal) => {
+  dispatch({ type: "update_journal_loading" });
+  updateJournalAPI(journal)
+    .then(function (response) {
+      dispatch({
+        type: "update_journal_success",
+        value: decryptData(response.data.zjData),
+      });
     })
     .catch(function (error) {
       // console.log(error);
       dispatch({ type: "update_journal_error" });
     })
     .then(function () {
-      //
+      // always executed
     });
 };

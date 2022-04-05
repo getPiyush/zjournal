@@ -25,8 +25,12 @@ export default function Admin() {
     if (
       encryptString(userDetailsIn.userid) === adminDetails.id &&
       encryptString(userDetailsIn.password) === adminDetails.passPhase
-    )
+    ){
+
+      window.document.title = "zJournal Admin Panel";
       setUserDetails({ loggedIn: true });
+
+    }
   };
 
   const logOut = () => {
