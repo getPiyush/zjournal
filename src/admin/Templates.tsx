@@ -2,6 +2,7 @@ import { useState } from "react";
 import { updateJournalinDB } from "../datastore/actions/JournalActions";
 import { useJournal } from "../datastore/contexts/JournalContext";
 import { TemplateRenderer } from "../web/components/Templates/TemplateRenderer";
+import ConfirmationButton from "./editor/ConfirmationButton";
 import { PageTitle } from "./PageTitle";
 
 export default function Templates() {
@@ -48,7 +49,7 @@ export default function Templates() {
     <div className="template container">
       <div className="row">
         <div className="col">
-          <PageTitle title="Templates" />
+          <PageTitle title="Edit Home Template" />
         </div>
       </div>
       <div className="row">
@@ -69,7 +70,7 @@ export default function Templates() {
           </div>
         </div>
         <div className="row">
-          <div className="col">
+          <div className="col top-action-box">
             <button
               disabled={textData === updatedTemplateData}
               className="btn btn-secondary"
@@ -77,17 +78,22 @@ export default function Templates() {
             >
               Preview Template
             </button>
-            <button
+            <ConfirmationButton
+              confirmationMessage="Are you sure want to update Home Page?"
+              iconComp={null}
               disabled={
                 invalidArticles.length > 0 ||
                 templateData === updatedTemplateData
               }
-              className="btn btn-primary"
-              onClick={saveTemplate}
-            >
-              Save Template
-            </button>
+              buttonText="Save Template"
+              confirmationClick={saveTemplate}
+            />
           </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col">
+          <hr />
         </div>
       </div>
       <div className="row">
@@ -95,13 +101,21 @@ export default function Templates() {
           <div>
             <h5>Preview</h5>
           </div>
-          <div className="p-3">
+          <div className="template-viewer p-3" style={{ border: "solid 1px green" }}>
             <TemplateRenderer
               invalidArticleError={invalidArticleFound}
               dataString={updatedTemplateData}
               mode="edit"
             />
           </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col mt-2 mb-2">
+          <span>
+            Note: Please be careful beofre updating the home page template,
+            preview it properly before saving.
+          </span>
         </div>
       </div>
     </div>

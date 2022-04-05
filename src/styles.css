@@ -1,4 +1,4 @@
-main > .container {
+main>.container {
   padding: 80px 0px 0px 0px;
   max-width: 1024px;
 }
@@ -137,6 +137,10 @@ img {
   font-family: "Source Serif 4", sans-serif;
 }
 
+.admin .template-viewer {
+  font-family: "Source Serif 4", sans-serif;
+}
+
 .admin .edit-area {
   font-family: "Source Serif 4", sans-serif;
 }
@@ -209,7 +213,7 @@ button {
 }
 
 @media screen and (min-width: 767px) and (max-width: 846px) {
-  main > .container {
+  main>.container {
     padding: 100px 0px 0px 0px !important;
   }
 }
