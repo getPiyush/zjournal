@@ -7,7 +7,7 @@ import HeroArticle from "../Home/HeroArticle";
 
 type TemplateRendererProps = {
   dataString: string;
-  invalidArticleError: (articleId: string) => void;
+  invalidArticleError: (articleId: string, flag: boolean) => void;
   mode: "view" | "edit";
 };
 
@@ -18,19 +18,10 @@ export const TemplateRenderer = ({
 }: TemplateRendererProps) => {
   const { dispatch, state: articleData } = useArticle();
 
-  const [rowData, setRowData] = useState([]);
-
-  let articleList = dataString.replace(/[\n|]/g, ",").split(",");
-
   useEffect(() => {
+    const articleList = dataString.replace(/[\n|]/g, ",").split(",");
     getArticlesByIds(dispatch, articleList);
   }, [dataString]);
-
-  useEffect(() => {
-    if (articleData.status === "success") {
-      setRowData(dataString.split("\n"));
-    }
-  }, [articleData]);
 
   const invalidArticleCard = (id) => {
     if (articleData.status === "loading") {
@@ -42,7 +33,7 @@ export const TemplateRenderer = ({
             <h5 className="card-title">Invalid Article</h5>
             <p className="card-text">
               The article id : <b>{id}</b> is invald/corrupt, <br />
-              Please use a valid article id. {articleData.status}
+              Please use a valid article id.
             </p>
           </div>
         </div>
@@ -51,43 +42,56 @@ export const TemplateRenderer = ({
   };
 
   const articleLoadingCard = () => (
-    <div className="card border-secondary mb-3">
+    <div className="card border-info mb-3 ">
       <div className="card-body">
-        <h5 className="card-title">Loading Article</h5>
-        <p className="card-text">Please wait while the Article gets loaded..</p>
+        <div className="card-text d-flex justify-content-center">
+          <div className="m-3">
+            <div className="spinner-border text-primary" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+          </div>
+          <div className="m-3">Please wait while the Article gets loaded..</div>
+        </div>
       </div>
     </div>
   );
 
+  const invalidArticleFound = (articleId, flag) => {
+    if (articleData.status !== "loading") invalidArticleError(articleId, flag);
+  };
+
+  const rowData = dataString.split("\n");
+
   return (
     <div className="container">
-      {rowData.length > 0 &&
-        rowData.map((row, index) => {
-          const columnData = row.split("|");
-          const { articles } = articleData;
-          return (
-            <div className="row">
-              {columnData.map((articleId, colIndex) => {
-                const article = getArticleFromId(articleId, articles);
-                let articleComp =
-                  mode === "edit"
-                    ? invalidArticleCard(articleId)
-                    : articleLoadingCard();
-                if (article && article.id) {
-                  articleComp =
-                    index === 0 && columnData.length === 1 ? (
-                      <HeroArticle mode={mode} article={article} />
-                    ) : (
-                      <ArticleCard mode={mode} article={article} />
-                    );
-                } else {
-                  invalidArticleError(articleId);
-                }
-                return <div className="col">{articleComp}</div>;
-              })}
-            </div>
-          );
-        })}
+      {rowData.map((row, index) => {
+        const columnData = row.split("|");
+        const { articles } = articleData;
+        return (
+          <div className="row">
+            {columnData.map((articleId, colIndex) => {
+              const article = getArticleFromId(articleId, articles);
+              let articleComp =
+                mode === "edit"
+                  ? invalidArticleCard(articleId)
+                  : articleLoadingCard();
+
+              if (article && article.id) {
+                invalidArticleFound(articleId, false);
+                articleComp =
+                  index === 0 && columnData.length === 1 ? (
+                    <HeroArticle mode={mode} article={article} />
+                  ) : (
+                    <ArticleCard mode={mode} article={article} />
+                  );
+              } else {
+                invalidArticleFound(articleId, true);
+              }
+              return <div className="col">{articleComp}</div>;
+            })}
+          </div>
+        );
+      })}
     </div>
   );
 };

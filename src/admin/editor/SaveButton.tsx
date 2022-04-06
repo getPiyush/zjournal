@@ -27,7 +27,7 @@ export default function SaveButton({ article }: SaveButtonProps) {
       onClick={saveArticle}
     >
       <i className="bi bi-pencil"></i>&nbsp;&nbsp;
-      {article.origin === "local" ? "Add Article" : "Update"}
+      {article.origin === "local" ? "Add Article" : "Update Article"}
     </button>
   );
 }
