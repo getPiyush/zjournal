@@ -39,11 +39,29 @@ export default function Templates() {
   };
 
   const invalidArticleFound = (articleId: string) => {
-    console.log("Invalid Article Found ", articleId);
+    console.log(invalidArticles.join(","),"|",articleId,"|",invalidArticles.indexOf(articleId));
     if (invalidArticles.indexOf(articleId) < 0) {
       setInvalidArticles([...invalidArticles, articleId]);
     }
   };
+
+  const showToasts = () => (
+    <div className="position-fixed bottom-0 end-0 p-3" style={{ zIndex: "11" }}>
+      <div className="card border-danger mb-3">
+        <div className="card-header">Invalid Article ID(s)</div>
+        <div className="card-body text-danger">
+          <div className="card-title">
+            <b>Following Article IDs are invalid</b>
+          </div>
+          <p className="card-text">
+            <ul>
+              {invalidArticles.map(articleId=><li>{articleId}</li>)}
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 
   return (
     <div className="template container">
@@ -101,7 +119,10 @@ export default function Templates() {
           <div>
             <h5>Preview</h5>
           </div>
-          <div className="template-viewer p-3" style={{ border: "solid 1px green" }}>
+          <div
+            className="template-viewer p-3"
+            style={{ border: "solid 1px green" }}
+          >
             <TemplateRenderer
               invalidArticleError={invalidArticleFound}
               dataString={updatedTemplateData}
@@ -118,6 +139,7 @@ export default function Templates() {
           </span>
         </div>
       </div>
+      {invalidArticles.length > 0 && showToasts()}
     </div>
   );
 }

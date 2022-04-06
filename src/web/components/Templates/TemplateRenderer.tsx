@@ -32,17 +32,23 @@ export const TemplateRenderer = ({
     }
   }, [articleData]);
 
-  const invalidArticleCard = (id) => (
-    <div className="card border-danger mb-3">
-      <div className="card-body text-danger">
-        <h5 className="card-title">Invalid Article</h5>
-        <p className="card-text">
-          The article id : <b>{id}</b> is invald/corrupt, <br />
-          Please use a valid article id.
-        </p>
-      </div>
-    </div>
-  );
+  const invalidArticleCard = (id) => {
+    if (articleData.status === "loading") {
+      return articleLoadingCard();
+    } else {
+      return (
+        <div className="card border-danger mb-3">
+          <div className="card-body text-danger">
+            <h5 className="card-title">Invalid Article</h5>
+            <p className="card-text">
+              The article id : <b>{id}</b> is invald/corrupt, <br />
+              Please use a valid article id. {articleData.status}
+            </p>
+          </div>
+        </div>
+      );
+    }
+  };
 
   const articleLoadingCard = () => (
     <div className="card border-secondary mb-3">
