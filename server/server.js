@@ -15,7 +15,7 @@ const env = (process.argv && process.argv.includes("--production")) ? "productio
 server.use(middlewares);
 server.use(auth.authenticatorMiddleWare);
 server.use(router);
-server.listen(8080, () => {
+server.listen(3000, () => {
   // console.log("JSON Server is running");
 });
 
