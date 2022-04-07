@@ -4,7 +4,7 @@ import { ArticleT, Journal } from "../Types";
 import { getPassPhase } from "../utils/crypto";
 
 const host = window.location.host.split(":")[0];
-const port = "8080";
+const port = "3000";
 const server = 'http://' + host + ':' + port;
 
 const getJournalAPIPath = `${server}/journal`;

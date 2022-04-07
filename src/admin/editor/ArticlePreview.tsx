@@ -39,8 +39,16 @@ export default function ArticlePreview({ data }: ArticleProps) {
             <div>{getPublishedComponent(data.published)}</div>
             <button
               type="button"
+              disabled={!navigator.clipboard}
               onClick={() => {
-                navigator.clipboard.writeText(data.id);
+                navigator.clipboard.writeText(data.id).then(
+                  () => {
+                    console.log("Copy to clipboard successful");
+                  },
+                  () => {
+                    console.log("Error in copying to clipboard!");
+                  }
+                );
               }}
               className="btn btn-outline-secondary btn-sm"
               data-bs-toggle="tooltip"

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { updateJournalinDB } from "../datastore/actions/JournalActions";
 import { useJournal } from "../datastore/contexts/JournalContext";
 import { TemplateRenderer } from "../web/components/Templates/TemplateRenderer";
@@ -12,21 +12,29 @@ export default function Templates() {
   const [updatedTemplateData, setTemplateData] = useState(templateData);
   const [invalidArticles, setInvalidArticles] = useState([]);
 
+  useEffect(() => {
+    if (invalidArticles.length === 0) setTemplateData(textData);
+  }, [invalidArticles]);
+
+  /* useEffect(() => {
+    setInvalidArticles([]);
+  }, [textData]);
+*/
+  // let invalidArticles = [];
   const dataChanged = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     // @todoo add validation
     setTextData(event.target.value);
+  };
+
+  const updateTemplate = () => {
+    // @todoo add validation
+    setInvalidArticles([]);
   };
 
   const blockInvalidChars = (e) => {
     if (e.key === " ") {
       e.preventDefault();
     }
-  };
-
-  const updateTemplate = () => {
-    // @todoo add validation
-    setInvalidArticles([]);
-    setTemplateData(textData);
   };
 
   const saveTemplate = () => {
@@ -38,12 +46,57 @@ export default function Templates() {
     updateJournalinDB(dispatch, updatedJournal);
   };
 
-  const invalidArticleFound = (articleId: string) => {
-    console.log("Invalid Article Found ", articleId);
-    if (invalidArticles.indexOf(articleId) < 0) {
-      setInvalidArticles([...invalidArticles, articleId]);
+  const removeItem = (arr: Array<string>, value: string): Array<string> => {
+    const updatedArr = [...arr];
+    const index = updatedArr.indexOf(value);
+
+    if (index > -1) {
+      updatedArr.splice(index, 1);
+    }
+    return updatedArr;
+  };
+
+  const addItem = (arr: Array<string>, value: string): Array<string> => {
+    const updatedArr = [...arr];
+    updatedArr.push(value);
+    return updatedArr;
+  };
+
+  const invalidArticleFound = (articleId: string, flag) => {
+    if (textData.includes(articleId)) {
+      if (invalidArticles.indexOf(articleId) === -1 && flag) {
+        const updatedArray = addItem(invalidArticles, articleId);
+        if (invalidArticles.join("") !== updatedArray.join(""))
+          setInvalidArticles(updatedArray);
+      }
+
+      if (!flag) {
+        const updatedArray = removeItem(invalidArticles, articleId);
+        if (invalidArticles.join("") !== updatedArray.join(""))
+          setInvalidArticles(updatedArray);
+      }
     }
   };
+
+  const showToasts = () => (
+    <div className="position-fixed bottom-0 end-0 p-3" style={{ zIndex: "11" }}>
+      <div className="card border-danger mb-3">
+        <div className="card-header">Invalid Article ID(s)</div>
+        <div className="card-body text-danger">
+          <div className="card-title">
+            <b>Following Article IDs are invalid</b>
+          </div>
+          <p className="card-text">
+            <ul>
+              {invalidArticles.map((articleId) => (
+                <li>{articleId}</li>
+              ))}
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 
   return (
     <div className="template container">
@@ -55,7 +108,7 @@ export default function Templates() {
       <div className="row">
         <div className="col">
           <div>
-            <h5>Template Code</h5>
+            <h5>Home Template Code</h5>
           </div>
           <div>
             <textarea
@@ -76,7 +129,7 @@ export default function Templates() {
               className="btn btn-secondary"
               onClick={updateTemplate}
             >
-              Preview Template
+              Preview
             </button>
             <ConfirmationButton
               confirmationMessage="Are you sure want to update Home Page?"
@@ -99,9 +152,12 @@ export default function Templates() {
       <div className="row">
         <div className="col">
           <div>
-            <h5>Preview</h5>
+            <h5>Home Template Preview</h5>
           </div>
-          <div className="template-viewer p-3" style={{ border: "solid 1px green" }}>
+          <div
+            className="template-viewer p-3"
+            style={{ border: "solid 1px green" }}
+          >
             <TemplateRenderer
               invalidArticleError={invalidArticleFound}
               dataString={updatedTemplateData}
@@ -118,6 +174,7 @@ export default function Templates() {
           </span>
         </div>
       </div>
+      {invalidArticles.length > 0 && showToasts()}
     </div>
   );
 }

@@ -160,7 +160,7 @@ export default function ArticleEditor({
       <div className="row">
         <div className="col">
           <div className="top-action-box">
-            <span>Edit Article</span>
+            <span>{article.origin === "local" ? "Creating New" : "Updating"} Article</span>
             <button
               className="btn btn-primary btn-sm"
               onClick={onPreviewClick}
@@ -172,11 +172,11 @@ export default function ArticleEditor({
               buttonText="Reset"
               confirmationClick={onResetClick}
               confirmationMessage="Are you sure want to reset?"
-              iconComp={<i className="bi bi-arrow-clockwise"/>}
+              iconComp={<i className="bi bi-arrow-clockwise" />}
               disabled={article.title === "" || article.content.length === 0}
             />
           </div>
-          <hr/>
+          <hr />
         </div>
       </div>
       <div className="row">

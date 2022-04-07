@@ -25,14 +25,14 @@
     "@types/react": "17.0.20",
     "@types/react-dom": "17.0.9",
     "concurrently": "^7.0.0",
+    "express": "^4.17.3",
     "json-server": "^0.17.0",
     "random-sentence": "^1.0.4",
-    "serve": "^13.0.2",
     "typescript": "4.4.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "prodrun":"serve -s build",
+    "start": "set HTTPS=true&&set PORT=8080&&react-scripts start",
+    "prodrun": "cd build&&node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
@@ -40,7 +40,6 @@
     "server": "cd server&&node server.js -w --production",
     "dev": "concurrently \"yarn start\" \"yarn server:dev\"",
     "prod": "concurrently \"yarn prodrun\" \"yarn server\""
-
   },
   "browserslist": [
     ">0.2%",
