@@ -31,3 +31,11 @@ export type Journal = {
   templateData:string,
   adminDetails?: { id: string, passPhase: string }
 };
+
+export type Contact = {
+  name: string;
+  email: string;
+  phone?: string;
+  dateContacted: Date;
+  comment:string;
+}
