@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import { ArticleT, Journal } from "../Types";
+import { ArticleT, Contact, Journal } from "../Types";
 import { getPassPhase } from "../utils/crypto";
 
 const host = window.location.host.split(":")[0];
@@ -9,6 +9,8 @@ const server = 'http://' + host + ':' + port;
 
 const getJournalAPIPath = `${server}/journal`;
 const getArticleAPIPath = `${server}/articles`;
+const getContactsAPIPath = `${server}/contacts`;
+
 
 
 
@@ -86,4 +88,19 @@ export const addArticleAPI = (article: ArticleT) => {
 export const updateArticleAPI = (article: ArticleT) => {
     const url = `${getArticleAPIPath}/${article.id}`;
     return putRequest(url, article);
+}
+
+/**
+ * 
+Journal APIS
+ */
+
+export const getContactsAPI = () => {
+    return getRequest(getContactsAPIPath);
+}
+
+
+export const addContactAPI = (contact: Contact) => {
+    const url = `${getContactsAPIPath}`;
+    return postRequest(url, contact);
 }

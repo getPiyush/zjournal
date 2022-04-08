@@ -5,7 +5,7 @@ import { ArticleProvider } from "./datastore/contexts/ArticleContext";
 import React from "react";
 import GoogleFontLoader from "react-google-font-loader";
 import { applicationProperties } from "./ApplicationConstants";
-
+import { ContactProvider } from "./datastore/contexts/ContactContext";
 
 export default function App() {
   return (
@@ -16,7 +16,9 @@ export default function App() {
       />
       <JournalProvider>
         <ArticleProvider>
-          <AppRoot />
+          <ContactProvider>
+            <AppRoot />
+          </ContactProvider>
         </ArticleProvider>
       </JournalProvider>
     </React.Fragment>
