@@ -25,5 +25,7 @@ yarn dev
 - ~~Publish/UnPublish Article~~
 - ~~HTML Parser Implementation (can put html code in texts)~~
 - ~~Article by ID URL~~
-- Templates
+- ~~Templates~~
+- ~~Contact Us Web~~
+- Contact Us Admin
 - Web Integration
