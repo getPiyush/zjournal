@@ -46,14 +46,14 @@ export const Contacts = () => {
                           className="d-flex justify-content-between"
                           style={{ width: "100%", marginRight: "16px" }}
                         >
-                          <div>
+                          <div style={{minWidth: "200px"}}>
                             <b>
                               {index + 1}
                               {` . `}
                               {contact.name}
                             </b>
                           </div>
-                          <div>{contact.phone}</div>
+                          <div className="d-none d-md-block">{contact.phone}</div>
                           <div>{getDate(contact.dateContacted)}</div>
                         </div>
                       </button>
