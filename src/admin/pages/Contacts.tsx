@@ -1,8 +1,4 @@
-/*
-type PageTitleProps = {
-    title: string;
-  };
-  */
+import ReactHtmlParser from "react-html-parser";
 
 import { useEffect } from "react";
 import { getContactsDB } from "../../datastore/actions/ContactActions";
@@ -54,10 +50,10 @@ export const Contacts = () => {
                             <b>
                               {index + 1}
                               {` . `}
-                              {decodeURIComponent(contact.name).replace(/\+/g," ")}
+                              {contact.name}
                             </b>
                           </div>
-                          <div>+{decodeURIComponent(contact.phone).replace(/\+/g," ")}</div>
+                          <div>{contact.phone}</div>
                           <div>{getDate(contact.dateContacted)}</div>
                         </div>
                       </button>
@@ -69,9 +65,11 @@ export const Contacts = () => {
                       data-bs-parent="#accordionContacts"
                     >
                       <div className="accordion-body">
-                        <strong>{decodeURIComponent(contact.email)}</strong>
+                        <strong>{contact.email}</strong>
                         <br />
-                        <div className="text-break">{decodeURIComponent(contact.comment).replace(/\+/g," ")}</div>
+                        <div className="text-break">
+                          {ReactHtmlParser(contact.comment)}
+                        </div>
                       </div>
                     </div>
                   </div>
