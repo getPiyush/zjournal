@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-import { ComponentObject } from "../../Types";
-import { Table } from "../../web/components/Table";
+import { ComponentObject } from "../../../Types";
+import { Table } from "../../../web/components/Table";
 
 type ListProps = {
   tableData: ComponentObject;

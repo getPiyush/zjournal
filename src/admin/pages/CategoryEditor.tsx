@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { getArticlesBycategory } from "../datastore/actions/ArticleActions";
-import { useArticle } from "../datastore/contexts/ArticleContext";
-import { useJournal } from "../datastore/contexts/JournalContext";
-import ArticlePreview from "./editor/ArticlePreview";
-import { PageTitle } from "./PageTitle";
+import { getArticlesBycategory } from "../../datastore/actions/ArticleActions";
+import { useArticle } from "../../datastore/contexts/ArticleContext";
+import { useJournal } from "../../datastore/contexts/JournalContext";
+import ArticlePreview from "../components/editor/ArticlePreview";
+import { PageTitle } from "../components/PageTitle";
 
 export default function CategoryEditor() {
   const { state: state } = useJournal();

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactHtmlParser from "react-html-parser";
 
-import EditWrapper from "../admin/editor/EditWrapper";
+import EditWrapper from "../admin/components/editor/EditWrapper";
 import { ArticleT, ComponentObject } from "../Types";
 import { List } from "../web/components/List";
 import { Table } from "../web/components/Table";

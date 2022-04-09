@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { updateJournalinDB } from "../datastore/actions/JournalActions";
-import { useJournal } from "../datastore/contexts/JournalContext";
-import { TemplateRenderer } from "../web/components/Templates/TemplateRenderer";
-import ConfirmationButton from "./editor/ConfirmationButton";
-import { PageTitle } from "./PageTitle";
+import { updateJournalinDB } from "../../datastore/actions/JournalActions";
+import { useJournal } from "../../datastore/contexts/JournalContext";
+import { TemplateRenderer } from "../../web/components/Templates/TemplateRenderer";
+import ConfirmationButton from "../components/editor/ConfirmationButton";
+import { PageTitle } from "../components/PageTitle";
 
 export default function Templates() {
   const { dispatch, state: jState } = useJournal();

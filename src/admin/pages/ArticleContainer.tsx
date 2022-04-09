@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { useArticle } from "../datastore/contexts/ArticleContext";
-import { ArticleT } from "../Types";
-import Article from "../web/components/Article/Article";
-import ArticleEditor from "./editor/ArticleEditor";
-import SaveButton from "./editor/SaveButton";
-import { PageTitle } from "./PageTitle";
+import { useArticle } from "../../datastore/contexts/ArticleContext";
+import { ArticleT } from "../../Types";
+import Article from "../../web/components/Article/Article";
+import ArticleEditor from "../components/editor/ArticleEditor";
+import SaveButton from "../components/editor/SaveButton";
+import { PageTitle } from "../components/PageTitle";
 
 type ArticleContainerProps = {
   inArticle: ArticleT;
@@ -66,7 +66,7 @@ export default function ArticleContainer({
               <hr/>
               <Article data={article} />
             </React.Fragment>
-          )}{" "}
+          )}
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import { ArticleT, Contact, Journal } from "../Types";
 import { getPassPhase } from "../utils/crypto";
 
 const host = window.location.host.split(":")[0];
-const port = "3000";
+const port = "8080";
 const server = 'http://' + host + ':' + port;
 
 const getJournalAPIPath = `${server}/journal`;
@@ -96,7 +96,7 @@ Journal APIS
  */
 
 export const getContactsAPI = () => {
-    return getRequest(getContactsAPIPath);
+    return getRequest(`${getContactsAPIPath}?_sort=dateContacted&_order=desc`);
 }
 
 

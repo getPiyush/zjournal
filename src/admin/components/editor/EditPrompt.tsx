@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { ComponentObject } from "../../Types";
+import { ComponentObject } from "../../../Types";
 import ConfirmationButton from "./ConfirmationButton";
 import { ListEditor } from "./ListEditor";
 import { TableEditor } from "./TableEditor";

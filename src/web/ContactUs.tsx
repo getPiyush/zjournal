@@ -31,7 +31,10 @@ export default function ContactUs() {
         .replace("?", "")
         .replace(/contact_/g, "")
         .split("&")
-        .map((param) => param.split("=").join('":"'))
+        .map((param) => {
+          const valueArr = param.split("="); 
+        const decodedValues = [valueArr[0], decodeURIComponent(valueArr[1])];
+        return decodedValues.join('":"')})
         .join('","')}"}`;
       console.log(paramObj);
 

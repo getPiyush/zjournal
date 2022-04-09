@@ -1,9 +1,9 @@
 import {
   addArticleToDB,
   updateArticleinDB,
-} from "../../datastore/actions/ArticleActions";
-import { useArticle } from "../../datastore/contexts/ArticleContext";
-import { ArticleT } from "../../Types";
+} from "../../../datastore/actions/ArticleActions";
+import { useArticle } from "../../../datastore/contexts/ArticleContext";
+import { ArticleT } from "../../../Types";
 
 type SaveButtonProps = {
   article: ArticleT;

@@ -1,5 +1,5 @@
-import { ComponentObject } from "../../Types";
-import { populateContentFromJsonArray } from "../../utils/componentUtil";
+import { ComponentObject } from "../../../Types";
+import { populateContentFromJsonArray } from "../../../utils/componentUtil";
 
 type ArticleContainerEditorProps = {
   containerJson: ComponentObject[];

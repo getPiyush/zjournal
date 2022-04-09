@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { defaultArticle } from "../../ApplicationConstants";
-import { useArticle } from "../../datastore/contexts/ArticleContext";
-import { useJournal } from "../../datastore/contexts/JournalContext";
-import { ArticleT, ComponentObject } from "../../Types";
+import { defaultArticle } from "../../../ApplicationConstants";
+import { useArticle } from "../../../datastore/contexts/ArticleContext";
+import { useJournal } from "../../../datastore/contexts/JournalContext";
+import { ArticleT, ComponentObject } from "../../../Types";
 
 import {
   populateComponentFromCode,
@@ -10,7 +10,7 @@ import {
   getComponentFromId,
   setComponentById,
   deleteComponent,
-} from "../../utils/componentUtil";
+} from "../../../utils/componentUtil";
 
 import ArticleContainerEditor from "./ArticleContainerEditor";
 import ConfirmationButton from "./ConfirmationButton";
