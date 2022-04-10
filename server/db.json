@@ -3712,6 +3712,14 @@
       "comment": "<q>How to write a project proposal</q>\nThese step-by-step instructions apply to most project proposals, regardless of type. You’ll need to customize your proposal for the intended audience, but this project proposal outline can serve as a reference to ensure you’re including the key components in your document.",
       "dateContacted": "2022-04-09T21:02:51.360Z",
       "id": 2
+    },
+    {
+      "name": "Chungulu Chunga",
+      "email": "chungu@chunga.com",
+      "phone": "+91 31231-31312",
+      "comment": "Be sure to add aria-expanded to the control element. This attribute explicitly conveys the current state of the collapsible element tied to the control to screen readers and similar assistive technologies. If the collapsible element is closed by default, the attribute on the control element should have a value of aria-expanded=\"false\". If you’ve set the collapsible element to be open by default using the show class, set aria-expanded=\"true\" on the control instead. The plugin will automatically toggle this attribute on the control based on whether or not the collapsible element has been opened or closed (via JavaScript, or because the user triggered another control element also tied to the same collapsible element). If the control element’s HTML element is not a button (e.g., an <a> or <div>), the attribute role=\"button\" should be added to the element.",
+      "dateContacted": "2022-04-10T04:25:13.592Z",
+      "id": 3
     }
   ]
 }

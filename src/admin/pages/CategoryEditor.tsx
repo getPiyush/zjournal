@@ -20,6 +20,40 @@ export default function CategoryEditor() {
     getArticlesBycategoryID(selectedCategory);
   }, [selectedCategory]);
 
+  const getCategoryDropdown = (currentCategory, categories) => (
+    <div className="dropdown">
+      <button
+        className="btn btn-light btn-lg dropdown-toggle text-wrap"
+        type="button"
+        id="categoryButton"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        <b>{currentCategory}</b>
+      </button>
+
+      <ul className="dropdown-menu" aria-labelledby="categoryButton">
+        {categories.length > 0 &&
+          state.journal.categories.map((category, index) => (
+            <li>
+              <a
+                className={
+                  category === currentCategory
+                    ? "dropdown-item active"
+                    : "dropdown-item"
+                }
+                onClick={() => setSelectedcategory(category)}
+                href="#"
+                key={`key_${index}_${category.replace(/[^A-Z0-9]/gi, "_")}`}
+              >
+                {category}
+              </a>
+            </li>
+          ))}
+      </ul>
+    </div>
+  );
+
   return (
     <div className="container">
       <div className="row">
@@ -28,44 +62,11 @@ export default function CategoryEditor() {
         </div>
       </div>
       <div className="row">
-        <div className="col">
-          <div className="category-body d-flex d-flex justify-content-between">
-            <div className="dropdown">
-              <button
-                className="btn btn-light btn-lg dropdown-toggle text-wrap"
-                type="button"
-                id="categoryButton"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <b>{selectedCategory}</b>
-              </button>
-
-              <ul className="dropdown-menu" aria-labelledby="categoryButton">
-                {state?.journal?.categories.length > 0 &&
-                  state.journal.categories.map((category, index) => (
-                    <li>
-                      <a
-                        className={
-                          category === selectedCategory
-                            ? "dropdown-item active"
-                            : "dropdown-item"
-                        }
-                        onClick={() => setSelectedcategory(category)}
-                        href="#"
-                        key={`key_${index}_${category.replace(
-                          /[^A-Z0-9]/gi,
-                          "_"
-                        )}`}
-                      >
-                        {category}
-                      </a>
-                    </li>
-                  ))}
-              </ul>
-            </div>
-            <div className="align-self-center"><b>{articleData?.articles?.length} Articles</b></div>
-            { /*
+        <div className="col-md-4">
+          {getCategoryDropdown(selectedCategory, articleData?.articles)}
+        </div>
+        <div className="col-md-4 offset-md-4 d-flex justify-content-end">
+         {/** 
             <div className="d-flex">
               <input
                 className="form-control"
@@ -77,12 +78,16 @@ export default function CategoryEditor() {
                 Search
               </button>
             </div>
-                        */ }
-          </div>
+           */}           
+           <div className="align-self-center"><b>{articleData?.articles?.length} Articles</b></div> 
+       
+        </div>
+      </div>
+      <div className="row">
+        <div className="col">
           <hr />
         </div>
       </div>
-
       <div className="row row-cols-1 row-cols-md-2 g-4">
         {articleData?.articles?.length > 0 ? (
           articleData.articles.map((article) => (

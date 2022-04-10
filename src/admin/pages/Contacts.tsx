@@ -66,6 +66,8 @@ export const Contacts = () => {
                     >
                       <div className="accordion-body">
                         <strong>{contact.email}</strong>
+                        <div className="d-block d-md-none"><strong>{contact.phone}</strong></div>
+
                         <br />
                         <div className="text-break">
                           {ReactHtmlParser(contact.comment)}
