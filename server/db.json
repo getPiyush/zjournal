@@ -3690,11 +3690,12 @@
       "_yM3J9o",
       "OqW296s"
     ],
-    "templateData": "yNjy_EV\nAdpPbqI|ldQ_ive\nPmoMmCS|XUGL-p-\n12F4hCV\nSp3NClw|6Iwo3lr\nxRQDz-Q\n4_TuJYn\nUopbFXg|P9IW8VJ|DldNYAk\nApCaLVb|UOmh_Q5\nzRMj9V5\n4EkDjXq",
+    "templateData": "yNjy_EV\nAdpPbqI|ldQ_ive\nPmoMmCS|XUGL-p-\n12F4hCV\nSp3NClw|6Iwo3lr\n4_TuJYn\nUopbFXg|P9IW8VJ|DldNYAk\nApCaLVb|UOmh_Q5\nzRMj9V5",
     "adminDetails": {
       "id": "e0da85ff1b5040a7c3fb550b7247078d967f46820a461d8124d77bdf11054b9900739fdd4601e9808c459b91def95d197e01b5184ab15b2132ab5fcad75d6597",
       "passPhase": "9b332ecf5ecf2506c22a78d076e5af7fb56899487d45f98600bfc823a42c27b8d1776027c5f7cc15b3a43779369b9a43937bfa354e9e26ad6b8c3c22b1467246"
-    }
+    },
+    "aboutUs": " <h4>About Us</h4>\n            <b>Pharmaceutical Updates</b> was started to share knowledge among\n            the pharma professionals &nbsp; it will become helpful to the pharma\n            Professionals.\n            <br />\n   <img src=\"https://indoreinstitute.com/wp-content/uploads/2020/04/What-is-Pharma-Vision-2020-%E2%80%93-A-Detailed-Insight.jpg\" style=\"max-height: 350px;\n    object-fit: cover;\n    object-position: center;\"/>\n<br/>\n            The author of pharmaceutical updates is <b>Chandrasekhar Panda</b>\n            who is having more than 13 years of Experience in Pharmaceutical\n            Quality Assurance department and he has worked in Pharma Companies\n            like Cipla, USV &nbsp; Aurobindo Pharma Limited."
   },
   "contacts": [
     {
@@ -3721,5 +3722,6 @@
       "dateContacted": "2022-04-10T04:25:13.592Z",
       "id": 3
     }
-  ]
+  ],
+  "qna": []
 }
