@@ -9,7 +9,7 @@ export default function AboutUs() {
 
   return (
     <div className="about-us container">
-      {jState.journal.aboutUs==="" ? (
+      {jState.journal.aboutUs === "" ? (
         <div className="row">
           <div className="col">
             <h4>About Us</h4>
@@ -29,7 +29,11 @@ export default function AboutUs() {
         </div>
       ) : (
         <div className="row">
-          <div className="col">{ReactHtmlParser(jState.journal.aboutUs)}</div>
+          <div className="col">
+            <div className="container">
+              {ReactHtmlParser(jState.journal.aboutUs)}
+            </div>
+          </div>
         </div>
       )}
     </div>
