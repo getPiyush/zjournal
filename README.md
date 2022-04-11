@@ -25,10 +25,12 @@ yarn dev
 - ~~Publish/UnPublish Article~~
 - ~~HTML Parser Implementation (can put html code in texts)~~
 - ~~Article by ID URL~~
+- ~~Admin Login ~~
 - ~~Templates~~
 - ~~Contact Us Web~~
 - ~~Contact Us Admin~~
 - QnA Admin
 - QnA Web
+- Admin Password
 - Feature Config (enable disable feature)
 - Web Integration
