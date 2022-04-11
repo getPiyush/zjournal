@@ -2,10 +2,10 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import ReactHtmlParser from "react-html-parser";
 
-import { updateCurrentArticle } from "../../datastore/actions/JournalActions";
-import { useJournal } from "../../datastore/contexts/JournalContext";
-import { ArticleT } from "../../Types";
-import { getDate } from "../../utils/componentUtil";
+import { updateCurrentArticle } from "../../../datastore/actions/JournalActions";
+import { useJournal } from "../../../datastore/contexts/JournalContext";
+import { ArticleT } from "../../../Types";
+import { getDate } from "../../../utils/componentUtil";
 
 type ArticleProps = {
   data: ArticleT;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { ComponentObject } from "../../Types";
+import { ComponentObject } from "../../../Types";
 
 type ListProps = {
   listData: ComponentObject;

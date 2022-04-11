@@ -25,13 +25,39 @@ export default function ContactUs() {
     setValue(phoneNo);
   };
 
+  const contactUsSubmitted = (e) => {
+    console.log(e);
+    const { target } = e;
+    console.log(e.target[0].value);
+    console.log(e.target[1].value);
+    console.log(e.target[2].value);
+    console.log(e.target[3].value);
+
+    const contactOut: Contact = {
+      name: target[0].value,
+      email: target[1].value,
+      phone: target[2].value,
+      comment: target[3].value,
+      dateContacted: new Date(),
+    };
+
+    addContactToDB(dispatch, contactOut);
+
+    e.stopPropagation();
+    e.preventDefault();
+  };
+
   const addContact = () => {
     if (submitableContact) {
       const paramObj = `{"${params
         .replace("?", "")
         .replace(/contact_/g, "")
         .split("&")
-        .map((param) => param.split("=").join('":"'))
+        .map((param) => {
+          const valueArr = param.split("=");
+          const decodedValues = [valueArr[0], decodeURIComponent(valueArr[1])];
+          return decodedValues.join('":"');
+        })
         .join('","')}"}`;
       console.log(paramObj);
 
@@ -49,42 +75,48 @@ export default function ContactUs() {
   };
 
   useEffect(() => {
-    addContact();
+    // addContact();
   }, []);
 
   return (
     <div className="contact-us container">
       {contactState.status === "add_contact_success" ? (
-        <div className="card p-3"><h2>Thank you !</h2>
-        <div className="card-text p-3">Thanks for contacting<br/><br/> <Logo/> <br/>We will get back to you soon.</div> 
+        <div className="card p-3">
+          <h2>Thank you !</h2>
+          <div className="card-text p-3">
+            Thanks for contacting
+            <br />
+            <br /> <Logo /> <br />
+            We will get back to you soon.
+          </div>
         </div>
       ) : (
-        <form id="contactUsForm">
+        <form id="contactUsForm" onSubmit={contactUsSubmitted}>
           <h4>Contact Us</h4>
           <div className="row">
             <div className="col">
               <div className="mb-3">
-                <label htmlFor="nameInput" className="form-label">
+                <label htmlFor="contactNameInput" className="form-label">
                   Full Name
                 </label>
                 <input
                   type="texts"
                   className="form-control"
-                  id="nameInput"
+                  id="contactNameInput"
                   name="contact_name"
                   placeholder=""
                   required
                 />
               </div>
               <div className="mb-3">
-                <label htmlFor="emailInput" className="form-label">
+                <label htmlFor="contactEmailInput" className="form-label">
                   Email address
                 </label>
                 <input
                   type="email"
+                  id="contactEmailInput"
                   name="contact_email"
                   className="form-control"
-                  id="emailInput"
                   placeholder="name@example.com"
                   required
                 />

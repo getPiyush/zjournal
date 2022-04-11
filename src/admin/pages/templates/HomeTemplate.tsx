@@ -1,13 +1,20 @@
 import { useEffect, useState } from "react";
-import { updateJournalinDB } from "../datastore/actions/JournalActions";
-import { useJournal } from "../datastore/contexts/JournalContext";
-import { TemplateRenderer } from "../web/components/Templates/TemplateRenderer";
-import ConfirmationButton from "./editor/ConfirmationButton";
-import { PageTitle } from "./PageTitle";
 
-export default function Templates() {
+import { updateJournalinDB } from "../../../datastore/actions/JournalActions";
+import { useJournal } from "../../../datastore/contexts/JournalContext";
+import { TemplateRenderer } from "../../../web/components/Templates/TemplateRenderer";
+import ConfirmationButton from "../../components/editor/ConfirmationButton";
+
+/*
+type HomeTemplateProps = {
+    title: string;
+  };
+ */
+
+export const HomeTemplate = () => {
   const { dispatch, state: jState } = useJournal();
   const { templateData } = jState.journal;
+
   const [textData, setTextData] = useState(templateData);
   const [updatedTemplateData, setTemplateData] = useState(templateData);
   const [invalidArticles, setInvalidArticles] = useState([]);
@@ -17,9 +24,9 @@ export default function Templates() {
   }, [invalidArticles]);
 
   /* useEffect(() => {
-    setInvalidArticles([]);
-  }, [textData]);
-*/
+        setInvalidArticles([]);
+      }, [textData]);
+    */
   // let invalidArticles = [];
   const dataChanged = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     // @todoo add validation
@@ -99,12 +106,7 @@ export default function Templates() {
   );
 
   return (
-    <div className="template container">
-      <div className="row">
-        <div className="col">
-          <PageTitle title="Edit Home Template" />
-        </div>
-      </div>
+    <div className="admin-template-home container">
       <div className="row">
         <div className="col">
           <div>
@@ -177,4 +179,4 @@ export default function Templates() {
       {invalidArticles.length > 0 && showToasts()}
     </div>
   );
-}
+};

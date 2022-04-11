@@ -3,22 +3,26 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import { defaultArticle } from "../ApplicationConstants";
 import { updateCurrentArticle } from "../datastore/actions/JournalActions";
 import { useArticle } from "../datastore/contexts/ArticleContext";
+import { useContact } from "../datastore/contexts/ContactContext";
 import { useJournal } from "../datastore/contexts/JournalContext";
 import { ArticleT } from "../Types";
 import { Spinner } from "../web/components/Spinner";
-import ArticleContainer from "./ArticleContainer";
-import CategoryEditor from "./CategoryEditor";
-import Templates from "./Templates";
+import ArticleContainer from "./pages/ArticleContainer";
+import CategoryEditor from "./pages/CategoryEditor";
+import { Contacts } from "./pages/Contacts";
+import Templates from "./pages/Templates";
 
 export default function AdminContainer() {
   const { state: jState, dispatch } = useJournal();
   const { state: aState } = useArticle();
+  const { state: cState } = useContact();
+
 
   const updateJournalArticle = (article: ArticleT) => {
     updateCurrentArticle(article, dispatch);
   };
 
-  const showLoader = jState.status === "loading" || aState.status === "loading";
+  const showLoader = jState.status === "loading" || aState.status === "loading" || cState.status.includes("loading");
 
   const getValidatedArticle = (article: ArticleT) => {
     return article.dateCreated &&
@@ -36,6 +40,7 @@ export default function AdminContainer() {
         <Routes>
           <Route path="categories" element={<CategoryEditor />} />
           <Route path="templates" element={<Templates />} />
+          <Route path="contacts" element={<Contacts />} />
           <Route
             path="editor"
             element={

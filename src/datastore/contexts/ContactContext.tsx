@@ -3,13 +3,12 @@ import { defaultContact } from "../../ApplicationConstants";
 import { Contact } from "../../Types";
 
 type Action =
-  | { type: "get_contacts_success"; value: Contact }
+  | { type: "get_contacts_success"; value: Contact[] }
   | { type: "get_contacts_loading" }
   | { type: "get_contacts_error" }
-
   | { type: "add_contact_loading" }
-  | { type: "add_contact_success",  value: Contact  }
-  | { type: "add_contact_error" }
+  | { type: "add_contact_success"; value: Contact}
+  | { type: "add_contact_error" };
 
 type Dispatch = (action: Action) => void;
 
@@ -22,17 +21,16 @@ const ContactStateContext = React.createContext<
 function contactReducer(state: State, action: Action) {
   switch (action.type) {
     case "get_contacts_loading": {
-      return { status: "loading", contacts: state.contacts };
-    }
-  
-    case "get_contacts_success": {
-      return { contacts: [action.value], status: "success" };
-    }
-  
-    case "get_contacts_error": {
-      return { status: "error", contacts: state.contacts };
+      return { status: "get_contacts_loading", contacts: state.contacts };
     }
 
+    case "get_contacts_success": {
+      return { contacts: action.value, status: "get_contacts_success" };
+    }
+
+    case "get_contacts_error": {
+      return { status: "get_contacts_error", contacts: state.contacts };
+    }
 
     // add contact
     case "add_contact_loading": {

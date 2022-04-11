@@ -6,7 +6,7 @@ import { encryptAES, encryptString } from "../utils/crypto";
 import Footer from "../web/Footer";
 import AdminContainer from "./AdminContainer";
 import Header from "./Header";
-import Login from "./Login";
+import Login from "./pages/Login";
 
 export default function Admin() {
   const [userDetails, setUserDetails] = useState({

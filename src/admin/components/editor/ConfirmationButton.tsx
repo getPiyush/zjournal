@@ -1,4 +1,4 @@
-import { getUid } from "../../utils/componentUtil";
+import { getUid } from "../../../utils/componentUtil";
 
 type ConfirmationButtonProps = {
   buttonText: string;

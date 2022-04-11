@@ -249,3 +249,7 @@ button {
   box-shadow: 0px 0px 3000px 70px #1f76a8;
   border-radius: 25px;
 }
+
+.accordion-button {
+  color: #080808 !important;
+}

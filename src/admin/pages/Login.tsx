@@ -1,6 +1,6 @@
-import { applicationProperties } from "../ApplicationConstants";
+import { applicationProperties } from "../../ApplicationConstants";
 import { useState } from "react";
-import { PageTitle } from "./PageTitle";
+import { PageTitle } from "../components/PageTitle";
 
 type LoginProps = {
   onLogin: (userDetailsIn: {userid:string,password:string}) => void;

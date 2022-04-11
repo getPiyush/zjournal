@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import ConfirmationButton from "./editor/ConfirmationButton";
+import ConfirmationButton from "./components/editor/ConfirmationButton";
 
 type HeaderProps = {
   onLogout: () => void;
@@ -63,6 +63,17 @@ export default function Header({ onLogout }: HeaderProps) {
                 to="/admin/editor"
               >
                 Editor
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className={`nav-link ${
+                  location === "/admin/contacts" ? "active" : ""
+                }`}
+                aria-current="page"
+                to="/admin/contacts"
+              >
+                Contacts
               </Link>
             </li>
           </ul>
