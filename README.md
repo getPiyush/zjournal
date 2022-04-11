@@ -27,5 +27,8 @@ yarn dev
 - ~~Article by ID URL~~
 - ~~Templates~~
 - ~~Contact Us Web~~
-- Contact Us Admin
+- ~~Contact Us Admin~~
+- QnA Admin
+- QnA Web
+- Feature Config (enable disable feature)
 - Web Integration
