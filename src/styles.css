@@ -234,6 +234,14 @@ button {
   min-width: 200px;
 }
 
+.qna{
+  padding: 100px 32px 32px 32px !important;
+  min-height: 93vh !important;
+  margin: auto;
+  max-width: 400px;
+  min-width: 200px;
+}
+
 /** Printing content not allowed */
 @media print {
   body {

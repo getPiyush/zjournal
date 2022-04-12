@@ -28,9 +28,9 @@ export type Journal = {
   categories: string[];
   components: string[];
   templateArticles: string[];
-  templateData:string;
+  templateData: string;
   adminDetails?: { id: string, passPhase: string };
-  aboutUs?:string;
+  aboutUs?: string;
 };
 
 export type Contact = {
@@ -38,5 +38,13 @@ export type Contact = {
   email: string;
   phone?: string;
   dateContacted: Date;
-  comment:string;
+  comment: string;
+}
+
+export type QnA = {
+  id?: string;
+  question: string;
+  answer: string;
+  published: boolean;
+  dateCreated: Date;
 }

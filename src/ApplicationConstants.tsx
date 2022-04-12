@@ -1,4 +1,4 @@
-import { ArticleT, Contact, Journal } from "./Types";
+import { ArticleT, Contact, Journal, QnA } from "./Types";
 
 export const applicationProperties = {
   title: "Pharmaceutical Updates by Chandrasekhar Panda",
@@ -122,6 +122,14 @@ export const defaultJournal: Journal = {
   components: [],
   templateArticles: [],
   templateData: "",
+};
+
+export const defaultQnA:QnA = {
+  question:"",
+  answer:"",
+  id:"",
+  published:false,
+  dateCreated: new Date()
 };
 
 export const months = [

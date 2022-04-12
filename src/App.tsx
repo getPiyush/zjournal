@@ -6,6 +6,7 @@ import React from "react";
 import GoogleFontLoader from "react-google-font-loader";
 import { applicationProperties } from "./ApplicationConstants";
 import { ContactProvider } from "./datastore/contexts/ContactContext";
+import { QnAProvider } from "./datastore/contexts/QnAContext";
 
 export default function App() {
   return (
@@ -17,7 +18,9 @@ export default function App() {
       <JournalProvider>
         <ArticleProvider>
           <ContactProvider>
-            <AppRoot />
+            <QnAProvider>
+              <AppRoot />
+            </QnAProvider>
           </ContactProvider>
         </ArticleProvider>
       </JournalProvider>
