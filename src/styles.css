@@ -149,6 +149,11 @@ img {
   font-family: "Source Serif 4", sans-serif;
 }
 
+.admin-preview{
+  font-family: "Source Serif 4", sans-serif;
+
+}
+
 .admin .editor .edit-area .row {
   padding: 8px;
 }

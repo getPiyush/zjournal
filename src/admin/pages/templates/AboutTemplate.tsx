@@ -66,7 +66,7 @@ export const AboutTemplate = () => {
         <div>
             <h5>About Us Preview</h5>
           </div>
-            <div className="m-3 p-3"
+            <div className="m-3 p-3 admin-preview"
             style={{ border: "solid 1px green" }}>
                 {ReactHtmlParser(htmlData)}
             </div>

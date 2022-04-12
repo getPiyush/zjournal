@@ -91,8 +91,7 @@ export default function CategoryEditor() {
       <div className="row row-cols-1 row-cols-md-2 g-4">
         {articleData?.articles?.length > 0 ? (
           articleData.articles.map((article) => (
-            <div className="col">
-              {" "}
+            <div className="col admin-preview">
               <ArticlePreview data={article} />
             </div>
           ))

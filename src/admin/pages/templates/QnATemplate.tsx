@@ -3,7 +3,11 @@ import ReactHtmlParser from "react-html-parser";
 
 import { useQnA } from "../../../datastore/contexts/QnAContext";
 import { getUid } from "../../../utils/componentUtil";
-import { addQnAToDB, deleteQnAFromDB, getQnAsDB } from "../../../datastore/actions/QnAActions";
+import {
+  addQnAToDB,
+  deleteQnAFromDB,
+  getQnAsDB,
+} from "../../../datastore/actions/QnAActions";
 import { QnA } from "../../../Types";
 import ConfirmationButton from "../../components/editor/ConfirmationButton";
 
@@ -35,10 +39,10 @@ export const QnATemplate = () => {
     e.preventDefault();
   };
 
-  const qnADeleted = (id) =>{
+  const qnADeleted = (id) => {
     console.log("deleting article ", id);
-    deleteQnAFromDB(dispatch,id);
-  }
+    deleteQnAFromDB(dispatch, id);
+  };
 
   return (
     <form id="qnAForm" onSubmit={qnASubmitted}>
@@ -99,28 +103,30 @@ export const QnATemplate = () => {
                     role="button"
                     aria-expanded="false"
                     aria-controls={`collapse_${key}`}
-                    className="btn bg-transparent d-flex"
+                    className="btn bg-transparent d-flex admin-preview"
                   >
                     <h5>
-                      {qnas.length-index} . {qna.question}
+                      {qnas.length - index} . {qna.question}
                     </h5>
                   </a>
                 </div>
                 <div>
                   <div className="collapse" id={`collapse_${key}`}>
-                    <div className="card card-body">
+                    <div className="card card-body admin-preview">
                       {ReactHtmlParser(qna.answer)}{" "}
                     </div>
                   </div>
                 </div>
-                <div><ConfirmationButton confirmationMessage="Are you sure want to detele?"
-              iconComp={null}
-              disabled={
-               false
-              }
-              buttonText="Delete"
-              confirmationClick={()=>qnADeleted(qna.id)}/>
-              <hr/></div>
+                <div>
+                  <ConfirmationButton
+                    confirmationMessage="Are you sure want to detele?"
+                    iconComp={null}
+                    disabled={false}
+                    buttonText="Delete"
+                    confirmationClick={() => qnADeleted(qna.id)}
+                  />
+                  <hr />
+                </div>
               </div>
             </div>
           );
