@@ -31,6 +31,8 @@ yarn dev
 - ~~Contact Us Admin~~
 - QnA Admin
 - QnA Web
-- Admin Password
+- Admin Password Change
 - Feature Config (enable disable feature)
 - Web Integration
+- Authors (OAuth)
+- Analytics (google/self)
