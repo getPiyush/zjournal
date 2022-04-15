@@ -36,3 +36,4 @@ yarn dev
 - Web Integration
 - Authors (OAuth)
 - Analytics (google/self)
+- Template Options (chose template / sort order) for Home page
