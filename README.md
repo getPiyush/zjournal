@@ -24,5 +24,16 @@ yarn dev
 - ~~Article Component ```<Table>``` implementation~~
 - ~~Publish/UnPublish Article~~
 - ~~HTML Parser Implementation (can put html code in texts)~~
-- Templates
+- ~~Article by ID URL~~
+- ~~Admin Login~~
+- ~~Templates~~
+- ~~Contact Us Web~~
+- ~~Contact Us Admin~~
+- QnA Admin
+- QnA Web
+- Admin Password Change
+- Feature Config (enable disable feature)
 - Web Integration
+- Authors (OAuth)
+- Analytics (google/self)
+- Template Options (chose template / sort order) for Home page
