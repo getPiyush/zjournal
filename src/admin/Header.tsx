@@ -9,7 +9,7 @@ export default function Header({ onLogout }: HeaderProps) {
   const location = useLocation().pathname;
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           <img

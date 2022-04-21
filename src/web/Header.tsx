@@ -15,7 +15,7 @@ export default function Header() {
   };
   return (
     <header>
-      <nav className="navbar navbar-expand-md navbar-light fixed-top bg-light">
+      <nav className="navbar navbar-expand-md navbar-light fixed-top">
         <div className="container-fluid">
           <Logo />
           <button

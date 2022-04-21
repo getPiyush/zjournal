@@ -5,7 +5,8 @@ import { getPassPhase } from "../utils/crypto";
 
 const host = window.location.host.split(":")[0];
 const port = "8080";
-const server = 'http://' + host + ':' + port;
+//const server = 'http://' + host + ':' + port;
+const server = 'http://feeder.patrikaz.com';
 
 const getJournalAPIPath = `${server}/journal`;
 const getArticleAPIPath = `${server}/articles`;
@@ -19,11 +20,13 @@ const getQnAsAPIPath =  `${server}/qna`;
 // const encryotedToken = getPassPhase(applicationProperties.appPassword)
 
 const getParams = () => {
-    return {
+    return {};
+   /* return {
         headers: {
             "Zjournal-Secure-Token": getPassPhase()
         }
     };
+    */
 }
 
 const getRequest = (url) => {
