@@ -149,6 +149,11 @@ img {
   font-family: "Source Serif 4", sans-serif;
 }
 
+.admin-preview{
+  font-family: "Source Serif 4", sans-serif;
+
+}
+
 .admin .editor .edit-area .row {
   padding: 8px;
 }
@@ -227,6 +232,14 @@ button {
 }
 
 .about-us {
+  padding: 100px 32px 32px 32px !important;
+  min-height: 93vh !important;
+  margin: auto;
+  max-width: 400px;
+  min-width: 200px;
+}
+
+.qna{
   padding: 100px 32px 32px 32px !important;
   min-height: 93vh !important;
   margin: auto;

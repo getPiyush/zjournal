@@ -3723,5 +3723,69 @@
       "id": 3
     }
   ],
-  "qna": []
+  "qna": [
+    {
+      "question": "What is Preformulation study?",
+      "answer": "Preformulation study is a group of studies that focus on the physicochemical properties of a new drug candidate that could affect the drug performance and the development of a dosage form.",
+      "published": true,
+      "dateCreated": "2022-04-12T07:16:45.652Z",
+      "id": 1
+    },
+    {
+      "question": "Which parameters are found out in Preformulation study?",
+      "answer": "Appearance, Molecular weight, Solubility, pH, Hygroscopicity, Flowability, Bulk density, Incompatibilities etc.",
+      "published": true,
+      "dateCreated": "2022-04-12T07:17:22.971Z",
+      "id": 2
+    },
+    {
+      "question": "What is BCS classification?",
+      "answer": "Biopharmaceutical classification system is a system to differentiate the drugs on the basis of their solubility and permeability.",
+      "published": true,
+      "dateCreated": "2022-04-12T07:17:57.499Z",
+      "id": 3
+    },
+    {
+      "question": "Why BCS classification is important?",
+      "answer": "BCS predict in vivo performance of drug products from in vitro measurement of solubility and permeability.",
+      "published": true,
+      "dateCreated": "2022-04-12T07:18:20.519Z",
+      "id": 4
+    },
+    {
+      "question": " What is the application of Henderson-Hasselbalch (HH) equation?",
+      "answer": "Henderson-Hasselbalch (HH) equation is frequently used to determine the pH of a solution.\n\n",
+      "published": true,
+      "dateCreated": "2022-04-12T07:18:42.151Z",
+      "id": 5
+    },
+    {
+      "question": "How can calibrate a HPLC?",
+      "answer": "A HPLC can be calibrated through the following checking:\n<ul>\n<li>Flow rate (pump) accuracy checking</li><li>Gradient accuracy checking</li><li>Pump leakage checking</li><li>Wavelength accuracy checking</li><li>Detector intensity (linearity)</li><li>Auto sampler injector linearity</li><li>Degree of reproducibility etc.</li>\n<ul>",
+      "published": true,
+      "dateCreated": "2022-04-12T07:22:22.760Z",
+      "id": 6
+    },
+    {
+      "question": "When intermediate stability study is omitted?",
+      "answer": "If 30°C ± 2°C/, 65% RH ± 5% RH is the long-term (real time) condition, there is no intermediate condition.\n\n",
+      "published": true,
+      "dateCreated": "2022-04-12T07:23:00.035Z",
+      "id": 7
+    },
+    {
+      "question": "What is stress testing?",
+      "answer": "Stress testing of the drug substance can help identify the likely degradation of products, which can in turn help establish the degradation pathways and the intrinsic stability of the molecule and validate the stability indicating power of the analytical procedures used.\n<br/><br/>\n Stress testing is likely to be carried out on a single batch of the drug substance. It should include the effect of temperatures (in 10°C increments (e.g., 50°C, 60°C, etc.) above that for accelerated testing), humidity (e.g., 75% RH or greater)",
+      "published": true,
+      "dateCreated": "2022-04-12T07:23:41.058Z",
+      "id": 8
+    },
+    {
+      "question": "What is pH dependent solubility and why it’s important?",
+      "answer": "pH dependent solubility means the solubility of a substance depends on pH variation. In general, dissolution of BCS class II drugs is dependent on a wide variety of physiological factors. pH, ionic strength, and buffer capacity are three major characteristics of the GI fluids that can affect the rate of drug release.",
+      "published": true,
+      "dateCreated": "2022-04-12T07:24:21.218Z",
+      "id": 9
+    }
+  ]
 }

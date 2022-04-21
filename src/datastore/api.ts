@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import { ArticleT, Contact, Journal } from "../Types";
+import { ArticleT, Contact, Journal, QnA } from "../Types";
 import { getPassPhase } from "../utils/crypto";
 
 const host = window.location.host.split(":")[0];
@@ -10,6 +10,7 @@ const server = 'http://' + host + ':' + port;
 const getJournalAPIPath = `${server}/journal`;
 const getArticleAPIPath = `${server}/articles`;
 const getContactsAPIPath = `${server}/contacts`;
+const getQnAsAPIPath =  `${server}/qna`;
 
 
 
@@ -35,6 +36,10 @@ const putRequest = (url, obj) => {
 
 const postRequest = (url, obj) => {
     return axios.post(url, obj, getParams());
+}
+
+const deleteRequest = (url) => {
+    return axios.delete(url, getParams());
 }
 
 
@@ -103,4 +108,25 @@ export const getContactsAPI = () => {
 export const addContactAPI = (contact: Contact) => {
     const url = `${getContactsAPIPath}`;
     return postRequest(url, contact);
+}
+
+
+/**
+ * QnA
+ * addQnAAPI, getQnAsAPI
+ */
+
+ export const getQnAsAPI = () => {
+    return getRequest(`${getQnAsAPIPath}?_sort=dateCreated&_order=desc`);
+}
+
+
+export const addQnAAPI = (qna: QnA) => {
+    const url = `${getQnAsAPIPath}`;
+    return postRequest(url, qna);
+}
+
+export const deleteQnAAPI = (id: string) => {
+    const url = `${getQnAsAPIPath}/${id}`;
+    return deleteRequest(url);
 }
