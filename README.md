@@ -1,4 +1,4 @@
-# zjournal
+# zJournal
 ### _Journalism made simple_
 zjournal is an application to create personal Journal/Blog.
 
