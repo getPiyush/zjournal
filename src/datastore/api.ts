@@ -1,11 +1,11 @@
 import axios from "axios";
 
 import { ArticleT, Contact, Journal, QnA } from "../Types";
-import { getPassPhase } from "../utils/crypto";
+import { encryptAES, encryptAESFull, encryptAESZeroPadding, getPassPhase } from "../utils/crypto";
 
 const host = window.location.host.split(":")[0];
 const port = "8080";
-//const server = 'http://' + host + ':' + port;
+// const server = 'http://' + host + ':' + port;
 const server = 'http://feeder.patrikaz.com';
 
 const getJournalAPIPath = `${server}/journal`;
@@ -13,13 +13,17 @@ const getArticleAPIPath = `${server}/articles`;
 const getContactsAPIPath = `${server}/contacts`;
 const getQnAsAPIPath =  `${server}/qna`;
 
-
-
+//
+// "Piyush Praharaj" | openssl enc -aes-256-cbc -pass pass:"Secret Passphrase" -e -base64
 
 // encryption
 // const encryotedToken = getPassPhase(applicationProperties.appPassword)
 
 const getParams = () => {
+   const encpt =  encryptAESZeroPadding("Piyush Plaban Praharaj")
+    // let encrypted = `{"ct":"${encpt.ciphertext.toString()}","iv":"${encpt.iv.toString()}","s":"${encpt.salt.toString()}"}`;
+
+    console.log(encpt)
     return {};
    /* return {
         headers: {

@@ -6,11 +6,12 @@ const { appPassword } = applicationProperties;
 
 export const decryptData = (data) => {
 
+  /*
   if (process.env.NODE_ENV === "production") {
     const bytes = CryptoJS.AES.decrypt(data, appPassword);
     return JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
   }
-
+*/
   return data;
 };
 
