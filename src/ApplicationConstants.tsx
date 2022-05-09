@@ -91,6 +91,8 @@ export const applicationProperties = {
       ],
     },
   ],
+  serverMode:"php", //node|php
+  serverUrl:"http://feeder.patrikaz.com"
 };
 
 export const defaultArticle: ArticleT = {

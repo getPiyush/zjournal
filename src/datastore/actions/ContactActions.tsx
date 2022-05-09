@@ -7,7 +7,7 @@ export const getContactsDB = (dispatch) => {
   dispatch({ type: "get_contacts_loading" });
   getContactsAPI()
     .then(function (response) {
-      dispatch({ type: "get_contacts_success", value:  decryptData(response.data.zjData) });
+      dispatch({ type: "get_contacts_success", value:  decryptData(response.data) });
     })
     .catch(function (error) {
       // console.log(error);
@@ -22,7 +22,7 @@ export const addContactToDB = (dispatch, contact: Contact) => {
   dispatch({ type: "add_contact_loading" });
   addContactAPI(contact)
     .then(function (response) {
-      dispatch({ type: "add_contact_success", value: decryptData(response.data.zjData) });
+      dispatch({ type: "add_contact_success", value: decryptData(response.data) });
     })
     .catch(function (error) {
       // console.log(error);

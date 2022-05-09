@@ -7,7 +7,7 @@ export const getQnAsDB = (dispatch) => {
   dispatch({ type: "get_qnas_loading" });
   getQnAsAPI()
     .then(function (response) {
-      dispatch({ type: "get_qnas_success", value:  decryptData(response.data.zjData) });
+      dispatch({ type: "get_qnas_success", value:  decryptData(response.data) });
     })
     .catch(function (error) {
       // console.log(error);
@@ -22,7 +22,7 @@ export const addQnAToDB = (dispatch, qna: QnA) => {
   dispatch({ type: "add_qna_loading" });
   addQnAAPI(qna)
     .then(function (response) {
-      dispatch({ type: "add_qna_success", value: decryptData(response.data.zjData) });
+      dispatch({ type: "add_qna_success", value: decryptData(response.data) });
     })
     .catch(function (error) {
       // console.log(error);
@@ -37,7 +37,7 @@ export const deleteQnAFromDB = (dispatch, id:string) => {
   dispatch({ type: "delete_qna_loading" });
  deleteQnAAPI(id)
     .then(function (response) {
-      dispatch({ type: "delete_qna_success", value: decryptData(response.data.zjData) });
+      dispatch({ type: "delete_qna_success", value: decryptData(response.data) });
       getQnAsDB(dispatch);
     })
     .catch(function (error) {
