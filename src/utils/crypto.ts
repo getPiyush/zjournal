@@ -4,6 +4,9 @@ import { applicationProperties } from "../ApplicationConstants";
 
 const { appPassword } = applicationProperties;
 
+
+export const encryptDataNode = (stringData) => btoa(encryptAES(stringData));
+
 export const decryptDataNode = (data) => {
   const bytes = CryptoJS.AES.decrypt(data, appPassword);
   return JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
@@ -25,6 +28,7 @@ export const getPassPhase = () => {
   const message = date.getUTCHours() + "$" + date.getUTCDate() + "$" + date.getUTCMinutes() + "$" + date.getUTCDay();
   return HmacSHA1(message, appPassword);
 }
+
 
 
 // php 

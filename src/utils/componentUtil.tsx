@@ -6,7 +6,7 @@ import { applicationProperties } from "../ApplicationConstants";
 import { ArticleT, ComponentObject } from "../Types";
 import { List } from "../web/components/List";
 import { Table } from "../web/components/Table";
-import { decryptDataNode, decryptDataPhp } from "./crypto";
+import { decryptDataNode, decryptDataPhp, encryptDataNode, encryptDataPhp } from "./crypto";
 
 export const getUid = () =>
   Date.now().toString(36) + Math.random().toString(36).substr(2);
@@ -288,3 +288,16 @@ export const decryptData = (data) => {
 
   return data;
 };
+
+export const encryptOutData = (data) => {
+  if(applicationProperties.serverMode === "php"){
+  return { "ezjData": encryptDataPhp(JSON.stringify(data)) };
+  }
+  else if(applicationProperties.serverMode === "node" && applicationProperties.enableEncryption)
+  {
+    return  { "ezjData": encryptDataNode(JSON.stringify(data)) };
+  }
+  else{
+    return data;
+  }
+}
