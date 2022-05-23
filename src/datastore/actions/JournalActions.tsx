@@ -1,6 +1,6 @@
 import { ArticleT, Journal } from "../../Types";
+import { decryptData } from "../../utils/componentUtil";
 import { getJournalAPI, updateJournalAPI } from "../api";
-import { decryptData } from "../../utils/crypto";
 
 export const updatePage = (page: string, dispatch) => {
   dispatch({ type: "update_page", value: page });
@@ -16,7 +16,7 @@ export const getJournalFromDB = (dispatch) => {
     .then(function (response) {
       dispatch({
         type: "get_journal_success",
-        value: decryptData(response.data.zjData),
+        value: decryptData(response.data),
       });
     })
     .catch(function (error) {
@@ -34,7 +34,7 @@ export const updateJournalinDB = (dispatch, journal: Journal) => {
     .then(function (response) {
       dispatch({
         type: "update_journal_success",
-        value: decryptData(response.data.zjData),
+        value: decryptData(response.data),
       });
     })
     .catch(function (error) {

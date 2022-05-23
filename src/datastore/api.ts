@@ -1,41 +1,49 @@
 import axios from "axios";
+import { applicationProperties } from "../ApplicationConstants";
 
 import { ArticleT, Contact, Journal, QnA } from "../Types";
-import { getPassPhase } from "../utils/crypto";
+import { encryptDataPhp, getPassPhase } from "../utils/crypto";
 
-const host = window.location.host.split(":")[0];
-const port = "8080";
-const server = 'http://' + host + ':' + port;
+// const host = window.location.host.split(":")[0];
+// const port = "8080";
+// const server = 'http://' + host + ':' + port;
+
+const server = applicationProperties.serverUrl;
 
 const getJournalAPIPath = `${server}/journal`;
 const getArticleAPIPath = `${server}/articles`;
 const getContactsAPIPath = `${server}/contacts`;
-const getQnAsAPIPath =  `${server}/qna`;
+const getQnAsAPIPath = `${server}/qna`;
 
 
-
-
-// encryption
-// const encryotedToken = getPassPhase(applicationProperties.appPassword)
-
+// security
 const getParams = () => {
-    return {
+    return applicationProperties.serverMode === "php" ? {} : {
         headers: {
             "Zjournal-Secure-Token": getPassPhase()
         }
     };
+
 }
+
+const encryptOutData = (data) => {
+    return { "ezjData": encryptDataPhp(JSON.stringify(data)) };
+}
+
+// request methos
 
 const getRequest = (url) => {
     return axios.get(url, getParams());
 }
 
 const putRequest = (url, obj) => {
-    return axios.put(url, obj, getParams());
+    const payload = applicationProperties.serverMode === "php" ? encryptOutData(obj) : obj;
+    return axios.put(url, payload, getParams());
 }
 
 const postRequest = (url, obj) => {
-    return axios.post(url, obj, getParams());
+    const payload = applicationProperties.serverMode === "php" ? encryptOutData(obj) : obj;
+    return axios.post(url, payload, getParams());
 }
 
 const deleteRequest = (url) => {
@@ -116,7 +124,7 @@ export const addContactAPI = (contact: Contact) => {
  * addQnAAPI, getQnAsAPI
  */
 
- export const getQnAsAPI = () => {
+export const getQnAsAPI = () => {
     return getRequest(`${getQnAsAPIPath}?_sort=dateCreated&_order=desc`);
 }
 

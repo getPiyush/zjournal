@@ -9,13 +9,13 @@ export default function Header({ onLogout }: HeaderProps) {
   const location = useLocation().pathname;
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           <img
             width="50px"
             style={{ padding: "8px" }}
-            src="/images/favicons/apple-touch-icon-57x57-precomposed.png"
+            src="/images/zjournal_logo.png"
           />
           Admin Panel
         </a>
