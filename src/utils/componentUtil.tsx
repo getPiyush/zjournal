@@ -2,9 +2,11 @@ import React from "react";
 import ReactHtmlParser from "react-html-parser";
 
 import EditWrapper from "../admin/components/editor/EditWrapper";
+import { applicationProperties } from "../ApplicationConstants";
 import { ArticleT, ComponentObject } from "../Types";
 import { List } from "../web/components/List";
 import { Table } from "../web/components/Table";
+import { decryptDataNode, decryptDataPhp } from "./crypto";
 
 export const getUid = () =>
   Date.now().toString(36) + Math.random().toString(36).substr(2);
@@ -197,15 +199,17 @@ const getComponentFromObject = (
       break;
 
     case "LIST":
-      comp = <List   key={"key_" + obj.componentId} listData={obj} />;
+      comp = <List key={"key_" + obj.componentId} listData={obj} />;
       break;
 
     case "TABLE":
-      comp = <Table   key={"key_" + obj.componentId} tableData={obj} />;
+      comp = <Table key={"key_" + obj.componentId} tableData={obj} />;
       break;
 
     default:
-      comp = <span   key={"key_" + obj.componentId}>{ReactHtmlParser(obj.data)}</span>;
+      comp = (
+        <span key={"key_" + obj.componentId}>{ReactHtmlParser(obj.data)}</span>
+      );
       break;
   }
   return editable ? (
@@ -267,4 +271,20 @@ export const sliceWords = (str, start, end) => {
 
 export const removeHTML = (htmlStr) => {
   return htmlStr.replace(/<\/?[^>]+(>|$)/g, "");
+};
+
+export const decryptData = (data) => {
+  if (applicationProperties.serverMode === "node") {
+    if (applicationProperties.enableEncryption) {
+      return decryptDataNode(data.zjData);
+    } else {
+      return data.zjData;
+    }
+  } else if (applicationProperties.serverMode === "php") {
+    const strData = data.ezjData;
+    const decryptedData = JSON.parse(decryptDataPhp(strData));
+    if (decryptedData) return decryptedData;
+  }
+
+  return data;
 };

@@ -1,4 +1,5 @@
 import { ArticleT } from "../../Types";
+import { decryptData } from "../../utils/componentUtil";
 import {
   getArticleByIdAPI,
   addArticleAPI,
@@ -7,7 +8,6 @@ import {
   getArticleByIdsAPI,
   getArticleByMonthAPI,
 } from "../api";
-import { decryptData } from "../../utils/crypto";
 
 export const getArticleById = (dispatch, id: string) => {
   dispatch({ type: "get_article_by_id_loading" });

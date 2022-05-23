@@ -1,12 +1,14 @@
 const { getPassPhase } = require("./crypto");
+const { properties } = require("./properties");
 
 exports.authenticatorMiddleWare = function (req, res, next) {
   const serverToken = getPassPhase();
   const headerToken = req.header("Zjournal-Secure-Token");
 
-  const env = (process.argv && process.argv.includes("--production")) ? "production" : "development";
+  // const env = (process.argv && process.argv.includes("--production")) ? "production" : "development";
+  const encrypted = properties.encrypted;
 
-  if (env === "development" || headerToken === serverToken) {
+  if (!encrypted || headerToken === serverToken) {
     res.header("Zjournal-Secure-Authention", "true");
     next();
   } else {

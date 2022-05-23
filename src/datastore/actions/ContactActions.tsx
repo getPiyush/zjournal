@@ -1,6 +1,6 @@
 import { Contact } from "../../Types";
+import { decryptData } from "../../utils/componentUtil";
 
-import { decryptData } from "../../utils/crypto";
 import { addContactAPI, getContactsAPI } from "../api";
 
 export const getContactsDB = (dispatch) => {

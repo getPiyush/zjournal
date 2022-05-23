@@ -2,7 +2,7 @@ import axios from "axios";
 import { applicationProperties } from "../ApplicationConstants";
 
 import { ArticleT, Contact, Journal, QnA } from "../Types";
-import { encryptAES, encryptAESFull, encryptDataPhp, getPassPhase } from "../utils/crypto";
+import { encryptDataPhp, getPassPhase } from "../utils/crypto";
 
 // const host = window.location.host.split(":")[0];
 // const port = "8080";

@@ -4,21 +4,10 @@ import { applicationProperties } from "../ApplicationConstants";
 
 const { appPassword } = applicationProperties;
 
-export const decryptData = (data) => {
-
-  if (applicationProperties.serverMode === "node" && process.env.NODE_ENV === "production") {
-    const bytes = CryptoJS.AES.decrypt(data, appPassword);
-    return JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
-  }
-
-  const strData = data.ezjData;
-  const decryptedData = JSON.parse(decryptDataPhp(strData));
-  if (decryptedData) return decryptedData;
-
-  return data.zjData;
+export const decryptDataNode = (data) => {
+  const bytes = CryptoJS.AES.decrypt(data, appPassword);
+  return JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
 };
-
-
 
 export const encryptAES = (stringData) => {
   return CryptoJS.AES.encrypt(stringData, appPassword).toString();

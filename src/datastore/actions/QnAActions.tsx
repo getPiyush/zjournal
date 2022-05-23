@@ -1,6 +1,6 @@
 import { QnA } from "../../Types";
+import { decryptData } from "../../utils/componentUtil";
 
-import { decryptData } from "../../utils/crypto";
 import { addQnAAPI, deleteQnAAPI, getQnAsAPI } from "../api";
 
 export const getQnAsDB = (dispatch) => {

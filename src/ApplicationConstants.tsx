@@ -1,99 +1,7 @@
+import { properties } from "./properties";
 import { ArticleT, Contact, Journal, QnA } from "./Types";
 
-export const applicationProperties = {
-  title: "Pharmaceutical Updates by Chandrasekhar Panda",
-  author: "Chandrasekhar Panda",
-  startDate: "2022-02-01",
-  appPassword: "JagaBaliaShreekhetra",
-  fonts: [
-    {
-      font: "Source Serif 4",
-      weights: [
-        200,
-        "200i",
-        300,
-        "300i",
-        400,
-        "400i",
-        500,
-        "500i",
-        600,
-        "600i",
-        700,
-        "700i",
-        800,
-        "800i",
-        900,
-        "900i",
-      ],
-    },
-    {
-      font: "Public Sans",
-      weights: [
-        200,
-        "200i",
-        300,
-        "300i",
-        400,
-        "400i",
-        500,
-        "500i",
-        600,
-        "600i",
-        700,
-        "700i",
-        800,
-        "800i",
-        900,
-        "900i",
-      ],
-    },
-    {
-      font: "Noto Serif Display",
-      weights: [
-        200,
-        "200i",
-        300,
-        "300i",
-        400,
-        "400i",
-        500,
-        "500i",
-        600,
-        "600i",
-        700,
-        "700i",
-        800,
-        "800i",
-        900,
-        "900i",
-      ],
-    },
-    {
-      font: "Merriweather",
-      weights: [
-        200,
-        "200i",
-        300,
-        "300i",
-        400,
-        "400i",
-        500,
-        "500i",
-        600,
-        "600i",
-        700,
-        "700i",
-        800,
-        "800i",
-        900,
-        "900i",
-      ],
-    },
-  ],
-  serverMode:"php", //node|php
-  serverUrl:"http://feeder.patrikaz.com"
-};
+export const applicationProperties = properties;
 
 export const defaultArticle: ArticleT = {
   id: "",
@@ -126,12 +34,12 @@ export const defaultJournal: Journal = {
   templateData: "",
 };
 
-export const defaultQnA:QnA = {
-  question:"",
-  answer:"",
-  id:"",
-  published:false,
-  dateCreated: new Date()
+export const defaultQnA: QnA = {
+  question: "",
+  answer: "",
+  id: "",
+  published: false,
+  dateCreated: new Date(),
 };
 
 export const months = [
