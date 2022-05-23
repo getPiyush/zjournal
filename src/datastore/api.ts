@@ -2,6 +2,7 @@ import axios from "axios";
 import { applicationProperties } from "../ApplicationConstants";
 
 import { ArticleT, Contact, Journal, QnA } from "../Types";
+import { encryptOutData } from "../utils/componentUtil";
 import { encryptDataPhp, getPassPhase } from "../utils/crypto";
 
 // const host = window.location.host.split(":")[0];
@@ -26,10 +27,6 @@ const getParams = () => {
 
 }
 
-const encryptOutData = (data) => {
-    return { "ezjData": encryptDataPhp(JSON.stringify(data)) };
-}
-
 // request methos
 
 const getRequest = (url) => {
@@ -37,12 +34,12 @@ const getRequest = (url) => {
 }
 
 const putRequest = (url, obj) => {
-    const payload = applicationProperties.serverMode === "php" ? encryptOutData(obj) : obj;
+    const payload = encryptOutData(obj);
     return axios.put(url, payload, getParams());
 }
 
 const postRequest = (url, obj) => {
-    const payload = applicationProperties.serverMode === "php" ? encryptOutData(obj) : obj;
+    const payload = encryptOutData(obj);
     return axios.post(url, payload, getParams());
 }
 

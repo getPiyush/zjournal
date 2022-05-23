@@ -7,8 +7,9 @@ exports.authenticatorMiddleWare = function (req, res, next) {
 
   // const env = (process.argv && process.argv.includes("--production")) ? "production" : "development";
   const encrypted = properties.encrypted;
+  const tokenMatch = headerToken === serverToken;
 
-  if (!encrypted || headerToken === serverToken) {
+  if (!encrypted || tokenMatch) {
     res.header("Zjournal-Secure-Authention", "true");
     next();
   } else {
