@@ -15,12 +15,18 @@ type Action =
   | { type: "get_article_by_blog_date"; value: ArticleT[] }
   | { type: "get_article_by_blog_date_loading" }
   | { type: "get_article_by_blog_date_error" }
+  | { type: "get_articles_delete"; value: ArticleT[] }
+  | { type: "get_articles_delete_loading" }
+  | { type: "get_articles_delete_error" }
   | { type: "add_article_loading" }
   | { type: "add_article_success",  value: ArticleT  }
   | { type: "add_article_error" }
   | { type: "update_article_loading" }
   | { type: "update_article_success" }
   | { type: "update_article_error" }
+  | { type: "delete_article_loading" }
+  | { type: "delete_article_success" }
+  | { type: "delete_article_error" }
   | { type: "add_article"; value: ArticleT };
 
 type Dispatch = (action: Action) => void;
@@ -82,6 +88,18 @@ function articleReducer(state: State, action: Action) {
       return { status: "error", articles: state.articles };
     }
 
+    case "get_articles_delete_loading": {
+      return { status: "loading", articles: state.articles };
+    }
+  
+    case "get_articles_delete": {
+      return { articles: action.value, status: "success" };
+    }
+  
+    case "get_articles_delete_error": {
+      return { status: "error", articles: state.articles };
+    }
+
     // add article
     case "add_article_loading": {
       return { status: "loading", articles: state.articles };
@@ -107,6 +125,19 @@ function articleReducer(state: State, action: Action) {
     case "update_article_error": {
       return { status: "error", articles: state.articles };
     }
+
+       // delete article
+       case "delete_article_loading": {
+        return { status: "loading", articles: state.articles };
+      }
+  
+      case "delete_article_success": {
+        return { status: "success", articles: state.articles };
+      }
+  
+      case "delete_article_error": {
+        return { status: "error", articles: state.articles };
+      }
 
     default: {
       throw new Error(`Unhandled action type: ${action}`);

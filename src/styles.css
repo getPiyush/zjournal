@@ -121,7 +121,7 @@ img {
 
 .editor-action-col-end {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .padding-lr-8 {
@@ -149,7 +149,7 @@ img {
   font-family: "Source Serif 4", sans-serif;
 }
 
-.admin-preview{
+.admin-preview {
   font-family: "Source Serif 4", sans-serif;
 
 }
@@ -239,7 +239,7 @@ button {
   min-width: 200px;
 }
 
-.qna{
+.qna {
   padding: 100px 32px 32px 32px !important;
   min-height: 93vh !important;
   margin: auto;

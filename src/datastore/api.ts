@@ -90,6 +90,11 @@ export const getArticleByMonthAPI = (blogDate: string, web: boolean) => {
     return getRequest(url);
 }
 
+export const getArticlesToDeleteAPI = () => {
+    const url = `${getArticleAPIPath}?&deleteFlag=true`;
+    return getRequest(url);
+}
+
 export const addArticleAPI = (article: ArticleT) => {
     const url = `${getArticleAPIPath}`;
     return postRequest(url, article);
@@ -99,6 +104,13 @@ export const updateArticleAPI = (article: ArticleT) => {
     const url = `${getArticleAPIPath}/${article.id}`;
     return putRequest(url, article);
 }
+
+export const deleteArticleAPI = (article: ArticleT) => {
+    const url = `${getArticleAPIPath}/${article.id}`;
+    return deleteRequest(url);
+}
+
+
 
 /**
  * 

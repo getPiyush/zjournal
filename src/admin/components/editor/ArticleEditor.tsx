@@ -142,6 +142,12 @@ export default function ArticleEditor({
     setArticle({ ...article, published: !article.published });
   };
 
+  const deleteStatusUpdated = () => {
+    setArticle({ ...article, deleteFlag: !article.deleteFlag });
+  };
+  
+
+
   const showHdeOffCanvas = (flag) => {
     const myOffcanvas = document.getElementById("offcanvasRight");
     const bsOffcanvas = new globalThis.bootstrap.Offcanvas(myOffcanvas);
@@ -279,6 +285,18 @@ export default function ArticleEditor({
             />
             <label className="form-check-label" htmlFor="publichedCheckSwitch">
               Published
+            </label>
+          </div>
+          <div className="form-check form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              id="deleteCheckSwitch"
+              checked={article.deleteFlag}
+              onChange={deleteStatusUpdated}
+            />
+            <label className="form-check-label" htmlFor="publichedCheckSwitch">
+              Deleted
             </label>
           </div>
         </div>

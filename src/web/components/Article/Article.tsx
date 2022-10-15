@@ -60,7 +60,7 @@ export default function Article({ data }: ArticleProps) {
 
   return (
     <div className="container article-viewer">
-      {article && article.title !== "" ? (
+      {article && article.title !== "" && !article.deleteFlag ? (
         <div className="container article-viewer disable-text-selection">
           <div className="row">
             <div className="col">

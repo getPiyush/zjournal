@@ -18,6 +18,7 @@ export type ArticleT = {
   content: ComponentObject[];
   origin: "server" | "local";
   published: boolean;
+  deleteFlag:boolean;
 }
 
 export type Journal = {

@@ -5,8 +5,10 @@ import {
   addArticleAPI,
   getArticleByCategoryAPI,
   updateArticleAPI,
+  deleteArticleAPI,
   getArticleByIdsAPI,
   getArticleByMonthAPI,
+  getArticlesToDeleteAPI
 } from "../api";
 
 export const getArticleById = (dispatch, id: string) => {
@@ -71,6 +73,22 @@ export const getArticlesByBlogDate = (dispatch, blogDate: string, web?: boolean)
 };
 
 
+export const getArticlesToDelete = (dispatch) => {
+  dispatch({ type: "get_articles_delete_loading" });
+  getArticlesToDeleteAPI()
+    .then(function (response) {
+      dispatch({ type: "get_articles_delete", value:  decryptData(response.data)});
+    })
+    .catch(function (error) {
+      // console.log(error);
+      dispatch({ type: "get_articles_delete_error" });
+    })
+    .then(function () {
+      // always executed
+    });
+};
+
+
 export const addArticleToDB = (dispatch, article: ArticleT) => {
   dispatch({ type: "add_article_loading" });
   addArticleAPI(article)
@@ -95,6 +113,21 @@ export const updateArticleinDB = (dispatch, article: ArticleT) => {
     .catch(function (error) {
       // console.log(error);
       dispatch({ type: "update_article_error" });
+    })
+    .then(function () {
+      // always executed
+    });
+};
+
+export const deleteArticleinDB = (dispatch, article: ArticleT) => {
+  dispatch({ type: "delete_article_loading" });
+  deleteArticleAPI(article)
+    .then(function (response) {
+      dispatch({ type: "delete_article_success", value:  decryptData(response.data) });
+    })
+    .catch(function (error) {
+      // console.log(error);
+      dispatch({ type: "delete_article_error" });
     })
     .then(function () {
       // always executed

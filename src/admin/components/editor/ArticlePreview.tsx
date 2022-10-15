@@ -19,6 +19,7 @@ export default function ArticlePreview({ data }: ArticleProps) {
     updateCurrentArticle(data, dispatch);
     navigate("/admin/editor");
   };
+
   const getPublishedComponent = (published) => {
     if (published) {
       return <span className="badge rounded-pill bg-success">Published</span>;
@@ -27,7 +28,12 @@ export default function ArticlePreview({ data }: ArticleProps) {
     return <span className="badge rounded-pill bg-warning">Not Published</span>;
   };
 
+  const getDeletedComponent = (deleted) => {
+    return deleted?<span className="badge rounded-pill bg-danger">Deleted</span>:<span></span>;
+  };
+
   let breaker = false;
+
   return (
     <React.Fragment>
       <div
@@ -37,6 +43,7 @@ export default function ArticlePreview({ data }: ArticleProps) {
         <div className="card-body">
           <div className="top-action-box">
             <div>{getPublishedComponent(data.published)}</div>
+            <div>{getDeletedComponent(data.deleteFlag)}</div>
             <button
               type="button"
               disabled={!navigator.clipboard}
