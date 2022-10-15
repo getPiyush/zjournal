@@ -13,6 +13,7 @@ export const defaultArticle: ArticleT = {
   content: [],
   origin: "local",
   published: false,
+  deleteFlag: false
 };
 
 export const defaultContact: Contact = {

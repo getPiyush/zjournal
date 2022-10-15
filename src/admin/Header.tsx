@@ -76,6 +76,17 @@ export default function Header({ onLogout }: HeaderProps) {
                 Contacts
               </Link>
             </li>
+            <li className="nav-item">
+              <Link
+                className={`nav-link ${
+                  location === "/admin/purge" ? "active" : ""
+                }`}
+                aria-current="page"
+                to="/admin/purge"
+              >
+                Purge
+              </Link>
+            </li>
           </ul>
           <ConfirmationButton
               buttonText="Logout"

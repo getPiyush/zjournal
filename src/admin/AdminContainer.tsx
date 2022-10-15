@@ -10,6 +10,7 @@ import { Spinner } from "../web/components/Spinner";
 import ArticleContainer from "./pages/ArticleContainer";
 import CategoryEditor from "./pages/CategoryEditor";
 import { Contacts } from "./pages/Contacts";
+import { Purge } from "./pages/Purge";
 import Templates from "./pages/Templates";
 
 export default function AdminContainer() {
@@ -41,6 +42,8 @@ export default function AdminContainer() {
           <Route path="categories" element={<CategoryEditor />} />
           <Route path="templates" element={<Templates />} />
           <Route path="contacts" element={<Contacts />} />
+          <Route path="purge" element={<Purge />} />
+
           <Route
             path="editor"
             element={

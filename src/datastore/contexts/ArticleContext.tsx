@@ -15,6 +15,9 @@ type Action =
   | { type: "get_article_by_blog_date"; value: ArticleT[] }
   | { type: "get_article_by_blog_date_loading" }
   | { type: "get_article_by_blog_date_error" }
+  | { type: "get_articles_delete"; value: ArticleT[] }
+  | { type: "get_articles_delete_loading" }
+  | { type: "get_articles_delete_error" }
   | { type: "add_article_loading" }
   | { type: "add_article_success",  value: ArticleT  }
   | { type: "add_article_error" }
@@ -79,6 +82,18 @@ function articleReducer(state: State, action: Action) {
     }
   
     case "get_article_by_blog_date_error": {
+      return { status: "error", articles: state.articles };
+    }
+
+    case "get_articles_delete_loading": {
+      return { status: "loading", articles: state.articles };
+    }
+  
+    case "get_articles_delete": {
+      return { articles: action.value, status: "success" };
+    }
+  
+    case "get_articles_delete_error": {
       return { status: "error", articles: state.articles };
     }
 

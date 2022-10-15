@@ -7,6 +7,7 @@ import {
   updateArticleAPI,
   getArticleByIdsAPI,
   getArticleByMonthAPI,
+  getArticlesToDeleteAPI
 } from "../api";
 
 export const getArticleById = (dispatch, id: string) => {
@@ -64,6 +65,22 @@ export const getArticlesByBlogDate = (dispatch, blogDate: string, web?: boolean)
     .catch(function (error) {
       // console.log(error);
       dispatch({ type: "get_article_by_blog_date_error" });
+    })
+    .then(function () {
+      // always executed
+    });
+};
+
+
+export const getArticlesToDelete = (dispatch) => {
+  dispatch({ type: "get_articles_delete_loading" });
+  getArticlesToDeleteAPI()
+    .then(function (response) {
+      dispatch({ type: "get_articles_delete", value:  decryptData(response.data)});
+    })
+    .catch(function (error) {
+      // console.log(error);
+      dispatch({ type: "get_articles_delete_error" });
     })
     .then(function () {
       // always executed
