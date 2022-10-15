@@ -105,6 +105,13 @@ export const updateArticleAPI = (article: ArticleT) => {
     return putRequest(url, article);
 }
 
+export const deleteArticleAPI = (article: ArticleT) => {
+    const url = `${getArticleAPIPath}/${article.id}`;
+    return deleteRequest(url);
+}
+
+
+
 /**
  * 
 Journal APIS

@@ -5,6 +5,7 @@ import {
   addArticleAPI,
   getArticleByCategoryAPI,
   updateArticleAPI,
+  deleteArticleAPI,
   getArticleByIdsAPI,
   getArticleByMonthAPI,
   getArticlesToDeleteAPI
@@ -112,6 +113,21 @@ export const updateArticleinDB = (dispatch, article: ArticleT) => {
     .catch(function (error) {
       // console.log(error);
       dispatch({ type: "update_article_error" });
+    })
+    .then(function () {
+      // always executed
+    });
+};
+
+export const deleteArticleinDB = (dispatch, article: ArticleT) => {
+  dispatch({ type: "delete_article_loading" });
+  deleteArticleAPI(article)
+    .then(function (response) {
+      dispatch({ type: "delete_article_success", value:  decryptData(response.data) });
+    })
+    .catch(function (error) {
+      // console.log(error);
+      dispatch({ type: "delete_article_error" });
     })
     .then(function () {
       // always executed

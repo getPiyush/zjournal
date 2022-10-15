@@ -24,6 +24,9 @@ type Action =
   | { type: "update_article_loading" }
   | { type: "update_article_success" }
   | { type: "update_article_error" }
+  | { type: "delete_article_loading" }
+  | { type: "delete_article_success" }
+  | { type: "delete_article_error" }
   | { type: "add_article"; value: ArticleT };
 
 type Dispatch = (action: Action) => void;
@@ -122,6 +125,19 @@ function articleReducer(state: State, action: Action) {
     case "update_article_error": {
       return { status: "error", articles: state.articles };
     }
+
+       // delete article
+       case "delete_article_loading": {
+        return { status: "loading", articles: state.articles };
+      }
+  
+      case "delete_article_success": {
+        return { status: "success", articles: state.articles };
+      }
+  
+      case "delete_article_error": {
+        return { status: "error", articles: state.articles };
+      }
 
     default: {
       throw new Error(`Unhandled action type: ${action}`);

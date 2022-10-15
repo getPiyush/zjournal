@@ -1,11 +1,12 @@
 import ReactHtmlParser from "react-html-parser";
 
 import { useEffect } from "react";
-import { getArticlesToDelete } from "../../datastore/actions/ArticleActions";
+import { getArticlesToDelete, deleteArticleinDB } from "../../datastore/actions/ArticleActions";
 import { getDate } from "../../utils/componentUtil";
 import { PageTitle } from "../components/PageTitle";
 import { useArticle } from "../../datastore/contexts/ArticleContext";
 import ConfirmationButton from "../components/editor/ConfirmationButton";
+import { ArticleT } from "../../Types";
 
 export const Purge = () => {
   const { dispatch, state: articleState } = useArticle();
@@ -14,8 +15,8 @@ export const Purge = () => {
     getArticlesToDelete(dispatch);
   }, []);
 
-  const deleteArticle = () => {
-    console.log("deleting article ");
+  const deleteArticle = (article:ArticleT) => {
+    deleteArticleinDB(dispatch, article);
   };
 
   return (
@@ -51,7 +52,7 @@ export const Purge = () => {
                     <ConfirmationButton
                       buttonText=" x "
                       confirmationMessage="Article once purged (deleted permanently) can not be retrived back. Are you sure? "
-                      confirmationClick={deleteArticle}
+                      confirmationClick={()=>deleteArticle(article)}
                       iconComp={null}
                       disabled={false}
                     />

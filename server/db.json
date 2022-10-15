@@ -3673,46 +3673,29 @@
     "selectedPage": "home",
     "loggedIn": false,
     "currentArticle": {
-      "id": "Rp6hHdm",
+      "id": "yTIdG-r",
       "author": "Chandrasekhar Panda",
-      "title": "Patrikaz ଶୀଘ୍ର ଆସୁଅଛି A revolution ",
-      "dateCreated": "2022-04-22T13:01:12.381Z",
-      "dateModified": "2022-05-23T07:30:24.838Z",
+      "title": "Hello this is to be deleted",
+      "dateCreated": "2022-10-15T20:21:56.504Z",
+      "dateModified": "2022-10-15T20:21:56.504Z",
       "categryId": "Production",
       "content": [
         {
-          "componentId": "l2afyv9uduslk76nll4",
+          "componentId": "l9ad820la1onb3cihxl",
           "componenType": "h2",
-          "data": "Patrikaz is now live!",
+          "data": "Click to Update Text",
           "numbered": false
         },
         {
-          "componentId": "l2aggg0epzjodzpax88",
-          "componenType": "Image",
-          "data": "http://www.patrikaz.com/static/images/patrikaz_logo_eng.jpeg",
-          "numbered": false
-        },
-        {
-          "componentId": "l3ieeo4blceq98c8nv",
-          "componenType": "Paragraph",
-          "data": "\n<b>ଶୀଘ୍ର ଆସୁଅଛି</b><br/>\nପତ୍ରକାରୀତା ଜଗତରେ ଏକ କ୍ରାନ୍ତି,\nଆମ ବିଶ୍ୱାସ ସମସ୍ତେ ଲେଖିବା ଆରମ୍ଭ କରିଦିଅନ୍ତୁ,\nଆସନ୍ତୁ ଲେଖକ ହେବା ,ଲେଖନୀର ବଳରେ କିଛିବି ସୁଚନା, ଗ୍ୟାନ ଅଥବା ଘଟଣା ର ବିସ୍ତ୍ରୁତ ବିବରଣୀ ଦୁନିଆକୁ ଭେଟି ଦେବା |\n",
-          "numbered": false
-        },
-        {
-          "componentId": "l3ieirnlomxeh3nfs3k",
-          "componenType": "Paragraph",
-          "data": "<b>COMING SOON</b><br/>\nA revolution in journalisim,\nWe believe everyone shoud start writing,\nLets report, share and explore by the power of writing.\n\n",
-          "numbered": false
-        },
-        {
-          "componentId": "l3iejpho036mcjjhxnkk",
-          "componenType": "Paragraph",
-          "data": "Visit <a href=\"http://patrikaz.com/\">patrikaz.com</a> for more detailz.",
+          "componentId": "l9ad88bx1zicets40gn",
+          "componenType": "List",
+          "data": "Click to Update Text",
           "numbered": false
         }
       ],
       "origin": "server",
-      "published": true
+      "published": true,
+      "deleteFlag": false
     },
     "categories": [
       "Production",
