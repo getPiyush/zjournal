@@ -174,28 +174,28 @@ function sendMail($content)
         date("h:ia") .
         ".";
 
-    $message ='
+    $message = '
     
     <div>
         <h3>
                 <font color="#1555ce">Congratulations!</font>
         </h3>
         <p>Your daily online backup to <b><i>Patrika<font color="#1555ce">#</font></b></i> was successfully completed at ' .
-                date("h:i:sa") .
-                " on " .
-                date("F j, Y") .
-                ' </p>
+        date("h:i:sa") .
+        " on " .
+        date("F j, Y") .
+        ' </p>
         <p>
                 Username: cspapr01
-                <br>Backup Set: ' .$uid .'
+                <br>Backup Set: ' . $uid . '
                 <br>Number of files: 1
-                <br>Total backup size:' .$file_size .'
+                <br>Total backup size:' . $file_size . '
         </p>
 
         <p>Thank you.<br />
         <img height="40" src="http://www.patrikaz.com/images/patrikaz_logo_eng.jpeg"/>
         </p>
-        <quote>' .get_random_quote() .'</quote>
+        <quote>' . get_random_quote() . '</quote>
 </div>
     
     ';
@@ -210,7 +210,7 @@ function sendMail($content)
     // message & attachment
     $nmessage = "--" . $uid . "\r\n";
     $nmessage .= "Content-type:text/html; charset=iso-8859-1\r\n";
-  //   $nmessage .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
+    //   $nmessage .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
     $nmessage .= $message . "\r\n\r\n";
     $nmessage .= "--" . $uid . "\r\n";
     $nmessage .=
@@ -227,60 +227,58 @@ function sendMail($content)
 
     if (mail($mailto, $subject, $nmessage, $header)) {
         return true; // Or do something here
-    } else {
+    }
+    else {
         return false;
     }
 }
 
-    
+
 $request_url_query = parse_url($_SERVER["REQUEST_URI"], PHP_URL_QUERY);
-if($request_url_query && str_contains($request_url_query,"decrypt")){
-                echo "<br/>---------------starting of decrypt--------<br/>";
-// http://feeder.patrikaz.com/backupdata.php?decrypt=wirwrwepoiwerpowirpwo
+if ($request_url_query && str_contains($request_url_query, "decrypt")) {
+    echo "<br/>---------------starting of decrypt--------<br/>";
+    // http://feeder.patrikaz.com/backupdata.php?decrypt=wirwrwepoiwerpowirpwo
     $request_url_query_array = explode("&", $request_url_query);
     print_r($request_url_query_array);
-    if(count($request_url_query_array)>0)
-    {
-            $query = explode("=",$request_url_query_array[0]);
-$passphase = "JagaBaliaShreekhetra";
-            if(count($query)>0)
-            {
-                $bota = 'eyJjaXBoZXJ0ZXh0IjoibXhsWWJHQTl1TWhZTEpYbkIveGpIb0xqbFFUS0NuMWZ5aWppelZxY2wyRT0iLCJzYWx0IjoiMWExODQ5YjA0NzRkM2ZiYjNkODk2Mzk5ODYxMTA5MGU4YWE1MmYyNDNkNWFlYmQ2ODI5MGM1YzdkZDNhNmVjNmQ4OWRmMTkwNWYwMWNlM2UyNGI5OGI5NWEwZDRjNjU4YzEzYjk5ZDFlNjgxMGY4ZTNhOTdiYTFjZjMzYTU3Njc1Nzk5NzYyY2MzYzdkYjE2OGU3ZjU3NGVlYTcxNmM2YWE0ODQwYTA0MjA4MGU4NWNjMmE2OTUyNjA4NjFjMzU1MDU2ZTY4NmRhZjMzMThjNmY1M2ZjZWRiZGQ2NWVkYTA5YmFlZDc4Yjk3NzZiNzIxZmQ0ODRkNWRlZDVkMmRjMjM4NDU5NWU1ZmY1YTY2NmVmOTRhMTVhNWVkNmFhNDFkYzc1OWE3YTdkZGMxZjMxMGNmYWM5ODc4N2U5OTc5MjgxZGU0N2FmMWViMTM1NGNlM2JkMDZmNzk1YjAzZWU1NzJlMzM1NjkxNDYzODY4MDE0MTU5OWMzZTRlNDZkMTg3ODc5MWQ4OTFkYWI4NDViNDc3NTJhODRiOTJhZjJlMWE2Y2E1NTY1ZTM0YWFkYTg3OWU5MjhkYmEzYTY4MmQwYzhjMGZiNTkwNjY2ZWEzZjg0NjRjNGE3NjQ0M2RjYzVjMGVkZTdlNDUxZGNlNDIxY2IyNTU5NzM5MDQ3MWExM2MiLCJpdiI6ImU1Y2ZjNjdlN2Q1ZWQ5NjJhMTYyZmM4NzI1NzAwM2RmIn0=';
-                
-                $encryptedText = base64_decode($bota);
-                
-                // $encryptedText ='{"ciphertext":"mxlYbGA9uMhYLJXnB/xjHoLjlQTKCn1fyijizVqcl2E=","salt":"1a1849b0474d3fbb3d8963998611090e8aa52f243d5aebd68290c5c7dd3a6ec6d89df1905f01ce3e24b98b95a0d4c658c13b99d1e6810f8e3a97ba1cf33a57675799762cc3c7db168e7f574eea716c6aa4840a042080e85cc2a695260861c355056e686daf3318c6f53fcedbdd65eda09baed78b9776b721fd484d5ded5d2dc2384595e5ff5a666ef94a15a5ed6aa41dc759a7a7ddc1f310cfac98787e9979281de47af1eb1354ce3bd06f795b03ee572e3356914638680141599c3e4e46d1878791d891dab845b47752a84b92af2e1a6ca5565e34aada879e928dba3a682d0c8c0fb590666ea3f8464c4a76443dcc5c0ede7e451dce421cb25597390471a13c","iv":"e5cfc67e7d5ed962a162fc87257003df"}';
-                // {"ct":"a1dc8996e95c52b636529081360a69cae142ae0d97876c64f174e42567347634","iv":"1bcfb8e55c2a286e03345dfbb798cb9a","s":"cf273cf8e8a263c7"}
-            $dec = CryptoJSAesDecrypt($passphase,$encryptedText);
+    if (count($request_url_query_array) > 0) {
+        $query = explode("=", $request_url_query_array[0]);
+        if (count($query) > 0) {
+            $bota = 'eyJjaXBoZXJ0ZXh0IjoibXhsWWJHQTl1TWhZTEpYbkIveGpIb0xqbFFUS0NuMWZ5aWppelZxY2wyRT0iLCJzYWx0IjoiMWExODQ5YjA0NzRkM2ZiYjNkODk2Mzk5ODYxMTA5MGU4YWE1MmYyNDNkNWFlYmQ2ODI5MGM1YzdkZDNhNmVjNmQ4OWRmMTkwNWYwMWNlM2UyNGI5OGI5NWEwZDRjNjU4YzEzYjk5ZDFlNjgxMGY4ZTNhOTdiYTFjZjMzYTU3Njc1Nzk5NzYyY2MzYzdkYjE2OGU3ZjU3NGVlYTcxNmM2YWE0ODQwYTA0MjA4MGU4NWNjMmE2OTUyNjA4NjFjMzU1MDU2ZTY4NmRhZjMzMThjNmY1M2ZjZWRiZGQ2NWVkYTA5YmFlZDc4Yjk3NzZiNzIxZmQ0ODRkNWRlZDVkMmRjMjM4NDU5NWU1ZmY1YTY2NmVmOTRhMTVhNWVkNmFhNDFkYzc1OWE3YTdkZGMxZjMxMGNmYWM5ODc4N2U5OTc5MjgxZGU0N2FmMWViMTM1NGNlM2JkMDZmNzk1YjAzZWU1NzJlMzM1NjkxNDYzODY4MDE0MTU5OWMzZTRlNDZkMTg3ODc5MWQ4OTFkYWI4NDViNDc3NTJhODRiOTJhZjJlMWE2Y2E1NTY1ZTM0YWFkYTg3OWU5MjhkYmEzYTY4MmQwYzhjMGZiNTkwNjY2ZWEzZjg0NjRjNGE3NjQ0M2RjYzVjMGVkZTdlNDUxZGNlNDIxY2IyNTU5NzM5MDQ3MWExM2MiLCJpdiI6ImU1Y2ZjNjdlN2Q1ZWQ5NjJhMTYyZmM4NzI1NzAwM2RmIn0=';
+
+            $encryptedText = base64_decode($bota);
+
+            // $encryptedText ='{"ciphertext":"mxlYbGA9uMhYLJXnB/xjHoLjlQTKCn1fyijizVqcl2E=","salt":"1a1849b0474d3fbb3d8963998611090e8aa52f243d5aebd68290c5c7dd3a6ec6d89df1905f01ce3e24b98b95a0d4c658c13b99d1e6810f8e3a97ba1cf33a57675799762cc3c7db168e7f574eea716c6aa4840a042080e85cc2a695260861c355056e686daf3318c6f53fcedbdd65eda09baed78b9776b721fd484d5ded5d2dc2384595e5ff5a666ef94a15a5ed6aa41dc759a7a7ddc1f310cfac98787e9979281de47af1eb1354ce3bd06f795b03ee572e3356914638680141599c3e4e46d1878791d891dab845b47752a84b92af2e1a6ca5565e34aada879e928dba3a682d0c8c0fb590666ea3f8464c4a76443dcc5c0ede7e451dce421cb25597390471a13c","iv":"e5cfc67e7d5ed962a162fc87257003df"}';
+            // {"ct":"a1dc8996e95c52b636529081360a69cae142ae0d97876c64f174e42567347634","iv":"1bcfb8e55c2a286e03345dfbb798cb9a","s":"cf273cf8e8a263c7"}
+            $dec = CryptoJSAesDecrypt($passphase, $encryptedText);
             echo '<br/>Trying to decrypt input Gives: <br/>';
             print_r($dec);
-                            echo '<br/>';
+            echo '<br/>';
 
-            $enc = CryptoJSAesEncrypt($passphase,"Piyush Plaban Praharaj");
+            $enc = CryptoJSAesEncrypt($passphase, "Piyush Plaban Praharaj");
             echo '==============<br/>';
-             echo $enc;
+            echo $enc;
             echo '<br/>==============';
-            
 
-            }
-            
+
+        }
+
 
     }
-    
+
     echo "<br/>---------------end of decrypt---------------";
 
 }
-else
-{
-$mailto = "piyush.plaban@gmail.com";
-$data_string = file_get_contents("db.json");
-$enc = encrypt_decrypt("encrypt", $data_string);
+else {
+    $mailto = "piyush.plaban@gmail.com";
+    $data_string = file_get_contents("db.json");
+    $enc = encrypt_decrypt("encrypt", $data_string);
 
-if (sendMail($enc)) {
-    echo "Mail sent sucessfully to " . $mailto . " at ".date("h:i:sa") . " on " . date("F j, Y") ."!";
-} else {
-    echo "Cant send mail!!!";
-}
+    if (sendMail($enc)) {
+        echo "Mail sent sucessfully to " . $mailto . " at " . date("h:i:sa") . " on " . date("F j, Y") . "!";
+    }
+    else {
+        echo "Cant send mail!!!";
+    }
 
 }
 

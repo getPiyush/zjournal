@@ -1,4 +1,6 @@
 <?php
+include "properties.php";
+
 function addRecord($record, $path)
 {
     $string = file_get_contents("db.json");
@@ -36,7 +38,8 @@ function updateRecord($record, $path)
             $json_object[$paths[0]] = $item_list;
             file_put_contents("db.json", json_encode($json_object));
         }
-    } elseif (count($paths) == 1) {
+    }
+    elseif (count($paths) == 1) {
         $item = $json_object[$paths[0]];
         if ($item) {
             $json_object[$paths[0]] = $record;
@@ -56,8 +59,8 @@ function deleteRecord($path)
     // articles/789gyut76r
     if (count($paths) == 2) {
         $string = file_get_contents("db.json");
-    $json_object = json_decode($string, true);
-    $deleted_item = (object)[];
+        $json_object = json_decode($string, true);
+        $deleted_item = (object)[];
         $item_list = $json_object[$paths[0]];
         $item_id = $paths[1];
 
@@ -65,10 +68,9 @@ function deleteRecord($path)
             $updated_list = array();
             foreach ($item_list as $index => $item) {
                 if ($item["id"] !== $item_id) {
-                    array_push($updated_list,$item);
+                    array_push($updated_list, $item);
                 }
-                else
-                {
+                else {
                     $deleted_item = $item;
                 }
             }
@@ -85,18 +87,17 @@ function deleteRecord($path)
 
 function decodedPayloadData($data)
 {
-    if($data){
-    $passphase = "JagaBaliaShreekhetra";
+    if ($data) {
+        $data = json_decode($data);
+        //  print_r($data->ezjData);
 
-    $data = json_decode($data);
-    //  print_r($data->ezjData);
-
-    $encrypted_string = $data->ezjData;
-    if ($encrypted_string) {
-        return CryptoJSAesDecrypt($passphase, base64_decode($encrypted_string));
-    } else {
-        return $data;
-    }
+        $encrypted_string = $data->ezjData;
+        if ($encrypted_string) {
+            return CryptoJSAesDecrypt($passphase, base64_decode($encrypted_string));
+        }
+        else {
+            return $data;
+        }
     }
 }
 
@@ -121,13 +122,12 @@ function processSetters()
         $record = json_decode($payload_decrypted);
         $response_obj = updateRecord($record, $request_url_path);
     }
-    
+
     if ($_SERVER["REQUEST_METHOD"] === "DELETE") {
         $response_obj = deleteRecord($request_url_path);
     }
-    
+
     // encrypt
-    $passphase = "JagaBaliaShreekhetra";
 
     $enc_responseObj = base64_encode(
         CryptoJSAesEncrypt($passphase, json_encode($response_obj))

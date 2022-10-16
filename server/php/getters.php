@@ -1,4 +1,6 @@
 <?php
+include "properties.php";
+
 function getItemeById($id, $items)
 {
     $item_response = null;
@@ -15,9 +17,11 @@ function updateKeyForBoolean($key)
 {
     if ($key == "true") {
         return "1";
-    } elseif ($key == "false") {
+    }
+    elseif ($key == "false") {
         return "0";
-    } else {
+    }
+    else {
         return $key;
     }
 }
@@ -33,7 +37,8 @@ function getSubquerycondition($key_value, $item)
                 return str_contains($item[$subquery[0]], $key_value[1]);
             }
         }
-    } else {
+    }
+    else {
         // dateCreated=2022
         return $item[$key_value[0]] == updateKeyForBoolean($key_value[1]);
     }
@@ -158,7 +163,8 @@ function processGetters()
                             $json_object[$path]
                         );
                         array_push($items_by_querry, ...$q_items);
-                    } else {
+                    }
+                    else {
                         $items_by_querry = getItemsByQuery(
                             $request_query,
                             $items_by_querry
@@ -176,14 +182,14 @@ function processGetters()
                         $request_url_query_array,
                         $response_obj
                     );
-                } else {
+                }
+                else {
                     $response_obj = $items_by_querry;
                 }
             }
         }
-        $passphase = "JagaBaliaShreekhetra";
-        $enc_responseObj = base64_encode(CryptoJSAesEncrypt($passphase,json_encode($response_obj)));
-        
+        $enc_responseObj = base64_encode(CryptoJSAesEncrypt($passphase, json_encode($response_obj)));
+
         //   "zjData" => $response_obj,
 
         $response_obj = [
@@ -191,7 +197,8 @@ function processGetters()
         ];
 
         print_r(json_encode($response_obj));
-    } else {
+    }
+    else {
         echo "Welcome to zjournal Feeder";
     }
 }

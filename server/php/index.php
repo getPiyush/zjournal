@@ -12,13 +12,11 @@ include "crypto.php";
 include 'getters.php';
 include 'setters.php';
 
-if ($_SERVER['REQUEST_METHOD'] === 'GET') 
-{
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     processGetters();
 }
-else
-{
+else {
     processSetters();
-}   
+}
 
 ?>
