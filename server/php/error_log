@@ -1,0 +1,1352 @@
+[19-Apr-2022 15:13:15 UTC] PHP Warning:  Array to string conversion in /home/hvfszwpsg6re/public_html/feeder/index.php on line 3
+[19-Apr-2022 16:07:13 UTC] PHP Warning:  Array to string conversion in /home/hvfszwpsg6re/public_html/feeder/index.php on line 18
+[19-Apr-2022 16:10:20 UTC] PHP Fatal error:  Uncaught TypeError: json_decode(): Argument #1 ($json) must be of type string, array given in /home/hvfszwpsg6re/public_html/feeder/index.php:18
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(18): json_decode()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 18
+[19-Apr-2022 16:12:13 UTC] PHP Warning:  Undefined array key "%22https:////indoreinstitute.com//wp-content//uploads//2020//04//What-is-Pharma-Vision-2020-%E2%80%93-A-Detailed-Insight.jpg/%22" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 18
+[19-Apr-2022 16:16:01 UTC] PHP Warning:  Undefined array key "" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 11
+[19-Apr-2022 16:17:54 UTC] PHP Warning:  Undefined array key "articles/98789" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 11
+[19-Apr-2022 16:20:17 UTC] PHP Fatal error:  Uncaught TypeError: Illegal offset type in /home/hvfszwpsg6re/public_html/feeder/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 14
+[19-Apr-2022 16:20:20 UTC] PHP Fatal error:  Uncaught TypeError: Illegal offset type in /home/hvfszwpsg6re/public_html/feeder/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 14
+[19-Apr-2022 16:20:33 UTC] PHP Fatal error:  Uncaught TypeError: Illegal offset type in /home/hvfszwpsg6re/public_html/feeder/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 14
+[19-Apr-2022 16:20:37 UTC] PHP Fatal error:  Uncaught TypeError: Illegal offset type in /home/hvfszwpsg6re/public_html/feeder/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 14
+[19-Apr-2022 17:08:32 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "paths" in /home/hvfszwpsg6re/public_html/feeder/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 25
+[19-Apr-2022 17:08:36 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "paths" in /home/hvfszwpsg6re/public_html/feeder/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 25
+[19-Apr-2022 17:08:38 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "paths" in /home/hvfszwpsg6re/public_html/feeder/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 25
+[19-Apr-2022 17:11:40 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "paths" in /home/hvfszwpsg6re/public_html/feeder/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 25
+[19-Apr-2022 17:12:01 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "paths" in /home/hvfszwpsg6re/public_html/feeder/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 25
+[19-Apr-2022 17:15:24 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "paths" in /home/hvfszwpsg6re/public_html/feeder/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 25
+[19-Apr-2022 17:15:26 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "paths" in /home/hvfszwpsg6re/public_html/feeder/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 25
+[19-Apr-2022 17:15:44 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "paths" in /home/hvfszwpsg6re/public_html/feeder/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 26
+[19-Apr-2022 17:15:46 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "paths" in /home/hvfszwpsg6re/public_html/feeder/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 26
+[19-Apr-2022 17:16:36 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "paths" in /home/hvfszwpsg6re/public_html/feeder/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 26
+[19-Apr-2022 17:16:40 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "paths" in /home/hvfszwpsg6re/public_html/feeder/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 26
+[19-Apr-2022 17:16:50 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "paths" in /home/hvfszwpsg6re/public_html/feeder/index.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 26
+[19-Apr-2022 17:19:06 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "paths" in /home/hvfszwpsg6re/public_html/feeder/index.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 27
+[19-Apr-2022 17:21:47 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "paths" in /home/hvfszwpsg6re/public_html/feeder/index.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 27
+[19-Apr-2022 17:23:54 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "paths" in /home/hvfszwpsg6re/public_html/feeder/index.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 27
+[19-Apr-2022 17:26:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getArticleById() in /home/hvfszwpsg6re/public_html/feeder/index.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 38
+[19-Apr-2022 17:27:02 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "id" in /home/hvfszwpsg6re/public_html/feeder/index.php:9
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(38): getArticleById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 9
+[19-Apr-2022 17:28:49 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "id" in /home/hvfszwpsg6re/public_html/feeder/index.php:9
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(38): getArticleById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 9
+[19-Apr-2022 17:28:54 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "id" in /home/hvfszwpsg6re/public_html/feeder/index.php:9
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(38): getArticleById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 9
+[19-Apr-2022 17:31:19 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "id" in /home/hvfszwpsg6re/public_html/feeder/index.php:9
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(40): getArticleById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 9
+[19-Apr-2022 17:32:19 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "id" in /home/hvfszwpsg6re/public_html/feeder/index.php:12
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(43): getArticleById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 12
+[19-Apr-2022 17:32:50 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "id" in /home/hvfszwpsg6re/public_html/feeder/index.php:13
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(44): getArticleById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 13
+[19-Apr-2022 17:33:35 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "id" in /home/hvfszwpsg6re/public_html/feeder/index.php:14
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(45): getArticleById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 14
+[19-Apr-2022 17:34:35 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "id" in /home/hvfszwpsg6re/public_html/feeder/index.php:13
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(44): getArticleById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 13
+[19-Apr-2022 17:35:04 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "id" in /home/hvfszwpsg6re/public_html/feeder/index.php:13
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(44): getArticleById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 13
+[19-Apr-2022 17:35:29 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "id" in /home/hvfszwpsg6re/public_html/feeder/index.php:13
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(44): getArticleById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 13
+[19-Apr-2022 17:36:18 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "id" in /home/hvfszwpsg6re/public_html/feeder/index.php:13
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(44): getArticleById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 13
+[19-Apr-2022 17:36:29 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "id" in /home/hvfszwpsg6re/public_html/feeder/index.php:15
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(44): getArticleById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 15
+[19-Apr-2022 18:22:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getItemsByQuery() in /home/hvfszwpsg6re/public_html/feeder/index.php:79
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 79
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:26 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:46 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/index.php on line 74
+[19-Apr-2022 18:24:46 UTC] PHP Warning:  Undefined array key "" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:46 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:24:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function push() in /home/hvfszwpsg6re/public_html/feeder/index.php:40
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(82): getItemsByQuery()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:25:17 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/index.php on line 74
+[19-Apr-2022 18:25:17 UTC] PHP Warning:  Undefined array key "" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:25:17 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:25:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function push() in /home/hvfszwpsg6re/public_html/feeder/index.php:40
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(82): getItemsByQuery()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 18:29:12 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/index.php on line 66
+[19-Apr-2022 18:31:02 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/index.php on line 69
+[19-Apr-2022 18:32:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function push() in /home/hvfszwpsg6re/public_html/feeder/index.php:31
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(77): getItemsByQuery()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 31
+[19-Apr-2022 18:34:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function push() in /home/hvfszwpsg6re/public_html/feeder/index.php:31
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(77): getItemsByQuery()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 31
+[19-Apr-2022 18:36:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function push() in /home/hvfszwpsg6re/public_html/feeder/index.php:31
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(77): getItemsByQuery()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 31
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined variable $keyValue in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined array key "" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined variable $keyValue in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined variable $keyValue in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined array key "" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined variable $keyValue in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined variable $keyValue in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined array key "" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined variable $keyValue in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined variable $keyValue in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined array key "" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined variable $keyValue in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined variable $keyValue in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined array key "" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined variable $keyValue in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined variable $keyValue in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined array key "" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined variable $keyValue in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined variable $keyValue in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined array key "" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined variable $keyValue in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined variable $keyValue in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined array key "" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined variable $keyValue in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined variable $keyValue in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined array key "" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Undefined variable $keyValue in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 18:57:21 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/index.php on line 34
+[19-Apr-2022 19:03:17 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/hvfszwpsg6re/public_html/feeder/index.php:12
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(72): getItemeById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 12
+[19-Apr-2022 19:03:17 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/hvfszwpsg6re/public_html/feeder/index.php:12
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(72): getItemeById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 12
+[19-Apr-2022 19:03:29 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/hvfszwpsg6re/public_html/feeder/index.php:12
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(72): getItemeById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 12
+[19-Apr-2022 19:03:29 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/hvfszwpsg6re/public_html/feeder/index.php:12
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(72): getItemeById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 12
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:42 UTC] PHP Warning:  Undefined array key "category_id" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 35
+[19-Apr-2022 19:28:59 UTC] PHP Warning:  Undefined array key "categoryId" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 39
+[19-Apr-2022 19:30:55 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 19:31:03 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 40
+[19-Apr-2022 19:33:22 UTC] PHP Warning:  Undefined array key "%22https:" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 71
+[19-Apr-2022 19:33:34 UTC] PHP Warning:  Undefined array key "%22https:" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 71
+[19-Apr-2022 19:33:55 UTC] PHP Warning:  Undefined array key "%22https:" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 71
+[19-Apr-2022 19:37:05 UTC] PHP Warning:  Undefined array key "%22https:" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 71
+[19-Apr-2022 19:41:31 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "key" in /home/hvfszwpsg6re/public_html/feeder/index.php:31
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(56): updateKeyForBoolean()
+#1 /home/hvfszwpsg6re/public_html/feeder/index.php(68): getSubquerycondition()
+#2 /home/hvfszwpsg6re/public_html/feeder/index.php(114): getItemsByQuery()
+#3 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 31
+[19-Apr-2022 19:42:17 UTC] PHP Warning:  Undefined array key "%22https:" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 87
+[19-Apr-2022 19:44:02 UTC] PHP Warning:  Undefined array key "%22https:" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 87
+[19-Apr-2022 19:46:42 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/hvfszwpsg6re/public_html/feeder/index.php:12
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(94): getItemeById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 12
+[19-Apr-2022 19:46:42 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/hvfszwpsg6re/public_html/feeder/index.php:12
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(94): getItemeById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 12
+[19-Apr-2022 19:47:03 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/hvfszwpsg6re/public_html/feeder/index.php:12
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(94): getItemeById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 12
+[19-Apr-2022 19:47:03 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/hvfszwpsg6re/public_html/feeder/index.php:12
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(94): getItemeById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 12
+[19-Apr-2022 19:47:19 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/hvfszwpsg6re/public_html/feeder/index.php:12
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(94): getItemeById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 12
+[19-Apr-2022 19:47:34 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/hvfszwpsg6re/public_html/feeder/index.php:12
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(94): getItemeById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 12
+[19-Apr-2022 19:47:34 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/hvfszwpsg6re/public_html/feeder/index.php:12
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(94): getItemeById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 12
+[19-Apr-2022 19:54:18 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/hvfszwpsg6re/public_html/feeder/index.php:12
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(94): getItemeById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 12
+[19-Apr-2022 19:54:19 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/hvfszwpsg6re/public_html/feeder/index.php:12
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(94): getItemeById()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 12
+[19-Apr-2022 20:07:24 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 90
+[19-Apr-2022 20:13:02 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 109
+[19-Apr-2022 20:16:45 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 92
+[19-Apr-2022 20:16:47 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 92
+[19-Apr-2022 20:16:53 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 92
+[19-Apr-2022 20:18:32 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 92
+[19-Apr-2022 20:21:04 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 92
+[19-Apr-2022 20:24:10 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 88
+[19-Apr-2022 20:24:15 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 88
+[19-Apr-2022 20:28:47 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 89
+[19-Apr-2022 20:39:11 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 89
+[19-Apr-2022 20:49:18 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 99
+[19-Apr-2022 20:49:24 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 99
+[19-Apr-2022 20:51:31 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 93
+[19-Apr-2022 21:00:40 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 93
+[19-Apr-2022 21:00:46 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 93
+[19-Apr-2022 21:11:22 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 90
+[19-Apr-2022 21:15:52 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 90
+[19-Apr-2022 21:34:26 UTC] PHP Warning:  Undefined array key "" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 90
+[19-Apr-2022 21:34:27 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 90
+[19-Apr-2022 21:36:49 UTC] PHP Parse error:  Unmatched '}' in /home/hvfszwpsg6re/public_html/feeder/index.php on line 138
+[19-Apr-2022 21:38:24 UTC] PHP Parse error:  Unmatched '}' in /home/hvfszwpsg6re/public_html/feeder/index.php on line 142
+[19-Apr-2022 21:38:53 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 92
+[19-Apr-2022 21:38:56 UTC] PHP Warning:  Undefined array key "" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 92
+[19-Apr-2022 21:38:57 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 92
+[19-Apr-2022 21:40:46 UTC] PHP Warning:  Undefined array key "" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 94
+[19-Apr-2022 21:40:47 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 94
+[19-Apr-2022 21:42:02 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in /home/hvfszwpsg6re/public_html/feeder/index.php:83
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 83
+[19-Apr-2022 21:42:02 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in /home/hvfszwpsg6re/public_html/feeder/index.php:83
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/index.php on line 83
+[19-Apr-2022 21:42:37 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 94
+[19-Apr-2022 21:43:02 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 94
+[19-Apr-2022 21:43:07 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 94
+[19-Apr-2022 21:43:47 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 92
+[19-Apr-2022 21:44:23 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 92
+[19-Apr-2022 22:13:11 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 92
+[19-Apr-2022 22:36:11 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 93
+[19-Apr-2022 23:00:36 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 93
+[19-Apr-2022 23:00:42 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 93
+[19-Apr-2022 23:00:54 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 93
+[19-Apr-2022 23:28:36 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 93
+[19-Apr-2022 23:36:29 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 93
+[19-Apr-2022 23:36:37 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 93
+[19-Apr-2022 23:38:28 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 93
+[20-Apr-2022 06:51:43 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 93
+[20-Apr-2022 07:07:00 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 93
+[20-Apr-2022 07:07:10 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/index.php on line 93
+[20-Apr-2022 07:09:44 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 07:09:44 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 07:09:44 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 07:09:44 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 07:09:44 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 07:09:44 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 07:09:44 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 07:09:44 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 07:09:44 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 07:09:44 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 07:09:44 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 07:09:44 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 07:09:44 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 07:09:44 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 07:09:44 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 07:09:44 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 07:09:44 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 07:09:44 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 07:42:15 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 72
+[20-Apr-2022 11:47:46 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 72
+[20-Apr-2022 12:07:32 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function addRecord(), 1 passed in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 26 and exactly 2 expected in /home/hvfszwpsg6re/public_html/feeder/setters.php:3
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/setters.php(26): addRecord()
+#1 /home/hvfszwpsg6re/public_html/feeder/index.php(18): processSetters()
+#2 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 3
+[20-Apr-2022 12:12:44 UTC] PHP Warning:  Array to string conversion in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 11
+[20-Apr-2022 12:12:44 UTC] PHP Warning:  Attempt to read property "Array" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 11
+[20-Apr-2022 12:14:30 UTC] PHP Warning:  Array to string conversion in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 11
+[20-Apr-2022 12:14:30 UTC] PHP Warning:  Attempt to read property "Array" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 11
+[20-Apr-2022 12:17:47 UTC] PHP Fatal error:  Uncaught TypeError: json_decode(): Argument #1 ($json) must be of type string, array given in /home/hvfszwpsg6re/public_html/feeder/setters.php:12
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/setters.php(12): json_decode()
+#1 /home/hvfszwpsg6re/public_html/feeder/setters.php(30): addRecord()
+#2 /home/hvfszwpsg6re/public_html/feeder/index.php(18): processSetters()
+#3 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 12
+[20-Apr-2022 12:23:43 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 12:23:43 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 12:23:43 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 12:23:43 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 12:23:43 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 12:23:43 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 12:23:43 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 12:23:43 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 12:24:06 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 12:24:06 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 12:24:06 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 12:24:06 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 12:24:06 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 12:24:06 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 12:24:06 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 12:24:06 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 40
+[20-Apr-2022 12:24:07 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 72
+[20-Apr-2022 12:24:11 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 72
+[20-Apr-2022 12:24:17 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 72
+[20-Apr-2022 12:25:14 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 72
+[20-Apr-2022 17:02:10 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 36
+[20-Apr-2022 17:02:10 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 36
+[20-Apr-2022 17:02:10 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 36
+[20-Apr-2022 17:02:10 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 36
+[20-Apr-2022 17:02:10 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 36
+[20-Apr-2022 17:02:10 UTC] PHP Warning:  Undefined variable $sort_query in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 61
+[20-Apr-2022 17:02:10 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 36
+[20-Apr-2022 17:02:10 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 36
+[20-Apr-2022 17:02:10 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 36
+[20-Apr-2022 17:02:10 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 36
+[20-Apr-2022 17:02:10 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 36
+[20-Apr-2022 17:02:10 UTC] PHP Warning:  Undefined variable $sort_query in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 61
+[20-Apr-2022 17:02:10 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 82
+[20-Apr-2022 17:18:48 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:18:48 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:18:48 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:18:48 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:18:48 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:18:48 UTC] PHP Warning:  Undefined variable $sort_query in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 67
+[20-Apr-2022 17:18:48 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:18:48 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:18:48 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:18:48 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:18:48 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:18:48 UTC] PHP Warning:  Undefined variable $sort_query in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 67
+[20-Apr-2022 17:18:48 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 89
+[20-Apr-2022 17:24:30 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:24:30 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:24:30 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:24:30 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:24:30 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:24:30 UTC] PHP Warning:  Undefined variable $sort_query in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 67
+[20-Apr-2022 17:24:30 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:24:30 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:24:30 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:24:30 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:24:30 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:24:30 UTC] PHP Warning:  Undefined variable $sort_query in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 67
+[20-Apr-2022 17:24:30 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 89
+[20-Apr-2022 17:24:37 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:24:37 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:24:37 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:24:37 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:24:37 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:24:37 UTC] PHP Warning:  Undefined variable $sort_query in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 67
+[20-Apr-2022 17:24:37 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:24:37 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:24:37 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:24:37 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:24:37 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:24:37 UTC] PHP Warning:  Undefined variable $sort_query in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 67
+[20-Apr-2022 17:24:37 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 89
+[20-Apr-2022 17:25:27 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:25:27 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:25:27 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:25:27 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:25:27 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:25:27 UTC] PHP Warning:  Undefined variable $sort_query in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 67
+[20-Apr-2022 17:25:27 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:25:27 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:25:27 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:25:27 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:25:27 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:25:27 UTC] PHP Warning:  Undefined variable $sort_query in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 67
+[20-Apr-2022 17:25:27 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 89
+[20-Apr-2022 17:28:24 UTC] PHP Parse error:  Unclosed '{' on line 26 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 141
+[20-Apr-2022 17:28:24 UTC] PHP Parse error:  Unclosed '{' on line 26 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 141
+[20-Apr-2022 17:29:42 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:29:42 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:29:42 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:29:42 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:29:42 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:29:42 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:29:42 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:29:42 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:29:42 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:29:42 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 34
+[20-Apr-2022 17:29:43 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 88
+[20-Apr-2022 17:33:39 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 35
+[20-Apr-2022 17:33:39 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 35
+[20-Apr-2022 17:33:39 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 35
+[20-Apr-2022 17:33:39 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 35
+[20-Apr-2022 17:33:39 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 35
+[20-Apr-2022 17:33:39 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 35
+[20-Apr-2022 17:33:39 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 35
+[20-Apr-2022 17:33:39 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 35
+[20-Apr-2022 17:33:39 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 35
+[20-Apr-2022 17:33:39 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 35
+[20-Apr-2022 17:33:40 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 89
+[20-Apr-2022 17:34:31 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 35
+[20-Apr-2022 17:34:31 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 35
+[20-Apr-2022 17:34:31 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 35
+[20-Apr-2022 17:34:31 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 35
+[20-Apr-2022 17:34:31 UTC] PHP Warning:  Undefined array key "_sort" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 35
+[20-Apr-2022 17:34:31 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 35
+[20-Apr-2022 17:34:31 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 35
+[20-Apr-2022 17:34:31 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 35
+[20-Apr-2022 17:34:31 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 35
+[20-Apr-2022 17:34:31 UTC] PHP Warning:  Undefined array key "_order" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 35
+[20-Apr-2022 17:34:32 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 89
+[20-Apr-2022 17:35:49 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 89
+[20-Apr-2022 17:37:47 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/hvfszwpsg6re/public_html/feeder/getters.php:52
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/getters.php(68): getItemsBySortQuery()
+#1 /home/hvfszwpsg6re/public_html/feeder/getters.php(121): getItemsByQuery()
+#2 /home/hvfszwpsg6re/public_html/feeder/index.php(14): processGetters()
+#3 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 52
+[20-Apr-2022 17:37:47 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 88
+[20-Apr-2022 17:38:15 UTC] PHP Fatal error:  Uncaught TypeError: Only arrays and Traversables can be unpacked in /home/hvfszwpsg6re/public_html/feeder/getters.php:117
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/index.php(14): processGetters()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 117
+[20-Apr-2022 17:38:15 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 88
+[20-Apr-2022 17:39:30 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 89
+[20-Apr-2022 18:06:18 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 89
+[20-Apr-2022 19:38:49 UTC] PHP Fatal error:  Uncaught TypeError: explode(): Argument #2 ($string) must be of type string, array given in /home/hvfszwpsg6re/public_html/feeder/getters.php:60
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/getters.php(60): explode()
+#1 /home/hvfszwpsg6re/public_html/feeder/getters.php(174): sortItemsByQuery()
+#2 /home/hvfszwpsg6re/public_html/feeder/index.php(14): processGetters()
+#3 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 60
+[20-Apr-2022 19:38:50 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 119
+[20-Apr-2022 19:40:49 UTC] PHP Warning:  Undefined variable $item in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 66
+[20-Apr-2022 19:40:49 UTC] PHP Deprecated:  str_contains(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 66
+[20-Apr-2022 19:40:50 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 119
+[20-Apr-2022 19:41:15 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 119
+[20-Apr-2022 19:42:04 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 119
+[20-Apr-2022 19:42:27 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 119
+[20-Apr-2022 19:43:53 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 119
+[20-Apr-2022 19:44:12 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 119
+[20-Apr-2022 19:44:24 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 119
+[20-Apr-2022 19:47:13 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 119
+[20-Apr-2022 19:47:24 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 119
+[20-Apr-2022 19:48:03 UTC] PHP Fatal error:  Uncaught ValueError: Array sizes are inconsistent in /home/hvfszwpsg6re/public_html/feeder/getters.php:80
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/getters.php(80): array_multisort()
+#1 /home/hvfszwpsg6re/public_html/feeder/getters.php(173): sortItemsByQuery()
+#2 /home/hvfszwpsg6re/public_html/feeder/index.php(14): processGetters()
+#3 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 80
+[20-Apr-2022 19:48:03 UTC] PHP Fatal error:  Uncaught ValueError: Array sizes are inconsistent in /home/hvfszwpsg6re/public_html/feeder/getters.php:80
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/getters.php(80): array_multisort()
+#1 /home/hvfszwpsg6re/public_html/feeder/getters.php(173): sortItemsByQuery()
+#2 /home/hvfszwpsg6re/public_html/feeder/index.php(14): processGetters()
+#3 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 80
+[20-Apr-2022 19:52:10 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/hvfszwpsg6re/public_html/feeder/getters.php:44
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/getters.php(149): isSortQuery()
+#1 /home/hvfszwpsg6re/public_html/feeder/index.php(14): processGetters()
+#2 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:52:11 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 123
+[20-Apr-2022 19:53:14 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 123
+[20-Apr-2022 19:53:54 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 123
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Warning:  Undefined array key 1 in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 44
+[20-Apr-2022 19:54:37 UTC] PHP Fatal error:  Uncaught ValueError: Array sizes are inconsistent in /home/hvfszwpsg6re/public_html/feeder/getters.php:84
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/getters.php(84): array_multisort()
+#1 /home/hvfszwpsg6re/public_html/feeder/getters.php(177): sortItemsByQuery()
+#2 /home/hvfszwpsg6re/public_html/feeder/index.php(14): processGetters()
+#3 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 84
+[20-Apr-2022 19:54:38 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 123
+[20-Apr-2022 19:57:59 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 125
+[20-Apr-2022 20:01:39 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 122
+[20-Apr-2022 20:01:44 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 122
+[20-Apr-2022 20:11:52 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[20-Apr-2022 20:12:16 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[20-Apr-2022 20:12:26 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[20-Apr-2022 20:12:46 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[20-Apr-2022 21:00:18 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "SODIUM_CRYPTO_SECRETBOX_NONCEBYTES" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php:14
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/backupdata.php(63): safeEncrypt()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 14
+[20-Apr-2022 21:02:37 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[20-Apr-2022 21:05:26 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "SODIUM_CRYPTO_SECRETBOX_NONCEBYTES" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php:14
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/getters.php(120): safeEncrypt()
+#1 /home/hvfszwpsg6re/public_html/feeder/index.php(16): processGetters()
+#2 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 14
+[20-Apr-2022 21:05:27 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 140
+[20-Apr-2022 21:21:29 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 140
+[20-Apr-2022 21:22:21 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 140
+[20-Apr-2022 21:35:35 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 140
+[20-Apr-2022 21:38:23 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 140
+[20-Apr-2022 21:41:55 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 140
+[20-Apr-2022 21:43:02 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 132
+[20-Apr-2022 21:43:19 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 132
+[20-Apr-2022 22:27:24 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "," or ";" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 73
+[21-Apr-2022 15:20:53 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[21-Apr-2022 15:20:53 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[21-Apr-2022 19:14:16 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in /home/hvfszwpsg6re/public_html/feeder/backupdata.php:48
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/backupdata.php(112): sendMail()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 48
+[21-Apr-2022 19:20:41 UTC] PHP Parse error:  syntax error, unexpected variable "$file_size" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 48
+[21-Apr-2022 19:21:24 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in /home/hvfszwpsg6re/public_html/feeder/backupdata.php:48
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/backupdata.php(115): sendMail()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 48
+[21-Apr-2022 19:23:22 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in /home/hvfszwpsg6re/public_html/feeder/backupdata.php:48
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/backupdata.php(115): sendMail()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 48
+[21-Apr-2022 19:24:46 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in /home/hvfszwpsg6re/public_html/feeder/backupdata.php:48
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/backupdata.php(115): sendMail()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 48
+[21-Apr-2022 19:27:30 UTC] PHP Fatal error:  Uncaught ValueError: count(): Argument #2 ($mode) must be either COUNT_NORMAL or COUNT_RECURSIVE in /home/hvfszwpsg6re/public_html/feeder/backupdata.php:72
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/backupdata.php(72): count()
+#1 /home/hvfszwpsg6re/public_html/feeder/backupdata.php(115): sendMail()
+#2 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 72
+[21-Apr-2022 19:28:44 UTC] PHP Warning:  Undefined variable $replyto in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 78
+[21-Apr-2022 19:28:44 UTC] PHP Warning:  Undefined variable $subject in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 101
+[22-Apr-2022 14:15:17 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "paths" in /home/hvfszwpsg6re/public_html/feeder/setters.php:28
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/setters.php(66): updateRecord()
+#1 /home/hvfszwpsg6re/public_html/feeder/index.php(20): processSetters()
+#2 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 28
+[22-Apr-2022 14:16:32 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "paths" in /home/hvfszwpsg6re/public_html/feeder/setters.php:28
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/setters.php(66): updateRecord()
+#1 /home/hvfszwpsg6re/public_html/feeder/index.php(20): processSetters()
+#2 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 28
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 14:17:11 UTC] PHP Warning:  Attempt to read property "id" on array in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 34
+[22-Apr-2022 18:01:46 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[22-Apr-2022 18:01:46 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[22-Apr-2022 19:32:29 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[22-Apr-2022 22:30:00 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[24-Apr-2022 14:34:45 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[24-Apr-2022 14:34:45 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 07:14:53 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 07:15:10 UTC] PHP Warning:  Undefined array key "databackup.php" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 07:15:10 UTC] PHP Warning:  Undefined array key "databackup.php" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 146
+[25-Apr-2022 07:15:10 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 100
+[25-Apr-2022 07:15:10 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 07:15:41 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 07:16:37 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 07:16:45 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 07:16:53 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 07:18:09 UTC] PHP Fatal error:  Uncaught ArgumentCountError: explode() expects at least 2 arguments, 1 given in /home/hvfszwpsg6re/public_html/feeder/backupdata.php:253
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/backupdata.php(253): explode()
+#1 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 253
+[25-Apr-2022 07:20:31 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 07:21:09 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 07:26:38 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 07:36:17 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 07:38:12 UTC] PHP Warning:  Undefined variable $encrypted in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 257
+[25-Apr-2022 07:38:13 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 07:39:05 UTC] PHP Warning:  Undefined variable $encrypted in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 257
+[25-Apr-2022 07:39:05 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 07:39:17 UTC] PHP Warning:  Undefined variable $encrypted in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 257
+[25-Apr-2022 07:39:18 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 07:39:25 UTC] PHP Warning:  Undefined variable $encrypted in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 257
+[25-Apr-2022 07:39:25 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 07:39:32 UTC] PHP Warning:  Undefined variable $encrypted in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 257
+[25-Apr-2022 07:39:33 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 08:36:44 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 09:31:36 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 09:33:57 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 09:35:39 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 09:36:08 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 09:37:08 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 09:37:25 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 09:37:59 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 09:38:43 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 09:39:44 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 09:40:36 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 09:42:04 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 09:50:27 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 09:51:46 UTC] PHP Warning:  openssl_encrypt(): IV passed is 16 bytes long which is longer than the 0 expected by selected cipher, truncating in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 275
+[25-Apr-2022 09:51:46 UTC] PHP Warning:  openssl_decrypt(): IV passed is 16 bytes long which is longer than the 0 expected by selected cipher, truncating in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 297
+[25-Apr-2022 09:51:46 UTC] PHP Warning:  openssl_encrypt(): IV passed is 16 bytes long which is longer than the 0 expected by selected cipher, truncating in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 275
+[25-Apr-2022 09:51:47 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 09:53:25 UTC] PHP Warning:  openssl_encrypt(): IV passed is 32 bytes long which is longer than the 0 expected by selected cipher, truncating in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 275
+[25-Apr-2022 09:53:25 UTC] PHP Warning:  openssl_decrypt(): IV passed is 32 bytes long which is longer than the 0 expected by selected cipher, truncating in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 297
+[25-Apr-2022 09:53:25 UTC] PHP Warning:  openssl_encrypt(): IV passed is 32 bytes long which is longer than the 0 expected by selected cipher, truncating in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 275
+[25-Apr-2022 09:53:26 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 10:06:17 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 10:09:19 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 10:10:54 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 10:11:37 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[25-Apr-2022 23:52:13 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[26-Apr-2022 13:16:37 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[26-Apr-2022 13:16:37 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[26-Apr-2022 20:19:07 UTC] PHP Warning:  openssl_encrypt(): IV passed is 12 bytes long which is longer than the 0 expected by selected cipher, truncating in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 277
+[26-Apr-2022 20:19:07 UTC] PHP Warning:  openssl_decrypt(): IV passed is 12 bytes long which is longer than the 0 expected by selected cipher, truncating in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 303
+[26-Apr-2022 20:19:07 UTC] PHP Warning:  openssl_encrypt(): IV passed is 12 bytes long which is longer than the 0 expected by selected cipher, truncating in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 277
+[26-Apr-2022 21:16:17 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 284
+[26-Apr-2022 21:16:17 UTC] PHP Deprecated:  hex2bin(): Passing null to parameter #1 ($string) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 284
+[26-Apr-2022 21:16:17 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 285
+[26-Apr-2022 21:16:17 UTC] PHP Deprecated:  hex2bin(): Passing null to parameter #1 ($string) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 285
+[26-Apr-2022 21:16:17 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 286
+[26-Apr-2022 21:16:17 UTC] PHP Deprecated:  base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 286
+[26-Apr-2022 21:35:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function aes_decrypt() in /home/hvfszwpsg6re/public_html/feeder/backupdata.php:314
+Stack trace:
+#0 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 314
+[26-Apr-2022 21:36:14 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 283
+[26-Apr-2022 21:36:14 UTC] PHP Deprecated:  hex2bin(): Passing null to parameter #1 ($string) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 283
+[26-Apr-2022 21:36:14 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 284
+[26-Apr-2022 21:36:14 UTC] PHP Deprecated:  base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 284
+[26-Apr-2022 21:36:14 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 285
+[26-Apr-2022 21:36:14 UTC] PHP Deprecated:  hex2bin(): Passing null to parameter #1 ($string) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 285
+[26-Apr-2022 21:51:42 UTC] PHP Warning:  Undefined variable $msg in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 284
+[26-Apr-2022 21:51:42 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 284
+[26-Apr-2022 21:51:42 UTC] PHP Warning:  openssl_encrypt(): Using an empty Initialization Vector (iv) is potentially insecure and not recommended in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 284
+[26-Apr-2022 21:52:35 UTC] PHP Warning:  openssl_encrypt(): Using an empty Initialization Vector (iv) is potentially insecure and not recommended in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 284
+[26-Apr-2022 21:53:12 UTC] PHP Warning:  openssl_encrypt(): IV passed is 32 bytes long which is longer than the 16 expected by selected cipher, truncating in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 284
+[26-Apr-2022 21:56:22 UTC] PHP Warning:  openssl_encrypt(): Using an empty Initialization Vector (iv) is potentially insecure and not recommended in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 284
+[26-Apr-2022 22:02:33 UTC] PHP Parse error:  syntax error, unexpected variable "$dec" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 308
+[26-Apr-2022 22:02:37 UTC] PHP Parse error:  syntax error, unexpected variable "$dec" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 308
+[26-Apr-2022 22:03:02 UTC] PHP Warning:  Undefined variable $passphrased in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 285
+[26-Apr-2022 22:03:02 UTC] PHP Deprecated:  hex2bin(): Passing null to parameter #1 ($string) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 285
+[26-Apr-2022 22:03:02 UTC] PHP Warning:  Undefined variable $passphrased in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 288
+[26-Apr-2022 22:03:02 UTC] PHP Deprecated:  openssl_encrypt(): Passing null to parameter #3 ($passphrase) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 288
+[26-Apr-2022 22:03:43 UTC] PHP Warning:  hex2bin(): Input string must be hexadecimal string in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 285
+[26-Apr-2022 22:04:23 UTC] PHP Warning:  openssl_encrypt(): IV passed is 32 bytes long which is longer than the 16 expected by selected cipher, truncating in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 288
+[26-Apr-2022 22:07:47 UTC] PHP Warning:  openssl_encrypt(): IV passed is only 12 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0 in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 288
+[26-Apr-2022 22:08:30 UTC] PHP Warning:  openssl_encrypt(): IV passed is only 12 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0 in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 288
+[26-Apr-2022 22:09:38 UTC] PHP Warning:  openssl_encrypt(): IV passed is only 12 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0 in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 288
+[26-Apr-2022 22:10:36 UTC] PHP Warning:  openssl_decrypt(): IV passed is only 12 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0 in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 288
+[26-Apr-2022 22:12:10 UTC] PHP Warning:  openssl_decrypt(): IV passed is 32 bytes long which is longer than the 16 expected by selected cipher, truncating in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 288
+[28-Apr-2022 18:03:29 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[28-Apr-2022 21:50:52 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[29-Apr-2022 14:14:12 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[29-Apr-2022 14:14:12 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[30-Apr-2022 16:34:58 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[30-Apr-2022 16:35:09 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[01-May-2022 07:00:01 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[01-May-2022 07:00:01 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[01-May-2022 07:27:00 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[08-May-2022 07:00:01 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[08-May-2022 07:00:01 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[08-May-2022 14:12:39 UTC] PHP Warning:  Undefined variable $encryptedText in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 188
+[08-May-2022 14:12:39 UTC] PHP Deprecated:  openssl_encrypt(): Passing null to parameter #1 ($data) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/crypto.php on line 13
+[08-May-2022 14:12:39 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 127
+[08-May-2022 14:12:39 UTC] PHP Warning:  Undefined variable $encryptedText in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 188
+[08-May-2022 14:12:39 UTC] PHP Deprecated:  openssl_encrypt(): Passing null to parameter #1 ($data) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/crypto.php on line 13
+[08-May-2022 14:13:30 UTC] PHP Fatal error:  Uncaught TypeError: openssl_encrypt(): Argument #1 ($data) must be of type string, array given in /home/hvfszwpsg6re/public_html/feeder/crypto.php:13
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/crypto.php(13): openssl_encrypt()
+#1 /home/hvfszwpsg6re/public_html/feeder/getters.php(188): CryptoJSAesEncrypt()
+#2 /home/hvfszwpsg6re/public_html/feeder/index.php(16): processGetters()
+#3 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/crypto.php on line 13
+[08-May-2022 14:13:30 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 127
+[08-May-2022 14:13:30 UTC] PHP Deprecated:  openssl_encrypt(): Passing null to parameter #1 ($data) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/crypto.php on line 13
+[08-May-2022 14:14:22 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 127
+[08-May-2022 14:17:07 UTC] PHP Fatal error:  Uncaught TypeError: base64_encode(): Argument #1 ($string) must be of type string, array given in /home/hvfszwpsg6re/public_html/feeder/getters.php:188
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/getters.php(188): base64_encode()
+#1 /home/hvfszwpsg6re/public_html/feeder/index.php(16): processGetters()
+#2 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 188
+[08-May-2022 14:17:07 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 127
+[08-May-2022 14:17:07 UTC] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 188
+[08-May-2022 14:17:39 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 127
+[08-May-2022 19:14:06 UTC] PHP Fatal error:  Uncaught ValueError: Array sizes are inconsistent in /home/hvfszwpsg6re/public_html/feeder/getters.php:92
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/getters.php(92): array_multisort()
+#1 /home/hvfszwpsg6re/public_html/feeder/getters.php(180): sortItemsByQuery()
+#2 /home/hvfszwpsg6re/public_html/feeder/index.php(16): processGetters()
+#3 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 92
+[08-May-2022 19:35:19 UTC] PHP Fatal error:  Cannot redeclare CryptoJSAesEncrypt() (previously declared in /home/hvfszwpsg6re/public_html/feeder/crypto.php:3) in /home/hvfszwpsg6re/public_html/feeder/crypto.php on line 3
+[08-May-2022 19:35:19 UTC] PHP Fatal error:  Cannot redeclare CryptoJSAesEncrypt() (previously declared in /home/hvfszwpsg6re/public_html/feeder/crypto.php:3) in /home/hvfszwpsg6re/public_html/feeder/crypto.php on line 3
+[08-May-2022 19:37:04 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/hvfszwpsg6re/public_html/feeder/setters.php:56
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/setters.php(71): decodedPayloadData()
+#1 /home/hvfszwpsg6re/public_html/feeder/index.php(21): processSetters()
+#2 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 56
+[08-May-2022 19:37:05 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/hvfszwpsg6re/public_html/feeder/setters.php:56
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/setters.php(71): decodedPayloadData()
+#1 /home/hvfszwpsg6re/public_html/feeder/index.php(21): processSetters()
+#2 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 56
+[08-May-2022 19:39:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 56
+[08-May-2022 19:39:47 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/hvfszwpsg6re/public_html/feeder/setters.php:56
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/setters.php(71): decodedPayloadData()
+#1 /home/hvfszwpsg6re/public_html/feeder/index.php(21): processSetters()
+#2 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 56
+[08-May-2022 19:42:30 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/hvfszwpsg6re/public_html/feeder/setters.php:57
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/setters.php(72): decodedPayloadData()
+#1 /home/hvfszwpsg6re/public_html/feeder/index.php(21): processSetters()
+#2 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 57
+[08-May-2022 19:42:30 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/hvfszwpsg6re/public_html/feeder/setters.php:57
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/setters.php(72): decodedPayloadData()
+#1 /home/hvfszwpsg6re/public_html/feeder/index.php(21): processSetters()
+#2 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 57
+[08-May-2022 19:43:21 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/hvfszwpsg6re/public_html/feeder/setters.php:54
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/setters.php(72): decodedPayloadData()
+#1 /home/hvfszwpsg6re/public_html/feeder/index.php(21): processSetters()
+#2 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 54
+[08-May-2022 19:43:21 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/hvfszwpsg6re/public_html/feeder/setters.php:54
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/setters.php(72): decodedPayloadData()
+#1 /home/hvfszwpsg6re/public_html/feeder/index.php(21): processSetters()
+#2 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 54
+[08-May-2022 19:44:49 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/hvfszwpsg6re/public_html/feeder/setters.php:57
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/setters.php(72): decodedPayloadData()
+#1 /home/hvfszwpsg6re/public_html/feeder/index.php(21): processSetters()
+#2 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 57
+[08-May-2022 19:44:49 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/hvfszwpsg6re/public_html/feeder/setters.php:57
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/setters.php(72): decodedPayloadData()
+#1 /home/hvfszwpsg6re/public_html/feeder/index.php(21): processSetters()
+#2 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 57
+[08-May-2022 19:46:05 UTC] PHP Parse error:  syntax error, unexpected token "=>", expecting ")" in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 54
+[08-May-2022 19:46:05 UTC] PHP Parse error:  syntax error, unexpected token "=>", expecting ")" in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 54
+[08-May-2022 19:47:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 58
+[08-May-2022 19:47:35 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/hvfszwpsg6re/public_html/feeder/setters.php:58
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/setters.php(73): decodedPayloadData()
+#1 /home/hvfszwpsg6re/public_html/feeder/index.php(21): processSetters()
+#2 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 58
+[08-May-2022 19:48:20 UTC] PHP Parse error:  syntax error, unexpected token "=>", expecting ")" in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 55
+[08-May-2022 19:48:20 UTC] PHP Parse error:  syntax error, unexpected token "=>", expecting ")" in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 55
+[08-May-2022 19:49:00 UTC] PHP Warning:  Attempt to read property "ezjData" on null in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 55
+[08-May-2022 19:49:00 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 58
+[08-May-2022 19:49:00 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/hvfszwpsg6re/public_html/feeder/setters.php:58
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/setters.php(73): decodedPayloadData()
+#1 /home/hvfszwpsg6re/public_html/feeder/index.php(21): processSetters()
+#2 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 58
+[08-May-2022 19:49:55 UTC] PHP Warning:  Attempt to read property "ezjData" on null in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 58
+[08-May-2022 19:50:54 UTC] PHP Warning:  Attempt to read property "ezjData" on null in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 58
+[08-May-2022 19:51:11 UTC] PHP Warning:  Attempt to read property "ezjData" on null in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 58
+[08-May-2022 19:54:04 UTC] PHP Warning:  Attempt to read property "ezjData" on null in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 60
+[08-May-2022 19:54:04 UTC] PHP Warning:  Undefined variable $passphase in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 92
+[08-May-2022 19:54:04 UTC] PHP Deprecated:  hash_pbkdf2(): Passing null to parameter #2 ($password) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/crypto.php on line 11
+[08-May-2022 19:54:04 UTC] PHP Warning:  Undefined variable $passphase in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 62
+[08-May-2022 19:54:04 UTC] PHP Deprecated:  hash_pbkdf2(): Passing null to parameter #2 ($password) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/crypto.php on line 32
+[08-May-2022 19:54:04 UTC] PHP Fatal error:  Uncaught Error: Attempt to assign property "id" on null in /home/hvfszwpsg6re/public_html/feeder/setters.php:6
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/setters.php(83): addRecord()
+#1 /home/hvfszwpsg6re/public_html/feeder/index.php(21): processSetters()
+#2 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 6
+[08-May-2022 19:54:48 UTC] PHP Warning:  Attempt to read property "ezjData" on null in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 61
+[08-May-2022 19:56:38 UTC] PHP Warning:  Attempt to read property "ezjData" on null in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 59
+[09-May-2022 02:46:49 UTC] PHP Fatal error:  Uncaught ValueError: Array sizes are inconsistent in /home/hvfszwpsg6re/public_html/feeder/getters.php:89
+Stack trace:
+#0 /home/hvfszwpsg6re/public_html/feeder/getters.php(89): array_multisort()
+#1 /home/hvfszwpsg6re/public_html/feeder/getters.php(177): sortItemsByQuery()
+#2 /home/hvfszwpsg6re/public_html/feeder/index.php(17): processGetters()
+#3 {main}
+  thrown in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 89
+[09-May-2022 02:54:41 UTC] PHP Warning:  Attempt to read property "ezjData" on null in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 59
+[09-May-2022 02:54:57 UTC] PHP Warning:  Attempt to read property "ezjData" on null in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 59
+[09-May-2022 02:57:26 UTC] PHP Warning:  Attempt to read property "ezjData" on null in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 59
+[09-May-2022 02:59:15 UTC] PHP Warning:  Attempt to read property "ezjData" on null in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 59
+[09-May-2022 03:00:19 UTC] PHP Warning:  Attempt to read property "ezjData" on null in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 59
+[09-May-2022 03:00:32 UTC] PHP Warning:  Attempt to read property "ezjData" on null in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 59
+[09-May-2022 03:02:21 UTC] PHP Warning:  Attempt to read property "ezjData" on null in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 59
+[09-May-2022 03:02:21 UTC] PHP Warning:  Attempt to read property "ezjData" on null in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 59
+[09-May-2022 03:25:37 UTC] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/setters.php on line 125
+[11-May-2022 16:04:01 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[11-May-2022 16:04:01 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[15-May-2022 07:00:01 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[15-May-2022 07:00:01 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[22-May-2022 07:00:01 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[22-May-2022 07:00:01 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[28-May-2022 06:50:16 UTC] PHP Warning:  Undefined array key "file" in /home/hvfszwpsg6re/public_html/feeder/decryptfile.php on line 3
+[28-May-2022 06:50:16 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/decryptfile.php on line 3
+[28-May-2022 06:50:16 UTC] PHP Warning:  Undefined array key "file" in /home/hvfszwpsg6re/public_html/feeder/decryptfile.php on line 4
+[28-May-2022 06:50:16 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/decryptfile.php on line 4
+[28-May-2022 06:50:17 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[28-May-2022 06:50:33 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[28-May-2022 06:51:34 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[28-May-2022 06:51:36 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[28-May-2022 06:53:30 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[28-May-2022 06:59:01 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[28-May-2022 06:59:15 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[28-May-2022 07:02:44 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[28-May-2022 11:39:35 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[28-May-2022 11:42:47 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[28-May-2022 11:46:02 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[28-May-2022 11:48:41 UTC] PHP Warning:  Undefined array key "file" in /home/hvfszwpsg6re/public_html/feeder/decryptfile.php on line 8
+[28-May-2022 11:48:41 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/decryptfile.php on line 8
+[28-May-2022 11:48:41 UTC] PHP Deprecated:  file_exists(): Passing null to parameter #1 ($filename) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/decryptfile.php on line 8
+[28-May-2022 11:48:41 UTC] PHP Warning:  Undefined array key "file" in /home/hvfszwpsg6re/public_html/feeder/decryptfile.php on line 9
+[28-May-2022 11:48:41 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hvfszwpsg6re/public_html/feeder/decryptfile.php on line 9
+[28-May-2022 11:48:41 UTC] PHP Deprecated:  is_uploaded_file(): Passing null to parameter #1 ($filename) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/decryptfile.php on line 9
+[28-May-2022 11:48:42 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[28-May-2022 11:49:44 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[28-May-2022 11:49:54 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[28-May-2022 11:51:22 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[28-May-2022 11:52:46 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[28-May-2022 11:57:18 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[28-May-2022 11:57:18 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[28-May-2022 12:08:59 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[28-May-2022 12:08:59 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[28-May-2022 12:15:05 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[28-May-2022 12:15:05 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[28-May-2022 12:26:17 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[28-May-2022 12:27:04 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[28-May-2022 12:27:04 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[28-May-2022 12:34:14 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[29-May-2022 07:00:01 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[29-May-2022 07:00:01 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[05-Jun-2022 07:00:02 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[05-Jun-2022 07:00:02 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[12-Jun-2022 07:00:01 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[12-Jun-2022 07:00:01 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[16-Jun-2022 20:36:56 UTC] PHP Warning:  Undefined array key "favicon.ico" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[19-Jun-2022 07:00:01 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[19-Jun-2022 07:00:01 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[26-Jun-2022 07:00:01 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[26-Jun-2022 07:00:01 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[03-Jul-2022 07:00:01 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[03-Jul-2022 07:00:01 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[10-Jul-2022 07:00:01 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[10-Jul-2022 07:00:01 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[17-Jul-2022 07:00:01 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[17-Jul-2022 07:00:01 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[24-Jul-2022 07:00:01 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[24-Jul-2022 07:00:01 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[31-Jul-2022 07:00:01 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[31-Jul-2022 07:00:01 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[07-Aug-2022 07:00:01 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[07-Aug-2022 07:00:01 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[14-Aug-2022 07:00:01 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[14-Aug-2022 07:00:01 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[21-Aug-2022 07:00:01 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[21-Aug-2022 07:00:01 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[28-Aug-2022 07:00:01 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[28-Aug-2022 07:00:01 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[29-Aug-2022 06:52:05 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[29-Aug-2022 06:52:05 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[30-Aug-2022 06:57:00 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[30-Aug-2022 06:57:00 UTC] PHP Warning:  Undefined array key "robots.txt" in /home/hvfszwpsg6re/public_html/feeder/getters.php on line 124
+[04-Sep-2022 07:00:01 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[04-Sep-2022 07:00:01 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[11-Sep-2022 07:00:02 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[11-Sep-2022 07:00:02 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[18-Sep-2022 07:00:01 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[18-Sep-2022 07:00:01 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[25-Sep-2022 07:00:01 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[25-Sep-2022 07:00:01 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[02-Oct-2022 07:00:02 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[02-Oct-2022 07:00:02 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[09-Oct-2022 07:00:01 UTC] PHP Warning:  Undefined array key "REQUEST_URI" in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
+[09-Oct-2022 07:00:01 UTC] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/hvfszwpsg6re/public_html/feeder/backupdata.php on line 236
