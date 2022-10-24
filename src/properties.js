@@ -1,5 +1,5 @@
 export const properties = {
-    title: "Pharmaceutical Updates by Chandrasekhar Panda",
+    title: "Pharma Pathfinder by Chandrasekhar Panda",
     author: "Chandrasekhar Panda",
     startDate: "2022-02-01",
     appPassword: "JagaBaliaShreekhetra",

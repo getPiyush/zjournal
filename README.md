@@ -29,8 +29,8 @@ yarn dev
 - ~~Templates~~
 - ~~Contact Us Web~~
 - ~~Contact Us Admin~~
-- QnA Admin
-- QnA Web
+- ~~QnA Admin~~
+- ~~QnA Web~~
 - Admin Password Change
 - Feature Config (enable disable feature)
 - Web Integration
