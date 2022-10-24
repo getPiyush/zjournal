@@ -37,13 +37,19 @@ export default function Blogs() {
           <span className="fst-italic">Elsewhere</span>
           <ol className="list-unstyled">
             <li>
+              <a href="https://www.linkedin.com/in/chandrasekhar-panda-6a244a63/" target="_blank">LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/Chandrasekhar.panda.1983" target="_blank">Facebook</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/Chandra17877420" target="_blank">Twitter</a>
+            </li>
+            <li>
+              <a href="https://api.whatsapp.com/send?phone=%2B917008217254&fbclid=IwAR2-fEp1i2H7pDq-r1Vgn2ka6z8jsO4GwHLJYvkWiiB0kVHaUpDUMJ81QMQ" target="_blank">WhatsApp</a>
+            </li>
+            <li>
               <a href="https://pharmaceuticalupdates.com/" target="_blank">Pharmaceutical Updates</a>
-            </li>
-            <li>
-              <a href="https://twitter.com/getPiyush" target="_blank">Twitter</a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/getPiyush" target="_blank">Facebook</a>
             </li>
           </ol>
         </div>
