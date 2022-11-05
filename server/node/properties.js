@@ -1,6 +1,6 @@
 exports.properties = {
     port: 8080,
-    appPassword :"JagaBaliaShreekhetra",
+    appPassword :"zJournalPassword",
     encrypted: true,
     dbFile:"db.json"
 }

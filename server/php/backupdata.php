@@ -162,9 +162,9 @@ function sendMail($content)
     $uid = md5(uniqid(time()));
     $file_name = "DataBackup" . date("Y-m-d_h-ia") . ".txt";
     $from_name = "zJournal Admin";
-    $from_mail = "piyush.praharaj@outlook.com";
-    $mailto = "piyush.plaban@gmail.com";
-    $replyto = "piyush.praharaj@outlook.com";
+    $from_mail = "application.admin@zjournal.com";
+    $mailto = "backup.admin@zjournal.com";
+    $replyto = "application.admin@zjournal.com";
     $file_size = format_bytes(strlen($content));
 
     $subject =
@@ -269,7 +269,7 @@ if ($request_url_query && str_contains($request_url_query, "decrypt")) {
 
 }
 else {
-    $mailto = "piyush.plaban@gmail.com";
+    $mailto = "backup.admin@zjournal.com";
     $data_string = file_get_contents("db.json");
     $enc = encrypt_decrypt("encrypt", $data_string);
 

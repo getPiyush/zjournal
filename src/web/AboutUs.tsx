@@ -21,7 +21,7 @@ export default function AboutUs() {
               className="img-fluid"
               src="https://deejayfarm.com/wp-content/uploads/2019/10/Profile-pic.jpg"
             />
-            The author of pharmaceutical updates is <b>Chandrasekhar Panda</b>{" "}
+            The author of pharmaceutical updates is <b>Madhusudhan Das</b>{" "}
             who is having more than 13 years of Experience in Pharmaceutical
             Quality Assurance department and he has worked in Pharma Companies
             like Cipla, USV &nbsp; Aurobindo Pharma Limited.

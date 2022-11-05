@@ -1,6 +1,6 @@
 <?php
 
-$passphase = "JagaBaliaShreekhetra";
+$passphase = "zJournalPassword";
 
 
 ?>

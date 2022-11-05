@@ -1,8 +1,8 @@
 export const properties = {
-    title: "Pharmaceutical Updates by Chandrasekhar Panda",
-    author: "Chandrasekhar Panda",
+    title: "zJournal",
+    author: "zJournal Author",
     startDate: "2022-02-01",
-    appPassword: "JagaBaliaShreekhetra",
+    appPassword: "zJournalPassword",
     fonts: [
       {
         font: "Source Serif 4",
