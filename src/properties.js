@@ -88,6 +88,23 @@ export const properties = {
           "900i",
         ],
       },
+      {
+        font: "Open Sans",
+        weights: [
+          300,
+          "300i",
+          400,
+          "400i",
+          500,
+          "500i",
+          600,
+          "600i",
+          700,
+          "700i",
+          800,
+          "800i"
+        ],
+      }
     ],
     serverMode: "node", //node|php
     serverUrl: "http://localhost:8080", //"https://feeder.pharmapathfinder.com", // "http://feeder.patrikaz.com" |  "http://localhost:8080"

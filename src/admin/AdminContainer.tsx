@@ -12,6 +12,7 @@ import CategoryEditor from "./pages/CategoryEditor";
 import { Contacts } from "./pages/Contacts";
 import { Purge } from "./pages/Purge";
 import Templates from "./pages/Templates";
+import UserInfo from "./pages/UserInfo";
 
 export default function AdminContainer() {
   const { state: jState, dispatch } = useJournal();
@@ -26,6 +27,7 @@ export default function AdminContainer() {
   const showLoader = jState.status === "loading" || aState.status === "loading" || cState.status.includes("loading");
 
   const getValidatedArticle = (article: ArticleT) => {
+    console.log("current jstate article = ", jState.journal.currentArticle);
     return article.dateCreated &&
       article.dateModified &&
       article.author !== "" &&
@@ -43,7 +45,7 @@ export default function AdminContainer() {
           <Route path="templates" element={<Templates />} />
           <Route path="contacts" element={<Contacts />} />
           <Route path="purge" element={<Purge />} />
-
+          <Route path="edituserinfo" element={<UserInfo />} />
           <Route
             path="editor"
             element={

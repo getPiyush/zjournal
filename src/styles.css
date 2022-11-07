@@ -1,13 +1,20 @@
+:root {
+  --main-color: #32811c;
+  --nav-color:#13668f;
+}
+
 main>.container {
   padding: 80px 0px 0px 0px;
   max-width: 1024px;
 }
 
 body {
-  font-family: "Source Serif 4", sans-serif !important;
+  /**font-family: "Source Serif 4", sans-serif !important;**/
   /**font-family: "Public Sans", sans-serif;*/
-  /** font-family: 'Noto Serif Display', serif; */
-  /** font-family: 'Merriweather', serif; */
+  /**font-family: 'Noto Serif Display', serif;*/
+  /**font-family: 'Merriweather', serif;*/
+  font-family: 'Open Sans', sans-serif;
+
 }
 
 h1,
@@ -49,15 +56,15 @@ b {
 }
 
 .navbar-nav .nav-item .nav-link.active {
-  color: #1f76a8;
+  color: var(--nav-color);
   font-weight: 800;
   border-bottom: 2px solid black;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: #1f76a8;
+  color: var(--nav-color);
   font-weight: 700;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--nav-color);
 }
 
 .navbar .header-links {
@@ -66,14 +73,14 @@ b {
 
 .blog-header-logo {
   line-height: 1;
-  color: #2485bd;
-  font-family: "Merriweather", serif !important;
+  color: var(--main-color);
+  font-family: 'Open Sans', sans-serif !important;
   font-size: 1.25rem;
 }
 
 .blog-header-logo .logo-subtext {
   font-size: 0.75rem;
-  color: #080808;
+  color: var(--nav-color);
   padding-top: 0.2rem;
   padding-left: 0.1rem;
 }
@@ -103,7 +110,7 @@ img {
 }
 
 .sub-header {
-  color: #1f76a8;
+  color: #000000;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -167,7 +174,7 @@ img {
 }
 
 .admin .admin-module-title {
-  color: #1f76a8;
+  color: #000000;
   margin: 16px 0px 16px 0px;
 }
 
@@ -214,7 +221,15 @@ button {
   margin: 0px;
   max-width: 450px !important;
   min-width: 200px;
-  background: linear-gradient(50deg, #1f76a8 0%, #ffffff40 14%, #ffffff00 100%);
+  background: linear-gradient(50deg, var(--main-color) 0%, #ffffff40 14%, #ffffff00 100%);
+}
+
+.admin-profile {
+  background: linear-gradient(50deg, var(--main-color) 0%, #ffffff40 14%, #ffffff00 100%);
+}
+.admin-user-message {
+  font-size: small;
+  padding-left: 16px;
 }
 
 @media screen and (min-width: 767px) and (max-width: 846px) {
@@ -259,7 +274,7 @@ button {
   top: 40vh;
   left: 40vw;
   z-index: 100;
-  box-shadow: 0px 0px 3000px 70px #1f76a8;
+  box-shadow: 0px 0px 3000px 70px #000000;
   border-radius: 25px;
 }
 

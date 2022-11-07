@@ -22,6 +22,9 @@ export default function Admin() {
 
   const validateCreds = (userDetailsIn) => {
     const { adminDetails } = jState.journal;
+     console.log("password =",encryptString(userDetailsIn.password));
+     console.log(userDetailsIn.userid,"userid =",encryptString(userDetailsIn.userid));
+
     if (
       encryptString(userDetailsIn.userid) === adminDetails.id &&
       encryptString(userDetailsIn.password) === adminDetails.passPhase
@@ -41,7 +44,7 @@ export default function Admin() {
     <React.Fragment>
       {userDetails.loggedIn ? (
         <React.Fragment>
-          <Header onLogout={logOut} />
+          <Header journal={jState.journal} onLogout={logOut} />
           <AdminContainer />
           <Footer />
         </React.Fragment>

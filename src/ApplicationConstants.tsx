@@ -5,7 +5,7 @@ export const applicationProperties = properties;
 
 export const defaultArticle: ArticleT = {
   id: "",
-  author: applicationProperties.author,
+  author: "",
   title: "",
   dateCreated: new Date(),
   dateModified: new Date(),

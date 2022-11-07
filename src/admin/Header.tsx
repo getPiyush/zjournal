@@ -1,11 +1,13 @@
 import { Link, useLocation } from "react-router-dom";
+import { Journal } from "../Types";
 import ConfirmationButton from "./components/editor/ConfirmationButton";
 
 type HeaderProps = {
   onLogout: () => void;
+  journal: Journal
 };
 
-export default function Header({ onLogout }: HeaderProps) {
+export default function Header({ onLogout, journal }: HeaderProps) {
   const location = useLocation().pathname;
 
   return (
@@ -18,7 +20,9 @@ export default function Header({ onLogout }: HeaderProps) {
             src="/images/zjournal_logo.png"
           />
           Admin Panel
+          <div className="admin-user-message">Author: {journal.currentArticle.author}</div>
         </a>
+       
         <button
           className="navbar-toggler"
           type="button"
@@ -32,6 +36,7 @@ export default function Header({ onLogout }: HeaderProps) {
         </button>
         <div className="collapse navbar-collapse header-links" id="navbarNav">
           <ul className="navbar-nav">
+
             <li className="nav-item">
               <Link
                 className={`nav-link ${
@@ -87,6 +92,18 @@ export default function Header({ onLogout }: HeaderProps) {
                 Purge
               </Link>
             </li>
+            <li className="nav-item">
+              <Link
+                className={`nav-link ${
+                  location === "/admin/edituserinfo" ? "active" : ""
+                }`}
+                aria-current="page"
+                to="/admin/edituserinfo"
+              >
+                Proflie
+              </Link>
+            </li>
+            <li></li>
           </ul>
           <ConfirmationButton
               buttonText="Logout"
