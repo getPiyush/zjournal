@@ -1,4 +1,4 @@
-import ReactHtmlParser from "react-html-parser";
+import { parsex } from "../../utils/parserUtil";
 
 import { useEffect } from "react";
 import { getArticlesToDelete, deleteArticleinDB } from "../../datastore/actions/ArticleActions";
@@ -45,7 +45,7 @@ export const Purge = () => {
               {articleState.articles.map((article, index) => (
                 <tr>
                   <th scope="row">{index}</th>
-                  <td><b>{ReactHtmlParser(article.title)}</b></td>
+                  <td><b>{parsex(article.title)}</b></td>
                   <td>{article.categryId}</td>
                   <td>{getDate(article.dateCreated)}</td>
                   <td>

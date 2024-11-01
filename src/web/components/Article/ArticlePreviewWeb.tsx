@@ -1,5 +1,5 @@
 import React from "react";
-import ReactHtmlParser from "react-html-parser";
+import { parsex } from "../../../utils/parserUtil";
 
 import { ArticleT } from "../../../Types";
 import { getDate, removeHTML, sliceWords } from "../../../utils/componentUtil";
@@ -17,7 +17,7 @@ export default function ArticlePreviewWeb({ data }: ArticleProps) {
     >
       <div className="card-body">
         <h5 className="card-title">
-          <a href={`article/${data.id}`}>{ReactHtmlParser(data.title)}</a>
+          <a href={`article/${data.id}`}>{parsex(data.title)}</a>
         </h5>
         <div className="card-text">
           <div>
@@ -46,7 +46,7 @@ export default function ArticlePreviewWeb({ data }: ArticleProps) {
               contentArray[1] = sliceWords(removeHTML(item.data), 0, 200);
               return (
                 <div  key={`articlecomp_${index}_${data.id}`} className="card-text">
-                  {ReactHtmlParser(contentArray[1])}...{" "}
+                  {parsex(contentArray[1])}...{" "}
                   <a href={`article/${data.id}`}>read more</a>
                 </div>
               );

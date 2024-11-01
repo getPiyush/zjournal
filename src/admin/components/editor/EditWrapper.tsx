@@ -1,6 +1,6 @@
 type EditWrapperProps = {
   id: string;
-  children: Element;
+  children: any ;
   componentClicked: (event: React.MouseEvent<HTMLDivElement>) => void;
 };
 

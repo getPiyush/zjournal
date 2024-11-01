@@ -1,4 +1,4 @@
-import ReactHtmlParser from "react-html-parser";
+import { parsex } from "../../../utils/parserUtil";
 import { ArticleT } from "../../../Types";
 import { getDate, removeHTML, sliceWords } from "../../../utils/componentUtil";
 
@@ -15,7 +15,7 @@ export default function ArticleCard({ article, mode="view" }: ArticleCardProps) 
       key={`key_${article.title.replace(/[^A-Z0-9]/gi, "_")}`}
     >
       <div className="card-body">
-        <h5 className="card-title">{ReactHtmlParser(article.title)}</h5>
+        <h5 className="card-title">{parsex(article.title)}</h5>
         <div className="card-text">
           Created:<b>{getDate(article.dateCreated)}</b>{" "}
         </div>
@@ -26,8 +26,8 @@ export default function ArticleCard({ article, mode="view" }: ArticleCardProps) 
               <img
                 key={`articlecomp_${index}_${item.componenType}`}
                 className="card-img-top"
-                alt={ReactHtmlParser(article.title)}
-                title={ReactHtmlParser(article.title)}
+                alt={article.title}
+                title={article.title}
                 src={`${contentArray[0]}`}
               />
             );
@@ -40,7 +40,7 @@ export default function ArticleCard({ article, mode="view" }: ArticleCardProps) 
                 key={`articlecomp_${index}_${item.componenType}`}
                 className="card-text"
               >
-                {ReactHtmlParser(contentArray[1])}...{" "}
+                {parsex(contentArray[1])}...{" "}
               </div>
             );
           }

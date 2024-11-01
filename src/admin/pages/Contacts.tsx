@@ -1,4 +1,4 @@
-import ReactHtmlParser from "react-html-parser";
+import { parsex } from "../../utils/parserUtil";
 
 import { useEffect } from "react";
 import { getContactsDB } from "../../datastore/actions/ContactActions";
@@ -70,7 +70,7 @@ export const Contacts = () => {
 
                         <br />
                         <div className="text-break">
-                          {ReactHtmlParser(contact.comment)}
+                          {parsex(contact.comment)}
                         </div>
                       </div>
                     </div>

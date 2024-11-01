@@ -1,5 +1,5 @@
 import React from "react";
-import ReactHtmlParser from "react-html-parser";
+import { parsex } from "../utils/parserUtil";
 
 import EditWrapper from "../admin/components/editor/EditWrapper";
 import { applicationProperties } from "../ApplicationConstants";
@@ -130,7 +130,7 @@ const getComponentFromObject = (
           id={obj.componenType + "_" + obj.componentId}
           key={"key_" + obj.componentId}
         >
-          {ReactHtmlParser(obj.data)}
+          {parsex(obj.data)}
         </h1>
       );
       break;
@@ -140,7 +140,7 @@ const getComponentFromObject = (
           id={obj.componenType + "_" + obj.componentId}
           key={"key_" + obj.componentId}
         >
-          {ReactHtmlParser(obj.data)}
+          {parsex(obj.data)}
         </h2>
       );
       break;
@@ -150,7 +150,7 @@ const getComponentFromObject = (
           id={obj.componenType + "_" + obj.componentId}
           key={"key_" + obj.componentId}
         >
-          {ReactHtmlParser(obj.data)}
+          {parsex(obj.data)}
         </h3>
       );
       break;
@@ -160,7 +160,7 @@ const getComponentFromObject = (
           id={obj.componenType + "_" + obj.componentId}
           key={"key_" + obj.componentId}
         >
-          {ReactHtmlParser(obj.data)}
+          {parsex(obj.data)}
         </h4>
       );
       break;
@@ -171,7 +171,7 @@ const getComponentFromObject = (
           id={obj.componenType + "_" + obj.componentId}
           key={"key_" + obj.componentId}
         >
-          {ReactHtmlParser(obj.data)}
+          {parsex(obj.data)}
         </h5>
       );
       break;
@@ -193,7 +193,7 @@ const getComponentFromObject = (
           id={obj.componenType + "_" + obj.componentId}
           key={"key_" + obj.componentId}
         >
-          {ReactHtmlParser(obj.data)}
+          {parsex(obj.data)}
         </p>
       );
       break;
@@ -208,7 +208,7 @@ const getComponentFromObject = (
 
     default:
       comp = (
-        <span key={"key_" + obj.componentId}>{ReactHtmlParser(obj.data)}</span>
+        <span key={"key_" + obj.componentId}>{parsex(obj.data)}</span>
       );
       break;
   }

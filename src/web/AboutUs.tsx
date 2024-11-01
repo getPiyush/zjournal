@@ -1,4 +1,4 @@
-import ReactHtmlParser from "react-html-parser";
+import { parsex } from "../utils/parserUtil";
 
 import { applicationProperties } from "../ApplicationConstants";
 import { useJournal } from "../datastore/contexts/JournalContext";
@@ -31,7 +31,7 @@ export default function AboutUs() {
         <div className="row">
           <div className="col">
             <div className="container">
-              {ReactHtmlParser(jState.journal.aboutUs)}
+              {parsex(jState.journal.aboutUs)}
             </div>
           </div>
         </div>

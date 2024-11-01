@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ReactHtmlParser from "react-html-parser";
+import { parsex } from "../../../utils/parserUtil";
 import { useLocation } from "react-router-dom";
 import { applicationProperties } from "../../../ApplicationConstants";
 import { getArticleById } from "../../../datastore/actions/ArticleActions";
@@ -65,7 +65,7 @@ export default function Article({ data }: ArticleProps) {
           <div className="row">
             <div className="col">
               {" "}
-              <h1>{ReactHtmlParser(article.title)}</h1>
+              <h1>{parsex(article.title)}</h1>
             </div>
           </div>
           <div className="row">
