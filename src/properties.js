@@ -89,7 +89,7 @@ export const properties = {
         ],
       },
     ],
-    serverMode: "php", //node|php
-    serverUrl: "https://feeder.pharmapathfinder.com", // "http://feeder.patrikaz.com" |  "http://localhost:8080"
+    serverMode: "node", //node|php
+    serverUrl: "http://localhost:8080", // "http://feeder.patrikaz.com" |  "http://localhost:8080"
     enableEncryption: true,
   };

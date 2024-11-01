@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import ReactHtmlParser from "react-html-parser";
+import { parsex } from "../../../utils/parserUtil";
 
 import { useQnA } from "../../../datastore/contexts/QnAContext";
 import { getUid } from "../../../utils/componentUtil";
@@ -113,7 +113,7 @@ export const QnATemplate = () => {
                 <div>
                   <div className="collapse" id={`collapse_${key}`}>
                     <div className="card card-body admin-preview">
-                      {ReactHtmlParser(qna.answer)}{" "}
+                      {parsex(qna.answer)}{" "}
                     </div>
                   </div>
                 </div>

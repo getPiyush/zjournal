@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import ReactHtmlParser from "react-html-parser";
+import { parsex } from "../../../utils/parserUtil";
 
 import { updateCurrentArticle } from "../../../datastore/actions/JournalActions";
 import { useJournal } from "../../../datastore/contexts/JournalContext";
@@ -65,7 +65,7 @@ export default function ArticlePreview({ data }: ArticleProps) {
               id : {data.id}
             </button>
           </div>
-          <h5 className="card-title">{ReactHtmlParser(data.title)}</h5>
+          <h5 className="card-title">{parsex(data.title)}</h5>
           <div className="card-text">
             Created:<b>{getDate(data.dateCreated)}</b> | Last Updated:
             <b>{getDate(data.dateModified)}</b>

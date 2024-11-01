@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import ReactHtmlParser from "react-html-parser";
+import { parsex } from "../utils/parserUtil";
 import { getQnAsDB } from "../datastore/actions/QnAActions";
 import { useQnA } from "../datastore/contexts/QnAContext";
 import { getUid } from "../utils/componentUtil";
@@ -47,7 +47,7 @@ export default function InterviewQA() {
                       <div>
                         <div className="collapse" id={`collapse_${key}`}>
                           <div className="card card-body">
-                            {ReactHtmlParser(qna.answer)}
+                            {parsex(qna.answer)}
                           </div>
                         </div>
                       </div>

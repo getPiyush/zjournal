@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ReactHtmlParser from "react-html-parser";
+import { parsex } from "../../../utils/parserUtil";
 
 import { useJournal } from "../../../datastore/contexts/JournalContext";
 import ConfirmationButton from "../../components/editor/ConfirmationButton";
@@ -68,7 +68,7 @@ export const AboutTemplate = () => {
           </div>
             <div className="m-3 p-3 admin-preview"
             style={{ border: "solid 1px green" }}>
-                {ReactHtmlParser(htmlData)}
+                {parsex(htmlData)}
             </div>
         </div>
       </div>
