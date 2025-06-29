@@ -4,6 +4,7 @@ import {
 } from "../../../datastore/actions/ArticleActions";
 import { useArticle } from "../../../datastore/contexts/ArticleContext";
 import { ArticleT } from "../../../Types";
+import { getUid } from "../../../utils/componentUtil";
 
 type SaveButtonProps = {
   article: ArticleT;
@@ -14,7 +15,7 @@ export default function SaveButton({ article }: SaveButtonProps) {
 
   const saveArticle = () => {
     if (article.origin === "local") {
-      addArticleToDB(dispatch, { ...article, id: "", origin: "server" });
+      addArticleToDB(dispatch, { ...article, id: getUid(), origin: "server" });
     } else {
       updateArticleinDB(dispatch, { ...article, dateModified: new Date() });
     }

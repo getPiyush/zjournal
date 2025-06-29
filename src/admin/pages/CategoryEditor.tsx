@@ -14,13 +14,13 @@ export default function CategoryEditor() {
     getArticlesBycategory(dispatch, categoryId);
   };
 
-  const [selectedCategory, setSelectedcategory] = useState("Production");
+  const [selectedCategory, setSelectedcategory] = useState("");
 
   useEffect(() => {
     getArticlesBycategoryID(selectedCategory);
   }, [selectedCategory]);
 
-  const getCategoryDropdown = (currentCategory, categories) => (
+  const getCategoryDropdown = (currentCategory:string) => (
     <div className="dropdown">
       <button
         className="btn btn-light btn-lg dropdown-toggle text-wrap"
@@ -29,12 +29,11 @@ export default function CategoryEditor() {
         data-bs-toggle="dropdown"
         aria-expanded="false"
       >
-        <b>{currentCategory}</b>
+        <b>{currentCategory!=""?currentCategory:"All"}</b>
       </button>
 
       <ul className="dropdown-menu" aria-labelledby="categoryButton">
-        {categories.length > 0 &&
-          state.journal.categories.map((category, index) => (
+        {state.journal.categories.map((category, index) => (
             <li>
               <a
                 className={
@@ -63,7 +62,7 @@ export default function CategoryEditor() {
       </div>
       <div className="row">
         <div className="col-md-4">
-          {getCategoryDropdown(selectedCategory, articleData?.articles)}
+          {getCategoryDropdown(selectedCategory)}
         </div>
         <div className="col-md-4 offset-md-4 d-flex justify-content-end">
          {/** 

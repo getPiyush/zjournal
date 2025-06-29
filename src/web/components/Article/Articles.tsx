@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { useLocation, useSearchParams } from "react-router-dom";
 import { applicationProperties, months } from "../../../ApplicationConstants";
 import {
-  getArticleById,
   getArticlesByBlogDate,
   getArticlesBycategory,
 } from "../../../datastore/actions/ArticleActions";
@@ -11,6 +10,7 @@ import { useArticle } from "../../../datastore/contexts/ArticleContext";
 import { PageNotFound } from "../../PageNotFound";
 import LoadingPage from "../Loader/LoadingPage";
 import ArticlePreviewWeb from "./ArticlePreviewWeb";
+import { properties } from "../../../properties";
 
 export default function Articles() {
   const path = useLocation().pathname;
@@ -55,7 +55,7 @@ export default function Articles() {
   return (
     <div className="container article-viewer">
       {articleData.status !== "loading" && articleData.status !== "error" ? (
-        <div className="container article-viewer disable-text-selection">
+        <div className={`container article-viewer ${properties.disableTextSelect?"disable-text-selection":""}`}>
           <div className="row">
             <div className="col">
               <h2>

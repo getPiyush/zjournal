@@ -20,7 +20,7 @@ export default function InterviewQA() {
           <div className="container">
             <div className="row">
               <div className="col">
-                <h4>Interview Questions &amp; Answers</h4>
+                <h4>Questions &amp; Answers</h4>
                 <hr />
               </div>
             </div>

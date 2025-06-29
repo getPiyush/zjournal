@@ -1,7 +1,7 @@
 export const properties = {
-    title: "Pharmaceutical Updates by Chandrasekhar Panda",
-    author: "Chandrasekhar Panda",
-    startDate: "2022-02-01",
+    title: "My Journey by Piyush Praharaj",
+    author: "Piyush Praharaj",
+    startDate: "2025-02-01",
     appPassword: "JagaBaliaShreekhetra",
     fonts: [
       {
@@ -92,4 +92,5 @@ export const properties = {
     serverMode: "node", //node|php
     serverUrl: "http://localhost:8080", // "http://feeder.patrikaz.com" |  "http://localhost:8080"
     enableEncryption: true,
+    disableTextSelect: false,
   };

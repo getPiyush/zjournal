@@ -10,6 +10,7 @@ import { getDate } from "../../../utils/componentUtil";
 import { PageNotFound } from "../../PageNotFound";
 import LoadingPage from "../Loader/LoadingPage";
 import ArticleContainer from "./ArticleContainer";
+import { properties } from "../../../properties";
 
 type ArticleProps = {
   data: ArticleT;
@@ -61,7 +62,7 @@ export default function Article({ data }: ArticleProps) {
   return (
     <div className="container article-viewer">
       {article && article.title !== "" && !article.deleteFlag ? (
-        <div className="container article-viewer disable-text-selection">
+        <div className={`container article-viewer ${properties.disableTextSelect?"disable-text-selection":""}`}>
           <div className="row">
             <div className="col">
               {" "}

@@ -92,7 +92,7 @@ export default function ContactUs() {
         </div>
       ) : (
         <form id="contactUsForm" onSubmit={contactUsSubmitted}>
-          <h4>Contact Us</h4>
+          <h4>Contact</h4>
           <div className="row">
             <div className="col">
               <div className="mb-3">

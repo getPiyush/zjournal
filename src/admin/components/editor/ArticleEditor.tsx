@@ -80,6 +80,7 @@ export default function ArticleEditor({
   };
 
   const onResetClick = () => {
+    console.log("Resetting Article Editor");
     setArticle(defaultArticle);
     setContent([]);
   };
