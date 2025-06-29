@@ -53,7 +53,7 @@ export default function Header() {
                   aria-current="page"
                   to="/web/aboutus"
                 >
-                  About Us
+                  About
                 </Link>
               </li>
               <li className="nav-item">
@@ -63,7 +63,7 @@ export default function Header() {
                   }`}
                   to="/web/contactus"
                 >
-                  Contact Us
+                  Contact
                 </Link>
               </li>
               <li className="nav-item">
@@ -73,7 +73,7 @@ export default function Header() {
                   }`}
                   to="/web/iqa"
                 >
-                  Interview Q&amp;A
+                  Q&amp;A
                 </Link>
               </li>
               <li className="nav-item dropdown dropstart">
@@ -101,7 +101,7 @@ export default function Header() {
                   onClick={linkClicked}
                   button-flag="blogs"
                 >
-                  Blogs
+                  More
                 </a>
               </li>
             </ul>
