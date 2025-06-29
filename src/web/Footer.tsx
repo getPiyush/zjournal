@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="footer mt-auto py-3">
       <div className="container">
         <span className="text-muted small-text">
-          &copy; Copyright 2022, Pharmaceutical Updates by Chandrasekhar Panda.
+          &copy; Copyright 2022, nFlow.com
         </span>
         {process.env.NODE_ENV !== "production" && (
         <span
