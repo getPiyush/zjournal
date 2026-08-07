@@ -24,12 +24,17 @@ export default function Content() {
   };
 
   useEffect(() => {
-    if (location !== "/article") {
-      document.removeEventListener("contextmenu", preventDefaultDelegate);
-    } else {
+    if (location === "/article") {
       document.addEventListener("contextmenu", preventDefaultDelegate);
+      return () => {
+        document.removeEventListener("contextmenu", preventDefaultDelegate);
+      };
     }
-  });
+
+    return () => {
+      document.removeEventListener("contextmenu", preventDefaultDelegate);
+    };
+  }, [location]);
 
   return (
     <main className="flex-shrink-0">

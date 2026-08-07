@@ -8,11 +8,11 @@ Made completely with React and Typescript.
 
 install application : 
 ```sh
-yarn install
+npm install
 ```
 run application : 
 ```sh
-yarn dev
+npm run dev
 ```
 
 | Module | URL |

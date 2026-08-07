@@ -11,8 +11,8 @@
   "dependencies": {
     "axios": "latest",
     "crypto-js": "latest",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-font-loader": "latest",
     "html-react-parser": "latest",
     "react-phone-input-2": "latest",
@@ -22,6 +22,10 @@
   "devDependencies": {
     "@testing-library/react": "latest",
     "@testing-library/dom": "latest",
+    
+    "@types/jest": "latest",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
 
     "@types/jest": "latest",
     "@types/react": "latest",
@@ -40,8 +44,8 @@
     "eject": "react-scripts eject",
     "server:dev": "cd server/node&&node server.js -w --development",
     "server": "cd server/node&&node server.js -w --production",
-    "dev": "concurrently \"yarn start\" \"yarn server:dev\"",
-    "prod": "concurrently \"yarn prodrun\" \"yarn server\""
+    "dev": "concurrently \"npm run start\" \"npm run server:dev\"",
+    "prod": "concurrently \"npm run prodrun\" \"npm run server\""
   },
   "browserslist": [
     ">0.2%",
