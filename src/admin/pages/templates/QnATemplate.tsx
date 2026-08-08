@@ -1,15 +1,11 @@
 import { useEffect } from "react";
-import { parsex } from "../../../utils/parserUtil";
-
 import { useQnA } from "../../../datastore/contexts/QnAContext";
-import { getUid } from "../../../utils/componentUtil";
 import {
   addQnAToDB,
   deleteQnAFromDB,
   getQnAsDB,
 } from "../../../datastore/actions/QnAActions";
-import { QnA } from "../../../Types";
-import ConfirmationButton from "../../components/editor/ConfirmationButton";
+import { parsex, getUid, QnA, ConfirmationButton } from "@zjournal/ui-library";
 
 export const QnATemplate = () => {
   const { dispatch, state: qnaState } = useQnA();

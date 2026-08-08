@@ -1,6 +1,6 @@
 import * as React from "react";
 import { defaultJournal } from "../../ApplicationConstants";
-import { ArticleT, Journal } from "../../Types";
+import { ArticleT, Journal } from "@zjournal/ui-library";
 
 type Action =
   | { type: "get_journal_success"; value: Journal }

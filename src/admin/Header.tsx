@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import ConfirmationButton from "./components/editor/ConfirmationButton";
+import { ConfirmationButton } from "@zjournal/ui-library";
 
 type HeaderProps = {
   onLogout: () => void;

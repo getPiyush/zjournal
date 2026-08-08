@@ -1,5 +1,4 @@
-import { parsex } from "../utils/parserUtil";
-
+import { parsex } from "@zjournal/ui-library";
 import { applicationProperties } from "../ApplicationConstants";
 import { useJournal } from "../datastore/contexts/JournalContext";
 

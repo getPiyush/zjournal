@@ -1,6 +1,5 @@
-import { Contact } from "../../Types";
-import { decryptData } from "../../utils/componentUtil";
-
+import { Contact } from "@zjournal/ui-library";
+import { decryptData } from "../codec";
 import { addContactAPI, getContactsAPI } from "../api";
 
 export const getContactsDB = (dispatch) => {

@@ -1,7 +1,7 @@
 import { screen } from "@testing-library/dom";
 import { render } from "@testing-library/react";
 
-import * as componentUtil from "./componentUtil";
+import * as componentUtil from "@zjournal/ui-library";
 
 describe("Test Component Util", () => {
   test("populateComponentFromCode : renders Header component", () => {

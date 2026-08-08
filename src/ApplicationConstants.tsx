@@ -1,5 +1,5 @@
 import { properties } from "./properties";
-import { ArticleT, Contact, Journal, QnA } from "./Types";
+import { ArticleT, Contact, Journal, QnA } from "@zjournal/ui-library";
 
 export const applicationProperties = properties;
 
@@ -42,18 +42,3 @@ export const defaultQnA: QnA = {
   published: false,
   dateCreated: new Date(),
 };
-
-export const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];

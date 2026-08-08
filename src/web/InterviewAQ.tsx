@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
-import { parsex } from "../utils/parserUtil";
+import { parsex, getUid } from "@zjournal/ui-library";
 import { getQnAsDB } from "../datastore/actions/QnAActions";
 import { useQnA } from "../datastore/contexts/QnAContext";
-import { getUid } from "../utils/componentUtil";
 export default function InterviewQA() {
   const { dispatch, state: qnaState } = useQnA();
 

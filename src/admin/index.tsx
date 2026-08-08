@@ -1,53 +1,30 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { getJournalFromDB } from "../datastore/actions/JournalActions";
 import { useJournal } from "../datastore/contexts/JournalContext";
-import { encryptAES, encryptString } from "../utils/crypto";
 
 import Footer from "../web/Footer";
 import AdminContainer from "./AdminContainer";
 import Header from "./Header";
-import Login from "./pages/Login";
 
+// No login gate: anyone reaching /admin lands straight in the panel.
+// See src/admin/authConfig.ts for the Google OAuth gate this will be replaced with.
 export default function Admin() {
-  const [userDetails, setUserDetails] = useState({
-    loggedIn: false,
-  });
-
-  const { state: jState, dispatch } = useJournal();
+  const { dispatch } = useJournal();
 
   useEffect(() => {
     getJournalFromDB(dispatch);
     window.document.title = "zJournal Admin Panel";
   }, []);
 
-  const validateCreds = (userDetailsIn) => {
-    const { adminDetails } = jState.journal;
-    if (
-      encryptString(userDetailsIn.userid) === adminDetails.id &&
-      encryptString(userDetailsIn.password) === adminDetails.passPhase
-    ){
-
-      window.document.title = "zJournal Admin Panel";
-      setUserDetails({ loggedIn: true });
-
-    }
-  };
-
   const logOut = () => {
-    setUserDetails({ loggedIn: false });
-  }
+    // no-op until OAuth sign-out replaces this
+  };
 
   return (
     <React.Fragment>
-      {userDetails.loggedIn ? (
-        <React.Fragment>
-          <Header onLogout={logOut} />
-          <AdminContainer />
-          <Footer />
-        </React.Fragment>
-      ) : (
-        <Login onLogin={validateCreds} />
-      )}
+      <Header onLogout={logOut} />
+      <AdminContainer />
+      <Footer />
     </React.Fragment>
   );
 }

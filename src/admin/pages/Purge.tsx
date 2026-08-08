@@ -1,12 +1,7 @@
-import { parsex } from "../../utils/parserUtil";
-
 import { useEffect } from "react";
+import { parsex, getDate, PageTitle, ConfirmationButton, ArticleT } from "@zjournal/ui-library";
 import { getArticlesToDelete, deleteArticleinDB } from "../../datastore/actions/ArticleActions";
-import { getDate } from "../../utils/componentUtil";
-import { PageTitle } from "../components/PageTitle";
 import { useArticle } from "../../datastore/contexts/ArticleContext";
-import ConfirmationButton from "../components/editor/ConfirmationButton";
-import { ArticleT } from "../../Types";
 
 export const Purge = () => {
   const { dispatch, state: articleState } = useArticle();

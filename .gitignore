@@ -3,3 +3,10 @@ yarn.lock
 node_modules
 node_modules/*
 build
+ui-library/dist
+ui-library/storybook-static
+ui-library/*.log
+src/**/*.js
+src/**/*.d.ts
+!src/react-app-env.d.ts
+package-lock.json

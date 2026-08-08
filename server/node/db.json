@@ -99,6 +99,9 @@
       "origin": "server",
       "published": true,
       "deleteFlag": false
+    },
+    {
+      "id": "0iCb9BK"
     }
   ],
   "journal": {
@@ -131,6 +134,7 @@
       "deleteFlag": false
     },
     "categories": [
+      "All",
       "Software Development",
       "Science",
       "Engineering",

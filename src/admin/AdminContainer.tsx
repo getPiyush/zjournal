@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
-import { defaultArticle } from "../ApplicationConstants";
-import { updateCurrentArticle } from "../datastore/actions/JournalActions";
-import { useArticle } from "../datastore/contexts/ArticleContext";
 import { useContact } from "../datastore/contexts/ContactContext";
+import { useArticle } from "../datastore/contexts/ArticleContext";
 import { useJournal } from "../datastore/contexts/JournalContext";
-import { ArticleT } from "../Types";
-import { Spinner } from "../web/components/Spinner";
+import { updateCurrentArticle } from "../datastore/actions/JournalActions";
+import { defaultArticle } from "../ApplicationConstants";
+import { ArticleT, Spinner } from "@zjournal/ui-library";
 import ArticleContainer from "./pages/ArticleContainer";
 import CategoryEditor from "./pages/CategoryEditor";
 import { Contacts } from "./pages/Contacts";

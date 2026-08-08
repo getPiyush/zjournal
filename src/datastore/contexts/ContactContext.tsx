@@ -1,6 +1,6 @@
 import * as React from "react";
 import { defaultContact } from "../../ApplicationConstants";
-import { Contact } from "../../Types";
+import { Contact } from "@zjournal/ui-library";
 
 type Action =
   | { type: "get_contacts_success"; value: Contact[] }

@@ -1,15 +1,15 @@
 import { useState } from "react";
-import { parsex } from "../../../utils/parserUtil";
-
+import { parsex, ConfirmationButton } from "@zjournal/ui-library";
 import { useJournal } from "../../../datastore/contexts/JournalContext";
-import ConfirmationButton from "../../components/editor/ConfirmationButton";
 import { updateJournalinDB } from "../../../datastore/actions/JournalActions";
 
 export const AboutTemplate = () => {
   const { dispatch, state: jState } = useJournal();
   const { aboutUs } = jState.journal;
 
-  const [htmlData, setHtmlData] = useState(aboutUs);
+  // aboutUs is optional on Journal (e.g. before the journal has loaded from
+  // the server), but the length check below requires a string.
+  const [htmlData, setHtmlData] = useState(aboutUs ?? "");
 
   const dataChanged = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     // @todoo add validation

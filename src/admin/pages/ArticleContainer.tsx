@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { ArticleT, Article, ArticleEditor, SaveButton, PageTitle } from "@zjournal/ui-library";
 import { useArticle } from "../../datastore/contexts/ArticleContext";
-import { ArticleT } from "../../Types";
-import Article from "../../web/components/Article/Article";
-import ArticleEditor from "../components/editor/ArticleEditor";
-import SaveButton from "../components/editor/SaveButton";
-import { PageTitle } from "../components/PageTitle";
+import { useJournal } from "../../datastore/contexts/JournalContext";
+import { addArticleToDB, updateArticleinDB } from "../../datastore/actions/ArticleActions";
+import { defaultArticle } from "../../ApplicationConstants";
+import { properties } from "../../properties";
 
 type ArticleContainerProps = {
   inArticle: ArticleT;
@@ -15,20 +15,21 @@ export default function ArticleContainer({
   inArticle,
   setOutArticle,
 }: ArticleContainerProps) {
-  const { state: aState } = useArticle();
-  
+  const { dispatch, state: aState } = useArticle();
+  const { state: jState } = useJournal();
+
   const [article, setArticle] = useState(inArticle);
   const [editMode, setEditMode] = useState(true);
 
-  useEffect(() => {
-    if (
-      aState.status === "add_article_success" &&
-      article.id === "" &&
-      aState.articles.length > 0
-    ) {
-      setArticle(aState.articles[0]);
+  const savedArticle = aState.status === "add_article_success" && aState.articles.length > 0 ? aState.articles[0] : null;
+
+  const onSave = (savedArticleOut: ArticleT, isNew: boolean) => {
+    if (isNew) {
+      addArticleToDB(dispatch, savedArticleOut);
+    } else {
+      updateArticleinDB(dispatch, savedArticleOut);
     }
-  }, [aState]);
+  };
 
   const showPreview = (updatedArticle: ArticleT) => {
     setArticle(updatedArticle);
@@ -50,12 +51,19 @@ export default function ArticleContainer({
       <div className="row">
         <div className="col">
           {editMode && (
-            <ArticleEditor articleIn={article} setPreview={showPreview} />
+            <ArticleEditor
+              articleIn={article}
+              setPreview={showPreview}
+              defaultArticle={defaultArticle}
+              availableComponents={jState.journal?.components ?? []}
+              categories={jState.journal?.categories ?? []}
+              savedArticle={savedArticle}
+            />
           )}
           {!editMode && (
             <React.Fragment>
               <div className="top-action-box">
-                <SaveButton article={article} />
+                <SaveButton article={article} onSave={onSave} />
                 <button
                   className="btn btn-primary btn-sm"
                   onClick={hidePreview}
@@ -63,8 +71,8 @@ export default function ArticleContainer({
                   <i className="bi bi-pencil"></i>&nbsp;&nbsp;Edit
                 </button>
               </div>
-              <hr/>
-              <Article data={article} />
+              <hr />
+              <Article article={article} status="success" disableTextSelect={properties.disableTextSelect} />
             </React.Fragment>
           )}
         </div>

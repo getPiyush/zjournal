@@ -1,5 +1,5 @@
-import { ArticleT } from "../../Types";
-import { decryptData } from "../../utils/componentUtil";
+import { ArticleT } from "@zjournal/ui-library";
+import { decryptData } from "../codec";
 import {
   getArticleByIdAPI,
   addArticleAPI,

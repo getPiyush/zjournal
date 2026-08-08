@@ -1,14 +1,21 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { ArticleT, ArticlePreview, PageTitle } from "@zjournal/ui-library";
 import { getArticlesBycategory } from "../../datastore/actions/ArticleActions";
 import { useArticle } from "../../datastore/contexts/ArticleContext";
 import { useJournal } from "../../datastore/contexts/JournalContext";
-import ArticlePreview from "../components/editor/ArticlePreview";
-import { PageTitle } from "../components/PageTitle";
+import { updateCurrentArticle } from "../../datastore/actions/JournalActions";
 
 export default function CategoryEditor() {
-  const { state: state } = useJournal();
+  const { state: state, dispatch: journalDispatch } = useJournal();
+  const navigate = useNavigate();
 
   const { dispatch, state: articleData } = useArticle();
+
+  const editArticle = (article: ArticleT) => {
+    updateCurrentArticle(article, journalDispatch);
+    navigate("/admin/editor");
+  };
 
   const getArticlesBycategoryID = (categoryId) => {
     getArticlesBycategory(dispatch, categoryId);
@@ -20,7 +27,7 @@ export default function CategoryEditor() {
     getArticlesBycategoryID(selectedCategory);
   }, [selectedCategory]);
 
-  const getCategoryDropdown = (currentCategory:string) => (
+  const getCategoryDropdown = (currentCategory: string) => (
     <div className="dropdown">
       <button
         className="btn btn-light btn-lg dropdown-toggle text-wrap"
@@ -29,26 +36,26 @@ export default function CategoryEditor() {
         data-bs-toggle="dropdown"
         aria-expanded="false"
       >
-        <b>{currentCategory!=""?currentCategory:"All"}</b>
+        <b>{currentCategory != "" ? currentCategory : "All"}</b>
       </button>
 
       <ul className="dropdown-menu" aria-labelledby="categoryButton">
         {state.journal.categories.map((category, index) => (
-            <li>
-              <a
-                className={
-                  category === currentCategory
-                    ? "dropdown-item active"
-                    : "dropdown-item"
-                }
-                onClick={() => setSelectedcategory(category)}
-                href="#"
-                key={`key_${index}_${category.replace(/[^A-Z0-9]/gi, "_")}`}
-              >
-                {category}
-              </a>
-            </li>
-          ))}
+          <li>
+            <a
+              className={
+                category === currentCategory
+                  ? "dropdown-item active"
+                  : "dropdown-item"
+              }
+              onClick={() => setSelectedcategory(category !== "All" ? category : "")}
+              href="#"
+              key={`key_${index}_${category.replace(/[^A-Z0-9]/gi, "_")}`}
+            >
+              {category}
+            </a>
+          </li>
+        ))}
       </ul>
     </div>
   );
@@ -65,7 +72,7 @@ export default function CategoryEditor() {
           {getCategoryDropdown(selectedCategory)}
         </div>
         <div className="col-md-4 offset-md-4 d-flex justify-content-end">
-         {/** 
+          {/** 
             <div className="d-flex">
               <input
                 className="form-control"
@@ -77,9 +84,9 @@ export default function CategoryEditor() {
                 Search
               </button>
             </div>
-           */}           
-           <div className="align-self-center"><b>{articleData?.articles?.length} Articles</b></div> 
-       
+           */}
+          <div className="align-self-center"><b>{articleData?.articles?.length} Articles</b></div>
+
         </div>
       </div>
       <div className="row">
@@ -91,7 +98,7 @@ export default function CategoryEditor() {
         {articleData?.articles?.length > 0 ? (
           articleData.articles.map((article) => (
             <div className="col admin-preview">
-              <ArticlePreview data={article} />
+              <ArticlePreview data={article} onEdit={editArticle} />
             </div>
           ))
         ) : (

@@ -1,6 +1,5 @@
-import { QnA } from "../../Types";
-import { decryptData } from "../../utils/componentUtil";
-
+import { QnA } from "@zjournal/ui-library";
+import { decryptData } from "../codec";
 import { addQnAAPI, deleteQnAAPI, getQnAsAPI } from "../api";
 
 export const getQnAsDB = (dispatch) => {

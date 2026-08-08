@@ -1,8 +1,8 @@
-import axios from "axios";
 import { applicationProperties } from "../ApplicationConstants";
+import { httpClient } from "./http-client";
+import { encryptOutData } from "./codec";
 
-import { ArticleT, Contact, Journal, QnA } from "../Types";
-import { encryptOutData } from "../utils/componentUtil";
+import { ArticleT, Contact, Journal, QnA } from "@zjournal/ui-library";
 import { encryptDataPhp, getPassPhase } from "../utils/crypto";
 
 // const host = window.location.host.split(":")[0];
@@ -30,21 +30,21 @@ const getParams = () => {
 // request methos
 
 const getRequest = (url) => {
-    return axios.get(url, getParams());
+    return httpClient.get(url, getParams());
 }
 
 const putRequest = (url, obj) => {
     const payload = encryptOutData(obj);
-    return axios.put(url, payload, getParams());
+    return httpClient.put(url, payload, getParams());
 }
 
 const postRequest = (url, obj) => {
     const payload = encryptOutData(obj);
-    return axios.post(url, payload, getParams());
+    return httpClient.post(url, payload, getParams());
 }
 
 const deleteRequest = (url) => {
-    return axios.delete(url, getParams());
+    return httpClient.delete(url, getParams());
 }
 
 

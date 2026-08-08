@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
-
-import { updateJournalinDB } from "../../../datastore/actions/JournalActions";
+import { ConfirmationButton } from "@zjournal/ui-library";
 import { useJournal } from "../../../datastore/contexts/JournalContext";
-import { TemplateRenderer } from "../../../web/components/Templates/TemplateRenderer";
-import ConfirmationButton from "../../components/editor/ConfirmationButton";
+import { updateJournalinDB } from "../../../datastore/actions/JournalActions";
+import TemplateRendererView from "../../../components/TemplateRendererView";
 
 /*
 type HomeTemplateProps = {
@@ -160,7 +159,7 @@ export const HomeTemplate = () => {
             className="template-viewer p-3"
             style={{ border: "solid 1px green" }}
           >
-            <TemplateRenderer
+            <TemplateRendererView
               invalidArticleError={invalidArticleFound}
               dataString={updatedTemplateData}
               mode="edit"

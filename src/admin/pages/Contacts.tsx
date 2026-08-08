@@ -1,10 +1,7 @@
-import { parsex } from "../../utils/parserUtil";
-
 import { useEffect } from "react";
 import { getContactsDB } from "../../datastore/actions/ContactActions";
 import { useContact } from "../../datastore/contexts/ContactContext";
-import { getDate } from "../../utils/componentUtil";
-import { PageTitle } from "../components/PageTitle";
+import { parsex, getDate, PageTitle } from "@zjournal/ui-library";
 
 export const Contacts = () => {
   const { dispatch, state: contactState } = useContact();

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { PageTitle } from "../components/PageTitle";
+import { PageTitle } from "@zjournal/ui-library";
 import { AboutTemplate } from "./templates/AboutTemplate";
 import { HomeTemplate } from "./templates/HomeTemplate";
 import { QnATemplate } from "./templates/QnATemplate";

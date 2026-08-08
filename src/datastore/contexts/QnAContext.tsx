@@ -1,6 +1,6 @@
 import * as React from "react";
 import { defaultQnA } from "../../ApplicationConstants";
-import { QnA } from "../../Types";
+import { QnA } from "@zjournal/ui-library";
 
 type Action =
   | { type: "get_qnas_success"; value: QnA[] }

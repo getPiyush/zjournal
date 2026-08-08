@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import { Logo } from "@zjournal/ui-library";
 import { updatePage } from "../datastore/actions/JournalActions";
 import { useJournal } from "../datastore/contexts/JournalContext";
-import { Logo } from "./components/Logo";
 
 export default function Header() {
   const {dispatch} = useJournal();

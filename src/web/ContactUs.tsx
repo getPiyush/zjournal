@@ -1,13 +1,11 @@
-import "react-phone-input-2/lib/style.css";
-import PhoneInput from "react-phone-input-2";
+import "./react-phone-input-2.css";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
-import { applicationProperties } from "../ApplicationConstants";
 import { useContact } from "../datastore/contexts/ContactContext";
 import { addContactToDB } from "../datastore/actions/ContactActions";
-import { Contact } from "../Types";
-import { Logo } from "./components/Logo";
+import { applicationProperties } from "../ApplicationConstants";
+import { Contact, Logo } from "@zjournal/ui-library";
 
 export default function ContactUs() {
   window.document.title = `Contact Us - ${applicationProperties.title}`;
@@ -123,19 +121,15 @@ export default function ContactUs() {
               </div>
               <div className="mb-3">
                 <label className="form-label">Phone Number</label>
-                <PhoneInput
-                  inputClass="form-control"
-                  inputStyle={{ width: "100%" }}
-                  country={"in"}
-                  preferredCountries={["in", "uk", "us"]}
+                <input
+                  type="tel"
+                  className="form-control"
+                  name="contact_phone"
                   placeholder="Enter phone number"
-                  value={value}
-                  onChange={phoneNoChaged}
-                  inputProps={{
-                    name: "contact_phone",
-                    required: true,
-                    minlength: 7,
-                  }}
+                  value={value || ""}
+                  onChange={(e) => phoneNoChaged(e.target.value)}
+                  required
+                  minLength={7}
                 />
               </div>
               <div className="mb-3">

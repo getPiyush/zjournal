@@ -1,5 +1,5 @@
-import { ArticleT, Journal } from "../../Types";
-import { decryptData } from "../../utils/componentUtil";
+import { ArticleT, Journal } from "@zjournal/ui-library";
+import { decryptData } from "../codec";
 import { getJournalAPI, updateJournalAPI } from "../api";
 
 export const updatePage = (page: string, dispatch) => {
