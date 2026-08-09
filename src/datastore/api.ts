@@ -33,14 +33,22 @@ const getRequest = (url) => {
     return httpClient.get(url, getParams());
 }
 
+const withJsonContentType = (params: { headers?: Record<string, string> }) => ({
+    ...params,
+    headers: {
+        ...params.headers,
+        "Content-Type": "application/json"
+    }
+});
+
 const putRequest = (url, obj) => {
     const payload = encryptOutData(obj);
-    return httpClient.put(url, payload, getParams());
+    return httpClient.put(url, payload, withJsonContentType(getParams()));
 }
 
 const postRequest = (url, obj) => {
     const payload = encryptOutData(obj);
-    return httpClient.post(url, payload, getParams());
+    return httpClient.post(url, payload, withJsonContentType(getParams()));
 }
 
 const deleteRequest = (url) => {
@@ -87,6 +95,13 @@ export const getArticleByCategoryAPI = (category: string, web: boolean) => {
     return getRequest(url);
 }
 
+export const getArticleByAuthorAPI = (author: string, web: boolean) => {
+    const authorParam = author !== "" ? `?author=${encodeURIComponent(author)}` : ``;
+    const publishedParam = web ? `&published=true` : ``;
+    const url = `${getArticleAPIPath}${authorParam}${publishedParam}`;
+    return getRequest(url);
+}
+
 export const getArticleByMonthAPI = (blogDate: string, web: boolean) => {
     const url = `${getArticleAPIPath}?dateCreated_like=${blogDate}${web ? `&published=true` : ``}`;
     return getRequest(url);
@@ -99,6 +114,8 @@ export const getArticlesToDeleteAPI = () => {
 
 export const addArticleAPI = (article: ArticleT) => {
     const url = `${getArticleAPIPath}`;
+          console.log("ArticleContainer: onSave called with article:", article);
+
     return postRequest(url, article);
 }
 

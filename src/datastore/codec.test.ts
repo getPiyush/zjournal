@@ -60,7 +60,6 @@ describe("decryptData", () => {
   });
 
   test("falls back to returning the input unchanged for an unknown server mode", () => {
-    // @ts-expect-error intentionally exercising the fallback branch
     applicationProperties.serverMode = "unknown";
 
     const data = { some: "payload" };
