@@ -17,7 +17,9 @@ export default function Header() {
     <header>
       <nav className="navbar navbar-expand-md navbar-light fixed-top">
         <div className="container-fluid">
-          <Logo />
+          <Link to="/web/home">
+            <Logo />
+          </Link>
           <button
             className="btn  btn-sm navbar-toggler"
             type="button"

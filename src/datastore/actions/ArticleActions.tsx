@@ -8,6 +8,7 @@ import {
   deleteArticleAPI,
   getArticleByIdsAPI,
   getArticleByMonthAPI,
+  getArticleByAuthorAPI,
   getArticlesToDeleteAPI
 } from "../api";
 
@@ -50,6 +51,22 @@ export const getArticlesBycategory = (dispatch, category: string, web?: boolean)
     .catch(function (error) {
       // console.log(error);
       dispatch({ type: "get_article_by_category_error" });
+    })
+    .then(function () {
+      // always executed
+    });
+};
+
+
+export const getArticlesByAuthor = (dispatch, author: string, web?: boolean) => {
+  dispatch({ type: "get_article_by_author_loading" });
+  getArticleByAuthorAPI(author, web)
+    .then(function (response) {
+      dispatch({ type: "get_article_by_author", value: decryptData(response.data) });
+    })
+    .catch(function (error) {
+      // console.log(error);
+      dispatch({ type: "get_article_by_author_error" });
     })
     .then(function () {
       // always executed

@@ -9,7 +9,7 @@ export const defaultArticle: ArticleT = {
   title: "",
   dateCreated: new Date(),
   dateModified: new Date(),
-  categryId: "Production",
+  categryId: "",
   content: [],
   origin: "local",
   published: false,

@@ -3,7 +3,7 @@ import { useLocation, useSearchParams } from "react-router-dom";
 import { Articles, months } from "@zjournal/ui-library";
 import { useArticle } from "../datastore/contexts/ArticleContext";
 import { useJournal } from "../datastore/contexts/JournalContext";
-import { getArticlesBycategory, getArticlesByBlogDate } from "../datastore/actions/ArticleActions";
+import { getArticlesBycategory, getArticlesByBlogDate, getArticlesByAuthor } from "../datastore/actions/ArticleActions";
 import { updatePage } from "../datastore/actions/JournalActions";
 import { applicationProperties } from "../ApplicationConstants";
 import { properties } from "../properties";
@@ -13,9 +13,11 @@ export default function ArticlesRouteView() {
   const [params] = useSearchParams();
   const categoryId = params.getAll("categoryId")[0];
   const blogDate = params.getAll("blogdate")[0];
+  const authorId = params.getAll("authorId")[0];
 
   const isArticleByCategory = path.search("/articles") !== -1 && categoryId && categoryId !== "";
   const isArticleByBlog = path.search("/articles") !== -1 && blogDate && blogDate !== "";
+  const isArticleByAuthor = path.search("/articles") !== -1 && authorId && authorId !== "";
 
   const { dispatch, state: articleData } = useArticle();
   const { dispatch: journalDispatch } = useJournal();
@@ -26,6 +28,7 @@ export default function ArticlesRouteView() {
     const yearMonth = blogDate.split("-");
     title = `${months[Number(yearMonth[1]) - 1]} ${yearMonth[0]} `;
   }
+  if (isArticleByAuthor) title = `${authorId}`;
 
   useEffect(() => {
     window.document.title = `${title} - ${applicationProperties.title}`;
@@ -36,8 +39,10 @@ export default function ArticlesRouteView() {
       getArticlesBycategory(dispatch, categoryId, true);
     } else if (isArticleByBlog) {
       getArticlesByBlogDate(dispatch, blogDate, true);
+    } else if (isArticleByAuthor) {
+      getArticlesByAuthor(dispatch, authorId, true);
     }
-  }, [categoryId, blogDate]);
+  }, [categoryId, blogDate, authorId]);
 
   return (
     <Articles

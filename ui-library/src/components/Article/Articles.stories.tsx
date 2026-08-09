@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { expect, within } from "storybook/test";
+import { expect, userEvent, within } from "storybook/test";
 import Articles from "./Articles";
 
 const meta = {
@@ -66,5 +66,16 @@ export const Empty: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     expect(canvas.getByRole("heading", { name: /404/i })).toBeInTheDocument();
+  },
+};
+
+export const SearchNarrowsResults: Story = {
+  args: { title: "Product", status: "success", articles: sampleArticles },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    await userEvent.type(canvas.getByRole("searchbox", { name: "Search articles" }), "edges");
+
+    expect(canvas.getByText("Designing for the edges")).toBeInTheDocument();
+    expect(canvas.queryByText("Shipping with confidence")).toBeNull();
   },
 };

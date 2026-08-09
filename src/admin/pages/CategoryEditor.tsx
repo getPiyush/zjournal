@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { ArticleT, ArticlePreview, PageTitle } from "@zjournal/ui-library";
+import { ArticleT, ArticleSortOption, ArticlePreview, ArticlesToolbar, PageTitle } from "@zjournal/ui-library";
 import { getArticlesBycategory } from "../../datastore/actions/ArticleActions";
 import { useArticle } from "../../datastore/contexts/ArticleContext";
 import { useJournal } from "../../datastore/contexts/JournalContext";
@@ -22,10 +22,34 @@ export default function CategoryEditor() {
   };
 
   const [selectedCategory, setSelectedcategory] = useState("");
+  const [search, setSearch] = useState("");
+  const [sortBy, setSortBy] = useState<ArticleSortOption>("newest");
 
   useEffect(() => {
     getArticlesBycategoryID(selectedCategory);
   }, [selectedCategory]);
+
+  const visibleArticles = useMemo(() => {
+    const articles = articleData?.articles ?? [];
+    const searchTerm = search.trim().toLowerCase();
+    const filtered = searchTerm
+      ? articles.filter((article) => article.title.toLowerCase().includes(searchTerm))
+      : articles;
+
+    return [...filtered].sort((a, b) => {
+      switch (sortBy) {
+        case "oldest":
+          return new Date(a.dateCreated).getTime() - new Date(b.dateCreated).getTime();
+        case "title-asc":
+          return a.title.localeCompare(b.title);
+        case "title-desc":
+          return b.title.localeCompare(a.title);
+        case "newest":
+        default:
+          return new Date(b.dateCreated).getTime() - new Date(a.dateCreated).getTime();
+      }
+    });
+  }, [articleData?.articles, search, sortBy]);
 
   const getCategoryDropdown = (currentCategory: string) => (
     <div className="dropdown">
@@ -72,38 +96,29 @@ export default function CategoryEditor() {
           {getCategoryDropdown(selectedCategory)}
         </div>
         <div className="col-md-4 offset-md-4 d-flex justify-content-end">
-          {/** 
-            <div className="d-flex">
-              <input
-                className="form-control"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-success" type="button">
-                Search
-              </button>
-            </div>
-           */}
-          <div className="align-self-center"><b>{articleData?.articles?.length} Articles</b></div>
-
+          <div className="align-self-center"><b>{visibleArticles.length} Articles</b></div>
         </div>
       </div>
+      <ArticlesToolbar search={search} onSearchChange={setSearch} sortBy={sortBy} onSortChange={setSortBy} />
       <div className="row">
         <div className="col">
           <hr />
         </div>
       </div>
       <div className="row row-cols-1 row-cols-md-2 g-4">
-        {articleData?.articles?.length > 0 ? (
-          articleData.articles.map((article) => (
-            <div className="col admin-preview">
+        {visibleArticles.length > 0 ? (
+          visibleArticles.map((article) => (
+            <div className="col admin-preview" key={article.id}>
               <ArticlePreview data={article} onEdit={editArticle} />
             </div>
           ))
         ) : (
           <div className="col">
-            <div>No article in this category</div>
+            <div>
+              {articleData?.articles?.length > 0
+                ? "No articles match your search."
+                : "No article in this category"}
+            </div>
           </div>
         )}
       </div>

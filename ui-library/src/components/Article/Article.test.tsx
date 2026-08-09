@@ -33,6 +33,15 @@ describe("Article", () => {
     expect(screen.getByText("Product")).toBeInTheDocument();
   });
 
+  test("links the author name to their articles page", () => {
+    render(<Article article={sampleArticle} status="success" />);
+
+    expect(screen.getByRole("link", { name: "Mina" })).toHaveAttribute(
+      "href",
+      "/web/articles?authorId=Mina"
+    );
+  });
+
   test("shows a loading page while the status is loading", () => {
     const { container } = render(<Article article={null} status="loading" />);
     expect(container.querySelector(".blob-1")).not.toBeNull();

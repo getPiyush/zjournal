@@ -7,6 +7,8 @@ export { default as Article } from './components/Article/Article';
 export { default as ArticleContainer } from './components/Article/ArticleContainer';
 export { default as Articles } from './components/Article/Articles';
 export { default as ArticlePreviewWeb } from './components/Article/ArticlePreviewWeb';
+export { default as ArticlesToolbar } from './components/Article/ArticlesToolbar';
+export type { ArticleSortOption } from './components/Article/ArticlesToolbar';
 export { Table } from './components/Table';
 export { List } from './components/List';
 export { TemplateRenderer, parseTemplateArticleIds } from './components/Templates/TemplateRenderer';

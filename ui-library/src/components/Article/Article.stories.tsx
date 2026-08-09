@@ -45,6 +45,10 @@ export const Default: Story = {
     ).toBeInTheDocument();
     expect(canvas.getByText("Mina", { exact: false })).toBeInTheDocument();
     expect(canvas.getByText("Product")).toBeInTheDocument();
+    expect(canvas.getByRole("link", { name: "Mina" })).toHaveAttribute(
+      "href",
+      "/web/articles?authorId=Mina"
+    );
   },
 };
 

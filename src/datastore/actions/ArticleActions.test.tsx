@@ -6,6 +6,7 @@ import {
   getArticlesByIds,
   getArticlesBycategory,
   getArticlesByBlogDate,
+  getArticlesByAuthor,
   getArticlesToDelete,
   addArticleToDB,
   updateArticleinDB,
@@ -16,6 +17,7 @@ import {
   getArticleByIdsAPI,
   getArticleByCategoryAPI,
   getArticleByMonthAPI,
+  getArticleByAuthorAPI,
   getArticlesToDeleteAPI,
   addArticleAPI,
   updateArticleAPI,
@@ -143,6 +145,35 @@ describe("getArticlesByBlogDate", () => {
     await flushPromises();
 
     expect(dispatch).toHaveBeenCalledWith({ type: "get_article_by_blog_date_error" });
+  });
+});
+
+describe("getArticlesByAuthor", () => {
+  test("dispatches loading then success with the author/web params forwarded", async () => {
+    const dispatch = jest.fn();
+    (getArticleByAuthorAPI as jest.Mock).mockResolvedValue({ data: {} });
+    (decryptData as jest.Mock).mockReturnValue([{ id: "1" }]);
+
+    getArticlesByAuthor(dispatch, "Mina", true);
+
+    expect(dispatch).toHaveBeenCalledWith({ type: "get_article_by_author_loading" });
+    await flushPromises();
+
+    expect(getArticleByAuthorAPI).toHaveBeenCalledWith("Mina", true);
+    expect(dispatch).toHaveBeenCalledWith({
+      type: "get_article_by_author",
+      value: [{ id: "1" }],
+    });
+  });
+
+  test("dispatches an error action when the API call fails", async () => {
+    const dispatch = jest.fn();
+    (getArticleByAuthorAPI as jest.Mock).mockRejectedValue(new Error("boom"));
+
+    getArticlesByAuthor(dispatch, "Mina");
+    await flushPromises();
+
+    expect(dispatch).toHaveBeenCalledWith({ type: "get_article_by_author_error" });
   });
 });
 

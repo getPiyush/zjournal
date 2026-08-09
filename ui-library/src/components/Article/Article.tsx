@@ -36,7 +36,11 @@ export default function Article({ article, status, disableTextSelect, onBrowseCa
               {" "}
               <div className="sub-header">
                 <span>
-                  By <b>{article.author}</b> on {getDate(article.dateCreated)}
+                  By{" "}
+                  <a href={`/web/articles?authorId=${encodeURIComponent(article.author)}`}>
+                    <b>{article.author}</b>
+                  </a>{" "}
+                  on {getDate(article.dateCreated)}
                 </span>
                 <div>
                   <span className="badge bg-success">{article.categryId}</span>

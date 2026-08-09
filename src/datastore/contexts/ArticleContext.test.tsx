@@ -32,6 +32,8 @@ describe("useArticle", () => {
     ["get_article_by_category_error", "error"],
     ["get_article_by_blog_date_loading", "loading"],
     ["get_article_by_blog_date_error", "error"],
+    ["get_article_by_author_loading", "loading"],
+    ["get_article_by_author_error", "error"],
     ["get_articles_delete_loading", "loading"],
     ["get_articles_delete_error", "error"],
     ["add_article_loading", "loading"],
@@ -93,6 +95,17 @@ describe("useArticle", () => {
 
     act(() => {
       result.current.dispatch({ type: "get_article_by_blog_date", value: articles });
+    });
+
+    expect(result.current.state).toEqual({ status: "success", articles });
+  });
+
+  test("get_article_by_author replaces the article list", () => {
+    const { result } = setup();
+    const articles: any = [{ id: "1" }];
+
+    act(() => {
+      result.current.dispatch({ type: "get_article_by_author", value: articles });
     });
 
     expect(result.current.state).toEqual({ status: "success", articles });

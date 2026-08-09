@@ -14,6 +14,11 @@ const sampleArticle = {
   deleteFlag: false,
   content: [
     {
+      componenType: "Image",
+      componentId: "img1",
+      data: "https://example.com/hero.jpg",
+    },
+    {
       componenType: "Paragraph",
       componentId: "p1",
       data: "A simple plan, clear ownership, and a calm rollout made this release feel effortless.",
@@ -33,10 +38,42 @@ describe("HeroArticle", () => {
     expect(screen.getByText("By Mina on", { exact: false })).toBeInTheDocument();
   });
 
+  test("renders the first image from the content", () => {
+    render(<HeroArticle article={sampleArticle} />);
+    expect(screen.getByRole("img")).toHaveAttribute("src", "https://example.com/hero.jpg");
+  });
+
   test("renders without a snippet when there is no content", () => {
     render(<HeroArticle article={{ ...sampleArticle, content: [] }} />);
     expect(
       screen.getByRole("heading", { name: "Shipping with confidence" })
     ).toBeInTheDocument();
+    expect(screen.queryByRole("link", { name: "more.." })).toBeNull();
+  });
+
+  test("view mode links to the public article page", () => {
+    render(<HeroArticle article={sampleArticle} mode="view" />);
+    expect(screen.getByRole("link", { name: "more.." })).toHaveAttribute(
+      "href",
+      "article/article-hero-1"
+    );
+    expect(screen.queryByText("article-hero-1")).toBeNull();
+  });
+
+  test("edit mode links to the web preview and shows the article id badge", () => {
+    render(<HeroArticle article={sampleArticle} mode="edit" />);
+    expect(screen.getByRole("link", { name: "more.." })).toHaveAttribute(
+      "href",
+      "/web/article/article-hero-1"
+    );
+    expect(screen.getByText("article-hero-1")).toBeInTheDocument();
+  });
+
+  test("defaults to view mode", () => {
+    render(<HeroArticle article={sampleArticle} />);
+    expect(screen.getByRole("link", { name: "more.." })).toHaveAttribute(
+      "href",
+      "article/article-hero-1"
+    );
   });
 });
