@@ -82,6 +82,11 @@ b {
   text-decoration: none;
 }
 
+.blog-header-logo .logo-image {
+  padding: 0;
+  height: 40px;
+}
+
 .small-text {
   font-size: 0.75rem;
 }

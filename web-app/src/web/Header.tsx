@@ -1,12 +1,14 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Logo } from "@zjournal/ui-library";
 import { updatePage } from "../datastore/actions/JournalActions";
 import { useJournal } from "../datastore/contexts/JournalContext";
+import { applicationProperties } from "../ApplicationConstants";
 
 export default function Header() {
   const {dispatch} = useJournal();
   const location = useLocation().pathname;
+  const navigate = useNavigate();
 
   const linkClicked = (event: React.MouseEvent<HTMLAnchorElement>) => {
     const target: any = event.target;
@@ -17,9 +19,11 @@ export default function Header() {
     <header>
       <nav className="navbar navbar-expand-md navbar-light fixed-top">
         <div className="container-fluid">
-          <Link to="/web/home">
-            <Logo />
-          </Link>
+          <Logo
+            image="/images/patrikaz_logo_eng.jpeg"
+            subtext={`by ${applicationProperties.author}`}
+            onClick={() => navigate("/web/home")}
+          />
           <button
             className="btn  btn-sm navbar-toggler"
             type="button"

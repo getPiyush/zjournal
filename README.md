@@ -20,6 +20,14 @@ npm run dev
 | Journal | http://localhost:3000/ |
 | Journal Admin |  http://localhost:3000/admin/|
 
+### Project structure
+This is an npm workspaces monorepo:
+- `web-app/` — the React + TypeScript journal app (`zjoutnal-react-ts`)
+- `ui-library/` — shared UI components (`@zjournal/ui-library`), with its own Storybook and Jest tests
+- `server/node` — the local JSON-server backed API used in development
+
+All `npm run <script>` commands work from the repo root and delegate into the relevant workspace.
+
 ### Todo
 - ~~Article Component ```<Table>``` implementation~~
 - ~~Publish/UnPublish Article~~

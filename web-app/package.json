@@ -1,0 +1,43 @@
+{
+  "name": "zjoutnal-react-ts",
+  "version": "1.0.0",
+  "description": "zJournal - A React TS bases journal editor application",
+  "keywords": [
+    "typescript",
+    "react",
+    "starter"
+  ],
+  "main": "src/index.tsx",
+  "dependencies": {
+    "@zjournal/ui-library": "*",
+    "crypto-js": "4.2.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "6.21.2",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/crypto-js": "^4.2.2",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "cross-env": "^7.0.3",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "start": "cross-env PORT=80 react-scripts start",
+    "prodrun": "cd build && node server.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

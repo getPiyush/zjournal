@@ -84,7 +84,7 @@ export default function ContactUs() {
           <div className="card-text p-3">
             Thanks for contacting
             <br />
-            <br /> <Logo /> <br />
+            <br /> <Logo subtext={`by ${applicationProperties.author}`} /> <br />
             We will get back to you soon.
           </div>
         </div>

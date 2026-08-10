@@ -25,4 +25,12 @@ describe("web Header", () => {
 
     expect(updatePage).toHaveBeenCalledWith("categories", expect.any(Function));
   });
+
+  test("navigates home when the logo is clicked", async () => {
+    renderWithProviders(<Header />, { route: "/web/aboutus" });
+
+    await userEvent.click(screen.getByText("Article Collections"));
+
+    expect(screen.getByRole("link", { name: "Home" })).toHaveClass("active");
+  });
 });
