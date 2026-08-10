@@ -1,4 +1,6 @@
 import React from "react";
+import { CardImage } from "../../styles/shared";
+
 import { parsex } from "../../utils/parserUtil";
 
 import { ArticleT } from "../../Types";
@@ -33,7 +35,7 @@ export default function ArticlePreviewWeb({ data }: ArticleProps) {
             if (item.componenType === "Image" && !contentArray[0]) {
               contentArray[0] = typeof item.data === "string" ? item.data : item.data[0] || "";
               return (
-                <img
+                <CardImage
                   key={`articlecomp_${index}_${data.id}`}
                   className="card-img-top"
                   src={`${contentArray[0]}`}

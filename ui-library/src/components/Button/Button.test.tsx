@@ -7,14 +7,15 @@ describe("Button", () => {
   test("renders its children and defaults to the primary variant", () => {
     render(<Button>Save</Button>);
     const button = screen.getByRole("button", { name: "Save" });
-    expect(button).toHaveClass("ui-button--primary");
+    expect(button).toHaveStyle({ background: "#0366d6", color: "white" });
   });
 
-  test("applies the secondary variant class", () => {
+  test("applies the secondary variant style", () => {
     render(<Button variant="secondary">Cancel</Button>);
-    expect(screen.getByRole("button", { name: "Cancel" })).toHaveClass(
-      "ui-button--secondary"
-    );
+    expect(screen.getByRole("button", { name: "Cancel" })).toHaveStyle({
+      background: "#e6eef8",
+      color: "#0366d6",
+    });
   });
 
   test("calls onClick when clicked", async () => {

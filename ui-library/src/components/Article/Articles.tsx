@@ -1,4 +1,6 @@
 import React, { useMemo, useState } from "react";
+import { ArticleViewer } from "./Article.styles";
+
 import { ArticleT } from "../../Types";
 
 import { PageNotFound } from "../PageNotFound";
@@ -47,9 +49,9 @@ export default function Articles({ title, status, articles, disableTextSelect, o
   };
 
   return (
-    <div className="container article-viewer">
+    <ArticleViewer className="container">
       {status !== "loading" && status !== "error" ? (
-        <div className={`container article-viewer ${disableTextSelect ? "disable-text-selection" : ""}`}>
+        <ArticleViewer className="container" $disableTextSelect={disableTextSelect}>
           <div className="row">
             <div className="col">
               <h2>
@@ -83,10 +85,10 @@ export default function Articles({ title, status, articles, disableTextSelect, o
               <div className="col">No articles match your search.</div>
             </div>
           )}
-        </div>
+        </ArticleViewer>
       ) : (
         getNoArticle()
       )}
-    </div>
+    </ArticleViewer>
   );
 }

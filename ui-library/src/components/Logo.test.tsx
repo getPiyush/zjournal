@@ -18,8 +18,8 @@ describe("Logo", () => {
   });
 
   test("does not render the subtext div when subtext is not passed", () => {
-    const { container } = render(<Logo title="My Journal" />);
-    expect(container.querySelector(".logo-subtext")).toBeNull();
+    render(<Logo title="My Journal" />);
+    expect(screen.queryByTestId("logo-subtext")).toBeNull();
   });
 
   test("renders the title as text when no image is passed", () => {

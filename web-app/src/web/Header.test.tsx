@@ -29,7 +29,7 @@ describe("web Header", () => {
   test("navigates home when the logo is clicked", async () => {
     renderWithProviders(<Header />, { route: "/web/aboutus" });
 
-    await userEvent.click(screen.getByText("Article Collections"));
+    await userEvent.click(screen.getByRole("img", { name: "Article Collections" }));
 
     expect(screen.getByRole("link", { name: "Home" })).toHaveClass("active");
   });

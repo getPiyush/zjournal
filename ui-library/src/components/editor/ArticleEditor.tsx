@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { EditArea } from "./ArticleEditor.styles";
+import { EditorActionColStart, EditorActionColEnd, PaddingLR8, TopActionBox } from "../../styles/shared";
+
 import { ArticleT, ComponentObject } from "../../Types";
 
 import {
@@ -165,7 +168,7 @@ export default function ArticleEditor({
     <React.Fragment>
       <div className="row">
         <div className="col">
-          <div className="top-action-box">
+          <TopActionBox>
             <span>{article.origin === "local" ? "Creating New" : "Updating"} Article</span>
             <button
               className="btn btn-primary btn-sm"
@@ -181,7 +184,7 @@ export default function ArticleEditor({
               iconComp={<i className="bi bi-arrow-clockwise" />}
               disabled={article.title === "" || article.content.length === 0}
             />
-          </div>
+          </TopActionBox>
           <hr />
         </div>
       </div>
@@ -200,7 +203,7 @@ export default function ArticleEditor({
         </div>
       </div>
       <div className="row mt-2 mb-2">
-        <div className="col editor-action-col-start">
+        <EditorActionColStart className="col">
           <div className="dropdown" style={{ width: "100% !important" }}>
             <button
               className="btn btn-sm btn-outline-dark dropdown-toggle"
@@ -245,9 +248,9 @@ export default function ArticleEditor({
           >
             <i className="bi bi-plus-circle-fill"></i>&nbsp;&nbsp;Add
           </button>
-        </div>
-        <div className="col editor-action-col-end">
-          <div className="dropdown padding-lr-8">
+        </EditorActionColStart>
+        <EditorActionColEnd className="col">
+          <PaddingLR8 className="dropdown">
             <button
               className="btn btn-sm btn-outline-dark dropdown-toggle"
               type="button"
@@ -274,7 +277,7 @@ export default function ArticleEditor({
                 </li>
               ))}
             </ul>
-          </div>
+          </PaddingLR8>
           <div className="form-check form-switch">
             <input
               className="form-check-input"
@@ -299,15 +302,15 @@ export default function ArticleEditor({
               Deleted
             </label>
           </div>
-        </div>
+        </EditorActionColEnd>
       </div>
       <div className="row">
-        <div className="col edit-area">
+        <EditArea className="col">
           <ArticleContainerEditor
             componentClicked={onComponentClick}
             containerJson={content}
           />
-        </div>
+        </EditArea>
       </div>
 
       <SidePanelContainer

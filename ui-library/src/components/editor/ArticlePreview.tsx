@@ -1,4 +1,6 @@
 import React from "react";
+import { TopActionBox, CardImage } from "../../styles/shared";
+
 import { parsex } from "../../utils/parserUtil";
 import { ArticleT } from "../../Types";
 import { getDate } from "../../utils/componentUtil";
@@ -34,7 +36,7 @@ export default function ArticlePreview({ data, onEdit }: ArticlePreviewProps) {
         key={`key_${data.title.replace(/[^A-Z0-9]/gi, "_")}`}
       >
         <div className="card-body">
-          <div className="top-action-box">
+          <TopActionBox>
             <div>{getPublishedComponent(data.published)}</div>
             <div>{getDeletedComponent(data.deleteFlag)}</div>
             <button
@@ -58,7 +60,7 @@ export default function ArticlePreview({ data, onEdit }: ArticlePreviewProps) {
             >
               id : {data.id}
             </button>
-          </div>
+          </TopActionBox>
           <h5 className="card-title">{parsex(data.title)}</h5>
           <div className="card-text">
             Created:<b>{getDate(data.dateCreated)}</b> | Last Updated:
@@ -68,7 +70,7 @@ export default function ArticlePreview({ data, onEdit }: ArticlePreviewProps) {
             if (item.componenType === "Image" && !breaker) {
               breaker = true;
               return (
-                <img className="card-img-top" src={`${item.data}`} alt="..." />
+                <CardImage className="card-img-top" src={`${item.data}`} alt="..." />
               );
             }
           })}

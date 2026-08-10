@@ -5161,6 +5161,31 @@
       "origin": "server",
       "published": true,
       "deleteFlag": false
+    },
+    {
+      "id": "msmtlrgi2jzrxyh9ecq",
+      "author": "Piyush Praharaj",
+      "title": "CSS for the <Component> Age",
+      "dateCreated": "2026-08-10T05:53:26.157Z",
+      "dateModified": "2026-08-10T05:58:47.234Z",
+      "categryId": "Science",
+      "content": [
+        {
+          "componentId": "msmtgyo2fvsh9jakzes",
+          "componenType": "Image",
+          "data": "https://styled-components.com/_next/image?url=%2Fscreenshots%2Fthumbnails%2Fspotify.com.jpg&w=3840&q=75",
+          "numbered": false
+        },
+        {
+          "componentId": "msmtjbsxdfr0zapxirv",
+          "componenType": "Paragraph",
+          "data": "Let's say you want to create a simple and reusable < Button /> component that you can use throughout your application. There should be a normal version and a big and primary version for the important buttons. This is what it should look like when rendered: (this is a live example, click on them!)\n\n\n",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
     }
   ],
   "journal": {
@@ -5168,29 +5193,23 @@
     "selectedPage": "home",
     "loggedIn": false,
     "currentArticle": {
-      "id": "mskezfd5jxx3ji5ztrj",
+      "id": "msmtlrgi2jzrxyh9ecq",
       "author": "Piyush Praharaj",
-      "title": "asdsdsadsa",
-      "dateCreated": "2026-08-08T13:30:52.383Z",
-      "dateModified": "2026-08-08T13:30:52.383Z",
-      "categryId": "Engineering",
+      "title": "CSS for the <Component> Age",
+      "dateCreated": "2026-08-10T05:53:26.157Z",
+      "dateModified": "2026-08-10T05:58:29.350Z",
+      "categryId": "Science",
       "content": [
         {
-          "componentId": "mskewol2s7avzhgdor",
-          "componenType": "h2",
-          "data": "What is a glueball? Chinese-led team finds rare particle made entirely of force",
-          "numbered": false
-        },
-        {
-          "componentId": "mskewurany930kymlk",
+          "componentId": "msmtgyo2fvsh9jakzes",
           "componenType": "Image",
-          "data": "https://cdn.i-scmp.com/sites/default/files/styles/1200x800/public/d8/images/canvas/2026/08/08/c335152c-0d59-4d3b-a0d5-59b56f8a072a_a72154ab.jpg?itok=rRTOmaY1&v=1786188182",
+          "data": "https://styled-components.com/_next/image?url=%2Fscreenshots%2Fthumbnails%2Fspotify.com.jpg&w=3840&q=75",
           "numbered": false
         },
         {
-          "componentId": "mskeyup58y4312ruzpn",
+          "componentId": "msmtjbsxdfr0zapxirv",
           "componenType": "Paragraph",
-          "data": "We use cookies to tailor your experience and present relevant ads. By clicking “Accept”, you agree that cookies can be placed per our Privacy Policy\nACCEPT\nScience\nChinese observatory finds most powerful particle accelerator in the universe\nSubscribe\n\nScience\nChinaScience\nWhat is a glueball? Chinese-led team finds rare particle made entirely of force\n2-MIN READ\n0\n\nListen\nGoogle News Preferred Icon\nMake SCMP preferred on Google\n\n\nThe Beijing Spectrometer III of the Beijing Electron Positron Collider II has helped prove the existence of “glueballs”. Photo: Institute of High Energy Physics of Chinese Academy of Sciences\nFan Chen\nPublished: 9:00pm, 8 Aug 2026\nIn a historic breakthrough, a Chinese-led international team of scientists has confirmed the existence of the glueball – a rare form of matter made entirely of force.\n\nScience\nChinaScience\nChinese observatory finds most powerful particle accelerator in the universe\n2-MIN READ\n2\n\nListen\nGoogle News Preferred Icon\nMake SCMP preferred on Google\n\n\nCygnus X-3 is a binary system in which a black hole likely feeds on a massive companion while launching powerful jets. Illustration: Nasa’s Goddard Space Flight Centre\nLing Xinin Ohio\nPublished: 1:00pm, 4 Aug 2026\nA China-led team has detected the highest-energy light particle ever recorded, showing that the universe can accelerate matter to 30 times the previously predicted limit.\n\n\n\nScience\nChinaScience\nChina’s lunar research station could be guarded by robot watchdogs, space scientists say\n2-MIN READ\n7\n\nListen\nGoogle News Preferred Icon\nMake SCMP preferred on Google\n\n\nChinese researchers have drawn up blueprints that could see robot dogs helping astronauts scout hazards, collect rock samples and undertake detailed scientific work. Photo: CCTV\nLing Xinin Ohio\nPublished: 8:00pm, 8 Aug 2026\nRobot dogs could one day lead the way across the moon, patrolling research stations, scouting hazards and helping astronauts search for scientifically valuable rocks, according to a blueprint by researchers working on China’s lunar base.\n\nMore On This Topic\nThe Manila-bound Cebu Pacific flight was originally scheduled to depart at 2pm on Saturday and arrive at 4.25pm. File photo: Getty Images\nManila-bound flight returns to Hong Kong after suspected cargo door issue\n2 hours ago\nTaiwanese leader William Lai Ching-te (left) wears a bulletproof vest and helmet as he walks through a tunnel to a command centre in Taipei on August 5 as part of the Han Kuang military exercise. Photo: AFP / Presidential Office of Taiwan\nTaiwan’s William Lai rehearses late-night emergency escape during military drill\n1 hour ago\nProtesters destroy Chinese goods in Kolkata, India, on June 18, 2020, soon after the countries' militaries clashed on their border. Photo: AFP\nWhy Beijing struggles to win Indian hearts and minds despite diplomatic thaw\n4 hours ago\nAn aerial view of a partially submerged temple in in Ezhou, Hebei after the Yangtze River flooded. Photo: AFP/China OUT\nChinese scientists find some Yangtze flood controls may do more harm than good\n8 Aug 2026 - 12:00PM\nArgentine President Javier Milei campaigned on a pledge never to do business with communist governments, but later sought Beijing’s help to extend the currency swap. Photo: Reuters\nArgentina extends US$19 billion China currency swap despite US pressure\n7 Aug 2026 - 3:21AM\nAfter 18 years, a 38-year-old graduate of Tsinghua University has achieved his dream: admission to Peking University for medical studies. Photo: SCMP composite/Shutterstock/Douyin\nBacklash as China’s Tsinghua graduate, 38, wins Peking University medical spot\n7 Aug 2026 - 7:21PM\nMalaysia’s King Sultan Ibrahim Sultan Iskandar salutes the guard of honour at the National Palace in Kuala Lumpur on January 31, 2024. Photo: EPA-EFE\nMalaysia’s royals rise to the fore in a changing nation\n8 Aug 2026 - 8:00AM\nA satellite image shows Typhoon Dolphin approaching Japan’s Okinawa on August 6, 2026. By Friday morning, it was about 820km from China’s east coast. Photo: CSU/CIRA & JMA/JAXA/Reuters\n1,230 times the size of Hong Kong: China deploys drones as Typhoon Dolphin nears\n7 Aug 2026 - 9:40PM\nChina has repeatedly criticised Israel and the United States over their military actions against Iran this year and urged immediate ceasefires. Photo: Shutterstock\nWhere do China-Israel ties stand after closure of Chengdu consulate?\n7 Aug 2026 - 10:27PM\nScreens display flight and weather data at the Airport Operations Control Centre at Hangzhou Xiaoshan International Airport in Hangzhou, China. Photo: Weibo/ 临世面\nTyphoon Dolphin grounds hundreds of flights as it approaches eastern China\n2 hours ago\nPKR deputy president Nurul Izzah Anwar poses with her father, Malaysian Prime Minister Anwar Ibrahim. Photo: Instagram/n_izzah\nIn Malaysia, Nurul Izzah’s PKR exit deepens questions over Anwar’s leadership\n7 Aug 2026 - 4:36PM\nA simple change to the stacking arrangement of graphene layers gives rise to remarkable properties. Photo: Shutterstock\nChinese breakthrough paves way for production of graphene-based quantum chips\n7 Aug 2026 - 9:01PM\nTaiwan’s Criminal Investigation Bureau Commissioner Chiu Shao-chou says police have investigated 141 CUPP officials and members in 98 cases since 2010. Photo: AFP\nTaiwan’s push to dissolve pro-Beijing party triggers political censorship debate\n8 Aug 2026 - 2:37PM\nCompany\nAbout SCMP\nPolicies & Standards\nPrivacy Policy\nTerms & Conditions\nCareers with SCMP\nHelp Centre\nContact Us\nServices\nDigital Subscriptions\nPrint + Subscriptions\nGroup Subscriptions\nSyndication & Licensing\nAdvertising+\nEnterprise+\nLearn\nSCMP Live\nSCMP.com\nLatest\nHong Kong\nChina\nAsia\nWorld\nBusiness\nEconomy\nTech\nLifestyle\nPeople & Culture\nOpinion\nSport\nChina Future Tech\nChina Power Players\nThis Week In Asia\nOpen Questions\nMore\nVideo\nPictures\nInfographics\nGames\nSCMP Series\nSpotlight\nAll Topics\nAll Authors\nRSS Feeds\nOther Sites\nCosmopolitan\nElle\nEsquire\nHarper's BAZAAR\nCosMart\nOperation Santa Claus\nProducts\nMobile & apps\nePaper\nSCMP Plus\nStyle\nPostMag\n100 Top Tables\nHK Racing\nYoung Post\nYoung Post Spark\nPosties\nGood Schools Guide\nCooking\nThe Store\nAccount\nMy Account\nNewsletters & Alerts\nmyNews\nSubscribe to the SCMP\nCritical insights and analysis on China that matter to the world\nSubscribe\nSign up for our newsletters\nFIND OUT MORE\nRead more in the SCMP App\napp store\ngoogle play\nCopyright © 2026 South China Morning Post Publishers Ltd. All rights reserved.\nChina’s lunar research station could be guarded by robot watchdogs, space scientists say | South China Morning Post\n\nDo Not Sell or Share My Personal Information\n\n",
+          "data": "Let's say you want to create a simple and reusable < Button /> component that you can use throughout your application. There should be a normal version and a big and primary version for the important buttons. This is what it should look like when rendered: (this is a live example, click on them!)\n\n\n",
           "numbered": false
         }
       ],
@@ -5227,7 +5246,7 @@
       "1",
       "2"
     ],
-    "templateData": "qpmkegvoq8jbku3\nmch4pxmn1mi17ggizfw|msl9qmwu188wtp0bx8g\nmch65jcieuvsgtsx1x7|mch601eg1usrmqvhum8|mch6mr4ulh8vt1pnnm",
+    "templateData": "msmtlrgi2jzrxyh9ecq\nqpmkegvoq8jbku3\nmch4pxmn1mi17ggizfw|msl9qmwu188wtp0bx8g\nmch65jcieuvsgtsx1x7|mch601eg1usrmqvhum8|mch6mr4ulh8vt1pnnm",
     "adminDetails": {
       "id": "e0da85ff1b5040a7c3fb550b7247078d967f46820a461d8124d77bdf11054b9900739fdd4601e9808c459b91def95d197e01b5184ab15b2132ab5fcad75d6597",
       "passPhase": "9b332ecf5ecf2506c22a78d076e5af7fb56899487d45f98600bfc823a42c27b8d1776027c5f7cc15b3a43779369b9a43937bfa354e9e26ad6b8c3c22b1467246"

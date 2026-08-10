@@ -1,3 +1,5 @@
+import styled from "styled-components";
+
 import { parsex } from "../utils/parserUtil";
 import { ComponentObject } from "../Types";
 
@@ -5,11 +7,14 @@ type ListProps = {
   listData: ComponentObject;
 };
 
+const ListWrapper = styled.div`
+  margin: 16px;
+`;
+
 export const List = ({ listData }: ListProps) => {
   if (typeof listData.data !== "string") {
     return (
-      <div
-        className="list-component"
+      <ListWrapper
         id={listData.componenType + "_" + listData.componentId}
         key={"key_" + listData.componentId}
       >
@@ -31,7 +36,7 @@ export const List = ({ listData }: ListProps) => {
             ))}
           </ul>
         )}
-      </div>
+      </ListWrapper>
     );
   } else {
     return (

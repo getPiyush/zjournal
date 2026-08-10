@@ -1,3 +1,5 @@
+import { CardImage } from "../../styles/shared";
+
 import { parsex } from "../../utils/parserUtil";
 import { ArticleT } from "../../Types";
 import { getDate, removeHTML, sliceWords } from "../../utils/componentUtil";
@@ -20,7 +22,7 @@ export default function HeroArticle({ article, mode = "view" }: HeroProps) {
             if (item.componenType === "Image" && !contentArray[0]) {
               contentArray[0] = typeof item.data === "string" ? item.data : item.data[0] || "";
               return (
-                <img
+                <CardImage
                   key={`herocomp_${index}_${article.id}`}
                   className="card-img"
                   alt={article.title}

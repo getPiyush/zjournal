@@ -1,3 +1,5 @@
+import { ComponentHover } from "./EditWrapper.styles";
+
 type EditWrapperProps = {
   id: string;
   children: any ;
@@ -10,13 +12,12 @@ export default function EditWrapper({
   componentClicked
 }: EditWrapperProps) {
   return (
-    <div
-      className="component-hover"
+    <ComponentHover
       role="button"
       id={id}
       onClick={componentClicked}
     >
       {children}
-    </div>
+    </ComponentHover>
   );
 }

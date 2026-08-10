@@ -73,8 +73,8 @@ describe("Articles", () => {
   });
 
   test("shows a loading page while loading", () => {
-    const { container } = render(<Articles title="Product" status="loading" articles={[]} />);
-    expect(container.querySelector(".blob-1")).not.toBeNull();
+    render(<Articles title="Product" status="loading" articles={[]} />);
+    expect(screen.getByTestId("loading-page")).toBeInTheDocument();
   });
 
   test("shows the not-found page on error", () => {

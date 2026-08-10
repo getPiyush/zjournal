@@ -43,8 +43,8 @@ describe("Article", () => {
   });
 
   test("shows a loading page while the status is loading", () => {
-    const { container } = render(<Article article={null} status="loading" />);
-    expect(container.querySelector(".blob-1")).not.toBeNull();
+    render(<Article article={null} status="loading" />);
+    expect(screen.getByTestId("loading-page")).toBeInTheDocument();
   });
 
   test("shows the not-found page when there is no article", () => {

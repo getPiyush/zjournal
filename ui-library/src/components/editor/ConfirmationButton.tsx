@@ -1,3 +1,6 @@
+import { ConfirmationPrompt } from "./ConfirmationButton.styles";
+import { EditorActionColEnd } from "../../styles/shared";
+
 import { getUid } from "../../utils/componentUtil";
 
 type ConfirmationButtonProps = {
@@ -31,12 +34,12 @@ export default function ConfirmationButton({
         {iconComp}
         {buttonText !== "" && `  ${buttonText}`}
       </button>
-      <div
-        className="collapse confirmation-button-prompt"
+      <ConfirmationPrompt
+        className="collapse"
         id={`btn${buttonId}`}
       >
         <div className="card card-body">
-          <div className="editor-action-col-end"></div>
+          <EditorActionColEnd />
           <div>
             <b>{confirmationMessage}</b>
           </div>
@@ -65,7 +68,7 @@ export default function ConfirmationButton({
             Yes
           </button>
         </div>
-      </div>
+      </ConfirmationPrompt>
     </div>
   );
 }

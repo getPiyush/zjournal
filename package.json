@@ -16,6 +16,11 @@
     "concurrently": "^9.2.4",
     "json-server": "^0.17.3"
   },
+  "overrides": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "6.21.2"
+  },
   "scripts": {
     "start": "npm run start --workspace=web-app",
     "build": "npm run build --workspace=web-app",

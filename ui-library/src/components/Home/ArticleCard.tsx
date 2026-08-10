@@ -1,3 +1,5 @@
+import { CardImage } from "../../styles/shared";
+
 import { parsex } from "../../utils/parserUtil";
 import { ArticleT } from "../../Types";
 import { getDate, removeHTML, sliceWords } from "../../utils/componentUtil";
@@ -23,7 +25,7 @@ export default function ArticleCard({ article, mode="view" }: ArticleCardProps) 
           if (item.componenType === "Image" && !contentArray[0]) {
             contentArray[0] = typeof item.data === "string" ? item.data : item.data[0] || "";
             return (
-              <img
+              <CardImage
                 key={`articlecomp_${index}_${item.componenType}`}
                 className="card-img-top"
                 alt={article.title}

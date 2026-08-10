@@ -12,7 +12,8 @@
     "test-storybook": "test-storybook"
   },
   "dependencies": {
-    "html-react-parser": "^5.1.18"
+    "html-react-parser": "^5.1.18",
+    "styled-components": "^6.5.1"
   },
   "peerDependencies": {
     "react": ">=18",

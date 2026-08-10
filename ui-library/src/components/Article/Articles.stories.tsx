@@ -57,7 +57,7 @@ export const Default: Story = {
 export const Loading: Story = {
   args: { title: "Product", status: "loading", articles: [] },
   play: async ({ canvasElement }) => {
-    expect(canvasElement.querySelector(".blob-1")).not.toBeNull();
+    expect(canvasElement.querySelector('[data-testid="loading-page"]')).not.toBeNull();
   },
 };
 

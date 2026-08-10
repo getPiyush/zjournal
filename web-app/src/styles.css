@@ -23,15 +23,6 @@ b {
   font-weight: 800;
 }
 
-.disable-text-selection {
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-  -khtml-user-select: none;
-  user-select: none;
-}
-
 .navbar {
   background-color: #ffffff;
   border-color: #e7e7e7;
@@ -64,74 +55,12 @@ b {
   justify-content: space-between;
 }
 
-.blog-header-logo {
-  line-height: 1;
-  color: #2485bd;
-  font-family: "Merriweather", serif !important;
-  font-size: 1.25rem;
-}
-
-.blog-header-logo .logo-subtext {
-  font-size: 0.75rem;
-  color: #080808;
-  padding-top: 0.2rem;
-  padding-left: 0.1rem;
-}
-
-.blog-header-logo:hover {
-  text-decoration: none;
-}
-
-.blog-header-logo .logo-image {
-  padding: 0;
-  height: 40px;
-}
-
 .small-text {
   font-size: 0.75rem;
 }
 
 img {
   padding: 16px;
-}
-
-.card img {
-  max-height: 350px;
-  object-fit: cover;
-  object-position: center;
-}
-
-/*article*/
-.article-viewer {
-  min-height: 85vh;
-  overflow-wrap: break-word;
-}
-
-.sub-header {
-  color: #1f76a8;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  margin: 16px 0px 16px 0px;
-}
-
-.list-component {
-  margin: 16px;
-}
-
-.editor-action-col-start {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.editor-action-col-end {
-  display: flex;
-  justify-content: space-between;
-}
-
-.padding-lr-8 {
-  padding-left: 8px;
-  padding-right: 8px;
 }
 
 .admin {
@@ -180,35 +109,11 @@ img {
   padding-top: 8px;
 }
 
-.edit-area {
-  border: 1px solid #26f126;
-}
-
-.component-hover:hover {
-  border: 1px solid #edb24d;
-  padding: 8px;
-  background: #d4e4e4;
-}
-
-.scrollable {
-  overflow-y: scroll;
-}
-
 .edit-prompt .card-footer {
   display: flex;
   justify-content: space-between;
 }
 
-.top-action-box {
-  display: flex;
-  justify-content: space-between;
-}
-
-.list-editor_item {
-  display: flex;
-}
-
-.list-editor_item,
 button {
   margin: 4px;
 }
@@ -257,15 +162,6 @@ button {
   body {
     display: none;
   }
-}
-
-.confirmation-button .confirmation-button-prompt {
-  position: absolute;
-  top: 40vh;
-  left: 40vw;
-  z-index: 100;
-  box-shadow: 0px 0px 3000px 70px #1f76a8;
-  border-radius: 25px;
 }
 
 .accordion-button {

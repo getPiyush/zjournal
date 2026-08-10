@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { PaddingLR8 } from "../../styles/shared";
 
 import { ComponentObject } from "../../Types";
 import { Table } from "../Table";
@@ -52,7 +53,7 @@ export const TableEditor = ({ tableData, updateTableData }: ListProps) => {
         </label>
       </div>
       <hr />
-      <div className="padding-lr-8">
+      <PaddingLR8>
         <textarea
           className="form-control"
           id="dataInputTextAres"
@@ -61,7 +62,7 @@ export const TableEditor = ({ tableData, updateTableData }: ListProps) => {
         >
           {tData}
         </textarea>
-      </div>
+      </PaddingLR8>
       <hr />
       <div style={{ zoom: ".7" }}>
         <Table tableData={{ ...tableData, data: tData, numbered: numbered }} />

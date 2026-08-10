@@ -1,3 +1,5 @@
+import { ArticleViewer, SubHeader } from "./Article.styles";
+
 import { parsex } from "../../utils/parserUtil";
 import { ArticleT } from "../../Types";
 import { getDate } from "../../utils/componentUtil";
@@ -22,9 +24,9 @@ export default function Article({ article, status, disableTextSelect, onBrowseCa
   };
 
   return (
-    <div className="container article-viewer">
+    <ArticleViewer className="container">
       {article && article.title !== "" && !article.deleteFlag ? (
-        <div className={`container article-viewer ${disableTextSelect ? "disable-text-selection" : ""}`}>
+        <ArticleViewer className="container" $disableTextSelect={disableTextSelect}>
           <div className="row">
             <div className="col">
               {" "}
@@ -34,7 +36,7 @@ export default function Article({ article, status, disableTextSelect, onBrowseCa
           <div className="row">
             <div className="col">
               {" "}
-              <div className="sub-header">
+              <SubHeader>
                 <span>
                   By{" "}
                   <a href={`/web/articles?authorId=${encodeURIComponent(article.author)}`}>
@@ -45,7 +47,7 @@ export default function Article({ article, status, disableTextSelect, onBrowseCa
                 <div>
                   <span className="badge bg-success">{article.categryId}</span>
                 </div>
-              </div>
+              </SubHeader>
             </div>
           </div>
           <div className="row">
@@ -56,17 +58,17 @@ export default function Article({ article, status, disableTextSelect, onBrowseCa
           </div>
           {article.dateCreated !== article.dateModified && (
             <div className="row">
-              <div className="col sub-header">
+              <SubHeader className="col">
                 <i>
                   Last Updated on <b>{getDate(article.dateModified)}</b>
                 </i>
-              </div>
+              </SubHeader>
             </div>
           )}
-        </div>
+        </ArticleViewer>
       ) : (
         getNoArticle()
       )}
-    </div>
+    </ArticleViewer>
   );
 }

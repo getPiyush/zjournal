@@ -13,8 +13,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   play: async ({ canvasElement }) => {
-    expect(canvasElement.querySelector(".centered")).not.toBeNull();
-    expect(canvasElement.querySelector(".blob-1")).not.toBeNull();
-    expect(canvasElement.querySelector(".blob-2")).not.toBeNull();
+    expect(canvasElement.querySelector('[data-testid="loading-page"]')).not.toBeNull();
   },
 };

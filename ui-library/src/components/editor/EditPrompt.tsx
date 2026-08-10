@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Scrollable } from "./EditPrompt.styles";
+import { EditorActionColEnd, PaddingLR8 } from "../../styles/shared";
 
 import { ComponentObject } from "../../Types";
 import ConfirmationButton from "./ConfirmationButton";
@@ -38,7 +40,7 @@ export default function EditPrompt({
 
   const getDefaultComponent = () => {
     return (
-      <div className="padding-lr-8">
+      <PaddingLR8>
         <textarea
           className="form-control"
           id="dataInputTextAres"
@@ -47,7 +49,7 @@ export default function EditPrompt({
         >
           {compData}
         </textarea>
-      </div>
+      </PaddingLR8>
     );
   };
 
@@ -74,12 +76,12 @@ export default function EditPrompt({
   };
 
   return (
-    <div id="editPrompt" className="alert alert-light scrollable">
+    <Scrollable id="editPrompt" className="alert alert-light">
       <h3>Editing {component.componenType}</h3>
       <hr />
       {getEditComponent()}
       <hr />
-      <div className="editor-action-col-end">
+      <EditorActionColEnd>
         <button
           type="button"
           className="btn btn-secondary btn-md"
@@ -88,7 +90,7 @@ export default function EditPrompt({
         >
           Cancel
         </button>
-        <div className="padding-lr-8">
+        <PaddingLR8>
           <button
             className="btn btn-primary btn-md btn-danger"
             type="button"
@@ -100,8 +102,8 @@ export default function EditPrompt({
             <i className="bi bi-trash"></i>
           </button>
 
-        </div>
-        <div className="padding-lr-8">
+        </PaddingLR8>
+        <PaddingLR8>
           <button
             onClick={onUpdateClick}
             type="button"
@@ -110,11 +112,11 @@ export default function EditPrompt({
           >
             Update
           </button>
-        </div>
-      </div>
+        </PaddingLR8>
+      </EditorActionColEnd>
       <div className="collapse" id="deleteConfirmation">
         <div className="card card-body">
-          <div className="editor-action-col-end"></div>
+          <EditorActionColEnd />
           <div>
             <b>Are you sure want to delete?</b>
           </div>
@@ -141,6 +143,6 @@ export default function EditPrompt({
           </button>
         </div>
       </div>
-    </div>
+    </Scrollable>
   );
 }

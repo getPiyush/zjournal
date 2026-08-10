@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { ListEditorItem } from "./ListEditor.styles";
 
 import { ComponentObject } from "../../Types";
 
@@ -57,7 +58,7 @@ export const ListEditor = ({ listData, updateListData }: ListProps) => {
 
   const getEditItem = (index, text) => {
     return (
-      <div className="list-editor_item">
+      <ListEditorItem>
         <input
           className="form-control"
           id={index + "_exampleFormControlInput1"}
@@ -84,7 +85,7 @@ export const ListEditor = ({ listData, updateListData }: ListProps) => {
             <i className="bi bi-plus-circle-fill" />
           </button>
         )}
-      </div>
+      </ListEditorItem>
     );
   };
 
