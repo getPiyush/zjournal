@@ -52,7 +52,8 @@ zjournal/
 ├── server/
 │   ├── node/          # Local JSON-server based API (default dev backend)
 │   ├── php/            # Alternative PHP backend (flat-file, same db.json shape)
-│   └── java/            # Alternative Spring Boot backend (same db.json shape)
+│   ├── java/            # Alternative Spring Boot backend (same db.json shape)
+│   └── python/           # Alternative FastAPI backend (same db.json shape)
 └── docs/              # Design/architecture notes
 ```
 
@@ -67,8 +68,8 @@ All `npm run <script>` commands work from the repo root and delegate into the re
 
 1. **`AppRoot.tsx`** lazily mounts one of two route trees based on the URL prefix: `/web/*` for the public reader (`LandingPage`), `/admin/*` for the admin panel. `/` redirects to `/web/home`.
 2. Both trees read/write state through React Context providers in `web-app/src/datastore/contexts/*` (`JournalContext`, `ArticleContext`, `ContactContext`, `QnAContext`), backed by reducer-style `*Actions.tsx` files.
-3. Actions call `datastore/http-client.ts` / `datastore/api.ts`, which talk to whichever backend is configured (see `properties.serverUrl`), optionally encrypting payloads with `utils/crypto.ts` when `enableEncryption` is on.
-4. The API server (`server/node` or `server/php`) reads/writes a single JSON file (`db.json`) with four top-level collections: `articles`, `journal`, `contacts`, `qna`.
+3. Actions call `datastore/http-client.ts` / `datastore/api.ts`, which talk to whichever backend is configured (see `properties.serverUrl`), always encrypting payloads with `utils/crypto.ts` — the same PBKDF2/AES-256-CBC scheme every backend speaks.
+4. The API server (`server/node`, `server/php`, `server/java`, or `server/python` — pick one via `serverUrl`) reads/writes a single JSON file (`db.json`) with four top-level collections: `articles`, `journal`, `contacts`, `qna`.
 5. `ui-library` components render the data — the same `Article`/`Articles`/`ArticlePreviewWeb` components back both the public reader and the admin's article list/preview.
 
 ## Configuration
@@ -82,14 +83,14 @@ export const properties = {
   startDate: "2025-02-01",
   appPassword: "...",
   fonts: [ /* Google Fonts to load, with weights */ ],
-  serverMode: "node",              // "node" | "php"
   serverUrl: "http://localhost:8080",
-  enableEncryption: false,          // AES-encrypt request/response bodies
   disableTextSelect: false,
 };
 ```
 
-Server-facing configuration lives in [server/node/properties.js](server/node/properties.js) (port, `dbFile`, `encrypted` flag, admin passphrase seed).
+There's no `serverMode` any more — every backend (`node`/`php`/`java`/`python`) speaks the same `ezjData` envelope and PBKDF2/AES-256-CBC encryption, always on, so switching backends is just a `serverUrl` change.
+
+Server-facing configuration lives in [server/node/properties.js](server/node/properties.js) (port, `dbFile`, admin passphrase seed).
 
 > ⚠️ The bundled `appPassword` / passphrase values are placeholders checked into source for local development. Replace them before deploying anywhere reachable from the internet.
 
@@ -110,7 +111,13 @@ Run from the repo root:
 | --- | --- |
 | `npm run dev` | Starts `web-app` (port 80) + `server/node` in dev mode, together |
 | `npm start` | Starts only `web-app` |
-| `npm run server:dev` | Starts only the Node API server in watch/dev mode |
+| `npm run server:dev` / `npm run server:node:dev` | Starts the Node API server in watch/dev mode |
+| `npm run server` / `npm run server:node:prod` | Starts the Node API server in production mode |
+| `npm run server:php:dev` | Starts the PHP API server (`php -S localhost:8080` in `server/php`) — PHP's built-in server is dev-only, so there's no `:prod` variant; deploy it behind Apache/PHP-FPM for production instead |
+| `npm run server:java:dev` | Starts the Java API server from source (`./mvnw spring-boot:run` in `server/java`) |
+| `npm run server:java:prod` | Builds the Spring Boot jar and runs it (`./mvnw package && java -jar target/*.jar`) |
+| `npm run server:python:dev` | Starts the Python API server with auto-reload (`uvicorn --reload` in `server/python`) |
+| `npm run server:python:prod` | Starts the Python API server without auto-reload |
 | `npm run build` | Production build of `web-app` |
 | `npm run prod` | Runs the production build's server + the API server in production mode, together |
 | `npm test` | Runs `web-app`'s test suite |
@@ -168,16 +175,19 @@ The API (whichever backend you use) serves four collections, all defined in `db.
 
 ## Backend servers
 
-Two interchangeable backend implementations exist, selected via `properties.serverMode` in `web-app/src/properties.js`:
+Four interchangeable backend implementations exist, all speaking the **same wire contract**: every
+request/response body is wrapped as `{"ezjData": "<base64>"}`, encrypted with PBKDF2-HMAC-SHA512
+(999 iterations) + AES-256-CBC (salt/iv carried in the payload), always on. There's no mode
+selector on the frontend any more (the old `properties.serverMode` flag is gone) — switching
+backends is purely a `properties.serverUrl` change:
 
-- **`server/node`** (default) — [`json-server`](https://www.npmjs.com/package/json-server) wrapping `db.json`, with middleware for:
-  - optional AES encryption of request/response bodies (`crypto.js`) when `properties.encrypted` is true, using a Base64-encoded `ezjData` envelope.
-  - a shared-secret check via the `Zjournal-Secure-Token` header (`authenticator.js`) when encryption is enabled.
+- **`server/node`** (default) — [`json-server`](https://www.npmjs.com/package/json-server) wrapping `db.json`, with middleware (`crypto.js`) implementing the shared PBKDF2/AES-256-CBC `ezjData` envelope.
   - Run directly: `cd server/node && node server.js -w --development` (or `--production`).
 - **`server/php`** — equivalent REST-ish endpoints (`getters.php`, `setters.php`, `index.php`) plus `crypto.php` and `backupdata.php`, for deployment on a plain PHP/Apache host instead of Node.
-- **`server/java`** — a Spring Boot rewrite of the same REST surface (articles/journal/contacts/qna, filter/sort query params, `{ezjData}` envelope), using the PHP side's PBKDF2-HMAC-SHA512 + AES-256-CBC encryption scheme. In-memory store seeded from `db.json`, flushed back to disk periodically and on shutdown. See [server/java/README.md](server/java/README.md).
+- **`server/java`** — a Spring Boot rewrite of the same REST surface (articles/journal/contacts/qna, filter/sort query params, `{ezjData}` envelope). In-memory store seeded from `db.json`, flushed back to disk periodically and on shutdown. See [server/java/README.md](server/java/README.md).
+- **`server/python`** — a FastAPI rewrite of the same REST surface, same `{ezjData}` envelope and filter/sort query semantics as `server/java`, with the same in-memory-store-plus-periodic-flush approach. Interactive docs via FastAPI's built-in Swagger UI (`/docs`). See [server/python/README.md](server/python/README.md).
 
-All three read/write the same `db.json` shape, so you can point `web-app` at any of them by changing `serverMode`/`serverUrl`.
+All four read/write the same `db.json` shape and speak the same encrypted envelope, so you can point `web-app` at any of them by changing only `serverUrl`.
 
 ## Testing & Storybook
 

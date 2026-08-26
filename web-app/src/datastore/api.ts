@@ -3,7 +3,6 @@ import { httpClient } from "./http-client";
 import { encryptOutData } from "./codec";
 
 import { ArticleT, Contact, Journal, QnA } from "@zjournal/ui-library";
-import { encryptDataPhp, getPassPhase } from "../utils/crypto";
 
 // const host = window.location.host.split(":")[0];
 // const port = "8080";
@@ -17,23 +16,13 @@ const getContactsAPIPath = `${server}/contacts`;
 const getQnAsAPIPath = `${server}/qna`;
 
 
-// security
-const getParams = () => {
-    return applicationProperties.serverMode === "php" ? {} : {
-        headers: {
-            "Zjournal-Secure-Token": getPassPhase()
-        }
-    };
-
-}
-
 // request methos
 
 const getRequest = (url) => {
-    return httpClient.get(url, getParams());
+    return httpClient.get(url);
 }
 
-const withJsonContentType = (params: { headers?: Record<string, string> }) => ({
+const withJsonContentType = (params: { headers?: Record<string, string> } = {}) => ({
     ...params,
     headers: {
         ...params.headers,
@@ -43,16 +32,16 @@ const withJsonContentType = (params: { headers?: Record<string, string> }) => ({
 
 const putRequest = (url, obj) => {
     const payload = encryptOutData(obj);
-    return httpClient.put(url, payload, withJsonContentType(getParams()));
+    return httpClient.put(url, payload, withJsonContentType());
 }
 
 const postRequest = (url, obj) => {
     const payload = encryptOutData(obj);
-    return httpClient.post(url, payload, withJsonContentType(getParams()));
+    return httpClient.post(url, payload, withJsonContentType());
 }
 
 const deleteRequest = (url) => {
-    return httpClient.delete(url, getParams());
+    return httpClient.delete(url);
 }
 
 
