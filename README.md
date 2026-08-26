@@ -20,6 +20,7 @@ Built with React 18 + TypeScript, structured as an npm workspaces monorepo, and 
 - [Backend servers](#backend-servers)
 - [Testing & Storybook](#testing--storybook)
 - [Building for production](#building-for-production)
+- [Further documentation](#further-documentation)
 - [Roadmap](#roadmap)
 
 ## Quick start
@@ -204,6 +205,15 @@ npm run prod        # serves the build (web-app/public/server.js, an Express sta
 ```
 
 `prodrun` serves the built app with a minimal Express server (`web-app/public/server.js`) on port 80; pair it with `npm run server` (the API server in `--production` mode) — `npm run prod` runs both together.
+
+## Further documentation
+
+- **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)** — how `web-app`, `patrikaz`, `ui-library`, and the four backends fit together, the shared API/encryption contract, and known architectural gaps.
+- **[docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)** — taking this from local dev to a server you control: picking a backend, building, securing it (including the admin login gap), a reverse-proxy example, and backups.
+- **[docs/USER_GUIDE.md](docs/USER_GUIDE.md)** — a guide for people reading or writing content on a running instance (as opposed to developing the app itself).
+- **[docs/micro-frontend-readiness.md](docs/micro-frontend-readiness.md)** — analysis of what it would take to make `ui-library` a true runtime micro-frontend for `web-app` (it already is one for `patrikaz`).
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** — repo conventions, what to check before opening a PR, and rules for changing code shared across the four backends.
+- Per-module READMEs: [ui-library](ui-library/README.md), [patrikaz](patrikaz/README.md), [server/node](server/node/README.md), [server/php](server/php/README.md), [server/java](server/java/README.md), [server/python](server/python/README.md).
 
 ## Roadmap
 
