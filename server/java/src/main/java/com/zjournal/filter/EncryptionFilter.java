@@ -2,6 +2,7 @@ package com.zjournal.filter;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.zjournal.config.AppProperties;
 import com.zjournal.crypto.CryptoService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ReadListener;
@@ -40,17 +41,19 @@ public class EncryptionFilter extends OncePerRequestFilter {
 
     private final CryptoService cryptoService;
     private final ObjectMapper objectMapper;
+    private final AppProperties appProperties;
 
-    public EncryptionFilter(CryptoService cryptoService, ObjectMapper objectMapper) {
+    public EncryptionFilter(CryptoService cryptoService, ObjectMapper objectMapper, AppProperties appProperties) {
         this.cryptoService = cryptoService;
         this.objectMapper = objectMapper;
+        this.appProperties = appProperties;
     }
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain)
             throws ServletException, IOException {
 
-        if (UNENCRYPTED_PATHS.contains(request.getRequestURI())) {
+        if (!appProperties.isEncryptionEnabled() || UNENCRYPTED_PATHS.contains(request.getRequestURI())) {
             chain.doFilter(request, response);
             return;
         }

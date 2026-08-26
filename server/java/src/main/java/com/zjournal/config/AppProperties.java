@@ -9,6 +9,7 @@ public class AppProperties {
 
     private String appPassword;
     private String dbFile;
+    private boolean encryptionEnabled = true;
 
     public String getAppPassword() {
         return appPassword;
@@ -24,5 +25,13 @@ public class AppProperties {
 
     public void setDbFile(String dbFile) {
         this.dbFile = dbFile;
+    }
+
+    public boolean isEncryptionEnabled() {
+        return encryptionEnabled;
+    }
+
+    public void setEncryptionEnabled(boolean encryptionEnabled) {
+        this.encryptionEnabled = encryptionEnabled;
     }
 }
