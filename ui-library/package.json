@@ -9,7 +9,9 @@
     "storybook": "storybook dev -p 6006",
     "build:storybook": "storybook build -o storybook-static",
     "test": "jest",
-    "test-storybook": "test-storybook"
+    "test-storybook": "test-storybook",
+    "mfe:start": "webpack serve --config webpack.config.js --mode development",
+    "mfe:build": "webpack build --config webpack.config.js --mode production"
   },
   "dependencies": {
     "html-react-parser": "^5.1.18",
@@ -41,7 +43,9 @@
     "@types/react-dom": "^18.3.0",
     "babel-jest": "^27.5.1",
     "copyfiles": "^2.4.1",
+    "babel-loader": "^9.2.1",
     "empathic": "^2.0.1",
+    "html-webpack-plugin": "^5.6.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.1",
     "jest-environment-jsdom": "^27.5.1",
@@ -51,6 +55,9 @@
     "react-router-dom": "^6.21.2",
     "ts-dedent": "^2.3.0",
     "typescript": "^5.4.5",
+    "webpack": "^5.109.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.2",
     "webpack-virtual-modules": "^0.6.2"
   }
 }
