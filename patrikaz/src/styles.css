@@ -1,0 +1,90 @@
+main>.container {
+  padding: 80px 0px 0px 0px;
+  max-width: 1024px;
+}
+
+body {
+  font-family: "Source Serif 4", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+b {
+  font-weight: 800;
+}
+
+.navbar {
+  background-color: #ffffff;
+  border-color: #e7e7e7;
+  border-bottom: 1px solid rgb(13 110 253 / 25%) !important;
+}
+
+.footer {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  border-top: 1px solid rgb(13 110 253 / 25%) !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+  margin: 0px 8px 0px 8px;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  color: #1f76a8;
+  font-weight: 800;
+  border-bottom: 2px solid black;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #1f76a8;
+  font-weight: 700;
+  border-bottom: 2px solid black;
+}
+
+.navbar .header-links {
+  justify-content: space-between;
+}
+
+.small-text {
+  font-size: 0.75rem;
+}
+
+img {
+  padding: 16px;
+}
+
+button {
+  margin: 4px;
+}
+
+.about-us {
+  padding: 100px 32px 32px 32px !important;
+  min-height: 93vh !important;
+  margin: auto;
+  max-width: 400px;
+  min-width: 200px;
+}
+
+@media screen and (min-width: 767px) and (max-width: 846px) {
+  main>.container {
+    padding: 100px 0px 0px 0px !important;
+  }
+}
+
+/** Printing content not allowed */
+@media print {
+  body {
+    display: none;
+  }
+}
+
+.accordion-button {
+  color: #080808 !important;
+}

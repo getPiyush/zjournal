@@ -4,6 +4,7 @@ node_modules
 node_modules/*
 build
 ui-library/dist
+ui-library/dist-mfe
 ui-library/storybook-static
 ui-library/*.log
 web-app/src/**/*.js

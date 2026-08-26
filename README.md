@@ -51,7 +51,8 @@ zjournal/
 ├── ui-library/        # Shared component library (@zjournal/ui-library) + Storybook
 ├── server/
 │   ├── node/          # Local JSON-server based API (default dev backend)
-│   └── php/            # Alternative PHP backend (flat-file, same db.json shape)
+│   ├── php/            # Alternative PHP backend (flat-file, same db.json shape)
+│   └── java/            # Alternative Spring Boot backend (same db.json shape)
 └── docs/              # Design/architecture notes
 ```
 
@@ -174,8 +175,9 @@ Two interchangeable backend implementations exist, selected via `properties.serv
   - a shared-secret check via the `Zjournal-Secure-Token` header (`authenticator.js`) when encryption is enabled.
   - Run directly: `cd server/node && node server.js -w --development` (or `--production`).
 - **`server/php`** — equivalent REST-ish endpoints (`getters.php`, `setters.php`, `index.php`) plus `crypto.php` and `backupdata.php`, for deployment on a plain PHP/Apache host instead of Node.
+- **`server/java`** — a Spring Boot rewrite of the same REST surface (articles/journal/contacts/qna, filter/sort query params, `{ezjData}` envelope), using the PHP side's PBKDF2-HMAC-SHA512 + AES-256-CBC encryption scheme. In-memory store seeded from `db.json`, flushed back to disk periodically and on shutdown. See [server/java/README.md](server/java/README.md).
 
-Both read/write the same `db.json` shape, so you can point `web-app` at either by changing `serverMode`/`serverUrl`.
+All three read/write the same `db.json` shape, so you can point `web-app` at any of them by changing `serverMode`/`serverUrl`.
 
 ## Testing & Storybook
 
