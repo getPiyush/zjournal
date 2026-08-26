@@ -2,9 +2,10 @@ import { Link } from "react-router-dom";
 
 type PageNotFoundProps = {
   onBrowseCategories?: () => void;
+  basePath?: string;
 };
 
-export const PageNotFound = ({ onBrowseCategories }: PageNotFoundProps) => {
+export const PageNotFound = ({ onBrowseCategories, basePath = "/web" }: PageNotFoundProps) => {
   const linkClicked = () => {
     onBrowseCategories?.();
   };
@@ -26,7 +27,7 @@ export const PageNotFound = ({ onBrowseCategories }: PageNotFoundProps) => {
             type="button"
             className="btn btn-primary btn-lg px-4"
             aria-current="page"
-            to="/web/home"
+            to={`${basePath}/home`}
           >
             Go Home
           </Link>

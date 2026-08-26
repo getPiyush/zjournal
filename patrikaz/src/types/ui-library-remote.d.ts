@@ -23,6 +23,7 @@ declare module "zjournalUiLibrary/index" {
     selectedPage?: string;
     categories: string[];
     startDate: string;
+    basePath?: string;
   }>;
 
   export const LoadingPage: ComponentType<Record<string, never>>;
@@ -32,6 +33,7 @@ declare module "zjournalUiLibrary/index" {
     status?: string;
     disableTextSelect?: boolean;
     onBrowseCategories?: () => void;
+    basePath?: string;
   }>;
 
   export const Articles: ComponentType<{
@@ -40,6 +42,7 @@ declare module "zjournalUiLibrary/index" {
     articles: ArticleT[];
     disableTextSelect?: boolean;
     onBrowseCategories?: () => void;
+    basePath?: string;
   }>;
 
   export const TemplateRenderer: ComponentType<{

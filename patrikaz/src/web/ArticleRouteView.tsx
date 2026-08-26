@@ -40,6 +40,7 @@ export default function ArticleRouteView() {
         status={status}
         disableTextSelect={properties.disableTextSelect}
         onBrowseCategories={() => updatePage("categories", journalDispatch)}
+        basePath=""
       />
     </Suspense>
   );

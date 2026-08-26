@@ -24,6 +24,7 @@ export default function LandingPage() {
           selectedPage={state.journal.selectedPage}
           categories={state.journal.categories}
           startDate={applicationProperties.startDate}
+          basePath=""
         />
       </Suspense>
       <Footer />

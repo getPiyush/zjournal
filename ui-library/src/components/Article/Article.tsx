@@ -12,14 +12,15 @@ type ArticleProps = {
   status?: string;
   disableTextSelect?: boolean;
   onBrowseCategories?: () => void;
+  basePath?: string;
 };
 
-export default function Article({ article, status, disableTextSelect, onBrowseCategories }: ArticleProps) {
+export default function Article({ article, status, disableTextSelect, onBrowseCategories, basePath = "/web" }: ArticleProps) {
   const getNoArticle = () => {
     return status === "loading" ? (
       <LoadingPage />
     ) : (
-      <PageNotFound onBrowseCategories={onBrowseCategories} />
+      <PageNotFound onBrowseCategories={onBrowseCategories} basePath={basePath} />
     );
   };
 
@@ -39,7 +40,7 @@ export default function Article({ article, status, disableTextSelect, onBrowseCa
               <SubHeader>
                 <span>
                   By{" "}
-                  <a href={`/web/articles?authorId=${encodeURIComponent(article.author)}`}>
+                  <a href={`${basePath}/articles?authorId=${encodeURIComponent(article.author)}`}>
                     <b>{article.author}</b>
                   </a>{" "}
                   on {getDate(article.dateCreated)}

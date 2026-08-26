@@ -21,7 +21,7 @@ module.exports = (_env, argv) => {
     },
     output: {
       path: path.resolve(__dirname, "build"),
-      publicPath: "auto",
+      publicPath: "/",
       clean: true,
     },
     resolve: {
