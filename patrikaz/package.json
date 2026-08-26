@@ -5,7 +5,10 @@
   "description": "Patrikaz - independent, pluggable web reader app that consumes @zjournal/ui-library as a Module Federation remote",
   "main": "src/index.tsx",
   "scripts": {
-    "start": "webpack serve --config webpack.config.js --mode development",
+    "start": "concurrently \"npm run mfe:start\" \"npm run server:dev\" \"npm run serve\"",
+    "serve": "webpack serve --config webpack.config.js --mode development",
+    "mfe:start": "cd ../ui-library && npm run mfe:start",
+    "server:dev": "cd ../server/node && node server.js -w --development",
     "build": "webpack build --config webpack.config.js --mode production",
     "typecheck": "tsc --noEmit"
   },
@@ -23,6 +26,7 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "babel-loader": "^9.2.1",
+    "concurrently": "^9.2.4",
     "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^6.11.0",
     "dotenv": "^16.4.5",

@@ -3,9 +3,10 @@ import { months, getMonths } from "../../utils/componentUtil";
 
 type BlogsProps = {
   startDate: string;
+  basePath?: string;
 };
 
-export default function Blogs({ startDate }: BlogsProps) {
+export default function Blogs({ startDate, basePath = "/web" }: BlogsProps) {
   const monthsYear = getMonths(startDate, new Date().toISOString());
 
   return (
@@ -26,7 +27,7 @@ export default function Blogs({ startDate }: BlogsProps) {
             {monthsYear.map((monthY) => {
               return (
                 <li key={`${monthY.year}-${monthY.month}`}>
-                  <a href={`/web/articles?blogdate=${monthY.year}-${monthY.month<10?'0':''}${monthY.month+1}`}>{`${months[monthY.month]} ${monthY.year}`}</a>
+                  <a href={`${basePath}/articles?blogdate=${monthY.year}-${monthY.month<10?'0':''}${monthY.month+1}`}>{`${months[monthY.month]} ${monthY.year}`}</a>
                 </li>
               );
             })}

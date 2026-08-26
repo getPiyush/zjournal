@@ -37,10 +37,13 @@ it.
 Patrikaz needs three things running:
 
 1. The zjournal API server (same one `web-app`/`localhost/web` uses), default `http://localhost:8080`.
-2. The `ui-library` Module Federation remote (`npm run mfe:start` from the
-   `ui-library` package in the zjournal monorepo — serves `remoteEntry.js` on
-   `http://localhost:3001`).
+2. The `ui-library` Module Federation remote — serves `remoteEntry.js` on
+   `http://localhost:3001`.
 3. Patrikaz itself.
+
+`npm start` runs all three together (via `concurrently`), assuming this
+package still sits next to `ui-library` and `server/node` inside the
+zjournal monorepo checkout:
 
 ```bash
 cd patrikaz
@@ -48,6 +51,11 @@ npm install
 cp .env.example .env   # adjust PORT / REMOTE_UI_LIBRARY_URL / SERVER_URL if needed
 npm start              # http://localhost:3002
 ```
+
+If patrikaz has been lifted into its own repository (see above), those
+sibling paths won't exist any more — start the API server and the
+`ui-library` remote however they're hosted for you, then run `npm run serve`
+here for just the app itself.
 
 ## Build
 

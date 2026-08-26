@@ -6,14 +6,15 @@ type SidePanelProps = {
   selectedPage?: string;
   categories: string[];
   startDate: string;
+  basePath?: string;
 };
 
-export default function SidePanel({ selectedPage, categories, startDate }: SidePanelProps) {
+export default function SidePanel({ selectedPage, categories, startDate, basePath }: SidePanelProps) {
   const getSideContent = (nav: string) => {
     if (nav === "blogs") {
-      return <Blogs startDate={startDate} />;
+      return <Blogs startDate={startDate} basePath={basePath} />;
     } else {
-      return <Categories categories={categories} />;
+      return <Categories categories={categories} basePath={basePath} />;
     }
   };
 

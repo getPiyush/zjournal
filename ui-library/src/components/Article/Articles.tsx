@@ -14,6 +14,7 @@ type ArticlesProps = {
   articles: ArticleT[];
   disableTextSelect?: boolean;
   onBrowseCategories?: () => void;
+  basePath?: string;
 };
 
 const sortArticles = (articles: ArticleT[], sortBy: ArticleSortOption) => {
@@ -32,7 +33,7 @@ const sortArticles = (articles: ArticleT[], sortBy: ArticleSortOption) => {
   });
 };
 
-export default function Articles({ title, status, articles, disableTextSelect, onBrowseCategories }: ArticlesProps) {
+export default function Articles({ title, status, articles, disableTextSelect, onBrowseCategories, basePath }: ArticlesProps) {
   const [search, setSearch] = useState("");
   const [sortBy, setSortBy] = useState<ArticleSortOption>("newest");
 
@@ -45,7 +46,7 @@ export default function Articles({ title, status, articles, disableTextSelect, o
   }, [articles, search, sortBy]);
 
   const getNoArticle = () => {
-    return status === "error" ? <PageNotFound onBrowseCategories={onBrowseCategories} /> : <LoadingPage />;
+    return status === "error" ? <PageNotFound onBrowseCategories={onBrowseCategories} basePath={basePath} /> : <LoadingPage />;
   };
 
   return (
@@ -75,7 +76,7 @@ export default function Articles({ title, status, articles, disableTextSelect, o
           {articles.length === 0 && (
             <div className="row">
               <div className="col">
-                <PageNotFound onBrowseCategories={onBrowseCategories} />
+                <PageNotFound onBrowseCategories={onBrowseCategories} basePath={basePath} />
               </div>
             </div>
           )}

@@ -2,9 +2,10 @@ import React from "react";
 
 type CategoriesProps = {
   categories: string[];
+  basePath?: string;
 };
 
-export default function Categories({ categories }: CategoriesProps) {
+export default function Categories({ categories, basePath = "/web" }: CategoriesProps) {
   return (
     <React.Fragment>
       <div className="offcanvas-header">
@@ -21,7 +22,7 @@ export default function Categories({ categories }: CategoriesProps) {
           {categories?.length > 0 &&
             categories.map((category, index) => (
               <li key={`category_${index}_${category}`}>
-                <a href={`/web/articles?categoryId=${category}`}>{category}</a>
+                <a href={`${basePath}/articles?categoryId=${category}`}>{category}</a>
               </li>
             ))}
         </ol>
