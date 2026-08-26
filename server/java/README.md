@@ -65,10 +65,11 @@ the override) before testing against a client that expects the encrypted envelop
   filtering behavior in `server/php/getters.php`.
 - **Encryption envelope**: every request/response body is wrapped as `{"ezjData": "<base64>"}`,
   where the base64 decodes to a `{ciphertext, iv, salt}` JSON encrypted with PBKDF2-HMAC-SHA512
-  (999 iterations, 256-bit key) + AES-256-CBC — the exact scheme from `server/php/crypto.php`
-  and `web-app/src/utils/crypto.ts` (used when `serverMode === "php"`). The shared passphrase is
-  `zjournal.app-password` in `application.properties` (same default value as the PHP/Node
-  servers). Toggle it on/off with `zjournal.encryption-enabled` (default `true`) — see
+  (999 iterations, 256-bit key) + AES-256-CBC — the exact scheme from `server/php/crypto.php`,
+  `server/node/crypto.js`, and `web-app/src/utils/crypto.ts`. There is no `serverMode` selector
+  on the frontend any more — all four backends speak this one contract, always. The shared
+  passphrase is `zjournal.app-password` in `application.properties` (same default value as the
+  other servers). Toggle encryption off locally with `zjournal.encryption-enabled=false` — see
   [Testing via Swagger](#testing-via-swagger).
 - **CORS**: open to all origins, matching `index.php`'s `Access-Control-Allow-Origin: *`.
 - `GET /` and `GET /health` are served **unencrypted**, for quick manual checks without a crypto
@@ -81,9 +82,6 @@ the override) before testing against a client that expects the encrypted envelop
   every single request.
 - No email-backup cron script or file-decrypt debug page (`backupdata.php`/`decryptfile.php`
   equivalents) — this is the core CRUD API only.
-- Doesn't implement the Node-mode encryption (OpenSSL `EVP_BytesToKey`/MD5-derived AES) or its
-  rotating-HMAC auth token header — only the PHP-mode PBKDF2 scheme, since it's self-contained
-  (salt/iv travel with the ciphertext) and needs no legacy KDF quirks.
 
 ## Project layout
 

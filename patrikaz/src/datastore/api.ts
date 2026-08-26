@@ -3,31 +3,19 @@ import { httpClient } from "./http-client";
 import { encryptOutData } from "./codec";
 
 import type { Journal } from "../types/domain";
-import { getPassPhase } from "../utils/crypto";
 
 const server = applicationProperties.serverUrl;
 
 const getJournalAPIPath = `${server}/journal`;
 const getArticleAPIPath = `${server}/articles`;
 
-// security
-const getParams = () => {
-  return applicationProperties.serverMode === "php"
-    ? {}
-    : {
-        headers: {
-          "Zjournal-Secure-Token": getPassPhase(),
-        },
-      };
-};
-
 // request methods
 
 const getRequest = (url) => {
-  return httpClient.get(url, getParams());
+  return httpClient.get(url);
 };
 
-const withJsonContentType = (params: { headers?: Record<string, string> }) => ({
+const withJsonContentType = (params: { headers?: Record<string, string> } = {}) => ({
   ...params,
   headers: {
     ...params.headers,
@@ -37,7 +25,7 @@ const withJsonContentType = (params: { headers?: Record<string, string> }) => ({
 
 const putRequest = (url, obj) => {
   const payload = encryptOutData(obj);
-  return httpClient.put(url, payload, withJsonContentType(getParams()));
+  return httpClient.put(url, payload, withJsonContentType());
 };
 
 /**

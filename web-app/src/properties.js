@@ -89,8 +89,6 @@ export const properties = {
         ],
       },
     ],
-    serverMode: "node", //node|php
     serverUrl: "http://localhost:8080", // "http://feeder.patrikaz.com" |  "http://localhost:8080"
-    enableEncryption: false, //true|false
     disableTextSelect: false,
   };

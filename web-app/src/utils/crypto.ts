@@ -4,30 +4,12 @@ import { applicationProperties } from "../ApplicationConstants";
 
 const { appPassword } = applicationProperties;
 
-export const encryptDataNode = (stringData: string) => btoa(encryptAES(stringData));
-
-export const decryptDataNode = (data: string) => {
-  const bytes = CryptoJS.AES.decrypt(data, appPassword);
-  return JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
-};
-
-export const encryptAES = (stringData: string) => {
-  return CryptoJS.AES.encrypt(stringData, appPassword).toString();
-};
-
 export const encryptAESFull = (stringData: string) => {
   return CryptoJS.AES.encrypt(stringData, appPassword);
 };
 
 export const encryptString = (data: string) => HmacSHA512(data, appPassword).toString();
 
-export const getPassPhase = () => {
-  const date = new Date();
-  const message = date.getUTCHours() + "$" + date.getUTCDate() + "$" + date.getUTCMinutes() + "$" + date.getUTCDay();
-  return HmacSHA512(message, appPassword).toString();
-};
-
-// php
 export const encryptDataPhp = (stringData: string) => btoa(CryptoJSAesEncrypt(appPassword, stringData));
 
 export const decryptDataPhp = (stringData: string) => CryptoJSAesDecrypt(appPassword, atob(stringData));
