@@ -15,6 +15,47 @@ cd server/java
 The server starts on **port 8080** (same as the other two backends — stop `server/node` or
 `server/php` first if one is already running there, or override with `--server.port=<port>`).
 
+To run it in the background instead of holding a terminal:
+
+```sh
+./mvnw -q spring-boot:run > /tmp/zjournal-java.log 2>&1 &
+```
+
+## Stopping
+
+In the foreground, `Ctrl+C`. If it's running in the background (or you're not sure), kill
+whatever is bound to port 8080:
+
+```sh
+lsof -nP -iTCP:8080 -sTCP:LISTEN -t | xargs kill
+```
+
+## Testing
+
+```sh
+./mvnw test
+```
+
+## Testing via Swagger
+
+Swagger UI ([springdoc-openapi](https://springdoc.org/)) is on the classpath and needs no extra
+config. With the app running, open:
+
+- **http://localhost:8080/swagger-ui/index.html** — interactive UI for every endpoint
+- **http://localhost:8080/v3/api-docs** — the raw OpenAPI JSON
+
+By default every request/response is wrapped in the encrypted `ezjData` envelope (see below),
+which makes "Try it out" unusable without a crypto client. For local Swagger testing, disable
+encryption for the run:
+
+```sh
+./mvnw spring-boot:run -Dspring-boot.run.arguments=--zjournal.encryption-enabled=false
+```
+
+or set `zjournal.encryption-enabled=false` in `application.properties`. Responses are then plain
+JSON and every endpoint can be exercised directly from Swagger UI. Revert to `true` (or remove
+the override) before testing against a client that expects the encrypted envelope.
+
 ## What it replicates
 
 - **Endpoints**: `GET/POST /articles`, `GET/PUT/DELETE /articles/{id}`, `GET/PUT /journal`
@@ -27,7 +68,8 @@ The server starts on **port 8080** (same as the other two backends — stop `ser
   (999 iterations, 256-bit key) + AES-256-CBC — the exact scheme from `server/php/crypto.php`
   and `web-app/src/utils/crypto.ts` (used when `serverMode === "php"`). The shared passphrase is
   `zjournal.app-password` in `application.properties` (same default value as the PHP/Node
-  servers).
+  servers). Toggle it on/off with `zjournal.encryption-enabled` (default `true`) — see
+  [Testing via Swagger](#testing-via-swagger).
 - **CORS**: open to all origins, matching `index.php`'s `Access-Control-Allow-Origin: *`.
 - `GET /` and `GET /health` are served **unencrypted**, for quick manual checks without a crypto
   client.
