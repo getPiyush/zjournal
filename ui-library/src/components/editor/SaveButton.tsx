@@ -11,7 +11,7 @@ export default function SaveButton({ article, onSave }: SaveButtonProps) {
     const isNew = article.origin === "local";
     const finalArticle = isNew
       ? { ...article, id: getUid(), origin: "server" as const }
-      : { ...article, dateModified: new Date() };
+      : { ...article, updatedAt: new Date() };
     onSave(finalArticle, isNew);
   };
 

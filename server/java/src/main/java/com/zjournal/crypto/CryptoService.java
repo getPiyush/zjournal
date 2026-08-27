@@ -43,7 +43,7 @@ public class CryptoService {
         try {
             byte[] salt = randomBytes(SALT_LENGTH_BYTES);
             byte[] iv = randomBytes(IV_LENGTH_BYTES);
-            SecretKeySpec key = deriveKey(appProperties.getAppPassword(), salt);
+            SecretKeySpec key = deriveKey(appProperties.getEncryptionKey(), salt);
 
             Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
             cipher.init(Cipher.ENCRYPT_MODE, key, new IvParameterSpec(iv));
@@ -71,7 +71,7 @@ public class CryptoService {
             byte[] iv = HexFormat.of().parseHex(envelope.get("iv"));
             byte[] ciphertext = Base64.getDecoder().decode(envelope.get("ciphertext"));
 
-            SecretKeySpec key = deriveKey(appProperties.getAppPassword(), salt);
+            SecretKeySpec key = deriveKey(appProperties.getEncryptionKey(), salt);
 
             Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
             cipher.init(Cipher.DECRYPT_MODE, key, new IvParameterSpec(iv));

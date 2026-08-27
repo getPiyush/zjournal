@@ -30,7 +30,7 @@ def _derive_key(passphrase: str, salt: bytes) -> bytes:
     return kdf.derive(passphrase.encode("utf-8"))
 
 
-def encrypt(plain_text: str, passphrase: str = config.APP_PASSWORD) -> str:
+def encrypt(plain_text: str, passphrase: str = config.ENCRYPTION_KEY) -> str:
     salt = os.urandom(_SALT_LENGTH_BYTES)
     iv = os.urandom(_IV_LENGTH_BYTES)
     key = _derive_key(passphrase, salt)
@@ -51,7 +51,7 @@ def encrypt(plain_text: str, passphrase: str = config.APP_PASSWORD) -> str:
     return base64.b64encode(envelope_json.encode("utf-8")).decode("ascii")
 
 
-def decrypt(base64_envelope: str, passphrase: str = config.APP_PASSWORD) -> str:
+def decrypt(base64_envelope: str, passphrase: str = config.ENCRYPTION_KEY) -> str:
     envelope_json = base64.b64decode(base64_envelope)
     envelope = json.loads(envelope_json)
 

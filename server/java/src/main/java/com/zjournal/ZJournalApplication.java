@@ -20,7 +20,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
                 ### Encryption
                 By default every request/response body is wrapped in an encrypted `ezjData` \
-                envelope (PBKDF2 + AES-256-CBC, keyed by `zjournal.app-password`), which makes \
+                envelope (PBKDF2 + AES-256-CBC, keyed by `zjournal.encryption-key`), which makes \
                 **Try it out** below unusable as-is. To test interactively, start the app with:
                 ```
                 ./mvnw spring-boot:run -Dspring-boot.run.arguments=--zjournal.encryption-enabled=false

@@ -7,16 +7,16 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(prefix = "zjournal")
 public class AppProperties {
 
-    private String appPassword;
+    private String encryptionKey;
     private String dbFile;
     private boolean encryptionEnabled = true;
 
-    public String getAppPassword() {
-        return appPassword;
+    public String getEncryptionKey() {
+        return encryptionKey;
     }
 
-    public void setAppPassword(String appPassword) {
-        this.appPassword = appPassword;
+    public void setEncryptionKey(String encryptionKey) {
+        this.encryptionKey = encryptionKey;
     }
 
     public String getDbFile() {

@@ -68,12 +68,15 @@ the override) before testing against a client that expects the encrypted envelop
   (999 iterations, 256-bit key) + AES-256-CBC — the exact scheme from `server/php/crypto.php`,
   `server/node/crypto.js`, and `web-app/src/utils/crypto.ts`. There is no `serverMode` selector
   on the frontend any more — all four backends speak this one contract, always. The shared
-  passphrase is `zjournal.app-password` in `application.properties` (same default value as the
+  passphrase is `zjournal.encryption-key` in `application.properties` (same default value as the
   other servers). Toggle encryption off locally with `zjournal.encryption-enabled=false` — see
   [Testing via Swagger](#testing-via-swagger).
 - **CORS**: open to all origins, matching `index.php`'s `Access-Control-Allow-Origin: *`.
 - `GET /` and `GET /health` are served **unencrypted**, for quick manual checks without a crypto
   client.
+- **Errors**: `GET`/`PUT`/`DELETE` by an unknown id return HTTP `404` with
+  `{"error": {"code": "NOT_FOUND", "message": "..."}}`. `POST` returns `201` on success. Same shape
+  on `server/node`/`server/php`/`server/python`.
 
 ## What's different from server/php
 

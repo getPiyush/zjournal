@@ -59,11 +59,11 @@ All server-facing config is read from environment variables (see `app/config.py`
 | Variable | Default | Meaning |
 | --- | --- | --- |
 | `ZJOURNAL_PORT` | `8080` | Port to bind (only used when running `python -m app.main` directly — with `uvicorn` pass `--port` instead) |
-| `ZJOURNAL_APP_PASSWORD` | `JagaBaliaShreekhetra` | Passphrase for the PBKDF2/AES envelope |
+| `ZJOURNAL_ENCRYPTION_KEY` | `JagaBaliaShreekhetra` | Passphrase for the PBKDF2/AES envelope |
 | `ZJOURNAL_DB_FILE` | `db.json` (next to `app/`) | Path to the JSON data file |
 | `ZJOURNAL_ENCRYPTION_ENABLED` | `true` | Wrap request/response bodies in the `ezjData` envelope |
 
-> ⚠️ The bundled `ZJOURNAL_APP_PASSWORD` default is a placeholder checked into source for local
+> ⚠️ The bundled `ZJOURNAL_ENCRYPTION_KEY` default is a placeholder checked into source for local
 > development. Replace it before deploying anywhere reachable from the internet.
 
 ## What it replicates
@@ -78,12 +78,15 @@ All server-facing config is read from environment variables (see `app/config.py`
   (999 iterations, 256-bit key) + AES-256-CBC — the exact scheme from `server/php/crypto.php`,
   `server/java`'s `CryptoService`, `server/node/crypto.js`, and `web-app/src/utils/crypto.ts`.
   There is no longer a `serverMode` selector on the frontend — all four backends speak this one
-  contract, always. The shared passphrase is `ZJOURNAL_APP_PASSWORD` (same default value as the
+  contract, always. The shared passphrase is `ZJOURNAL_ENCRYPTION_KEY` (same default value as the
   other three servers). Toggle it off locally with `ZJOURNAL_ENCRYPTION_ENABLED=false` — see
   [Testing via Swagger](#testing-via-swagger).
 - **CORS**: open to all origins, matching `index.php`'s `Access-Control-Allow-Origin: *`.
 - `GET /` and `GET /health` are served **unencrypted**, for quick manual checks without a crypto
   client.
+- **Errors**: `GET`/`PUT`/`DELETE` by an unknown id return HTTP `404` with
+  `{"error": {"code": "NOT_FOUND", "message": "..."}}`. `POST` returns `201` on success. Same shape
+  on `server/node`/`server/php`/`server/java`.
 
 ## What's different from server/php
 

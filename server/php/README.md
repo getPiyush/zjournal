@@ -49,9 +49,13 @@ All requests go through [index.php](index.php), which dispatches by HTTP method:
   where the base64 decodes to a `{ciphertext, iv, salt}` JSON encrypted with PBKDF2-HMAC-SHA512
   (999 iterations) + AES-256-CBC — implemented in [crypto.php](crypto.php)
   (`CryptoJSAesEncrypt`/`CryptoJSAesDecrypt`), the same scheme `server/node`, `server/java`,
-  `server/python`, and `web-app/src/utils/crypto.ts` all speak. Unlike the other three backends,
-  there's no unencrypted `GET /` or `GET /health` — hitting the root path just returns the plain
-  string `"Welcome to zjournal Feeder"`.
+  `server/python`, and `web-app/src/utils/crypto.ts` all speak. `GET /` and `GET /health` are
+  always served unencrypted, matching the other three backends — hitting the root path returns the
+  plain string `"Welcome to zjournal Feeder"`, and `/health` returns plain `{"status": "ok"}`.
+- **Errors**: `GET`/`PUT`/`DELETE` by an unknown id return HTTP `404` with
+  `{"error": {"code": "NOT_FOUND", "message": "..."}}` (encrypted like any other response, unless
+  encryption is disabled) instead of silently returning `200` with `null`/an unchanged record.
+  `POST` returns `201` on success. This matches `server/java`/`server/python`.
 - **CORS**: open to all origins (`Access-Control-Allow-Origin: *` in `index.php`).
 
 ## Configuration
@@ -61,7 +65,14 @@ source — don't "fix" it without also updating the `include` in `getters.php`/`
 
 ```php
 $passphase = "JagaBaliaShreekhetra";
+$encryptionEnabled = true;
 ```
+
+Set `$encryptionEnabled = false;` to serve plain, unencrypted JSON — matching the
+`zjournal.encryption-enabled` / `ZJOURNAL_ENCRYPTION_ENABLED` toggle on `server/java` /
+`server/python`. Both `$passphase` and `$encryptionEnabled` are function-local via `global`
+declarations in `getters.php`/`setters.php`, not superglobals — keep that in mind if you add another
+file that needs them.
 
 > ⚠️ This is a placeholder checked into source for local development. Replace it before deploying
 > anywhere reachable from the internet, and keep it in sync with whatever `properties.serverUrl` in
@@ -100,6 +111,7 @@ No automated test suite. Manual smoke test:
 ```sh
 php -S localhost:8080 &
 curl http://localhost:8080/           # expect "Welcome to zjournal Feeder"
+curl http://localhost:8080/health     # expect {"status": "ok"}
 curl http://localhost:8080/articles   # expect a 200 with an {"ezjData": "..."} body
 ```
 

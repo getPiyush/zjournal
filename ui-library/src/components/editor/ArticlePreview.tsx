@@ -63,8 +63,8 @@ export default function ArticlePreview({ data, onEdit }: ArticlePreviewProps) {
           </TopActionBox>
           <h5 className="card-title">{parsex(data.title)}</h5>
           <div className="card-text">
-            Created:<b>{getDate(data.dateCreated)}</b> | Last Updated:
-            <b>{getDate(data.dateModified)}</b>
+            Created:<b>{getDate(data.createdAt)}</b> | Last Updated:
+            <b>{getDate(data.updatedAt)}</b>
           </div>
           {data.content.map((item) => {
             if (item.componenType === "Image" && !breaker) {

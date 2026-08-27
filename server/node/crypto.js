@@ -2,7 +2,7 @@ const { properties } = require("./properties");
 
 const CryptoJS = require("crypto-js");
 
-const appPassword = properties.appPassword;
+const encryptionKey = properties.encryptionKey;
 
 function CryptoJSAesEncrypt(passphrase, plainText) {
   const salt = CryptoJS.lib.WordArray.random(256);
@@ -35,9 +35,9 @@ function CryptoJSAesDecrypt(passphrase, encryptedJsonString) {
 // server/java's CryptoService, and server/python's crypto.py — matches the frontend's
 // encryptDataPhp/decryptDataPhp in web-app/src/utils/crypto.ts.
 exports.encryptData = function (plainTextString) {
-  return Buffer.from(CryptoJSAesEncrypt(appPassword, plainTextString)).toString("base64");
+  return Buffer.from(CryptoJSAesEncrypt(encryptionKey, plainTextString)).toString("base64");
 };
 
 exports.decryptData = function (base64EnvelopeString) {
-  return CryptoJSAesDecrypt(appPassword, Buffer.from(base64EnvelopeString, "base64").toString());
+  return CryptoJSAesDecrypt(encryptionKey, Buffer.from(base64EnvelopeString, "base64").toString());
 };

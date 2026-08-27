@@ -1,5 +1,5 @@
 <?php
-include "properties.php";
+include "propeties.php";
 
 function getItemeById($id, $items)
 {
@@ -33,13 +33,13 @@ function getSubquerycondition($key_value, $item)
         $subquery = explode("_", $key_value[0]);
         if (count($subquery) > 1 && $subquery[0] !== "") {
             if ($subquery[1] == "like") {
-                // dateCreated_like=2022
+                // createdAt_like=2022
                 return str_contains($item[$subquery[0]], $key_value[1]);
             }
         }
     }
     else {
-        // dateCreated=2022
+        // createdAt=2022
         return $item[$key_value[0]] == updateKeyForBoolean($key_value[1]);
     }
 }
@@ -66,9 +66,9 @@ function isSortQuery($query)
 function sortItemsByQuery($queryArray, $items)
 {
     $sorted_array = $items;
-    // _sort=dateContacted&_order=desc
+    // _sort=createdAt&_order=desc
     // echo "Sorting items by query " . $queryArray;
-    $field = "dateContacted";
+    $field = "createdAt";
     $order = SORT_ASC; // SORT_ASC | SORT_DESC
     $map_string = "strtoupper"; //strtoupper intval strtotime
 
@@ -83,7 +83,7 @@ function sortItemsByQuery($queryArray, $items)
             $order = SORT_DESC;
         }
 
-        if (str_contains($query, "date")) {
+        if (str_contains($query, "createdAt") || str_contains($query, "updatedAt")) {
             $map_string = "strtotime";
         }
     }
@@ -114,7 +114,14 @@ function getItemsByQuery($query, $items)
 
 function processGetters()
 {
+    global $passphase, $encryptionEnabled;
+
     $request_url_path = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
+
+    if ($request_url_path === "/health") {
+        echo json_encode(["status" => "ok"]);
+        return;
+    }
 
     if (strlen($request_url_path) > 1) {
         // start application
@@ -138,6 +145,15 @@ function processGetters()
             if ($item_by_id !== null) {
                 $response_obj = $item_by_id;
             }
+            else {
+                http_response_code(404);
+                $response_obj = [
+                    "error" => [
+                        "code" => "NOT_FOUND",
+                        "message" => "No item with that id"
+                    ]
+                ];
+            }
         }
 
         // categoryId=Production&published=true
@@ -151,7 +167,7 @@ function processGetters()
                 $items_by_querry = $json_object[$path];
                 $prev_req_qry_key = "";
                 foreach ($request_url_query_array as $request_query) {
-                    // _sort=dateContacted&_order=desc
+                    // _sort=createdAt&_order=desc
                     if (isSortQuery($request_query)) {
                         $sort_query = true;
                     }
@@ -188,13 +204,13 @@ function processGetters()
                 }
             }
         }
-        $enc_responseObj = base64_encode(CryptoJSAesEncrypt($passphase, json_encode($response_obj)));
+        if ($encryptionEnabled) {
+            $enc_responseObj = base64_encode(CryptoJSAesEncrypt($passphase, json_encode($response_obj)));
 
-        //   "zjData" => $response_obj,
-
-        $response_obj = [
-            "ezjData" => $enc_responseObj
-        ];
+            $response_obj = [
+                "ezjData" => $enc_responseObj
+            ];
+        }
 
         print_r(json_encode($response_obj));
     }

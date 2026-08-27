@@ -43,7 +43,7 @@ export default function Article({ article, status, disableTextSelect, onBrowseCa
                   <a href={`${basePath}/articles?authorId=${encodeURIComponent(article.author)}`}>
                     <b>{article.author}</b>
                   </a>{" "}
-                  on {getDate(article.dateCreated)}
+                  on {getDate(article.createdAt)}
                 </span>
                 <div>
                   <span className="badge bg-success">{article.categryId}</span>
@@ -57,11 +57,11 @@ export default function Article({ article, status, disableTextSelect, onBrowseCa
               <ArticleContainer containerJson={article.content} />
             </div>
           </div>
-          {article.dateCreated !== article.dateModified && (
+          {article.createdAt !== article.updatedAt && (
             <div className="row">
               <SubHeader className="col">
                 <i>
-                  Last Updated on <b>{getDate(article.dateModified)}</b>
+                  Last Updated on <b>{getDate(article.updatedAt)}</b>
                 </i>
               </SubHeader>
             </div>

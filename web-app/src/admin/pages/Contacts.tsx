@@ -51,7 +51,7 @@ export const Contacts = () => {
                             </b>
                           </div>
                           <div className="d-none d-md-block">{contact.phone}</div>
-                          <div>{getDate(contact.dateContacted)}</div>
+                          <div>{getDate(contact.createdAt)}</div>
                         </div>
                       </button>
                     </div>

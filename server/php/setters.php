@@ -1,5 +1,5 @@
 <?php
-include "properties.php";
+include "propeties.php";
 
 function addRecord($record, $path)
 {
@@ -27,16 +27,24 @@ function updateRecord($record, $path)
     if (count($paths) == 2) {
         $item_list = $json_object[$paths[0]];
         $item_id = $paths[1];
+        $found = false;
 
         if ($item_list && count($item_list) > 0) {
             foreach ($item_list as $index => $item) {
                 if ($item["id"] === $item_id) {
                     $item_list[$index] = $record;
+                    $found = true;
                 }
             }
 
-            $json_object[$paths[0]] = $item_list;
-            file_put_contents("db.json", json_encode($json_object));
+            if ($found) {
+                $json_object[$paths[0]] = $item_list;
+                file_put_contents("db.json", json_encode($json_object));
+            }
+        }
+
+        if (!$found) {
+            return null;
         }
     }
     elseif (count($paths) == 1) {
@@ -60,7 +68,7 @@ function deleteRecord($path)
     if (count($paths) == 2) {
         $string = file_get_contents("db.json");
         $json_object = json_decode($string, true);
-        $deleted_item = (object)[];
+        $deleted_item = null;
         $item_list = $json_object[$paths[0]];
         $item_id = $paths[1];
 
@@ -75,8 +83,10 @@ function deleteRecord($path)
                 }
             }
 
-            $json_object[$paths[0]] = $updated_list;
-            file_put_contents("db.json", json_encode($json_object));
+            if ($deleted_item !== null) {
+                $json_object[$paths[0]] = $updated_list;
+                file_put_contents("db.json", json_encode($json_object));
+            }
         }
     }
 
@@ -87,6 +97,8 @@ function deleteRecord($path)
 
 function decodedPayloadData($data)
 {
+    global $passphase;
+
     if ($data) {
         $data = json_decode($data);
         //  print_r($data->ezjData);
@@ -103,18 +115,21 @@ function decodedPayloadData($data)
 
 function processSetters()
 {
+    global $passphase, $encryptionEnabled;
+
     $response_obj = [];
     $request_url_path = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
     $request_url_path = substr($request_url_path, 1);
 
     $payload_encrypted = file_get_contents("php://input");
-    $payload_decrypted = decodedPayloadData($payload_encrypted);
+    $payload_decrypted = $encryptionEnabled ? decodedPayloadData($payload_encrypted) : $payload_encrypted;
 
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $data = json_decode($payload_decrypted);
 
         if ($request_url_path !== "") {
             $response_obj = addRecord($data, $request_url_path);
+            http_response_code(201);
         }
     }
 
@@ -127,15 +142,25 @@ function processSetters()
         $response_obj = deleteRecord($request_url_path);
     }
 
-    // encrypt
+    if ($response_obj === null) {
+        http_response_code(404);
+        $response_obj = [
+            "error" => [
+                "code" => "NOT_FOUND",
+                "message" => "No item with that id"
+            ]
+        ];
+    }
 
-    $enc_responseObj = base64_encode(
-        CryptoJSAesEncrypt($passphase, json_encode($response_obj))
-    );
+    if ($encryptionEnabled) {
+        $enc_responseObj = base64_encode(
+            CryptoJSAesEncrypt($passphase, json_encode($response_obj))
+        );
 
-    $response_obj = [
-        "ezjData" => $enc_responseObj,
-    ];
+        $response_obj = [
+            "ezjData" => $enc_responseObj,
+        ];
+    }
 
     print_r(json_encode($response_obj));
 }

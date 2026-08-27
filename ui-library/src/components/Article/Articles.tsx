@@ -21,14 +21,14 @@ const sortArticles = (articles: ArticleT[], sortBy: ArticleSortOption) => {
   return [...articles].sort((a, b) => {
     switch (sortBy) {
       case "oldest":
-        return new Date(a.dateCreated).getTime() - new Date(b.dateCreated).getTime();
+        return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime();
       case "title-asc":
         return a.title.localeCompare(b.title);
       case "title-desc":
         return b.title.localeCompare(a.title);
       case "newest":
       default:
-        return new Date(b.dateCreated).getTime() - new Date(a.dateCreated).getTime();
+        return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
     }
   });
 };

@@ -12,8 +12,8 @@ export type ArticleT = {
   id: string;
   author: string;
   title: string;
-  dateCreated: Date;
-  dateModified: Date;
+  createdAt: Date;
+  updatedAt: Date;
   categryId: string;
   content: ComponentObject[];
   origin: "server" | "local";
@@ -35,10 +35,11 @@ export type Journal = {
 };
 
 export type Contact = {
+  id?: string;
   name: string;
   email: string;
   phone?: string;
-  dateContacted: Date;
+  createdAt: Date;
   comment: string;
 }
 
@@ -47,5 +48,5 @@ export type QnA = {
   question: string;
   answer: string;
   published: boolean;
-  dateCreated: Date;
+  createdAt: Date;
 }

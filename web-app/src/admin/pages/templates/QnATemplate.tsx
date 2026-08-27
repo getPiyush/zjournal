@@ -24,7 +24,7 @@ export const QnATemplate = () => {
       question: target[0].value,
       answer: target[1].value,
       published: true,
-      dateCreated: new Date(),
+      createdAt: new Date(),
     };
 
     addQnAToDB(dispatch, qnAOut);

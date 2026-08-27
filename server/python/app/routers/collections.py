@@ -10,6 +10,8 @@ from fastapi.responses import JSONResponse
 from app import query_engine
 from app.store import data_store
 
+_NOT_FOUND_BODY = {"error": {"code": "NOT_FOUND", "message": "No item with that id"}}
+
 
 def build_collection_router(name: str, tag: str) -> APIRouter:
     router = APIRouter(prefix=f"/{name}", tags=[tag])
@@ -29,10 +31,10 @@ def build_collection_router(name: str, tag: str) -> APIRouter:
     async def get_item(item_id: str):
         item = data_store.find_by_id(name, item_id)
         if item is None:
-            return JSONResponse(status_code=404, content=None)
+            return JSONResponse(status_code=404, content=_NOT_FOUND_BODY)
         return item
 
-    @router.post("", summary="Create an item")
+    @router.post("", summary="Create an item", status_code=201)
     async def create_item(request: Request):
         body = await request.json()
         return data_store.add_to_collection(name, body)
@@ -42,14 +44,14 @@ def build_collection_router(name: str, tag: str) -> APIRouter:
         body = await request.json()
         item = data_store.update_in_collection(name, item_id, body)
         if item is None:
-            return JSONResponse(status_code=404, content=None)
+            return JSONResponse(status_code=404, content=_NOT_FOUND_BODY)
         return item
 
     @router.delete("/{item_id}", summary="Delete an item by id", responses={404: {"description": "No item with that id"}})
     async def delete_item(item_id: str):
         item = data_store.delete_from_collection(name, item_id)
         if item is None:
-            return JSONResponse(status_code=404, content=None)
+            return JSONResponse(status_code=404, content=_NOT_FOUND_BODY)
         return item
 
     return router

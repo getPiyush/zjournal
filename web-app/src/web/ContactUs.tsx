@@ -36,7 +36,7 @@ export default function ContactUs() {
       email: target[1].value,
       phone: target[2].value,
       comment: target[3].value,
-      dateContacted: new Date(),
+      createdAt: new Date(),
     };
 
     addContactToDB(dispatch, contactOut);
@@ -64,7 +64,7 @@ export default function ContactUs() {
 
       let outContact: Contact = {
         ...unescapedParams,
-        dateContacted: new Date(),
+        createdAt: new Date(),
       };
       console.log(outContact, decodeURIComponent(paramObj));
       if (contactState.status !== "loading")
