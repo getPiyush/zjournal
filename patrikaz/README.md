@@ -57,6 +57,28 @@ sibling paths won't exist any more — start the API server and the
 `ui-library` remote however they're hosted for you, then run `npm run serve`
 here for just the app itself.
 
+### Host mode (LAN access)
+
+`npm start`/`npm run serve` bind webpack-dev-server to `localhost` only, so nothing but the dev
+machine itself can reach it. `npm run start:host` (or `npm run serve:host` for just patrikaz) binds
+to `0.0.0.0` instead, so another device on the same network can load it via the dev machine's LAN
+IP, e.g. `http://192.168.0.198:3002` — and, per the runtime host-detection in
+[properties.ts](src/properties.ts) and [webpack.config.js](webpack.config.js), the API and MFE
+remote calls automatically follow that same IP rather than falling back to `localhost`.
+`start:host` also runs `ui-library`'s dev server in host mode (`mfe:start:host`); the API server
+(`server:dev`) already listens on all interfaces by default, so it needs no separate host variant.
+
+Host mode also skips loading `.env` (see `webpack.config.js`) — otherwise its `localhost`-pinned
+`REMOTE_UI_LIBRARY_URL`/`SERVER_URL` would still be baked into the bundle even with `--host
+0.0.0.0`, and a remote device's "localhost" is itself, not your dev machine, breaking the app for
+that remote device (`ScriptExternalLoadError` loading `remoteEntry.js`, failed API calls, etc).
+
+One known limitation: webpack-dev-server's own live-reload (HMR) client also bakes the `--host`
+value into its WebSocket URL, so a remote viewer's browser console may show a WebSocket connection
+warning for `ws://0.0.0.0:.../ws`. This doesn't affect the app itself — the API and MFE remote
+already resolve correctly per above — it just means that remote viewer won't get automatic
+live-reload on code changes and needs to refresh manually.
+
 ## Build
 
 ```bash
@@ -64,5 +86,15 @@ npm run build      # outputs build/
 npm run typecheck  # tsc --noEmit
 ```
 
-At build/deploy time, point `REMOTE_UI_LIBRARY_URL` at wherever `ui-library`'s
-`dist-mfe/` (built via `npm run mfe:build` in that package) is hosted.
+`npm run build` deliberately ignores `.env` (that file only applies to `npm start`/`npm run
+serve`) and does not bake a `localhost` URL into the bundle for either the API or the
+`zjournalUiLibrary` remote. At runtime, in the browser, both default to the page's own host —
+`http://<host>:8080` for the API, `http://<host>:3001/remoteEntry.js` for the remote — so a build
+served from e.g. `http://192.168.0.198` automatically calls `http://192.168.0.198:8080` and
+`http://192.168.0.198:3001/remoteEntry.js`, with no per-deployment configuration needed as long as
+the API and the `ui-library` remote (`dist-mfe/`, built via `npm run mfe:build` in that package)
+are hosted on those ports on the same host as patrikaz itself.
+
+If either isn't co-located with patrikaz (a different host or port), set `SERVER_URL` and/or
+`REMOTE_UI_LIBRARY_URL` as real environment variables when invoking `npm run build` — not via
+`.env`, which `npm run build` ignores — e.g. `SERVER_URL=https://api.example.com npm run build`.

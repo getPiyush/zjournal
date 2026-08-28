@@ -11,6 +11,7 @@
     "test": "jest",
     "test-storybook": "test-storybook",
     "mfe:start": "webpack serve --config webpack.config.js --mode development",
+    "mfe:start:host": "webpack serve --config webpack.config.js --mode development --host 0.0.0.0",
     "mfe:build": "webpack build --config webpack.config.js --mode production"
   },
   "dependencies": {

@@ -70,6 +70,6 @@ export const getArticleByAuthorAPI = (author: string, web: boolean) => {
 };
 
 export const getArticleByMonthAPI = (blogDate: string, web: boolean) => {
-  const url = `${getArticleAPIPath}?dateCreated_like=${blogDate}${web ? `&published=true` : ``}`;
+  const url = `${getArticleAPIPath}?createdAt_like=${blogDate}${web ? `&published=true` : ``}`;
   return getRequest(url);
 };

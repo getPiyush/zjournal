@@ -6,8 +6,11 @@
   "main": "src/index.tsx",
   "scripts": {
     "start": "concurrently \"npm run mfe:start\" \"npm run server:dev\" \"npm run serve\"",
+    "start:host": "concurrently \"npm run mfe:start:host\" \"npm run server:dev\" \"npm run serve:host\"",
     "serve": "webpack serve --config webpack.config.js --mode development",
+    "serve:host": "webpack serve --config webpack.config.js --mode development --host 0.0.0.0",
     "mfe:start": "cd ../ui-library && npm run mfe:start",
+    "mfe:start:host": "cd ../ui-library && npm run mfe:start:host",
     "server:dev": "cd ../server/node && node server.js -w --development",
     "build": "webpack build --config webpack.config.js --mode production",
     "typecheck": "tsc --noEmit"
