@@ -1,9 +1,9 @@
 import "./styles.css";
-import AppRoot from "./AppRoot";
 import React, { useEffect } from "react";
+import { RouterProvider } from "react-router-dom";
 import { applicationProperties } from "./ApplicationConstants";
 import { JournalProvider } from "./datastore/contexts/JournalContext";
-import { ArticleProvider } from "./datastore/contexts/ArticleContext";
+import { router } from "./router";
 
 function GoogleFontLoader({ fonts }: { fonts: Array<{ font: string; weights?: Array<string | number> }> }) {
   useEffect(() => {
@@ -36,9 +36,7 @@ export default function App() {
     <React.Fragment>
       <GoogleFontLoader fonts={applicationProperties.fonts} />
       <JournalProvider>
-        <ArticleProvider>
-          <AppRoot />
-        </ArticleProvider>
+        <RouterProvider router={router} />
       </JournalProvider>
     </React.Fragment>
   );
