@@ -33,7 +33,7 @@ export default function Header() {
           <Suspense fallback={<span />}>
             <Logo
               image="/images/patrikaz_logo_eng.jpeg"
-              subtext={`by ${applicationProperties.author}`}
+              subtext={`for your daily reads`}
               onClick={() => navigate("/home")}
             />
           </Suspense>
