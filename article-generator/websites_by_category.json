@@ -1,0 +1,579 @@
+{
+  "categories": [
+    {
+      "categoryId": "Software Development",
+      "websites": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com"
+        },
+        {
+          "name": "Stack Overflow",
+          "url": "https://stackoverflow.com"
+        },
+        {
+          "name": "MDN Web Docs",
+          "url": "https://developer.mozilla.org"
+        },
+        {
+          "name": "freeCodeCamp",
+          "url": "https://www.freecodecamp.org",
+          "invalid": true
+        },
+        {
+          "name": "Dev.to",
+          "url": "https://dev.to",
+          "invalid": true
+        },
+        {
+          "name": "Hacker News",
+          "url": "https://news.ycombinator.com"
+        },
+        {
+          "name": "LeetCode",
+          "url": "https://leetcode.com",
+          "invalid": true
+        },
+        {
+          "name": "Codecademy",
+          "url": "https://www.codecademy.com",
+          "invalid": true
+        },
+        {
+          "name": "Smashing Magazine",
+          "url": "https://www.smashingmagazine.com"
+        },
+        {
+          "name": "InfoQ",
+          "url": "https://www.infoq.com"
+        }
+      ]
+    },
+    {
+      "categoryId": "Science",
+      "websites": [
+        {
+          "name": "Nature",
+          "url": "https://www.nature.com"
+        },
+        {
+          "name": "Science (AAAS)",
+          "url": "https://www.science.org"
+        },
+        {
+          "name": "Scientific American",
+          "url": "https://www.scientificamerican.com"
+        },
+        {
+          "name": "ScienceDaily",
+          "url": "https://www.sciencedaily.com",
+          "invalid": true
+        },
+        {
+          "name": "Science News",
+          "url": "https://www.sciencenews.org",
+          "invalid": true
+        },
+        {
+          "name": "New Scientist",
+          "url": "https://www.newscientist.com"
+        },
+        {
+          "name": "Phys.org",
+          "url": "https://phys.org"
+        },
+        {
+          "name": "SciTechDaily",
+          "url": "https://scitechdaily.com",
+          "invalid": true
+        },
+        {
+          "name": "Live Science",
+          "url": "https://www.livescience.com",
+          "invalid": true
+        },
+        {
+          "name": "Sci.News",
+          "url": "https://www.sci.news"
+        }
+      ]
+    },
+    {
+      "categoryId": "Engineering",
+      "websites": [
+        {
+          "name": "Engineering.com",
+          "url": "https://www.engineering.com"
+        },
+        {
+          "name": "IEEE Spectrum",
+          "url": "https://spectrum.ieee.org"
+        },
+        {
+          "name": "ASME",
+          "url": "https://www.asme.org"
+        },
+        {
+          "name": "Engineering News-Record",
+          "url": "https://www.enr.com",
+          "invalid": true
+        },
+        {
+          "name": "Interesting Engineering",
+          "url": "https://interestingengineering.com"
+        },
+        {
+          "name": "ASCE",
+          "url": "https://www.asce.org",
+          "invalid": true
+        },
+        {
+          "name": "Machine Design",
+          "url": "https://www.machinedesign.com",
+          "invalid": true
+        },
+        {
+          "name": "Design News",
+          "url": "https://www.designnews.com",
+          "invalid": true
+        },
+        {
+          "name": "Hackaday",
+          "url": "https://hackaday.com"
+        },
+        {
+          "name": "All About Circuits",
+          "url": "https://www.allaboutcircuits.com",
+          "invalid": true
+        }
+      ]
+    },
+    {
+      "categoryId": "Space",
+      "websites": [
+        {
+          "name": "Space.com",
+          "url": "https://www.space.com"
+        },
+        {
+          "name": "NASA",
+          "url": "https://www.nasa.gov"
+        },
+        {
+          "name": "Astronomy Magazine",
+          "url": "https://www.astronomy.com"
+        },
+        {
+          "name": "Sky & Telescope",
+          "url": "https://skyandtelescope.org",
+          "invalid": true
+        },
+        {
+          "name": "Universe Today",
+          "url": "https://www.universetoday.com",
+          "invalid": true
+        },
+        {
+          "name": "SpaceNews",
+          "url": "https://spacenews.com"
+        },
+        {
+          "name": "European Space Agency",
+          "url": "https://www.esa.int"
+        },
+        {
+          "name": "NASA JPL",
+          "url": "https://www.jpl.nasa.gov"
+        },
+        {
+          "name": "Star Walk",
+          "url": "https://starwalk.space"
+        },
+        {
+          "name": "Phys.org Space News",
+          "url": "https://phys.org/space-news/"
+        }
+      ]
+    },
+    {
+      "categoryId": "Art",
+      "websites": [
+        {
+          "name": "Artsy",
+          "url": "https://www.artsy.net",
+          "invalid": true
+        },
+        {
+          "name": "The Metropolitan Museum of Art",
+          "url": "https://www.metmuseum.org"
+        },
+        {
+          "name": "Artnet News",
+          "url": "https://news.artnet.com"
+        },
+        {
+          "name": "ARTnews",
+          "url": "https://www.artnews.com"
+        },
+        {
+          "name": "Hyperallergic",
+          "url": "https://hyperallergic.com"
+        },
+        {
+          "name": "Google Arts & Culture",
+          "url": "https://artsandculture.google.com"
+        },
+        {
+          "name": "ArtStation",
+          "url": "https://www.artstation.com",
+          "invalid": true
+        },
+        {
+          "name": "Behance",
+          "url": "https://www.behance.net"
+        },
+        {
+          "name": "Colossal",
+          "url": "https://www.thisiscolossal.com"
+        },
+        {
+          "name": "The Art Newspaper",
+          "url": "https://www.theartnewspaper.com"
+        }
+      ]
+    },
+    {
+      "categoryId": "Psychology",
+      "websites": [
+        {
+          "name": "American Psychological Association",
+          "url": "https://www.apa.org"
+        },
+        {
+          "name": "Psychology Today",
+          "url": "https://www.psychologytoday.com",
+          "invalid": true
+        },
+        {
+          "name": "PsyPost",
+          "url": "https://www.psypost.org",
+          "invalid": true
+        },
+        {
+          "name": "Verywell Mind",
+          "url": "https://www.verywellmind.com"
+        },
+        {
+          "name": "Simply Psychology",
+          "url": "https://www.simplypsychology.org",
+          "invalid": true
+        },
+        {
+          "name": "Association for Psychological Science",
+          "url": "https://www.psychologicalscience.org",
+          "invalid": true
+        },
+        {
+          "name": "Greater Good Magazine",
+          "url": "https://greatergood.berkeley.edu"
+        },
+        {
+          "name": "Psych Central",
+          "url": "https://psychcentral.com"
+        },
+        {
+          "name": "Frontiers in Psychology",
+          "url": "https://www.frontiersin.org/journals/psychology"
+        },
+        {
+          "name": "Psychreg",
+          "url": "https://www.psychreg.org"
+        }
+      ]
+    },
+    {
+      "categoryId": "Medicine",
+      "websites": [
+        {
+          "name": "Mayo Clinic",
+          "url": "https://www.mayoclinic.org",
+          "invalid": true
+        },
+        {
+          "name": "WebMD",
+          "url": "https://www.webmd.com",
+          "invalid": true
+        },
+        {
+          "name": "Medscape",
+          "url": "https://www.medscape.com",
+          "invalid": true
+        },
+        {
+          "name": "Medical News Today",
+          "url": "https://www.medicalnewstoday.com"
+        },
+        {
+          "name": "National Institutes of Health",
+          "url": "https://www.nih.gov",
+          "invalid": true
+        },
+        {
+          "name": "CDC",
+          "url": "https://www.cdc.gov"
+        },
+        {
+          "name": "The Lancet",
+          "url": "https://www.thelancet.com"
+        },
+        {
+          "name": "New England Journal of Medicine",
+          "url": "https://www.nejm.org"
+        },
+        {
+          "name": "Healio",
+          "url": "https://www.healio.com"
+        },
+        {
+          "name": "MDLinx",
+          "url": "https://www.mdlinx.com"
+        }
+      ]
+    },
+    {
+      "categoryId": "Technology",
+      "websites": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com"
+        },
+        {
+          "name": "Wired",
+          "url": "https://www.wired.com",
+          "invalid": true
+        },
+        {
+          "name": "Ars Technica",
+          "url": "https://arstechnica.com"
+        },
+        {
+          "name": "Engadget",
+          "url": "https://www.engadget.com"
+        },
+        {
+          "name": "CNET",
+          "url": "https://www.cnet.com"
+        },
+        {
+          "name": "MIT Technology Review",
+          "url": "https://www.technologyreview.com"
+        },
+        {
+          "name": "ZDNET",
+          "url": "https://www.zdnet.com"
+        },
+        {
+          "name": "Gizmodo",
+          "url": "https://gizmodo.com",
+          "invalid": true
+        },
+        {
+          "name": "TechRadar",
+          "url": "https://www.techradar.com"
+        }
+      ]
+    },
+    {
+      "categoryId": "History",
+      "websites": [
+        {
+          "name": "History.com",
+          "url": "https://www.history.com"
+        },
+        {
+          "name": "Smithsonian Magazine",
+          "url": "https://www.smithsonianmag.com",
+          "invalid": true
+        },
+        {
+          "name": "BBC History",
+          "url": "https://www.bbc.co.uk/history"
+        },
+        {
+          "name": "National Geographic History",
+          "url": "https://www.nationalgeographic.com/history"
+        },
+        {
+          "name": "JSTOR Daily",
+          "url": "https://daily.jstor.org"
+        },
+        {
+          "name": "History Today",
+          "url": "https://www.historytoday.com"
+        },
+        {
+          "name": "World History Encyclopedia",
+          "url": "https://www.worldhistory.org"
+        },
+        {
+          "name": "Britannica",
+          "url": "https://www.britannica.com"
+        },
+        {
+          "name": "Archaeology Magazine",
+          "url": "https://www.archaeology.org"
+        },
+        {
+          "name": "HistoryExtra",
+          "url": "https://www.historyextra.com"
+        }
+      ]
+    },
+    {
+      "categoryId": "Philosophy",
+      "websites": [
+        {
+          "name": "Stanford Encyclopedia of Philosophy",
+          "url": "https://plato.stanford.edu"
+        },
+        {
+          "name": "Internet Encyclopedia of Philosophy",
+          "url": "https://iep.utm.edu"
+        },
+        {
+          "name": "Philosophy Now",
+          "url": "https://philosophynow.org"
+        },
+        {
+          "name": "Aeon",
+          "url": "https://aeon.co"
+        },
+        {
+          "name": "Philosophy Talk",
+          "url": "https://www.philosophytalk.org",
+          "invalid": true
+        },
+        {
+          "name": "Institute of Art and Ideas (IAI)",
+          "url": "https://iai.tv"
+        },
+        {
+          "name": "Daily Nous",
+          "url": "https://dailynous.com",
+          "invalid": true
+        },
+        {
+          "name": "3:AM Magazine",
+          "url": "https://www.3ammagazine.com"
+        },
+        {
+          "name": "PhilPapers",
+          "url": "https://philpapers.org"
+        },
+        {
+          "name": "Philosophy Break",
+          "url": "https://philosophybreak.com"
+        }
+      ]
+    },
+    {
+      "categoryId": "Mathematics",
+      "websites": [
+        {
+          "name": "Wolfram MathWorld",
+          "url": "https://mathworld.wolfram.com"
+        },
+        {
+          "name": "Art of Problem Solving",
+          "url": "https://artofproblemsolving.com"
+        },
+        {
+          "name": "Khan Academy",
+          "url": "https://www.khanacademy.org"
+        },
+        {
+          "name": "Brilliant",
+          "url": "https://brilliant.org",
+          "invalid": true
+        },
+        {
+          "name": "Quanta Magazine (Mathematics)",
+          "url": "https://www.quantamagazine.org/mathematics/"
+        },
+        {
+          "name": "American Mathematical Society",
+          "url": "https://www.ams.org"
+        },
+        {
+          "name": "Numberphile",
+          "url": "https://www.numberphile.com"
+        },
+        {
+          "name": "Mathematics Stack Exchange",
+          "url": "https://math.stackexchange.com"
+        },
+        {
+          "name": "3Blue1Brown",
+          "url": "https://www.3blue1brown.com"
+        },
+        {
+          "name": "Plus Magazine",
+          "url": "https://plus.maths.org"
+        }
+      ]
+    },
+    {
+      "categoryId": "Physics",
+      "websites": [
+        {
+          "name": "Physics World",
+          "url": "https://physicsworld.com",
+          "invalid": true
+        },
+        {
+          "name": "Physics Today",
+          "url": "https://physicstoday.aip.org"
+        },
+        {
+          "name": "Quanta Magazine (Physics)",
+          "url": "https://www.quantamagazine.org/physics/"
+        },
+        {
+          "name": "APS Physics",
+          "url": "https://physics.aps.org"
+        },
+        {
+          "name": "CERN",
+          "url": "https://home.cern"
+        },
+        {
+          "name": "Nature Physics",
+          "url": "https://www.nature.com/nphys/"
+        },
+        {
+          "name": "Phys.org Physics News",
+          "url": "https://phys.org/physics-news/"
+        },
+        {
+          "name": "Symmetry Magazine",
+          "url": "https://www.symmetrymagazine.org",
+          "invalid": true
+        },
+        {
+          "name": "Fermilab",
+          "url": "https://www.fnal.gov",
+          "invalid": true
+        },
+        {
+          "name": "Live Science Physics",
+          "url": "https://www.livescience.com/physics-mathematics",
+          "invalid": true
+        }
+      ]
+    }
+  ]
+}
