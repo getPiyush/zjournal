@@ -34,8 +34,8 @@ public class OpenApiConfig {
               "author": "Ada Lovelace",
               "title": "How Preformulation Studies Shape a New Drug",
               "categryId": "Quality Control",
-              "dateCreated": "2022-04-22T13:02:23.218Z",
-              "dateModified": "2022-04-22T13:02:23.218Z",
+              "createdAt": "2022-04-22T13:02:23.218Z",
+              "updatedAt": "2022-04-22T13:02:23.218Z",
               "origin": "server",
               "published": false,
               "content": [
@@ -47,22 +47,22 @@ public class OpenApiConfig {
 
     private static final String CONTACT_EXAMPLE = """
             {
-              "id": 1,
+              "id": "1",
               "name": "Ada Lovelace",
               "email": "ada@example.com",
               "phone": "+1 555-0100",
               "comment": "Loved the article on preformulation studies!",
-              "dateContacted": "2022-04-09T19:16:42.645Z"
+              "createdAt": "2022-04-09T19:16:42.645Z"
             }
             """;
 
     private static final String QNA_EXAMPLE = """
             {
-              "id": 1,
+              "id": "1",
               "question": "What is Preformulation study?",
               "answer": "A group of studies on the physicochemical properties of a new drug candidate that could affect drug performance and dosage form development.",
               "published": true,
-              "dateCreated": "2022-04-12T07:16:45.652Z"
+              "createdAt": "2022-04-12T07:16:45.652Z"
             }
             """;
 

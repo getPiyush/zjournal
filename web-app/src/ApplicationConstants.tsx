@@ -7,8 +7,8 @@ export const defaultArticle: ArticleT = {
   id: "",
   author: applicationProperties.author,
   title: "",
-  dateCreated: new Date(),
-  dateModified: new Date(),
+  createdAt: new Date(),
+  updatedAt: new Date(),
   categryId: "",
   content: [],
   origin: "local",
@@ -18,7 +18,7 @@ export const defaultArticle: ArticleT = {
 
 export const defaultContact: Contact = {
   name: "",
-  dateContacted: new Date(),
+  createdAt: new Date(),
   email: "",
   phone: "",
   comment: "",
@@ -40,5 +40,5 @@ export const defaultQnA: QnA = {
   answer: "",
   id: "",
   published: false,
-  dateCreated: new Date(),
+  createdAt: new Date(),
 };

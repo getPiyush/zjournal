@@ -16,7 +16,7 @@ export default function HeroArticle({ article, mode = "view" }: HeroProps) {
     <div className="card border-light mb-3 hero-article">
       <div className="card-body">
         <h2>{parsex(article.title)}</h2>
-        <small>By {article.author} on {getDate(article.dateCreated)}</small>
+        <small>By {article.author} on {getDate(article.createdAt)}</small>
         <div className="lead">
           {article.content.map((item, index) => {
             if (item.componenType === "Image" && !contentArray[0]) {

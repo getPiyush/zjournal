@@ -1,19 +1,30 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Logo } from "@zjournal/ui-library";
 import { updatePage } from "../datastore/actions/JournalActions";
 import { useJournal } from "../datastore/contexts/JournalContext";
 import { applicationProperties } from "../ApplicationConstants";
 
+declare const bootstrap: any;
+
 export default function Header() {
   const {dispatch} = useJournal();
   const location = useLocation().pathname;
   const navigate = useNavigate();
+  const navCollapseRef = useRef<HTMLDivElement>(null);
+
+  const closeMobileNav = () => {
+    const collapseEl = navCollapseRef.current;
+    if (collapseEl && collapseEl.classList.contains("show")) {
+      bootstrap.Collapse.getOrCreateInstance(collapseEl).hide();
+    }
+  };
 
   const linkClicked = (event: React.MouseEvent<HTMLAnchorElement>) => {
     const target: any = event.target;
     const buttonFlag = target.getAttribute("button-flag");
     updatePage(buttonFlag, dispatch);
+    closeMobileNav();
   };
   return (
     <header>
@@ -38,6 +49,7 @@ export default function Header() {
           <div
             className="collapse navbar-collapse justify-content-end"
             id="navbarCollapse"
+            ref={navCollapseRef}
           >
             <ul className="navbar-nav mb-2 mb-md-0">
               <li className="nav-item">
@@ -47,6 +59,7 @@ export default function Header() {
                   }`}
                   aria-current="page"
                   to="/web/home"
+                  onClick={closeMobileNav}
                 >
                   Home
                 </Link>
@@ -58,6 +71,7 @@ export default function Header() {
                   }`}
                   aria-current="page"
                   to="/web/aboutus"
+                  onClick={closeMobileNav}
                 >
                   About
                 </Link>
@@ -68,6 +82,7 @@ export default function Header() {
                     location === "/web/contactus" ? "active" : ""
                   }`}
                   to="/web/contactus"
+                  onClick={closeMobileNav}
                 >
                   Contact
                 </Link>
@@ -78,6 +93,7 @@ export default function Header() {
                     location === "/web/iqa" ? "active" : ""
                   }`}
                   to="/web/iqa"
+                  onClick={closeMobileNav}
                 >
                   Q&amp;A
                 </Link>

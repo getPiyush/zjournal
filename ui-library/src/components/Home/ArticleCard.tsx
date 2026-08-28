@@ -19,7 +19,7 @@ export default function ArticleCard({ article, mode="view" }: ArticleCardProps) 
       <div className="card-body">
         <h5 className="card-title">{parsex(article.title)}</h5>
         <div className="card-text">
-          Created:<b>{getDate(article.dateCreated)}</b>{" "}
+          Created:<b>{getDate(article.createdAt)}</b>{" "}
         </div>
         {article.content.map((item, index) => {
           if (item.componenType === "Image" && !contentArray[0]) {

@@ -1,3 +1,10 @@
+// Falls back to the page's own host (e.g. patrikaz served from http://192.168.0.198 talks to
+// http://192.168.0.198:8080) rather than a hardcoded "localhost", since "localhost" would resolve
+// to the *viewer's* machine instead of whatever host actually served the bundle. Overridable at
+// build time via SERVER_URL (see webpack.config.js) for setups where the API isn't co-located.
+const defaultServerUrl =
+  typeof window !== "undefined" ? `${window.location.protocol}//${window.location.hostname}:8080` : "http://localhost:8080";
+
 export const properties = {
   title: "Patrikaz",
   author: "Piyush Praharaj",
@@ -22,6 +29,6 @@ export const properties = {
     },
   ],
   // Same backend web-app (localhost/web) talks to; overridable via SERVER_URL at build time.
-  serverUrl: process.env.SERVER_URL || "http://localhost:8080",
+  serverUrl: process.env.SERVER_URL || defaultServerUrl,
   disableTextSelect: false,
 };

@@ -11,6 +11,6 @@ import os
 from pathlib import Path
 
 PORT = int(os.environ.get("ZJOURNAL_PORT", "8080"))
-APP_PASSWORD = os.environ.get("ZJOURNAL_APP_PASSWORD", "JagaBaliaShreekhetra")
+ENCRYPTION_KEY = os.environ.get("ZJOURNAL_ENCRYPTION_KEY", "JagaBaliaShreekhetra")
 DB_FILE = Path(os.environ.get("ZJOURNAL_DB_FILE", str(Path(__file__).resolve().parent.parent / "db.json")))
 ENCRYPTION_ENABLED = os.environ.get("ZJOURNAL_ENCRYPTION_ENABLED", "true").lower() == "true"

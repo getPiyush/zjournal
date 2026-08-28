@@ -23,12 +23,12 @@ export default function ArticlePreviewWeb({ data }: ArticleProps) {
         </h5>
         <div className="card-text">
           <div>
-            Created:<b>{getDate(data.dateCreated)}</b>{" "}
+            Created:<b>{getDate(data.createdAt)}</b>{" "}
           </div>
-          {data.dateCreated !== data.dateModified && (
+          {data.createdAt !== data.updatedAt && (
             <div>
               Last Updated:
-              <b>{getDate(data.dateModified)}</b>
+              <b>{getDate(data.updatedAt)}</b>
             </div>
           )}
           {data.content.map((item, index) => {

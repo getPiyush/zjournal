@@ -92,7 +92,7 @@ export const getArticleByAuthorAPI = (author: string, web: boolean) => {
 }
 
 export const getArticleByMonthAPI = (blogDate: string, web: boolean) => {
-    const url = `${getArticleAPIPath}?dateCreated_like=${blogDate}${web ? `&published=true` : ``}`;
+    const url = `${getArticleAPIPath}?createdAt_like=${blogDate}${web ? `&published=true` : ``}`;
     return getRequest(url);
 }
 
@@ -126,7 +126,7 @@ Journal APIS
  */
 
 export const getContactsAPI = () => {
-    return getRequest(`${getContactsAPIPath}?_sort=dateContacted&_order=desc`);
+    return getRequest(`${getContactsAPIPath}?_sort=createdAt&_order=desc`);
 }
 
 
@@ -142,7 +142,7 @@ export const addContactAPI = (contact: Contact) => {
  */
 
 export const getQnAsAPI = () => {
-    return getRequest(`${getQnAsAPIPath}?_sort=dateCreated&_order=desc`);
+    return getRequest(`${getQnAsAPIPath}?_sort=createdAt&_order=desc`);
 }
 
 

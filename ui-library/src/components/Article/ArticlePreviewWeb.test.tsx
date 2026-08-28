@@ -6,8 +6,8 @@ const sampleArticle = {
   id: "article-001",
   author: "Piyush",
   title: "Designing a better release workflow",
-  dateCreated: new Date("2024-05-10T10:30:00Z"),
-  dateModified: new Date("2024-05-12T08:15:00Z"),
+  createdAt: new Date("2024-05-10T10:30:00Z"),
+  updatedAt: new Date("2024-05-12T08:15:00Z"),
   categryId: "Engineering",
   origin: "server" as const,
   published: true,
@@ -50,7 +50,7 @@ describe("ArticlePreviewWeb", () => {
   });
 
   test("only shows the last-updated line when the article was modified", () => {
-    render(<ArticlePreviewWeb data={{ ...sampleArticle, dateModified: sampleArticle.dateCreated }} />);
+    render(<ArticlePreviewWeb data={{ ...sampleArticle, updatedAt: sampleArticle.createdAt }} />);
     expect(screen.queryByText("Last Updated:", { exact: false })).toBeNull();
   });
 });

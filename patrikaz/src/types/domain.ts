@@ -16,8 +16,8 @@ export type ArticleT = {
   id: string;
   author: string;
   title: string;
-  dateCreated: Date;
-  dateModified: Date;
+  createdAt: Date;
+  updatedAt: Date;
   categryId: string;
   content: ComponentObject[];
   origin: "server" | "local";

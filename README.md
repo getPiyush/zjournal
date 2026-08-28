@@ -169,18 +169,23 @@ Navigate to `/admin` (redirects to `/admin/categories`). The nav bar exposes fiv
 
 The API (whichever backend you use) serves four collections, all defined in `db.json` / `server/php/db.json`:
 
-- **`articles`** — `{ id, author, title, dateCreated, dateModified, categryId, content: ComponentObject[], origin, published, deleteFlag }`. `content` is an ordered array of typed blocks (`componentId`, `componenType`, `data`, `numbered`) — this is what the article editor manipulates.
+- **`articles`** — `{ id, author, title, createdAt, updatedAt, categryId, content: ComponentObject[], origin, published, deleteFlag }`. `content` is an ordered array of typed blocks (`componentId`, `componenType`, `data`, `numbered`) — this is what the article editor manipulates.
 - **`journal`** — singleton document holding site-wide state: `title`, `categories[]`, `components[]` (the block types the editor offers), `templateArticles`, `templateData`, `aboutUs`, plus (Node server only) `adminDetails` with the hashed admin id/passphrase.
-- **`contacts`** — `{ name, dateContacted, email, phone, comment }` entries from the Contact Us form.
-- **`qna`** — `{ id, question, answer, published, dateCreated }` entries shown on the Q&A page.
+- **`contacts`** — `{ id, name, createdAt, email, phone, comment }` entries from the Contact Us form.
+- **`qna`** — `{ id, question, answer, published, createdAt }` entries shown on the Q&A page.
+
+All three collections use a string `id` and a `createdAt` ISO-8601 timestamp — `articles` additionally tracks `updatedAt` since it's the only collection with an edit flow.
 
 ## Backend servers
 
 Four interchangeable backend implementations exist, all speaking the **same wire contract**: every
 request/response body is wrapped as `{"ezjData": "<base64>"}`, encrypted with PBKDF2-HMAC-SHA512
-(999 iterations) + AES-256-CBC (salt/iv carried in the payload), always on. There's no mode
-selector on the frontend any more (the old `properties.serverMode` flag is gone) — switching
-backends is purely a `properties.serverUrl` change:
+(999 iterations) + AES-256-CBC (salt/iv carried in the payload), on by default and toggleable per
+backend (see each server's README). There's no mode selector on the frontend any more (the old
+`properties.serverMode` flag is gone) — switching backends is purely a `properties.serverUrl`
+change. All four also share the same error shape: a `GET`/`PUT`/`DELETE` against an unknown id
+returns HTTP `404` with `{"error": {"code": "NOT_FOUND", "message": "..."}}`, and `POST` returns
+`201` on success:
 
 - **`server/node`** (default) — [`json-server`](https://www.npmjs.com/package/json-server) wrapping `db.json`, with middleware (`crypto.js`) implementing the shared PBKDF2/AES-256-CBC `ezjData` envelope.
   - Run directly: `cd server/node && node server.js -w --development` (or `--production`).

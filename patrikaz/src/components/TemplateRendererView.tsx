@@ -1,33 +1,16 @@
-import { Suspense, useEffect, useState } from "react";
+import { Suspense } from "react";
 import { TemplateRenderer } from "../remotes/uiLibraryComponents";
-import { loadUiLibrary } from "../remotes/uiLibraryModule";
-import { useArticle } from "../datastore/contexts/ArticleContext";
-import { getArticlesByIds } from "../datastore/actions/ArticleActions";
+import type { ArticleT } from "../types/domain";
 
 type TemplateRendererViewProps = {
   dataString: string;
   invalidArticleError: (articleId: string, flag: boolean) => void;
   mode: "view" | "edit";
+  articles: ArticleT[];
 };
 
-export default function TemplateRendererView({ dataString, invalidArticleError, mode }: TemplateRendererViewProps) {
-  const { dispatch, state: articleData } = useArticle();
-  const [articleIds, setArticleIds] = useState<string[]>([]);
-
-  useEffect(() => {
-    let cancelled = false;
-    loadUiLibrary().then(({ parseTemplateArticleIds }) => {
-      if (cancelled) return;
-      const ids = parseTemplateArticleIds(dataString);
-      setArticleIds(ids);
-      getArticlesByIds(dispatch, ids);
-    });
-    return () => {
-      cancelled = true;
-    };
-  }, [dataString]);
-
-  if (articleIds.length === 0 && dataString === "") {
+export default function TemplateRendererView({ dataString, invalidArticleError, mode, articles }: TemplateRendererViewProps) {
+  if (!dataString) {
     return null;
   }
 
@@ -37,8 +20,8 @@ export default function TemplateRendererView({ dataString, invalidArticleError, 
         dataString={dataString}
         invalidArticleError={invalidArticleError}
         mode={mode}
-        articles={articleData.articles}
-        status={articleData.status}
+        articles={articles}
+        status="success"
       />
     </Suspense>
   );

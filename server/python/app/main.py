@@ -27,7 +27,7 @@ Python/FastAPI rewrite of the PHP, Node, and Java zJournal backends, serving the
 
 ### Encryption
 By default every request/response body is wrapped in an encrypted `ezjData` envelope
-(PBKDF2 + AES-256-CBC, keyed by `ZJOURNAL_APP_PASSWORD`), which makes **Try it out** below
+(PBKDF2 + AES-256-CBC, keyed by `ZJOURNAL_ENCRYPTION_KEY`), which makes **Try it out** below
 unusable as-is. To test interactively, start the app with encryption disabled:
 ```
 ZJOURNAL_ENCRYPTION_ENABLED=false uvicorn app.main:app --port 8080

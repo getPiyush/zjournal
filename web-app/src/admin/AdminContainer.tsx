@@ -25,8 +25,8 @@ export default function AdminContainer() {
   const showLoader = jState.status === "loading" || aState.status === "loading" || cState.status.includes("loading");
 
   const getValidatedArticle = (article: ArticleT) => {
-    return article.dateCreated &&
-      article.dateModified &&
+    return article.createdAt &&
+      article.updatedAt &&
       article.author !== "" &&
       article.id !== ""
       ? article

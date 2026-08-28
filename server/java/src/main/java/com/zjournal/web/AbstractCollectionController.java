@@ -6,6 +6,7 @@ import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.ExampleObject;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.MultiValueMap;
@@ -40,7 +41,7 @@ public abstract class AbstractCollectionController {
             + "together while distinct keys AND.")
     @GetMapping
     public List<Map<String, Object>> list(
-            @Parameter(description = "Query params, e.g. `_sort=dateCreated&_order=desc&published=true`")
+            @Parameter(description = "Query params, e.g. `_sort=createdAt&_order=desc&published=true`")
             @RequestParam MultiValueMap<String, String> params) {
         return QueryEngine.apply(dataStore.getCollection(collectionName()), params);
     }
@@ -51,17 +52,17 @@ public abstract class AbstractCollectionController {
     public ResponseEntity<Map<String, Object>> getById(@Parameter(description = "The item's `id` field") @PathVariable String id) {
         return dataStore.findById(collectionName(), id)
                 .map(ResponseEntity::ok)
-                .orElseGet(() -> ResponseEntity.notFound().build());
+                .orElseGet(this::notFound);
     }
 
     @Operation(summary = "Create an item")
     @PostMapping
-    public Map<String, Object> create(
+    public ResponseEntity<Map<String, Object>> create(
             @io.swagger.v3.oas.annotations.parameters.RequestBody(
                     content = @Content(mediaType = MediaType.APPLICATION_JSON_VALUE,
                             examples = @ExampleObject("{\n  \"title\": \"Example title\"\n}")))
             @RequestBody Map<String, Object> body) {
-        return dataStore.addToCollection(collectionName(), body);
+        return ResponseEntity.status(HttpStatus.CREATED).body(dataStore.addToCollection(collectionName(), body));
     }
 
     @Operation(summary = "Replace an item by id")
@@ -72,7 +73,7 @@ public abstract class AbstractCollectionController {
             @RequestBody Map<String, Object> body) {
         return dataStore.updateInCollection(collectionName(), id, body)
                 .map(ResponseEntity::ok)
-                .orElseGet(() -> ResponseEntity.notFound().build());
+                .orElseGet(this::notFound);
     }
 
     @Operation(summary = "Delete an item by id")
@@ -81,6 +82,11 @@ public abstract class AbstractCollectionController {
     public ResponseEntity<Map<String, Object>> delete(@Parameter(description = "The item's `id` field") @PathVariable String id) {
         return dataStore.deleteFromCollection(collectionName(), id)
                 .map(ResponseEntity::ok)
-                .orElseGet(() -> ResponseEntity.notFound().build());
+                .orElseGet(this::notFound);
+    }
+
+    private ResponseEntity<Map<String, Object>> notFound() {
+        return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                .body(Map.of("error", Map.of("code", "NOT_FOUND", "message", "No item with that id")));
     }
 }

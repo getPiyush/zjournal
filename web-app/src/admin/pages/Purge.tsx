@@ -42,7 +42,7 @@ export const Purge = () => {
                   <th scope="row">{index}</th>
                   <td><b>{parsex(article.title)}</b></td>
                   <td>{article.categryId}</td>
-                  <td>{getDate(article.dateCreated)}</td>
+                  <td>{getDate(article.createdAt)}</td>
                   <td>
                     <ConfirmationButton
                       buttonText=" x "
