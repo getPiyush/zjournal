@@ -63,7 +63,7 @@ zjournal/
 - **`server/node/`** — a thin wrapper around [`json-server`](https://github.com/typicode/json-server) that serves `db.json` as a REST API, with optional AES request/response encryption and a shared-secret header check.
 - **`server/php/`** — a PHP equivalent of the same API, for hosting on plain PHP/Apache stacks without Node.
 
-All `npm run <script>` commands work from the repo root and delegate into the relevant workspace via `--workspace=`.
+All `npm run <script>` commands work from the repo root and delegate into the relevant workspace via `--workspace=`. `patrikaz` isn't a workspace (see [patrikaz/README.md](patrikaz/README.md)), so its scripts are instead reachable via the `patrikaz` passthrough script — `npm run patrikaz -- <script>`.
 
 ## How it works
 
@@ -131,6 +131,28 @@ Inside `ui-library/`:
 | `npm run storybook` | Starts Storybook on port 6006 for isolated component development |
 | `npm run build:storybook` | Builds a static Storybook site to `storybook-static/` |
 | `npm test` | Runs the Jest suite |
+
+### Patrikaz
+
+Run from the repo root via `npm run patrikaz -- <script>` (or `cd patrikaz && npm run <script>` directly — see [patrikaz/README.md](patrikaz/README.md)):
+
+| Script | What it does |
+| --- | --- |
+| `start` | Starts patrikaz + the `ui-library` MFE remote + the Node API server together (`http://localhost:3002`) |
+| `start:host` | Same as `start`, bound to `0.0.0.0` so other devices on the LAN can reach it |
+| `serve` | Starts only patrikaz's webpack-dev-server (assumes the API and MFE remote are already running elsewhere) |
+| `serve:host` | Same as `serve`, bound to `0.0.0.0` |
+| `start:php` / `start:java` / `start:python` | Starts patrikaz + the MFE remote against the PHP/Java/Python API server instead of Node |
+| `start:php:host` / `start:java:host` / `start:python:host` | Host-bound (`0.0.0.0`) variants of the above |
+| `mfe:start` / `mfe:start:host` | Starts `ui-library`'s Module Federation remote dev server on its own (`http://localhost:3001`) |
+| `server:dev` (alias `server:node:dev`) | Starts the Node API server in dev/watch mode |
+| `server:php:dev` | Starts the PHP API server |
+| `server:java:dev` | Starts the Java API server from source (`./mvnw spring-boot:run`) |
+| `server:python:dev` | Starts the Python API server with auto-reload |
+| `build` | Production webpack build to `patrikaz/build` |
+| `typecheck` | Type-checks with `tsc --noEmit` |
+
+Example: `npm run patrikaz -- start:java:host` starts patrikaz, the `ui-library` MFE remote, and the Java API server, all bound to `0.0.0.0` for LAN access.
 
 ## User guide
 

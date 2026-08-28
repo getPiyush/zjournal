@@ -23,6 +23,7 @@
   },
   "scripts": {
     "install:all": "npm install && npm install --prefix patrikaz && npm run server:java:build",
+    "patrikaz": "npm run --prefix patrikaz",
     "start": "npm run start --workspace=web-app",
     "build": "npm run build --workspace=web-app",
     "test": "npm run test --workspace=web-app --",
