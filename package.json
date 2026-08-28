@@ -22,6 +22,8 @@
     "react-router-dom": "6.21.2"
   },
   "scripts": {
+    "install:all": "npm install && npm install --prefix patrikaz && npm run server:java:build",
+    "patrikaz": "npm run --prefix patrikaz",
     "start": "npm run start --workspace=web-app",
     "build": "npm run build --workspace=web-app",
     "test": "npm run test --workspace=web-app --",
@@ -33,7 +35,8 @@
     "server:node:prod": "npm run server",
     "server:php:dev": "cd server/php && php -S localhost:8080",
     "server:java:dev": "cd server/java && ./mvnw spring-boot:run",
-    "server:java:prod": "cd server/java && ./mvnw -q -DskipTests clean package && java -jar target/zjournal-server-0.0.1-SNAPSHOT.jar",
+    "server:java:build": "cd server/java && ./mvnw -q -DskipTests clean package",
+    "server:java:prod": "npm run server:java:build && cd server/java && java -jar target/zjournal-server-0.0.1-SNAPSHOT.jar",
     "server:python:dev": "cd server/python && .venv/bin/uvicorn app.main:app --port 8080 --reload",
     "server:python:prod": "cd server/python && .venv/bin/uvicorn app.main:app --port 8080",
     "dev": "concurrently \"npm run start\" \"npm run server:dev\"",
