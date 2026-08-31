@@ -1,0 +1,1086 @@
+{
+  "meta": {
+    "version": 1,
+    "createdAt": "2026-08-29T00:00:00.000Z",
+    "updatedAt": "2026-08-31T23:04:25.654Z"
+  },
+  "applications": {
+    "web-app": {
+      "totalViews": 71,
+      "articles": {
+        "yaowvy2iu0hzpob": {
+          "views": 4,
+          "category": "Philosophy",
+          "author": "Sara Lindqvist",
+          "firstViewedAt": "2026-08-31T22:24:20.299Z",
+          "lastViewedAt": "2026-08-31T23:00:57.104Z",
+          "title": "‘Repulsion, at the core of attraction’ – on the paradox of touch"
+        },
+        "9x2mon19ukcnimo": {
+          "views": 1,
+          "category": "Philosophy",
+          "author": "Sara Lindqvist",
+          "firstViewedAt": "2026-08-31T22:24:31.286Z",
+          "lastViewedAt": "2026-08-31T22:24:31.286Z"
+        },
+        "wtlold40nc8kyo3": {
+          "views": 1,
+          "category": "History",
+          "author": "Sara Lindqvist",
+          "firstViewedAt": "2026-08-31T22:24:35.941Z",
+          "lastViewedAt": "2026-08-31T22:24:35.941Z"
+        },
+        "y10t4kbjlo8xt25": {
+          "views": 1,
+          "category": "Space",
+          "author": "Sara Lindqvist",
+          "firstViewedAt": "2026-08-31T22:24:44.935Z",
+          "lastViewedAt": "2026-08-31T22:24:44.935Z"
+        },
+        "uf7xfzzyprueedr": {
+          "views": 1,
+          "category": "Space",
+          "author": "Sara Lindqvist",
+          "firstViewedAt": "2026-08-31T22:24:52.609Z",
+          "lastViewedAt": "2026-08-31T22:24:52.609Z"
+        },
+        "xaovdaewblk1js5": {
+          "views": 1,
+          "category": "Space",
+          "author": "Sara Lindqvist",
+          "firstViewedAt": "2026-08-31T22:25:01.064Z",
+          "lastViewedAt": "2026-08-31T22:25:01.064Z"
+        },
+        "ulbgmrjhvbjltod": {
+          "views": 1,
+          "category": "Space",
+          "author": "Sara Lindqvist",
+          "firstViewedAt": "2026-08-31T22:25:07.811Z",
+          "lastViewedAt": "2026-08-31T22:25:07.811Z"
+        },
+        "44cqyz6yh48h499": {
+          "views": 1,
+          "category": "Space",
+          "author": "Vito Technology, Inc.",
+          "firstViewedAt": "2026-08-31T22:25:30.724Z",
+          "lastViewedAt": "2026-08-31T22:25:30.724Z"
+        },
+        "p5abf4hj9med65f": {
+          "views": 1,
+          "category": "Space",
+          "author": "Vito Technology, Inc.",
+          "firstViewedAt": "2026-08-31T22:25:36.120Z",
+          "lastViewedAt": "2026-08-31T22:25:36.120Z"
+        },
+        "70ppb5r6b03d3h0": {
+          "views": 3,
+          "category": "Space",
+          "author": "Vito Technology, Inc.",
+          "firstViewedAt": "2026-08-31T22:25:41.805Z",
+          "lastViewedAt": "2026-08-31T22:25:44.902Z"
+        },
+        "fqtr32c7yxvo0lk": {
+          "views": 1,
+          "category": "Space",
+          "author": "Astronomy Staff",
+          "firstViewedAt": "2026-08-31T22:26:07.291Z",
+          "lastViewedAt": "2026-08-31T22:26:07.291Z"
+        },
+        "yv9fmgd9v6ct8tr": {
+          "views": 1,
+          "category": "Space",
+          "author": "Astronomy Staff",
+          "firstViewedAt": "2026-08-31T22:26:11.229Z",
+          "lastViewedAt": "2026-08-31T22:26:11.229Z"
+        },
+        "9catusnx74g65wv": {
+          "views": 7,
+          "title": "Ophelia - Sir John Everett Millais - Google Arts & Culture",
+          "category": "Art",
+          "author": "Sara Lindqvist",
+          "firstViewedAt": "2026-08-31T23:01:02.677Z",
+          "lastViewedAt": "2026-08-31T23:01:05.919Z"
+        },
+        "9apoz1d5dahkm8k": {
+          "views": 7,
+          "title": "Mental Health in the Workplace - Resources and Tools",
+          "category": "Psychology",
+          "author": "Sara Lindqvist",
+          "firstViewedAt": "2026-08-31T23:01:10.615Z",
+          "lastViewedAt": "2026-08-31T23:01:14.274Z"
+        },
+        "uqfyzs13epp0gmp": {
+          "views": 9,
+          "title": "Native Arts and Cultures Foundation - Center for Native Arts and Cultures, Portland, United States - Google Arts & Culture",
+          "category": "Art",
+          "author": "Sara Lindqvist",
+          "firstViewedAt": "2026-08-31T23:01:18.310Z",
+          "lastViewedAt": "2026-08-31T23:01:22.260Z"
+        },
+        "d92zow6m1fe2idv": {
+          "views": 2,
+          "title": "Human, Beware: The Secrets We Tell AI Chatbots Aren't Private",
+          "category": "Technology",
+          "author": "Sara Lindqvist",
+          "firstViewedAt": "2026-08-31T23:01:31.983Z",
+          "lastViewedAt": "2026-08-31T23:01:34.986Z"
+        },
+        "m8qcx7yocue4x19": {
+          "views": 2,
+          "title": "Read our coverage from Small Satellite 2026",
+          "category": "Space",
+          "author": "Sara Lindqvist",
+          "firstViewedAt": "2026-08-31T23:01:41.305Z",
+          "lastViewedAt": "2026-08-31T23:01:44.722Z"
+        },
+        "p32tk7vb8brho2g": {
+          "views": 8,
+          "title": "Jane English: Children Do Not ‘Owe’ their Parents Anything",
+          "category": "Philosophy",
+          "author": "Jack Maden",
+          "firstViewedAt": "2026-08-31T23:01:50.282Z",
+          "lastViewedAt": "2026-08-31T23:01:54.909Z"
+        },
+        "s81thnbza4kgw7l": {
+          "views": 3,
+          "title": "Immanuel Kant: Morality is Not about Making People Happy",
+          "category": "Philosophy",
+          "author": "Jack Maden",
+          "firstViewedAt": "2026-08-31T23:01:58.911Z",
+          "lastViewedAt": "2026-08-31T23:02:04.049Z"
+        },
+        "x9nsmu8j5shki4d": {
+          "views": 1,
+          "title": "Missions",
+          "category": "Space",
+          "author": "Sara Lindqvist",
+          "firstViewedAt": "2026-08-31T23:03:04.274Z",
+          "lastViewedAt": "2026-08-31T23:03:04.274Z"
+        },
+        "nnu2qpgm0co4t7m": {
+          "views": 1,
+          "title": "I&#039;ve picked the best noise cancelling headphones for all budgets, based on real-world testing of nearly 20 models",
+          "category": "Technology",
+          "author": "Matt Bolton",
+          "firstViewedAt": "2026-08-31T23:03:11.426Z",
+          "lastViewedAt": "2026-08-31T23:03:11.426Z"
+        },
+        "fjgce9em54vzs3p": {
+          "views": 1,
+          "title": "Telescopes and Equipment",
+          "category": "Space",
+          "author": "Sara Lindqvist",
+          "firstViewedAt": "2026-08-31T23:03:22.426Z",
+          "lastViewedAt": "2026-08-31T23:03:22.426Z"
+        },
+        "zotlgcxhyfuyx7l": {
+          "views": 2,
+          "title": "‘Huge Breakthrough’ in the Math of Imbalance",
+          "category": "Mathematics",
+          "author": "Max G. Levy August",
+          "firstViewedAt": "2026-08-31T23:03:33.865Z",
+          "lastViewedAt": "2026-08-31T23:03:37.845Z"
+        },
+        "r9q0t64rbty7f5r": {
+          "views": 1,
+          "title": "A (hi)story of geometry",
+          "category": "Mathematics",
+          "author": "Sara Lindqvist",
+          "firstViewedAt": "2026-08-31T23:03:44.945Z",
+          "lastViewedAt": "2026-08-31T23:03:44.945Z"
+        },
+        "jicdgtup8u7sau4": {
+          "views": 1,
+          "title": "Celebrating 20 years of MDN",
+          "category": "Software Development",
+          "author": "Sara Lindqvist",
+          "firstViewedAt": "2026-08-31T23:03:54.302Z",
+          "lastViewedAt": "2026-08-31T23:03:54.302Z"
+        },
+        "64ero1pioqtpk1k": {
+          "views": 4,
+          "title": "Happy birthday quantum mechanics!",
+          "category": "Mathematics",
+          "author": "Sara Lindqvist",
+          "firstViewedAt": "2026-08-31T23:04:02.339Z",
+          "lastViewedAt": "2026-08-31T23:04:07.217Z"
+        },
+        "y3gsytael21u2ht": {
+          "views": 1,
+          "title": "The Peacock Flower and Reproductive Resistance Under Slavery",
+          "category": "History",
+          "author": "The Editors",
+          "firstViewedAt": "2026-08-31T23:04:14.434Z",
+          "lastViewedAt": "2026-08-31T23:04:14.434Z"
+        },
+        "fkrzyc0fgxmyroq": {
+          "views": 4,
+          "title": "The Hidden Grief of American Musicals",
+          "category": "History",
+          "author": "The Editors",
+          "firstViewedAt": "2026-08-31T23:04:21.757Z",
+          "lastViewedAt": "2026-08-31T23:04:25.654Z"
+        }
+      },
+      "authors": {
+        "Sara Lindqvist": {
+          "views": 45,
+          "articles": [
+            "yaowvy2iu0hzpob",
+            "9x2mon19ukcnimo",
+            "wtlold40nc8kyo3",
+            "y10t4kbjlo8xt25",
+            "uf7xfzzyprueedr",
+            "xaovdaewblk1js5",
+            "ulbgmrjhvbjltod",
+            "9catusnx74g65wv",
+            "9apoz1d5dahkm8k",
+            "uqfyzs13epp0gmp",
+            "d92zow6m1fe2idv",
+            "m8qcx7yocue4x19",
+            "x9nsmu8j5shki4d",
+            "fjgce9em54vzs3p",
+            "r9q0t64rbty7f5r",
+            "jicdgtup8u7sau4",
+            "64ero1pioqtpk1k"
+          ]
+        },
+        "Vito Technology, Inc.": {
+          "views": 5,
+          "articles": [
+            "44cqyz6yh48h499",
+            "p5abf4hj9med65f",
+            "70ppb5r6b03d3h0"
+          ]
+        },
+        "Astronomy Staff": {
+          "views": 2,
+          "articles": [
+            "fqtr32c7yxvo0lk",
+            "yv9fmgd9v6ct8tr"
+          ]
+        },
+        "Jack Maden": {
+          "views": 11,
+          "articles": [
+            "p32tk7vb8brho2g",
+            "s81thnbza4kgw7l"
+          ]
+        },
+        "Matt Bolton": {
+          "views": 1,
+          "articles": [
+            "nnu2qpgm0co4t7m"
+          ]
+        },
+        "Max G. Levy August": {
+          "views": 2,
+          "articles": [
+            "zotlgcxhyfuyx7l"
+          ]
+        },
+        "The Editors": {
+          "views": 5,
+          "articles": [
+            "y3gsytael21u2ht",
+            "fkrzyc0fgxmyroq"
+          ]
+        }
+      },
+      "categories": {
+        "Philosophy": {
+          "views": 16
+        },
+        "History": {
+          "views": 6
+        },
+        "Space": {
+          "views": 15
+        },
+        "Art": {
+          "views": 16
+        },
+        "Psychology": {
+          "views": 7
+        },
+        "Technology": {
+          "views": 3
+        },
+        "Mathematics": {
+          "views": 7
+        },
+        "Software Development": {
+          "views": 1
+        }
+      }
+    }
+  },
+  "events": [
+    {
+      "id": "686f95a6-f925-4650-93d4-26eb1e9ddb3a",
+      "timestamp": "2026-08-31T22:24:20.299Z",
+      "application": "web-app",
+      "articleId": "yaowvy2iu0hzpob",
+      "category": "Philosophy",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "0382739e-c942-4b84-ad80-0dfbc53708c2",
+      "timestamp": "2026-08-31T22:24:31.286Z",
+      "application": "web-app",
+      "articleId": "9x2mon19ukcnimo",
+      "category": "Philosophy",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "03475bbd-58b7-4a24-9eba-d8aa316da69b",
+      "timestamp": "2026-08-31T22:24:35.941Z",
+      "application": "web-app",
+      "articleId": "wtlold40nc8kyo3",
+      "category": "History",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "8d726aa8-032f-4d81-be5d-fe61028f159b",
+      "timestamp": "2026-08-31T22:24:44.935Z",
+      "application": "web-app",
+      "articleId": "y10t4kbjlo8xt25",
+      "category": "Space",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "ac57dc7b-3415-4ec3-a06d-de970fee724b",
+      "timestamp": "2026-08-31T22:24:52.609Z",
+      "application": "web-app",
+      "articleId": "uf7xfzzyprueedr",
+      "category": "Space",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "71f88994-9738-486e-be18-7bdde0e4bfb7",
+      "timestamp": "2026-08-31T22:25:01.064Z",
+      "application": "web-app",
+      "articleId": "xaovdaewblk1js5",
+      "category": "Space",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "410453a8-975d-49f8-a93b-7c55021b0f1a",
+      "timestamp": "2026-08-31T22:25:07.811Z",
+      "application": "web-app",
+      "articleId": "ulbgmrjhvbjltod",
+      "category": "Space",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "48be8bf0-53e4-4ce1-a4ac-0854e56ff2a3",
+      "timestamp": "2026-08-31T22:25:30.724Z",
+      "application": "web-app",
+      "articleId": "44cqyz6yh48h499",
+      "category": "Space",
+      "author": "Vito Technology, Inc.",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "5283c07d-5886-48d5-9c2d-dfeab26b9b8f",
+      "timestamp": "2026-08-31T22:25:36.120Z",
+      "application": "web-app",
+      "articleId": "p5abf4hj9med65f",
+      "category": "Space",
+      "author": "Vito Technology, Inc.",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "7e7e929d-fb11-4778-ad7a-1bed6e9b4b79",
+      "timestamp": "2026-08-31T22:25:41.805Z",
+      "application": "web-app",
+      "articleId": "70ppb5r6b03d3h0",
+      "category": "Space",
+      "author": "Vito Technology, Inc.",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "4d0659d5-d8de-4149-8104-d4dda05f9881",
+      "timestamp": "2026-08-31T22:25:44.041Z",
+      "application": "web-app",
+      "articleId": "70ppb5r6b03d3h0",
+      "category": "Space",
+      "author": "Vito Technology, Inc.",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "3367393c-020b-4af2-805c-cf382b93c379",
+      "timestamp": "2026-08-31T22:25:44.902Z",
+      "application": "web-app",
+      "articleId": "70ppb5r6b03d3h0",
+      "category": "Space",
+      "author": "Vito Technology, Inc.",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "b0acea41-6e08-4dfd-95a2-565f1921647a",
+      "timestamp": "2026-08-31T22:26:07.291Z",
+      "application": "web-app",
+      "articleId": "fqtr32c7yxvo0lk",
+      "category": "Space",
+      "author": "Astronomy Staff",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "6e5702f8-da75-4e83-b0a4-3ae0992018de",
+      "timestamp": "2026-08-31T22:26:11.229Z",
+      "application": "web-app",
+      "articleId": "yv9fmgd9v6ct8tr",
+      "category": "Space",
+      "author": "Astronomy Staff",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "ace69cdc-7425-4174-ae42-c5bb8d2538ee",
+      "timestamp": "2026-08-31T22:53:56.533Z",
+      "application": "web-app",
+      "articleId": "yaowvy2iu0hzpob",
+      "category": "Philosophy",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "e264439f-ec17-4742-8751-b69d686f723d",
+      "timestamp": "2026-08-31T23:00:52.431Z",
+      "application": "web-app",
+      "articleId": "yaowvy2iu0hzpob",
+      "articleTitle": "‘Repulsion, at the core of attraction’ – on the paradox of touch",
+      "category": "Philosophy",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "f3b403b3-1d7d-4cba-95c6-c0c1eedf495b",
+      "timestamp": "2026-08-31T23:00:57.104Z",
+      "application": "web-app",
+      "articleId": "yaowvy2iu0hzpob",
+      "articleTitle": "‘Repulsion, at the core of attraction’ – on the paradox of touch",
+      "category": "Philosophy",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "2a2d1aeb-3f10-495f-94d9-2a72759fca2e",
+      "timestamp": "2026-08-31T23:01:02.677Z",
+      "application": "web-app",
+      "articleId": "9catusnx74g65wv",
+      "articleTitle": "Ophelia - Sir John Everett Millais - Google Arts & Culture",
+      "category": "Art",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "e5594aca-9d0d-4c83-b1f6-48e794c91e1a",
+      "timestamp": "2026-08-31T23:01:04.406Z",
+      "application": "web-app",
+      "articleId": "9catusnx74g65wv",
+      "articleTitle": "Ophelia - Sir John Everett Millais - Google Arts & Culture",
+      "category": "Art",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "6e337ec9-a0a3-4d6f-9bd7-17667fe6f5b6",
+      "timestamp": "2026-08-31T23:01:04.741Z",
+      "application": "web-app",
+      "articleId": "9catusnx74g65wv",
+      "articleTitle": "Ophelia - Sir John Everett Millais - Google Arts & Culture",
+      "category": "Art",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "2793d83e-c109-4cde-9099-b2a457035f94",
+      "timestamp": "2026-08-31T23:01:05.079Z",
+      "application": "web-app",
+      "articleId": "9catusnx74g65wv",
+      "articleTitle": "Ophelia - Sir John Everett Millais - Google Arts & Culture",
+      "category": "Art",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "bf3ebebf-185a-402c-8aaf-bf75d160786f",
+      "timestamp": "2026-08-31T23:01:05.261Z",
+      "application": "web-app",
+      "articleId": "9catusnx74g65wv",
+      "articleTitle": "Ophelia - Sir John Everett Millais - Google Arts & Culture",
+      "category": "Art",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "1a339c79-ae6b-47ed-a794-38ca09ca2265",
+      "timestamp": "2026-08-31T23:01:05.589Z",
+      "application": "web-app",
+      "articleId": "9catusnx74g65wv",
+      "articleTitle": "Ophelia - Sir John Everett Millais - Google Arts & Culture",
+      "category": "Art",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "6de61d1e-a4c7-460b-a35f-b0a5117eafad",
+      "timestamp": "2026-08-31T23:01:05.919Z",
+      "application": "web-app",
+      "articleId": "9catusnx74g65wv",
+      "articleTitle": "Ophelia - Sir John Everett Millais - Google Arts & Culture",
+      "category": "Art",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "77e731d8-8cd4-40d4-b688-632ee67caf06",
+      "timestamp": "2026-08-31T23:01:10.615Z",
+      "application": "web-app",
+      "articleId": "9apoz1d5dahkm8k",
+      "articleTitle": "Mental Health in the Workplace - Resources and Tools",
+      "category": "Psychology",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "60a5bc8c-5ec9-431b-b5ec-a440e1bf9a23",
+      "timestamp": "2026-08-31T23:01:12.643Z",
+      "application": "web-app",
+      "articleId": "9apoz1d5dahkm8k",
+      "articleTitle": "Mental Health in the Workplace - Resources and Tools",
+      "category": "Psychology",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "6d3da289-8fbf-4b29-af1b-d9df38e0153a",
+      "timestamp": "2026-08-31T23:01:12.828Z",
+      "application": "web-app",
+      "articleId": "9apoz1d5dahkm8k",
+      "articleTitle": "Mental Health in the Workplace - Resources and Tools",
+      "category": "Psychology",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "b2aa9e4d-1236-4e60-bf71-4a7586c69bd9",
+      "timestamp": "2026-08-31T23:01:13.159Z",
+      "application": "web-app",
+      "articleId": "9apoz1d5dahkm8k",
+      "articleTitle": "Mental Health in the Workplace - Resources and Tools",
+      "category": "Psychology",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "5c4be7d7-aa26-457d-ad8a-3eeb02439302",
+      "timestamp": "2026-08-31T23:01:13.548Z",
+      "application": "web-app",
+      "articleId": "9apoz1d5dahkm8k",
+      "articleTitle": "Mental Health in the Workplace - Resources and Tools",
+      "category": "Psychology",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "c677ce5d-29f5-40d6-b04f-011d81aba812",
+      "timestamp": "2026-08-31T23:01:13.915Z",
+      "application": "web-app",
+      "articleId": "9apoz1d5dahkm8k",
+      "articleTitle": "Mental Health in the Workplace - Resources and Tools",
+      "category": "Psychology",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "7304872a-5651-4a58-8c2f-c93a334824b5",
+      "timestamp": "2026-08-31T23:01:14.274Z",
+      "application": "web-app",
+      "articleId": "9apoz1d5dahkm8k",
+      "articleTitle": "Mental Health in the Workplace - Resources and Tools",
+      "category": "Psychology",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "f4631841-e8ef-40bc-89a8-eac85036aa39",
+      "timestamp": "2026-08-31T23:01:18.310Z",
+      "application": "web-app",
+      "articleId": "uqfyzs13epp0gmp",
+      "articleTitle": "Native Arts and Cultures Foundation - Center for Native Arts and Cultures, Portland, United States - Google Arts & Culture",
+      "category": "Art",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "4a645fdd-acb7-400e-b49a-6a43372ee515",
+      "timestamp": "2026-08-31T23:01:19.638Z",
+      "application": "web-app",
+      "articleId": "uqfyzs13epp0gmp",
+      "articleTitle": "Native Arts and Cultures Foundation - Center for Native Arts and Cultures, Portland, United States - Google Arts & Culture",
+      "category": "Art",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "f1bdea61-4d6f-4b22-b98a-3901cefa124b",
+      "timestamp": "2026-08-31T23:01:19.794Z",
+      "application": "web-app",
+      "articleId": "uqfyzs13epp0gmp",
+      "articleTitle": "Native Arts and Cultures Foundation - Center for Native Arts and Cultures, Portland, United States - Google Arts & Culture",
+      "category": "Art",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "1e3a44db-e8d6-4273-abde-8c1a7be6fa05",
+      "timestamp": "2026-08-31T23:01:20.269Z",
+      "application": "web-app",
+      "articleId": "uqfyzs13epp0gmp",
+      "articleTitle": "Native Arts and Cultures Foundation - Center for Native Arts and Cultures, Portland, United States - Google Arts & Culture",
+      "category": "Art",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "e6c87d59-4246-4a05-a78b-693982e15a50",
+      "timestamp": "2026-08-31T23:01:20.696Z",
+      "application": "web-app",
+      "articleId": "uqfyzs13epp0gmp",
+      "articleTitle": "Native Arts and Cultures Foundation - Center for Native Arts and Cultures, Portland, United States - Google Arts & Culture",
+      "category": "Art",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "8e4d4aa6-c0df-4d04-a6c4-4b7be6b63534",
+      "timestamp": "2026-08-31T23:01:21.115Z",
+      "application": "web-app",
+      "articleId": "uqfyzs13epp0gmp",
+      "articleTitle": "Native Arts and Cultures Foundation - Center for Native Arts and Cultures, Portland, United States - Google Arts & Culture",
+      "category": "Art",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "0c9ed887-a0df-4e1a-9130-b9b6c3123e1d",
+      "timestamp": "2026-08-31T23:01:21.509Z",
+      "application": "web-app",
+      "articleId": "uqfyzs13epp0gmp",
+      "articleTitle": "Native Arts and Cultures Foundation - Center for Native Arts and Cultures, Portland, United States - Google Arts & Culture",
+      "category": "Art",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "bd0f0061-1adb-4836-bde7-72aa38c89f2d",
+      "timestamp": "2026-08-31T23:01:21.881Z",
+      "application": "web-app",
+      "articleId": "uqfyzs13epp0gmp",
+      "articleTitle": "Native Arts and Cultures Foundation - Center for Native Arts and Cultures, Portland, United States - Google Arts & Culture",
+      "category": "Art",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "17b1eaf2-968d-4cc0-b308-2cdb7d4b1d85",
+      "timestamp": "2026-08-31T23:01:22.260Z",
+      "application": "web-app",
+      "articleId": "uqfyzs13epp0gmp",
+      "articleTitle": "Native Arts and Cultures Foundation - Center for Native Arts and Cultures, Portland, United States - Google Arts & Culture",
+      "category": "Art",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "3e259c5c-1d99-4294-b96d-86de7371dd22",
+      "timestamp": "2026-08-31T23:01:31.983Z",
+      "application": "web-app",
+      "articleId": "d92zow6m1fe2idv",
+      "articleTitle": "Human, Beware: The Secrets We Tell AI Chatbots Aren't Private",
+      "category": "Technology",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "4d3a196b-6ecb-49e3-b795-2588c828f2d8",
+      "timestamp": "2026-08-31T23:01:34.986Z",
+      "application": "web-app",
+      "articleId": "d92zow6m1fe2idv",
+      "articleTitle": "Human, Beware: The Secrets We Tell AI Chatbots Aren't Private",
+      "category": "Technology",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "31b826a4-47ea-4574-be81-5a8606d77e0e",
+      "timestamp": "2026-08-31T23:01:41.305Z",
+      "application": "web-app",
+      "articleId": "m8qcx7yocue4x19",
+      "articleTitle": "Read our coverage from Small Satellite 2026",
+      "category": "Space",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "2aa19240-c290-4ca9-963c-d3be037a278c",
+      "timestamp": "2026-08-31T23:01:44.722Z",
+      "application": "web-app",
+      "articleId": "m8qcx7yocue4x19",
+      "articleTitle": "Read our coverage from Small Satellite 2026",
+      "category": "Space",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "8e443edc-d6ba-416a-b1d7-0d1c06cc01ce",
+      "timestamp": "2026-08-31T23:01:50.282Z",
+      "application": "web-app",
+      "articleId": "p32tk7vb8brho2g",
+      "articleTitle": "Jane English: Children Do Not ‘Owe’ their Parents Anything",
+      "category": "Philosophy",
+      "author": "Jack Maden",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "c0a84b2d-45f4-4f50-8087-36d27414bf5b",
+      "timestamp": "2026-08-31T23:01:52.927Z",
+      "application": "web-app",
+      "articleId": "p32tk7vb8brho2g",
+      "articleTitle": "Jane English: Children Do Not ‘Owe’ their Parents Anything",
+      "category": "Philosophy",
+      "author": "Jack Maden",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "71fec19e-b28b-4ce5-a82b-d2f2f54f37d2",
+      "timestamp": "2026-08-31T23:01:53.306Z",
+      "application": "web-app",
+      "articleId": "p32tk7vb8brho2g",
+      "articleTitle": "Jane English: Children Do Not ‘Owe’ their Parents Anything",
+      "category": "Philosophy",
+      "author": "Jack Maden",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "de79f8cb-2fea-42c3-b0e5-a94bd9d4bb62",
+      "timestamp": "2026-08-31T23:01:53.612Z",
+      "application": "web-app",
+      "articleId": "p32tk7vb8brho2g",
+      "articleTitle": "Jane English: Children Do Not ‘Owe’ their Parents Anything",
+      "category": "Philosophy",
+      "author": "Jack Maden",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "04a13c77-cbd3-41aa-a877-9c8ba16d3b4b",
+      "timestamp": "2026-08-31T23:01:53.957Z",
+      "application": "web-app",
+      "articleId": "p32tk7vb8brho2g",
+      "articleTitle": "Jane English: Children Do Not ‘Owe’ their Parents Anything",
+      "category": "Philosophy",
+      "author": "Jack Maden",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "f346690c-58e4-4a3c-ae4e-d19b9ce180f1",
+      "timestamp": "2026-08-31T23:01:54.329Z",
+      "application": "web-app",
+      "articleId": "p32tk7vb8brho2g",
+      "articleTitle": "Jane English: Children Do Not ‘Owe’ their Parents Anything",
+      "category": "Philosophy",
+      "author": "Jack Maden",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "ac6e3392-c073-4589-9e8b-1fd969cf7a93",
+      "timestamp": "2026-08-31T23:01:54.773Z",
+      "application": "web-app",
+      "articleId": "p32tk7vb8brho2g",
+      "articleTitle": "Jane English: Children Do Not ‘Owe’ their Parents Anything",
+      "category": "Philosophy",
+      "author": "Jack Maden",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "8177b8e9-4648-42ac-8133-54025c72f54e",
+      "timestamp": "2026-08-31T23:01:54.909Z",
+      "application": "web-app",
+      "articleId": "p32tk7vb8brho2g",
+      "articleTitle": "Jane English: Children Do Not ‘Owe’ their Parents Anything",
+      "category": "Philosophy",
+      "author": "Jack Maden",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "e86e4c66-527a-4613-a150-c821d5fb30dd",
+      "timestamp": "2026-08-31T23:01:58.911Z",
+      "application": "web-app",
+      "articleId": "s81thnbza4kgw7l",
+      "articleTitle": "Immanuel Kant: Morality is Not about Making People Happy",
+      "category": "Philosophy",
+      "author": "Jack Maden",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "4848fa6d-c37c-411a-a92b-d9117422ed1d",
+      "timestamp": "2026-08-31T23:02:03.741Z",
+      "application": "web-app",
+      "articleId": "s81thnbza4kgw7l",
+      "articleTitle": "Immanuel Kant: Morality is Not about Making People Happy",
+      "category": "Philosophy",
+      "author": "Jack Maden",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "dcc2a3fe-ce63-4c1d-9e5d-c0d875be9427",
+      "timestamp": "2026-08-31T23:02:04.049Z",
+      "application": "web-app",
+      "articleId": "s81thnbza4kgw7l",
+      "articleTitle": "Immanuel Kant: Morality is Not about Making People Happy",
+      "category": "Philosophy",
+      "author": "Jack Maden",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "0e36091a-ec77-4f97-ac46-ff302e71dbf9",
+      "timestamp": "2026-08-31T23:03:04.274Z",
+      "application": "web-app",
+      "articleId": "x9nsmu8j5shki4d",
+      "articleTitle": "Missions",
+      "category": "Space",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "31979a69-82ac-4442-9a5a-a75a25093073",
+      "timestamp": "2026-08-31T23:03:11.426Z",
+      "application": "web-app",
+      "articleId": "nnu2qpgm0co4t7m",
+      "articleTitle": "I&#039;ve picked the best noise cancelling headphones for all budgets, based on real-world testing of nearly 20 models",
+      "category": "Technology",
+      "author": "Matt Bolton",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "80d28e95-79a6-457a-a974-1bef4769f9ee",
+      "timestamp": "2026-08-31T23:03:22.426Z",
+      "application": "web-app",
+      "articleId": "fjgce9em54vzs3p",
+      "articleTitle": "Telescopes and Equipment",
+      "category": "Space",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "c4760efc-92e4-424a-877e-1cca2b8a60f7",
+      "timestamp": "2026-08-31T23:03:33.865Z",
+      "application": "web-app",
+      "articleId": "zotlgcxhyfuyx7l",
+      "articleTitle": "‘Huge Breakthrough’ in the Math of Imbalance",
+      "category": "Mathematics",
+      "author": "Max G. Levy August",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "59e9b5ac-a9f9-439c-95b3-cb36ea10dc15",
+      "timestamp": "2026-08-31T23:03:37.845Z",
+      "application": "web-app",
+      "articleId": "zotlgcxhyfuyx7l",
+      "articleTitle": "‘Huge Breakthrough’ in the Math of Imbalance",
+      "category": "Mathematics",
+      "author": "Max G. Levy August",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "af1d3b05-0815-4a4d-9670-88987c00489d",
+      "timestamp": "2026-08-31T23:03:44.945Z",
+      "application": "web-app",
+      "articleId": "r9q0t64rbty7f5r",
+      "articleTitle": "A (hi)story of geometry",
+      "category": "Mathematics",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "4b80361c-af07-4820-ad44-0f1f88842b23",
+      "timestamp": "2026-08-31T23:03:54.302Z",
+      "application": "web-app",
+      "articleId": "jicdgtup8u7sau4",
+      "articleTitle": "Celebrating 20 years of MDN",
+      "category": "Software Development",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "906dd469-a72d-425d-9f83-292119c1a484",
+      "timestamp": "2026-08-31T23:04:02.339Z",
+      "application": "web-app",
+      "articleId": "64ero1pioqtpk1k",
+      "articleTitle": "Happy birthday quantum mechanics!",
+      "category": "Mathematics",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "4275690d-27cf-45e2-b2b1-9b8efe88c184",
+      "timestamp": "2026-08-31T23:04:05.510Z",
+      "application": "web-app",
+      "articleId": "64ero1pioqtpk1k",
+      "articleTitle": "Happy birthday quantum mechanics!",
+      "category": "Mathematics",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "72f2efde-6825-4c9e-a154-d67bc3684b72",
+      "timestamp": "2026-08-31T23:04:06.461Z",
+      "application": "web-app",
+      "articleId": "64ero1pioqtpk1k",
+      "articleTitle": "Happy birthday quantum mechanics!",
+      "category": "Mathematics",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "5e9db4fe-f1fa-41e6-83c6-f37645ce19dc",
+      "timestamp": "2026-08-31T23:04:07.217Z",
+      "application": "web-app",
+      "articleId": "64ero1pioqtpk1k",
+      "articleTitle": "Happy birthday quantum mechanics!",
+      "category": "Mathematics",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "72e7edf4-ed2c-4175-8197-2ed130bb4495",
+      "timestamp": "2026-08-31T23:04:14.434Z",
+      "application": "web-app",
+      "articleId": "y3gsytael21u2ht",
+      "articleTitle": "The Peacock Flower and Reproductive Resistance Under Slavery",
+      "category": "History",
+      "author": "The Editors",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "f0c2f47e-f7ef-4431-bc9e-350c8c1e71e4",
+      "timestamp": "2026-08-31T23:04:21.757Z",
+      "application": "web-app",
+      "articleId": "fkrzyc0fgxmyroq",
+      "articleTitle": "The Hidden Grief of American Musicals",
+      "category": "History",
+      "author": "The Editors",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "99214e1b-f37c-422a-8108-9e882bc449fe",
+      "timestamp": "2026-08-31T23:04:23.963Z",
+      "application": "web-app",
+      "articleId": "fkrzyc0fgxmyroq",
+      "articleTitle": "The Hidden Grief of American Musicals",
+      "category": "History",
+      "author": "The Editors",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "92ba05b4-96c8-4e12-b5f0-0887bcf44a1f",
+      "timestamp": "2026-08-31T23:04:24.913Z",
+      "application": "web-app",
+      "articleId": "fkrzyc0fgxmyroq",
+      "articleTitle": "The Hidden Grief of American Musicals",
+      "category": "History",
+      "author": "The Editors",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "1f50bcbb-ea86-4733-b14f-fcba38e524a1",
+      "timestamp": "2026-08-31T23:04:25.654Z",
+      "application": "web-app",
+      "articleId": "fkrzyc0fgxmyroq",
+      "articleTitle": "The Hidden Grief of American Musicals",
+      "category": "History",
+      "author": "The Editors",
+      "ip": "127.0.0.1",
+      "location": null
+    }
+  ]
+}

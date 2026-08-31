@@ -112,9 +112,10 @@ export async function articlesLoader({ request }: LoaderFunctionArgs): Promise<A
       const response = await getArticleByAuthorAPI(authorId, true);
       return { title: authorId, articles: decryptData(response.data) as ArticleT[] };
     }
+
+    const response = await getArticleByCategoryAPI("", true);
+    return { title: "All", articles: decryptData(response.data) as ArticleT[] };
   } catch {
     fail(502, "Could not load articles.");
   }
-
-  return { title: "", articles: [] };
 }

@@ -5,6 +5,11 @@
 const defaultServerUrl =
   typeof window !== "undefined" ? `${window.location.protocol}//${window.location.hostname}:8080` : "http://localhost:8080";
 
+// Same reasoning as defaultServerUrl above, pointed at the analytics service's default port
+// instead. Overridable at build time via ANALYTICS_URL (see webpack.config.js).
+const defaultAnalyticsUrl =
+  typeof window !== "undefined" ? `${window.location.protocol}//${window.location.hostname}:4400` : "http://localhost:4400";
+
 export const properties = {
   title: "Patrikaz",
   author: "Piyush Praharaj",
@@ -31,4 +36,8 @@ export const properties = {
   // Same backend web-app (localhost/web) talks to; overridable via SERVER_URL at build time.
   serverUrl: process.env.SERVER_URL || defaultServerUrl,
   disableTextSelect: false,
+  // Identifies this app as the "parent entity" when reporting article views to the
+  // analytics service - keep this stable even if `title` above changes.
+  applicationName: "patrikaz",
+  analyticsUrl: process.env.ANALYTICS_URL || defaultAnalyticsUrl,
 };

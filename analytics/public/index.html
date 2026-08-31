@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>zJournal Analytics</title>
+<link rel="stylesheet" href="/dashboard.css" />
+</head>
+<body>
+<header class="topbar">
+  <h1>zJournal Analytics</h1>
+  <div class="controls">
+    <label>Application
+      <select id="app-select">
+        <option value="">All applications</option>
+      </select>
+    </label>
+    <label>Range
+      <select id="days-select">
+        <option value="7">Last 7 days</option>
+        <option value="30" selected>Last 30 days</option>
+        <option value="90">Last 90 days</option>
+      </select>
+    </label>
+    <button id="refresh-btn" type="button">Refresh</button>
+    <span id="last-updated" class="muted"></span>
+  </div>
+</header>
+
+<main id="app-root">
+  <p id="empty-state" class="empty-state" hidden>No views recorded yet. Once an article is opened in web-app or patrikaz, data will show up here.</p>
+
+  <section id="stat-tiles" class="stat-tiles"></section>
+
+  <section class="charts-grid">
+    <div class="card card-wide">
+      <h2>Views over time</h2>
+      <div class="chart-box"><canvas id="chart-timeseries"></canvas></div>
+    </div>
+    <div class="card" id="card-by-app">
+      <h2>Views by application</h2>
+      <div class="chart-box"><canvas id="chart-by-app"></canvas></div>
+    </div>
+    <div class="card">
+      <h2>Top articles</h2>
+      <div class="chart-box"><canvas id="chart-top-articles"></canvas></div>
+    </div>
+    <div class="card">
+      <h2>Top authors</h2>
+      <div class="chart-box"><canvas id="chart-top-authors"></canvas></div>
+    </div>
+    <div class="card">
+      <h2>Views by category</h2>
+      <div class="chart-box"><canvas id="chart-categories"></canvas></div>
+    </div>
+    <div class="card">
+      <h2>Top locations</h2>
+      <div class="chart-box"><canvas id="chart-locations"></canvas></div>
+    </div>
+  </section>
+
+  <section class="tables-grid">
+    <div class="card">
+      <h2>Articles</h2>
+      <div class="table-wrap">
+        <table id="table-articles">
+          <thead><tr><th>Title</th><th>Article ID</th><th>Category</th><th>Author</th><th class="num">Views</th><th>Last viewed</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Authors</h2>
+      <div class="table-wrap">
+        <table id="table-authors">
+          <thead><tr><th>Author</th><th class="num">Views</th><th class="num">Articles</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card card-wide">
+      <h2>Recent activity</h2>
+      <div class="table-wrap">
+        <table id="table-events">
+          <thead><tr><th>Time</th><th>Application</th><th>Title</th><th>Category</th><th>Author</th><th>Location</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="/vendor/chartjs/chart.umd.min.js"></script>
+<script src="/dashboard.js"></script>
+</body>
+</html>

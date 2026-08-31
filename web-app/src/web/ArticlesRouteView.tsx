@@ -22,7 +22,7 @@ export default function ArticlesRouteView() {
   const { dispatch, state: articleData } = useArticle();
   const { dispatch: journalDispatch } = useJournal();
 
-  let title = "";
+  let title = "All";
   if (isArticleByCategory) title = `${categoryId}`;
   if (isArticleByBlog) {
     const yearMonth = blogDate.split("-");
@@ -41,6 +41,8 @@ export default function ArticlesRouteView() {
       getArticlesByBlogDate(dispatch, blogDate, true);
     } else if (isArticleByAuthor) {
       getArticlesByAuthor(dispatch, authorId, true);
+    } else {
+      getArticlesBycategory(dispatch, "", true);
     }
   }, [categoryId, blogDate, authorId]);
 
