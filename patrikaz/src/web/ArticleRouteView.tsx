@@ -1,4 +1,4 @@
-import { Suspense, useEffect } from "react";
+import { Suspense, useEffect, useRef } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { Article } from "../remotes/uiLibraryComponents";
 import { useJournal } from "../datastore/contexts/JournalContext";
@@ -6,6 +6,7 @@ import { updatePage } from "../datastore/actions/JournalActions";
 import { applicationProperties } from "../ApplicationConstants";
 import { properties } from "../properties";
 import type { ArticleT } from "../types/domain";
+import { trackArticleView } from "../analytics/trackArticleView";
 
 export default function ArticleRouteView() {
   const { articleId } = useParams();
@@ -17,6 +18,14 @@ export default function ArticleRouteView() {
   useEffect(() => {
     if (articleId && article) {
       window.document.title = `${article.title} - ${applicationProperties.title}`;
+    }
+  }, [articleId, article]);
+
+  const trackedArticleIdRef = useRef<string | null>(null);
+  useEffect(() => {
+    if (articleId && article && trackedArticleIdRef.current !== article.id) {
+      trackedArticleIdRef.current = article.id;
+      trackArticleView(article);
     }
   }, [articleId, article]);
 

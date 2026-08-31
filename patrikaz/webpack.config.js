@@ -25,6 +25,7 @@ module.exports = (_env, argv) => {
   // fall back at runtime to the page's own host.
   const remoteUiLibraryUrl = process.env.REMOTE_UI_LIBRARY_URL;
   const serverUrl = process.env.SERVER_URL;
+  const analyticsUrl = process.env.ANALYTICS_URL;
 
   // Module Federation resolves `remotes` at container-init time, so the URL has to be known
   // before any React code (and therefore properties.ts) runs. Without an explicit override, use
@@ -97,6 +98,7 @@ module.exports = (_env, argv) => {
       }),
       new webpack.DefinePlugin({
         "process.env.SERVER_URL": JSON.stringify(serverUrl),
+        "process.env.ANALYTICS_URL": JSON.stringify(analyticsUrl),
       }),
       new HtmlWebpackPlugin({ template: "./public/index.html" }),
       new CopyWebpackPlugin({

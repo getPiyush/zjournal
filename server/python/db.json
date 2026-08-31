@@ -7993,6 +7993,13 @@
       "published": true,
       "createdAt": "2025-06-27T03:10:19.866Z",
       "id": "4"
+    },
+    {
+      "question": "Server Version?",
+      "answer": "Python 3.11.4, FastAPI 0.100.0, Uvicorn 0.24.0, SQLAlchemy 2.0.22, Pydantic 2.10.9",
+      "published": true,
+      "createdAt": "2025-06-27T03:10:19.866Z",
+      "id": "4"
     }
   ]
 }

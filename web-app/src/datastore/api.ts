@@ -78,9 +78,10 @@ export const getArticleByIdsAPI = (ids: string[]) => {
 }
 
 export const getArticleByCategoryAPI = (category: string, web: boolean) => {
-    const categoryParam= category!==""?`?categryId=${category}`:``
-    const publishedParam = web ? `&published=true` : ``;
-    const url =`${getArticleAPIPath}${categoryParam}${publishedParam}`;
+    const params = [];
+    if (category !== "") params.push(`categryId=${category}`);
+    if (web) params.push(`published=true`);
+    const url = `${getArticleAPIPath}${params.length > 0 ? `?${params.join("&")}` : ``}`;
     return getRequest(url);
 }
 

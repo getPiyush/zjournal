@@ -110,18 +110,23 @@ Run from the repo root:
 
 | Script | What it does |
 | --- | --- |
-| `npm run dev` | Starts `web-app` (port 80) + `server/node` in dev mode, together |
-| `npm start` | Starts only `web-app` |
+| `npm run dev` (alias `dev:node`) | Starts `web-app` (port 80) + `server/node` + the [analytics](analytics/README.md) service, all in dev mode, together |
+| `npm run dev:host` (alias `dev:node:host`) | Same, with `web-app` and analytics bound to `0.0.0.0` so other devices on the LAN can reach them |
+| `npm run dev:php` / `dev:java` / `dev:python` | Same as `dev`, against the PHP/Java/Python API server instead of Node |
+| `npm run dev:php:host` / `dev:java:host` / `dev:python:host` | Host-bound (`0.0.0.0`) variants of the above — also binds the PHP/Java/Python server itself, since (unlike the Node server) those default to localhost-only |
+| `npm start` / `npm run start:host` | Starts only `web-app`, localhost-only or bound to `0.0.0.0` |
 | `npm run server:dev` / `npm run server:node:dev` | Starts the Node API server in watch/dev mode |
 | `npm run server` / `npm run server:node:prod` | Starts the Node API server in production mode |
-| `npm run server:php:dev` | Starts the PHP API server (`php -S localhost:8080` in `server/php`) — PHP's built-in server is dev-only, so there's no `:prod` variant; deploy it behind Apache/PHP-FPM for production instead |
-| `npm run server:java:dev` | Starts the Java API server from source (`./mvnw spring-boot:run` in `server/java`) |
+| `npm run server:php:dev` / `server:php:dev:host` | Starts the PHP API server (`php -S` in `server/php`), localhost-only or bound to `0.0.0.0` — PHP's built-in server is dev-only, so there's no `:prod` variant; deploy it behind Apache/PHP-FPM for production instead |
+| `npm run server:java:dev` / `server:java:dev:host` | Starts the Java API server from source (`./mvnw spring-boot:run` in `server/java`), localhost-only or bound to `0.0.0.0` |
 | `npm run server:java:prod` | Builds the Spring Boot jar and runs it (`./mvnw package && java -jar target/*.jar`) |
-| `npm run server:python:dev` | Starts the Python API server with auto-reload (`uvicorn --reload` in `server/python`) |
+| `npm run server:python:dev` / `server:python:dev:host` | Starts the Python API server with auto-reload (`uvicorn --reload` in `server/python`), localhost-only or bound to `0.0.0.0` |
 | `npm run server:python:prod` | Starts the Python API server without auto-reload |
 | `npm run build` | Production build of `web-app` |
 | `npm run prod` | Runs the production build's server + the API server in production mode, together |
 | `npm test` | Runs `web-app`'s test suite |
+| `npm run analytics:dev` / `npm run analytics:start` | Starts the standalone [analytics](analytics/README.md) service on its own (port 4400, localhost only) in dev/watch or production mode |
+| `npm run analytics:dev:host` / `npm run analytics:start:host` | Same, bound to `0.0.0.0` so other devices on the LAN can reach it |
 
 Inside `ui-library/`:
 
@@ -217,6 +222,10 @@ returns HTTP `404` with `{"error": {"code": "NOT_FOUND", "message": "..."}}`, an
 
 All four read/write the same `db.json` shape and speak the same encrypted envelope, so you can point `web-app` at any of them by changing only `serverUrl`.
 
+## Analytics service
+
+**[`analytics/`](analytics/README.md)** is a separate standalone Node service (its own `package.json`, not one of the four `db.json`-backed backends above) that tracks article views: which article, by which author, viewed how many times, per application. `web-app` and `patrikaz` each call it directly from the browser — a fire-and-forget `POST` fired whenever an article view resolves (see `src/analytics/trackArticleView.ts` in each app) — so a dropped or unreachable analytics call never affects the reading experience. Views are aggregated by article/author/category per application, plus a full timestamped (and best-effort geolocated) event log, all persisted to a single JSON file. See [analytics/README.md](analytics/README.md) for the API, the data file's structure, and `npm run analytics:dev` / `:start` (`:host` variants too) to run it.
+
 ## Testing & Storybook
 
 - `web-app` and `ui-library` both use Jest + React Testing Library; most components ship with a co-located `*.test.tsx`.
@@ -240,7 +249,7 @@ npm run prod        # serves the build (web-app/public/server.js, an Express sta
 - **[docs/USER_GUIDE.md](docs/USER_GUIDE.md)** — a guide for people reading or writing content on a running instance (as opposed to developing the app itself).
 - **[docs/micro-frontend-readiness.md](docs/micro-frontend-readiness.md)** — analysis of what it would take to make `ui-library` a true runtime micro-frontend for `web-app` (it already is one for `patrikaz`).
 - **[CONTRIBUTING.md](CONTRIBUTING.md)** — repo conventions, what to check before opening a PR, and rules for changing code shared across the four backends.
-- Per-module READMEs: [ui-library](ui-library/README.md), [patrikaz](patrikaz/README.md), [server/node](server/node/README.md), [server/php](server/php/README.md), [server/java](server/java/README.md), [server/python](server/python/README.md).
+- Per-module READMEs: [ui-library](ui-library/README.md), [patrikaz](patrikaz/README.md), [analytics](analytics/README.md), [server/node](server/node/README.md), [server/php](server/php/README.md), [server/java](server/java/README.md), [server/python](server/python/README.md).
 
 ## Roadmap
 
@@ -248,7 +257,6 @@ npm run prod        # serves the build (web-app/public/server.js, an Express sta
 - Feature flags (enable/disable features)
 - Web integration
 - Author accounts via OAuth
-- Analytics (Google or self-hosted)
 - Template options (choose template / sort order) for the Home page
 
 <details>
@@ -262,5 +270,6 @@ npm run prod        # serves the build (web-app/public/server.js, an Express sta
 - Templates (Home / About / QnA)
 - Contact Us (web + admin)
 - QnA (web + admin)
+- Self-hosted analytics (article/author view tracking) — see [analytics](analytics/README.md)
 
 </details>

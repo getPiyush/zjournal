@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { Article } from "@zjournal/ui-library";
 import { useArticle } from "../datastore/contexts/ArticleContext";
@@ -7,6 +7,7 @@ import { getArticleById } from "../datastore/actions/ArticleActions";
 import { updatePage } from "../datastore/actions/JournalActions";
 import { applicationProperties } from "../ApplicationConstants";
 import { properties } from "../properties";
+import { trackArticleView } from "../analytics/trackArticleView";
 
 export default function ArticleRouteView() {
   const path = useLocation().pathname;
@@ -32,6 +33,14 @@ export default function ArticleRouteView() {
     ? (articleData.status === "success" ? articleData.articles[0] ?? null : null)
     : jState.journal.currentArticle;
   const status = isWebArticle ? articleData.status : "success";
+
+  const trackedArticleIdRef = useRef<string | null>(null);
+  useEffect(() => {
+    if (isWebArticle && article && article.id && trackedArticleIdRef.current !== article.id) {
+      trackedArticleIdRef.current = article.id;
+      trackArticleView(article);
+    }
+  }, [isWebArticle, article]);
 
   return (
     <Article

@@ -91,4 +91,8 @@ export const properties = {
     ],
     serverUrl: "http://localhost:8080", // "http://feeder.patrikaz.com" |  "http://localhost:8080"
     disableTextSelect: false,
+    // Identifies this app as the "parent entity" when reporting article views to the
+    // analytics service - keep this stable even if `title` above changes.
+    applicationName: "web-app",
+    analyticsUrl: process.env.REACT_APP_ANALYTICS_URL || "http://localhost:4400",
   };

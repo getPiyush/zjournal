@@ -22,7 +22,9 @@ export default function Categories({ categories, basePath = "/web" }: Categories
           {categories?.length > 0 &&
             categories.map((category, index) => (
               <li key={`category_${index}_${category}`}>
-                <a href={`${basePath}/articles?categoryId=${category}`}>{category}</a>
+                <a href={category !== "All" ? `${basePath}/articles?categoryId=${category}` : `${basePath}/articles`}>
+                  {category}
+                </a>
               </li>
             ))}
         </ol>
