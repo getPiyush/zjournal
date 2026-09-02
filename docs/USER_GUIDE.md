@@ -83,6 +83,15 @@ Three page templates share one editor, switched via a radio toggle:
 - **About** — the content shown at `/web/aboutus`
 - **QnA** — the question/answer entries shown at `/web/iqa`
 
+On the Home template, the **Auto generate** button picks featured articles for you instead of you
+choosing them by hand: it looks at your analytics (which articles have actually been read the
+most) and lays out the 14 most-read as one large featured article at the top, then three rows
+underneath it. It's a starting point, not a final answer — it still lands in the same text box
+your manual edits do, so click **Preview** to check it, tweak anything you'd rather feature
+differently, and **Save** when you're happy with it. If your site is brand new and nobody has read
+any articles yet, there's no view data to rank by and the button will tell you so instead of
+generating anything.
+
 ### Contacts — read what visitors sent
 
 A read-only list of everything submitted through the public Contact Us form: name, date, email,

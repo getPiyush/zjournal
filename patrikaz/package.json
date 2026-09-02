@@ -5,8 +5,8 @@
   "description": "Patrikaz - independent, pluggable web reader app that consumes @zjournal/ui-library as a Module Federation remote",
   "main": "src/index.tsx",
   "scripts": {
-    "start": "concurrently \"npm run mfe:start\" \"npm run server:dev\" \"npm run serve\"",
-    "start:host": "concurrently \"npm run mfe:start:host\" \"npm run server:dev:host\" \"npm run serve:host\"",
+    "start": "concurrently \"npm run mfe:start\" \"npm run server:dev\" \"npm run serve\" \"npm run analytics:dev\"",
+    "start:host": "concurrently \"npm run mfe:start:host\" \"npm run server:dev:host\" \"npm run serve:host\" \"npm run analytics:dev:host\"",
     "start:server": "node scripts/start-with-server.js",
     "start:php": "npm run start:server -- php",
     "start:java": "npm run start:server -- java",
@@ -28,6 +28,8 @@
     "server:java:dev:host": "cd ../server/java && ./mvnw spring-boot:run -Dspring-boot.run.arguments=--server.address=0.0.0.0",
     "server:python:dev": "cd ../server/python && .venv/bin/uvicorn app.main:app --port 8080 --reload",
     "server:python:dev:host": "cd ../server/python && .venv/bin/uvicorn app.main:app --host 0.0.0.0 --port 8080 --reload",
+    "analytics:dev": "npm run dev --prefix ../analytics",
+    "analytics:dev:host": "npm run dev:host --prefix ../analytics",
     "build": "webpack build --config webpack.config.js --mode production",
     "typecheck": "tsc --noEmit"
   },

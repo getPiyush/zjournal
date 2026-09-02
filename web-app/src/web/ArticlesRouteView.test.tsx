@@ -26,6 +26,19 @@ describe("ArticlesRouteView", () => {
     expect(document.title).toContain("Engineering");
   });
 
+  test("categoryId=All fetches all articles instead of filtering by a literal 'All' category", () => {
+    renderWithProviders(<ArticlesRouteView />, {
+      route: "/web/articles?categoryId=All",
+    });
+
+    expect(getArticlesBycategory).toHaveBeenCalledWith(
+      expect.any(Function),
+      "",
+      true
+    );
+    expect(document.title).toContain("All");
+  });
+
   test("fetches articles by blog date", () => {
     renderWithProviders(<ArticlesRouteView />, {
       route: "/web/articles?blogdate=2024-06",

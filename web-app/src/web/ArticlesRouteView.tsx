@@ -15,7 +15,7 @@ export default function ArticlesRouteView() {
   const blogDate = params.getAll("blogdate")[0];
   const authorId = params.getAll("authorId")[0];
 
-  const isArticleByCategory = path.search("/articles") !== -1 && categoryId && categoryId !== "";
+  const isArticleByCategory = path.search("/articles") !== -1 && categoryId && categoryId !== "" && categoryId !== "All";
   const isArticleByBlog = path.search("/articles") !== -1 && blogDate && blogDate !== "";
   const isArticleByAuthor = path.search("/articles") !== -1 && authorId && authorId !== "";
 

@@ -7871,6 +7871,3856 @@
       "origin": "server",
       "published": true,
       "deleteFlag": false
+    },
+    {
+      "id": "ufbwwebx20v2h2f",
+      "author": "Cosima Mielke",
+      "title": "The Many Faces Of September (2026 Wallpapers Edition) — Smashing Magazine",
+      "createdAt": "2026-09-01T05:22:44.588Z",
+      "updatedAt": "2026-09-01T05:22:44.588Z",
+      "categryId": "Software Development",
+      "content": [
+        {
+          "componentId": "1snd4vc5qwaz4vr",
+          "componenType": "Image",
+          "data": "https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/55161fb1-16dc-47e1-a118-5ecd0f0a3fbb/sept-17-autumn-rains-preview-opt.png",
+          "numbered": false
+        },
+        {
+          "componentId": "l161ccz03x8db78",
+          "componenType": "Paragraph",
+          "data": "Could there be a better way to welcome the new month than with a new collection of desktop wallpapers? Whether you’re holding tightly onto summer or eagerly awaiting autumn, we’ve got some eye-catching designs to make your September just a bit more colorful. Enjoy!\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.smashingmagazine.com/2026/08/desktop-wallpaper-calendars-september-2026/\">https://www.smashingmagazine.com/2026/08/desktop-wallpaper-calendars-september-2026/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "y7hy2mut6g4xlsu",
+      "author": "Olimpiu Pop",
+      "title": "Scott Jenson on Evolving Desktop OS, Local-First, &amp; Agentic UX",
+      "createdAt": "2026-08-31T11:00:00+00:00",
+      "updatedAt": "2026-09-01T05:22:46.242Z",
+      "categryId": "Software Development",
+      "content": [
+        {
+          "componentId": "v7svjmuupfp9bbf",
+          "componenType": "Image",
+          "data": "https://res.infoq.com/podcasts/evolving-desktop-agentic-ux/en/card_header_image/scott-jenson-twitter-card-1787734073812.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "ni76lkke0mhpfmx",
+          "componenType": "Paragraph",
+          "data": "In this episode, Scott Jenson, a veteran UX designer known for his work on the Macintosh, Google Maps, and Chrome examines the long-term stagnation of desktop operating systems.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.infoq.com/podcasts/evolving-desktop-agentic-ux\">https://www.infoq.com/podcasts/evolving-desktop-agentic-ux</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "agq2x21is29jfsk",
+      "author": "Kasia Trapszo",
+      "title": "From DVDs to Global Streaming: How Netflix’s Commerce Architecture Actually Evolved",
+      "createdAt": "2026-08-28T11:00:00+00:00",
+      "updatedAt": "2026-09-01T05:22:48.222Z",
+      "categryId": "Software Development",
+      "content": [
+        {
+          "componentId": "0ojzfouge4vszyd",
+          "componenType": "Image",
+          "data": "https://res.infoq.com/presentations/netflix-commerce-architecture-evolution/en/card_header_image/kasia-trapszo-twitter-card-1787217920531.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "2b3dhkre0nkeogw",
+          "componenType": "Paragraph",
+          "data": "Kasia Trapszo explains how Netflix evolved its commerce platform, making pragmatic architectural trade-offs through global expansion, regulatory shifts, domain splits, and live-event scaling.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.infoq.com/presentations/netflix-commerce-architecture-evolution\">https://www.infoq.com/presentations/netflix-commerce-architecture-evolution</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "b5bu75kv69a9ou6",
+      "author": "Kaia Glickman Kaia Glickman",
+      "title": "Will Meta’s deal make social media safe for kids? Researchers are dubious",
+      "createdAt": "2026-08-28T00:00:00",
+      "updatedAt": "2026-09-01T05:22:48.475Z",
+      "categryId": "Science",
+      "content": [
+        {
+          "componentId": "q0phmkx5r4hp5ph",
+          "componenType": "Image",
+          "data": "https://media.nature.com/lw1200/magazine-assets/d41586-026-02733-9/d41586-026-02733-9_53176102.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "t1dp7lx4dc4af84",
+          "componenType": "Paragraph",
+          "data": "Nature talks to specialists about the changes coming to Facebook and Instagram, and whether there’s evidence they will help.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.nature.com/articles/d41586-026-02733-9\">https://www.nature.com/articles/d41586-026-02733-9</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "i8ptau09klj5tan",
+      "author": "Rachel Feltman",
+      "title": "NASA launches Roman Space Telescope to explore dark energy and distant worlds",
+      "createdAt": "2026-08-31T06:00:00-04:00",
+      "updatedAt": "2026-09-01T05:22:48.987Z",
+      "categryId": "Science",
+      "content": [
+        {
+          "componentId": "cpuap4pda8ywzyz",
+          "componenType": "Image",
+          "data": "https://static.scientificamerican.com/dam/asset/58f6998b-1604-4b92-b74e-c9703550064e/2608_SQ_MON_AUG_31.png?m=1788102084.327&w=1200",
+          "numbered": false
+        },
+        {
+          "componentId": "tpg1jwfxh4uq22f",
+          "componenType": "Paragraph",
+          "data": "NASA’s Nancy Grace Roman Space Telescope is on a mission to probe dark energy, hunt for distant worlds and transform our view of the universe\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.scientificamerican.com/podcast/episode/nasa-launches-roman-space-telescope-to-explore-dark-energy-and-distant-worlds/\">https://www.scientificamerican.com/podcast/episode/nasa-launches-roman-space-telescope-to-explore-dark-energy-and-distant-worlds/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "uj3sbdzigw8jlne",
+      "author": "Florence Gaub",
+      "title": "Why are rich people so pessimistic? What the numbers say",
+      "createdAt": "2026-08-31T00:00:00",
+      "updatedAt": "2026-09-01T05:22:49.104Z",
+      "categryId": "Science",
+      "content": [
+        {
+          "componentId": "1pns8h8qm7jef9n",
+          "componenType": "Image",
+          "data": "https://media.nature.com/lw1200/magazine-assets/d41586-026-02687-y/d41586-026-02687-y_53175032.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "w5ofo8supw1afqj",
+          "componenType": "Paragraph",
+          "data": "Optimism about the future can seem in short supply nowadays, but people’s age, where they live and their expectations have a lot to do with it.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.nature.com/articles/d41586-026-02687-y\">https://www.nature.com/articles/d41586-026-02687-y</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "ng1ecq2y0vfw2vv",
+      "author": "Graham Shields",
+      "title": "Order from disorder: do we need a new law of physics?",
+      "createdAt": "2026-08-31T00:00:00",
+      "updatedAt": "2026-09-01T05:22:49.514Z",
+      "categryId": "Science",
+      "content": [
+        {
+          "componentId": "0l7ha6vljx8s5v1",
+          "componenType": "Image",
+          "data": "https://media.nature.com/lw1200/magazine-assets/d41586-026-02685-0/d41586-026-02685-0_53165170.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "7lapeaswtivgt17",
+          "componenType": "Paragraph",
+          "data": "A radical proposal that evolutionary pressures apply to atoms as much as animals should provoke scientific debate.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.nature.com/articles/d41586-026-02685-0\">https://www.nature.com/articles/d41586-026-02685-0</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "w65jwx95v9193qi",
+      "author": "Lee Billings",
+      "title": "What’s next for NASA’s new Roman Space Telescope?",
+      "createdAt": "2026-08-31T14:35:00-04:00",
+      "updatedAt": "2026-09-01T05:22:49.524Z",
+      "categryId": "Science",
+      "content": [
+        {
+          "componentId": "wgzxx29upgsav5h",
+          "componenType": "Image",
+          "data": "https://static.scientificamerican.com/dam/asset/7a6440d2-3c85-4e4b-8a63-98bc981a313b/roman-spacecraft-sep.jpg?m=1788201549.071&w=1200",
+          "numbered": false
+        },
+        {
+          "componentId": "1cdxb8cffe7f7xd",
+          "componenType": "Paragraph",
+          "data": "After a flawless launch, the Nancy Grace Roman Space Telescope is on a mission to solve some of the universe’s biggest mysteries\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.scientificamerican.com/article/whats-next-for-nasas-new-roman-space-telescope/\">https://www.scientificamerican.com/article/whats-next-for-nasas-new-roman-space-telescope/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "xqpcym7i1orve4c",
+      "author": "Joseph Howlett",
+      "title": "Dark matter experiment catches quietest neutrinos ever measured",
+      "createdAt": "2026-08-31T05:00:00-04:00",
+      "updatedAt": "2026-09-01T05:22:49.968Z",
+      "categryId": "Science",
+      "content": [
+        {
+          "componentId": "v6rd8e67zd3ne3i",
+          "componenType": "Image",
+          "data": "https://static.scientificamerican.com/dam/asset/59044966-5862-49b0-b4e7-5266a83686bf/ALTA-DEFINIZIONE_XENONnT_013-scaled.jpg?m=1788196761.927&w=1200",
+          "numbered": false
+        },
+        {
+          "componentId": "y35k9jf7fjn5axq",
+          "componenType": "Paragraph",
+          "data": "In its hunt for dark matter, the XENONnT experiment has detected the rare, feeble glow of neutrinos smacking into electrons\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.scientificamerican.com/article/dark-matter-experiment-catches-quietest-neutrino-ever-measured/\">https://www.scientificamerican.com/article/dark-matter-experiment-catches-quietest-neutrino-ever-measured/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "w43zy9hbhhsz73w",
+      "author": "Elizabeth Gibney Elizabeth Gibney",
+      "title": "The leap second is dead. Long live the leap hour?",
+      "createdAt": "2026-08-31T00:00:00",
+      "updatedAt": "2026-09-01T05:22:50.066Z",
+      "categryId": "Science",
+      "content": [
+        {
+          "componentId": "c6wo37eboyc01k5",
+          "componenType": "Image",
+          "data": "https://media.nature.com/lw1200/magazine-assets/d41586-026-02669-0/d41586-026-02669-0_53175470.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "qrcnyit9zv7fr4d",
+          "componenType": "Paragraph",
+          "data": "Fear of a possible ‘negative’ leap second is accelerating plans to abolish the practice.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.nature.com/articles/d41586-026-02669-0\">https://www.nature.com/articles/d41586-026-02669-0</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "s9dgs4ytcvk6rrq",
+      "author": "Claire Cameron",
+      "title": "NASA’s Nancy Grace Roman Telescope launches to space",
+      "createdAt": "2026-08-30T07:26:00-04:00",
+      "updatedAt": "2026-09-01T05:22:50.491Z",
+      "categryId": "Science",
+      "content": [
+        {
+          "componentId": "064s1t0tfecu0yl",
+          "componenType": "Image",
+          "data": "https://static.scientificamerican.com/dam/asset/890d6d04-7cf4-44a9-b15a-e41ae2fb4088/roman-launch.jpg?m=1788096582.989&w=1200",
+          "numbered": false
+        },
+        {
+          "componentId": "xt0mo4m8e738aw4",
+          "componenType": "Paragraph",
+          "data": "The Nancy Grace Roman Telescope will probe dark matter and dark energy, discover exoplanets and study stars\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.scientificamerican.com/article/nasas-nancy-grace-roman-telescope-launches-to-space/\">https://www.scientificamerican.com/article/nasas-nancy-grace-roman-telescope-launches-to-space/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "ocmr3k464cyfgwv",
+      "author": "Jennifer Donnelly",
+      "title": "Why obsessing over self-improvement could be sabotaging your brain",
+      "createdAt": "2026-08-30T06:00:00-04:00",
+      "updatedAt": "2026-09-01T05:22:50.975Z",
+      "categryId": "Science",
+      "content": [
+        {
+          "componentId": "k946zl1sy2c8xpl",
+          "componenType": "Image",
+          "data": "https://static.scientificamerican.com/dam/m/61806eb95ec3d329/original/person_looking_out_from_room_through_head_shaped_passageway.jpg?m=1787848330.333&w=1200",
+          "numbered": false
+        },
+        {
+          "componentId": "n06da90r4r8kg4q",
+          "componenType": "Paragraph",
+          "data": "Our obsession with ‘maxxing’ every aspect of our lives could actually be stressing us out\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.scientificamerican.com/article/why-obsessing-over-self-improvement-could-be-sabotaging-your-brain/\">https://www.scientificamerican.com/article/why-obsessing-over-self-improvement-could-be-sabotaging-your-brain/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "p8on8qop9idzdou",
+      "author": "Masha Remskar",
+      "title": "Why your ability to cope with stress changes with time",
+      "createdAt": "2026-08-29T06:00:00-04:00",
+      "updatedAt": "2026-09-01T05:22:51.497Z",
+      "categryId": "Science",
+      "content": [
+        {
+          "componentId": "aj33rcmvwjz3ezs",
+          "componenType": "Image",
+          "data": "https://static.scientificamerican.com/dam/m/2bda795ba4785681/original/man_with_head_in_a_cloud_illustration.jpg?m=1744053466.901&w=1200",
+          "numbered": false
+        },
+        {
+          "componentId": "fitqlz5h0qw4sjq",
+          "componenType": "Paragraph",
+          "data": "Seasonal changes have more effects on your biology and behavior than you might realize\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.scientificamerican.com/article/why-your-ability-to-cope-with-stress-changes-with-time/\">https://www.scientificamerican.com/article/why-your-ability-to-cope-with-stress-changes-with-time/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "uey1zgdu98wfnwj",
+      "author": "Joseph Howlett",
+      "title": "Top 10 Roman Space Telescope science breakthroughs",
+      "createdAt": "2026-08-28T13:00:00-04:00",
+      "updatedAt": "2026-09-01T05:22:51.990Z",
+      "categryId": "Science",
+      "content": [
+        {
+          "componentId": "8oiirnlj9t3jvi3",
+          "componenType": "Image",
+          "data": "https://static.scientificamerican.com/dam/asset/6d908ed1-860d-4115-9be4-4bfd374031f2/KSC-20260825-PH-KLS01_0018-orig-rs.jpeg?m=1787940755.209&w=1200",
+          "numbered": false
+        },
+        {
+          "componentId": "1m4fbz7p740mf6u",
+          "componenType": "Paragraph",
+          "data": "NASA’s Roman Space Telescope will open a whole new window on the cosmos. Here are 10 things it’s likely to show us\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.scientificamerican.com/article/top-10-roman-space-telescope-science-breakthroughs/\">https://www.scientificamerican.com/article/top-10-roman-space-telescope-science-breakthroughs/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "5ibn4yuzh4t7ixv",
+      "author": "Adam Kovac",
+      "title": "NASA’s Roman Space Telescope could find alien Earths—but not like you think",
+      "createdAt": "2026-08-29T09:00:00-04:00",
+      "updatedAt": "2026-09-01T05:22:52.483Z",
+      "categryId": "Science",
+      "content": [
+        {
+          "componentId": "gogkpmhpw6rd2u3",
+          "componenType": "Image",
+          "data": "https://static.scientificamerican.com/dam/asset/352533d2-4b88-45c8-b8fd-83cb2502f75b/Milky-Way.jpg?m=1788185785.392&w=1200",
+          "numbered": false
+        },
+        {
+          "componentId": "sf0i66747ib2tnw",
+          "componenType": "Paragraph",
+          "data": "The Roman Space Telescope will spend more than a quarter of its time staring at the Milky Way’s bulge, a star-packed central region of our galaxy that may swarm with small, rocky exoplanets\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.scientificamerican.com/article/nasas-roman-space-telescope-could-find-alien-earths-but-not-like-you-think/\">https://www.scientificamerican.com/article/nasas-roman-space-telescope-could-find-alien-earths-but-not-like-you-think/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "6nnxty8xvrb9o42",
+      "author": "Alice Klein",
+      "title": "How our bodies adapt to extreme temperatures – until it gets too hot",
+      "createdAt": "2026-08-31T15:00:00+00:00",
+      "updatedAt": "2026-09-01T05:22:53.972Z",
+      "categryId": "Science",
+      "content": [
+        {
+          "componentId": "9cee3jaotjnci8l",
+          "componenType": "Image",
+          "data": "https://www.newscientist.com/wp-content/uploads/2026/08/SEI_309026179.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "hrhfpqnu2hcx1lq",
+          "componenType": "Paragraph",
+          "data": "No matter where you’re from, there are things you can do to cope better with extreme temperatures. But it takes work to stop our bodies’ adaptations from slipping backwards over winter, and there are limits to how far we can go\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.newscientist.com/article/2585487-how-your-body-adapts-to-extreme-heat-and-why-your-mind-lags-behind/\">https://www.newscientist.com/article/2585487-how-your-body-adapts-to-extreme-heat-and-why-your-mind-lags-behind/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "f8bg5py7xbsdkpk",
+      "author": "Alice Klein",
+      "title": "Should we all be taking low doses of lithium to prevent Alzheimer’s?",
+      "createdAt": "2026-08-31T08:00:00+00:00",
+      "updatedAt": "2026-09-01T05:22:54.485Z",
+      "categryId": "Science",
+      "content": [
+        {
+          "componentId": "t6mx1sowe302llc",
+          "componenType": "Image",
+          "data": "https://www.newscientist.com/wp-content/uploads/2026/08/SEI_309676623.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "ii8jh2beh220poy",
+          "componenType": "Paragraph",
+          "data": "Animal studies have shown that lithium orotate could help stave off dementia, and a human trial is about to start to see if the effects hold. Columnist Alice Klein takes a look at the benefits and downsides of lithium\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.newscientist.com/article/2586894-should-we-all-be-taking-low-doses-of-lithium-to-prevent-alzheimers/\">https://www.newscientist.com/article/2586894-should-we-all-be-taking-low-doses-of-lithium-to-prevent-alzheimers/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "1d9e94aytcuzmcr",
+      "author": "Karmela Padavic-Callaghan",
+      "title": "Einstein thought time dilation was both real and not – he was right",
+      "createdAt": "2026-08-28T08:00:00+00:00",
+      "updatedAt": "2026-09-01T05:22:54.990Z",
+      "categryId": "Science",
+      "content": [
+        {
+          "componentId": "zytbz8jos6b16bn",
+          "componenType": "Image",
+          "data": "https://www.newscientist.com/wp-content/uploads/2026/08/SEI_309685329.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "4pkcg6jysq4q93o",
+          "componenType": "Paragraph",
+          "data": "What even is time? Columnist Karmela Padavic-Callaghan takes on this mind-bending question by exploring the proof we have that time dilation is both a physical phenomenon and a psychological one\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.newscientist.com/article/2586888-einstein-thought-time-dilation-was-both-real-and-not-he-was-right/\">https://www.newscientist.com/article/2586888-einstein-thought-time-dilation-was-both-real-and-not-he-was-right/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "voiiutxasbbtmoy",
+      "author": "Enrico de Lazaro",
+      "title": "NASA’s Roman Space Telescope Launches on Mission to Probe Hidden Universe",
+      "createdAt": "2026-08-30T22:53:04+00:00",
+      "updatedAt": "2026-09-01T05:22:55.181Z",
+      "categryId": "Science",
+      "content": [
+        {
+          "componentId": "9zuxhsbwwmw5gsr",
+          "componenType": "Image",
+          "data": "https://cdn.sci.news/images/2026/08/image_15027f-Roman.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "biml5e1zdliomms",
+          "componenType": "Paragraph",
+          "data": "NASA’s Nancy Grace Roman Space Telescope launched August 30, 2026 at 7:26 a.m. EDT (11:26 UTC) aboard a SpaceX Falcon Heavy from Launch Complex 39A at Kennedy Space Center, beginning a three-month, 1.5 million km (930,000 miles) journey to its operating post at the second Sun-Earth Lagrange point (L2).\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.sci.news/astronomy/roman-space-telescope-launch-15027.html\">https://www.sci.news/astronomy/roman-space-telescope-launch-15027.html</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "5cf7tfi9jfodfq4",
+      "author": "Joshua Howgego",
+      "title": "Want to know everything about time? Read Jim Al-Khalili's new book",
+      "createdAt": "2026-08-26T17:00:00+00:00",
+      "updatedAt": "2026-09-01T05:22:55.483Z",
+      "categryId": "Science",
+      "content": [
+        {
+          "componentId": "d1gcf5pgh61nwph",
+          "componenType": "Image",
+          "data": "https://www.newscientist.com/wp-content/uploads/2026/08/SEI_309538013.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "i6rcf3gt3j5f5ld",
+          "componenType": "Paragraph",
+          "data": "If you want a thorough examination of time, then the excellent – and extremely meaty – book On Time is for you, says Joshua Howgego\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.newscientist.com/article/2585869-want-to-know-everything-about-time-read-jim-al-khalilis-new-book/\">https://www.newscientist.com/article/2585869-want-to-know-everything-about-time-read-jim-al-khalilis-new-book/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "ferj7obe3738awc",
+      "author": "Sergio Prostak",
+      "title": "Mercury’s Crust May Hide Metal beneath Its Surface",
+      "createdAt": "2026-08-31T15:25:57+00:00",
+      "updatedAt": "2026-09-01T05:22:55.668Z",
+      "categryId": "Science",
+      "content": [
+        {
+          "componentId": "lor0sexuc46l0xl",
+          "componenType": "Image",
+          "data": "https://cdn.sci.news/images/2016/03/image_3684-Mercury.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "fz9cfe0zwcjz914",
+          "componenType": "Paragraph",
+          "data": "Using a novel laboratory calibration, planetary researchers in Germany have produced the most reliable map yet of silica (SiO2) concentrations across the surface of Earth’s Moon, and a first silica estimate for Mercury.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.sci.news/space/moon-mercury-silica-15029.html\">https://www.sci.news/space/moon-mercury-silica-15029.html</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "bq7q5hlp9q7x1e2",
+      "author": "Enrico de Lazaro",
+      "title": "55-Million-Year-Old Predatory Mammal Footprint Found in Antarctica",
+      "createdAt": "2026-08-31T19:22:12+00:00",
+      "updatedAt": "2026-09-01T05:22:56.153Z",
+      "categryId": "Science",
+      "content": [
+        {
+          "componentId": "5b9j8evdrwg12gb",
+          "componenType": "Image",
+          "data": "https://cdn.sci.news/images/2026/08/image_15031f-T-373-Footprint.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "edvqq4r67rtr9v6",
+          "componenType": "Paragraph",
+          "data": "A single fossilized footprint found in volcanic mud on a remote Antarctic island is the first known trackway from a mammal in Antarctica, and the earliest evidence anywhere on the continent of a carnivorous mammal.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.sci.news/paleontology/eocene-predatory-mammal-footprint-antarctica-15031.html\">https://www.sci.news/paleontology/eocene-predatory-mammal-footprint-antarctica-15031.html</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "ufp3hf46xuqum8o",
+      "author": "Enrico de Lazaro",
+      "title": "Tasmanian Tiger’s Skull Reveals Hunting Style with No Modern Match",
+      "createdAt": "2026-08-31T16:45:01+00:00",
+      "updatedAt": "2026-09-01T05:22:56.663Z",
+      "categryId": "Science",
+      "content": [
+        {
+          "componentId": "3o9a7oeig4r5obt",
+          "componenType": "Image",
+          "data": "https://cdn.sci.news/images/2017/01/image_4549f-Thylacine.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "zi38uy6s5qr4mis",
+          "componenType": "Paragraph",
+          "data": "In a new paper published in the journal Nature Communications, researchers from Flinders University, the University of Melbourne and the Australian Museum argue that the thylacine’s skull was not simply a marsupial copy of a canid’s, but a unique combination of traits with no living analogue.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.sci.news/biology/tasmanian-tigers-hunting-style-15030.html\">https://www.sci.news/biology/tasmanian-tigers-hunting-style-15030.html</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "6016zvz5bzjwy1j",
+      "author": "News Staff",
+      "title": "CERN Physicists Hunting for Pairs of Higgs Bosons",
+      "createdAt": "2026-08-28T17:19:20+00:00",
+      "updatedAt": "2026-09-01T05:22:57.160Z",
+      "categryId": "Science",
+      "content": [
+        {
+          "componentId": "ms8scvhnlwqz2gr",
+          "componenType": "Image",
+          "data": "https://cdn.sci.news/images/2026/08/image_15025-di-Higgs.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "w1ku9k1xay7gabc",
+          "componenType": "Paragraph",
+          "data": "New results from the ATLAS and CMS Collaborations at CERN’s Large Hadron Collider (LHC) offer a tantalizing hint of Higgs bosons interacting with one another, a process that could reveal whether the Standard Model’s picture of the Universe is complete.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.sci.news/physics/double-higgs-production-15025.html\">https://www.sci.news/physics/double-higgs-production-15025.html</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "mfgnlrw8wah10kh",
+      "author": "Natali Anderson",
+      "title": "Keto Diet Outperforms Others for Cardiometabolic Health during Weight Loss: Study",
+      "createdAt": "2026-08-31T11:36:51+00:00",
+      "updatedAt": "2026-09-01T05:22:57.680Z",
+      "categryId": "Science",
+      "content": [
+        {
+          "componentId": "pz6l4xg5jau1atv",
+          "componenType": "Image",
+          "data": "https://cdn.sci.news/images/2026/08/image_15028-Keto-Diet.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "z7efil4wf6y32rs",
+          "componenType": "Paragraph",
+          "data": "Not all diets are created equal when it comes to reversing the metabolic damage of obesity, even when they produce the same amount of weight loss, according to a new randomized clinical trial published in the journal Cell Metabolism.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.sci.news/medicine/keto-diet-cardiometabolic-health-weight-loss-15028.html\">https://www.sci.news/medicine/keto-diet-cardiometabolic-health-weight-loss-15028.html</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "9vzyesguw9sztkb",
+      "author": "Allison Marsh",
+      "title": "The First Battery: Dead Frogs Sparked the Voltaic Pile",
+      "createdAt": "2026-08-31T12:00:01+00:00",
+      "updatedAt": "2026-09-01T05:22:58.575Z",
+      "categryId": "Engineering",
+      "content": [
+        {
+          "componentId": "mwmjkjekmqclr08",
+          "componenType": "Image",
+          "data": "https://spectrum.ieee.org/media-library/a-collage-of-historic-images-showing-two-men-in-18th-century-garb-with-background-illustrations-of-a-device-with-two-columns-and.jpg?id=67685017&width=1200&height=600&coordinates=0%2C50%2C0%2C50",
+          "numbered": false
+        },
+        {
+          "componentId": "0ovmjw46tb3akvm",
+          "componenType": "Paragraph",
+          "data": "Alessandro Volta invented his electric pile to disprove Luigi Galvani’s “animal electricity”\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://spectrum.ieee.org/voltaic-pile-first-battery\">https://spectrum.ieee.org/voltaic-pile-first-battery</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "pigixzxb1epv152",
+      "author": "Lucas Laursen",
+      "title": "Spain Nuclear Power Extension Stabilizes a Fragile Grid",
+      "createdAt": "2026-08-29T13:00:01+00:00",
+      "updatedAt": "2026-09-01T05:22:59.069Z",
+      "categryId": "Engineering",
+      "content": [
+        {
+          "componentId": "lg7y0lv01vfvph2",
+          "componenType": "Image",
+          "data": "https://spectrum.ieee.org/media-library/three-women-in-hard-hats-and-safety-goggles-pulling-an-industrial-vacuum-through-a-nuclear-power-plant.jpg?id=67687223&width=1200&height=600&coordinates=0%2C219%2C0%2C31",
+          "numbered": false
+        },
+        {
+          "componentId": "4izcq39utk95414",
+          "componenType": "Paragraph",
+          "data": "A significant policy reversal buys time for battery buildup\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://spectrum.ieee.org/spain-nuclear-power-reactor-shutdowns\">https://spectrum.ieee.org/spain-nuclear-power-reactor-shutdowns</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "nb7gvag6nfsmiog",
+      "author": "Joana Soares",
+      "title": "Europe’s AI Drive Outpaces a Fragile Chip Supply Chain",
+      "createdAt": "2026-08-31T14:00:04+00:00",
+      "updatedAt": "2026-09-01T05:22:59.582Z",
+      "categryId": "Engineering",
+      "content": [
+        {
+          "componentId": "ewbsigy1fwex5e6",
+          "componenType": "Image",
+          "data": "https://spectrum.ieee.org/media-library/illustration-of-a-microchip-with-eu-flag-symbols.jpg?id=67681157&width=1200&height=600&coordinates=0%2C125%2C0%2C125",
+          "numbered": false
+        },
+        {
+          "componentId": "y7ecjwx7k9qodki",
+          "componenType": "Paragraph",
+          "data": "Domestic data centers could outpace domestic chip supply\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://spectrum.ieee.org/europes-ai-drive\">https://spectrum.ieee.org/europes-ai-drive</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "0vy2nm2idqaqaiw",
+      "author": "Michelle Hampson",
+      "title": "Low-Power Wearable Motion Sensor Suit Hits 99% Accuracy",
+      "createdAt": "2026-08-30T13:00:01+00:00",
+      "updatedAt": "2026-09-01T05:23:00.590Z",
+      "categryId": "Engineering",
+      "content": [
+        {
+          "componentId": "ghctpz1sn5mstx5",
+          "componenType": "Image",
+          "data": "https://spectrum.ieee.org/media-library/the-lower-half-of-someones-body-with-three-stretchable-sensors-spaced-vertically-down-each-leg-and-two-more-on-each-achilles.jpg?id=67686273&width=1200&height=600&coordinates=0%2C433%2C0%2C192",
+          "numbered": false
+        },
+        {
+          "componentId": "un0yzboaamd057l",
+          "componenType": "Paragraph",
+          "data": "The prototype sensing system uses just 0.318 mW\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://spectrum.ieee.org/wearable-motion-sensor-suit\">https://spectrum.ieee.org/wearable-motion-sensor-suit</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "tgh3m864lfmxe0l",
+      "author": "Harry Goldstein",
+      "title": "Bimodal Nuclear Engine Could Speed Mars Trip",
+      "createdAt": "2026-08-29T15:35:01+00:00",
+      "updatedAt": "2026-09-01T05:23:01.096Z",
+      "categryId": "Engineering",
+      "content": [
+        {
+          "componentId": "n80iuba3qz00p38",
+          "componenType": "Image",
+          "data": "https://spectrum.ieee.org/media-library/image.png?id=67675201&width=1200&height=600&coordinates=0%2C193%2C0%2C193",
+          "numbered": false
+        },
+        {
+          "componentId": "hufgm11bjnrx2jp",
+          "componenType": "Paragraph",
+          "data": "What began as a napkin sketch might open up interplanetary exploration\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://spectrum.ieee.org/bimodal-nuclear-engine\">https://spectrum.ieee.org/bimodal-nuclear-engine</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "5n6yk2fgqeu712b",
+      "author": "Neetika Walter",
+      "title": "Tennessee grants first fusion license for 400MW stellarator plant",
+      "createdAt": "2026-08-31T18:51:00-04:00",
+      "updatedAt": "2026-09-01T05:23:05.004Z",
+      "categryId": "Engineering",
+      "content": [
+        {
+          "componentId": "98d8hxra4brzzd9",
+          "componenType": "Image",
+          "data": "https://cms.interestingengineering.com/wp-content/uploads/2026/08/Type-one-energy.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "orfwwed8u8rkomo",
+          "componenType": "Paragraph",
+          "data": "Tennessee grants Type One Energy a fusion license as it advances a 400 MW stellarator power plant at Bull Run.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://interestingengineering.com/energy/tennessee-type-one-energy-stellarator-fusion-plant-license\">https://interestingengineering.com/energy/tennessee-type-one-energy-stellarator-fusion-plant-license</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "claah1j744zk9vv",
+      "author": "Aamir Khollam",
+      "title": "$33.4M autonomous launcher uses swappable pods for flexible firepower",
+      "createdAt": "2026-08-31T18:43:00-04:00",
+      "updatedAt": "2026-09-01T05:23:05.686Z",
+      "categryId": "Engineering",
+      "content": [
+        {
+          "componentId": "v7m710ikqffwtc6",
+          "componenType": "Image",
+          "data": "https://cms.interestingengineering.com/wp-content/uploads/2026/08/Untitled-design-2026-09-01T045000.319.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "qgxg310px0140u8",
+          "componenType": "Paragraph",
+          "data": "The Army is taking a modular approach to autonomous firepower. GTRI will integrate CAML components under a $33.4 million award.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://interestingengineering.com/military/army-caml-modular-autonomous-launcher-gtri\">https://interestingengineering.com/military/army-caml-modular-autonomous-launcher-gtri</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "k3tp2i4y51ivywq",
+      "author": "Neetika Walter",
+      "title": "US lithium tech secures deal for 8,000 tons of battery material",
+      "createdAt": "2026-08-31T18:06:00-04:00",
+      "updatedAt": "2026-09-01T05:23:05.929Z",
+      "categryId": "Engineering",
+      "content": [
+        {
+          "componentId": "nlge9ki49zltz5h",
+          "componenType": "Image",
+          "data": "https://cms.interestingengineering.com/wp-content/uploads/2025/04/SQM.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "1zf0jgl5zi4tl8o",
+          "componenType": "Paragraph",
+          "data": "A US lithium deal will supply 8,000 metric tonnes yearly for 10 years using direct lithium extraction in Arkansas.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://interestingengineering.com/energy/us-lithium-dle-battery-supply-arkansas\">https://interestingengineering.com/energy/us-lithium-dle-battery-supply-arkansas</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "7nzb0niebwgliws",
+      "author": "Aamir Khollam",
+      "title": "Army air defenses get $40M boost with actuators and rugged computers",
+      "createdAt": "2026-08-31T17:48:00-04:00",
+      "updatedAt": "2026-09-01T05:23:06.798Z",
+      "categryId": "Engineering",
+      "content": [
+        {
+          "componentId": "kfxwovhpjmzamj1",
+          "componenType": "Image",
+          "data": "https://cms.interestingengineering.com/wp-content/uploads/2026/08/Untitled-design-2026-09-01T034517.020.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "hfxkhoxy6tgvncw",
+          "componenType": "Paragraph",
+          "data": "Curtiss-Wright is bringing its electromechanical actuators and rugged computers to the Army’s IFPC program.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://interestingengineering.com/military/curtiss-wright-40m-army-air-defenses\">https://interestingengineering.com/military/curtiss-wright-40m-army-air-defenses</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "la4hqed99itltl2",
+      "author": "Aamir Khollam",
+      "title": "Continuous-fiber 3D printing embeds power pathways in military drones",
+      "createdAt": "2026-08-31T17:18:00-04:00",
+      "updatedAt": "2026-09-01T05:23:07.055Z",
+      "categryId": "Engineering",
+      "content": [
+        {
+          "componentId": "q0t4ow75diny0ye",
+          "componenType": "Image",
+          "data": "https://cms.interestingengineering.com/wp-content/uploads/2026/08/Untitled-design-2026-09-01T024720.101.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "25hc3j3hgop5joh",
+          "componenType": "Paragraph",
+          "data": "The U.S. Navy is backing continuous-fiber 3D printing that could embed electrical pathways inside load-bearing UAV components.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://interestingengineering.com/military/continuous-fiber-3d-printing-military-uavs\">https://interestingengineering.com/military/continuous-fiber-3d-printing-military-uavs</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "0jphipn2nz39zdp",
+      "author": "Neetika Walter",
+      "title": "2.88 GW gas plant, 700 MW battery system to fuel US data center boom",
+      "createdAt": "2026-08-31T14:37:00-04:00",
+      "updatedAt": "2026-09-01T05:23:07.587Z",
+      "categryId": "Engineering",
+      "content": [
+        {
+          "componentId": "zjnjomey2eelpgj",
+          "componenType": "Image",
+          "data": "https://cms.interestingengineering.com/wp-content/uploads/2026/08/Untitled-design-2026-09-01T010622.895.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "ix6bxa65iu8s2us",
+          "componenType": "Paragraph",
+          "data": "ONE Nuclear Energy plans a 2.88 GW gas plant, battery storage and data center campus near Louisiana’s RiverPlex MegaPark.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://interestingengineering.com/energy/one-nuclear-project-cayman-louisiana-power-data-center\">https://interestingengineering.com/energy/one-nuclear-project-cayman-louisiana-power-data-center</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "evoxojpm7scnjz8",
+      "author": "Prabhat Ranjan Mishra",
+      "title": "US' combat vehicles to get battle ready with new vision system",
+      "createdAt": "2026-08-31T14:03:00-04:00",
+      "updatedAt": "2026-09-01T05:23:08.054Z",
+      "categryId": "Engineering",
+      "content": [
+        {
+          "componentId": "wbh3a2z2cd2dzhk",
+          "componenType": "Image",
+          "data": "https://cms.interestingengineering.com/wp-content/uploads/2026/08/tank-new.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "qxlm3kq84ebsqzd",
+          "componenType": "Paragraph",
+          "data": "The new vision system offers rugged, military-grade design, which supports continuous operation in often extreme environments.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://interestingengineering.com/military/us-combat-vehicles-battle-ready\">https://interestingengineering.com/military/us-combat-vehicles-battle-ready</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "fkts44ekzqs07df",
+      "author": "Sara Lindqvist",
+      "title": "Tricking An Air Conditioner Into Cooling",
+      "createdAt": "2026-09-01T05:00:46+00:00",
+      "updatedAt": "2026-09-01T05:23:08.158Z",
+      "categryId": "Engineering",
+      "content": [
+        {
+          "componentId": "54dghkuf90poceo",
+          "componenType": "Image",
+          "data": "https://hackaday.com/wp-content/uploads/2026/08/ac-trick-main.png",
+          "numbered": false
+        },
+        {
+          "componentId": "td7nb1y7jk917t1",
+          "componenType": "Paragraph",
+          "data": "Modern heat pumps, of which air conditioners are a subset, seem like simple machines in theory. They just move heat from one place to another. But in order to operate efficiently, they need specifi…\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://hackaday.com/2026/08/31/tricking-an-air-conditioner-into-cooling/\">https://hackaday.com/2026/08/31/tricking-an-air-conditioner-into-cooling/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "tg527r3665nokyg",
+      "author": "Sara Lindqvist",
+      "title": "ReactOS Gets An Upgrade",
+      "createdAt": "2026-09-01T02:00:07+00:00",
+      "updatedAt": "2026-09-01T05:23:08.658Z",
+      "categryId": "Engineering",
+      "content": [
+        {
+          "componentId": "skee26hjbc5enm3",
+          "componenType": "Image",
+          "data": "https://hackaday.com/wp-content/uploads/2026/08/new-reactos-featured.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "ome9tnaocdwuxhz",
+          "componenType": "Paragraph",
+          "data": "A perennial in the esoteric operating system space is ReactOS, a project with its roots in the 1990s which is doing a pretty good job of creating an open source clone of 32-bit Windows. They have a…\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://hackaday.com/2026/08/31/reactos-gets-an-upgrade/\">https://hackaday.com/2026/08/31/reactos-gets-an-upgrade/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "fx5sbxgx3xsfzeu",
+      "author": "Aamir Khollam",
+      "title": "All-wing 5,000 nautical mile jet secures $100M boost for 2027 flight",
+      "createdAt": "2026-08-31T15:08:00-04:00",
+      "updatedAt": "2026-09-01T05:23:08.694Z",
+      "categryId": "Engineering",
+      "content": [
+        {
+          "componentId": "oqsp1dogeze9tbl",
+          "componenType": "Image",
+          "data": "https://cms.interestingengineering.com/wp-content/uploads/2026/08/Untitled-design-2026-08-31T235844.227.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "5ajjmndmj3gt0xi",
+          "componenType": "Paragraph",
+          "data": "JetZero secures up to $100 million to advance its all-wing Z4 aircraft, Jet1 demonstrator, and new North Carolina manufacturing facilities.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://interestingengineering.com/transportation/jetzero-all-wing-z4-aircraft-100m-financing\">https://interestingengineering.com/transportation/jetzero-all-wing-z4-aircraft-100m-financing</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "pnfp1jzdybcrcjt",
+      "author": "Sara Lindqvist",
+      "title": "Fixing An Expensive Amprobe Cable Tracer With Mystery Fault",
+      "createdAt": "2026-08-31T23:00:22+00:00",
+      "updatedAt": "2026-09-01T05:23:09.171Z",
+      "categryId": "Engineering",
+      "content": [
+        {
+          "componentId": "zn1eodyvkac3dx2",
+          "componenType": "Image",
+          "data": "https://hackaday.com/wp-content/uploads/2026/08/amprobe_cable_tracer_kit_buy_it_fix_it_youtube.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "25d7hz0lkbswy3c",
+          "componenType": "Paragraph",
+          "data": "Perhaps the most annoying kinds of faults are those that involve expensive equipment that just sit around in a cupboard, only for them to just stop working at all. Such was the case with the £2,000…\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://hackaday.com/2026/08/31/fixing-an-expensive-amprobe-cable-tracer-with-mystery-fault/\">https://hackaday.com/2026/08/31/fixing-an-expensive-amprobe-cable-tracer-with-mystery-fault/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "yu5h1xndg23q8et",
+      "author": "Sara Lindqvist",
+      "title": "Building An Energy-Harvesting Business Card",
+      "createdAt": "2026-08-31T20:00:22+00:00",
+      "updatedAt": "2026-09-01T05:23:09.679Z",
+      "categryId": "Engineering",
+      "content": [
+        {
+          "componentId": "h2ztev6bconz1b3",
+          "componenType": "Image",
+          "data": "https://hackaday.com/wp-content/uploads/2026/08/hero-1400-e1788134770224.webp",
+          "numbered": false
+        },
+        {
+          "componentId": "e5d2zb8jyy2yu1y",
+          "componenType": "Paragraph",
+          "data": "The hope is always that a good business card will leave a good impression. For those in the electronics field, they also serve as an opportunity to showcase creative design skills. [Wilson Harper] …\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://hackaday.com/2026/08/31/building-an-energy-harvesting-business-card/\">https://hackaday.com/2026/08/31/building-an-energy-harvesting-business-card/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "cb5vsbcxtfznugx",
+      "author": "Sara Lindqvist",
+      "title": "Simulating UAVs In Unreal Engine",
+      "createdAt": "2026-08-31T18:30:12+00:00",
+      "updatedAt": "2026-09-01T05:23:10.187Z",
+      "categryId": "Engineering",
+      "content": [
+        {
+          "componentId": "cp71q4n7oczpm5c",
+          "componenType": "Image",
+          "data": "https://hackaday.com/wp-content/uploads/2026/08/PteroSim-v0.1.0-release-0-7-screenshot-1.png",
+          "numbered": false
+        },
+        {
+          "componentId": "vvq1abbrkayfx4x",
+          "componenType": "Paragraph",
+          "data": "When it comes to building real-world flying vehicles, testing can be arduous and expensive. You have to find somewhere to fly, then you have to contend with environmental conditions and the possibi…\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://hackaday.com/2026/08/31/simulating-uavs-in-unreal-engine/\">https://hackaday.com/2026/08/31/simulating-uavs-in-unreal-engine/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "hsktxylmjbbgasc",
+      "author": "Sara Lindqvist",
+      "title": "Defeating Bacteria In Hot Water Systems With A Heat Exchanger",
+      "createdAt": "2026-08-31T17:00:26+00:00",
+      "updatedAt": "2026-09-01T05:23:10.720Z",
+      "categryId": "Engineering",
+      "content": [
+        {
+          "componentId": "wyac00r5ytsnowo",
+          "componenType": "Image",
+          "data": "https://hackaday.com/wp-content/uploads/2026/08/TankExchanger_20210920_144327_edit_web_featured.png",
+          "numbered": false
+        },
+        {
+          "componentId": "ldaf9bnvlz1oedq",
+          "componenType": "Paragraph",
+          "data": "The average hot water is a relatively simple appliance to understand. It uses gas or electricity to dump energy into water in the form of heat, keeping it at a pleasant temperature for uses like ba…\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://hackaday.com/2026/08/31/defeating-bacteria-in-hot-water-systems-with-a-heat-exchanger/\">https://hackaday.com/2026/08/31/defeating-bacteria-in-hot-water-systems-with-a-heat-exchanger/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "hlclrfdtasgmbtb",
+      "author": "Sara Lindqvist",
+      "title": "USB-C Adapted For Legacy Sprinkler Systems",
+      "createdAt": "2026-08-31T15:30:16+00:00",
+      "updatedAt": "2026-09-01T05:23:11.192Z",
+      "categryId": "Engineering",
+      "content": [
+        {
+          "componentId": "nsguo2e79ed6rm0",
+          "componenType": "Image",
+          "data": "https://hackaday.com/wp-content/uploads/2026/08/usb-sprinkler-main.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "j1t89xwu5fq5fbo",
+          "componenType": "Paragraph",
+          "data": "In the modern world USB has become a truly universal connector, with its inclusion on almost every major piece of consumer electronics. It has even expanded well beyond things that we’d think…\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://hackaday.com/2026/08/31/usb-c-adapted-for-legacy-sprinkler-systems/\">https://hackaday.com/2026/08/31/usb-c-adapted-for-legacy-sprinkler-systems/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "y583fchn7jkih4y",
+      "author": "Sara Lindqvist",
+      "title": "What’s Mu Metal?",
+      "createdAt": "2026-08-31T14:00:37+00:00",
+      "updatedAt": "2026-09-01T05:23:11.686Z",
+      "categryId": "Engineering",
+      "content": [
+        {
+          "componentId": "dk42zhr334p9zb9",
+          "componenType": "Image",
+          "data": "https://hackaday.com/wp-content/uploads/2026/08/MUmetal.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "u1yydw58f28k6mo",
+          "componenType": "Paragraph",
+          "data": "If you tear into old TVs or recording equipment, you may see shields made from some exotic-looking metal. Old timers will tell you it’s called mu metal, and its purpose is to — sort of …\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://hackaday.com/2026/08/31/whats-mu-metal/\">https://hackaday.com/2026/08/31/whats-mu-metal/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "kpg86ysdds4vzmg",
+      "author": "Sara Lindqvist",
+      "title": "NASA’s Dark Universe-Seeking Nancy Grace Roman Space Telescope Launches",
+      "createdAt": "2026-09-01T05:23:14.796Z",
+      "updatedAt": "2026-09-01T05:23:14.796Z",
+      "categryId": "Space",
+      "content": [
+        {
+          "componentId": "a2vticimzwy8qgu",
+          "componenType": "Image",
+          "data": "https://images-assets.nasa.gov/image/NHQ20260830_admin_0002/NHQ20260830_admin_0002~large.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "twzjkt4da2mb2kp",
+          "componenType": "Paragraph",
+          "data": "Now on a three-month, million-mile journey to its final orbit, NASA’s Nancy Grace Roman Space Telescope will soon reveal the universe’s darkest secrets. The\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.nasa.gov/news-release/nasas-dark-universe-seeking-nancy-grace-roman-space-telescope-launches/\">https://www.nasa.gov/news-release/nasas-dark-universe-seeking-nancy-grace-roman-space-telescope-launches/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "8fwa9tjd70rk48q",
+      "author": "Sara Lindqvist",
+      "title": "Expedition 75 is Go for Tuesday’s Navigation and Science Maintenance Spacewalk",
+      "createdAt": "2026-08-31T11:52:03-04:00",
+      "updatedAt": "2026-09-01T05:23:15.292Z",
+      "categryId": "Space",
+      "content": [
+        {
+          "componentId": "y4crph4480zzrp9",
+          "componenType": "Image",
+          "data": "https://www.nasa.gov/wp-content/uploads/2026/08/preview-sophie-jessica-090126.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "iu0azaqtk1x2a1m",
+          "componenType": "Paragraph",
+          "data": "Astronauts Sophie Adenot of ESA (European Space Agency) and Jessica Meir of NASA will exit the International Space Station after setting their spacesuits to battery power at 7:30 a.m. EDT on Tuesday, Sept. 1, signifying the beginning of their spacewalk. NASA+ and a variety of other platforms will stream live spacewalk coverage beginning at 6 a.m.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.nasa.gov/blogs/spacestation/2026/08/31/expedition-75-is-go-for-tuesdays-navigation-and-science-maintenance-spacewalk/\">https://www.nasa.gov/blogs/spacestation/2026/08/31/expedition-75-is-go-for-tuesdays-navigation-and-science-maintenance-spacewalk/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "uh523jg20nb3usq",
+      "author": "Sara Lindqvist",
+      "title": "NASA, SpaceX Adjust Crew-13 Launch Date",
+      "createdAt": "2026-08-29T21:12:28-04:00",
+      "updatedAt": "2026-09-01T05:23:15.794Z",
+      "categryId": "Space",
+      "content": [
+        {
+          "componentId": "2whbegtwl3jetk7",
+          "componenType": "Image",
+          "data": "https://images-assets.nasa.gov/image/jsc2026e406664/jsc2026e406664~large.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "ljyqgmv9d88ufap",
+          "componenType": "Paragraph",
+          "data": "NASA and SpaceX are adjusting the launch date for the agency’s Crew-13 mission to the International Space Station to address an oxidizer leak on Dragon’s\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.nasa.gov/blogs/spacestation/2026/08/29/nasa-spacex-adjust-crew-13-launch-date/\">https://www.nasa.gov/blogs/spacestation/2026/08/29/nasa-spacex-adjust-crew-13-launch-date/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "n4l5vn0u8dk537x",
+      "author": "Sara Lindqvist",
+      "title": "President Honors NASA’s Artemis II Crew with Highest US Space Award",
+      "createdAt": "2026-09-01T05:23:16.287Z",
+      "updatedAt": "2026-09-01T05:23:16.287Z",
+      "categryId": "Space",
+      "content": [
+        {
+          "componentId": "sx8didcv3pqh8zh",
+          "componenType": "Image",
+          "data": "https://www.nasa.gov/wp-content/uploads/2026/08/congressional-space-medal-of-honor-ceremony-1.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "qrey9996yqo04lz",
+          "componenType": "Paragraph",
+          "data": "President Donald J. Trump awarded NASA astronauts Reid Wiseman, Victor Glover, and Christina Koch, and CSA (Canadian Space Agency) astronaut Jeremy Hansen\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.nasa.gov/news-release/president-honors-nasas-artemis-ii-crew-with-highest-us-space-award/\">https://www.nasa.gov/news-release/president-honors-nasas-artemis-ii-crew-with-highest-us-space-award/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "2loeftljpjck9c1",
+      "author": "Sara Lindqvist",
+      "title": "President Trump Signs Executive Order to Create US Space Academy",
+      "createdAt": "2026-09-01T05:23:16.797Z",
+      "updatedAt": "2026-09-01T05:23:16.797Z",
+      "categryId": "Space",
+      "content": [
+        {
+          "componentId": "elthi6p3155o304",
+          "componenType": "Image",
+          "data": "https://www.nasa.gov/wp-content/uploads/2026/08/eo-1.png",
+          "numbered": false
+        },
+        {
+          "componentId": "u1cem29somdr5fr",
+          "componenType": "Paragraph",
+          "data": "To strengthen the nation’s space workforce and develop the next generation of space leaders, President Donald J. Trump signed an Executive Order on Friday to\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.nasa.gov/news-release/president-trump-signs-executive-order-to-create-us-space-academy/\">https://www.nasa.gov/news-release/president-trump-signs-executive-order-to-create-us-space-academy/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "frhj0c5ne96680e",
+      "author": "Sara Lindqvist",
+      "title": "National Lab 15",
+      "createdAt": "2026-09-01T05:23:17.318Z",
+      "updatedAt": "2026-09-01T05:23:17.318Z",
+      "categryId": "Space",
+      "content": [
+        {
+          "componentId": "oqh9wr3lj5w9dg5",
+          "componenType": "Image",
+          "data": "https://www.nasa.gov/wp-content/uploads/2026/08/hwhapep435-national-lab-15-featured.png",
+          "numbered": false
+        },
+        {
+          "componentId": "0cg4ipuejrrv9e1",
+          "componenType": "Paragraph",
+          "data": "On episode 435, ISS National Laboratory Public Affairs and Outreach Lead Patrick O’Neill reflects on 15 years of science aboard the space station and looks ahead to what’s next.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.nasa.gov/podcasts/houston-we-have-a-podcast/national-lab-15/\">https://www.nasa.gov/podcasts/houston-we-have-a-podcast/national-lab-15/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "38k3e148wndx83r",
+      "author": "Sara Lindqvist",
+      "title": "Expedition 75",
+      "createdAt": "2026-09-01T05:23:17.828Z",
+      "updatedAt": "2026-09-01T05:23:17.828Z",
+      "categryId": "Space",
+      "content": [
+        {
+          "componentId": "l0gxbej28dctxjl",
+          "componenType": "Image",
+          "data": "https://www.nasa.gov/wp-content/uploads/2026/07/iss075-s-002-mission-hero.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "ztw9nvgz7a4vvr8",
+          "componenType": "Paragraph",
+          "data": "Expedition 75 began on July 26, 2026, and will end in spring 2027. The crew will welcome the SpaceX Crew-13 mission in late summer while exploring in-space manufacturing techniques, augmented reality and artificial intelligence methods for crew health checks, and bioprinting human tissue.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.nasa.gov/mission/expedition-75/\">https://www.nasa.gov/mission/expedition-75/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "qwi1zq4nilpoip9",
+      "author": "Sara Lindqvist",
+      "title": "Humans In Space",
+      "createdAt": "2026-09-01T05:23:18.320Z",
+      "updatedAt": "2026-09-01T05:23:18.320Z",
+      "categryId": "Space",
+      "content": [
+        {
+          "componentId": "m0q89r7nsc2mn8s",
+          "componenType": "Image",
+          "data": "https://www.nasa.gov/wp-content/uploads/2022/12/51476067951-e10dfb6875-o.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "ybjzvxmmur5l5up",
+          "componenType": "Paragraph",
+          "data": "For more than two decades, people have lived and worked continuously aboard the International Space Station, advancing scientific knowledge, and making research breakthroughs that are not possible on Earth. Human space exploration addresses fundamental questions about our place in the universe and the history of our solar system. NASA’s exploration vision is anchored in providing value for humanit\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.nasa.gov/humans-in-space/\">https://www.nasa.gov/humans-in-space/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "iu0q6rfuaq315hy",
+      "author": "Astronomy Staff",
+      "title": "STARMUS Festival cofounders Sir Brian May and Garik Israelian presented Sir Ridley Scott with the 2026 Stephen Hawking Medal for Science Communication",
+      "createdAt": "2026-08-27T21:19:05+00:00",
+      "updatedAt": "2026-09-01T05:23:18.336Z",
+      "categryId": "Space",
+      "content": [
+        {
+          "componentId": "lgq60u3mxfbv3xd",
+          "componenType": "Image",
+          "data": "https://www.astronomy.com/wp-content/uploads/2026/08/Ridley-Scott-receives-Stephen-Hawking-Medal.png?resize=1200,630",
+          "numbered": false
+        },
+        {
+          "componentId": "vinomtzpyti9if0",
+          "componenType": "Paragraph",
+          "data": "categories:Science | tags:\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.astronomy.com/science/starmus-festival-cofounders-sir-brian-may-and-garik-israelian-presented-sir-ridley-scott-with-the-2026-stephen-hawking-medal-for-science-communication/\">https://www.astronomy.com/science/starmus-festival-cofounders-sir-brian-may-and-garik-israelian-presented-sir-ridley-scott-with-the-2026-stephen-hawking-medal-for-science-communication/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "k6tk38ew0ej782x",
+      "author": "Sara Lindqvist",
+      "title": "A new era dawns for astronomy",
+      "createdAt": "2026-09-01T05:23:18.751Z",
+      "updatedAt": "2026-09-01T05:23:18.751Z",
+      "categryId": "Space",
+      "content": [
+        {
+          "componentId": "mqyhc964der4kz8",
+          "componenType": "Image",
+          "data": "https://www.astronomy.com/wp-content/uploads/2026/08/Pascal-Fouquet-Roman-launch-Falcon-Heavy-transit-of-Sun.jpg?resize=1200,630",
+          "numbered": false
+        },
+        {
+          "componentId": "qywdduxbnmlpdif",
+          "componenType": "Paragraph",
+          "data": "Pascal Fouquet, taken from Titusville, Florida The Falcon Heavy booster carrying NASA’s Nancy Grace Roman Space Telescope aloft transits a rising Sun just after liftoff from Kennedy Space Center on Sunday, Aug. 30, 2026. The photographer captured the moment with a Nikon DSLR and zoom lens at 500mm equipped with a 16.6-stop neutral-density solar filter.Continue reading \"A new era dawns for astronom\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.astronomy.com/picture-of-the-day/photo/a-new-era-dawns-for-astronomy/\">https://www.astronomy.com/picture-of-the-day/photo/a-new-era-dawns-for-astronomy/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "pa01hgf82wivovi",
+      "author": "Debra Werner",
+      "title": "Planet Tanager-2 and 18 SuperDoves arrive at launch site",
+      "createdAt": "2026-09-01T00:32:06+00:00",
+      "updatedAt": "2026-09-01T05:23:18.784Z",
+      "categryId": "Space",
+      "content": [
+        {
+          "componentId": "545ohtrv2svre6x",
+          "componenType": "Image",
+          "data": "https://spacenews.com/wp-content/uploads/2026/08/rsz_tan.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "wfv3nirk5b5nxom",
+          "componenType": "Paragraph",
+          "data": "Planet Tanager-2 and 18 SuperDoves arrive at launch site\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://spacenews.com/planet-tanager-2-and-18-superdoves-arrive-at-launch-site/\">https://spacenews.com/planet-tanager-2-and-18-superdoves-arrive-at-launch-site/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "grt4o66hh6c1l73",
+      "author": "Frontgrade Technologies",
+      "title": "Speed to Field Starts Below the Prime",
+      "createdAt": "2026-08-31T13:30:43+00:00",
+      "updatedAt": "2026-09-01T05:23:19.273Z",
+      "categryId": "Space",
+      "content": [
+        {
+          "componentId": "sx0afoouw7qsz9x",
+          "componenType": "Image",
+          "data": "https://spacenews.com/wp-content/uploads/2024/08/Astronaut001-headerImage-1200x930-1.webp",
+          "numbered": false
+        },
+        {
+          "componentId": "skldouo7ci9ymo3",
+          "componenType": "Paragraph",
+          "data": "Speed to Field Starts Below the Prime\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://spacenews.com/speed-to-field-starts-below-the-prime/\">https://spacenews.com/speed-to-field-starts-below-the-prime/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "o4xtz18l44ypj6e",
+      "author": "Jeff Foust",
+      "title": "OHB wins contract to build IRIS² medium Earth orbit satellites",
+      "createdAt": "2026-08-31T23:01:48+00:00",
+      "updatedAt": "2026-09-01T05:23:19.776Z",
+      "categryId": "Space",
+      "content": [
+        {
+          "componentId": "57ucahqekjzwoam",
+          "componenType": "Image",
+          "data": "https://spacenews.com/wp-content/uploads/2026/08/iris2.jpeg",
+          "numbered": false
+        },
+        {
+          "componentId": "x4aa0l2iyiewlvd",
+          "componenType": "Paragraph",
+          "data": "OHB won a contract worth more than a billion dollars Aug. 31 to build the satellites for the medium Earth orbit, or MEO, shell of a European constellation.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://spacenews.com/ohb-wins-contract-to-build-iris%c2%b2-medium-earth-orbit-satellites/\">https://spacenews.com/ohb-wins-contract-to-build-iris%c2%b2-medium-earth-orbit-satellites/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "oltie89qao3nh8o",
+      "author": "Todd Harrison",
+      "title": "America needs a Space Academy that invests in people, not buildings",
+      "createdAt": "2026-08-31T20:04:41+00:00",
+      "updatedAt": "2026-09-01T05:23:20.272Z",
+      "categryId": "Space",
+      "content": [
+        {
+          "componentId": "cdfi02fbr596mbs",
+          "componenType": "Image",
+          "data": "https://spacenews.com/wp-content/uploads/2026/08/NHQ20260828_admin_0022-large.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "9e9sfij50awu07r",
+          "componenType": "Paragraph",
+          "data": "America needs a Space Academy that invests in people, not buildings\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://spacenews.com/america-needs-a-space-academy-that-invests-in-people-not-buildings/\">https://spacenews.com/america-needs-a-space-academy-that-invests-in-people-not-buildings/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "pi10xf26wrds1xp",
+      "author": "Jeff Foust",
+      "title": "Diffraqtion raises funding for quantum imaging technology",
+      "createdAt": "2026-08-31T13:00:00+00:00",
+      "updatedAt": "2026-09-01T05:23:20.786Z",
+      "categryId": "Space",
+      "content": [
+        {
+          "componentId": "pp8witux32wuwbt",
+          "componenType": "Image",
+          "data": "https://i0.wp.com/spacenews.com/wp-content/uploads/2026/08/diffraqtion.jpeg?fit=2500%2C1552&ssl=1",
+          "numbered": false
+        },
+        {
+          "componentId": "593x0i9nuj8xmxm",
+          "componenType": "Paragraph",
+          "data": "A startup has raised $10 million to advance technology for space cameras that promises to resolve details not possible with conventional systems.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://spacenews.com/diffraqtion-raises-funding-for-quantum-imaging-technology/\">https://spacenews.com/diffraqtion-raises-funding-for-quantum-imaging-technology/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "mw1yq993gtckiy6",
+      "author": "Doug Cooke",
+      "title": "Let’s launch the Artemis 3 mission to the moon in 2027",
+      "createdAt": "2026-08-31T13:00:00+00:00",
+      "updatedAt": "2026-09-01T05:23:21.282Z",
+      "categryId": "Space",
+      "content": [
+        {
+          "componentId": "qal5t0mq1y1x9va",
+          "componenType": "Image",
+          "data": "https://i0.wp.com/spacenews.com/wp-content/uploads/2025/12/moon-to-mars-scaled.png?fit=2560%2C1440&ssl=1",
+          "numbered": false
+        },
+        {
+          "componentId": "a26yo3gnu8sbcyk",
+          "componenType": "Paragraph",
+          "data": "Let’s launch the Artemis 3 mission to the moon in 2027\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://spacenews.com/lets-launch-the-artemis-3-mission-to-the-moon-in-2027/\">https://spacenews.com/lets-launch-the-artemis-3-mission-to-the-moon-in-2027/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "quv0hma7kmar5sn",
+      "author": "Sandra Erwin",
+      "title": "Gravitics to build ‘orbital carriers’ for space-based missile defense",
+      "createdAt": "2026-08-31T12:07:27+00:00",
+      "updatedAt": "2026-09-01T05:23:21.786Z",
+      "categryId": "Space",
+      "content": [
+        {
+          "componentId": "2ce4f3idzmvthzj",
+          "componenType": "Image",
+          "data": "https://spacenews.com/wp-content/uploads/2026/08/formdrs_001.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "6xdv8k1xhx5h85h",
+          "componenType": "Paragraph",
+          "data": "Gravitics to build ‘orbital carriers’ for space-based missile defense Gravitics to build three ‘orbital carriers’ for Golden Dome\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://spacenews.com/gravitics-to-build-orbital-carriers-for-space-based-missile-defense/\">https://spacenews.com/gravitics-to-build-orbital-carriers-for-space-based-missile-defense/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "ri4s6m3yb9gg6bq",
+      "author": "Sara Lindqvist",
+      "title": "Space Minds Podcast",
+      "createdAt": "2026-08-27T10:50:34-04:00",
+      "updatedAt": "2026-09-01T05:23:22.348Z",
+      "categryId": "Space",
+      "content": [
+        {
+          "componentId": "2abii8f2nl15tq9",
+          "componenType": "Image",
+          "data": "https://spacenews.com/wp-content/uploads/2025/02/1500x1125.png",
+          "numbered": false
+        },
+        {
+          "componentId": "vji0okkssvz5c68",
+          "componenType": "Paragraph",
+          "data": "Space Minds is a new podcast from SpaceNews that focuses on the inspiring leaders, technologies and exciting opportunities in space.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://spacenews.com/space-minds-podcast/\">https://spacenews.com/space-minds-podcast/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "kbr9w34clwkq21o",
+      "author": "Vito Technology, Inc.",
+      "title": "Astronomical Events in September 2026: What to See in the Night Sky?",
+      "createdAt": "2026-08-28T06:00:00+00:00",
+      "updatedAt": "2026-09-01T05:23:26.333Z",
+      "categryId": "Space",
+      "content": [
+        {
+          "componentId": "yl7rx0lbx35t8s7",
+          "componenType": "Image",
+          "data": "https://starwalk.space/gallery/images/september-astronomical-events-2026/1140x641.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "s4h1dx07jenug3s",
+          "componenType": "Paragraph",
+          "data": "What’s happening in the sky in September 2026? See the month’s best astronomical events, from bright Venus to planetary occultations and unusual alignments.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://starwalk.space/en/news/night-sky-tonight-september\">https://starwalk.space/en/news/night-sky-tonight-september</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "6920m7yz01li2yj",
+      "author": "Vito Technology, Inc.",
+      "title": "Best Constellations to See in September",
+      "createdAt": "2026-08-28T00:00:00+00:00",
+      "updatedAt": "2026-09-01T05:23:26.875Z",
+      "categryId": "Space",
+      "content": [
+        {
+          "componentId": "f60p5q5yytnbsro",
+          "componenType": "Image",
+          "data": "https://starwalk.space/gallery/images/september-constellations-main/1140x641.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "x64jofyfc3gdfdk",
+          "componenType": "Paragraph",
+          "data": "Discover the best constellations to see in September, including Capricornus and Cygnus. Learn where and when to find them from both hemispheres.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://starwalk.space/en/news/september-constellations\">https://starwalk.space/en/news/september-constellations</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "er7trchfqrjiyrf",
+      "author": "Vito Technology, Inc.",
+      "title": "Bright “Star” Next to Moon: What Is Next to the Moon Tonight?",
+      "createdAt": "2026-08-31T00:00:00+00:00",
+      "updatedAt": "2026-09-01T05:23:27.360Z",
+      "categryId": "Space",
+      "content": [
+        {
+          "componentId": "5cbvdlcepytflu3",
+          "componenType": "Image",
+          "data": "https://starwalk.space/gallery/images/big-moon-planets-02/1140x641.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "ihdmzlh9qrsukfj",
+          "componenType": "Paragraph",
+          "data": "What is that bright dot shining near the Moon tonight? Find out about stars and planets that can be seen next to our natural satellite this month!\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://starwalk.space/en/news/moon-in-conjunction-with-mars-venus-saturn-jupiter\">https://starwalk.space/en/news/moon-in-conjunction-with-mars-venus-saturn-jupiter</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "84tryfr9yrjivyp",
+      "author": "Vito Technology, Inc.",
+      "title": "Full Moon Calendar 2026: When Is the Next Full Moon?",
+      "createdAt": "2026-08-30T16:24:00+00:00",
+      "updatedAt": "2026-09-01T05:23:27.856Z",
+      "categryId": "Space",
+      "content": [
+        {
+          "componentId": "ixigf2ztz72u86j",
+          "componenType": "Image",
+          "data": "https://starwalk.space/gallery/images/full-moons-2026-3/1140x641.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "kem2ea5kqj2jnjr",
+          "componenType": "Paragraph",
+          "data": "Explore the Full Moons of 2026, see when each one occurs, and discover the standout features of every Full Moon this year.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://starwalk.space/en/news/full-moon-calendar-2026\">https://starwalk.space/en/news/full-moon-calendar-2026</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "hs23qwf8q72fdtc",
+      "author": "Vito Technology, Inc.",
+      "title": "Meteor Showers in September 2026: When & Where to See?",
+      "createdAt": "2026-08-29T15:00:00+00:00",
+      "updatedAt": "2026-09-01T05:23:28.371Z",
+      "categryId": "Space",
+      "content": [
+        {
+          "componentId": "02ihg88sqw6j2pn",
+          "componenType": "Image",
+          "data": "https://starwalk.space/gallery/images/watch-shooting-stars-in-september-2021/1140x641.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "mlze71wm9ymglie",
+          "componenType": "Paragraph",
+          "data": "Get ready for September meteor showers! Our article provides a comprehensive guide – from scientific facts to best viewing tips – so that you never miss a “shooting star”.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://starwalk.space/en/news/september-meteor-showers-complete-guide\">https://starwalk.space/en/news/september-meteor-showers-complete-guide</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "e7hhh45it271r4r",
+      "author": "Alex Greenberger",
+      "title": "84 Must-See Exhibitions and Biennials to See in Fall 2026",
+      "createdAt": "2026-08-31T08:00:00+00:00",
+      "updatedAt": "2026-09-01T05:23:28.967Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "ia2dlzqupgue57m",
+          "componenType": "Image",
+          "data": "https://www.artnews.com/wp-content/uploads/2026/08/WMAA9084_66_2_cropped_lpr.jpg?w=1024",
+          "numbered": false
+        },
+        {
+          "componentId": "qjh73lsxer87mtz",
+          "componenType": "Paragraph",
+          "data": "See 84 must-see exhibitions and biennials to visit in fall 2026, from a Roy Lichtenstein retrospective to the Bayeux Tapestry.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.artnews.com/list/art-news/news/fall-art-preview-1234792473/\">https://www.artnews.com/list/art-news/news/fall-art-preview-1234792473/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "zi4fa17td6f7ec3",
+      "author": "Alex Greenberger",
+      "title": "Met Museum Cancels John Galliano Exhibition Amid Controversy",
+      "createdAt": "2026-08-31T13:14:14+00:00",
+      "updatedAt": "2026-09-01T05:23:29.414Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "34mh0otecp25dsw",
+          "componenType": "Image",
+          "data": "https://www.artnews.com/wp-content/uploads/2026/08/GettyImages-1236892839.jpg?w=1024",
+          "numbered": false
+        },
+        {
+          "componentId": "cjr1279jktr7i5i",
+          "componenType": "Paragraph",
+          "data": "The Metropolitan Museum of Art cancels its John Galliano show over the designer's previous antisemitic comments.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.artnews.com/art-news/news/met-museum-cancels-john-galliano-exhibition-1234796281/\">https://www.artnews.com/art-news/news/met-museum-cancels-john-galliano-exhibition-1234796281/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "rdp7ie3cnpzmrgj",
+      "author": "Maximilíano Durón",
+      "title": "Marc Andreessen, Ken Griffin Among Biggest Donors to Midterm Elections",
+      "createdAt": "2026-08-31T16:26:44+00:00",
+      "updatedAt": "2026-09-01T05:23:29.970Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "d50mif1lntnfgcj",
+          "componenType": "Image",
+          "data": "https://www.artnews.com/wp-content/uploads/2026/08/andreessen-griffin.jpg?w=1024",
+          "numbered": false
+        },
+        {
+          "componentId": "rbeoae2yb5rz2l6",
+          "componenType": "Paragraph",
+          "data": "Marc Andreessen and Ken Griffin, two of the world's top art collectors, are among the biggest donors to the 2026 US midterm elections.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.artnews.com/art-news/news/marc-andreessen-ken-griffin-midterm-elections-donations-1234796310/\">https://www.artnews.com/art-news/news/marc-andreessen-ken-griffin-midterm-elections-donations-1234796310/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "i4yegkm0c9pih3c",
+      "author": "Francesca Aton",
+      "title": "National Museum Stockholm Acquires Lavinia Fontana Altarpiece",
+      "createdAt": "2026-08-31T16:22:47+00:00",
+      "updatedAt": "2026-09-01T05:23:30.444Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "q1rh7jnckpk3csc",
+          "componenType": "Image",
+          "data": "https://www.artnews.com/wp-content/uploads/2026/08/NM-7736.jpg?w=755",
+          "numbered": false
+        },
+        {
+          "componentId": "23ncmuplrtn4iqt",
+          "componenType": "Paragraph",
+          "data": "The National Museum in Stockholm has acquired an altarpiece by Lavinia Fontana that has gone largely unseen by the public.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.artnews.com/art-news/news/lavinia-fontana-altarpiece-national-museum-stockholm-1234796291/\">https://www.artnews.com/art-news/news/lavinia-fontana-altarpiece-national-museum-stockholm-1234796291/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "blyqgca267yng5n",
+      "author": "Anne Doran",
+      "title": "Baltimore Museum of Art Announces New Acquisitions",
+      "createdAt": "2026-08-31T21:11:14+00:00",
+      "updatedAt": "2026-09-01T05:23:30.949Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "snrd3hvvvlaf1t7",
+          "componenType": "Image",
+          "data": "https://www.artnews.com/wp-content/uploads/2026/08/Banerjee_Contagious-Migrations2-copy-1.jpg?w=1024",
+          "numbered": false
+        },
+        {
+          "componentId": "pz6dz987lzkom4z",
+          "componenType": "Paragraph",
+          "data": "The new additions to BMA’s  collection include works by Bernd and Hilla Becher, Jack Whitten, Rina Banerjee, Lee Ufan, and Ben Shahn\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.artnews.com/list/art-news/news/baltimore-museum-of-art-announces-new-acquisitions-1234796364/\">https://www.artnews.com/list/art-news/news/baltimore-museum-of-art-announces-new-acquisitions-1234796364/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "f43hvn304dq3zk4",
+      "author": "The Editors of ARTnews",
+      "title": "TENNOZ ART WEEK 2026 in September with Fair, Open Studios and Museum",
+      "createdAt": "2026-08-31T21:00:00+00:00",
+      "updatedAt": "2026-09-01T05:23:31.443Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "9cmmqs775dzvi1x",
+          "componenType": "Image",
+          "data": "https://www.artnews.com/wp-content/uploads/2026/08/KV_TAW2026-1.jpg?w=1000",
+          "numbered": false
+        },
+        {
+          "componentId": "wzbldup8zwsajqr",
+          "componenType": "Paragraph",
+          "data": "Warehouse TERRADA will hold TENNOZ ART WEEK 2026, a multi-venue art event in Tennoz, Tokyo, from September 10 to 13.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.artnews.com/art-news/sponsored-content/warehouse-terrada-1-tennoz-art-week-2026-fair-museum-1234795767/\">https://www.artnews.com/art-news/sponsored-content/warehouse-terrada-1-tennoz-art-week-2026-fair-museum-1234795767/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "nu6jdh8xfdnbowc",
+      "author": "Sara Lindqvist",
+      "title": "Sponsored Content",
+      "createdAt": "2026-09-01T05:23:31.951Z",
+      "updatedAt": "2026-09-01T05:23:31.951Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "whsf25hjplwcf9b",
+          "componenType": "Image",
+          "data": "https://s0.wp.com/_si/?t=eyJpbWciOiJodHRwczpcL1wvczAud3AuY29tXC9pXC9ibGFuay5qcGciLCJ0eHQiOiJBUlRuZXdzLmNvbSIsInRlbXBsYXRlIjoiaGlnaHdheSIsImZvbnQiOiIiLCJibG9nX2lkIjoxNjg4OTA5NjJ9.fDpWRPsK0W5Vb0H8yTkNH0jDBSau1Vc0QKcCjh6Zfc4MQ",
+          "numbered": false
+        },
+        {
+          "componentId": "zdvsz0yr4rj3nya",
+          "componenType": "Paragraph",
+          "data": "No preview available.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.artnews.com/c/art-news/sponsored-content/\">https://www.artnews.com/c/art-news/sponsored-content/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "7dqbms0c9go4gen",
+      "author": "Valentina Di Liscia",
+      "title": "\"Marina\" Dares You to Laugh at Technology",
+      "createdAt": "2026-08-31T21:34:35+00:00",
+      "updatedAt": "2026-09-01T05:23:32.340Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "fs8lc8rw2e2gqhn",
+          "componenType": "Image",
+          "data": "https://storage.ghost.io/c/51/f8/51f871d8-b6be-4a73-b958-0ca4fff0110a/content/images/size/w1200/2026/08/Marina-LI-vnina-31.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "6net92gbvlirhk8",
+          "componenType": "Paragraph",
+          "data": "Julio Torres and Martine Gutierrez's new performance is a grotesque parade of visual delights that defangs our toxic relationship to our screens.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://hyperallergic.com/marina-dares-you-to-laugh-at-technology/\">https://hyperallergic.com/marina-dares-you-to-laugh-at-technology/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "2q6r23ab6jhuhyw",
+      "author": "Anne Doran",
+      "title": "New Discoveries at Egypt's Bubasteion Necropois Show Its Use Over Time",
+      "createdAt": "2026-08-31T20:15:13+00:00",
+      "updatedAt": "2026-09-01T05:23:32.426Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "2njgp44gtzxqp61",
+          "componenType": "Image",
+          "data": "https://www.artnews.com/wp-content/uploads/2026/08/saq1.jpg?w=1024",
+          "numbered": false
+        },
+        {
+          "componentId": "4aylwfmtdavuod3",
+          "componenType": "Paragraph",
+          "data": "The finds offer researchers insight into ancient Egypt’s burial practices funerary as they changed across successive historical periods\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.artnews.com/art-news/news/egyptian-official-tomb-later-burials-discovered-saqqara-1234796349/\">https://www.artnews.com/art-news/news/egyptian-official-tomb-later-burials-discovered-saqqara-1234796349/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "8d80w5vb9r6tl9l",
+      "author": "Claudia Ross",
+      "title": "Jennifer Higgie’s Empathetic Elegy for Richard Dadd",
+      "createdAt": "2026-08-31T20:27:25+00:00",
+      "updatedAt": "2026-09-01T05:23:32.822Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "2pux6ijgqy5z805",
+          "componenType": "Image",
+          "data": "https://storage.ghost.io/c/51/f8/51f871d8-b6be-4a73-b958-0ca4fff0110a/content/images/size/w1200/2026/08/1920px-Bacchanalian_Scene_by_Richard_Dadd-copy.jpeg",
+          "numbered": false
+        },
+        {
+          "componentId": "ema6nguhbxwydsm",
+          "componenType": "Paragraph",
+          "data": "In “Bedlam,” the author and art critic does not describe the English painter’s often-sensationalized mental deterioration. Instead, she writes the novel in his voice.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://hyperallergic.com/jennifer-higgies-empathetic-elegy-for-richard-dadd/\">https://hyperallergic.com/jennifer-higgies-empathetic-elegy-for-richard-dadd/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "mhnrkg647d17hec",
+      "author": "John Yau",
+      "title": "Catherine Murphy Has Her Cake and Eats It Too",
+      "createdAt": "2026-08-31T18:52:48+00:00",
+      "updatedAt": "2026-09-01T05:23:33.342Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "dcepiifv1z1qh0w",
+          "componenType": "Image",
+          "data": "https://storage.ghost.io/c/51/f8/51f871d8-b6be-4a73-b958-0ca4fff0110a/content/images/size/w1200/2026/08/PF9751_Murphy_One-eighty_2026_2.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "urp4gor01yhzlrc",
+          "componenType": "Paragraph",
+          "data": "The painter reconciles modernist conventions like the grid with one-point perspective, creating something fresh and entirely her own.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://hyperallergic.com/catherine-murphy-has-her-cake-and-eats-it-too/\">https://hyperallergic.com/catherine-murphy-has-her-cake-and-eats-it-too/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "quxvto7dqcotp4k",
+      "author": "Rhea Nayyar",
+      "title": "What in the Devil Was Peter Thiel Doing at the British Museum?",
+      "createdAt": "2026-08-31T18:28:53+00:00",
+      "updatedAt": "2026-09-01T05:23:33.834Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "8jo1xtdl0esa5cg",
+          "componenType": "Image",
+          "data": "https://storage.ghost.io/c/51/f8/51f871d8-b6be-4a73-b958-0ca4fff0110a/content/images/size/w1200/2026/08/GettyImages-1239812167.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "7g0eqxoact9r5j8",
+          "componenType": "Paragraph",
+          "data": "For reasons that remain unclear, the London museum hosted the Palantir founder at a VIP preview of the Bayeux Tapestry.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://hyperallergic.com/what-in-the-devil-was-peter-thiel-doing-at-the-british-museum/\">https://hyperallergic.com/what-in-the-devil-was-peter-thiel-doing-at-the-british-museum/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "wly8t6v9oexlhtz",
+      "author": "Sara Lindqvist",
+      "title": "Expressionism - Google Arts & Culture",
+      "createdAt": "2026-09-01T05:23:34.045Z",
+      "updatedAt": "2026-09-01T05:23:34.045Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "hxgrj6daytixdve",
+          "componenType": "Image",
+          "data": "https://lh3.googleusercontent.com/ci/AL18g_TWb1WIGF62FAF8WFdkTqY2tqvFuPNchXENSk0zLFK4yT494nMt1EDIXtfN_D750JtOHwqXHw",
+          "numbered": false
+        },
+        {
+          "componentId": "1xoeh8f3ywmv9jf",
+          "componenType": "Paragraph",
+          "data": "A projection of the inner image\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://artsandculture.google.com/story/QgVhme-3gMzM3g\">https://artsandculture.google.com/story/QgVhme-3gMzM3g</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "b6xhtrsdanbb1rk",
+      "author": "Sara Lindqvist",
+      "title": "Italy: All Roads Lead to Culture - Google Arts & Culture",
+      "createdAt": "2026-09-01T05:23:35.192Z",
+      "updatedAt": "2026-09-01T05:23:35.192Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "osuesydbfa9mpvr",
+          "componenType": "Image",
+          "data": "https://lh3.googleusercontent.com/ci/AL18g_ROZ7Y5WAgXNMdQEzJeTeMENVuw6BVu4pcaRoqKqolrgHblx8vvnEZuhG2qyAJbtGm0w1Yd0w",
+          "numbered": false
+        },
+        {
+          "componentId": "x6ba5uxumq812su",
+          "componenType": "Paragraph",
+          "data": "Explore more than 250 cultural institutions to discover Italy’s unique \nmasterpieces, landscapes, and cultural heritage\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://artsandculture.google.com/project/wonders-of-italy\">https://artsandculture.google.com/project/wonders-of-italy</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "tsjcr1nejyycl6u",
+      "author": "Sara Lindqvist",
+      "title": "Milan Cathedral - Google Arts & Culture",
+      "createdAt": "2026-09-01T05:23:35.394Z",
+      "updatedAt": "2026-09-01T05:23:35.394Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "sazazzzxzrzsqfz",
+          "componenType": "Image",
+          "data": "https://lh3.googleusercontent.com/ci/AL18g_S16UdddsbHYjSLMMc4EOjCF1REb0YmRA5wlkDpZbJzsaGEOC4OExyXAbQkxqAvRnZNl69dNA",
+          "numbered": false
+        },
+        {
+          "componentId": "4681yzw9xnngr1h",
+          "componenType": "Paragraph",
+          "data": "Milan Cathedral Remixed - The Duomo as you've never seen it before\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://artsandculture.google.com/project/milan-cathedral\">https://artsandculture.google.com/project/milan-cathedral</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "36if74ykfzx6aa0",
+      "author": "Sara Lindqvist",
+      "title": "Painting with gunpowder - Google Arts & Culture",
+      "createdAt": "2026-09-01T05:23:35.797Z",
+      "updatedAt": "2026-09-01T05:23:35.797Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "nbk17uvg0hg9dqj",
+          "componenType": "Image",
+          "data": "https://lh3.googleusercontent.com/ci/AL18g_QOgoc6I6g-8YHaXpOzJCWipoPbb0goJFJs4EhWIHcgbk4aefRL3efh_EwFASlRpe3LR2UR_A",
+          "numbered": false
+        },
+        {
+          "componentId": "jth8y0i1nslyww0",
+          "componenType": "Paragraph",
+          "data": "Cai Guo-Qiang celebrates the invention of gunpowder in an exclusive documentary.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://artsandculture.google.com/story/lgWBOC2-ocn_KA\">https://artsandculture.google.com/story/lgWBOC2-ocn_KA</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "11pep9o5ue12vjn",
+      "author": "Sara Lindqvist",
+      "title": "Vienna State Opera, Vienna, Austria - Google Arts & Culture",
+      "createdAt": "2026-09-01T05:23:36.319Z",
+      "updatedAt": "2026-09-01T05:23:36.319Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "addoe9umyt054bo",
+          "componenType": "Image",
+          "data": "https://lh3.googleusercontent.com/ci/AL18g_ShGivDZn0mZkm8epvSo9iYTEKvJ51P315dMjl7BzOKdHMztM1MN7QTQi0xFM-m2t8Doh_E6Q",
+          "numbered": false
+        },
+        {
+          "componentId": "rpo5yh7izovsfr3",
+          "componenType": "Paragraph",
+          "data": "The structure of the opera house was planned by the Viennese architect \nAugust Sicard von Sicardsburg, while the inside was designed by interior \ndecorator E...\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://artsandculture.google.com/partner/wiener-staatsoper\">https://artsandculture.google.com/partner/wiener-staatsoper</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "3b823678k35p3ii",
+      "author": "Sara Lindqvist",
+      "title": "Beethoven-House Bonn, Bonn, Germany - Google Arts & Culture",
+      "createdAt": "2026-09-01T05:23:36.743Z",
+      "updatedAt": "2026-09-01T05:23:36.743Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "54aj44p6f4y1u1l",
+          "componenType": "Image",
+          "data": "https://lh3.googleusercontent.com/ci/AL18g_TbSoWuvq8dHEN9GHXRBq6SufCHlahuSo3GlOFVv1DUsXONgSF0EmJK-vcDajlcjxz4jfvddCw",
+          "numbered": false
+        },
+        {
+          "componentId": "88rm6broy2t9jbi",
+          "componenType": "Paragraph",
+          "data": "The museum at Ludwig van Beethoven's birth place is one of the most \nfrequented music museums worldwide and one of the 100 most popular sights \nin Germany. S...\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://artsandculture.google.com/partner/beethoven-haus-bonn\">https://artsandculture.google.com/partner/beethoven-haus-bonn</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "manp3zx7gus1uwe",
+      "author": "Sara Lindqvist",
+      "title": "Paint With Music - Google Arts & Culture",
+      "createdAt": "2026-09-01T05:23:37.090Z",
+      "updatedAt": "2026-09-01T05:23:37.090Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "z46712a0gdzgvkr",
+          "componenType": "Image",
+          "data": "https://lh3.googleusercontent.com/ci/AL18g_Q27WPSw4gh3i4BC1-R-Lx4ytDDTJB7M4TGgrLiKweK8fm0UCvgLmUxN00JADIEyzzJCjKUnMNg",
+          "numbered": false
+        },
+        {
+          "componentId": "cqawk6p7aqqemeu",
+          "componenType": "Paragraph",
+          "data": "Create music with a brushstroke\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://artsandculture.google.com/experiment/paint-with-music/YAGuJyDB-XbbWg\">https://artsandculture.google.com/experiment/paint-with-music/YAGuJyDB-XbbWg</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "gt7wkhqf31tx3pn",
+      "author": "Grace Ebert",
+      "title": "Marka27 Superimposes Pop Culture, Graffiti, and Political Critique in Urgent Portraits",
+      "createdAt": "2026-08-31T18:28:51+00:00",
+      "updatedAt": "2026-09-01T05:23:37.427Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "nhuqxjbgs6b7php",
+          "componenType": "Image",
+          "data": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/marka-1.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "gg3axonz44jexx9",
+          "componenType": "Paragraph",
+          "data": "Marka27 taps into his own experiences of living between cultures and the arbitrary nature of national borders.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.thisiscolossal.com/2026/08/marka27-ni-de-aqui-ni-de-alla-portraits/\">https://www.thisiscolossal.com/2026/08/marka27-ni-de-aqui-ni-de-alla-portraits/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "cnu65ncgnnpa196",
+      "author": "Sara Lindqvist",
+      "title": "A Pelican and other Birds near a Pool, Known as ‘The Floating Feather’ - Hondecoeter, Melchior d' - Google Arts & Culture",
+      "createdAt": "2026-09-01T05:23:37.848Z",
+      "updatedAt": "2026-09-01T05:23:37.848Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "lxfs2vdqx58fwl8",
+          "componenType": "Image",
+          "data": "https://lh3.googleusercontent.com/ci/AL18g_TlnUbDAQDKn9R07EqpV8olS78TlFZv25jY0NBbXAhwF1ukwcU-buQp9OBx0CwvF_5XpU0Ibyg",
+          "numbered": false
+        },
+        {
+          "componentId": "bqzhldj4yt5eeye",
+          "componenType": "Paragraph",
+          "data": "It must have been a great honour for Hondecoeter to receive commissions \nfrom the country’s ruler. He made this regal bird scene for Het Loo, the \npalace of ...\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://artsandculture.google.com/asset/a-pelican-and-other-birds-near-a-pool-known-as-‘the-floating-feather’-hondecoeter-melchior-d/6AF60_Uj-Fbypw\">https://artsandculture.google.com/asset/a-pelican-and-other-birds-near-a-pool-known-as-‘the-floating-feather’-hondecoeter-melchior-d/6AF60_Uj-Fbypw</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "ijzwv5vwbxh74zh",
+      "author": "Grace Ebert",
+      "title": "Contradiction and the Unknown Permeate Isaiah Lee's Imaginative Dollhouse Paintings",
+      "createdAt": "2026-08-31T14:11:17+00:00",
+      "updatedAt": "2026-09-01T05:23:37.975Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "2u9bdpi6wpvd8os",
+          "componenType": "Image",
+          "data": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/lee-6.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "ew21viowjrjvp0q",
+          "componenType": "Paragraph",
+          "data": "For Chicago artist Isaiah Lee, a dollhouse becomes the site of uncanny imaginations in his surreal paintings.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.thisiscolossal.com/2026/08/isaiah-lee-paintings/\">https://www.thisiscolossal.com/2026/08/isaiah-lee-paintings/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "6czi5ieiua5jdtw",
+      "author": "Colossal",
+      "title": "September 2026 Opportunities: Open Calls, Residencies, and Grants for Artists",
+      "createdAt": "2026-08-28T11:42:26+00:00",
+      "updatedAt": "2026-09-01T05:23:38.434Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "6wzrdwaqvytxfzk",
+          "componenType": "Image",
+          "data": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/yoshitora.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "pn1bpw9hg1y8qev",
+          "componenType": "Paragraph",
+          "data": "Every month, we share opportunities for artists and designers, including open calls, grants, fellowships, and residencies.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.thisiscolossal.com/2026/08/september-2026-open-calls-residencies-artist-grants/\">https://www.thisiscolossal.com/2026/08/september-2026-open-calls-residencies-artist-grants/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "e86tepwgkhtwpq3",
+      "author": "Vincent Noce",
+      "title": "Alleged antiquities smuggler’s children convicted of money laundering in Germany",
+      "createdAt": "2026-08-31T14:34:25.111000+00:00",
+      "updatedAt": "2026-09-01T05:23:40.846Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "warn0e64gicu5qm",
+          "componenType": "Image",
+          "data": "https://cdn.sanity.io/images/cxgd3urn/production/0082831ef857e5182b8026babdeccdb9053cd2dc-2000x2667.jpg?rect=0,1145,2000,1200&w=1200&h=720&q=85&fit=crop&auto=format",
+          "numbered": false
+        },
+        {
+          "componentId": "d0huoaco5c6efsc",
+          "componenType": "Paragraph",
+          "data": "A criminal court in Hamburg has ordered the confiscation of €32m in sales proceeds from Serop Simonian’s children, who plan to appeal their conviction\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.theartnewspaper.com/2026/08/31/alleged-antiquities-smuggler-serop-simonian-children-convicted-hamburg-court\">https://www.theartnewspaper.com/2026/08/31/alleged-antiquities-smuggler-serop-simonian-children-convicted-hamburg-court</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "eb54kn1lzm2305g",
+      "author": "Verywell",
+      "title": "How To Interpret Mixed Signals in Body Language and Communicate Clearly",
+      "createdAt": "2026-09-01T05:23:42.111Z",
+      "updatedAt": "2026-09-01T05:23:42.111Z",
+      "categryId": "Psychology",
+      "content": [
+        {
+          "componentId": "5pal3ehk2p9sy8r",
+          "componenType": "Image",
+          "data": "https://www.verywellmind.com/thmb/b0pYKs7bLncMBvckw9In1RrsnxE=/8660x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1823932204-3d09dcc237f243819a2319a200f6381d.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "r5b7bml9rka3qi1",
+          "componenType": "Paragraph",
+          "data": "Ever been talking to someone and feel as though what they are saying is not actually representing how they are feeling? They might be sending you mixed signals through their body language.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.verywellmind.com/reading-mixed-signals-in-body-language-12073824\">https://www.verywellmind.com/reading-mixed-signals-in-body-language-12073824</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "847l61hivhrpy1v",
+      "author": "Sarvy Geranpayeh",
+      "title": "Online platform connects hundreds of emerging Iranian artists with collectors abroad",
+      "createdAt": "2026-08-31T16:30:59.236000+00:00",
+      "updatedAt": "2026-09-01T05:23:42.249Z",
+      "categryId": "Art",
+      "content": [
+        {
+          "componentId": "wmo2645fp35b3ie",
+          "componenType": "Image",
+          "data": "https://cdn.sanity.io/images/cxgd3urn/production/c314aade49924e848d699a44f3e3757a14eb8608-800x1000.jpg?rect=0,182,800,480&w=1200&h=720&q=85&fit=crop&auto=format",
+          "numbered": false
+        },
+        {
+          "componentId": "2klpc142wfygpxn",
+          "componenType": "Paragraph",
+          "data": "The Continuum initiative provides rare access to a global audience and market\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.theartnewspaper.com/2026/08/31/online-platform-continuum-connects-iranian-artists-collectors-abroad\">https://www.theartnewspaper.com/2026/08/31/online-platform-continuum-connects-iranian-artists-collectors-abroad</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "7h22iq3irmrpexc",
+      "author": "Verywell",
+      "title": "Trouble Sleeping? Sleep Meditations Can Help—Here Are Five To Try",
+      "createdAt": "2026-09-01T05:23:42.572Z",
+      "updatedAt": "2026-09-01T05:23:42.572Z",
+      "categryId": "Psychology",
+      "content": [
+        {
+          "componentId": "e69k6cm9bvl0bi0",
+          "componenType": "Image",
+          "data": "https://www.verywellmind.com/thmb/4UGMW1vvcDYwM6Fv20xzuLUHyMY=/6673x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1346786144-1988671343a74aba8b0c2c8e29362ed1.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "shrppzv44usxr2b",
+          "componenType": "Paragraph",
+          "data": "If you have trouble falling asleep at night due to anxiety or otherwise, guided meditation for sleep may be helpful to incorporate into your bedtime routine.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.verywellmind.com/guided-sleep-meditation-12034921\">https://www.verywellmind.com/guided-sleep-meditation-12034921</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "l4u1153ggzxphuu",
+      "author": "Verywell",
+      "title": "14 Therapist-Backed Strategies To Overcome Disappointment and Move Forward",
+      "createdAt": "2026-09-01T05:23:43.082Z",
+      "updatedAt": "2026-09-01T05:23:43.082Z",
+      "categryId": "Psychology",
+      "content": [
+        {
+          "componentId": "4ih51gbhlgmejq4",
+          "componenType": "Image",
+          "data": "https://www.verywellmind.com/thmb/VEpdEqQujKbOLor4IOfDMojtjCw=/6000x0/filters:no_upscale():max_bytes(150000):strip_icc()/GalinaZhigalova-a3623315cb094d2e944f7481e302ecc1.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "gxee0dlr81osyb7",
+          "componenType": "Paragraph",
+          "data": "It’s important to come up with ways to cope with disappointment, because if you don’t address it, it can lead to other difficult emotions and mental health challenges.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.verywellmind.com/how-to-cope-with-disappointment-12061857\">https://www.verywellmind.com/how-to-cope-with-disappointment-12061857</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "or1yvtfe9ff4ata",
+      "author": "Verywell",
+      "title": "How Often Do Couples Have Sex? Understanding Frequency and Relationship Satisfaction",
+      "createdAt": "2026-09-01T05:23:43.609Z",
+      "updatedAt": "2026-09-01T05:23:43.609Z",
+      "categryId": "Psychology",
+      "content": [
+        {
+          "componentId": "crf2asibw281d0k",
+          "componenType": "Image",
+          "data": "https://www.verywellmind.com/thmb/2-pIJ_46LT90UkVlcclYX-LKy5o=/4865x0/filters:no_upscale():max_bytes(150000):strip_icc()/young-couple-kissing-in--doorway-of-balcony--bed-in-foreground-2-56d3d5833df78cfb37d4d5b0.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "p6j3y98rcd443lg",
+          "componenType": "Paragraph",
+          "data": "Married couples may worry about how often they have sex and how it compares to others. Statistics offer some insight, but every marriage is different.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.verywellmind.com/how-often-do-married-couples-have-sex-12062818\">https://www.verywellmind.com/how-often-do-married-couples-have-sex-12062818</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "kkskvgx3sty9y62",
+      "author": "Verywell",
+      "title": "What To Say to Someone Who’s Lost a Loved One: Supportive Words and Actions for Grief",
+      "createdAt": "2026-09-01T05:23:44.133Z",
+      "updatedAt": "2026-09-01T05:23:44.133Z",
+      "categryId": "Psychology",
+      "content": [
+        {
+          "componentId": "4n8wwjcb73v8wbu",
+          "componenType": "Image",
+          "data": "https://www.verywellmind.com/thmb/ml6LRjG4rZRmdES3LYNwTaL68pw=/7952x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1287216076-34dc244fb65e4dfc9d73abca5990b0a6.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "h07b4lo6rqj0l3q",
+          "componenType": "Paragraph",
+          "data": "This article suggests some ways you can support someone who’s lost a loved one, as well as some statements they might find helpful to hear while they’re grieving.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.verywellmind.com/what-to-say-when-someone-loses-a-loved-one-12062906\">https://www.verywellmind.com/what-to-say-when-someone-loses-a-loved-one-12062906</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "t07525124sgfnh3",
+      "author": "Sara Lindqvist",
+      "title": "Nine Conversation-Starting Movies to Watch With Your Romantic Partner",
+      "createdAt": "2026-09-01T05:23:44.302Z",
+      "updatedAt": "2026-09-01T05:23:44.302Z",
+      "categryId": "Psychology",
+      "content": [
+        {
+          "componentId": "x4anowhh1vo6bva",
+          "componenType": "Image",
+          "data": "https://ggsc.s3.us-west-2.amazonaws.com/assets/images/movies_not_to_watch_with_partner_2026_-_abcdef_-_0a21b39134b316e51cdc0dd96c5e6bca3c0093e9-fb_-_abcdef_-_94b15742ccdfc3b16fb1fe35872167fe8d42c35d.webp",
+          "numbered": false
+        },
+        {
+          "componentId": "inls6lz2lmkbbm3",
+          "componenType": "Paragraph",
+          "data": "Films that explore the resentments, fantasies, secrets, and compromises in romantic relationships might bring up difficult questions in your own.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://greatergood.berkeley.edu/article/item/nine_conversationstarting_movies_to_watch_with_your_partner\">https://greatergood.berkeley.edu/article/item/nine_conversationstarting_movies_to_watch_with_your_partner</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "i4mb0as260wpqr3",
+      "author": "Psychreg News Team",
+      "title": "Schizophrenia Patients More Open to Long-Acting Injections Once They Have Tried Them, Study Finds",
+      "createdAt": "2026-09-01T03:12:00+00:00",
+      "updatedAt": "2026-09-01T05:23:51.533Z",
+      "categryId": "Psychology",
+      "content": [
+        {
+          "componentId": "bja4x92ywtoada3",
+          "componenType": "Image",
+          "data": "https://www.psychreg.org/wp-content/uploads/2020/11/schizophrenia-brain.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "pdj40lphhgmblxh",
+          "componenType": "Paragraph",
+          "data": "Trying long-acting antipsychotic injections first-hand makes schizophrenia patients far more willing to continue using them.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.psychreg.org/schizophrenia-patients-more-open-long-acting-injections-once-they-have-tried-them-study-finds/\">https://www.psychreg.org/schizophrenia-patients-more-open-long-acting-injections-once-they-have-tried-them-study-finds/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "q0az3jck6y6r1m1",
+      "author": "Psychreg News Team",
+      "title": "New Chinese Guidelines Aim to Save Lives in the Critical Minutes After Major Trauma",
+      "createdAt": "2026-08-30T07:39:14+00:00",
+      "updatedAt": "2026-09-01T05:23:52.036Z",
+      "categryId": "Psychology",
+      "content": [
+        {
+          "componentId": "merwqruyzbjjec8",
+          "componenType": "Image",
+          "data": "https://www.psychreg.org/wp-content/uploads/2017/10/blur-hospital.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "ypqqloqcjssc0f8",
+          "componenType": "Paragraph",
+          "data": "New Chinese trauma guidelines prioritise bleeding control and early treatment to improve survival after serious injury.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.psychreg.org/new-chinese-guidelines-aim-save-lives-critical-minutes-after-major-trauma/\">https://www.psychreg.org/new-chinese-guidelines-aim-save-lives-critical-minutes-after-major-trauma/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "kks7qt0yyjchush",
+      "author": "Psychreg News Team",
+      "title": "Humblebrag Culture Leaves People Less Trusted, New Study Finds",
+      "createdAt": "2026-09-01T00:42:19+00:00",
+      "updatedAt": "2026-09-01T05:23:52.550Z",
+      "categryId": "Psychology",
+      "content": [
+        {
+          "componentId": "xnlcn18efjlfksp",
+          "componenType": "Image",
+          "data": "https://www.psychreg.org/wp-content/uploads/2025/10/influencer.png",
+          "numbered": false
+        },
+        {
+          "componentId": "9z312vldxyi2ewp",
+          "componenType": "Paragraph",
+          "data": "Humblebragging may look harmless, but new research suggests it quietly damages how trustworthy people appear to others.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.psychreg.org/humblebrag-culture-leaves-people-less-trusted-new-study-finds/\">https://www.psychreg.org/humblebrag-culture-leaves-people-less-trusted-new-study-finds/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "1ifh4o77kckc0u6",
+      "author": "Sara Lindqvist",
+      "title": "Society & Culture Archives",
+      "createdAt": "2026-09-01T00:42:19+00:00",
+      "updatedAt": "2026-09-01T05:23:53.066Z",
+      "categryId": "Psychology",
+      "content": [
+        {
+          "componentId": "rinxlicvv8vuhjd",
+          "componenType": "Image",
+          "data": "https://i0.wp.com/www.psychreg.org/wp-content/uploads/2015/01/psychreg-sm-cover-2236.png?fit=1280%2C720&ssl=1",
+          "numbered": false
+        },
+        {
+          "componentId": "ntuzokq6fxg3kts",
+          "componenType": "Paragraph",
+          "data": "No preview available.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.psychreg.org/topic/society-culture/\">https://www.psychreg.org/topic/society-culture/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "abb3zs1n7y6okqa",
+      "author": "Psychreg News Team",
+      "title": "Emotional Intelligence Workshops Help Students Feel Better Equipped, Even Without Measurable Test Score Gains",
+      "createdAt": "2026-08-31T17:45:55+00:00",
+      "updatedAt": "2026-09-01T05:23:53.593Z",
+      "categryId": "Psychology",
+      "content": [
+        {
+          "componentId": "xy3r9ncsf93qard",
+          "componenType": "Image",
+          "data": "https://www.psychreg.org/wp-content/uploads/2019/09/youngsters-studying.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "s9bvyi3w2msbrjw",
+          "componenType": "Paragraph",
+          "data": "Emotional intelligence workshops left students feeling more confident, though test scores showed no measurable improvement.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.psychreg.org/emotional-intelligence-workshops-help-students-feel-better-equipped-even-measurable-test-score-gains/\">https://www.psychreg.org/emotional-intelligence-workshops-help-students-feel-better-equipped-even-measurable-test-score-gains/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "p7pjfrsy1aclezj",
+      "author": "CDC",
+      "title": "Ultraviolet Radiation",
+      "createdAt": "2026-07-06T04:00:00",
+      "updatedAt": "2026-09-01T05:23:53.621Z",
+      "categryId": "Medicine",
+      "content": [
+        {
+          "componentId": "l7veou2j0gdmxk6",
+          "componenType": "Image",
+          "data": "https://www.cdc.gov/radiation-health/media/images/2024/06/1502334145.jpg?_=97809",
+          "numbered": false
+        },
+        {
+          "componentId": "fmbdtmqlxmjfu90",
+          "componenType": "Paragraph",
+          "data": "Take steps to protect yourself from the sun all year long.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.cdc.gov/radiation-health/features/uv-radiation.html\">https://www.cdc.gov/radiation-health/features/uv-radiation.html</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "8bsn9izb9a9bor6",
+      "author": "Sara Lindqvist",
+      "title": "Education & Learning Archives",
+      "createdAt": "2026-08-31T17:45:55+00:00",
+      "updatedAt": "2026-09-01T05:23:54.063Z",
+      "categryId": "Psychology",
+      "content": [
+        {
+          "componentId": "9enuvzlfp5elqcr",
+          "componenType": "Image",
+          "data": "https://i0.wp.com/www.psychreg.org/wp-content/uploads/2015/01/psychreg-sm-cover-2236.png?fit=1280%2C720&ssl=1",
+          "numbered": false
+        },
+        {
+          "componentId": "avrtedea3nx0gfg",
+          "componenType": "Paragraph",
+          "data": "No preview available.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.psychreg.org/topic/education-learning/\">https://www.psychreg.org/topic/education-learning/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "on3r0tihwo328vw",
+      "author": "CDC",
+      "title": "Be Ready for Radiation Emergencies",
+      "createdAt": "2026-08-31T04:00:00",
+      "updatedAt": "2026-09-01T05:23:54.625Z",
+      "categryId": "Medicine",
+      "content": [
+        {
+          "componentId": "abuwvdthy3oqvbg",
+          "componenType": "Image",
+          "data": "https://www.cdc.gov/radiation-emergencies/media/images/2024/04/breaking-news.jpg?_=71670",
+          "numbered": false
+        },
+        {
+          "componentId": "3binf8v9wj9x2ke",
+          "componenType": "Paragraph",
+          "data": "Learn about radiation emergencies and what to do to protect yourself, your family, and your pets.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.cdc.gov/radiation-emergencies/features/be-ready.html\">https://www.cdc.gov/radiation-emergencies/features/be-ready.html</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "n2hangkhck3uugw",
+      "author": "Sara Lindqvist",
+      "title": "Deviation from Schöttle&rsquo;s point may increase failure rates of MPFL reconstruction",
+      "createdAt": "2026-08-31T00:00:00",
+      "updatedAt": "2026-09-01T05:23:54.675Z",
+      "categryId": "Medicine",
+      "content": [
+        {
+          "componentId": "oof2wxunn68ybmv",
+          "componenType": "Image",
+          "data": "https://www.healio.com/~/media/slack-news/orthopedics/misc/infographics/2026/ot0826mikula_aossm_graphic_01_web.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "bmdnmiy4fnop946",
+          "componenType": "Paragraph",
+          "data": "SEATTLE &mdash; Results presented at the American Orthopaedic Society for Sports Medicine Annual Meeting showed deviation from Schöttle&rsquo;s point during medial patellofemoral ligament reconstruction may be linked to higher graft failure rates.&ldquo;Precision with femoral tunnel fixation is important. The farther away you are from Schöttle&rsquo;s point, the more likely it is that you may see\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.healio.com/news/orthopedics/20260831/deviation-from-schttles-point-may-increase-failure-rates-of-mpfl-reconstruction\">https://www.healio.com/news/orthopedics/20260831/deviation-from-schttles-point-may-increase-failure-rates-of-mpfl-reconstruction</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "1ljhr054run63cs",
+      "author": "Sara Lindqvist",
+      "title": "Statins cut risk for first heart attack, stroke by 30% after age 70",
+      "createdAt": "2026-08-29T00:00:00",
+      "updatedAt": "2026-09-01T05:23:55.125Z",
+      "categryId": "Medicine",
+      "content": [
+        {
+          "componentId": "fuyh64u198kmtov",
+          "componenType": "Image",
+          "data": "https://www.healio.com/~/media/slack-news/cardiology/misc/infographics/2026/08_august/ct0826zoungas-staree_esc_infographic.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "pg8ll8t040vxofc",
+          "componenType": "Paragraph",
+          "data": "MUNICH &mdash; Statin therapy cut risk for major adverse CV events by 30% for healthy older adults compared with placebo, but did not extend disability-free survival, according to data presented at the European Society of Cardiology Congress.The benefits and risks of initiating statin therapy are not as clear among older adults without previous CV events and evidence is particularly sparse for\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.healio.com/news/cardiology/20260829/statins-cut-risk-for-first-heart-attack-stroke-by-30-after-age-70\">https://www.healio.com/news/cardiology/20260829/statins-cut-risk-for-first-heart-attack-stroke-by-30-after-age-70</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "ic82p5ek4btid5h",
+      "author": "CDC",
+      "title": "CDC Launches New Overdose Prevention Data Channel",
+      "createdAt": "2026-09-01T05:23:55.219Z",
+      "updatedAt": "2026-09-01T05:23:55.219Z",
+      "categryId": "Medicine",
+      "content": [
+        {
+          "componentId": "dofeaz57nk427q9",
+          "componenType": "Image",
+          "data": "https://www.cdc.gov/media/media/images/2024/09/cdc-logo.jpg?_=52313",
+          "numbered": false
+        },
+        {
+          "componentId": "dvphk77bea095iu",
+          "componenType": "Paragraph",
+          "data": "CDC launches a central data channel to track overdose trends and strengthen prevention nationwide.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.cdc.gov/media/releases/2026/cdc-launches-new-overdose-prevention-data-channel.html\">https://www.cdc.gov/media/releases/2026/cdc-launches-new-overdose-prevention-data-channel.html</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "5oz3dgrs8qffnnr",
+      "author": "Sara Lindqvist",
+      "title": "&lsquo;We are going to see a resurgence&rsquo;: Parental refusal of newborn HBV vaccine jumps 107%",
+      "createdAt": "2026-08-31T00:00:00",
+      "updatedAt": "2026-09-01T05:23:55.655Z",
+      "categryId": "Medicine",
+      "content": [
+        {
+          "componentId": "22ewfvux05ddyry",
+          "componenType": "Image",
+          "data": "https://www.healio.com/~/media/slack-news/gastroenterology/misc/infographics/2026/0826/hgi0726coggins2_graphic_01.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "ghcwl66hsw30hpd",
+          "componenType": "Paragraph",
+          "data": "Parental refusal of the newborn hepatitis B virus vaccine surged in recent years, the latest in an ongoing trend that has more than doubled refusal rates since 2018, according to study results published in JAMA Network Open.An analysis of live birth data from three centers in the University of Pennsylvania health system found that parental refusal rates in 2025 were more than double those\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.healio.com/news/gastroenterology/20260827/we-are-going-to-see-a-resurgence-parental-refusal-of-newborn-hbv-vaccine-jumps-107\">https://www.healio.com/news/gastroenterology/20260827/we-are-going-to-see-a-resurgence-parental-refusal-of-newborn-hbv-vaccine-jumps-107</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "2ce6b3csw07fsog",
+      "author": "Sara Lindqvist",
+      "title": "&lsquo;Alarming&rsquo;: Patients who need cancer surgery waiting longer for initial treatment",
+      "createdAt": "2026-08-31T00:00:00",
+      "updatedAt": "2026-09-01T05:23:56.359Z",
+      "categryId": "Medicine",
+      "content": [
+        {
+          "componentId": "c4jkpnstgiqegf1",
+          "componenType": "Image",
+          "data": "https://www.healio.com/~/media/slack-news/hemonc/misc/infographics/hot-infographics/2026/08_august/hot0826sakowitz_graphic_01.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "ewoqewi0w8ld4ii",
+          "componenType": "Paragraph",
+          "data": "Patients who need cancer surgery are waiting longer for initial therapy, according to results of a retrospective cohort study.The time between diagnosis and start of first-course treatment increased significantly between 2012 and 2023, findings showed.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.healio.com/news/hematology-oncology/20260827/alarming-patients-who-need-cancer-surgery-waiting-longer-for-initial-treatment\">https://www.healio.com/news/hematology-oncology/20260827/alarming-patients-who-need-cancer-surgery-waiting-longer-for-initial-treatment</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "ghyzvd9kbh7t1ud",
+      "author": "Amanda Silberling",
+      "title": "Apple shares 'shocking evidence' against former employee accused of stealing company data for OpenAI",
+      "createdAt": "2026-09-01T00:13:00+00:00",
+      "updatedAt": "2026-09-01T05:23:58.136Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "lf8h7iq7aqaqjyk",
+          "componenType": "Image",
+          "data": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2255009714.jpg?resize=1200,800",
+          "numbered": false
+        },
+        {
+          "componentId": "rw49smf2f83f1b6",
+          "componenType": "Paragraph",
+          "data": "Apple says it has evidence that a former employee destroyed evidence of data theft after learning he was under investigation.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://techcrunch.com/2026/08/31/apple-shares-shocking-evidence-against-former-employee-accused-of-stealing-company-data-for-openai/\">https://techcrunch.com/2026/08/31/apple-shares-shocking-evidence-against-former-employee-accused-of-stealing-company-data-for-openai/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "q0cuo0m75wgee4u",
+      "author": "Jagmeet Singh",
+      "title": "Lachy Groom backs Indian startup aiming to keep aircraft aloft for a year",
+      "createdAt": "2026-09-01T00:30:00+00:00",
+      "updatedAt": "2026-09-01T05:23:58.625Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "9uni17gq4ilunmw",
+          "componenType": "Image",
+          "data": "https://techcrunch.com/wp-content/uploads/2026/08/alteon-airplane.jpg?resize=1200,800",
+          "numbered": false
+        },
+        {
+          "componentId": "hozqkjjqyac0rfm",
+          "componenType": "Paragraph",
+          "data": "Founded by a 20-year-old, Alteon is developing autonomous aircraft that hopes to harvest wind energy to stay aloft for several months.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://techcrunch.com/2026/08/31/lachy-groom-backs-indian-startup-aiming-to-keep-aircraft-aloft-for-a-year/\">https://techcrunch.com/2026/08/31/lachy-groom-backs-indian-startup-aiming-to-keep-aircraft-aloft-for-a-year/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "80jl0lge2dsvosj",
+      "author": "Marina Temkin",
+      "title": "Harvard Law dropout raises $6M for Blue Voice to build a 'Harvey for police officers'",
+      "createdAt": "2026-08-31T18:35:11+00:00",
+      "updatedAt": "2026-09-01T05:23:59.125Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "flwm4o1w8xf8q7e",
+          "componenType": "Image",
+          "data": "https://techcrunch.com/wp-content/uploads/2026/08/BlueVoice_Founders.png?resize=1200,600",
+          "numbered": false
+        },
+        {
+          "componentId": "0rendxyoj4u5nh2",
+          "componenType": "Paragraph",
+          "data": "Blue Voice is trained on department-specific laws, local ordinances, protocols, and guidelines that general-purpose AI tools can't access on the public internet.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://techcrunch.com/2026/08/31/harvard-law-dropout-raises-6m-for-blue-voice-to-build-a-harvey-for-police-officers/\">https://techcrunch.com/2026/08/31/harvard-law-dropout-raises-6m-for-blue-voice-to-build-a-harvey-for-police-officers/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "fw9zbg87n5a0lj6",
+      "author": "Lucas Ropek",
+      "title": "Apple's top App Store exec, Phil Schiller, follows wave of exits as CEO Tim Cook steps down",
+      "createdAt": "2026-08-31T19:02:06+00:00",
+      "updatedAt": "2026-09-01T05:23:59.639Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "45014svgdd95okk",
+          "componenType": "Image",
+          "data": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-1660777497.jpg?resize=1200,799",
+          "numbered": false
+        },
+        {
+          "componentId": "96bldbow1d4pqhs",
+          "componenType": "Paragraph",
+          "data": "The longtime executive won't be leaving Apple just yet but staff at the company say it's a step closer to Schiller retiring.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://techcrunch.com/2026/08/31/apples-top-app-store-exec-phil-schiller-follows-wave-of-exits-as-ceo-tim-cook-steps-down/\">https://techcrunch.com/2026/08/31/apples-top-app-store-exec-phil-schiller-follows-wave-of-exits-as-ceo-tim-cook-steps-down/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "sjbntxw5a83nxfu",
+      "author": "Marina Temkin",
+      "title": "Ryan Breslow is raising up to $27M in pay-to-play bridge funding to save Bolt",
+      "createdAt": "2026-08-31T17:14:44+00:00",
+      "updatedAt": "2026-09-01T05:24:00.139Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "kp25l36fvordur1",
+          "componenType": "Image",
+          "data": "https://techcrunch.com/wp-content/uploads/2024/09/ryan-breslow-bolt.jpg?resize=1200,800",
+          "numbered": false
+        },
+        {
+          "componentId": "avlp1hkuu5hm77z",
+          "componenType": "Paragraph",
+          "data": "The controversial founder of the checkout startup once valued at $11 billion is putting in $5 million of his own money.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://techcrunch.com/2026/08/31/ryan-breslow-is-raising-up-to-27m-in-pay-to-play-bridge-funding-to-save-bolt/\">https://techcrunch.com/2026/08/31/ryan-breslow-is-raising-up-to-27m-in-pay-to-play-bridge-funding-to-save-bolt/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "9p73x9bi1hjohk2",
+      "author": "Sarah Perez",
+      "title": "Tim Cook's parting message: Apple is in the hands of a product builder",
+      "createdAt": "2026-08-31T17:02:42+00:00",
+      "updatedAt": "2026-09-01T05:24:00.664Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "t74wms12ngryrzw",
+          "componenType": "Image",
+          "data": "https://techcrunch.com/wp-content/uploads/2026/04/Apple-John-Ternus-Tim-Cook_Full-Bleed-Image.jpg.xlarge_2x.jpg?resize=1200,675",
+          "numbered": false
+        },
+        {
+          "componentId": "zngtmxc7sbbcbbx",
+          "componenType": "Paragraph",
+          "data": "Tim Cook’s farewell memo to Apple employees offers a glimpse at how he wants John Ternus to be seen: as a product builder with deep experience across the iPhone, Mac, AirPods, and other major hardware lines.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://techcrunch.com/2026/08/31/tim-cooks-parting-message-apple-is-in-the-hands-of-a-product-builder/\">https://techcrunch.com/2026/08/31/tim-cooks-parting-message-apple-is-in-the-hands-of-a-product-builder/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "3rd46n4gjwna2mv",
+      "author": "Sarah Perez",
+      "title": "MapQuest's app surges to No. 1 in Navigation after refusing to rename Lake Ontario",
+      "createdAt": "2026-08-31T14:51:33+00:00",
+      "updatedAt": "2026-09-01T05:24:01.113Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "g8qrh21mtu2llwt",
+          "componenType": "Image",
+          "data": "https://techcrunch.com/wp-content/uploads/2026/08/mapquest-lake-ontario.jpg?resize=1200,891",
+          "numbered": false
+        },
+        {
+          "componentId": "qs016440oyyx7tm",
+          "componenType": "Paragraph",
+          "data": "MapQuest is getting an unexpected boost from its decision to defy President Trump’s renaming of Lake Ontario.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://techcrunch.com/2026/08/31/mapquests-app-surges-to-no-1-in-navigation-after-refusing-to-rename-lake-ontario/\">https://techcrunch.com/2026/08/31/mapquests-app-surges-to-no-1-in-navigation-after-refusing-to-rename-lake-ontario/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "3kqmb2barao3tz2",
+      "author": "Lauren Forristal",
+      "title": "Instagram puts new limits on undisclosed AI profiles",
+      "createdAt": "2026-08-31T19:16:59+00:00",
+      "updatedAt": "2026-09-01T05:24:01.650Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "zybatfc7eb05ytp",
+          "componenType": "Image",
+          "data": "https://techcrunch.com/wp-content/uploads/2026/08/Instagram-label-.png?w=1200",
+          "numbered": false
+        },
+        {
+          "componentId": "8u6sngw1yr9od8c",
+          "componenType": "Paragraph",
+          "data": "As frustration over AI influencers has been growing, Instagram is limiting the reach of undisclosed AI profiles.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/\">https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "ncufbg6td4k9hso",
+      "author": "Mat Smith",
+      "title": "Honor Robot Phone Hands-On: A Gimbal Phone Experiment With Promising Results",
+      "createdAt": "2026-08-31T15:00:00+00:00",
+      "updatedAt": "2026-09-01T05:24:05.247Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "navqki5kkyxr1zd",
+          "componenType": "Image",
+          "data": "https://www.engadget.com/img/gallery/honor-robot-phone-hands-on-a-gimbal-phone-experiment-with-promising-results/l-intro-1788186136.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "2d0p80sfy719tvg",
+          "componenType": "Paragraph",
+          "data": "Honor crammed a gimbal camera into a phone in a promising hardware experiment.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.engadget.com/2247473/honor-robot-phone-hands-on/\">https://www.engadget.com/2247473/honor-robot-phone-hands-on/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "meezbciagsdzu1q",
+      "author": "Daniel Cooper",
+      "title": "Garmin Cirqa Review: A Fine But Utterly Inessential Smart Band",
+      "createdAt": "2026-08-31T14:00:00+00:00",
+      "updatedAt": "2026-09-01T05:24:05.695Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "3dj85lmi63s8eyy",
+          "componenType": "Image",
+          "data": "https://www.engadget.com/img/gallery/garmin-cirqa-review-a-fine-but-utterly-inessential-smart-band/l-intro-1787917010.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "uywulycaksrocxa",
+          "componenType": "Paragraph",
+          "data": "Garmin's Cirqa band lacks the software and AI insights to make it a true Whoop rival.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.engadget.com/2246325/garmin-cirqa-review/\">https://www.engadget.com/2246325/garmin-cirqa-review/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "nqh616sedzu4t49",
+      "author": "Billy Steele",
+      "title": "Engadget Review Recap: Google's Pixel 11 Series And More",
+      "createdAt": "2026-08-29T14:00:00+00:00",
+      "updatedAt": "2026-09-01T05:24:06.193Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "ky3frbkqb2e5b22",
+          "componenType": "Image",
+          "data": "https://www.engadget.com/img/gallery/engadget-review-recap-google-pixel-11-series-and-more/l-intro-1787938082.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "gbdftiqahzp0xpm",
+          "componenType": "Paragraph",
+          "data": "A roundup of recent reviews from Engadget.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.engadget.com/2246542/engadget-review-recap-googles-pixel-11-series-and-more/\">https://www.engadget.com/2246542/engadget-review-recap-googles-pixel-11-series-and-more/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "6hslw1e5lutw5cw",
+      "author": "Kris Holt",
+      "title": "Pretty Metroidvanias, Free Bomberman-Style Chaos And Other New Indie Games Worth Checking Out",
+      "createdAt": "2026-08-29T11:30:00+00:00",
+      "updatedAt": "2026-09-01T05:24:06.700Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "8i8xwh2uoif86tw",
+          "componenType": "Image",
+          "data": "https://www.engadget.com/img/gallery/pretty-metroidvanias-free-bomberman-style-chaos-and-other-new-indie-games-worth-checking-out/l-intro-1787948588.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "84nmyrstwcpahkx",
+          "componenType": "Paragraph",
+          "data": "Start your weekend by diving into our latest roundup of what's new in the indie gaming space.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.engadget.com/2246749/pretty-metroidvanias-free-bomberman-style-chaos-and-other-new-indie-games/\">https://www.engadget.com/2246749/pretty-metroidvanias-free-bomberman-style-chaos-and-other-new-indie-games/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "h5shde9qq10vma7",
+      "author": "Dave Meikleham",
+      "title": "20+ Things You May Have Missed In The GTA 6 Extended Look",
+      "createdAt": "2026-08-28T22:08:08+00:00",
+      "updatedAt": "2026-09-01T05:24:07.190Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "xxkhcvfsnazcrm8",
+          "componenType": "Image",
+          "data": "https://www.engadget.com/img/gallery/things-you-may-have-missed-gta-6-extended-look/l-intro-1787955980.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "xj7l6952ut4h64m",
+          "componenType": "Paragraph",
+          "data": "The GTA VI extended-look trailer is full of clues, if you know where to look.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.engadget.com/2246846/things-you-may-have-missed-gta-6-extended-look/\">https://www.engadget.com/2246846/things-you-may-have-missed-gta-6-extended-look/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "507ofwe21nfcr0n",
+      "author": "Mariella Moon",
+      "title": "Samsung's New Galaxy Book 6 Model Is A Budget-Friendly $799 Laptop",
+      "createdAt": "2026-09-01T05:01:49+00:00",
+      "updatedAt": "2026-09-01T05:24:07.677Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "gbs4u80oa30y73y",
+          "componenType": "Image",
+          "data": "https://www.engadget.com/img/gallery/samsungs-new-galaxy-book-6-model-is-a-budget-friendly-799-laptop/l-intro-1788238900.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "ru8h4htsb3wld1i",
+          "componenType": "Paragraph",
+          "data": "Samsung has released a more accessible and affordable Galaxy Book 6 laptop.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.engadget.com/2248309/samsung-galaxy-book-6-model-budget-friendly-799-laptop/\">https://www.engadget.com/2248309/samsung-galaxy-book-6-model-budget-friendly-799-laptop/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "avagfwpk6uce29d",
+      "author": "Lawrence Bonk",
+      "title": "JBL Just Introduced A Trio Of Wi-Fi Speakers For Whole-Home Audio",
+      "createdAt": "2026-09-01T04:01:00+00:00",
+      "updatedAt": "2026-09-01T05:24:08.189Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "xuanf4yiz2p85a2",
+          "componenType": "Image",
+          "data": "https://www.engadget.com/img/gallery/jbl-just-introduced-a-trio-of-wi-fi-speakers-for-whole-home-audio/l-intro-1788203276.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "x406q8chf1cuer7",
+          "componenType": "Paragraph",
+          "data": "The Cove series is a major departure for JBL.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.engadget.com/2247954/jbl-just-introduced-a-trio-of-wi-fi-speakers-for-whole-home-audio/\">https://www.engadget.com/2247954/jbl-just-introduced-a-trio-of-wi-fi-speakers-for-whole-home-audio/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "d4wdg5zxcutafg2",
+      "author": "Alec Hively",
+      "title": "How To Make Sure Your Android Phone Is Secure",
+      "createdAt": "2026-08-31T23:30:00+00:00",
+      "updatedAt": "2026-09-01T05:24:08.698Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "y84ts72vrs82wn5",
+          "componenType": "Image",
+          "data": "https://www.engadget.com/img/gallery/how-to-make-sure-your-android-phone-is-secure/l-intro-1787681730.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "z929kev0zeqy2mb",
+          "componenType": "Paragraph",
+          "data": "Android's security and privacy settings can be overwhelming, so you should take the time to make sure your device is locked down as you expect.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.engadget.com/2243954/how-to-make-sure-android-phone-secure/\">https://www.engadget.com/2243954/how-to-make-sure-android-phone-secure/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "sjmk43fe9i391zw",
+      "author": "Sara Lindqvist",
+      "title": "I Tested the Flashlight of the Future, Equipped With Spotlights, UVs and Lasers",
+      "createdAt": "2026-08-31T07:20:04-04:00",
+      "updatedAt": "2026-09-01T05:24:08.748Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "e2g4bkb8t40mcvm",
+          "componenType": "Image",
+          "data": "https://www.cnet.com/wp-content/uploads/sites/2/FLASHLIGHT_W_UV_SETTING.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "pv3joru85zkmzh9",
+          "componenType": "Paragraph",
+          "data": "The ArkPro Ultra is an extra-compact, do-everything flashlight ready for indoors, outdoors and adventures.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.cnet.com/home/yard-and-outdoors/i-tested-the-flashlight-of-the-future-equipped-with-spotlights-uvs-and-lasers-2/\">https://www.cnet.com/home/yard-and-outdoors/i-tested-the-flashlight-of-the-future-equipped-with-spotlights-uvs-and-lasers-2/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "jif9khytyho76hl",
+      "author": "Sara Lindqvist",
+      "title": "RedMagic Astra 2 Review: The Best Android Gaming Tablet You Can Buy, Again",
+      "createdAt": "2026-08-31T05:38:12-04:00",
+      "updatedAt": "2026-09-01T05:24:09.307Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "xhkc7q0uq7mmk8o",
+          "componenType": "Image",
+          "data": "https://www.cnet.com/wp-content/uploads/sites/2/RedMagic-Astra-2-promo.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "31iz6f463jxeimy",
+          "componenType": "Paragraph",
+          "data": "With plenty of power and one of the best Android tablet displays CNET's tested, the Astra 2 retains its crown.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.cnet.com/tech/computing/redmagic-astra-2-review-gaming-tablet/\">https://www.cnet.com/tech/computing/redmagic-astra-2-review-gaming-tablet/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "32j9i4xtox034jv",
+      "author": "Sara Lindqvist",
+      "title": "After a Decade Ignoring Siri, I'm Finally Enjoying It – Just Not With My Voice",
+      "createdAt": "2026-08-31T07:21:20-04:00",
+      "updatedAt": "2026-09-01T05:24:09.764Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "wwxhd22jm5y0p4e",
+          "componenType": "Image",
+          "data": "https://www.cnet.com/wp-content/uploads/sites/2/siri-ai-03_c20ae6.png",
+          "numbered": false
+        },
+        {
+          "componentId": "sf40n7j6rcvdqgv",
+          "componenType": "Paragraph",
+          "data": "After an infuriating week, I found the key to using the voice assistant with fewer issues.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.cnet.com/tech/services-and-software/after-a-decade-ignoring-siri-im-finally-enjoying-it-just-not-with-my-voice/\">https://www.cnet.com/tech/services-and-software/after-a-decade-ignoring-siri-im-finally-enjoying-it-just-not-with-my-voice/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "hkca5uds0swv3og",
+      "author": "Sara Lindqvist",
+      "title": "I Started Wearing a Pebble Watch Again: Time 2 Took Me Back to the 2010s in the Best Way",
+      "createdAt": "2026-08-31T07:23:21-04:00",
+      "updatedAt": "2026-09-01T05:24:10.248Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "8vw0fjp8lksmr01",
+          "componenType": "Image",
+          "data": "https://www.cnet.com/wp-content/uploads/sites/2/Pebble.Time_.2.1.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "z36ci13ch51vxjk",
+          "componenType": "Paragraph",
+          "data": "The Pebble’s return to my wrist after over a decade reminded me what I’d missed.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.cnet.com/tech/mobile/i-started-wearing-a-pebble-watch-again-time-2-took-me-back-to-the-2010s-in-the-best-way/\">https://www.cnet.com/tech/mobile/i-started-wearing-a-pebble-watch-again-time-2-took-me-back-to-the-2010s-in-the-best-way/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "yoe4xqlyeos5dbj",
+      "author": "Grace Huckins",
+      "title": "The Hugging Face hack could indicate cultural issues at OpenAI",
+      "createdAt": "2026-08-31T14:00:00-04:00",
+      "updatedAt": "2026-09-01T05:24:10.724Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "ua19oi8m5f1er0n",
+          "componenType": "Image",
+          "data": "https://wp.technologyreview.com/wp-content/uploads/2026/08/openai-human4a.jpg?resize=1200,600",
+          "numbered": false
+        },
+        {
+          "componentId": "si7hw4icc7onkle",
+          "componenType": "Paragraph",
+          "data": "Alarm bells within the company should have stopped model training from going forward. So why didn’t they?\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.technologyreview.com/2026/08/31/1143180/hugging-face-hack-could-indicate-cultural-issues-at-openai/\">https://www.technologyreview.com/2026/08/31/1143180/hugging-face-hack-could-indicate-cultural-issues-at-openai/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "5va2i67t723c27w",
+      "author": "Sara Lindqvist",
+      "title": "Google Maps Relabels Lake Ontario After Trump's Executive Order",
+      "createdAt": "2026-08-31T10:31:33-04:00",
+      "updatedAt": "2026-09-01T05:24:10.772Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "re4eepj2t84266x",
+          "componenType": "Image",
+          "data": "https://www.cnet.com/wp-content/uploads/sites/2/Google-Lake-America.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "fftu92hmpmv2kqm",
+          "componenType": "Paragraph",
+          "data": "Google Maps shows it as Lake America in the US and Lake Ontario in Canada.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.cnet.com/tech/services-and-software/will-map-apps-rename-lake-ontario-after-trumps-order-its-too-soon-to-say/\">https://www.cnet.com/tech/services-and-software/will-map-apps-rename-lake-ontario-after-trumps-order-its-too-soon-to-say/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "763d251vx3ou85g",
+      "author": "Grace Huckins",
+      "title": "AI models flub these intelligence tests. Can you fare any better?",
+      "createdAt": "2026-08-26T05:00:00-04:00",
+      "updatedAt": "2026-09-01T05:24:11.760Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "4owvht45ysru3i7",
+          "componenType": "Image",
+          "data": "https://wp.technologyreview.com/wp-content/uploads/2026/08/vincentkilbride-mit-technology-review-ai-puzzles.jpg?resize=1200,600",
+          "numbered": false
+        },
+        {
+          "componentId": "24jk0gk9ijcke02",
+          "componenType": "Paragraph",
+          "data": "Puzzles and games can reveal gaps in models’ smarts. Try your hand at these seven tests to see if you can outwit AI.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.technologyreview.com/2026/08/26/1141952/puzzles-ai-models-flub-these-tests/\">https://www.technologyreview.com/2026/08/26/1141952/puzzles-ai-models-flub-these-tests/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "erw4wzs9p8l80cl",
+      "author": "Eshan Raul",
+      "title": "How to sign up for a virtual power plant—and decide whether you should",
+      "createdAt": "2026-08-28T05:00:00-04:00",
+      "updatedAt": "2026-09-01T05:24:12.242Z",
+      "categryId": "Technology",
+      "content": [
+        {
+          "componentId": "b9tq4gb352ukk34",
+          "componenType": "Image",
+          "data": "https://wp.technologyreview.com/wp-content/uploads/2026/08/thermostat2.jpg?resize=1200,600",
+          "numbered": false
+        },
+        {
+          "componentId": "b73hs8kmcxtj5yb",
+          "componenType": "Paragraph",
+          "data": "Utilities are lowering energy bills in exchange for more control over your electricity use. Here’s how to get involved.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.technologyreview.com/2026/08/28/1142956/how-to-sign-up-for-a-virtual-power-plant-and-decide-whether-you-should/\">https://www.technologyreview.com/2026/08/28/1142956/how-to-sign-up-for-a-virtual-power-plant-and-decide-whether-you-should/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "2zim3dm8di8fs3k",
+      "author": "Matthew Wills",
+      "title": "The Jewish Labor Bund’s Anti-Zionist Legacy",
+      "createdAt": "2026-08-31T13:40:43+00:00",
+      "updatedAt": "2026-09-01T05:24:15.807Z",
+      "categryId": "History",
+      "content": [
+        {
+          "componentId": "70p21okzjye0o7v",
+          "componenType": "Image",
+          "data": "https://daily.jstor.org/wp-content/uploads/2026/08/the_jewish_labor_bunds_anti_zionist_legacy_1050x700.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "nyd6omjdqrxumm6",
+          "componenType": "Paragraph",
+          "data": "For many Jewish leftists before 1948, Zionism was far from the only vision for the Jewish future.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://daily.jstor.org/the-jewish-labor-bunds-anti-zionist-legacy/\">https://daily.jstor.org/the-jewish-labor-bunds-anti-zionist-legacy/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "wh34a1q7z9ujnb9",
+      "author": "Sara Lindqvist",
+      "title": "The Priceless Bronze Age Treasures Stolen in a Museum Heist in Spain",
+      "createdAt": "2026-08-31T00:00:00",
+      "updatedAt": "2026-09-01T05:24:15.841Z",
+      "categryId": "History",
+      "content": [
+        {
+          "componentId": "q8j9n0uw15rm0ne",
+          "componenType": "Image",
+          "data": "https://i.natgeofe.com/n/db503e48-0c9b-4431-bb35-876ccdc0ed30/20170226_zga_a118_5096_16x9.jpg?w=1200",
+          "numbered": false
+        },
+        {
+          "componentId": "jkjktgoio28mqah",
+          "componenType": "Paragraph",
+          "data": "Thieves targeted one of Spain’s most extraordinary archaeological collections. Here’s why the Villena Treasure is worth far more than its gold.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.nationalgeographic.com/history/article/villena-treasure-spain-bronze-age\">https://www.nationalgeographic.com/history/article/villena-treasure-spain-bronze-age</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "9i1qhl62jbzcs6t",
+      "author": "Simeon Netchev",
+      "title": "10 Crowned Monarchs on Crusade for the Holy Land (1107–1254): Kings and Emperors Who Personally Led Crusades to Jerusalem",
+      "createdAt": "2026-08-31T06:00:17+00:00",
+      "updatedAt": "2026-09-01T05:24:17.286Z",
+      "categryId": "History",
+      "content": [
+        {
+          "componentId": "3i56uxo2fsbetrd",
+          "componenType": "Image",
+          "data": "https://www.worldhistory.org/img/c/p/2400x1254/22054.png",
+          "numbered": false
+        },
+        {
+          "componentId": "ee2h5pler8snemt",
+          "componenType": "Paragraph",
+          "data": "Between 1107 and 1254, ten crowned European monarchs personally led or joined major Crusades to the Holy Land. Their participation gave crusading campaigns exceptional political prestige and mobilized...\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.worldhistory.org/image/22054/10-crowned-monarchs-on-crusade-for-the-holy-land-1/\">https://www.worldhistory.org/image/22054/10-crowned-monarchs-on-crusade-for-the-holy-land-1/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "772839jmlbzkzuh",
+      "author": "Mark Cartwright",
+      "title": "Battle of Guam: The US Takes Back its Territory in WWII",
+      "createdAt": "2026-08-31T08:58:18+00:00",
+      "updatedAt": "2026-09-01T05:24:17.798Z",
+      "categryId": "History",
+      "content": [
+        {
+          "componentId": "r5envcbob74034d",
+          "componenType": "Image",
+          "data": "https://www.worldhistory.org/img/c/p/2400x1254/22060.png",
+          "numbered": false
+        },
+        {
+          "componentId": "f0krw9iett9wnqo",
+          "componenType": "Paragraph",
+          "data": "The Battle of Guam, in the Mariana Islands, took place in July and August 1944 during the Pacific War of the Second World War (1939-45). Guam had been US territory prior to the conflict but was occupied...\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.worldhistory.org/article/2980/battle-of-guam/\">https://www.worldhistory.org/article/2980/battle-of-guam/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "gw0lpuhk6b3q6a0",
+      "author": "Mark Cartwright",
+      "title": "Battle of Saipan",
+      "createdAt": "2026-08-28T08:59:02+00:00",
+      "updatedAt": "2026-09-01T05:24:18.306Z",
+      "categryId": "History",
+      "content": [
+        {
+          "componentId": "7m3y2vp4afb19c3",
+          "componenType": "Image",
+          "data": "https://www.worldhistory.org/img/c/p/2400x1254/22053.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "lwfyfh6k9o3ujgs",
+          "componenType": "Paragraph",
+          "data": "The Battle of Saipan took place in June-July 1944. US forces engaged in a titanic three-week struggle with Japanese defenders to finally take the island, part of the Mariana Islands, during the Pacific...\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.worldhistory.org/article/2975/battle-of-saipan/\">https://www.worldhistory.org/article/2975/battle-of-saipan/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "zmymtqyk44e12fc",
+      "author": "Harrison W. Mark",
+      "title": "South Carolina Declaration of Secession: Why South Carolina Left the Union",
+      "createdAt": "2026-08-27T16:00:02+00:00",
+      "updatedAt": "2026-09-01T05:24:18.794Z",
+      "categryId": "History",
+      "content": [
+        {
+          "componentId": "cd06se0ax98i8pc",
+          "componenType": "Image",
+          "data": "https://www.worldhistory.org/img/c/p/2400x1254/22066.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "g4fyx7346tx6ssf",
+          "componenType": "Paragraph",
+          "data": "On 20 December 1860, 169 delegates met in Institute Hall in Charleston, South Carolina, to consider the motion of secession from the United States of America. They voted unanimously to do so; by voting...\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.worldhistory.org/article/2979/south-carolina-declaration-of-secession/\">https://www.worldhistory.org/article/2979/south-carolina-declaration-of-secession/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "63ckddt2lv5c7mg",
+      "author": "James Osborne",
+      "title": "King John was a monster – but did he really murder his own nephew?",
+      "createdAt": "2026-08-28T11:15:53+01:00",
+      "updatedAt": "2026-09-01T05:24:19.368Z",
+      "categryId": "History",
+      "content": [
+        {
+          "componentId": "7yn88wid0k8jpqd",
+          "componenType": "Image",
+          "data": "https://images.immediate.co.uk/production/volatile/sites/7/2026/08/GettyImages-599958087-73347ea-e1787850624992.jpg?resize=1200%2C630",
+          "numbered": false
+        },
+        {
+          "componentId": "v2a7ch6rl5z8gk3",
+          "componenType": "Paragraph",
+          "data": "More than two centuries before Richard III would be accused of killing his own nephews, the Princes in the Tower, another English king faced the allegation that he had murdered a boy who stood between him and greater security on the throne\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.historyextra.com/period/medieval/did-king-john-murder-his-nephew/\">https://www.historyextra.com/period/medieval/did-king-john-murder-his-nephew/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "wyafhe9d5gtm1tm",
+      "author": "Peter A Coclanis",
+      "title": "Did Singapore go wrong in its quest for food security?",
+      "createdAt": "2026-08-31T10:00:00+00:00",
+      "updatedAt": "2026-09-01T05:24:22.872Z",
+      "categryId": "Philosophy",
+      "content": [
+        {
+          "componentId": "xuij6wwiqpa56g1",
+          "componenType": "Image",
+          "data": "https://images.aeonmedia.co/images/6311f093-ca53-432a-86b4-5bce84e5e000/essay-panos_00193525.jpg?width=1200&quality=75&format=jpeg",
+          "numbered": false
+        },
+        {
+          "componentId": "iplu6dlh7xi5la2",
+          "componenType": "Paragraph",
+          "data": "The nation’s water is secure, but its food is another matter: lessons from the city-state in efficiency versus self-sufficiency\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://aeon.co/essays/did-singapore-go-wrong-in-its-quest-for-food-security\">https://aeon.co/essays/did-singapore-go-wrong-in-its-quest-for-food-security</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "88v0skfr6so8n65",
+      "author": "David Polansky",
+      "title": "Thucydides’ account of war is as timely as it is misunderstood",
+      "createdAt": "2026-08-03T10:00:00+00:00",
+      "updatedAt": "2026-09-01T05:24:23.397Z",
+      "categryId": "Philosophy",
+      "content": [
+        {
+          "componentId": "z68g0yyfgyao19m",
+          "componenType": "Image",
+          "data": "https://images.aeonmedia.co/images/7e71f18f-38a9-4662-8b41-04f048f5c4e4/test-essay-8055001.jpg?width=1200&quality=75&format=jpeg",
+          "numbered": false
+        },
+        {
+          "componentId": "swtfy48zeh3ed39",
+          "componenType": "Paragraph",
+          "data": "Far from thinking that ‘might makes right’, the great historian’s analysis of war identifies a vice common to all states\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://aeon.co/essays/thucydides-account-of-war-is-as-timely-as-it-is-misunderstood\">https://aeon.co/essays/thucydides-account-of-war-is-as-timely-as-it-is-misunderstood</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "c9q7hr9vxguf03a",
+      "author": "Sara Lindqvist",
+      "title": "From relativity to quantum theory – our physical world explored through coffee",
+      "createdAt": "2026-09-01T05:24:23.870Z",
+      "updatedAt": "2026-09-01T05:24:23.870Z",
+      "categryId": "Philosophy",
+      "content": [
+        {
+          "componentId": "ltny2vh459yu4za",
+          "componenType": "Image",
+          "data": "https://images.aeonmedia.co/images/e46761bd-bcbb-41b5-9000-e3a99572e036/Physics-and-Caffeine.jpg?width=1200&quality=75&format=jpeg",
+          "numbered": false
+        },
+        {
+          "componentId": "d8dmum9d7q3xgtq",
+          "componenType": "Paragraph",
+          "data": "From relativity to quantum theory – our physical world explored through coffee\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://aeon.co/videos/from-relativity-to-quantum-theory-our-physical-world-explored-through-coffee\">https://aeon.co/videos/from-relativity-to-quantum-theory-our-physical-world-explored-through-coffee</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "uhawx61ua619x84",
+      "author": "Leila Sloman August",
+      "title": "‘Stunning’ Percolation Proof Solves Decades-Old Puzzle About Phase Transitions",
+      "createdAt": "2026-08-31T14:24:27+00:00",
+      "updatedAt": "2026-09-01T05:24:29.415Z",
+      "categryId": "Mathematics",
+      "content": [
+        {
+          "componentId": "87jfgpnm168jqk5",
+          "componenType": "Image",
+          "data": "https://www.quantamagazine.org/wp-content/uploads/2026/08/Percolation-cr-DVDP-Social.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "fq7758frbfv80k0",
+          "componenType": "Paragraph",
+          "data": "Mathematicians found that a broad class of networks will abruptly shift behavior past a critical point.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.quantamagazine.org/stunning-percolation-proof-solves-decades-old-puzzle-about-phase-transitions-20260831/\">https://www.quantamagazine.org/stunning-percolation-proof-solves-decades-old-puzzle-about-phase-transitions-20260831/</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "xk7dgdxjwcsm88m",
+      "author": "Jenessa Duncombe",
+      "title": "The Roman Space Telescope isn’t the only US observatory built from spy tech",
+      "createdAt": "2026-08-28T18:25:46.174000+00:00",
+      "updatedAt": "2026-09-01T05:24:34.839Z",
+      "categryId": "Physics",
+      "content": [
+        {
+          "componentId": "lutou7z7jfe2wq1",
+          "componenType": "Image",
+          "data": "https://aip.brightspotcdn.com/dims4/default/b40b6ed/2147483647/strip/true/crop/6400x3600+0+184/resize/1440x810!/quality/90/?url=https%3A%2F%2Fk1-prod-aip.s3.us-east-2.amazonaws.com%2Fbrightspot%2F8b%2Fe0%2Fc065dd8d454eb1a7f0bc8b9d38ce%2Fpt-00191-jd-romantelescope-52506574065-fc359f4656-o.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "73e5yvdvh54gmft",
+          "componenType": "Paragraph",
+          "data": "The newest spacecraft from NASA started as a spy telescope. It’s just one example of the intelligence world offering resources to astronomers.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://physicstoday.aip.org/news/the-roman-space-telescope-isnt-the-only-us-observatory-built-from-spy-tech\">https://physicstoday.aip.org/news/the-roman-space-telescope-isnt-the-only-us-observatory-built-from-spy-tech</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "f2u6jr95plgw039",
+      "author": "Sara Lindqvist",
+      "title": "Crossword: Copenhagen interpretation",
+      "createdAt": "2026-08-31T20:00:00+00:00",
+      "updatedAt": "2026-09-01T05:24:35.355Z",
+      "categryId": "Physics",
+      "content": [
+        {
+          "componentId": "v14al2zzb4pkjyj",
+          "componenType": "Image",
+          "data": "https://aip.brightspotcdn.com/dims4/default/ea16137/2147483647/strip/true/crop/497x280+0+109/resize/1440x810!/quality/90/?url=https%3A%2F%2Fk1-prod-aip.s3.us-east-2.amazonaws.com%2Fbrightspot%2F80%2Fbc%2Ff9c4943a4fdcbdbab52209e71504%2Fcrossword.png",
+          "numbered": false
+        },
+        {
+          "componentId": "txx66rvkwskpl30",
+          "componenType": "Paragraph",
+          "data": "The theme of this puzzle is the observational collapse of a quantum wavefunction into a single state. The shaded squares each represent two potential “states”—that is, they have two simultaneous solutions—except where the clue to 42-Across collapses the wavefunction in the circle into one of the two choices. (Note: The interactive puzzle shows only one of the two solutions. The downloadable PDF on\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://physicstoday.aip.org/news/crossword-copenhagen-interpretation\">https://physicstoday.aip.org/news/crossword-copenhagen-interpretation</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "4h612i0knfp7ykd",
+      "author": "Sara Lindqvist",
+      "title": "Demystifying graviton detection",
+      "createdAt": "2026-08-31T15:05:02.165000+00:00",
+      "updatedAt": "2026-09-01T05:24:35.940Z",
+      "categryId": "Physics",
+      "content": [
+        {
+          "componentId": "a6ojdvzgg0r35i4",
+          "componenType": "Image",
+          "data": "https://aip.brightspotcdn.com/dims4/default/5220027/2147483647/strip/true/crop/1530x861+0+48/resize/1440x810!/quality/90/?url=https%3A%2F%2Fk1-prod-aip.s3.us-east-2.amazonaws.com%2Fbrightspot%2F68%2Ffc%2Fd7d55e97462d900cadd3d1ba3e46%2Fpt-00160-al-figure-1-version2.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "74lpu193iny44xp",
+          "componenType": "Paragraph",
+          "data": "Detecting quantum particles of gravity was long considered hopeless. A new perspective, which takes advantage of quantum technologies, suggests that an experimental realization may be closer than previously thought.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://physicstoday.aip.org/features/demystifying-graviton-detection\">https://physicstoday.aip.org/features/demystifying-graviton-detection</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "7a18euhw3u3ysdj",
+      "author": "Toni Feder",
+      "title": "Shannon Palus edits articles about science and more at Slate",
+      "createdAt": "2026-08-28T18:49:05.994000+00:00",
+      "updatedAt": "2026-09-01T05:24:36.365Z",
+      "categryId": "Physics",
+      "content": [
+        {
+          "componentId": "zjd2f7zak6pa8io",
+          "componenType": "Image",
+          "data": "https://aip.brightspotcdn.com/dims4/default/e2a651f/2147483647/strip/true/crop/1450x816+0+0/resize/1440x810!/quality/90/?url=https%3A%2F%2Fk1-prod-aip.s3.us-east-2.amazonaws.com%2Fbrightspot%2Fee%2F42%2Ffec781374b0687f3a8f00c0849be%2Fpt-00183-tf-img-4055-2-2.jpg",
+          "numbered": false
+        },
+        {
+          "componentId": "357zno0o0eecaeu",
+          "componenType": "Paragraph",
+          "data": "“ What can physicists do? ” is an interview series that profiles physicists who opted for careers outside of academia. Shannon Palus Features editor, Slate BS, physics, McGill University, 2013 How did you get into science journalism? I knew early that I wanted to do science writing. In college, I joined the student newspaper. In my junior year, I did an internship at Discover magazine. An editor t\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://physicstoday.aip.org/news/shannon-palus-edits-articles-about-science-and-more-at-slate\">https://physicstoday.aip.org/news/shannon-palus-edits-articles-about-science-and-more-at-slate</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "7qswizwxtcqvekp",
+      "author": "Sara Lindqvist",
+      "title": "Predictions for superheavy nuclei",
+      "createdAt": "1972-04-01T05:00:00+00:00",
+      "updatedAt": "2026-09-01T05:24:36.846Z",
+      "categryId": "Physics",
+      "content": [
+        {
+          "componentId": "0h1uokcmdnv9v08",
+          "componenType": "Image",
+          "data": "https://aip.brightspotcdn.com/dims4/default/f0892ed/2147483647/strip/true/crop/903x508+1+0/resize/1440x810!/quality/90/?url=https%3A%2F%2Fk1-prod-aip.s3.us-east-2.amazonaws.com%2Fbrightspot%2F06%2Fd7%2Ffd7e6126497ab8dff047e0ae2ae6%2Fdefault-promo-image.png",
+          "numbered": false
+        },
+        {
+          "componentId": "4ql6zzbls56mpa3",
+          "componenType": "Paragraph",
+          "data": "The quest for ever‐heavier nuclei turns to heavy‐ion accelerators that could produce hundreds of excited short‐lived species—and possibly a few, in their ground states, that live for years.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://physicstoday.aip.org/features/predictions-for-superheavy-nuclei\">https://physicstoday.aip.org/features/predictions-for-superheavy-nuclei</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
+    },
+    {
+      "id": "96fhxjxxu9zv0vi",
+      "author": "Sara Lindqvist",
+      "title": "Optical control of electrons in a Floquet topological insulator",
+      "createdAt": "2026-08-31T00:00:00",
+      "updatedAt": "2026-09-01T05:24:41.322Z",
+      "categryId": "Physics",
+      "content": [
+        {
+          "componentId": "utvqns4q1o5q82j",
+          "componenType": "Image",
+          "data": "https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41567-026-03429-7/MediaObjects/41567_2026_3429_Fig1_HTML.png",
+          "numbered": false
+        },
+        {
+          "componentId": "3cwjbgn4cwevw4v",
+          "componenType": "Paragraph",
+          "data": "Driving a solid with light can create a topological insulator, but controlling its electrons has remained elusive. Optical control of electrons in a Floquet topological insulator has now been achieved in light-dressed graphene.\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://www.nature.com/articles/s41567-026-03429-7\">https://www.nature.com/articles/s41567-026-03429-7</a>",
+          "numbered": false
+        }
+      ],
+      "origin": "server",
+      "published": true,
+      "deleteFlag": false
     }
   ],
   "journal": {
@@ -7931,7 +11781,7 @@
       "1",
       "2"
     ],
-    "templateData": "yaowvy2iu0hzpob\n8u8zt30y31bpk6e\n687mzwjdzbe3fkv|y3gsytael21u2ht\nwtlold40nc8kyo3|44cqyz6yh48h499|xaovdaewblk1js5",
+    "templateData": "k6tk38ew0ej782x\ne3qztl6tekou9wh|c9q7hr9vxguf03a|yoe4xqlyeos5dbj\n9catusnx74g65wv|507ofwe21nfcr0n|t07525124sgfnh3|2hbdzhj65qdijol|dkvooxr0e6awj9x\nuqfyzs13epp0gmp|jicdgtup8u7sau4|bpxl2fs2z1hdxov|yaowvy2iu0hzpob|o5onlleis00k76y",
     "adminDetails": {
       "id": "e0da85ff1b5040a7c3fb550b7247078d967f46820a461d8124d77bdf11054b9900739fdd4601e9808c459b91def95d197e01b5184ab15b2132ab5fcad75d6597",
       "passPhase": "9b332ecf5ecf2506c22a78d076e5af7fb56899487d45f98600bfc823a42c27b8d1776027c5f7cc15b3a43779369b9a43937bfa354e9e26ad6b8c3c22b1467246"

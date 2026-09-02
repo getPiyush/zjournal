@@ -230,7 +230,8 @@
         },
         {
           "name": "Behance",
-          "url": "https://www.behance.net"
+          "url": "https://www.behance.net",
+          "invalid": true
         },
         {
           "name": "Colossal",
@@ -358,7 +359,8 @@
         },
         {
           "name": "Ars Technica",
-          "url": "https://arstechnica.com"
+          "url": "https://arstechnica.com",
+          "invalid": true
         },
         {
           "name": "Engadget",

@@ -13,13 +13,13 @@ cd server/php
 php -S localhost:8080
 ```
 
-From the repo root, the equivalent script is `npm run server:php:dev`.
+From the repo root, the equivalent script is `npm run server -- --backend=php`.
 
 The server starts on **port 8080** (same as the other three backends — stop `server/node`,
 `server/java`, or `server/python` first if one is already running there, or pass a different
 `host:port` to `php -S`).
 
-PHP's built-in server is dev-only, so there's no `:prod` npm script — deploy this directory behind
+PHP's built-in server is dev-only, so `--prod` isn't supported for it — deploy this directory behind
 Apache + `mod_php` or PHP-FPM + nginx for production instead (see
 [docs/DEPLOYMENT.md](../../docs/DEPLOYMENT.md)).
 

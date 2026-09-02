@@ -40,7 +40,7 @@ npm run dev
 | Journal Admin | http://localhost:80/admin/ |
 | API server | http://localhost:8080/ |
 
-> The dev server runs on port 80 (`cross-env PORT=80 react-scripts start` in `web-app/package.json`), so on macOS/Linux you may need to grant permission to bind to it, or change `PORT` if you'd rather use something like 3000.
+> The dev server runs on port 80 (`cross-env PORT=80 react-scripts start` in `web-app/package.json`), so on macOS/Linux you may need to grant permission to bind to it, or change `PORT` if you'd rather use something like 3000. The `:host` variants (see below) sidestep this by defaulting `web-app` to port 3000 instead of 80, since privileged ports need elevated permissions to bind on any interface, not just `0.0.0.0`.
 
 ## Project structure
 
@@ -84,10 +84,17 @@ export const properties = {
   startDate: "2025-02-01",
   appPassword: "...",
   fonts: [ /* Google Fonts to load, with weights */ ],
-  serverUrl: "http://localhost:8080",
+  serverUrl: process.env.REACT_APP_SERVER_URL || defaultServerUrl,
   disableTextSelect: false,
 };
 ```
+
+`serverUrl` and `analyticsUrl` (below) default to the page's own hostname on ports 8080/4400 rather than
+a hardcoded `localhost` — e.g. `web-app` served from `http://192.168.0.198` talks to
+`http://192.168.0.198:8080` and `:4400`, not `localhost`, so it works when accessed from another
+device on the LAN (see `npm run dev -- --host`). Set `REACT_APP_SERVER_URL` /
+`REACT_APP_ANALYTICS_URL` (`web-app/.env.example`) to override this when the API/analytics service
+isn't co-located with `web-app`.
 
 There's no `serverMode` any more — every backend (`node`/`php`/`java`/`python`) speaks the same `ezjData` envelope and PBKDF2/AES-256-CBC encryption, always on, so switching backends is just a `serverUrl` change.
 
@@ -95,7 +102,8 @@ Server-facing configuration lives in [server/node/properties.js](server/node/pro
 
 > ⚠️ The bundled `appPassword` / passphrase values are placeholders checked into source for local development. Replace them before deploying anywhere reachable from the internet.
 
-Environment variables (`web-app/.env.example`) currently only stub out a **future** Google OAuth admin gate — unused today:
+Environment variables (`web-app/.env.example`): `REACT_APP_SERVER_URL` / `REACT_APP_ANALYTICS_URL` (both
+optional, see above), plus stubs for a **future** Google OAuth admin gate — unused today:
 
 ```
 REACT_APP_GOOGLE_CLIENT_ID=
@@ -108,22 +116,28 @@ As of now `/admin` has **no login gate** — anyone who can reach the route land
 
 Run from the repo root:
 
+`dev`, `server`, and `prod` are backed by small dispatcher scripts (`scripts/dev.js`, `scripts/server.js`,
+`scripts/prod.js`) that take a `--backend` flag instead of each backend/mode/host combo having its own
+script name.
+
 | Script | What it does |
 | --- | --- |
-| `npm run dev` (alias `dev:node`) | Starts `web-app` (port 80) + `server/node` + the [analytics](analytics/README.md) service, all in dev mode, together |
-| `npm run dev:host` (alias `dev:node:host`) | Same, with `web-app` and analytics bound to `0.0.0.0` so other devices on the LAN can reach them |
-| `npm run dev:php` / `dev:java` / `dev:python` | Same as `dev`, against the PHP/Java/Python API server instead of Node |
-| `npm run dev:php:host` / `dev:java:host` / `dev:python:host` | Host-bound (`0.0.0.0`) variants of the above — also binds the PHP/Java/Python server itself, since (unlike the Node server) those default to localhost-only |
-| `npm start` / `npm run start:host` | Starts only `web-app`, localhost-only or bound to `0.0.0.0` |
-| `npm run server:dev` / `npm run server:node:dev` | Starts the Node API server in watch/dev mode |
-| `npm run server` / `npm run server:node:prod` | Starts the Node API server in production mode |
-| `npm run server:php:dev` / `server:php:dev:host` | Starts the PHP API server (`php -S` in `server/php`), localhost-only or bound to `0.0.0.0` — PHP's built-in server is dev-only, so there's no `:prod` variant; deploy it behind Apache/PHP-FPM for production instead |
-| `npm run server:java:dev` / `server:java:dev:host` | Starts the Java API server from source (`./mvnw spring-boot:run` in `server/java`), localhost-only or bound to `0.0.0.0` |
-| `npm run server:java:prod` | Builds the Spring Boot jar and runs it (`./mvnw package && java -jar target/*.jar`) |
-| `npm run server:python:dev` / `server:python:dev:host` | Starts the Python API server with auto-reload (`uvicorn --reload` in `server/python`), localhost-only or bound to `0.0.0.0` |
-| `npm run server:python:prod` | Starts the Python API server without auto-reload |
+| `npm start` / `npm run dev` | Starts `web-app` (port 80) + `server/node` + the [analytics](analytics/README.md) service, all in dev mode, together — identical scripts, `start` is just the npm-idiomatic name |
+| `npm start -- --host` | Same, with `web-app` and analytics bound to `0.0.0.0` so other devices on the LAN can reach them — `web-app` runs on port 3000 instead of 80 here, since binding a privileged port needs elevated permissions even on `0.0.0.0` |
+| `npm start -- --backend=php\|java\|python` | Same as `start`, against the PHP/Java/Python API server instead of Node |
+| `npm start -- --backend=php\|java\|python --host` | Host-bound (`0.0.0.0`) variant of the above — also binds the PHP/Java/Python server itself, since (unlike the Node server) those default to localhost-only |
+| `npm run start --workspace=web-app` / `npm run start:host --workspace=web-app` | Starts only `web-app`, without the API server or analytics — port 80 localhost-only, or port 3000 bound to `0.0.0.0` |
+| `npm run server` | Starts the Node API server in watch/dev mode |
+| `npm run server -- --prod` | Starts the Node API server in production mode |
+| `npm run server -- --backend=php` / `--backend=php --host` | Starts the PHP API server (`php -S` in `server/php`), localhost-only or bound to `0.0.0.0` — PHP's built-in server is dev-only, so `--prod` isn't supported for it; deploy it behind Apache/PHP-FPM for production instead |
+| `npm run server -- --backend=java` / `--backend=java --host` | Starts the Java API server from source (`./mvnw spring-boot:run` in `server/java`), localhost-only or bound to `0.0.0.0` |
+| `npm run server -- --backend=java --prod` | Builds the Spring Boot jar and runs it (`./mvnw package && java -jar target/*.jar`) |
+| `npm run server -- --backend=python` / `--backend=python --host` | Starts the Python API server with auto-reload (`uvicorn --reload` in `server/python`), localhost-only or bound to `0.0.0.0` |
+| `npm run server -- --backend=python --prod` | Starts the Python API server without auto-reload |
 | `npm run build` | Production build of `web-app` |
-| `npm run prod` | Runs the production build's server + the API server in production mode, together |
+| `npm run prod` | Runs the production build's server + the Node API server in production mode, together |
+| `npm run prod -- --backend=java\|python` | Same, against the Java/Python API server's production mode instead of Node |
+| `npm run stop` | Kills anything listening on the ports any of the above use (web-app, all four API backends, analytics, module federation dev servers) |
 | `npm test` | Runs `web-app`'s test suite |
 | `npm run analytics:dev` / `npm run analytics:start` | Starts the standalone [analytics](analytics/README.md) service on its own (port 4400, localhost only) in dev/watch or production mode |
 | `npm run analytics:dev:host` / `npm run analytics:start:host` | Same, bound to `0.0.0.0` so other devices on the LAN can reach it |
@@ -143,13 +157,14 @@ Run from the repo root via `npm run patrikaz -- <script>` (or `cd patrikaz && np
 
 | Script | What it does |
 | --- | --- |
-| `start` | Starts patrikaz + the `ui-library` MFE remote + the Node API server together (`http://localhost:3002`) |
+| `start` | Starts patrikaz + the `ui-library` MFE remote + the Node API server + the [analytics](analytics/README.md) service together (`http://localhost:3002`) |
 | `start:host` | Same as `start`, bound to `0.0.0.0` so other devices on the LAN can reach it |
-| `serve` | Starts only patrikaz's webpack-dev-server (assumes the API and MFE remote are already running elsewhere) |
+| `serve` | Starts only patrikaz's webpack-dev-server (assumes the API, MFE remote, and analytics are already running elsewhere) |
 | `serve:host` | Same as `serve`, bound to `0.0.0.0` |
-| `start:php` / `start:java` / `start:python` | Starts patrikaz + the MFE remote against the PHP/Java/Python API server instead of Node |
+| `start:php` / `start:java` / `start:python` | Starts patrikaz + the MFE remote + analytics against the PHP/Java/Python API server instead of Node |
 | `start:php:host` / `start:java:host` / `start:python:host` | Host-bound (`0.0.0.0`) variants of the above |
 | `mfe:start` / `mfe:start:host` | Starts `ui-library`'s Module Federation remote dev server on its own (`http://localhost:3001`) |
+| `analytics:dev` / `analytics:dev:host` | Starts the analytics service on its own (`http://localhost:4400`), localhost-only or bound to `0.0.0.0` |
 | `server:dev` (alias `server:node:dev`) | Starts the Node API server in dev/watch mode |
 | `server:php:dev` | Starts the PHP API server |
 | `server:java:dev` | Starts the Java API server from source (`./mvnw spring-boot:run`) |
@@ -186,7 +201,9 @@ Navigate to `/admin` (redirects to `/admin/categories`). The nav bar exposes fiv
 4. Toggle **Published** to control whether the article appears on the public site, and use **Reset** to clear the draft back to a blank article.
 5. Click **Preview** to see the rendered article before saving, then **Save** to persist it (creates a new article or updates the existing one depending on whether it already has an `id`).
 
-**Templates** (`/admin/templates`) — edit the structured content for the **Home**, **About**, and **QnA** pages via a radio toggle between the three template editors.
+**Templates** (`/admin/templates`) — edit the structured content for the **Home**, **About**, and **QnA** pages via a radio toggle between the three template editors. The Home editor's `templateData` is a plain string: one row per line, article ids within a row separated by `|` — a lone id on a row renders as the hero article, multiple ids render as a column of cards (see `TemplateRenderer` in `ui-library`). Its **Auto generate** button builds this for you: it ranks articles by view count from the [analytics](analytics/README.md) service (`GET /api/applications/:application/stats`, already sorted most-viewed first) and lays out the top 14 as hero (1) + row (3) + row (5) + row (5), so you don't have to hand-assemble ids or know the `|`/newline syntax. It requires analytics to already have recorded views for this application — a fresh instance with no traffic yet will show an error instead. Auto generate only fills in the textarea; nothing is saved until you click **Preview** then **Save Template**, same as a manual edit.
+
+The same ranking/layout is also available as a standalone script, `npm run template:auto-generate` (`scripts/auto_generate_template.py`), for batch/cron use outside the admin UI. Unlike the button, it writes `journal.templateData` straight into **every** backend's `db.json` (`server/node`, `server/php`, `server/java`, `server/python`) — no preview step — so all four stay in sync with whichever one the site is actually running. It starts the analytics service itself if one isn't already running (and stops it again when done), or reuses one that's already up. Options: `--application <name>` (default `web-app`), `--dry-run` (print the generated template without writing), `--db-json <path>` (repeatable, to target a subset of backends).
 
 **Contacts** (`/admin/contacts`) — view messages submitted through the public Contact Us form.
 
@@ -271,5 +288,6 @@ npm run prod        # serves the build (web-app/public/server.js, an Express sta
 - Contact Us (web + admin)
 - QnA (web + admin)
 - Self-hosted analytics (article/author view tracking) — see [analytics](analytics/README.md)
+- Auto generate the Home template from analytics (rank the most-read articles into a hero + 3/5/5 row layout)
 
 </details>

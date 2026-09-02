@@ -105,10 +105,10 @@ server {
 }
 ```
 
-If you proxy the API under a path like `/api/` as above, update `serverUrl` in
-`web-app/src/properties.js` (and rebuild) to match, rather than pointing it at
-`http://localhost:8080` directly — otherwise browsers will hit the backend's own origin/port
-directly and you lose the benefit of a single TLS-terminated entry point.
+If you proxy the API under a path like `/api/` as above, set `REACT_APP_SERVER_URL` (see
+`web-app/.env.example`) to that path before building, rather than leaving `serverUrl` at its
+default (the page's own hostname on port 8080) — otherwise browsers will hit the backend's own
+origin/port directly and you lose the benefit of a single TLS-terminated entry point.
 
 ## 5. Keeping the backend running
 
@@ -130,7 +130,7 @@ directly and you lose the benefit of a single TLS-terminated entry point.
   WantedBy=multi-user.target
   ```
 
-  Swap `ExecStart` for `./mvnw ...`/`java -jar target/*.jar` (Java, after `npm run server:java:prod`'s
+  Swap `ExecStart` for `./mvnw ...`/`java -jar target/*.jar` (Java, after `npm run server -- --backend=java --prod`'s
   build step) or `uvicorn app.main:app --port 8080` (Python) as appropriate.
 
 - **PHP** runs inside your existing Apache/PHP-FPM setup — no separate process to supervise, just

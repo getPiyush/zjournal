@@ -18,13 +18,14 @@ The server starts on **port 8080** (same as the other three backends — stop `s
 `server/java`, or `server/python` first if one is already running there, or change `port` in
 `properties.js`).
 
-From the repo root, the equivalent scripts are `npm run server:dev` (dev/watch mode) and
-`npm run server` (production mode) — see root [package.json](../../package.json).
+From the repo root, the equivalent scripts are `npm run server` (dev/watch mode) and
+`npm run server -- --prod` (production mode) — see root [package.json](../../package.json).
 
 ## Stopping
 
-In the foreground, `Ctrl+C`. If it's running in the background, kill whatever is bound to port
-8080:
+In the foreground, `Ctrl+C`. If it's running in the background, `npm run stop` (from the repo
+root) kills it along with anything else bound to the ports the monorepo's scripts use, or kill
+just this one directly:
 
 ```sh
 lsof -nP -iTCP:8080 -sTCP:LISTEN -t | xargs kill

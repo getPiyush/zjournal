@@ -4,10 +4,6 @@ import { encryptOutData } from "./codec";
 
 import { ArticleT, Contact, Journal, QnA } from "@zjournal/ui-library";
 
-// const host = window.location.host.split(":")[0];
-// const port = "8080";
-// const server = 'http://' + host + ':' + port;
-
 const server = applicationProperties.serverUrl;
 
 const getJournalAPIPath = `${server}/journal`;

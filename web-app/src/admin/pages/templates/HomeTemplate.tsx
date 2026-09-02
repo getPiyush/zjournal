@@ -3,6 +3,15 @@ import { ConfirmationButton } from "@zjournal/ui-library";
 import { useJournal } from "../../../datastore/contexts/JournalContext";
 import { updateJournalinDB } from "../../../datastore/actions/JournalActions";
 import TemplateRendererView from "../../../components/TemplateRendererView";
+import { applicationProperties } from "../../../ApplicationConstants";
+
+// Row layout for auto-generated templates: 1 hero article, then rows of 3/5/5
+// bar-separated articles, ranked by analytics view count (most-read first).
+const AUTO_GENERATE_ROW_SIZES = [1, 3, 5, 5];
+const AUTO_GENERATE_ARTICLE_COUNT = AUTO_GENERATE_ROW_SIZES.reduce(
+  (sum, size) => sum + size,
+  0
+);
 
 /*
 type HomeTemplateProps = {
@@ -17,6 +26,8 @@ export const HomeTemplate = () => {
   const [textData, setTextData] = useState(templateData);
   const [updatedTemplateData, setTemplateData] = useState(templateData);
   const [invalidArticles, setInvalidArticles] = useState([]);
+  const [autoGenerating, setAutoGenerating] = useState(false);
+  const [autoGenerateError, setAutoGenerateError] = useState(null);
 
   useEffect(() => {
     if (invalidArticles.length === 0) setTemplateData(textData);
@@ -35,6 +46,43 @@ export const HomeTemplate = () => {
   const updateTemplate = () => {
     // @todoo add validation
     setInvalidArticles([]);
+  };
+
+  const autoGenerateTemplate = async () => {
+    setAutoGenerating(true);
+    setAutoGenerateError(null);
+    try {
+      const response = await fetch(
+        `${applicationProperties.analyticsUrl}/api/applications/${applicationProperties.applicationName}/stats`
+      );
+      if (!response.ok) {
+        throw new Error(
+          response.status === 404
+            ? "No analytics data recorded yet — read some articles first."
+            : `Analytics request failed (${response.status}).`
+        );
+      }
+      const stats = await response.json();
+      const rankedArticleIds = stats.articles
+        .slice(0, AUTO_GENERATE_ARTICLE_COUNT)
+        .map((article) => article.articleId);
+
+      let cursor = 0;
+      const generatedTemplate = AUTO_GENERATE_ROW_SIZES.map((rowSize) => {
+        const row = rankedArticleIds.slice(cursor, cursor + rowSize);
+        cursor += rowSize;
+        return row.join("|");
+      })
+        .filter((row) => row.length > 0)
+        .join("\n");
+
+      setTextData(generatedTemplate);
+      setInvalidArticles([]);
+    } catch (err) {
+      setAutoGenerateError(err.message);
+    } finally {
+      setAutoGenerating(false);
+    }
   };
 
   const blockInvalidChars = (e) => {
@@ -116,15 +164,21 @@ export const HomeTemplate = () => {
               className="form-control"
               id="dataInputTextAres"
               rows={6}
+              value={textData}
               onChange={dataChanged}
               onKeyDown={blockInvalidChars}
-            >
-              {textData}
-            </textarea>
+            />
           </div>
         </div>
         <div className="row">
           <div className="col top-action-box">
+            <button
+              disabled={autoGenerating}
+              className="btn btn-outline-primary"
+              onClick={autoGenerateTemplate}
+            >
+              {autoGenerating ? "Generating…" : "Auto generate"}
+            </button>
             <button
               disabled={textData === updatedTemplateData}
               className="btn btn-secondary"
@@ -144,6 +198,11 @@ export const HomeTemplate = () => {
             />
           </div>
         </div>
+        {autoGenerateError && (
+          <div className="row">
+            <div className="col text-danger">{autoGenerateError}</div>
+          </div>
+        )}
       </div>
       <div className="row">
         <div className="col">

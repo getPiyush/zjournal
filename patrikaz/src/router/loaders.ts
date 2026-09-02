@@ -94,7 +94,7 @@ export async function articlesLoader({ request }: LoaderFunctionArgs): Promise<A
   const authorId = url.searchParams.get("authorId") ?? "";
 
   try {
-    if (categoryId) {
+    if (categoryId && categoryId !== "All") {
       const response = await getArticleByCategoryAPI(categoryId, true);
       return { title: categoryId, articles: decryptData(response.data) as ArticleT[] };
     }

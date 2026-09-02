@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Starts patrikaz (MFE + webpack serve) alongside a backend server at a given path.
+// Starts patrikaz (MFE + webpack serve + analytics) alongside a backend server at a given path.
 // Usage: npm run start:server -- <path-to-server-dir | node|php|java|python> [--host]
 //   npm run start:server -- ../server/java
 //   npm run start:server -- java
@@ -79,10 +79,11 @@ const concurrentlyBin = path.join(__dirname, "..", "node_modules", ".bin", "conc
 
 const mfeCommand = isHostMode ? "npm run mfe:start:host" : "npm run mfe:start";
 const serveCommand = isHostMode ? "npm run serve:host" : "npm run serve";
+const analyticsCommand = isHostMode ? "npm run analytics:dev:host" : "npm run analytics:dev";
 
 const result = spawnSync(
   concurrentlyBin,
-  [mfeCommand, serverCommand, serveCommand],
+  [mfeCommand, serverCommand, serveCommand, analyticsCommand],
   { stdio: "inherit", shell: false }
 );
 
