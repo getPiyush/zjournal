@@ -9,12 +9,12 @@ panel** for the person or team writing and managing content. Both are part of th
 there's no separate login/signup for readers, and (see the callout below) currently no login at
 all for the admin panel.
 
-> ⚠️ **Heads up if you're collaborating with others:** `/admin` currently has no login gate —
-> anyone who knows or reaches that URL can create, edit, publish, and permanently delete content.
-> If you're running a shared/public instance, make sure `/admin` is restricted some other way (a
-> password on the server, a private network, etc. — see
-> [DEPLOYMENT.md](DEPLOYMENT.md#securing-the-admin-panel)) before treating it as safe for
-> multiple people or a public deployment.
+> ⚠️ **Heads up if you're collaborating with others:** `/admin` asks for Google sign-in, and every
+> backend enforces it on the API once it's configured (see
+> [DEPLOYMENT.md](DEPLOYMENT.md#securing-the-admin-panel)). In a development setup with no Google
+> client id, sign-in is off and anyone who reaches the URL can create, edit, publish and
+> permanently delete content. Visitors only ever see published articles: drafts and articles on the
+> purge list stay hidden, even through the API.
 
 ## Reading the site
 

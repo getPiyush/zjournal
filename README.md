@@ -110,7 +110,7 @@ REACT_APP_GOOGLE_CLIENT_ID=
 REACT_APP_ADMIN_EMAILS=
 ```
 
-As of now `/admin` has **no login gate** — anyone who can reach the route lands in the panel (see `web-app/src/admin/index.tsx` and `web-app/src/admin/authConfig.ts`). Keep this in mind before exposing an instance publicly.
+`/admin` signs in with Google when `REACT_APP_GOOGLE_CLIENT_ID` is set (a development build without it skips sign-in and shows a banner). Every backend enforces the same allowlist on the API via `ZJOURNAL_GOOGLE_CLIENT_ID` / `ZJOURNAL_ADMIN_EMAILS`, and outside `ZJOURNAL_ENV=development` it won't run open. See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md#securing-the-admin-panel).
 
 ## Available scripts
 

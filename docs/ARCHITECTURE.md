@@ -116,11 +116,14 @@ match `php`'s hand-rolled query semantics; `php` rewrites all of `db.json` on ev
 
 ## Known architectural gaps
 
-- **No admin auth.** `/admin` has no login gate today — anyone who can reach the route can create,
-  edit, publish, and purge content. A Google OAuth gate is stubbed (`web-app/src/admin/authConfig.ts`,
-  `.env.example`'s `REACT_APP_GOOGLE_CLIENT_ID`/`REACT_APP_ADMIN_EMAILS`) but not wired up. See
-  [DEPLOYMENT.md](DEPLOYMENT.md#securing-the-admin-panel) for mitigations if you deploy this
-  publicly before that lands.
+- **Admin auth lives in each backend.** The admin panel signs in with Google
+  (`web-app/src/admin/Login.tsx`) and sends the ID token as a bearer token
+  (`web-app/src/datastore/http-client.ts`). Each of the four backends implements the same rules
+  separately (`server/node/auth.js`, `server/php/auth.php`, `server/python/app/auth.py`,
+  `server/java/.../auth/`): writes and contact reads need an admin, and anonymous article and
+  journal reads get a public view (no drafts, no purge-list articles, no private journal fields).
+  A rule change has to be made in all four. See
+  [DEPLOYMENT.md](DEPLOYMENT.md#securing-the-admin-panel).
 - **`ui-library`'s build-time coupling to `web-app`.** Unlike `patrikaz`, `web-app` still statically
   bundles `ui-library`; a change to a shared component requires rebuilding and redeploying
   `web-app`. See [micro-frontend-readiness.md](micro-frontend-readiness.md) for what closing that
