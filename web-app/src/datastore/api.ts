@@ -53,7 +53,10 @@ export const getJournalAPI = () => {
 
 export const updateJournalAPI = (journal: Journal) => {
     const url = `${getJournalAPIPath}`;
-    return putRequest(url, journal);
+    // currentArticle is the admin editor's in-tab working copy (possibly an unpublished draft),
+    // not a setting: don't store it with the journal.
+    const { currentArticle, ...settings } = journal;
+    return putRequest(url, settings);
 }
 
 
@@ -73,24 +76,26 @@ export const getArticleByIdsAPI = (ids: string[]) => {
     return getRequest(url);
 }
 
+// What the public site may list: published, and not on the admin's purge list.
+const PUBLIC_ARTICLE_FILTERS = ["published=true", "deleteFlag=false"];
+
+const articlesQuery = (filters: string[], web: boolean) => {
+    const params = [...filters, ...(web ? PUBLIC_ARTICLE_FILTERS : [])];
+    return `${getArticleAPIPath}${params.length > 0 ? `?${params.join("&")}` : ``}`;
+}
+
 export const getArticleByCategoryAPI = (category: string, web: boolean) => {
-    const params = [];
-    if (category !== "") params.push(`categryId=${category}`);
-    if (web) params.push(`published=true`);
-    const url = `${getArticleAPIPath}${params.length > 0 ? `?${params.join("&")}` : ``}`;
-    return getRequest(url);
+    const filters = category !== "" ? [`categryId=${encodeURIComponent(category)}`] : [];
+    return getRequest(articlesQuery(filters, web));
 }
 
 export const getArticleByAuthorAPI = (author: string, web: boolean) => {
-    const authorParam = author !== "" ? `?author=${encodeURIComponent(author)}` : ``;
-    const publishedParam = web ? `&published=true` : ``;
-    const url = `${getArticleAPIPath}${authorParam}${publishedParam}`;
-    return getRequest(url);
+    const filters = author !== "" ? [`author=${encodeURIComponent(author)}`] : [];
+    return getRequest(articlesQuery(filters, web));
 }
 
 export const getArticleByMonthAPI = (blogDate: string, web: boolean) => {
-    const url = `${getArticleAPIPath}?createdAt_like=${blogDate}${web ? `&published=true` : ``}`;
-    return getRequest(url);
+    return getRequest(articlesQuery([`createdAt_like=${blogDate}`], web));
 }
 
 export const getArticlesToDeleteAPI = () => {
@@ -100,8 +105,6 @@ export const getArticlesToDeleteAPI = () => {
 
 export const addArticleAPI = (article: ArticleT) => {
     const url = `${getArticleAPIPath}`;
-          console.log("ArticleContainer: onSave called with article:", article);
-
     return postRequest(url, article);
 }
 

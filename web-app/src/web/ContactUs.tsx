@@ -24,12 +24,7 @@ export default function ContactUs() {
   };
 
   const contactUsSubmitted = (e) => {
-    console.log(e);
     const { target } = e;
-    console.log(e.target[0].value);
-    console.log(e.target[1].value);
-    console.log(e.target[2].value);
-    console.log(e.target[3].value);
 
     const contactOut: Contact = {
       name: target[0].value,
@@ -57,16 +52,13 @@ export default function ContactUs() {
           return decodedValues.join('":"');
         })
         .join('","')}"}`;
-      console.log(paramObj);
 
       const unescapedParams = JSON.parse(paramObj);
-      console.log(unescapedParams);
 
       let outContact: Contact = {
         ...unescapedParams,
         createdAt: new Date(),
       };
-      console.log(outContact, decodeURIComponent(paramObj));
       if (contactState.status !== "loading")
         addContactToDB(dispatch, outContact);
     }

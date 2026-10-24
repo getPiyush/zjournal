@@ -32,8 +32,10 @@ function journalReducer(state: State, action: Action) {
       return { status: "error", journal: state.journal };
     }
 
+    // currentArticle is the editor's working copy and lives only in this tab: keep it, whatever
+    // the server sends (it no longer stores it, and hides any old copy from anonymous reads).
     case "update_journal_success": {
-      return { status: "success", journal: action.value };
+      return { status: "success", journal: { ...action.value, currentArticle: state.journal.currentArticle } };
     }
 
     case "update_journal_loading": {
@@ -45,7 +47,7 @@ function journalReducer(state: State, action: Action) {
     }
 
     case "get_journal_success": {
-      return { status: "success", journal: action.value };
+      return { status: "success", journal: { ...action.value, currentArticle: state.journal.currentArticle } };
     }
 
     case "update_page": {

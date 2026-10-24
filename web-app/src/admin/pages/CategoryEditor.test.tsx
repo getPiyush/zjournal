@@ -6,6 +6,7 @@ jest.mock("../../datastore/actions/ArticleActions", () => ({
 }));
 
 import CategoryEditor from "./CategoryEditor";
+import { JournalLoader } from "../../testUtils/JournalLoader";
 import { renderWithProviders } from "../../testUtils/renderWithProviders";
 import { getArticlesBycategory } from "../../datastore/actions/ArticleActions";
 
@@ -63,5 +64,29 @@ describe("CategoryEditor", () => {
 
     expect(screen.getByText("1 Articles")).toBeInTheDocument();
     expect(screen.queryByText("Shipping with confidence")).toBeNull();
+  });
+
+  test("choosing a category fetches its articles without touching the URL", async () => {
+    const { router } = renderWithProviders(
+      <>
+        <JournalLoader journal={{ categories: ["All", "Art"] }} />
+        <CategoryEditor />
+      </>,
+      { route: "/admin/categories" }
+    );
+
+    await userEvent.click(screen.getByRole("button", { name: "Art" }));
+
+    expect(getArticlesBycategory).toHaveBeenLastCalledWith(expect.any(Function), "Art");
+    expect(router.state.location.pathname + router.state.location.hash).toBe("/admin/categories");
+  });
+
+  test("New article opens an empty editor", async () => {
+    const { router } = renderWithProviders(<CategoryEditor />, { route: "/admin/categories" });
+
+    await userEvent.click(screen.getByRole("button", { name: "New article" }));
+
+    expect(router.state.location.pathname).toBe("/admin/editor");
+    expect(router.state.location.search).toBe("");
   });
 });

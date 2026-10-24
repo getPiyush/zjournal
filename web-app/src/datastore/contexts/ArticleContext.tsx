@@ -25,10 +25,10 @@ type Action =
   | { type: "add_article_success",  value: ArticleT  }
   | { type: "add_article_error" }
   | { type: "update_article_loading" }
-  | { type: "update_article_success" }
+  | { type: "update_article_success"; value?: ArticleT }
   | { type: "update_article_error" }
   | { type: "delete_article_loading" }
-  | { type: "delete_article_success" }
+  | { type: "delete_article_success"; id: string }
   | { type: "delete_article_error" }
   | { type: "add_article"; value: ArticleT };
 
@@ -133,8 +133,15 @@ function articleReducer(state: State, action: Action) {
       return { status: "loading", articles: state.articles };
     }
 
+    // Swap in the saved version, so lists showing it (e.g. Purge after a restore) stay current.
     case "update_article_success": {
-      return { status: "success", articles: state.articles };
+      const saved = action.value;
+      return {
+        status: "success",
+        articles: saved?.id
+          ? state.articles.map((article) => (article.id === saved.id ? { ...article, ...saved } : article))
+          : state.articles,
+      };
     }
 
     case "update_article_error": {
@@ -146,8 +153,9 @@ function articleReducer(state: State, action: Action) {
         return { status: "loading", articles: state.articles };
       }
   
+      // Drop the deleted article, so e.g. the Purge list doesn't keep showing it.
       case "delete_article_success": {
-        return { status: "success", articles: state.articles };
+        return { status: "success", articles: state.articles.filter((article) => article.id !== action.id) };
       }
   
       case "delete_article_error": {

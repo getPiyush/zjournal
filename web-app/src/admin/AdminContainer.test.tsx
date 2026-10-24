@@ -1,5 +1,5 @@
-import { render, screen } from "@testing-library/react";
-import { MemoryRouter, Route, Routes } from "react-router-dom";
+import { screen } from "@testing-library/react";
+import { Route, Routes } from "react-router-dom";
 
 jest.mock("../datastore/actions/ArticleActions", () => ({
   getArticleById: jest.fn(),
@@ -24,19 +24,18 @@ jest.mock("../datastore/actions/QnAActions", () => ({
 
 import AdminContainer from "./AdminContainer";
 import { getArticleById } from "../datastore/actions/ArticleActions";
-import { AllProviders } from "../testUtils/renderWithProviders";
+import { renderWithProviders } from "../testUtils/renderWithProviders";
+import { JournalLoader } from "../testUtils/JournalLoader";
+import userEvent from "@testing-library/user-event";
 
 // AdminContainer's own <Routes> uses paths relative to an "admin/*" ancestor
 // route (provided by AppRoot in the real app), so it must be mounted the same way here.
 function renderAdminContainer(route: string) {
-  return render(
-    <MemoryRouter initialEntries={[route]}>
-      <AllProviders>
-        <Routes>
-          <Route path="admin/*" element={<AdminContainer />} />
-        </Routes>
-      </AllProviders>
-    </MemoryRouter>
+  return renderWithProviders(
+    <Routes>
+      <Route path="admin/*" element={<AdminContainer />} />
+    </Routes>,
+    { route }
   );
 }
 
@@ -72,5 +71,34 @@ describe("AdminContainer", () => {
     (getArticleById as jest.Mock).mockClear();
     renderAdminContainer("/admin/editor");
     expect(getArticleById).not.toHaveBeenCalled();
+  });
+
+  test("New article replaces the article that was open in the editor with a blank one", async () => {
+    const existing = {
+      id: "a1",
+      author: "Someone",
+      title: "Existing article",
+      createdAt: new Date("2026-01-01"),
+      updatedAt: new Date("2026-01-01"),
+      categryId: "Art",
+      content: [],
+      origin: "server" as const,
+      published: true,
+      deleteFlag: false,
+    };
+    renderWithProviders(
+      <>
+        <JournalLoader journal={{ currentArticle: existing }} />
+        <Routes>
+          <Route path="admin/*" element={<AdminContainer />} />
+        </Routes>
+      </>,
+      { route: "/admin/categories" }
+    );
+
+    await userEvent.click(screen.getByRole("button", { name: "New article" }));
+
+    expect(screen.getByPlaceholderText("This is a sample title")).toHaveValue("");
+    expect(screen.getByText("Creating New", { exact: false })).toBeInTheDocument();
   });
 });

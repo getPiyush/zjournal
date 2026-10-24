@@ -3,9 +3,10 @@ import { ConfirmationButton } from "@zjournal/ui-library";
 
 type HeaderProps = {
   onLogout: () => void;
+  userEmail?: string;
 };
 
-export default function Header({ onLogout }: HeaderProps) {
+export default function Header({ onLogout, userEmail }: HeaderProps) {
   const location = useLocation().pathname;
 
   return (
@@ -88,10 +89,13 @@ export default function Header({ onLogout }: HeaderProps) {
               </Link>
             </li>
           </ul>
+          {userEmail && (
+            <span className="navbar-text small text-muted ms-auto me-2">{userEmail}</span>
+          )}
           <ConfirmationButton
               buttonText="Logout"
               confirmationClick={onLogout}
-              confirmationMessage="Are you sure want to log out?"
+              confirmationMessage="Are you sure you want to log out?"
               iconComp={<i className="bi bi-x-square-fill"/>}
               disabled={false}
             />

@@ -23,14 +23,18 @@ export const HomeTemplate = () => {
   const { dispatch, state: jState } = useJournal();
   const { templateData } = jState.journal;
 
-  const [textData, setTextData] = useState(templateData);
-  const [updatedTemplateData, setTemplateData] = useState(templateData);
+  // Both stay null until the admin edits or previews, so they show the saved template even when
+  // the journal loads after this page first renders.
+  const [textDraft, setTextData] = useState<string | null>(null);
+  const [previewDraft, setTemplateData] = useState<string | null>(null);
+  const textData = textDraft ?? templateData;
+  const updatedTemplateData = previewDraft ?? templateData;
   const [invalidArticles, setInvalidArticles] = useState([]);
   const [autoGenerating, setAutoGenerating] = useState(false);
   const [autoGenerateError, setAutoGenerateError] = useState(null);
 
   useEffect(() => {
-    if (invalidArticles.length === 0) setTemplateData(textData);
+    if (invalidArticles.length === 0) setTemplateData(textDraft);
   }, [invalidArticles]);
 
   /* useEffect(() => {
@@ -96,7 +100,6 @@ export const HomeTemplate = () => {
       ...jState.journal,
       templateData: updatedTemplateData,
     };
-    console.log(updatedJournal);
     updateJournalinDB(dispatch, updatedJournal);
   };
 
@@ -187,7 +190,7 @@ export const HomeTemplate = () => {
               Preview
             </button>
             <ConfirmationButton
-              confirmationMessage="Are you sure want to update Home Page?"
+              confirmationMessage="Are you sure you want to update the Home page?"
               iconComp={null}
               disabled={
                 invalidArticles.length > 0 ||
@@ -229,7 +232,7 @@ export const HomeTemplate = () => {
       <div className="row">
         <div className="col mt-2 mb-2">
           <span>
-            Note: Please be careful beofre updating the home page template,
+            Note: Please be careful before updating the home page template,
             preview it properly before saving.
           </span>
         </div>

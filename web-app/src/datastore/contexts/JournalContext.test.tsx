@@ -41,18 +41,25 @@ describe("useJournal", () => {
     expect(result.current.state.journal).toBe(journalBefore);
   });
 
-  test("get_journal_success replaces the journal", () => {
+  test("get_journal_success replaces the journal but keeps this tab's currentArticle", () => {
     const { result } = setup();
-    const journal: any = { title: "Fetched Journal" };
+    const draft: any = { id: "draft-1", title: "Local draft" };
+    const journal: any = { title: "Fetched Journal", currentArticle: { id: "stale-server-copy" } };
 
+    act(() => {
+      result.current.dispatch({ type: "update_current_article", value: draft });
+    });
     act(() => {
       result.current.dispatch({ type: "get_journal_success", value: journal });
     });
 
-    expect(result.current.state).toEqual({ status: "success", journal });
+    expect(result.current.state).toEqual({
+      status: "success",
+      journal: { title: "Fetched Journal", currentArticle: draft },
+    });
   });
 
-  test("update_journal_success replaces the journal", () => {
+  test("update_journal_success replaces the journal but keeps this tab's currentArticle", () => {
     const { result } = setup();
     const journal: any = { title: "Updated Journal" };
 
@@ -60,7 +67,10 @@ describe("useJournal", () => {
       result.current.dispatch({ type: "update_journal_success", value: journal });
     });
 
-    expect(result.current.state).toEqual({ status: "success", journal });
+    expect(result.current.state).toEqual({
+      status: "success",
+      journal: { title: "Updated Journal", currentArticle: defaultJournal.currentArticle },
+    });
   });
 
   test("update_page only updates the selected page", () => {

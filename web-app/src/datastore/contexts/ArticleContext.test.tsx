@@ -42,7 +42,6 @@ describe("useArticle", () => {
     ["update_article_success", "success"],
     ["update_article_error", "error"],
     ["delete_article_loading", "loading"],
-    ["delete_article_success", "success"],
     ["delete_article_error", "error"],
   ])("%s sets status to %s while preserving the article list", (type, status) => {
     const { result } = setup();
@@ -54,6 +53,42 @@ describe("useArticle", () => {
 
     expect(result.current.state.status).toBe(status);
     expect(result.current.state.articles).toBe(articlesBefore);
+  });
+
+  test("update_article_success swaps the saved version into the list", () => {
+    const { result } = setup();
+    act(() => {
+      result.current.dispatch({
+        type: "get_articles_delete",
+        value: [{ id: "a", deleteFlag: true }, { id: "b", deleteFlag: true }] as any,
+      });
+    });
+
+    act(() => {
+      result.current.dispatch({ type: "update_article_success", value: { id: "a", deleteFlag: false } as any });
+    });
+
+    expect(result.current.state.articles).toEqual([
+      { id: "a", deleteFlag: false },
+      { id: "b", deleteFlag: true },
+    ]);
+  });
+
+  test("delete_article_success removes the deleted article from the list", () => {
+    const { result } = setup();
+    act(() => {
+      result.current.dispatch({
+        type: "get_articles_delete",
+        value: [{ id: "a" }, { id: "b" }] as any,
+      });
+    });
+
+    act(() => {
+      result.current.dispatch({ type: "delete_article_success", id: "a" });
+    });
+
+    expect(result.current.state.status).toBe("success");
+    expect(result.current.state.articles.map((article) => article.id)).toEqual(["b"]);
   });
 
   test("get_article_by_id replaces the article list with a single article", () => {

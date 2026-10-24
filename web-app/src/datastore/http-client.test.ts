@@ -1,4 +1,6 @@
 import { httpClient } from "./http-client";
+import { getSession, saveSession, UNAUTHORIZED_EVENT } from "./authSession";
+import { fakeIdToken } from "../testUtils/fakeIdToken";
 
 function mockFetchResponse({
   contentType = "application/json",
@@ -139,5 +141,42 @@ describe("httpClient", () => {
 
     expect(response.status).toBe(404);
     expect(response.statusText).toBe("Not Found");
+  });
+
+  describe("admin auth", () => {
+    afterEach(() => sessionStorage.clear());
+
+    test("sends the stored ID token as a bearer token", async () => {
+      const token = fakeIdToken();
+      saveSession(token);
+      const fetchMock = jest.fn().mockResolvedValue(mockFetchResponse());
+      global.fetch = fetchMock as any;
+
+      await httpClient.put("http://api.test/journal", {}, { headers: { "X-Custom": "value" } });
+
+      expect(fetchMock.mock.calls[0][1].headers).toEqual({
+        "X-Custom": "value",
+        Authorization: `Bearer ${token}`,
+      });
+    });
+
+    test.each([401, 403])(
+      "on %i, clears the session, announces it and rejects",
+      async (status) => {
+        saveSession(fakeIdToken());
+        global.fetch = jest.fn().mockResolvedValue(mockFetchResponse({ status })) as any;
+        const listener = jest.fn();
+        window.addEventListener(UNAUTHORIZED_EVENT, listener);
+
+        await expect(httpClient.delete("http://api.test/articles/1")).rejects.toThrow(
+          `(${status})`
+        );
+
+        window.removeEventListener(UNAUTHORIZED_EVENT, listener);
+        expect(getSession()).toBeNull();
+        expect(listener).toHaveBeenCalledTimes(1);
+        expect(listener.mock.calls[0][0].detail).toEqual({ status });
+      }
+    );
   });
 });

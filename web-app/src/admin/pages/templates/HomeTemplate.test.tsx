@@ -10,6 +10,7 @@ jest.mock("../../../datastore/actions/ArticleActions", () => ({
 
 import { HomeTemplate } from "./HomeTemplate";
 import { AllProviders } from "../../../testUtils/renderWithProviders";
+import { JournalLoader } from "../../../testUtils/JournalLoader";
 
 describe("HomeTemplate", () => {
   test("disables Preview until the template text changes", () => {
@@ -31,6 +32,25 @@ describe("HomeTemplate", () => {
     await userEvent.type(screen.getByRole("textbox"), "article-1");
 
     expect(screen.getByRole("button", { name: "Preview" })).toBeEnabled();
+  });
+
+  test("shows the saved template when the journal loads after the page renders", () => {
+    const { rerender } = render(
+      <AllProviders>
+        <JournalLoader journal={null} />
+        <HomeTemplate />
+      </AllProviders>
+    );
+
+    rerender(
+      <AllProviders>
+        <JournalLoader journal={{ templateData: "article-1\narticle-2|article-3" }} />
+        <HomeTemplate />
+      </AllProviders>
+    );
+
+    expect(screen.getByRole("textbox")).toHaveValue("article-1\narticle-2|article-3");
+    expect(screen.getByRole("button", { name: "Preview" })).toBeDisabled();
   });
 
   describe("Auto generate", () => {

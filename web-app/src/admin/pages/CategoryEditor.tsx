@@ -5,6 +5,7 @@ import { getArticlesBycategory } from "../../datastore/actions/ArticleActions";
 import { useArticle } from "../../datastore/contexts/ArticleContext";
 import { useJournal } from "../../datastore/contexts/JournalContext";
 import { updateCurrentArticle } from "../../datastore/actions/JournalActions";
+import { defaultArticle } from "../../ApplicationConstants";
 
 export default function CategoryEditor() {
   const { state: state, dispatch: journalDispatch } = useJournal();
@@ -15,6 +16,12 @@ export default function CategoryEditor() {
   const editArticle = (article: ArticleT) => {
     updateCurrentArticle(article, journalDispatch);
     navigate(`/admin/editor?id=${encodeURIComponent(article.id)}`);
+  };
+
+  const newArticle = () => {
+    const now = new Date();
+    updateCurrentArticle({ ...defaultArticle, createdAt: now, updatedAt: now }, journalDispatch);
+    navigate("/admin/editor");
   };
 
   const getArticlesBycategoryID = (categoryId) => {
@@ -64,20 +71,20 @@ export default function CategoryEditor() {
       </button>
 
       <ul className="dropdown-menu" aria-labelledby="categoryButton">
-        {state.journal.categories.map((category, index) => (
-          <li>
-            <a
+        {state.journal.categories.map((category) => (
+          <li key={category}>
+            {/* A button, not href="#": choosing a category shouldn't touch the URL. */}
+            <button
+              type="button"
               className={
                 category === currentCategory
                   ? "dropdown-item active"
                   : "dropdown-item"
               }
               onClick={() => setSelectedcategory(category !== "All" ? category : "")}
-              href="#"
-              key={`key_${index}_${category.replace(/[^A-Z0-9]/gi, "_")}`}
             >
               {category}
-            </a>
+            </button>
           </li>
         ))}
       </ul>
@@ -97,6 +104,10 @@ export default function CategoryEditor() {
         </div>
         <div className="col-md-4 offset-md-4 d-flex justify-content-end">
           <div className="align-self-center"><b>{visibleArticles.length} Articles</b></div>
+          <button type="button" className="btn btn-primary btn-sm ms-3 align-self-center" onClick={newArticle}>
+            <i className="bi bi-plus-lg" />
+            &nbsp;New article
+          </button>
         </div>
       </div>
       <ArticlesToolbar search={search} onSearchChange={setSearch} sortBy={sortBy} onSortChange={setSortBy} />

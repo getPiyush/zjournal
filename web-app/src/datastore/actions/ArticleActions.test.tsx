@@ -11,6 +11,8 @@ import {
   addArticleToDB,
   updateArticleinDB,
   deleteArticleinDB,
+  restoreArticleInDB,
+  deleteArticlesInDB,
 } from "./ArticleActions";
 import {
   getArticleByIdAPI,
@@ -24,6 +26,8 @@ import {
   deleteArticleAPI,
 } from "../api";
 import { decryptData } from "../codec";
+import { ApiError } from "../apiError";
+import { Notice, subscribe } from "../notifications";
 
 const flushPromises = () => new Promise((resolve) => setTimeout(resolve, 0));
 
@@ -283,7 +287,7 @@ describe("deleteArticleinDB", () => {
     expect(deleteArticleAPI).toHaveBeenCalledWith(article);
     expect(dispatch).toHaveBeenCalledWith({
       type: "delete_article_success",
-      value: article,
+      id: article.id,
     });
   });
 
@@ -297,3 +301,113 @@ describe("deleteArticleinDB", () => {
     expect(dispatch).toHaveBeenCalledWith({ type: "delete_article_error" });
   });
 });
+
+describe("feedback", () => {
+  let notices: Notice[];
+  let unsubscribe: () => void;
+
+  beforeEach(() => {
+    notices = [];
+    unsubscribe = subscribe((notice) => notices.push(notice));
+  });
+  afterEach(() => unsubscribe());
+
+  test("announces a successful save", async () => {
+    (updateArticleAPI as jest.Mock).mockResolvedValue({ status: 200, data: { id: "1" } });
+
+    updateArticleinDB(jest.fn(), { id: "1" } as any);
+    await flushPromises();
+
+    expect(notices).toEqual([expect.objectContaining({ kind: "success", message: "Article saved" })]);
+  });
+
+  test("treats an HTTP error status as a failure instead of decrypting it as data", async () => {
+    const dispatch = jest.fn();
+    (updateArticleAPI as jest.Mock).mockResolvedValue({
+      status: 404,
+      data: { error: { code: "NOT_FOUND", message: "No item with that id" } },
+    });
+
+    updateArticleinDB(dispatch, { id: "missing" } as any);
+    await flushPromises();
+
+    expect(dispatch).toHaveBeenCalledWith({ type: "update_article_error" });
+    expect(dispatch).not.toHaveBeenCalledWith(expect.objectContaining({ type: "update_article_success" }));
+    expect(notices).toEqual([
+      expect.objectContaining({ kind: "error", message: "Couldn't save the article: No item with that id" }),
+    ]);
+  });
+
+  test("stays quiet when the sign-in was rejected (the sign-in screen explains)", async () => {
+    (deleteArticleAPI as jest.Mock).mockRejectedValue(new ApiError(401, "rejected"));
+
+    deleteArticleinDB(jest.fn(), { id: "1" } as any);
+    await flushPromises();
+
+    expect(notices).toEqual([]);
+  });
+});
+
+describe("restoreArticleInDB", () => {
+  test("saves the article with its delete flag cleared", async () => {
+    const notices: Notice[] = [];
+    const unsubscribe = subscribe((notice) => notices.push(notice));
+    (updateArticleAPI as jest.Mock).mockResolvedValue({ status: 200, data: { id: "1" } });
+
+    restoreArticleInDB(jest.fn(), { id: "1", deleteFlag: true } as any);
+    await flushPromises();
+    unsubscribe();
+
+    expect(updateArticleAPI).toHaveBeenCalledWith(expect.objectContaining({ id: "1", deleteFlag: false }));
+    expect(notices).toEqual([expect.objectContaining({ kind: "success", message: "Article restored" })]);
+  });
+});
+
+describe("deleteArticlesInDB", () => {
+  let notices: Notice[];
+  let unsubscribe: () => void;
+  const articles = [{ id: "a" }, { id: "b" }, { id: "c" }] as any[];
+
+  beforeEach(() => {
+    notices = [];
+    unsubscribe = subscribe((notice) => notices.push(notice));
+  });
+  afterEach(() => unsubscribe());
+
+  test("deletes every article and reports once", async () => {
+    const dispatch = jest.fn();
+    (deleteArticleAPI as jest.Mock).mockResolvedValue({ status: 200, data: {} });
+
+    await deleteArticlesInDB(dispatch, articles);
+
+    expect(deleteArticleAPI).toHaveBeenCalledTimes(3);
+    ["a", "b", "c"].forEach((id) =>
+      expect(dispatch).toHaveBeenCalledWith({ type: "delete_article_success", id })
+    );
+    expect(notices).toEqual([
+      expect.objectContaining({ kind: "success", message: "3 articles permanently deleted" }),
+    ]);
+  });
+
+  test("removes the ones that succeeded and reports the ones that failed", async () => {
+    const dispatch = jest.fn();
+    (deleteArticleAPI as jest.Mock).mockImplementation((article) =>
+      Promise.resolve(
+        article.id === "b"
+          ? { status: 500, data: { error: { message: "disk full" } } }
+          : { status: 200, data: {} }
+      )
+    );
+
+    await deleteArticlesInDB(dispatch, articles);
+
+    expect(dispatch).toHaveBeenCalledWith({ type: "delete_article_success", id: "a" });
+    expect(dispatch).toHaveBeenCalledWith({ type: "delete_article_success", id: "c" });
+    expect(dispatch).not.toHaveBeenCalledWith({ type: "delete_article_success", id: "b" });
+    expect(dispatch).toHaveBeenLastCalledWith({ type: "delete_article_error" });
+    expect(notices).toEqual([
+      expect.objectContaining({ kind: "error", message: "Couldn't delete 1 of 3 articles: disk full" }),
+    ]);
+  });
+});
+

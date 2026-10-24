@@ -7,22 +7,19 @@ export const AboutTemplate = () => {
   const { dispatch, state: jState } = useJournal();
   const { aboutUs } = jState.journal;
 
-  // aboutUs is optional on Journal (e.g. before the journal has loaded from
-  // the server), but the length check below requires a string.
-  const [htmlData, setHtmlData] = useState(aboutUs ?? "");
+  // null until the admin edits, so the box shows the saved text even when the journal loads after
+  // this page first renders. aboutUs is optional on Journal (it's missing before the journal has
+  // loaded), but the length check below requires a string.
+  const [draft, setDraft] = useState<string | null>(null);
+  const htmlData = draft ?? aboutUs ?? "";
 
   const dataChanged = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     // @todoo add validation
-    setHtmlData(event.target.value);
+    setDraft(event.target.value);
   };
 
   const saveTemplate = () => {
-    const updatedJournal = {
-      ...jState.journal,
-      aboutUs: htmlData,
-    };
-    console.log(updatedJournal);
-    updateJournalinDB(dispatch, updatedJournal);
+    updateJournalinDB(dispatch, { ...jState.journal, aboutUs: htmlData });
   };
 
   return (
@@ -38,18 +35,16 @@ export const AboutTemplate = () => {
               className="form-control"
               id="dataInputTextAres"
               rows={6}
+              value={htmlData}
               onChange={dataChanged}
-            >
-              {htmlData}
-            </textarea>
-            
+            />
           </div>
         </div>
       </div>
       <div className="row">
         <div className="col">
         <ConfirmationButton
-              confirmationMessage="Are you sure want to update About Page?"
+              confirmationMessage="Are you sure you want to update the About page?"
               iconComp={null}
               disabled={
                 htmlData.length < 20 ||

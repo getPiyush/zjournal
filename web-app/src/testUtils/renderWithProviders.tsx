@@ -1,6 +1,6 @@
 import { ReactElement, ReactNode } from "react";
 import { render, RenderOptions } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
+import { createMemoryRouter, RouterProvider } from "react-router-dom";
 
 import { JournalProvider } from "../datastore/contexts/JournalContext";
 import { ArticleProvider } from "../datastore/contexts/ArticleContext";
@@ -21,11 +21,11 @@ export function AllProviders({ children }: { children: ReactNode }) {
   );
 }
 
+// A data router (like the real app's createBrowserRouter), so components using useBlocker work.
+// Returns the router too, for tests that navigate.
 export function renderWithProviders(ui: ReactElement, { route = "/", ...options }: Options = {}) {
-  return render(
-    <MemoryRouter initialEntries={[route]}>
-      <AllProviders>{ui}</AllProviders>
-    </MemoryRouter>,
-    options
-  );
+  const router = createMemoryRouter([{ path: "*", element: <AllProviders>{ui}</AllProviders> }], {
+    initialEntries: [route],
+  });
+  return { router, ...render(<RouterProvider router={router} />, options) };
 }
