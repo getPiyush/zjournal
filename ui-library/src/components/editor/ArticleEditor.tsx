@@ -26,6 +26,9 @@ type ArticleEditorProps = {
   availableComponents: string[];
   categories: string[];
   savedArticle?: ArticleT | null;
+  /** Called with the article as edited so far (title, settings and content) on every change,
+   * so the caller can tell whether there are unsaved edits. */
+  onChange?: (article: ArticleT) => void;
 };
 
 export default function ArticleEditor({
@@ -35,6 +38,7 @@ export default function ArticleEditor({
   availableComponents,
   categories,
   savedArticle,
+  onChange,
 }: ArticleEditorProps) {
   const sampleText = "The quick brown fox, jumps over a lazy dog.!?";
 
@@ -48,6 +52,10 @@ export default function ArticleEditor({
   const [content, setContent] = useState<ComponentObject[]>(articleIn.content);
   const [editMode, setEditMode] = useState(false);
   const [selectedElement, setSelectedElement] = useState("h2");
+
+  useEffect(() => {
+    onChange?.({ ...article, content });
+  }, [article, content]);
   const [editComponent, setEditcomponent] = useState<ComponentObject | null>(null);
 
   const onElementDropdownSelect = (
@@ -82,7 +90,6 @@ export default function ArticleEditor({
   };
 
   const onResetClick = () => {
-    console.log("Resetting Article Editor");
     setArticle(defaultArticle);
     setContent([]);
   };
@@ -317,8 +324,9 @@ export default function ArticleEditor({
               checked={article.deleteFlag}
               onChange={deleteStatusUpdated}
             />
-            <label className="form-check-label" htmlFor="publichedCheckSwitch">
-              Deleted
+            {/* Doesn't delete anything: saving puts the article on the admin's Purge list. */}
+            <label className="form-check-label" htmlFor="deleteCheckSwitch">
+              Marked for deletion
             </label>
           </div>
         </EditorActionColEnd>

@@ -15,6 +15,7 @@
     "mfe:build": "webpack build --config webpack.config.js --mode production"
   },
   "dependencies": {
+    "dompurify": "^3.4.17",
     "html-react-parser": "^5.1.18",
     "styled-components": "^6.5.1"
   },
@@ -43,8 +44,8 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "babel-jest": "^27.5.1",
-    "copyfiles": "^2.4.1",
     "babel-loader": "^9.2.1",
+    "copyfiles": "^2.4.1",
     "empathic": "^2.0.1",
     "html-webpack-plugin": "^5.6.0",
     "identity-obj-proxy": "^3.0.0",

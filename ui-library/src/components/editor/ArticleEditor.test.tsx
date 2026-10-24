@@ -47,6 +47,43 @@ describe("ArticleEditor", () => {
     expect(screen.getByText("id : a1")).toBeInTheDocument();
   });
 
+  test("reports every edit through onChange, starting with the article as given", async () => {
+    const onChange = jest.fn();
+    render(
+      <ArticleEditor
+        articleIn={defaultArticle}
+        defaultArticle={defaultArticle}
+        setPreview={jest.fn()}
+        availableComponents={["H2", "Paragraph"]}
+        categories={["Production"]}
+        onChange={onChange}
+      />
+    );
+
+    expect(onChange).toHaveBeenLastCalledWith(defaultArticle);
+
+    await userEvent.type(screen.getByPlaceholderText("This is a sample title"), "Hi");
+
+    expect(onChange).toHaveBeenLastCalledWith(expect.objectContaining({ title: "Hi", content: [] }));
+  });
+
+  test("each status label toggles its own switch", async () => {
+    render(
+      <ArticleEditor
+        articleIn={defaultArticle}
+        defaultArticle={defaultArticle}
+        setPreview={jest.fn()}
+        availableComponents={["H2", "Paragraph"]}
+        categories={["Production"]}
+      />
+    );
+
+    await userEvent.click(screen.getByText("Marked for deletion"));
+
+    expect(screen.getByLabelText("Marked for deletion")).toBeChecked();
+    expect(screen.getByLabelText("Published")).not.toBeChecked();
+  });
+
   test("updates the title as the user types", async () => {
     render(
       <ArticleEditor
