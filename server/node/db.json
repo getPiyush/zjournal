@@ -9902,19 +9902,25 @@
       "author": "Sara Lindqvist",
       "title": "Expressionism - Google Arts & Culture",
       "createdAt": "2026-09-01T05:23:34.045Z",
-      "updatedAt": "2026-09-01T05:23:34.045Z",
+      "updatedAt": "2026-10-24T01:08:56.560Z",
       "categryId": "Art",
       "content": [
         {
           "componentId": "hxgrj6daytixdve",
           "componenType": "Image",
-          "data": "https://lh3.googleusercontent.com/ci/AL18g_TWb1WIGF62FAF8WFdkTqY2tqvFuPNchXENSk0zLFK4yT494nMt1EDIXtfN_D750JtOHwqXHw",
+          "data": "https://cdn.mos.cms.futurecdn.net/BR2gyzRjmFiFh82R7FFpLT-1200-80.jpg.webp",
           "numbered": false
         },
         {
           "componentId": "1xoeh8f3ywmv9jf",
           "componenType": "Paragraph",
           "data": "A projection of the inner image\n<br/>\n<br/>\nRead the full article\n<a target=\"_blank\" href=\"https://artsandculture.google.com/story/QgVhme-3gMzM3g\">https://artsandculture.google.com/story/QgVhme-3gMzM3g</a>",
+          "numbered": false
+        },
+        {
+          "componentId": "mvlpa0p9bv0u3nv6ez",
+          "componenType": "h2",
+          "data": "Europe's Space Rider vehicle comes crashing down during drop test",
           "numbered": false
         }
       ],
@@ -11527,9 +11533,15 @@
       "author": "Sara Lindqvist",
       "title": "From relativity to quantum theory – our physical world explored through coffee",
       "createdAt": "2026-09-01T05:24:23.870Z",
-      "updatedAt": "2026-09-01T05:24:23.870Z",
+      "updatedAt": "2026-10-24T03:44:13.846Z",
       "categryId": "Philosophy",
       "content": [
+        {
+          "componentId": "mvlut39ro10n3ikawfg",
+          "componenType": "h2",
+          "data": "Test header",
+          "numbered": false
+        },
         {
           "componentId": "ltny2vh459yu4za",
           "componenType": "Image",

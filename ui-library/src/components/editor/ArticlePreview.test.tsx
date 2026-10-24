@@ -47,7 +47,7 @@ describe("ArticlePreview", () => {
     const onEdit = jest.fn();
     render(<ArticlePreview data={sampleArticle} onEdit={onEdit} />);
 
-    await userEvent.click(screen.getByRole("link", { name: "Edit" }));
+    await userEvent.click(screen.getByRole("button", { name: "Edit" }));
 
     expect(onEdit).toHaveBeenCalledWith(sampleArticle);
   });

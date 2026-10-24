@@ -2,11 +2,11 @@
   "meta": {
     "version": 1,
     "createdAt": "2026-08-29T00:00:00.000Z",
-    "updatedAt": "2026-09-02T02:53:49.105Z"
+    "updatedAt": "2026-10-24T01:12:15.348Z"
   },
   "applications": {
     "web-app": {
-      "totalViews": 485,
+      "totalViews": 486,
       "articles": {
         "yaowvy2iu0hzpob": {
           "views": 14,
@@ -190,12 +190,12 @@
           "lastViewedAt": "2026-08-31T23:03:44.945Z"
         },
         "jicdgtup8u7sau4": {
-          "views": 17,
+          "views": 18,
           "title": "Celebrating 20 years of MDN",
           "category": "Software Development",
           "author": "Sara Lindqvist",
           "firstViewedAt": "2026-08-31T23:03:54.302Z",
-          "lastViewedAt": "2026-09-01T05:10:45.368Z"
+          "lastViewedAt": "2026-10-24T01:12:15.348Z"
         },
         "64ero1pioqtpk1k": {
           "views": 4,
@@ -440,7 +440,7 @@
       },
       "authors": {
         "Sara Lindqvist": {
-          "views": 248,
+          "views": 249,
           "articles": [
             "yaowvy2iu0hzpob",
             "9x2mon19ukcnimo",
@@ -608,7 +608,7 @@
           "views": 8
         },
         "Software Development": {
-          "views": 5
+          "views": 6
         },
         "general": {
           "views": 105
@@ -7241,6 +7241,17 @@
       "category": "Philosophy",
       "author": "Jack Maden",
       "ip": "192.168.0.198",
+      "location": null
+    },
+    {
+      "id": "53f546e4-9a9f-4534-a34a-3ecc586dd707",
+      "timestamp": "2026-10-24T01:12:15.348Z",
+      "application": "web-app",
+      "articleId": "jicdgtup8u7sau4",
+      "articleTitle": "Celebrating 20 years of MDN",
+      "category": "Software Development",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
       "location": null
     }
   ]

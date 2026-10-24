@@ -46,6 +46,7 @@ export {
   getArticleFromId,
   setComponentById,
   deleteComponent,
+  moveComponent,
   populateComponentFromCode,
   populateContentFromJsonArray,
   getDate,
@@ -54,3 +55,4 @@ export {
   sliceWords,
   removeHTML,
 } from './utils/componentUtil';
+export type { DropPosition, ComponentReorderHandler } from './utils/componentUtil';

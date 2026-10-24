@@ -14,7 +14,7 @@ export default function CategoryEditor() {
 
   const editArticle = (article: ArticleT) => {
     updateCurrentArticle(article, journalDispatch);
-    navigate("/admin/editor");
+    navigate(`/admin/editor?id=${encodeURIComponent(article.id)}`);
   };
 
   const getArticlesBycategoryID = (categoryId) => {

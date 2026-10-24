@@ -82,7 +82,37 @@ export const deleteComponent = (id: string, compArray: ComponentObject[]) => {
   return resultArray;
 };
 
-export const populateComponentFromCode = (code: string, text: string) => {
+export type DropPosition = "before" | "after";
+
+export type ComponentReorderHandler = (
+  draggedId: string,
+  targetId: string,
+  position: DropPosition
+) => void;
+
+export const moveComponent = (
+  draggedId: string,
+  targetId: string,
+  compArray: ComponentObject[],
+  position: DropPosition = "before"
+) => {
+  const fromIndex = compArray.findIndex((c) => c.componentId === draggedId);
+  if (fromIndex === -1 || draggedId === targetId) return compArray;
+
+  const resultArray = [...compArray];
+  const [dragged] = resultArray.splice(fromIndex, 1);
+  const targetIndex = resultArray.findIndex((c) => c.componentId === targetId);
+  if (targetIndex === -1) return compArray;
+
+  resultArray.splice(
+    position === "after" ? targetIndex + 1 : targetIndex,
+    0,
+    dragged
+  );
+  return resultArray;
+};
+
+export const populateComponentFromCode =(code: string, text: string) => {
   let comp: any;
   switch (code.toUpperCase()) {
     case "H1":
@@ -133,7 +163,8 @@ export const populateComponentFromCode = (code: string, text: string) => {
 const getComponentFromObject = (
   obj: ComponentObject,
   componentClicked?: (event: React.MouseEvent<HTMLDivElement>) => void,
-  editable?: boolean
+  editable?: boolean,
+  onReorder?: ComponentReorderHandler
 ) => {
   let comp: any;
   switch (obj.componenType.toUpperCase()) {
@@ -231,6 +262,7 @@ const getComponentFromObject = (
       children={comp}
       id={obj.componentId}
       key={"key_" + obj.componentId}
+      onReorder={onReorder}
     />
   ) : (
     comp
@@ -240,12 +272,13 @@ const getComponentFromObject = (
 export const populateContentFromJsonArray = (
   content: ComponentObject[],
   componentClicked?: (event: React.MouseEvent<HTMLDivElement>) => void,
-  editable?: boolean
+  editable?: boolean,
+  onReorder?: ComponentReorderHandler
 ) => {
   return (
     <React.Fragment>
       {content.map((component: ComponentObject) =>
-        getComponentFromObject(component, componentClicked, editable)
+        getComponentFromObject(component, componentClicked, editable, onReorder)
       )}
     </React.Fragment>
   );

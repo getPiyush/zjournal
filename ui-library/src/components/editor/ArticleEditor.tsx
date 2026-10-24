@@ -10,6 +10,8 @@ import {
   getComponentFromId,
   setComponentById,
   deleteComponent,
+  moveComponent,
+  DropPosition,
 } from "../../utils/componentUtil";
 
 import ArticleContainerEditor from "./ArticleContainerEditor";
@@ -114,6 +116,16 @@ export default function ArticleEditor({
     showHdeOffCanvas(false);
   };
 
+  const onReorder = (
+    draggedId: string,
+    targetId: string,
+    position: DropPosition
+  ) => {
+    const updatedComponents = moveComponent(draggedId, targetId, content, position);
+    setContent(updatedComponents);
+    setArticle({ ...article, content: updatedComponents });
+  };
+
   const onAddElementClick = () => {
     const defaultHeader = "Click to Update Text";
     const defaultContent = "Click to Update Content";
@@ -169,7 +181,14 @@ export default function ArticleEditor({
       <div className="row">
         <div className="col">
           <TopActionBox>
-            <span>{article.origin === "local" ? "Creating New" : "Updating"} Article</span>
+            <span>
+              {article.origin === "local" ? "Creating New" : "Updating"} Article
+              {article.id !== "" && (
+                <span className="badge bg-secondary ms-2" title="Article id">
+                  id : {article.id}
+                </span>
+              )}
+            </span>
             <button
               className="btn btn-primary btn-sm"
               onClick={onPreviewClick}
@@ -309,6 +328,7 @@ export default function ArticleEditor({
           <ArticleContainerEditor
             componentClicked={onComponentClick}
             containerJson={content}
+            onReorder={onReorder}
           />
         </EditArea>
       </div>

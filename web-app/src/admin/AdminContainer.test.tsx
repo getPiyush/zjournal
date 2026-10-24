@@ -2,6 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
 
 jest.mock("../datastore/actions/ArticleActions", () => ({
+  getArticleById: jest.fn(),
   getArticlesBycategory: jest.fn(),
   getArticlesToDelete: jest.fn(),
   addArticleToDB: jest.fn(),
@@ -22,6 +23,7 @@ jest.mock("../datastore/actions/QnAActions", () => ({
 }));
 
 import AdminContainer from "./AdminContainer";
+import { getArticleById } from "../datastore/actions/ArticleActions";
 import { AllProviders } from "../testUtils/renderWithProviders";
 
 // AdminContainer's own <Routes> uses paths relative to an "admin/*" ancestor
@@ -59,5 +61,16 @@ describe("AdminContainer", () => {
   test("falls back to the category editor for an unmatched path", () => {
     renderAdminContainer("/admin/does-not-exist");
     expect(screen.getByRole("heading", { name: "Categories" })).toBeInTheDocument();
+  });
+
+  test("loads the article from the id query param on the editor route", () => {
+    renderAdminContainer("/admin/editor?id=c9q7hr9vxguf03a");
+    expect(getArticleById).toHaveBeenCalledWith(expect.any(Function), "c9q7hr9vxguf03a");
+  });
+
+  test("does not fetch an article when the editor route has no id", () => {
+    (getArticleById as jest.Mock).mockClear();
+    renderAdminContainer("/admin/editor");
+    expect(getArticleById).not.toHaveBeenCalled();
   });
 });

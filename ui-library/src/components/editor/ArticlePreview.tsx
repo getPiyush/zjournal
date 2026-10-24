@@ -75,9 +75,9 @@ export default function ArticlePreview({ data, onEdit }: ArticlePreviewProps) {
             }
           })}
 
-          <a href="#" onClick={editArticle} className="btn btn-primary">
+          <button type="button" onClick={editArticle} className="btn btn-primary">
             Edit
-          </a>
+          </button>
         </div>
       </div>
     </React.Fragment>

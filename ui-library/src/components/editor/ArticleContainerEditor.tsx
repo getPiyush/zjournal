@@ -1,13 +1,17 @@
 import { ComponentObject } from "../../Types";
-import { populateContentFromJsonArray } from "../../utils/componentUtil";
+import {
+  ComponentReorderHandler,
+  populateContentFromJsonArray,
+} from "../../utils/componentUtil";
 
 type ArticleContainerEditorProps = {
   containerJson: ComponentObject[];
   componentClicked : (event: React.MouseEvent<HTMLDivElement>) => void;
+  onReorder?: ComponentReorderHandler;
 };
 
 export default function ArticleContainerEditor({
-  containerJson, componentClicked
+  containerJson, componentClicked, onReorder
 }: ArticleContainerEditorProps) {
-  return populateContentFromJsonArray(containerJson,componentClicked, true);
+  return populateContentFromJsonArray(containerJson, componentClicked, true, onReorder);
 }

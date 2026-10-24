@@ -7,6 +7,7 @@ import {
   getArticleFromId,
   setComponentById,
   deleteComponent,
+  moveComponent,
   populateComponentFromCode,
   populateContentFromJsonArray,
   getDate,
@@ -253,5 +254,37 @@ describe("removeHTML", () => {
 
   test("returns plain text unchanged", () => {
     expect(removeHTML("plain text")).toBe("plain text");
+  });
+});
+
+describe("moveComponent", () => {
+  const components: ComponentObject[] = [
+    { componentId: "a", componenType: "H1", data: "one" },
+    { componentId: "b", componenType: "H2", data: "two" },
+    { componentId: "c", componenType: "H3", data: "three" },
+  ];
+  const ids = (arr: ComponentObject[]) => arr.map((c) => c.componentId);
+
+  test("moves a component before the target", () => {
+    expect(ids(moveComponent("c", "a", components, "before"))).toEqual(["c", "a", "b"]);
+  });
+
+  test("moves a component after the target", () => {
+    expect(ids(moveComponent("a", "c", components, "after"))).toEqual(["b", "c", "a"]);
+  });
+
+  test("moving down before the next item keeps the order", () => {
+    expect(ids(moveComponent("a", "b", components, "before"))).toEqual(["a", "b", "c"]);
+  });
+
+  test("does not mutate the input array", () => {
+    moveComponent("c", "a", components);
+    expect(ids(components)).toEqual(["a", "b", "c"]);
+  });
+
+  test("returns the same array for unknown ids or self-drop", () => {
+    expect(moveComponent("missing", "a", components)).toBe(components);
+    expect(moveComponent("a", "missing", components)).toBe(components);
+    expect(moveComponent("a", "a", components)).toBe(components);
   });
 });

@@ -29,6 +29,7 @@ describe("ArticleEditor", () => {
     );
 
     expect(screen.getByText("Creating New", { exact: false })).toBeInTheDocument();
+    expect(screen.queryByTitle("Article id")).not.toBeInTheDocument();
   });
 
   test("shows 'Updating' for a saved article", () => {
@@ -43,6 +44,7 @@ describe("ArticleEditor", () => {
     );
 
     expect(screen.getByText("Updating", { exact: false })).toBeInTheDocument();
+    expect(screen.getByText("id : a1")).toBeInTheDocument();
   });
 
   test("updates the title as the user types", async () => {
