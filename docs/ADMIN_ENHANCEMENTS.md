@@ -2,7 +2,7 @@
 
 Backlog of improvements for the admin panel ([web-app/src/admin](../web-app/src/admin)), from a
 review of the admin pages, the datastore layer they use, and the API backends. Items are grouped
-by theme. The [suggested order](#suggested-order) at the end is the order to tackle them in.
+by theme. The [roadmap](#roadmap) at the end is the order to tackle them in.
 
 Status legend: ⬜ todo · 🟡 in progress · ✅ done
 
@@ -148,16 +148,48 @@ Status legend: ⬜ todo · 🟡 in progress · ✅ done
   `react-hooks/exhaustive-deps` lint rule.
 - ⬜ Remove unused imports, the commented-out code in `HomeTemplate` and the loose `any` types.
 - ⬜ Move template generation and validation out of `HomeTemplate` into a tested hook or util.
-- ⬜ Fix the misspelled `categryId` in `ArticleT`. This is a data migration across `db.json`
-  files and all four backends.
+- ⬜ Fix the misspelled `categryId` in `ArticleT`. This is a data migration across the
+  `db.json` files, all four backends, article-generator and patrikaz.
+
+## 5. Testing and CI
+
+- ✅ **CI couldn't build.** The workflow built web-app, which imports ui-library's uncommitted
+  `dist/`, without building ui-library first, and it only ran web-app's tests. Root
+  `npm run build` now builds ui-library first. The workflow has a `frontend` job (build, web-app
+  and ui-library tests on Node 18/20) and a `backends` job (`npm run test:servers` with Python,
+  PHP and Java set up).
+- ⬜ **Test a real sign-in.** Create the Google OAuth client and go through the admin flows in a
+  browser: sign in, save, mark for deletion, purge/restore, template save, sign out. So far auth
+  has only been tested with stubbed tokens, and none of the UI in a browser.
+- ⬜ **Shared contract tests for the backends.** One HTTP test suite run against all four servers
+  (auth rules, public view, 404s, the encryption envelope). Each backend reimplements the same
+  rules, and the Java 404-as-200 bug was only found by a manual check.
+- ⬜ **End-to-end tests** (e.g. Playwright) for the main admin flows, with a stubbed sign-in.
+
+## 6. Later
+
+- ⬜ **Session length:** renew the Google session silently instead of signing out after an
+  hour.
 
 ---
 
-## Suggested order
+## Roadmap
 
-1. ✅ Server-side auth and the login page (§1)
-2. ✅ Sanitize contact comments and other untrusted HTML (§1)
-3. ✅ Show errors and success messages (§2, §3)
-4. ✅ Remaining bugs (§2)
-5. ✅ Purge/restore loop and "New article" (§3)
-6. ⬜ Everything else
+Done so far: server-side auth and the login page, sanitizing untrusted HTML, error and success
+feedback, the §2 bugs, and the purge/restore loop with "New article".
+
+1. **Make the October PR safe to merge** (small)
+   - ✅ Fix CI (§5)
+   - ⬜ Test a real sign-in (§5)
+   - ⬜ Data cleanup: delete `adminDetails` and the old `currentArticle` from the `db.json`
+     files, and retire `backupdata.php` (§1)
+2. **Stop the backends drifting apart** (medium): shared contract tests, then end-to-end tests (§5)
+3. **Admin features** (§3)
+   - Categories: published/draft filter and one-click "move to purge list" (small)
+   - Contacts: delete/archive, mark read, search, pagination, `mailto:` (medium)
+   - Q&A: edit in place, reorder, published toggle (medium)
+   - Home template visual picker (large)
+   - Small fixes: stale Editor tab, analytics link, public Contact page error, About validation
+4. **Code health** (§4), with the `categryId` migration as its own planned piece of work
+5. **Security, later:** move the encryption key out of source or drop the envelope (§1), and
+   renew sessions silently (§6)
