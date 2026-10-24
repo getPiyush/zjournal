@@ -26,7 +26,9 @@ function backendCommand({ backend, host, prod }) {
       return {
         cwd: path.join(REPO_ROOT, "server", "php"),
         command: "php",
-        args: ["-S", host ? "0.0.0.0:8080" : "localhost:8080"],
+        // index.php as the router script sends every request through it (and its admin check),
+        // instead of letting `php -S` serve db.json and other files in the directory directly.
+        args: ["-S", host ? "0.0.0.0:8080" : "localhost:8080", "index.php"],
       };
 
     case "java":

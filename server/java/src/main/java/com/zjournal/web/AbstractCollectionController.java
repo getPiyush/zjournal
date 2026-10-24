@@ -1,5 +1,6 @@
 package com.zjournal.web;
 
+import jakarta.servlet.http.HttpServletRequest;
 import com.zjournal.store.DataStore;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -36,21 +37,32 @@ public abstract class AbstractCollectionController {
 
     protected abstract String collectionName();
 
+    /** Whether this request may see the item. Everything is visible unless a subclass narrows it. */
+    protected boolean isVisible(HttpServletRequest request, Map<String, Object> item) {
+        return true;
+    }
+
     @Operation(summary = "List items", description = "Supports `_sort`/`_order`, exact `field=value` "
             + "filters, substring `field_like=value` filters, and repeated keys (`?id=a&id=b`) OR'd "
             + "together while distinct keys AND.")
     @GetMapping
     public List<Map<String, Object>> list(
             @Parameter(description = "Query params, e.g. `_sort=createdAt&_order=desc&published=true`")
-            @RequestParam MultiValueMap<String, String> params) {
-        return QueryEngine.apply(dataStore.getCollection(collectionName()), params);
+            @RequestParam MultiValueMap<String, String> params,
+            HttpServletRequest request) {
+        return QueryEngine.apply(dataStore.getCollection(collectionName()), params).stream()
+                .filter(item -> isVisible(request, item))
+                .toList();
     }
 
     @Operation(summary = "Get item by id")
     @ApiResponse(responseCode = "404", description = "No item with that id")
     @GetMapping("/{id}")
-    public ResponseEntity<Map<String, Object>> getById(@Parameter(description = "The item's `id` field") @PathVariable String id) {
+    public ResponseEntity<Map<String, Object>> getById(
+            @Parameter(description = "The item's `id` field") @PathVariable String id,
+            HttpServletRequest request) {
         return dataStore.findById(collectionName(), id)
+                .filter(item -> isVisible(request, item))
                 .map(ResponseEntity::ok)
                 .orElseGet(this::notFound);
     }

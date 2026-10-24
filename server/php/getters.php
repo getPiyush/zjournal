@@ -204,6 +204,20 @@ function processGetters()
                 }
             }
         }
+        // Anonymous reads of articles/journal get the public view (see auth.php).
+        if (zj_is_public_view() && http_response_code() < 400) {
+            [$response_obj, $not_found] = zj_public_view($path, $response_obj, count($paths) == 2);
+            if ($not_found) {
+                http_response_code(404);
+                $response_obj = [
+                    "error" => [
+                        "code" => "NOT_FOUND",
+                        "message" => "No item with that id"
+                    ]
+                ];
+            }
+        }
+
         if ($encryptionEnabled) {
             $enc_responseObj = base64_encode(CryptoJSAesEncrypt($passphase, json_encode($response_obj)));
 

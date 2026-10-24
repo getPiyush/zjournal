@@ -12,6 +12,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import PlainTextResponse
 
 from app import config
+from app.auth import AdminAuthMiddleware, auth_middleware_options
 from app.middleware import EncryptionMiddleware
 from app.routers.collections import build_collection_router
 from app.routers.journal import router as journal_router
@@ -51,10 +52,14 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title="zJournal API", description=_DESCRIPTION, version="v1", lifespan=lifespan)
 
 # Starlette's add_middleware() inserts at the front of the stack, so the LAST middleware
-# added ends up OUTERMOST. EncryptionMiddleware is added first so CORSMiddleware ends up
-# outermost: CORS headers apply even to the encrypted envelope responses, and preflight
-# OPTIONS requests never hit the encryption layer.
+# added ends up OUTERMOST: CORS → admin auth → encryption → routes. CORS outermost means its
+# headers apply to every response (including 401/403s and encrypted envelopes), and preflight
+# OPTIONS requests never reach the inner layers. Auth sits outside encryption, so rejected
+# requests are never decrypted and their errors stay plain JSON, as on server/node.
 app.add_middleware(EncryptionMiddleware)
+_auth_options = auth_middleware_options(config.GOOGLE_CLIENT_ID, config.ADMIN_EMAILS, config.DEVELOPMENT)
+if _auth_options:
+    app.add_middleware(AdminAuthMiddleware, **_auth_options)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],

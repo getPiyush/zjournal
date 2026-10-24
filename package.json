@@ -14,6 +14,7 @@
   ],
   "devDependencies": {
     "concurrently": "^9.2.4",
+    "google-auth-library": "^9.15.1",
     "json-server": "^0.17.3"
   },
   "overrides": {
@@ -36,6 +37,11 @@
     "prodrun": "npm run prodrun --workspace=web-app",
     "server:java:build": "cd server/java && ./mvnw -q -DskipTests clean package",
     "server": "node scripts/server.js",
+    "test:server:node": "node --test server/node/auth.test.js",
+    "test:server:python": "cd server/python && .venv/bin/python -m unittest",
+    "test:server:php": "php server/php/tests/auth_test.php",
+    "test:server:java": "cd server/java && ./mvnw -q test",
+    "test:servers": "npm run test:server:node && npm run test:server:python && npm run test:server:php && npm run test:server:java",
     "dev": "node scripts/dev.js",
     "start": "node scripts/dev.js",
     "prod": "node scripts/prod.js",

@@ -12,3 +12,5 @@ web-app/src/**/*.d.ts
 !web-app/src/react-app-env.d.ts
 ./package-lock.json
 package-lock.json
+# Google signing-cert cache written by server/php/auth.php
+server/php/.google-certs-cache.json

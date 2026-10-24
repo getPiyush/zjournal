@@ -1,9 +1,13 @@
 package com.zjournal.web;
 
+import com.zjournal.auth.PublicView;
 import com.zjournal.store.DataStore;
+import jakarta.servlet.http.HttpServletRequest;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Map;
 
 @Tag(name = "Articles", description = """
         CRUD for journal articles. Each article has a rich `content` array of typed components \
@@ -21,5 +25,11 @@ public class ArticleController extends AbstractCollectionController {
     @Override
     protected String collectionName() {
         return "articles";
+    }
+
+    // Anonymous callers only see published articles that aren't on the purge list.
+    @Override
+    protected boolean isVisible(HttpServletRequest request, Map<String, Object> article) {
+        return !PublicView.applies(request) || PublicView.isPublicArticle(article);
     }
 }

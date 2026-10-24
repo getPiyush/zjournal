@@ -8,6 +8,7 @@ from fastapi import APIRouter, Request
 from fastapi.responses import JSONResponse
 
 from app import query_engine
+from app.auth import is_public_article, is_public_view
 from app.store import data_store
 
 _NOT_FOUND_BODY = {"error": {"code": "NOT_FOUND", "message": "No item with that id"}}
@@ -25,12 +26,15 @@ def build_collection_router(name: str, tag: str) -> APIRouter:
     )
     async def list_items(request: Request):
         params = list(request.query_params.multi_items())
-        return query_engine.apply(data_store.get_collection(name), params)
+        items = query_engine.apply(data_store.get_collection(name), params)
+        if name == "articles" and is_public_view(request):
+            items = [item for item in items if is_public_article(item)]
+        return items
 
     @router.get("/{item_id}", summary="Get item by id", responses={404: {"description": "No item with that id"}})
-    async def get_item(item_id: str):
+    async def get_item(item_id: str, request: Request):
         item = data_store.find_by_id(name, item_id)
-        if item is None:
+        if item is None or (name == "articles" and is_public_view(request) and not is_public_article(item)):
             return JSONResponse(status_code=404, content=_NOT_FOUND_BODY)
         return item
 

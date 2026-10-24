@@ -4,6 +4,7 @@ details, ...), not an array, so unlike articles/contacts/qna it only supports ge
 
 from fastapi import APIRouter, Request
 
+from app.auth import is_public_view, public_journal
 from app.store import data_store
 
 router = APIRouter(
@@ -13,8 +14,9 @@ router = APIRouter(
 
 
 @router.get("", summary="Get the journal settings object")
-async def get_journal():
-    return data_store.get_journal()
+async def get_journal(request: Request):
+    journal = data_store.get_journal()
+    return public_journal(journal) if is_public_view(request) else journal
 
 
 @router.put("", summary="Replace the journal settings object")

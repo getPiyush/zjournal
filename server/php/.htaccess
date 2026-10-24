@@ -1,0 +1,18 @@
+# Apache config for server/php. Needs mod_rewrite and `AllowOverride FileInfo` (or wider).
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Under CGI/PHP-FPM Apache drops the Authorization header. Copy it into the environment so
+    # auth.php can read the admin's bearer token.
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Send every request through index.php, which runs the admin check (auth.php). Without this,
+    # Apache would serve db.json (contacts included), error_log and the legacy scripts directly.
+    RewriteRule ^(?!index\.php$) index.php [L]
+</IfModule>
+
+# Belt and braces, in case mod_rewrite is off.
+<FilesMatch "^(db\.json|error_log|\.google-certs-cache\.json|.*\.md|backupdata\.php|decryptfile\.php)$">
+    Require all denied
+</FilesMatch>

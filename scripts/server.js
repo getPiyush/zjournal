@@ -21,7 +21,10 @@ if (cmd.build) {
   if (build.status !== 0) process.exit(build.status ?? 1);
 }
 
-const child = spawn(cmd.command, cmd.args, { cwd: cmd.cwd, stdio: "inherit" });
+// Every backend reads ZJOURNAL_ENV to decide whether admin auth may be left unconfigured
+// (development only). An explicit value in the caller's environment wins.
+const env = { ZJOURNAL_ENV: prod ? "production" : "development", ...process.env };
+const child = spawn(cmd.command, cmd.args, { cwd: cmd.cwd, stdio: "inherit", env });
 child.on("exit", (code) => process.exit(code ?? 0));
 child.on("error", (err) => {
   console.error(err);
