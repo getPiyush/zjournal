@@ -31,7 +31,7 @@
     "analytics:dev:host": "npm run dev:host --prefix analytics",
     "analytics:start": "npm run start --prefix analytics",
     "analytics:start:host": "npm run start:host --prefix analytics",
-    "build": "npm run build --workspace=web-app",
+    "build": "npm run build --workspace=ui-library && npm run build --workspace=web-app",
     "test": "npm run test --workspace=web-app --",
     "eject": "npm run eject --workspace=web-app",
     "prodrun": "npm run prodrun --workspace=web-app",

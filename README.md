@@ -134,7 +134,7 @@ script name.
 | `npm run server -- --backend=java --prod` | Builds the Spring Boot jar and runs it (`./mvnw package && java -jar target/*.jar`) |
 | `npm run server -- --backend=python` / `--backend=python --host` | Starts the Python API server with auto-reload (`uvicorn --reload` in `server/python`), localhost-only or bound to `0.0.0.0` |
 | `npm run server -- --backend=python --prod` | Starts the Python API server without auto-reload |
-| `npm run build` | Production build of `web-app` |
+| `npm run build` | Builds `ui-library` (web-app imports its `dist/`), then the production build of `web-app` |
 | `npm run prod` | Runs the production build's server + the Node API server in production mode, together |
 | `npm run prod -- --backend=java\|python` | Same, against the Java/Python API server's production mode instead of Node |
 | `npm run stop` | Kills anything listening on the ports any of the above use (web-app, all four API backends, analytics, module federation dev servers) |

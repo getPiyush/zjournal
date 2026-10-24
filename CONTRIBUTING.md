@@ -42,14 +42,16 @@ outside the workspace on purpose:
 ## Before opening a PR
 
 ```sh
-npm run build   # must succeed
-npm test        # web-app's Jest suite
+npm run build                         # must succeed (builds ui-library, then web-app)
+npm test                              # web-app's Jest suite
+npm test --workspace=ui-library       # ui-library's Jest suite
+npm run test:servers                  # the four backends' test suites
 ```
 
-If you touched `ui-library`, also run its own suite: `cd ui-library && npm test`. CI
-([.github/workflows/node.js.yml](.github/workflows/node.js.yml)) runs `npm ci`, `npm run build`,
-and `npm test` against Node 18.x and 20.x on every push/PR to `main` — a PR that fails either
-matrix leg won't merge.
+CI ([.github/workflows/node.js.yml](.github/workflows/node.js.yml)) runs all of these on every
+push/PR to `main`. The `frontend` job covers build plus web-app and ui-library tests on Node 18.x
+and 20.x. The `backends` job runs `npm run test:servers` with Python, PHP and Java set up. A PR
+that fails any leg won't merge.
 
 ## Touching a backend
 
