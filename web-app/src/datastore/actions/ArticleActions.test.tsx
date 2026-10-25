@@ -13,6 +13,7 @@ import {
   deleteArticleinDB,
   restoreArticleInDB,
   deleteArticlesInDB,
+  searchArticles,
 } from "./ArticleActions";
 import {
   getArticleByIdAPI,
@@ -24,6 +25,7 @@ import {
   addArticleAPI,
   updateArticleAPI,
   deleteArticleAPI,
+  searchArticlesAPI,
 } from "../api";
 import { decryptData } from "../codec";
 import { ApiError } from "../apiError";
@@ -91,6 +93,51 @@ describe("getArticlesByIds", () => {
     await flushPromises();
 
     expect(dispatch).toHaveBeenCalledWith({ type: "get_article_by_ids_error" });
+  });
+});
+
+describe("searchArticles", () => {
+  test("dispatches loading, then the page of results and the total", async () => {
+    const dispatch = jest.fn();
+    (searchArticlesAPI as jest.Mock).mockResolvedValue({ data: {} });
+    (decryptData as jest.Mock).mockReturnValue({ items: [{ id: "1" }], total: 41, page: 1, limit: 20 });
+
+    searchArticles(dispatch, { q: "mars", view: "public" });
+
+    expect(dispatch).toHaveBeenCalledWith({ type: "search_articles_loading" });
+    await flushPromises();
+    expect(searchArticlesAPI).toHaveBeenCalledWith({ q: "mars", view: "public" });
+    expect(dispatch).toHaveBeenLastCalledWith({ type: "search_articles", value: [{ id: "1" }], total: 41 });
+  });
+
+  test("an older search that answers late doesn't overwrite a newer one", async () => {
+    const dispatch = jest.fn();
+    let answerFirst: (value: unknown) => void = () => {};
+    (searchArticlesAPI as jest.Mock)
+      .mockReturnValueOnce(new Promise((resolve) => (answerFirst = resolve)))
+      .mockResolvedValueOnce({ data: "second" });
+    (decryptData as jest.Mock).mockImplementation((data) =>
+      data === "second" ? { items: [{ id: "new" }], total: 1 } : { items: [{ id: "old" }], total: 1 }
+    );
+
+    searchArticles(dispatch, { q: "m" });
+    searchArticles(dispatch, { q: "mars" });
+    await flushPromises();
+    answerFirst({ data: "first" });
+    await flushPromises();
+
+    const results = dispatch.mock.calls.map(([action]) => action).filter((a) => a.type === "search_articles");
+    expect(results).toEqual([{ type: "search_articles", value: [{ id: "new" }], total: 1 }]);
+  });
+
+  test("dispatches an error action when the search fails", async () => {
+    const dispatch = jest.fn();
+    (searchArticlesAPI as jest.Mock).mockRejectedValue(new Error("boom"));
+
+    searchArticles(dispatch, {});
+    await flushPromises();
+
+    expect(dispatch).toHaveBeenLastCalledWith({ type: "search_articles_error" });
   });
 });
 

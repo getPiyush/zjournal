@@ -30,11 +30,15 @@ type Action =
   | { type: "delete_article_loading" }
   | { type: "delete_article_success"; id: string }
   | { type: "delete_article_error" }
-  | { type: "add_article"; value: ArticleT };
+  | { type: "add_article"; value: ArticleT }
+  | { type: "search_articles_loading" }
+  | { type: "search_articles"; value: ArticleT[]; total: number }
+  | { type: "search_articles_error" };
 
 type Dispatch = (action: Action) => void;
 
-type State = { articles: ArticleT[]; status: string };
+// total: how many articles matched the last search, across all its pages.
+type State = { articles: ArticleT[]; status: string; total?: number };
 
 const ArticleStateContext = React.createContext<
   { state: State; dispatch: Dispatch } | undefined
@@ -161,6 +165,19 @@ function articleReducer(state: State, action: Action) {
       case "delete_article_error": {
         return { status: "error", articles: state.articles };
       }
+
+    // Keeps the current page (and its total) on screen while the next search loads.
+    case "search_articles_loading": {
+      return { status: "loading", articles: state.articles, total: state.total };
+    }
+
+    case "search_articles": {
+      return { articles: action.value, status: "success", total: action.total };
+    }
+
+    case "search_articles_error": {
+      return { status: "error", articles: state.articles, total: state.total };
+    }
 
     default: {
       throw new Error(`Unhandled action type: ${action}`);

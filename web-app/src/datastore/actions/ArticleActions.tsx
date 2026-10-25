@@ -10,7 +10,8 @@ import {
   getArticleByIdsAPI,
   getArticleByMonthAPI,
   getArticleByAuthorAPI,
-  getArticlesToDeleteAPI
+  getArticlesToDeleteAPI,
+  searchArticlesAPI
 } from "../api";
 
 export const getArticleById = (dispatch, id: string) => {
@@ -58,6 +59,26 @@ export const getArticlesBycategory = (dispatch, category: string, web?: boolean)
     });
 };
 
+
+// Only the newest search may update the list: typing fires searches faster than they answer, and
+// an older, slower answer must not overwrite a newer one.
+let latestSearch = 0;
+
+export const searchArticles = (dispatch, params: Record<string, string>) => {
+  const thisSearch = ++latestSearch;
+  dispatch({ type: "search_articles_loading" });
+  searchArticlesAPI(params)
+    .then(function (response) {
+      if (thisSearch !== latestSearch) return;
+      const { items, total } = readResponse(response);
+      dispatch({ type: "search_articles", value: items, total });
+    })
+    .catch(function (error) {
+      if (thisSearch !== latestSearch) return;
+      notifyError("Couldn't load articles", error);
+      dispatch({ type: "search_articles_error" });
+    });
+};
 
 export const getArticlesByAuthor = (dispatch, author: string, web?: boolean) => {
   dispatch({ type: "get_article_by_author_loading" });

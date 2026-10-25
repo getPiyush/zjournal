@@ -18,6 +18,16 @@ export default function ArticleCard({ article, mode="view" }: ArticleCardProps) 
     >
       <div className="card-body">
         <h5 className="card-title">{parsex(article.title)}</h5>
+        {article.author && (
+          <div className="card-text article-author">
+            By{" "}
+            {mode === "view" ? (
+              <a href={`/web/articles?authorId=${encodeURIComponent(article.author)}`}>{article.author}</a>
+            ) : (
+              <b>{article.author}</b>
+            )}
+          </div>
+        )}
         <div className="card-text">
           Created:<b>{getDate(article.createdAt)}</b>{" "}
         </div>

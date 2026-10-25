@@ -11,6 +11,7 @@ import {
   getArticleByAuthorAPI,
   getArticleByCategoryAPI,
   getArticleByMonthAPI,
+  searchArticlesAPI,
   updateJournalAPI,
 } from "./api";
 
@@ -37,6 +38,15 @@ describe("public article queries", () => {
   test("admin queries aren't filtered", () => {
     getArticleByCategoryAPI("", false);
     expect((httpClient.get as jest.Mock).mock.calls.at(-1)[0]).toMatch(/\/articles$/);
+  });
+});
+
+describe("searchArticlesAPI", () => {
+  test("sends the search to /articles/search, encoded", () => {
+    searchArticlesAPI({ q: "mars & water", view: "public", page: "2" });
+    const url = new URL((httpClient.get as jest.Mock).mock.calls.at(-1)[0]);
+    expect(url.pathname).toMatch(/\/articles\/search$/);
+    expect(Object.fromEntries(url.searchParams)).toEqual({ q: "mars & water", view: "public", page: "2" });
   });
 });
 

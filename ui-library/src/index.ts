@@ -8,7 +8,25 @@ export { default as ArticleContainer } from './components/Article/ArticleContain
 export { default as Articles } from './components/Article/Articles';
 export { default as ArticlePreviewWeb } from './components/Article/ArticlePreviewWeb';
 export { default as ArticlesToolbar } from './components/Article/ArticlesToolbar';
-export type { ArticleSortOption } from './components/Article/ArticlesToolbar';
+export {
+  emptyArticleFilters,
+  filterArticles,
+  sortArticles,
+  hasActiveFilters,
+  searchWords,
+  readSearchParams,
+  writeSearchParams,
+  SEARCH_PARAMS,
+} from './components/Article/articleFilters';
+export { highlightHtml } from './utils/highlight';
+export type {
+  ArticleSortOption,
+  ArticleFilters,
+  ArticleSearchField,
+  ArticleStatusFilter,
+  ArticleHighlight,
+  ArticleSearchState,
+} from './components/Article/articleFilters';
 export { Table } from './components/Table';
 export { List } from './components/List';
 export { TemplateRenderer, parseTemplateArticleIds } from './components/Templates/TemplateRenderer';
@@ -32,6 +50,7 @@ export { default as ArticleEditor } from './components/editor/ArticleEditor';
 export { ListEditor } from './components/editor/ListEditor';
 export { PageTitle } from './components/PageTitle';
 export { PageNotFound } from './components/PageNotFound';
+export { Pagination } from './components/Pagination';
 
 // Shared types — the prop-type contract this library's components are built against.
 export type { ComponentObject, ArticleT, Journal, Contact, QnA } from './Types';

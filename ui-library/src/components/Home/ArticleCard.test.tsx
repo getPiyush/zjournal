@@ -47,4 +47,17 @@ describe("ArticleCard", () => {
       "article/article-card-1"
     );
   });
+
+  test("shows the author, linking to their articles in view mode only", () => {
+    const { unmount } = render(<ArticleCard article={sampleArticle} mode="view" />);
+    expect(screen.getByRole("link", { name: sampleArticle.author })).toHaveAttribute(
+      "href",
+      `/web/articles?authorId=${encodeURIComponent(sampleArticle.author)}`
+    );
+    unmount();
+
+    render(<ArticleCard article={sampleArticle} mode="edit" />);
+    expect(screen.queryByRole("link", { name: sampleArticle.author })).toBeNull();
+    expect(screen.getByText(sampleArticle.author)).toBeInTheDocument();
+  });
 });

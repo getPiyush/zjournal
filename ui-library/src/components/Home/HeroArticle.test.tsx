@@ -28,14 +28,14 @@ const sampleArticle = {
 
 describe("HeroArticle", () => {
   test("renders the title, a content snippet and the byline", () => {
-    render(<HeroArticle article={sampleArticle} />);
+    const { container } = render(<HeroArticle article={sampleArticle} />);
 
     expect(
       screen.getByRole("heading", { name: "Shipping with confidence" })
     ).toBeInTheDocument();
     // sliceWords drops the first word by design, so the snippet starts mid-sentence.
     expect(screen.getByText(/simple plan/)).toBeInTheDocument();
-    expect(screen.getByText("By Mina on", { exact: false })).toBeInTheDocument();
+    expect(container.querySelector(".article-author")).toHaveTextContent(/^By Mina on /);
   });
 
   test("renders the first image from the content", () => {
@@ -67,6 +67,19 @@ describe("HeroArticle", () => {
       "/web/article/article-hero-1"
     );
     expect(screen.getByText("article-hero-1")).toBeInTheDocument();
+  });
+
+  test("shows the author, linking to their articles in view mode only", () => {
+    const { unmount } = render(<HeroArticle article={sampleArticle} mode="view" />);
+    expect(screen.getByRole("link", { name: "Mina" })).toHaveAttribute(
+      "href",
+      "/web/articles?authorId=Mina"
+    );
+    unmount();
+
+    render(<HeroArticle article={sampleArticle} mode="edit" />);
+    expect(screen.queryByRole("link", { name: "Mina" })).toBeNull();
+    expect(screen.getByText("Mina")).toBeInTheDocument();
   });
 
   test("defaults to view mode", () => {

@@ -98,6 +98,13 @@ export const getArticleByMonthAPI = (blogDate: string, web: boolean) => {
     return getRequest(articlesQuery([`createdAt_like=${blogDate}`], web));
 }
 
+// GET /articles/search: filtered, sorted and paged by the server (see server/SEARCH.md).
+// Responds with { items, total, page, limit }.
+export const searchArticlesAPI = (params: Record<string, string>) => {
+    const query = new URLSearchParams(params).toString();
+    return getRequest(`${getArticleAPIPath}/search${query ? `?${query}` : ""}`);
+}
+
 export const getArticlesToDeleteAPI = () => {
     const url = `${getArticleAPIPath}?&deleteFlag=true`;
     return getRequest(url);
