@@ -145,8 +145,30 @@ button {
   padding: 100px 32px 32px 32px !important;
   min-height: 93vh !important;
   margin: auto;
-  max-width: 400px;
+  max-width: 900px;
   min-width: 200px;
+}
+
+.category-card {
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.category-card:hover,
+.category-card:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.about-us-step-number {
+  flex: 0 0 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border: 2px solid currentColor;
 }
 
 .qna {
