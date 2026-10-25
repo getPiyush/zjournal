@@ -106,7 +106,7 @@ Status legend: ⬜ todo · 🟡 in progress · ✅ done
   admin save, create and delete ("Article saved", "Changes saved", "Question deleted", …) and
   after any failed load or save. Successes fade after 4 seconds; errors stay until dismissed.
   - ⬜ The Home template's "invalid article IDs" card is still its own fixed panel (bottom right).
-  - ⬜ The public Contact page still shows nothing when sending fails (`add_contact_error`).
+  - ✅ The public Contact page shows an error when sending fails, and disables Submit while sending.
 - 🟡 **Articles:**
   - ✅ A "New article" button on the Categories page opens a blank editor.
   - ✅ Sending an article to the purge list already existed: the editor's switch, now labelled
@@ -189,7 +189,7 @@ feedback, the §2 bugs, and the purge/restore loop with "New article".
    - Contacts: delete/archive, mark read, search, pagination, `mailto:` (medium)
    - Q&A: edit in place, reorder, published toggle (medium)
    - Home template visual picker (large)
-   - Small fixes: stale Editor tab, analytics link, public Contact page error, About validation
+   - Small fixes: stale Editor tab, analytics link, About validation
 4. **Code health** (§4), with the `categryId` migration as its own planned piece of work
 5. **Security, later:** move the encryption key out of source or drop the envelope (§1), and
    renew sessions silently (§6)

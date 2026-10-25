@@ -1,6 +1,4 @@
-import "./react-phone-input-2.css";
-import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 
 import { useContact } from "../datastore/contexts/ContactContext";
 import { addContactToDB } from "../datastore/actions/ContactActions";
@@ -8,69 +6,43 @@ import { applicationProperties } from "../ApplicationConstants";
 import { Contact, Logo } from "@zjournal/ui-library";
 
 export default function ContactUs() {
-  window.document.title = `Contact Us - ${applicationProperties.title}`;
-  const [value, setValue] = useState();
   const { dispatch, state: contactState } = useContact();
+  // Only show the thank-you for a message sent from this visit to the page: the contact status
+  // lives in app-wide context, so it would otherwise still say "success" on the next visit.
+  const [submitted, setSubmitted] = useState(false);
 
-  const params = useLocation().search;
-  // const articleId = path.split("/")[3];
-  const submitableContact =
-    params.search("contact_name") !== -1 &&
-    params.search("contact_email") !== -1 &&
-    params.search("contact_comment") !== -1;
+  const sending = submitted && contactState.status === "add_contact_loading";
+  const sent = submitted && contactState.status === "add_contact_success";
+  const failed = submitted && contactState.status === "add_contact_error";
 
-  const phoneNoChaged = (phoneNo) => {
-    setValue(phoneNo);
-  };
+  useEffect(() => {
+    window.document.title = `Contact Us - ${applicationProperties.title}`;
+  }, []);
 
-  const contactUsSubmitted = (e) => {
-    const { target } = e;
+  const contactUsSubmitted = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (sending) return;
+
+    const form = new FormData(e.currentTarget);
+    const field = (name: string) => String(form.get(name) ?? "").trim();
+    const phone = field("contact_phone");
 
     const contactOut: Contact = {
-      name: target[0].value,
-      email: target[1].value,
-      phone: target[2].value,
-      comment: target[3].value,
+      name: field("contact_name"),
+      email: field("contact_email"),
+      ...(phone && { phone }),
+      comment: field("contact_comment"),
       createdAt: new Date(),
     };
 
+    setSubmitted(true);
     addContactToDB(dispatch, contactOut);
-
-    e.stopPropagation();
-    e.preventDefault();
   };
-
-  const addContact = () => {
-    if (submitableContact) {
-      const paramObj = `{"${params
-        .replace("?", "")
-        .replace(/contact_/g, "")
-        .split("&")
-        .map((param) => {
-          const valueArr = param.split("=");
-          const decodedValues = [valueArr[0], decodeURIComponent(valueArr[1])];
-          return decodedValues.join('":"');
-        })
-        .join('","')}"}`;
-
-      const unescapedParams = JSON.parse(paramObj);
-
-      let outContact: Contact = {
-        ...unescapedParams,
-        createdAt: new Date(),
-      };
-      if (contactState.status !== "loading")
-        addContactToDB(dispatch, outContact);
-    }
-  };
-
-  useEffect(() => {
-    // addContact();
-  }, []);
 
   return (
     <div className="contact-us container">
-      {contactState.status === "add_contact_success" ? (
+      {sent ? (
         <div className="card p-3">
           <h2>Thank you !</h2>
           <div className="card-text p-3">
@@ -78,6 +50,11 @@ export default function ContactUs() {
             <br />
             <br /> <Logo subtext={`by ${applicationProperties.author}`} /> <br />
             We will get back to you soon.
+          </div>
+          <div>
+            <button type="button" className="btn btn-link px-0" onClick={() => setSubmitted(false)}>
+              Send another message
+            </button>
           </div>
         </div>
       ) : (
@@ -90,11 +67,11 @@ export default function ContactUs() {
                   Full Name
                 </label>
                 <input
-                  type="texts"
+                  type="text"
                   className="form-control"
                   id="contactNameInput"
                   name="contact_name"
-                  placeholder=""
+                  autoComplete="name"
                   required
                 />
               </div>
@@ -108,19 +85,21 @@ export default function ContactUs() {
                   name="contact_email"
                   className="form-control"
                   placeholder="name@example.com"
+                  autoComplete="email"
                   required
                 />
               </div>
               <div className="mb-3">
-                <label className="form-label">Phone Number</label>
+                <label htmlFor="contactPhoneInput" className="form-label">
+                  Phone Number <span className="text-muted small">(optional)</span>
+                </label>
                 <input
                   type="tel"
+                  id="contactPhoneInput"
                   className="form-control"
                   name="contact_phone"
                   placeholder="Enter phone number"
-                  value={value || ""}
-                  onChange={(e) => phoneNoChaged(e.target.value)}
-                  required
+                  autoComplete="tel"
                   minLength={7}
                 />
               </div>
@@ -136,9 +115,14 @@ export default function ContactUs() {
                   required
                 ></textarea>
               </div>
+              {failed && (
+                <div className="alert alert-danger" role="alert">
+                  Your message couldn't be sent. Please try again.
+                </div>
+              )}
               <div className="mb-3">
-                <button type="submit" className="btn btn-primary">
-                  Submit
+                <button type="submit" className="btn btn-primary" disabled={sending}>
+                  {sending ? "Sending…" : "Submit"}
                 </button>
               </div>
             </div>
