@@ -103,4 +103,22 @@ class PublicViewIntegrationTest {
         mockMvc.perform(get("/articles").header("Authorization", "Bearer forged"))
                 .andExpect(status().isUnauthorized());
     }
+
+    @Test
+    void anonymousSearchOnlyFindsPublicArticles() throws Exception {
+        mockMvc.perform(get("/articles/search"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.items[*].id", containsInAnyOrder("public")))
+                .andExpect(jsonPath("$.total").value(1));
+        mockMvc.perform(get("/articles/search").param("status", "draft"))
+                .andExpect(jsonPath("$.total").value(0));
+    }
+
+    @Test
+    void adminSearchFindsEverything() throws Exception {
+        mockMvc.perform(get("/articles/search").header("Authorization", "Bearer admin-token"))
+                .andExpect(jsonPath("$.items[*].id", containsInAnyOrder("public", "draft", "flagged")));
+        mockMvc.perform(get("/articles/search").param("q", "draft").header("Authorization", "Bearer admin-token"))
+                .andExpect(jsonPath("$.items[*].id", containsInAnyOrder("draft")));
+    }
 }

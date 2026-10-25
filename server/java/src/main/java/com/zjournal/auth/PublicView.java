@@ -26,7 +26,8 @@ public final class PublicView {
         return Boolean.TRUE.equals(request.getAttribute(ATTRIBUTE));
     }
 
-    private static boolean isTrue(Object value) {
+    /** How the stored data spells true: {@code true}, {@code 1}, {@code "true"} or {@code "1"}. */
+    public static boolean isTrue(Object value) {
         return Boolean.TRUE.equals(value) || Integer.valueOf(1).equals(value) || "true".equals(value) || "1".equals(value);
     }
 

@@ -4,6 +4,7 @@ const jsonServer = require("json-server");
 const { encryptData, decryptData } = require("./crypto");
 const { properties } = require("./properties");
 const { buildAuthMiddleware, publicView } = require("./auth");
+const { search } = require("./search");
 
 const isEncryptedMethod = (method) =>{
   return method === 'PUT' || method === 'POST'
@@ -37,6 +38,12 @@ server.use((req, res, next) => {
   next();
 });
 
+// Ahead of the router, which would otherwise read "search" as an article id. Anonymous callers
+// (req.publicView) only search published articles; see server/SEARCH.md.
+server.get("/articles/search", (req, res) => {
+  send(res, search(router.db.get("articles").value(), req.query, Boolean(req.publicView)));
+});
+
 server.use(router);
 server.listen(properties.port, () => {
   console.log("zJournal is running on port ", properties.port);
@@ -57,12 +64,15 @@ router.render = (req, res) => {
     data = { error: { code: "NOT_FOUND", message: "No item with that id" } };
   }
 
+  send(res, data);
+};
+
+function send(res, data) {
   if (!properties.encryptionEnabled) {
     res.jsonp(data);
     return;
   }
-  const response = JSON.stringify(data);
   res.jsonp({
-    ezjData: encryptData(response),
+    ezjData: encryptData(JSON.stringify(data)),
   });
-};
+}

@@ -7,7 +7,7 @@ filter/sort query support, get-by-id, create, update, delete.
 from fastapi import APIRouter, Request
 from fastapi.responses import JSONResponse
 
-from app import query_engine
+from app import query_engine, search
 from app.auth import is_public_article, is_public_view
 from app.store import data_store
 
@@ -30,6 +30,17 @@ def build_collection_router(name: str, tag: str) -> APIRouter:
         if name == "articles" and is_public_view(request):
             items = [item for item in items if is_public_article(item)]
         return items
+
+    if name == "articles":
+        # Registered before /{item_id}, so "search" isn't taken for an article id.
+        @router.get(
+            "/search",
+            summary="Search articles",
+            description="Text search (`q`, `in`), `from`/`to` dates, `status`, `categryId`, `author`, "
+            "`sort`, and `page`/`limit` paging. Returns `{items, total, page, limit}`. See server/SEARCH.md.",
+        )
+        async def search_items(request: Request):
+            return search.search(data_store.get_collection(name), request.query_params, is_public_view(request))
 
     @router.get("/{item_id}", summary="Get item by id", responses={404: {"description": "No item with that id"}})
     async def get_item(item_id: str, request: Request):

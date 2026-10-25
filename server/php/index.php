@@ -18,6 +18,7 @@ include "auth.php";
 zj_enforce_admin_auth();
 
 include "crypto.php";
+include 'search.php';
 include 'getters.php';
 include 'setters.php';
 
