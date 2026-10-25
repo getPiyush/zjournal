@@ -148,8 +148,10 @@ export const addContactAPI = (contact: Contact) => {
  * addQnAAPI, getQnAsAPI
  */
 
-export const getQnAsAPI = () => {
-    return getRequest(`${getQnAsAPIPath}?_sort=createdAt&_order=desc`);
+// The public site only lists answered questions the admin has published.
+export const getQnAsAPI = (web: boolean) => {
+    const filters = web ? ["published=true"] : [];
+    return getRequest(`${getQnAsAPIPath}?${[...filters, "_sort=createdAt", "_order=desc"].join("&")}`);
 }
 
 

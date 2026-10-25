@@ -3,9 +3,10 @@ import { readResponse } from "../responses";
 import { notifyError, notifySuccess } from "../notifications";
 import { addQnAAPI, deleteQnAAPI, getQnAsAPI } from "../api";
 
-export const getQnAsDB = (dispatch) => {
+// web: true for the public site, which only sees published questions.
+export const getQnAsDB = (dispatch, web = false) => {
   dispatch({ type: "get_qnas_loading" });
-  getQnAsAPI()
+  getQnAsAPI(web)
     .then(function (response) {
       dispatch({ type: "get_qnas_success", value: readResponse(response) });
     })

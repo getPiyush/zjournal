@@ -11,6 +11,7 @@ import {
   getArticleByAuthorAPI,
   getArticleByCategoryAPI,
   getArticleByMonthAPI,
+  getQnAsAPI,
   searchArticlesAPI,
   updateJournalAPI,
 } from "./api";
@@ -47,6 +48,18 @@ describe("searchArticlesAPI", () => {
     const url = new URL((httpClient.get as jest.Mock).mock.calls.at(-1)[0]);
     expect(url.pathname).toMatch(/\/articles\/search$/);
     expect(Object.fromEntries(url.searchParams)).toEqual({ q: "mars & water", view: "public", page: "2" });
+  });
+});
+
+describe("getQnAsAPI", () => {
+  test("the public site only gets published questions, newest first", () => {
+    getQnAsAPI(true);
+    expect(requestedQuery()).toEqual({ published: "true", _sort: "createdAt", _order: "desc" });
+  });
+
+  test("the admin gets every question", () => {
+    getQnAsAPI(false);
+    expect(requestedQuery()).toEqual({ _sort: "createdAt", _order: "desc" });
   });
 });
 
