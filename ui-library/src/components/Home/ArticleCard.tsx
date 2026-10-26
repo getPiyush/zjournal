@@ -1,70 +1,65 @@
-import { CardImage } from "../../styles/shared";
+import { ClampedText, CoverImage } from "../../styles/shared";
 
 import { parsex } from "../../utils/parserUtil";
 import { ArticleT } from "../../Types";
-import { getDate, removeHTML, sliceWords } from "../../utils/componentUtil";
+import { Byline, ReadLink, getArticleSummary, hideBrokenImage } from "./articleCardParts";
 
 type ArticleCardProps = {
   article: ArticleT;
-  mode?:"view"|"edit";
-
+  mode?: "view" | "edit";
+  // Image beside the text instead of above it, for an article that has a row to itself.
+  horizontal?: boolean;
 };
-export default function ArticleCard({ article, mode="view" }: ArticleCardProps) {
-  const contentArray: Array<string | null> = [null, null];
-  return (
-    <div
-      className="card mb-3"
-      key={`key_${article.title.replace(/[^A-Z0-9]/gi, "_")}`}
-    >
-      <div className="card-body">
-        <h5 className="card-title">{parsex(article.title)}</h5>
-        {article.author && (
-          <div className="card-text article-author">
-            By{" "}
-            {mode === "view" ? (
-              <a href={`/web/articles?authorId=${encodeURIComponent(article.author)}`}>{article.author}</a>
-            ) : (
-              <b>{article.author}</b>
-            )}
-          </div>
-        )}
-        <div className="card-text">
-          Created:<b>{getDate(article.createdAt)}</b>{" "}
-        </div>
-        {article.content.map((item, index) => {
-          if (item.componenType === "Image" && !contentArray[0]) {
-            contentArray[0] = typeof item.data === "string" ? item.data : item.data[0] || "";
-            return (
-              <CardImage
-                key={`articlecomp_${index}_${item.componenType}`}
-                className="card-img-top"
-                alt={article.title}
-                title={article.title}
-                src={`${contentArray[0]}`}
-              />
-            );
-          }
 
-          if (item.componenType === "Paragraph" && !contentArray[1]) {
-            contentArray[1] = sliceWords(removeHTML(item.data), 0, 200);
-            return (
-              <div
-                key={`articlecomp_${index}_${item.componenType}`}
-                className="card-text"
-              >
-                {parsex(contentArray[1])}...{" "}
-              </div>
-            );
-          }
-        })}
-        {mode==="view" && 
-        <a className="card-link" href={`article/${article.id}`}>
-          more..
-        </a>
-        }
-        {mode==="edit" && <a target="_blank" href={`/web/article/${article.id}`}>more..</a>}
-         {mode==="edit" && <div className="card-footer mt-2"><div className="badge bg-dark">{article.id}</div></div>}
+export default function ArticleCard({ article, mode = "view", horizontal = false }: ArticleCardProps) {
+  const { image, excerpt } = getArticleSummary(article, 200);
+
+  // alt is empty: the image illustrates the title right next to it.
+  const cover = image && (
+    <CoverImage
+      className={horizontal ? "h-100 rounded-start" : "card-img-top"}
+      alt=""
+      loading="lazy"
+      src={image}
+      onError={hideBrokenImage}
+    />
+  );
+
+  const body = (
+    <div className="card-body d-flex flex-column h-100">
+      <h5 className="card-title">{parsex(article.title)}</h5>
+      {excerpt && (
+        <ClampedText $lines={3} className="card-text">
+          {parsex(excerpt)}
+        </ClampedText>
+      )}
+      <div className="mt-auto pt-3">
+        <div className="small text-muted article-author mb-1">
+          <Byline article={article} mode={mode} />
+        </div>
+        <ReadLink article={article} mode={mode} />
       </div>
+    </div>
+  );
+
+  return (
+    <div className="card mb-3 article-card">
+      {horizontal ? (
+        <div className="row g-0 h-100">
+          {cover && <div className="col-md-4">{cover}</div>}
+          <div className={cover ? "col-md-8" : "col-12"}>{body}</div>
+        </div>
+      ) : (
+        <>
+          {cover}
+          {body}
+        </>
+      )}
+      {mode === "edit" && (
+        <div className="card-footer">
+          <div className="badge bg-dark">{article.id}</div>
+        </div>
+      )}
     </div>
   );
 }

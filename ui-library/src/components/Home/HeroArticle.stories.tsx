@@ -44,9 +44,9 @@ export const Default: Story = {
     ).toBeInTheDocument();
     expect(canvas.getByText("Mina", { exact: false })).toBeInTheDocument();
     expect(canvas.getByRole("img")).toBeInTheDocument();
-    expect(canvas.getByRole("link", { name: "more.." })).toHaveAttribute(
+    expect(canvas.getByRole("link", { name: "Read article" })).toHaveAttribute(
       "href",
-      "article/article-hero-1"
+      "/web/article/article-hero-1"
     );
   },
 };

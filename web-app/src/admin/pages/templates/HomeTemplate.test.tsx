@@ -53,6 +53,19 @@ describe("HomeTemplate", () => {
     expect(screen.getByRole("button", { name: "Preview" })).toBeDisabled();
   });
 
+  test("blocks spaces in article rows but allows them in heading lines", async () => {
+    render(
+      <AllProviders>
+        <HomeTemplate />
+      </AllProviders>
+    );
+    const textbox = screen.getByRole("textbox");
+
+    await userEvent.type(textbox, "a b{enter}# Top picks");
+
+    expect(textbox).toHaveValue("ab\n# Top picks");
+  });
+
   describe("Auto generate", () => {
     const originalFetch = global.fetch;
 

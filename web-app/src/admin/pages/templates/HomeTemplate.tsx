@@ -89,8 +89,12 @@ export const HomeTemplate = () => {
     }
   };
 
-  const blockInvalidChars = (e) => {
-    if (e.key === " ") {
+  // Article ids never contain spaces, but "# Section heading" lines do.
+  const blockInvalidChars = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+    if (e.key !== " ") return;
+    const { value, selectionStart } = e.currentTarget;
+    const lineStart = value.lastIndexOf("\n", selectionStart - 1) + 1;
+    if (!value.slice(lineStart).trimStart().startsWith("#")) {
       e.preventDefault();
     }
   };
@@ -170,7 +174,13 @@ export const HomeTemplate = () => {
               value={textData}
               onChange={dataChanged}
               onKeyDown={blockInvalidChars}
+              aria-describedby="homeTemplateHelp"
             />
+            <div id="homeTemplateHelp" className="form-text">
+              One row per line, with article ids separated by <code>|</code>. The first row is
+              the hero when it holds one article. A line starting with <code>#</code> is a
+              section heading, e.g. <code># Latest</code>.
+            </div>
           </div>
         </div>
         <div className="row">

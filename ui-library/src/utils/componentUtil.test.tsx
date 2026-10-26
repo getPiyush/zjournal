@@ -201,15 +201,18 @@ describe("populateContentFromJsonArray", () => {
 });
 
 describe("getDate", () => {
-  test("formats a Date object as a date string", () => {
+  const short = (d: Date) =>
+    d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+
+  test("formats a Date object as a short readable date", () => {
     const date = new Date(2024, 0, 15);
-    expect(getDate(date)).toBe(date.toDateString());
+    expect(getDate(date)).toBe(short(date));
+    expect(getDate(date)).toMatch(/2024/);
+    expect(getDate(date)).not.toMatch(/Mon/);
   });
 
-  test("formats a date string as a date string", () => {
-    expect(getDate("2024-01-15T00:00:00")).toBe(
-      new Date("2024-01-15T00:00:00").toDateString()
-    );
+  test("formats a date string the same way", () => {
+    expect(getDate("2024-01-15T00:00:00")).toBe(short(new Date("2024-01-15T00:00:00")));
   });
 });
 
@@ -243,7 +246,16 @@ describe("getMonths", () => {
 describe("sliceWords", () => {
   test("slices the string between the word boundaries at start and end", () => {
     const str = "The quick brown fox jumps";
-    expect(sliceWords(str, 0, 10)).toBe(" quick brown");
+    expect(sliceWords(str, 0, 10)).toBe("The quick brown");
+    expect(sliceWords(str, 10, 16)).toBe(" fox");
+  });
+
+  test("keeps the last word when the string ends before `end`", () => {
+    expect(sliceWords("Short text", 0, 200)).toBe("Short text");
+  });
+
+  test("returns an empty string when the string ends before `start`", () => {
+    expect(sliceWords("Short text", 200, 500)).toBe("");
   });
 });
 

@@ -284,11 +284,9 @@ export const populateContentFromJsonArray = (
   );
 };
 
-export const getDate = (date: Date | string) => {
-  let dateOut = new Date(date);
-  if (typeof date === "string") dateOut = new Date(date);
-  return dateOut.toDateString();
-};
+// e.g. "Aug 27, 2026", in the reader's own locale.
+export const getDate = (date: Date | string) =>
+  new Date(date).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
 
 export const getMonths = (from: string, to: string) => {
   const fromDate = new Date(from);
@@ -311,8 +309,12 @@ export const getMonths = (from: string, to: string) => {
   return months;
 };
 
+// Slices at word boundaries: from the start of the string (start 0) or the first space at/after
+// `start`, up to the first space at/after `end`, or the end of the string when there is none.
 export const sliceWords = (str, start, end) => {
-  return str.slice(str.indexOf(" ", start), str.indexOf(" ", end));
+  const from = start === 0 ? 0 : str.indexOf(" ", start);
+  const to = str.indexOf(" ", end);
+  return str.slice(from === -1 ? str.length : from, to === -1 ? str.length : to);
 };
 
 export const removeHTML = (htmlStr) => {

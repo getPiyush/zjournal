@@ -1,4 +1,5 @@
-import { render, screen } from "@testing-library/react";
+import { render as rtlRender, screen } from "@testing-library/react";
+import { MemoryRouter } from "react-router-dom";
 
 import HeroArticle from "./HeroArticle";
 
@@ -26,6 +27,9 @@ const sampleArticle = {
   ],
 };
 
+// The cards render react-router <Link>s, which need a router around them.
+const render = (ui: React.ReactElement) => rtlRender(ui, { wrapper: MemoryRouter });
+
 describe("HeroArticle", () => {
   test("renders the title, a content snippet and the byline", () => {
     const { container } = render(<HeroArticle article={sampleArticle} />);
@@ -33,29 +37,32 @@ describe("HeroArticle", () => {
     expect(
       screen.getByRole("heading", { name: "Shipping with confidence" })
     ).toBeInTheDocument();
-    // sliceWords drops the first word by design, so the snippet starts mid-sentence.
-    expect(screen.getByText(/simple plan/)).toBeInTheDocument();
-    expect(container.querySelector(".article-author")).toHaveTextContent(/^By Mina on /);
+    expect(screen.getByText(/A simple plan/)).toBeInTheDocument();
+    expect(container.querySelector(".article-author")).toHaveTextContent(/^By Mina · /);
   });
 
-  test("renders the first image from the content", () => {
-    render(<HeroArticle article={sampleArticle} />);
-    expect(screen.getByRole("img")).toHaveAttribute("src", "https://example.com/hero.jpg");
+  test("renders the first image from the content as a decorative image", () => {
+    const { container } = render(<HeroArticle article={sampleArticle} />);
+    const image = container.querySelector("img");
+    expect(image).toHaveAttribute("src", "https://example.com/hero.jpg");
+    expect(image).toHaveAttribute("alt", "");
   });
 
-  test("renders without a snippet when there is no content", () => {
-    render(<HeroArticle article={{ ...sampleArticle, content: [] }} />);
+  test("renders without a snippet or image when there is no content, still linking to the article", () => {
+    const { container } = render(<HeroArticle article={{ ...sampleArticle, content: [] }} />);
     expect(
       screen.getByRole("heading", { name: "Shipping with confidence" })
     ).toBeInTheDocument();
-    expect(screen.queryByRole("link", { name: "more.." })).toBeNull();
+    expect(screen.queryByText(/simple plan/)).toBeNull();
+    expect(container.querySelector("img")).toBeNull();
+    expect(screen.getByRole("link", { name: "Read article" })).toBeInTheDocument();
   });
 
   test("view mode links to the public article page", () => {
     render(<HeroArticle article={sampleArticle} mode="view" />);
-    expect(screen.getByRole("link", { name: "more.." })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: "Read article" })).toHaveAttribute(
       "href",
-      "article/article-hero-1"
+      "/web/article/article-hero-1"
     );
     expect(screen.queryByText("article-hero-1")).toBeNull();
   });
@@ -84,9 +91,9 @@ describe("HeroArticle", () => {
 
   test("defaults to view mode", () => {
     render(<HeroArticle article={sampleArticle} />);
-    expect(screen.getByRole("link", { name: "more.." })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: "Read article" })).toHaveAttribute(
       "href",
-      "article/article-hero-1"
+      "/web/article/article-hero-1"
     );
   });
 });

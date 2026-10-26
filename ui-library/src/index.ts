@@ -29,7 +29,7 @@ export type {
 } from './components/Article/articleFilters';
 export { Table } from './components/Table';
 export { List } from './components/List';
-export { TemplateRenderer, parseTemplateArticleIds } from './components/Templates/TemplateRenderer';
+export { TemplateRenderer, parseTemplateArticleIds, getTemplateHeading } from './components/Templates/TemplateRenderer';
 export { default as ArticleCard } from './components/Home/ArticleCard';
 export { default as HeroArticle } from './components/Home/HeroArticle';
 export { default as LoadingPage } from './components/Loader/LoadingPage';

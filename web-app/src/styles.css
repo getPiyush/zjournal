@@ -1,5 +1,6 @@
 main>.container {
-  padding: 80px 0px 0px 0px;
+  /* Only the top offset for the fixed navbar; the sides keep Bootstrap's gutter so rows don't overflow. */
+  padding-top: 80px;
   max-width: 1024px;
 }
 
@@ -154,7 +155,7 @@ button {
 
 @media screen and (min-width: 767px) and (max-width: 846px) {
   main>.container {
-    padding: 100px 0px 0px 0px !important;
+    padding-top: 100px !important;
   }
 }
 
@@ -215,4 +216,48 @@ button {
 
 .accordion-button {
   color: #080808 !important;
+}
+
+/* Home page */
+.home-intro {
+  margin-bottom: 1.5rem;
+  /* Lines up with the cards, which sit inside the template's own nested container. */
+  padding-inline: 1.5rem;
+}
+
+.category-strip {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+  scrollbar-width: none;
+}
+
+.category-strip .btn {
+  flex: 0 0 auto;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .category-strip {
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
+}
+
+.template-heading {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--zj-border);
+}
+
+.article-card,
+.hero-article {
+  transition: box-shadow 0.15s ease;
+}
+
+.article-card:hover,
+.article-card:focus-within,
+.hero-article:hover,
+.hero-article:focus-within {
+  box-shadow: var(--zj-shadow-hover);
 }
