@@ -15,8 +15,8 @@ export const Default: Story = {
   args: { startDate: "2024-01-01" },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    expect(canvas.getByRole("heading", { name: "Blogs" })).toBeInTheDocument();
-    expect(canvas.getByText("Archives")).toBeInTheDocument();
+    expect(canvas.getByRole("heading", { name: "Archive" })).toBeInTheDocument();
+    expect(canvas.getByText("By month")).toBeInTheDocument();
     expect(canvas.getByRole("link", { name: "GitHub" })).toHaveAttribute(
       "href",
       "https://github.com/getPiyush"

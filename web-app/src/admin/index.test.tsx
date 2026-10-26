@@ -46,7 +46,7 @@ describe("Admin", () => {
 
     expect(screen.getByRole("link", { name: "Categories" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Categories" })).toBeInTheDocument();
-    expect(screen.getByText(/Copyright 2022/)).toBeInTheDocument();
+    expect(screen.getByText(new RegExp(`© ${new Date().getFullYear()}`))).toBeInTheDocument();
   });
 
   describe("when sign-in is required", () => {

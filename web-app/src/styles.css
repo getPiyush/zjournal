@@ -3,6 +3,15 @@ main>.container {
   max-width: 1024px;
 }
 
+:root {
+  --zj-accent: #1f76a8;
+  --zj-border: rgb(13 110 253 / 25%);
+  --zj-surface: #ffffff;
+  --zj-surface-muted: #f8f8f8;
+  --zj-text-muted: #6c757d;
+  --zj-shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
 body {
   font-family: "Source Serif 4", sans-serif !important;
   /**font-family: "Public Sans", sans-serif;*/
@@ -24,15 +33,24 @@ b {
 }
 
 .navbar {
-  background-color: #ffffff;
-  border-color: #e7e7e7;
-  border-bottom: 1px solid rgb(13 110 253 / 25%) !important;
+  background-color: var(--zj-surface);
+  border-bottom: 1px solid var(--zj-border) !important;
 }
 
 .footer {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
-  border-top: 1px solid rgb(13 110 253 / 25%) !important;
+  background-color: var(--zj-surface-muted);
+  border-top: 1px solid var(--zj-border) !important;
+}
+
+.footer .footer-link {
+  color: var(--zj-text-muted);
+  text-decoration: none;
+}
+
+.footer .footer-link:hover,
+.footer .footer-link:focus-visible {
+  color: var(--zj-accent);
+  text-decoration: underline;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -40,15 +58,22 @@ b {
 }
 
 .navbar-nav .nav-item .nav-link.active {
-  color: #1f76a8;
+  color: var(--zj-accent);
   font-weight: 800;
   border-bottom: 2px solid black;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: #1f76a8;
+  color: var(--zj-accent);
   font-weight: 700;
   border-bottom: 2px solid black;
+}
+
+/* Categories/Archive open the side panel: buttons that look like the other nav links. */
+.navbar-nav .nav-panel-button {
+  background: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
 }
 
 .navbar .header-links {
@@ -101,7 +126,7 @@ img {
 }
 
 .admin .admin-module-title {
-  color: #1f76a8;
+  color: var(--zj-accent);
   margin: 16px 0px 16px 0px;
 }
 
@@ -124,7 +149,7 @@ button {
   margin: 0px;
   max-width: 450px !important;
   min-width: 200px;
-  background: linear-gradient(50deg, #1f76a8 0%, #ffffff40 14%, #ffffff00 100%);
+  background: linear-gradient(50deg, var(--zj-accent) 0%, #ffffff40 14%, #ffffff00 100%);
 }
 
 @media screen and (min-width: 767px) and (max-width: 846px) {
@@ -157,7 +182,7 @@ button {
 .category-card:hover,
 .category-card:focus-visible {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--zj-shadow-hover);
 }
 
 .about-us-step-number {
@@ -179,10 +204,12 @@ button {
   min-width: 200px;
 }
 
-/** Printing content not allowed */
+/** Print just the content, without the site chrome. */
 @media print {
-  body {
-    display: none;
+  .navbar,
+  .footer,
+  .offcanvas {
+    display: none !important;
   }
 }
 

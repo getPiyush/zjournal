@@ -22,7 +22,7 @@ describe("SidePanel", () => {
     render(
       <SidePanel selectedPage="blogs" categories={[]} startDate="2024-01-01T00:00:00" />
     );
-    expect(screen.getByRole("heading", { name: "Blogs" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Archive" })).toBeInTheDocument();
   });
 
   test("renders nothing when there is no selected page", () => {

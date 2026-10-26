@@ -1,5 +1,4 @@
-import { Routes, Route, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 
 import Home from "./Home";
 import { LoadingPage } from "@zjournal/ui-library";
@@ -14,25 +13,6 @@ export default function Content() {
   const { state } = useJournal();
 
   const showLoader = state.status === "loading";
-
-  const location = useLocation().pathname;
-
-  const preventDefaultDelegate = (e: any) => {
-    e.preventDefault();
-  };
-
-  useEffect(() => {
-    if (location === "/article") {
-      document.addEventListener("contextmenu", preventDefaultDelegate);
-      return () => {
-        document.removeEventListener("contextmenu", preventDefaultDelegate);
-      };
-    }
-
-    return () => {
-      document.removeEventListener("contextmenu", preventDefaultDelegate);
-    };
-  }, [location]);
 
   return (
     <main className="flex-shrink-0">

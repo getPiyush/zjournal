@@ -31,7 +31,7 @@ export const Blogs: Story = {
   },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    expect(canvas.getByRole("heading", { name: "Blogs" })).toBeInTheDocument();
+    expect(canvas.getByRole("heading", { name: "Archive" })).toBeInTheDocument();
   },
 };
 
