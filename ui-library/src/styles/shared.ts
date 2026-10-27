@@ -51,6 +51,36 @@ export const CoverImage = styled.img`
   object-position: center;
 `;
 
+// Stands in for a missing or broken cover image: same shape, tinted per category, with the
+// category's icon and name, so a card without a picture still lines up with the ones beside it.
+export const CoverPlaceholder = styled.div<{ $hue: number }>`
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: linear-gradient(
+    135deg,
+    hsl(${(props) => props.$hue} 45% 93%) 0%,
+    hsl(${(props) => (props.$hue + 30) % 360} 40% 82%) 100%
+  );
+  color: hsl(${(props) => props.$hue} 35% 30%);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+
+  svg {
+    width: clamp(2.5rem, 22%, 5.5rem);
+    height: auto;
+    opacity: 0.85;
+  }
+`;
+
 // Cuts text off after `$lines` lines with an ellipsis.
 export const ClampedText = styled.div<{ $lines: number }>`
   display: -webkit-box;

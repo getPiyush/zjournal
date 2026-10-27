@@ -4,6 +4,7 @@ import { TopActionBox, CardImage } from "../../styles/shared";
 import { parsex } from "../../utils/parserUtil";
 import { ArticleT } from "../../Types";
 import { getDate } from "../../utils/componentUtil";
+import { Cover } from "../Home/Cover";
 import { highlightHtml } from "../../utils/highlight";
 import { ArticleHighlight, highlightWordsFor } from "../Article/articleFilters";
 
@@ -79,7 +80,14 @@ export default function ArticlePreview({ data, onEdit, highlight }: ArticlePrevi
             if (item.componenType === "Image" && !breaker) {
               breaker = true;
               return (
-                <CardImage className="card-img-top" src={`${item.data}`} alt="..." />
+                <Cover
+                  key={`articlecomp_${item.componentId}`}
+                  className="card-img-top my-2 rounded"
+                  image={typeof item.data === "string" ? item.data : item.data[0] || ""}
+                  category={data.categryId}
+                  imageAs={CardImage}
+                  lazy
+                />
               );
             }
           })}

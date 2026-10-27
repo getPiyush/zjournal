@@ -1,8 +1,9 @@
-import { ClampedText, CoverImage } from "../../styles/shared";
+import { ClampedText } from "../../styles/shared";
 
 import { parsex } from "../../utils/parserUtil";
 import { ArticleT } from "../../Types";
-import { Byline, ReadLink, getArticleSummary, hideBrokenImage } from "./articleCardParts";
+import { Byline, ReadLink, getArticleSummary } from "./articleCardParts";
+import { Cover } from "./Cover";
 
 type ArticleCardProps = {
   article: ArticleT;
@@ -14,14 +15,12 @@ type ArticleCardProps = {
 export default function ArticleCard({ article, mode = "view", horizontal = false }: ArticleCardProps) {
   const { image, excerpt } = getArticleSummary(article, 200);
 
-  // alt is empty: the image illustrates the title right next to it.
-  const cover = image && (
-    <CoverImage
+  const cover = (
+    <Cover
       className={horizontal ? "h-100 rounded-start" : "card-img-top"}
-      alt=""
-      loading="lazy"
-      src={image}
-      onError={hideBrokenImage}
+      image={image}
+      category={article.categryId}
+      lazy
     />
   );
 
@@ -46,8 +45,8 @@ export default function ArticleCard({ article, mode = "view", horizontal = false
     <div className="card mb-3 article-card">
       {horizontal ? (
         <div className="row g-0 h-100">
-          {cover && <div className="col-md-4">{cover}</div>}
-          <div className={cover ? "col-md-8" : "col-12"}>{body}</div>
+          <div className="col-md-4">{cover}</div>
+          <div className="col-md-8">{body}</div>
         </div>
       ) : (
         <>

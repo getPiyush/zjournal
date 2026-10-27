@@ -7,6 +7,7 @@ import { ArticleT } from "../../Types";
 import { getDate, removeHTML } from "../../utils/componentUtil";
 import { highlightHtml } from "../../utils/highlight";
 import { ArticleHighlight, highlightWordsFor } from "./articleFilters";
+import { Cover } from "../Home/Cover";
 
 type ArticleProps = {
   data: ArticleT;
@@ -54,11 +55,13 @@ export default function ArticlePreviewWeb({ data, highlight, basePath = "/web" }
             if (item.componenType === "Image" && !contentArray[0]) {
               contentArray[0] = typeof item.data === "string" ? item.data : item.data[0] || "";
               return (
-                <CardImage
+                <Cover
                   key={`articlecomp_${index}_${data.id}`}
-                  className="card-img-top"
-                  src={`${contentArray[0]}`}
-                  alt="..."
+                  className="card-img-top my-2 rounded"
+                  image={contentArray[0]}
+                  category={data.categryId}
+                  imageAs={CardImage}
+                  lazy
                 />
               );
             }

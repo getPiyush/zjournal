@@ -5,6 +5,7 @@ import EditWrapper from "../components/editor/EditWrapper";
 import { ArticleT, ComponentObject } from "../Types";
 import { List } from "../components/List";
 import { Table } from "../components/Table";
+import { Cover } from "../components/Home/Cover";
 
 export const months = [
   "January",
@@ -164,7 +165,8 @@ const getComponentFromObject = (
   obj: ComponentObject,
   componentClicked?: (event: React.MouseEvent<HTMLDivElement>) => void,
   editable?: boolean,
-  onReorder?: ComponentReorderHandler
+  onReorder?: ComponentReorderHandler,
+  category?: string
 ) => {
   let comp: any;
   switch (obj.componenType.toUpperCase()) {
@@ -222,12 +224,15 @@ const getComponentFromObject = (
 
     case "IMAGE":
       comp = (
-        <img
+        // Keeps the image's own shape; a broken one becomes the category placeholder.
+        <Cover
           id={obj.componenType + "_" + obj.componentId}
           key={"key_" + obj.componentId}
-          src={`${obj.data}`}
+          image={typeof obj.data === "string" ? obj.data : obj.data[0] || ""}
+          category={category}
           className="img-fluid"
           alt={obj.altText}
+          imageAs="img"
         />
       );
       break;
@@ -269,16 +274,18 @@ const getComponentFromObject = (
   );
 };
 
+// `category` tints the placeholder that stands in for a broken image.
 export const populateContentFromJsonArray = (
   content: ComponentObject[],
   componentClicked?: (event: React.MouseEvent<HTMLDivElement>) => void,
   editable?: boolean,
-  onReorder?: ComponentReorderHandler
+  onReorder?: ComponentReorderHandler,
+  category?: string
 ) => {
   return (
     <React.Fragment>
       {content.map((component: ComponentObject) =>
-        getComponentFromObject(component, componentClicked, editable, onReorder)
+        getComponentFromObject(component, componentClicked, editable, onReorder, category)
       )}
     </React.Fragment>
   );

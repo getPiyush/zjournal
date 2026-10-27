@@ -1,4 +1,4 @@
-import { render as rtlRender, screen } from "@testing-library/react";
+import { fireEvent, render as rtlRender, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 
 import HeroArticle from "./HeroArticle";
@@ -55,6 +55,7 @@ describe("HeroArticle", () => {
     ).toBeInTheDocument();
     expect(screen.queryByText(/simple plan/)).toBeNull();
     expect(container.querySelector("img")).toBeNull();
+    expect(container.querySelector(".cover-placeholder")).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Read article" })).toBeInTheDocument();
   });
 
@@ -94,6 +95,15 @@ describe("HeroArticle", () => {
     expect(screen.getByRole("link", { name: "Read article" })).toHaveAttribute(
       "href",
       "/web/article/article-hero-1"
+    );
+  });
+
+  test("shows a category placeholder when the image fails to load", () => {
+    const { container } = render(<HeroArticle article={sampleArticle} />);
+    fireEvent.error(container.querySelector("img")!);
+    expect(container.querySelector("img")).toBeNull();
+    expect(container.querySelector(".col-md-7 .cover-placeholder")).toHaveTextContent(
+      sampleArticle.categryId
     );
   });
 });

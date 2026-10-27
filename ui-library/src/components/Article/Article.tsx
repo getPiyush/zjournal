@@ -54,7 +54,7 @@ export default function Article({ article, status, disableTextSelect, onBrowseCa
           <div className="row">
             <div className="col">
               {" "}
-              <ArticleContainer containerJson={article.content} />
+              <ArticleContainer containerJson={article.content} category={article.categryId} />
             </div>
           </div>
           {article.createdAt !== article.updatedAt && (

@@ -1,4 +1,3 @@
-import { SyntheticEvent } from "react";
 import { Link } from "react-router-dom";
 
 import { ArticleT } from "../../Types";
@@ -15,11 +14,9 @@ export const getArticleSummary = (article: ArticleT, excerptLength: number) => {
   const imageItem = article.content.find((item) => item.componenType === "Image");
   const paragraphItem = article.content.find((item) => item.componenType === "Paragraph");
 
-  const image = imageItem
-    ? typeof imageItem.data === "string"
-      ? imageItem.data
-      : imageItem.data[0] || ""
-    : "";
+  const image = (
+    imageItem ? (typeof imageItem.data === "string" ? imageItem.data : imageItem.data[0] || "") : ""
+  ).trim();
 
   let excerpt = "";
   if (paragraphItem) {
@@ -29,11 +26,6 @@ export const getArticleSummary = (article: ArticleT, excerptLength: number) => {
   }
 
   return { image, excerpt };
-};
-
-// Hides an image whose source fails to load, rather than showing a broken-image box.
-export const hideBrokenImage = (event: SyntheticEvent<HTMLImageElement>) => {
-  event.currentTarget.style.display = "none";
 };
 
 // "By <author> · <date>", with the author linking to their articles in view mode.

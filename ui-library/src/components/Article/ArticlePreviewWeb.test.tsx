@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 
 import ArticlePreviewWeb from "./ArticlePreviewWeb";
 
@@ -37,9 +37,9 @@ describe("ArticlePreviewWeb", () => {
   });
 
   test("renders the first image and a read-more link for the first paragraph", () => {
-    render(<ArticlePreviewWeb data={sampleArticle} />);
+    const { container } = render(<ArticlePreviewWeb data={sampleArticle} />);
 
-    expect(screen.getByRole("img")).toHaveAttribute(
+    expect(container.querySelector("img")).toHaveAttribute(
       "src",
       "https://example.com/image.jpg"
     );
@@ -111,5 +111,12 @@ describe("ArticlePreviewWeb", () => {
   test("leaves the author line out when there is no author", () => {
     const { container } = render(<ArticlePreviewWeb data={{ ...sampleArticle, author: "" }} />);
     expect(container.querySelector(".article-author")).toBeNull();
+  });
+
+  test("shows the category placeholder when the image fails to load", () => {
+    const { container } = render(<ArticlePreviewWeb data={sampleArticle} />);
+    fireEvent.error(container.querySelector("img")!);
+    expect(container.querySelector("img")).toBeNull();
+    expect(container.querySelector(".cover-placeholder")).toHaveTextContent("Engineering");
   });
 });
