@@ -1,12 +1,15 @@
-"""Sync tool: copies the `articles` array from one db.json into others, nothing else.
+"""Sync tool: copies the `articles` array (and the journal fields derived from it) from one
+db.json into others.
 
 server/{java,node,php,python}/db.json are meant to be interchangeable backends serving the
 same data (see each server's README). Running `python -m article_generator` or `migrate.py`
 against one of them (typically server/python/db.json, since that's the one this toolchain
 scrapes into) leaves the other three holding a stale, shorter `articles` list. This tool
-brings them back in sync by copying just that one array — `journal`, `contacts`, and `qna`
-are left completely untouched in every target, since those aren't what this toolchain produces
-and may legitimately differ.
+brings them back in sync by copying that array plus the two journal fields migrate.py rebuilds
+from it — `journal.categories` and `journal.templateData` (the homepage layout, which lists
+article ids, so it breaks if it's left pointing at articles a target no longer has). Every
+other part of `journal`, plus `contacts` and `qna`, is left untouched in every target, since
+those aren't what this toolchain produces and may legitimately differ.
 """
 
 from __future__ import annotations
@@ -21,6 +24,9 @@ KNOWN_BACKENDS = ("java", "node", "php", "python")
 
 # article-generator/article_generator/sync_db.py -> repo root is two levels up.
 _REPO_ROOT = Path(__file__).resolve().parent.parent.parent
+
+# The journal fields migrate.py derives from `articles`; they must travel with it.
+SYNCED_JOURNAL_KEYS = ("categories", "templateData")
 
 
 def resolve_db_path(value: str) -> Path:
@@ -38,17 +44,35 @@ def sync_articles_into(target_db: dict, source_articles: List[dict]) -> bool:
     return changed
 
 
+def sync_into(target_db: dict, source_db: dict) -> bool:
+    """Copies `articles` and SYNCED_JOURNAL_KEYS from source_db into target_db in place.
+    Returns whether anything actually changed. A journal key missing from the source is left
+    as-is in the target."""
+    changed = sync_articles_into(target_db, source_db.get("articles", []))
+    source_journal = source_db.get("journal") or {}
+    for key in SYNCED_JOURNAL_KEYS:
+        if key not in source_journal:
+            continue
+        target_journal = target_db.setdefault("journal", {})
+        if target_journal.get(key) != source_journal[key]:
+            target_journal[key] = source_journal[key]
+            changed = True
+    return changed
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="article-generator-sync-db",
-        description="Copy the `articles` array from one db.json into one or more others "
-                     "(journal/contacts/qna are left untouched in every target).",
+        description="Copy the `articles` array, journal.categories and journal.templateData "
+                     "from one db.json into one or more others (the rest of journal, contacts "
+                     "and qna are left untouched in every target).",
     )
     parser.add_argument(
         "--source",
         default="python",
         help="Source db.json: a known backend name (java/node/php/python) or an explicit "
-             "path. Its `articles` array is copied into every target. Default: python.",
+             "path. Its `articles` array, journal.categories and journal.templateData are "
+             "copied into every target. Default: python.",
     )
     parser.add_argument(
         "--targets",
@@ -87,7 +111,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
 
         target_db = json.loads(target_path.read_text())
         before = len(target_db.get("articles", []))
-        changed = sync_articles_into(target_db, source_articles)
+        changed = sync_into(target_db, source_db)
 
         if not changed:
             print(f"{target_path}: already in sync ({before} article(s))")

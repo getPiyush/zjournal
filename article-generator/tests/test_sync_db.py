@@ -6,7 +6,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from article_generator.sync_db import KNOWN_BACKENDS, main, resolve_db_path, sync_articles_into
+from article_generator.sync_db import KNOWN_BACKENDS, main, resolve_db_path, sync_articles_into, sync_into
 
 
 class ResolveDbPathTests(unittest.TestCase):
@@ -34,6 +34,38 @@ class SyncArticlesIntoTests(unittest.TestCase):
         changed = sync_articles_into(target, [{"id": "a"}])
         self.assertFalse(changed)
         self.assertEqual(target["articles"], [{"id": "a"}])
+
+
+class SyncIntoTests(unittest.TestCase):
+    def test_copies_articles_and_derived_journal_fields_only(self):
+        source = {
+            "articles": [{"id": "new"}],
+            "journal": {"title": "source", "categories": ["All", "Art"], "templateData": "new"},
+        }
+        target = {
+            "articles": [{"id": "old"}],
+            "journal": {"title": "target", "categories": ["All"], "templateData": "old", "aboutUs": "keep"},
+            "qna": ["keep"],
+        }
+        self.assertTrue(sync_into(target, source))
+        self.assertEqual(target["articles"], [{"id": "new"}])
+        self.assertEqual(
+            target["journal"],
+            {"title": "target", "categories": ["All", "Art"], "templateData": "new", "aboutUs": "keep"},
+        )
+        self.assertEqual(target["qna"], ["keep"])
+
+    def test_reports_change_when_only_template_data_differs(self):
+        source = {"articles": [{"id": "a"}], "journal": {"templateData": "a"}}
+        target = {"articles": [{"id": "a"}], "journal": {"templateData": "stale"}}
+        self.assertTrue(sync_into(target, source))
+        self.assertEqual(target["journal"]["templateData"], "a")
+
+    def test_journal_key_missing_from_source_is_left_alone(self):
+        source = {"articles": [{"id": "a"}], "journal": {}}
+        target = {"articles": [{"id": "a"}], "journal": {"templateData": "mine"}}
+        self.assertFalse(sync_into(target, source))
+        self.assertEqual(target["journal"]["templateData"], "mine")
 
 
 class SyncDbMainTests(unittest.TestCase):

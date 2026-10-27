@@ -46,10 +46,11 @@ into article entries shaped exactly like the ones in zJournal's `db.json`
     by source URL against what's already in `--db`), adds any category the batch introduced to
     `journal.categories`, and rebuilds `journal.templateData` with a fresh random selection of
     published articles for the homepage. See "Migrating into db.json" below.
-11. **A separate sync tool** (`python -m article_generator.sync_db`) copies just the
-    `articles` array from one `db.json` to the other three backends, since migrating only
-    touches one at a time and `server/{java,node,php,python}/db.json` are meant to serve
-    identical data. See "Syncing articles across backends" below.
+11. **A separate sync tool** (`python -m article_generator.sync_db`) copies the `articles`
+    array (plus `journal.categories` and `journal.templateData`) from one `db.json` to the other
+    three backends, since migrating only touches one at a time and
+    `server/{java,node,php,python}/db.json` are meant to serve identical data.
+    See "Syncing articles across backends" below.
 
 ## Setup
 
@@ -142,9 +143,11 @@ the same rule the generator itself uses) are skipped rather than duplicated, tho
 
 `server/{java,node,php,python}/db.json` are meant to be interchangeable — same schema, same
 data — but `migrate.py` only updates whichever one file you point `--db` at. `sync_db.py` brings
-the other three back in line by copying **just** the `articles` array; `journal`, `contacts`,
-and `qna` are left completely untouched in every target, since those can legitimately differ
-per backend and this toolchain doesn't produce them.
+the other three back in line by copying the `articles` array plus the two journal fields
+`migrate.py` rebuilds from it: `journal.categories` and `journal.templateData` (the homepage
+layout, which lists article ids, so a target left with the old one would point at articles it
+no longer has). The rest of `journal`, plus `contacts` and `qna`, is left untouched in every
+target, since those can legitimately differ per backend and this toolchain doesn't produce them.
 
 ```sh
 # Defaults to source=python, targets=java node php (this repo's actual layout):
