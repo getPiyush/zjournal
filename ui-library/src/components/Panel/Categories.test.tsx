@@ -74,6 +74,15 @@ describe("Categories", () => {
     expect(closed).toHaveBeenCalled();
   });
 
+  test("shows each category's icon, hidden from screen readers", () => {
+    renderAt("/web/home", ["All", "Science", "Product"]);
+    ["All articles", "Science", "Product"].forEach((name) => {
+      const icon = screen.getByRole("link", { name }).querySelector("svg");
+      expect(icon).toBeInTheDocument();
+      expect(icon?.closest("[aria-hidden='true']")).not.toBeNull();
+    });
+  });
+
   test("renders no list items when there are no categories", () => {
     renderAt("/web/home", []);
     expect(screen.queryAllByRole("listitem")).toHaveLength(0);

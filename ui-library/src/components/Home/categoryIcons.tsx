@@ -103,6 +103,15 @@ const articleIcon = (
   </>
 );
 
+// A stack of pages, for "All articles" in the category panel.
+export const allArticlesIcon = (
+  <>
+    <rect x="18" y="16" width="34" height="40" rx="3" />
+    <path d="M12 48V12a4 4 0 0 1 4-4h28" />
+    <path d="M25 28h20M25 36h20M25 44h13" />
+  </>
+);
+
 // Placeholder tints for the journal's categories, 30° apart on the colour wheel so no two match.
 const hues: Record<string, number> = {
   art: 0,
@@ -129,7 +138,7 @@ export const categoryHue = (category: string = "") => {
 
 export const hasCategoryIcon = (category: string = "") => category.trim().toLowerCase() in icons;
 
-export const CategoryIcon = ({ category }: { category: string }) => (
+export const CategoryIcon = ({ category, children }: { category: string; children?: ReactElement }) => (
   <svg
     viewBox="0 0 64 64"
     fill="none"
@@ -140,6 +149,6 @@ export const CategoryIcon = ({ category }: { category: string }) => (
     aria-hidden="true"
     focusable="false"
   >
-    {icons[(category || "").trim().toLowerCase()] || articleIcon}
+    {children || icons[(category || "").trim().toLowerCase()] || articleIcon}
   </svg>
 );
