@@ -1,4 +1,6 @@
+import { CSSProperties } from "react";
 import { Link } from "react-router-dom";
+import { CategoryIcon, categoryHue } from "@zjournal/ui-library";
 
 // One line per category the journal ships with. Categories an admin adds later still get a card,
 // just without a description.
@@ -17,7 +19,8 @@ export const categoryDescriptions: Record<string, string> = {
   Technology: "Gadgets, AI, the internet and how tech changes daily life.",
 };
 
-// A grid of cards, one per category, each linking to that category's articles.
+// A grid of cards, one per category, each linking to that category's articles. Each card carries
+// its category's icon as a faint background, in the same tint the article placeholders use.
 export default function CategoryCards({ categories }: { categories: string[] }) {
   return (
     <div className="row g-3">
@@ -26,7 +29,11 @@ export default function CategoryCards({ categories }: { categories: string[] }) 
           <Link
             className="category-card card h-100 text-decoration-none"
             to={`/web/articles?categoryId=${encodeURIComponent(category)}`}
+            style={{ "--category-hue": categoryHue(category) } as CSSProperties}
           >
+            <span className="category-card-art">
+              <CategoryIcon category={category} />
+            </span>
             <div className="card-body">
               <h6 className="card-title mb-1">{category}</h6>
               {categoryDescriptions[category] && (

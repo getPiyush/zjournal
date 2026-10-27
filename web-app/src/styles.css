@@ -176,8 +176,44 @@ button {
 }
 
 .category-card {
+  position: relative;
+  overflow: hidden;
   color: inherit;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.category-card .card-body {
+  position: relative;
+  padding-right: 4.5rem;
+}
+
+.category-card-art {
+  position: absolute;
+  right: -0.75rem;
+  bottom: -0.75rem;
+  width: 6rem;
+  color: hsl(var(--category-hue, 210) 45% 45%);
+  opacity: 0.18;
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.category-card-art svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.category-card:hover .category-card-art,
+.category-card:focus-visible .category-card-art {
+  opacity: 0.3;
+  transform: rotate(-6deg) scale(1.05);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .category-card-art {
+    transition: none;
+  }
 }
 
 .category-card:hover,
