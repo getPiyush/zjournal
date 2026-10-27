@@ -9,12 +9,12 @@ panel** for the person or team writing and managing content. Both are part of th
 there's no separate login/signup for readers, and (see the callout below) currently no login at
 all for the admin panel.
 
-> ⚠️ **Heads up if you're collaborating with others:** `/admin` currently has no login gate —
-> anyone who knows or reaches that URL can create, edit, publish, and permanently delete content.
-> If you're running a shared/public instance, make sure `/admin` is restricted some other way (a
-> password on the server, a private network, etc. — see
-> [DEPLOYMENT.md](DEPLOYMENT.md#securing-the-admin-panel)) before treating it as safe for
-> multiple people or a public deployment.
+> ⚠️ **Heads up if you're collaborating with others:** `/admin` asks for Google sign-in, and every
+> backend enforces it on the API once it's configured (see
+> [DEPLOYMENT.md](DEPLOYMENT.md#securing-the-admin-panel)). In a development setup with no Google
+> client id, sign-in is off and anyone who reaches the URL can create, edit, publish and
+> permanently delete content. Visitors only ever see published articles: drafts and articles on the
+> purge list stay hidden, even through the API.
 
 ## Reading the site
 
@@ -82,6 +82,15 @@ Three page templates share one editor, switched via a radio toggle:
 - **Home** — the layout/content of the public Home page (which articles are featured, etc.)
 - **About** — the content shown at `/web/aboutus`
 - **QnA** — the question/answer entries shown at `/web/iqa`
+
+On the Home template, the **Auto generate** button picks featured articles for you instead of you
+choosing them by hand: it looks at your analytics (which articles have actually been read the
+most) and lays out the 14 most-read as one large featured article at the top, then three rows
+underneath it. It's a starting point, not a final answer — it still lands in the same text box
+your manual edits do, so click **Preview** to check it, tweak anything you'd rather feature
+differently, and **Save** when you're happy with it. If your site is brand new and nobody has read
+any articles yet, there's no view data to rank by and the button will tell you so instead of
+generating anything.
 
 ### Contacts — read what visitors sent
 

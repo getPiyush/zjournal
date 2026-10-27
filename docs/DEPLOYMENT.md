@@ -58,20 +58,44 @@ request.
 
 ### Securing the admin panel
 
-**`/admin` currently has no login gate** — anyone who can reach the route can create, edit,
-publish, and permanently purge content (see
-[ARCHITECTURE.md](ARCHITECTURE.md#known-architectural-gaps)). The stubbed Google OAuth gate
-(`web-app/src/admin/authConfig.ts`) is not wired up yet. Until it is, if you're deploying somewhere
-more than one person can reach, put `/admin` behind something else:
+The admin panel signs in with Google, and **all four backends** check the Google ID token on every
+protected request. That covers every write except the public contact form (`POST /contacts`),
+plus reading contacts. Setup:
 
-- A reverse-proxy `location /admin { auth_basic ...; }` block (nginx) or equivalent Apache
-  `<Location>` directive with HTTP basic auth.
-- Restrict `/admin` to a VPN or an IP allowlist at the proxy/firewall level.
-- Don't expose the instance publicly at all if it's just for personal use — bind it to
-  `localhost`/a private network.
+1. In Google Cloud Console → **APIs & Services → Credentials**, create an **OAuth client ID** of type
+   *Web application*. Add every origin the admin panel is served from to **Authorized JavaScript
+   origins**, e.g. `https://journal.example.com`, and `http://localhost` / `http://localhost:3000`
+   for local development. No redirect URI is needed.
+2. Frontend (build time, `web-app/.env`):
+   - `REACT_APP_GOOGLE_CLIENT_ID=<client id>`
+   - `REACT_APP_ADMIN_EMAILS=you@example.com` (optional; only used to show a friendlier error
+     message)
+3. Backend (runtime environment):
+   - `ZJOURNAL_GOOGLE_CLIENT_ID=<same client id>`
+   - `ZJOURNAL_ADMIN_EMAILS=you@example.com,other@example.com`
 
-This applies regardless of which of the four backends you run — none of them add their own admin
-auth; the gate (or its absence) lives entirely in `web-app`.
+Without those two backend variables, auth may only be off when `ZJOURNAL_ENV=development` is set.
+`npm run server` / `npm run dev` set it; `--prod` doesn't. Otherwise:
+
+| Backend | Behaviour when auth isn't configured |
+| --- | --- |
+| `server/node`, `server/java`, `server/python` | Refuses to start |
+| `server/php` | Serves public reads; protected routes return `503 AUTH_NOT_CONFIGURED` |
+
+Backend-specific notes:
+
+- **PHP:** set the variables with `SetEnv` (Apache) or `fastcgi_param` (nginx). The bundled
+  `server/php/.htaccess` routes every request through `index.php` and denies direct access to
+  `db.json`. Without that routing, Apache would serve the whole database as a static file. For
+  nginx, do the equivalent yourself (see [server/php/README.md](../server/php/README.md#admin-auth)).
+- **Java:** the variables map to `zjournal.auth.*` / `zjournal.env` (see
+  [server/java/README.md](../server/java/README.md#admin-auth)).
+
+**What anonymous visitors can read:** `GET /articles` and `GET /articles/<id>` return only
+published articles that aren't on the purge list (a hidden one returns 404). `GET /journal` leaves
+out `currentArticle` (the editor's working copy) and the legacy `adminDetails` hashes. A request
+carrying a valid admin token sees everything, and one carrying an invalid token gets a 401
+rather than the public view. With auth off in development, nothing is filtered.
 
 ## 4. Reverse proxy example (nginx)
 
@@ -92,6 +116,7 @@ server {
         try_files $uri /index.html;   # SPA fallback for client-side routing
     }
 
+    # Optional extra layer on top of Google sign-in. It guards only the UI route, not the API.
     location /admin {
         auth_basic "Admin";
         auth_basic_user_file /etc/nginx/.htpasswd;
@@ -105,10 +130,10 @@ server {
 }
 ```
 
-If you proxy the API under a path like `/api/` as above, update `serverUrl` in
-`web-app/src/properties.js` (and rebuild) to match, rather than pointing it at
-`http://localhost:8080` directly — otherwise browsers will hit the backend's own origin/port
-directly and you lose the benefit of a single TLS-terminated entry point.
+If you proxy the API under a path like `/api/` as above, set `REACT_APP_SERVER_URL` (see
+`web-app/.env.example`) to that path before building, rather than leaving `serverUrl` at its
+default (the page's own hostname on port 8080) — otherwise browsers will hit the backend's own
+origin/port directly and you lose the benefit of a single TLS-terminated entry point.
 
 ## 5. Keeping the backend running
 
@@ -130,7 +155,7 @@ directly and you lose the benefit of a single TLS-terminated entry point.
   WantedBy=multi-user.target
   ```
 
-  Swap `ExecStart` for `./mvnw ...`/`java -jar target/*.jar` (Java, after `npm run server:java:prod`'s
+  Swap `ExecStart` for `./mvnw ...`/`java -jar target/*.jar` (Java, after `npm run server -- --backend=java --prod`'s
   build step) or `uvicorn app.main:app --port 8080` (Python) as appropriate.
 
 - **PHP** runs inside your existing Apache/PHP-FPM setup — no separate process to supervise, just

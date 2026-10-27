@@ -11,8 +11,11 @@ Requires Python 3.10+.
 cd server/python
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
-.venv/bin/uvicorn app.main:app --port 8080
+ZJOURNAL_ENV=development .venv/bin/uvicorn app.main:app --port 8080
 ```
+
+`ZJOURNAL_ENV=development` lets the app start with admin auth unconfigured (see the table below).
+`npm run server -- --backend=python` sets it for you.
 
 The server starts on **port 8080** (same as the other three backends — stop `server/node`,
 `server/php`, or `server/java` first if one is already running there, or override with
@@ -21,7 +24,7 @@ The server starts on **port 8080** (same as the other three backends — stop `s
 To run it in the background instead of holding a terminal:
 
 ```sh
-.venv/bin/uvicorn app.main:app --port 8080 > /tmp/zjournal-python.log 2>&1 &
+ZJOURNAL_ENV=development .venv/bin/uvicorn app.main:app --port 8080 > /tmp/zjournal-python.log 2>&1 &
 ```
 
 ## Stopping
@@ -62,9 +65,25 @@ All server-facing config is read from environment variables (see `app/config.py`
 | `ZJOURNAL_ENCRYPTION_KEY` | `JagaBaliaShreekhetra` | Passphrase for the PBKDF2/AES envelope |
 | `ZJOURNAL_DB_FILE` | `db.json` (next to `app/`) | Path to the JSON data file |
 | `ZJOURNAL_ENCRYPTION_ENABLED` | `true` | Wrap request/response bodies in the `ezjData` envelope |
+| `ZJOURNAL_GOOGLE_CLIENT_ID` | *(empty)* | Google OAuth client id that admin ID tokens must be issued for (same value as `REACT_APP_GOOGLE_CLIENT_ID` in `web-app`) |
+| `ZJOURNAL_ADMIN_EMAILS` | *(empty)* | Comma-separated admin allowlist |
+| `ZJOURNAL_ENV` | `production` | `development` allows starting with the two auth variables unset. Otherwise the app refuses to start without them |
+
+**Admin auth** ([app/auth.py](app/auth.py)): every request except `GET`/`HEAD` on `/`,
+`/health`, `/articles`, `/journal`, `/qna` and the Swagger routes, and `POST /contacts` (the
+public contact form), needs `Authorization: Bearer <Google ID token>`. The token is verified
+against Google's signing keys with PyJWT (audience, issuer and expiry are checked too), and its
+verified email must be in `ZJOURNAL_ADMIN_EMAILS`. Failures return `401 UNAUTHORIZED` or
+`403 FORBIDDEN` as plain JSON: the auth middleware sits outside the encryption one. With auth on,
+Swagger's **Try it out** only works for the public routes.
 
 > ⚠️ The bundled `ZJOURNAL_ENCRYPTION_KEY` default is a placeholder checked into source for local
 > development. Replace it before deploying anywhere reachable from the internet.
+
+**Public view:** anonymous `GET /articles` and `/articles/<id>` return only published articles
+that aren't flagged for deletion (hidden ones return 404). Anonymous `GET /journal` omits
+`currentArticle` and `adminDetails`. A request with an `Authorization` header must be a valid admin
+(401/403 otherwise) and then sees everything.
 
 ## What it replicates
 
@@ -100,8 +119,9 @@ All server-facing config is read from environment variables (see `app/config.py`
 
 ```
 app/
-├── main.py               # FastAPI app, CORS + encryption middleware wiring, entry point
-├── config.py              # env-var backed settings (port/passphrase/db file/encryption toggle)
+├── main.py               # FastAPI app, CORS + auth + encryption middleware wiring, entry point
+├── auth.py                # admin gate: Google ID token check + allowlist
+├── config.py              # env-var backed settings (port/passphrase/db file/encryption/auth)
 ├── crypto.py               # PBKDF2 + AES-256-CBC encrypt/decrypt
 ├── middleware.py            # {ezjData} envelope handling for every request/response
 ├── store.py                 # in-memory db.json, periodic + shutdown flush
@@ -113,11 +133,11 @@ app/
 
 ## Testing
 
-No automated test suite yet (`server/java` has one via `./mvnw test`; this one doesn't). Manual
-smoke test:
+The admin-auth logic has unit tests (`tests/test_auth.py`). Run `.venv/bin/python -m unittest`
+here, or `npm run test:server:python` from the repo root. Manual smoke test:
 
 ```sh
-ZJOURNAL_ENCRYPTION_ENABLED=false .venv/bin/uvicorn app.main:app --port 8080 &
+ZJOURNAL_ENV=development ZJOURNAL_ENCRYPTION_ENABLED=false .venv/bin/uvicorn app.main:app --port 8080 &
 curl http://localhost:8080/health
 curl http://localhost:8080/articles
 ```

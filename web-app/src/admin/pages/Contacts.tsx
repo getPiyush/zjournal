@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { getContactsDB } from "../../datastore/actions/ContactActions";
 import { useContact } from "../../datastore/contexts/ContactContext";
-import { parsex, getDate, PageTitle } from "@zjournal/ui-library";
+import { getDate, PageTitle } from "@zjournal/ui-library";
 
 export const Contacts = () => {
   const { dispatch, state: contactState } = useContact();
@@ -26,17 +26,17 @@ export const Contacts = () => {
                 id="accordionPanelsStayOpenContacts"
               >
                 {contactState.contacts.map((contact, index) => (
-                  <div className="accordion-item">
+                  <div className="accordion-item" key={contact.id ?? index}>
                     <div
                       className="accordion-header"
                       id={`panelsStayOpen-heading${index}`}
                     >
                       <button
-                        className="accordion-button"
+                        className="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target={`#panelsStayOpen-collapse${index}`}
-                        aria-expanded="true"
+                        aria-expanded="false"
                         aria-controls={`panelsStayOpen-collapse${index}`}
                       >
                         <div
@@ -57,17 +57,17 @@ export const Contacts = () => {
                     </div>
                     <div
                       id={`panelsStayOpen-collapse${index}`}
-                      className="accordion-collapse collapse hide"
-                      aria-labelledby="headingOne"
-                      data-bs-parent="#accordionContacts"
+                      className="accordion-collapse collapse"
+                      aria-labelledby={`panelsStayOpen-heading${index}`}
                     >
                       <div className="accordion-body">
                         <strong>{contact.email}</strong>
                         <div className="d-block d-md-none"><strong>{contact.phone}</strong></div>
 
                         <br />
-                        <div className="text-break">
-                          {parsex(contact.comment)}
+                        {/* Typed by public visitors into a plain textarea: render as text, never HTML. */}
+                        <div className="text-break" style={{ whiteSpace: "pre-wrap" }}>
+                          {contact.comment}
                         </div>
                       </div>
                     </div>

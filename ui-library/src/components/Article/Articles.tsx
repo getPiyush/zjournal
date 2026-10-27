@@ -5,8 +5,32 @@ import { ArticleT } from "../../Types";
 
 import { PageNotFound } from "../PageNotFound";
 import LoadingPage from "../Loader/LoadingPage";
+import { Pagination } from "../Pagination";
 import ArticlePreviewWeb from "./ArticlePreviewWeb";
-import ArticlesToolbar, { ArticleSortOption } from "./ArticlesToolbar";
+import ArticlesToolbar from "./ArticlesToolbar";
+import {
+  ArticleSearchState,
+  ArticleSortOption,
+  ArticleTileSize,
+  emptyArticleFilters,
+  filterArticles,
+  hasActiveFilters,
+  searchWords,
+  sortArticles,
+} from "./articleFilters";
+
+// Server-side search: the caller owns the filters, sort and page (e.g. in the URL), runs the
+// search, and passes in one page of results plus the total number of matches.
+export type ServerSearchProps = {
+  state: ArticleSearchState;
+  onChange: (state: ArticleSearchState) => void;
+  total: number;
+  pageSize: number;
+  showDateFilter?: boolean;
+  // Offer a choice of page size; the caller starts again from the first page.
+  pageSizeOptions?: number[];
+  onPageSizeChange?: (size: number) => void;
+};
 
 type ArticlesProps = {
   title: string;
@@ -15,81 +39,123 @@ type ArticlesProps = {
   disableTextSelect?: boolean;
   onBrowseCategories?: () => void;
   basePath?: string;
+  // Without this, the list filters, sorts and searches `articles` in the browser.
+  search?: ServerSearchProps;
+  // Medium (two to a row) unless given; the toolbar offers a choice when there is a handler.
+  tileSize?: ArticleTileSize;
+  onTileSizeChange?: (size: ArticleTileSize) => void;
 };
 
-const sortArticles = (articles: ArticleT[], sortBy: ArticleSortOption) => {
-  return [...articles].sort((a, b) => {
-    switch (sortBy) {
-      case "oldest":
-        return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime();
-      case "title-asc":
-        return a.title.localeCompare(b.title);
-      case "title-desc":
-        return b.title.localeCompare(a.title);
-      case "newest":
-      default:
-        return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
-    }
-  });
+const TILE_COLUMNS: Record<ArticleTileSize, string> = {
+  small: "col-md-6 col-lg-4",
+  medium: "col-md-6",
+  large: "col-12",
 };
 
-export default function Articles({ title, status, articles, disableTextSelect, onBrowseCategories, basePath }: ArticlesProps) {
-  const [search, setSearch] = useState("");
-  const [sortBy, setSortBy] = useState<ArticleSortOption>("newest");
+export default function Articles({
+  title,
+  status,
+  articles,
+  disableTextSelect,
+  onBrowseCategories,
+  basePath,
+  search,
+  tileSize = "medium",
+  onTileSizeChange,
+}: ArticlesProps) {
+  const [localFilters, setLocalFilters] = useState(emptyArticleFilters);
+  const [localSort, setLocalSort] = useState<ArticleSortOption>("newest");
 
-  const visibleArticles = useMemo(() => {
-    const searchTerm = search.trim().toLowerCase();
-    const filtered = searchTerm
-      ? articles.filter((article) => article.title.toLowerCase().includes(searchTerm))
-      : articles;
-    return sortArticles(filtered, sortBy);
-  }, [articles, search, sortBy]);
+  const filters = search ? search.state.filters : localFilters;
+  const sortBy = search ? search.state.sortBy : localSort;
+  const loading = status === "loading";
 
-  const getNoArticle = () => {
-    return status === "error" ? <PageNotFound onBrowseCategories={onBrowseCategories} basePath={basePath} /> : <LoadingPage />;
-  };
+  const visibleArticles = useMemo(
+    () => (search ? articles : sortArticles(filterArticles(articles, localFilters), localSort)),
+    [search, articles, localFilters, localSort]
+  );
+  const highlight = { words: searchWords(filters.search), field: filters.field };
+  const filtering = hasActiveFilters(filters);
+  // Whether there is anything at all to list, before searching.
+  const hasArticles = search ? search.total > 0 || filtering : articles.length > 0;
+
+  const setFilters = search
+    ? (next: typeof filters) => search.onChange({ filters: next, sortBy, page: 1 })
+    : setLocalFilters;
+  const setSort = search
+    ? (next: ArticleSortOption) => search.onChange({ filters, sortBy: next, page: 1 })
+    : setLocalSort;
+
+  const notFound = <PageNotFound onBrowseCategories={onBrowseCategories} basePath={basePath} />;
+
+  // Server mode keeps the list (and the search box being typed in) on screen while a new search
+  // loads; only the very first load shows the full loader.
+  if (status === "error") return <ArticleViewer className="container">{notFound}</ArticleViewer>;
+  if (loading && (!search || (articles.length === 0 && !filtering))) {
+    return (
+      <ArticleViewer className="container">
+        <LoadingPage />
+      </ArticleViewer>
+    );
+  }
 
   return (
     <ArticleViewer className="container">
-      {status !== "loading" && status !== "error" ? (
-        <ArticleViewer className="container" $disableTextSelect={disableTextSelect}>
-          <div className="row">
-            <div className="col">
-              <h2>
-                {title} <i>Articles</i>
-              </h2>
-              <hr />
-            </div>
+      <ArticleViewer className="container" $disableTextSelect={disableTextSelect}>
+        <div className="row">
+          <div className="col">
+            <h2>
+              {title} <i>Articles</i>
+            </h2>
+            <hr />
           </div>
+        </div>
 
-          {articles.length > 0 && (
-            <ArticlesToolbar search={search} onSearchChange={setSearch} sortBy={sortBy} onSortChange={setSortBy} />
-          )}
+        {hasArticles && (
+          <ArticlesToolbar
+            filters={filters}
+            onFiltersChange={setFilters}
+            sortBy={sortBy}
+            onSortChange={setSort}
+            shownCount={search ? search.total : visibleArticles.length}
+            totalCount={search ? undefined : articles.length}
+            showDateFilter={search?.showDateFilter ?? true}
+            pageSize={search?.pageSize}
+            pageSizeOptions={search?.pageSizeOptions}
+            onPageSizeChange={search?.onPageSizeChange}
+            tileSize={tileSize}
+            onTileSizeChange={onTileSizeChange}
+          />
+        )}
 
+        <div className={`row${loading ? " opacity-50" : ""}`} aria-busy={loading}>
+          {visibleArticles.map((article, index) => (
+            <div key={`article_${index}_${article.id}`} className={TILE_COLUMNS[tileSize]}>
+              <ArticlePreviewWeb data={article} highlight={highlight} basePath={basePath} />
+            </div>
+          ))}
+        </div>
+
+        {!hasArticles && !loading && (
           <div className="row">
-            {visibleArticles.length > 0 &&
-              visibleArticles.map((article, index) => {
-                return  <div key={`article_${index}_${article.id}`} className="col-md-6"><ArticlePreviewWeb data={article} /></div>;
-              })}
+            <div className="col">{notFound}</div>
           </div>
+        )}
 
-          {articles.length === 0 && (
-            <div className="row">
-              <div className="col">
-                <PageNotFound onBrowseCategories={onBrowseCategories} basePath={basePath} />
-              </div>
-            </div>
-          )}
+        {hasArticles && visibleArticles.length === 0 && !loading && (
+          <div className="row">
+            <div className="col">No articles match your search or filters.</div>
+          </div>
+        )}
 
-          {articles.length > 0 && visibleArticles.length === 0 && (
-            <div className="row">
-              <div className="col">No articles match your search.</div>
-            </div>
-          )}
-        </ArticleViewer>
-      ) : (
-        getNoArticle()
-      )}
+        {search && (
+          <Pagination
+            page={search.state.page}
+            pageCount={Math.ceil(search.total / search.pageSize)}
+            onPageChange={(page) => search.onChange({ ...search.state, page })}
+          />
+        )}
+      </ArticleViewer>
     </ArticleViewer>
   );
 }

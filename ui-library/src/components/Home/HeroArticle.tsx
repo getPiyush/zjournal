@@ -1,65 +1,40 @@
-import { CardImage } from "../../styles/shared";
+import { ClampedText } from "../../styles/shared";
 
 import { parsex } from "../../utils/parserUtil";
 import { ArticleT } from "../../Types";
-import { getDate, removeHTML, sliceWords } from "../../utils/componentUtil";
+import { Byline, ReadLink, getArticleSummary } from "./articleCardParts";
+import { Cover } from "./Cover";
 
 type HeroProps = {
   article: ArticleT;
   mode?: "view" | "edit";
 };
 
+// The lead story: image beside the text from tablet width, stacked above it on phones.
 export default function HeroArticle({ article, mode = "view" }: HeroProps) {
-  const contentArray: Array<string | null> = [null, null];
+  const { image, excerpt } = getArticleSummary(article, 320);
 
   return (
     <div className="card border-light mb-3 hero-article">
-      <div className="card-body">
-        <h2>{parsex(article.title)}</h2>
-        <small>By {article.author} on {getDate(article.createdAt)}</small>
-        <div className="lead">
-          {article.content.map((item, index) => {
-            if (item.componenType === "Image" && !contentArray[0]) {
-              contentArray[0] = typeof item.data === "string" ? item.data : item.data[0] || "";
-              return (
-                <CardImage
-                  key={`herocomp_${index}_${article.id}`}
-                  className="card-img"
-                  alt={article.title}
-                  title={article.title}
-                  src={`${contentArray[0]}`}
-                />
-              );
-            }
-
-            if (item.componenType === "Paragraph" && !contentArray[1]) {
-              contentArray[1] = removeHTML(item.data);
-              return (
-                <div key={`herocomp_${index}_${article.id}`} className="card-text">
-                  {parsex(sliceWords(contentArray[1], 0, 200))}
-                </div>
-              );
-            }
-
-            return null;
-          })}
-
-          {contentArray[1] && (
-            <div className="card-text">
-              {parsex(sliceWords(contentArray[1], 200, 500))}
-              ...{" "}
-              {mode === "view" && (
-                <a className="card-link" href={`article/${article.id}`}>
-                  more..
-                </a>
-              )}
-              {mode === "edit" && (
-                <a target="_blank" href={`/web/article/${article.id}`}>
-                  more..
-                </a>
-              )}
+      <div className="row g-0 align-items-center">
+        <div className="col-md-7">
+          <Cover className="rounded" image={image} category={article.categryId} />
+        </div>
+        <div className="col-md-5">
+          <div className="card-body">
+            <h2>{parsex(article.title)}</h2>
+            <small className="article-author text-muted">
+              <Byline article={article} mode={mode} />
+            </small>
+            {excerpt && (
+              <ClampedText $lines={5} className="lead mt-3 mb-3">
+                {parsex(excerpt)}
+              </ClampedText>
+            )}
+            <div className={excerpt ? "" : "mt-3"}>
+              <ReadLink article={article} mode={mode} />
             </div>
-          )}
+          </div>
         </div>
       </div>
       {mode === "edit" && (

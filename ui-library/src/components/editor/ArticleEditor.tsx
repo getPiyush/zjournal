@@ -10,6 +10,8 @@ import {
   getComponentFromId,
   setComponentById,
   deleteComponent,
+  moveComponent,
+  DropPosition,
 } from "../../utils/componentUtil";
 
 import ArticleContainerEditor from "./ArticleContainerEditor";
@@ -24,6 +26,9 @@ type ArticleEditorProps = {
   availableComponents: string[];
   categories: string[];
   savedArticle?: ArticleT | null;
+  /** Called with the article as edited so far (title, settings and content) on every change,
+   * so the caller can tell whether there are unsaved edits. */
+  onChange?: (article: ArticleT) => void;
 };
 
 export default function ArticleEditor({
@@ -33,6 +38,7 @@ export default function ArticleEditor({
   availableComponents,
   categories,
   savedArticle,
+  onChange,
 }: ArticleEditorProps) {
   const sampleText = "The quick brown fox, jumps over a lazy dog.!?";
 
@@ -46,6 +52,10 @@ export default function ArticleEditor({
   const [content, setContent] = useState<ComponentObject[]>(articleIn.content);
   const [editMode, setEditMode] = useState(false);
   const [selectedElement, setSelectedElement] = useState("h2");
+
+  useEffect(() => {
+    onChange?.({ ...article, content });
+  }, [article, content]);
   const [editComponent, setEditcomponent] = useState<ComponentObject | null>(null);
 
   const onElementDropdownSelect = (
@@ -80,7 +90,6 @@ export default function ArticleEditor({
   };
 
   const onResetClick = () => {
-    console.log("Resetting Article Editor");
     setArticle(defaultArticle);
     setContent([]);
   };
@@ -112,6 +121,16 @@ export default function ArticleEditor({
     setContent(updatedComponents);
     setArticle({ ...article, content: updatedComponents });
     showHdeOffCanvas(false);
+  };
+
+  const onReorder = (
+    draggedId: string,
+    targetId: string,
+    position: DropPosition
+  ) => {
+    const updatedComponents = moveComponent(draggedId, targetId, content, position);
+    setContent(updatedComponents);
+    setArticle({ ...article, content: updatedComponents });
   };
 
   const onAddElementClick = () => {
@@ -169,7 +188,14 @@ export default function ArticleEditor({
       <div className="row">
         <div className="col">
           <TopActionBox>
-            <span>{article.origin === "local" ? "Creating New" : "Updating"} Article</span>
+            <span>
+              {article.origin === "local" ? "Creating New" : "Updating"} Article
+              {article.id !== "" && (
+                <span className="badge bg-secondary ms-2" title="Article id">
+                  id : {article.id}
+                </span>
+              )}
+            </span>
             <button
               className="btn btn-primary btn-sm"
               onClick={onPreviewClick}
@@ -298,8 +324,9 @@ export default function ArticleEditor({
               checked={article.deleteFlag}
               onChange={deleteStatusUpdated}
             />
-            <label className="form-check-label" htmlFor="publichedCheckSwitch">
-              Deleted
+            {/* Doesn't delete anything: saving puts the article on the admin's Purge list. */}
+            <label className="form-check-label" htmlFor="deleteCheckSwitch">
+              Marked for deletion
             </label>
           </div>
         </EditorActionColEnd>
@@ -309,6 +336,7 @@ export default function ArticleEditor({
           <ArticleContainerEditor
             componentClicked={onComponentClick}
             containerJson={content}
+            onReorder={onReorder}
           />
         </EditArea>
       </div>

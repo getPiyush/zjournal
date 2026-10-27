@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes, useSearchParams } from "react-router-dom";
 import { useContact } from "../datastore/contexts/ContactContext";
 import { useArticle } from "../datastore/contexts/ArticleContext";
 import { useJournal } from "../datastore/contexts/JournalContext";
 import { updateCurrentArticle } from "../datastore/actions/JournalActions";
+import { getArticleById } from "../datastore/actions/ArticleActions";
 import { defaultArticle } from "../ApplicationConstants";
 import { ArticleT, Spinner } from "@zjournal/ui-library";
 import ArticleContainer from "./pages/ArticleContainer";
@@ -14,9 +15,25 @@ import Templates from "./pages/Templates";
 
 export default function AdminContainer() {
   const { state: jState, dispatch } = useJournal();
-  const { state: aState } = useArticle();
+  const { state: aState, dispatch: aDispatch } = useArticle();
   const { state: cState } = useContact();
+  const [searchParams] = useSearchParams();
+  const articleIdParam = searchParams.get("id");
+  const currentArticle = jState?.journal?.currentArticle;
 
+  // Load the article referenced by ?id= when it isn't already the current article
+  useEffect(() => {
+    if (articleIdParam && currentArticle?.id !== articleIdParam) {
+      getArticleById(aDispatch, articleIdParam);
+    }
+  }, [articleIdParam]);
+
+  useEffect(() => {
+    const fetched = aState.articles?.[0];
+    if (articleIdParam && aState.status === "success" && fetched?.id === articleIdParam && currentArticle?.id !== articleIdParam) {
+      updateCurrentArticle(fetched, dispatch);
+    }
+  }, [aState, articleIdParam]);
 
   const updateJournalArticle = (article: ArticleT) => {
     updateCurrentArticle(article, dispatch);
@@ -47,7 +64,8 @@ export default function AdminContainer() {
             path="editor"
             element={
               <ArticleContainer
-                inArticle={getValidatedArticle(jState?.journal?.currentArticle)}
+                key={getValidatedArticle(currentArticle).id}
+                inArticle={getValidatedArticle(currentArticle)}
                 setOutArticle={updateJournalArticle}
               />
             }

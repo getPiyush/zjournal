@@ -18,13 +18,14 @@ The server starts on **port 8080** (same as the other three backends — stop `s
 `server/java`, or `server/python` first if one is already running there, or change `port` in
 `properties.js`).
 
-From the repo root, the equivalent scripts are `npm run server:dev` (dev/watch mode) and
-`npm run server` (production mode) — see root [package.json](../../package.json).
+From the repo root, the equivalent scripts are `npm run server` (dev/watch mode) and
+`npm run server -- --prod` (production mode) — see root [package.json](../../package.json).
 
 ## Stopping
 
-In the foreground, `Ctrl+C`. If it's running in the background, kill whatever is bound to port
-8080:
+In the foreground, `Ctrl+C`. If it's running in the background, `npm run stop` (from the repo
+root) kills it along with anything else bound to the ports the monorepo's scripts use, or kill
+just this one directly:
 
 ```sh
 lsof -nP -iTCP:8080 -sTCP:LISTEN -t | xargs kill
@@ -49,6 +50,17 @@ lsof -nP -iTCP:8080 -sTCP:LISTEN -t | xargs kill
   `zjournal.encryption-enabled` / `ZJOURNAL_ENCRYPTION_ENABLED` toggle on `server/java` /
   `server/python`) — there's no unencrypted `GET /health` route here to fall back on either way,
   since this server doesn't define one.
+- **Admin auth**: see [auth.js](auth.js). Every request except `GET`/`HEAD` on
+  `/articles`, `/journal` and `/qna`, and `POST /contacts` (the public contact form), needs
+  `Authorization: Bearer <Google ID token>`. The token must be issued for
+  `ZJOURNAL_GOOGLE_CLIENT_ID`, and its verified email must be in `ZJOURNAL_ADMIN_EMAILS`
+  (comma-separated). Otherwise the server returns `401 UNAUTHORIZED` (missing or invalid token)
+  or `403 FORBIDDEN` (not an admin), as plain JSON
+  `{"error": {"code": "...", "message": "..."}}`. The server refuses to start unless both variables
+  are set, except in development (`--development` or `ZJOURNAL_ENV=development`), where auth is
+  off and a warning is logged. See [docs/DEPLOYMENT.md](../../docs/DEPLOYMENT.md#securing-the-admin-panel) for Google
+  setup.
+- **Public view:** anonymous `GET /articles` and `/articles/<id>` return only published articles that aren't flagged for deletion (hidden ones return 404). Anonymous `GET /journal` omits `currentArticle` and `adminDetails`. A request with an `Authorization` header must be a valid admin (401/403 otherwise) and then sees everything.
 - **CORS**: handled by `json-server`'s default middleware (`jsonServer.defaults()`), open to all
   origins.
 - **Errors**: `GET`/`PUT`/`DELETE` by an unknown id return HTTP `404` with
@@ -66,6 +78,7 @@ exports.properties = {
   encryptionKey: "JagaBaliaShreekhetra",
   dbFile: "db.json",
   encryptionEnabled: true,
+  auth: { googleClientId, adminEmails }, // from ZJOURNAL_GOOGLE_CLIENT_ID / ZJOURNAL_ADMIN_EMAILS
 };
 ```
 
@@ -85,8 +98,8 @@ exports.properties = {
 
 ## Testing
 
-No automated test suite for this server (`server/java` has one via `./mvnw test`; this one
-doesn't). Manual smoke test — since every response is encrypted, the simplest check is that the
+The admin-auth middleware has unit tests: run `npm run test:server:node` from the repo root.
+There's no suite for the routes themselves. Manual smoke test — since every response is encrypted, the simplest check is that the
 server responds at all:
 
 ```sh

@@ -29,7 +29,7 @@
   },
   "scripts": {
     "start": "cross-env PORT=80 react-scripts start",
-    "start:host": "cross-env HOST=0.0.0.0 PORT=80 react-scripts start",
+    "start:host": "cross-env HOST=0.0.0.0 PORT=3000 react-scripts start",
     "prodrun": "cd build && node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

@@ -7,6 +7,7 @@ import {
   getArticleFromId,
   setComponentById,
   deleteComponent,
+  moveComponent,
   populateComponentFromCode,
   populateContentFromJsonArray,
   getDate,
@@ -200,15 +201,18 @@ describe("populateContentFromJsonArray", () => {
 });
 
 describe("getDate", () => {
-  test("formats a Date object as a date string", () => {
+  const short = (d: Date) =>
+    d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+
+  test("formats a Date object as a short readable date", () => {
     const date = new Date(2024, 0, 15);
-    expect(getDate(date)).toBe(date.toDateString());
+    expect(getDate(date)).toBe(short(date));
+    expect(getDate(date)).toMatch(/2024/);
+    expect(getDate(date)).not.toMatch(/Mon/);
   });
 
-  test("formats a date string as a date string", () => {
-    expect(getDate("2024-01-15T00:00:00")).toBe(
-      new Date("2024-01-15T00:00:00").toDateString()
-    );
+  test("formats a date string the same way", () => {
+    expect(getDate("2024-01-15T00:00:00")).toBe(short(new Date("2024-01-15T00:00:00")));
   });
 });
 
@@ -242,7 +246,16 @@ describe("getMonths", () => {
 describe("sliceWords", () => {
   test("slices the string between the word boundaries at start and end", () => {
     const str = "The quick brown fox jumps";
-    expect(sliceWords(str, 0, 10)).toBe(" quick brown");
+    expect(sliceWords(str, 0, 10)).toBe("The quick brown");
+    expect(sliceWords(str, 10, 16)).toBe(" fox");
+  });
+
+  test("keeps the last word when the string ends before `end`", () => {
+    expect(sliceWords("Short text", 0, 200)).toBe("Short text");
+  });
+
+  test("returns an empty string when the string ends before `start`", () => {
+    expect(sliceWords("Short text", 200, 500)).toBe("");
   });
 });
 
@@ -253,5 +266,37 @@ describe("removeHTML", () => {
 
   test("returns plain text unchanged", () => {
     expect(removeHTML("plain text")).toBe("plain text");
+  });
+});
+
+describe("moveComponent", () => {
+  const components: ComponentObject[] = [
+    { componentId: "a", componenType: "H1", data: "one" },
+    { componentId: "b", componenType: "H2", data: "two" },
+    { componentId: "c", componenType: "H3", data: "three" },
+  ];
+  const ids = (arr: ComponentObject[]) => arr.map((c) => c.componentId);
+
+  test("moves a component before the target", () => {
+    expect(ids(moveComponent("c", "a", components, "before"))).toEqual(["c", "a", "b"]);
+  });
+
+  test("moves a component after the target", () => {
+    expect(ids(moveComponent("a", "c", components, "after"))).toEqual(["b", "c", "a"]);
+  });
+
+  test("moving down before the next item keeps the order", () => {
+    expect(ids(moveComponent("a", "b", components, "before"))).toEqual(["a", "b", "c"]);
+  });
+
+  test("does not mutate the input array", () => {
+    moveComponent("c", "a", components);
+    expect(ids(components)).toEqual(["a", "b", "c"]);
+  });
+
+  test("returns the same array for unknown ids or self-drop", () => {
+    expect(moveComponent("missing", "a", components)).toBe(components);
+    expect(moveComponent("a", "missing", components)).toBe(components);
+    expect(moveComponent("a", "a", components)).toBe(components);
   });
 });

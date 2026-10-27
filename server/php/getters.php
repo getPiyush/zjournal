@@ -112,6 +112,19 @@ function getItemsByQuery($query, $items)
     return $item_response;
 }
 
+function zj_send($response_obj)
+{
+    global $passphase, $encryptionEnabled;
+
+    if ($encryptionEnabled) {
+        $response_obj = [
+            "ezjData" => base64_encode(CryptoJSAesEncrypt($passphase, json_encode($response_obj)))
+        ];
+    }
+
+    print_r(json_encode($response_obj));
+}
+
 function processGetters()
 {
     global $passphase, $encryptionEnabled;
@@ -136,6 +149,13 @@ function processGetters()
         $response_obj = $json_object[$path];
 
         $sort_query = false;
+
+        // articles/search: answered here, ahead of the by-id lookup that would read "search" as
+        // an id. It applies the public view itself, before paging (see search.php).
+        if ($path === "articles" && count($paths) == 2 && $paths[1] === "search") {
+            zj_send(zj_search_articles($json_object["articles"] ?? [], $_GET, zj_is_public_view()));
+            return;
+        }
 
         // articles/789gyut76r
         if (count($paths) == 2) {
@@ -204,15 +224,21 @@ function processGetters()
                 }
             }
         }
-        if ($encryptionEnabled) {
-            $enc_responseObj = base64_encode(CryptoJSAesEncrypt($passphase, json_encode($response_obj)));
-
-            $response_obj = [
-                "ezjData" => $enc_responseObj
-            ];
+        // Anonymous reads of articles/journal get the public view (see auth.php).
+        if (zj_is_public_view() && http_response_code() < 400) {
+            [$response_obj, $not_found] = zj_public_view($path, $response_obj, count($paths) == 2);
+            if ($not_found) {
+                http_response_code(404);
+                $response_obj = [
+                    "error" => [
+                        "code" => "NOT_FOUND",
+                        "message" => "No item with that id"
+                    ]
+                ];
+            }
         }
 
-        print_r(json_encode($response_obj));
+        zj_send($response_obj);
     }
     else {
         echo "Welcome to zjournal Feeder";

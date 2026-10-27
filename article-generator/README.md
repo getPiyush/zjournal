@@ -7,7 +7,7 @@ into article entries shaped exactly like the ones in zJournal's `db.json`
 ## What it does
 
 1. **Analyzes an existing `db.json`** (`--db`) to learn the conventions already in use: the
-   set of categories, the most common author (used as a fallback), and the id length/style.
+   set of categories and the id length/style.
 2. **Takes a string of websites** (comma/space/newline separated), either via `--websites` or
    typed in when prompted.
 3. **Browses each website in parallel** (a thread pool fetches every homepage at once, then
@@ -15,7 +15,9 @@ into article entries shaped exactly like the ones in zJournal's `db.json`
    fetching anything and rate-limits requests per domain (`--delay`).
 4. For each site, finds candidate article links, then for each article page collects:
    - **title** (JSON-LD `headline` / `og:title` / `<title>` / first `<h1>`)
-   - **author** (JSON-LD `author` / meta tags / a "By <Name>" byline pattern)
+   - **author** (JSON-LD `author` / meta tags / a "By <Name>" byline pattern); with no byline,
+     the website's own name is credited instead (the site's `name` in `--categories-file`, else
+     JSON-LD `publisher` / `og:site_name`, else the domain)
    - **published date** (JSON-LD `datePublished` / meta tags / `<time datetime>`)
    - **a snippet** — the meta description if present, otherwise the first few real paragraphs
      of the article body
@@ -44,10 +46,11 @@ into article entries shaped exactly like the ones in zJournal's `db.json`
     by source URL against what's already in `--db`), adds any category the batch introduced to
     `journal.categories`, and rebuilds `journal.templateData` with a fresh random selection of
     published articles for the homepage. See "Migrating into db.json" below.
-11. **A separate sync tool** (`python -m article_generator.sync_db`) copies just the
-    `articles` array from one `db.json` to the other three backends, since migrating only
-    touches one at a time and `server/{java,node,php,python}/db.json` are meant to serve
-    identical data. See "Syncing articles across backends" below.
+11. **A separate sync tool** (`python -m article_generator.sync_db`) copies the `articles`
+    array (plus `journal.categories` and `journal.templateData`) from one `db.json` to the other
+    three backends, since migrating only touches one at a time and
+    `server/{java,node,php,python}/db.json` are meant to serve identical data.
+    See "Syncing articles across backends" below.
 
 ## Setup
 
@@ -95,7 +98,7 @@ python3 -m venv .venv
 | `--db` | *(none)* | Path to an existing `db.json` to analyze conventions from, seed duplicate-avoidance from, and to write into with `--append` |
 | `--append` | off | Append generated articles into `--db` instead of writing `--output` |
 | `--output` | `./generated_articles.json` | Where to write generated articles when not using `--append` (merged into whatever's already there) |
-| `--author` | most common author in `--db`, else `"Article Generator"` | Fallback author for articles with no detected byline |
+| `--author` | the website's name | Fallback author for articles with no detected byline |
 | `--max-per-site` | `5` | Max articles to pull per website |
 | `--workers` | `6` | Parallel worker threads |
 | `--delay` | `0.5` | Polite per-domain delay, in seconds, between requests |
@@ -140,9 +143,11 @@ the same rule the generator itself uses) are skipped rather than duplicated, tho
 
 `server/{java,node,php,python}/db.json` are meant to be interchangeable — same schema, same
 data — but `migrate.py` only updates whichever one file you point `--db` at. `sync_db.py` brings
-the other three back in line by copying **just** the `articles` array; `journal`, `contacts`,
-and `qna` are left completely untouched in every target, since those can legitimately differ
-per backend and this toolchain doesn't produce them.
+the other three back in line by copying the `articles` array plus the two journal fields
+`migrate.py` rebuilds from it: `journal.categories` and `journal.templateData` (the homepage
+layout, which lists article ids, so a target left with the old one would point at articles it
+no longer has). The rest of `journal`, plus `contacts` and `qna`, is left untouched in every
+target, since those can legitimately differ per backend and this toolchain doesn't produce them.
 
 ```sh
 # Defaults to source=python, targets=java node php (this repo's actual layout):

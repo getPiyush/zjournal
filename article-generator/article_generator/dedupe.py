@@ -10,6 +10,7 @@ Two sources feed the "already have this" set:
 
 from __future__ import annotations
 
+import html
 import json
 import re
 from pathlib import Path
@@ -24,7 +25,8 @@ def extract_urls_from_articles(articles: List[dict]) -> Set[str]:
     for article in articles:
         for component in article.get("content", []):
             data = component.get("data", "")
-            urls.update(_HREF_RE.findall(data))
+            # builder.py HTML-escapes the URL inside the attribute (`&` → `&amp;`).
+            urls.update(html.unescape(url) for url in _HREF_RE.findall(data))
     return urls
 
 

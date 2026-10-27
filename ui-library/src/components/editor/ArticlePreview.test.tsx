@@ -47,8 +47,16 @@ describe("ArticlePreview", () => {
     const onEdit = jest.fn();
     render(<ArticlePreview data={sampleArticle} onEdit={onEdit} />);
 
-    await userEvent.click(screen.getByRole("link", { name: "Edit" }));
+    await userEvent.click(screen.getByRole("button", { name: "Edit" }));
 
     expect(onEdit).toHaveBeenCalledWith(sampleArticle);
+  });
+
+  test("shows the author, marked when the search covers authors", () => {
+    const { container } = render(
+      <ArticlePreview data={sampleArticle} onEdit={jest.fn()} highlight={{ words: ["nad"], field: "all" }} />
+    );
+    expect(container.querySelector(".article-author")).toHaveTextContent("By Nadia");
+    expect(container.querySelector(".article-author mark")).toHaveTextContent("Nad");
   });
 });

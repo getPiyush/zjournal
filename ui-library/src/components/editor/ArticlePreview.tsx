@@ -4,13 +4,18 @@ import { TopActionBox, CardImage } from "../../styles/shared";
 import { parsex } from "../../utils/parserUtil";
 import { ArticleT } from "../../Types";
 import { getDate } from "../../utils/componentUtil";
+import { Cover } from "../Home/Cover";
+import { highlightHtml } from "../../utils/highlight";
+import { ArticleHighlight, highlightWordsFor } from "../Article/articleFilters";
 
 type ArticlePreviewProps = {
   data: ArticleT;
   onEdit: (article: ArticleT) => void;
+  // Marks the searched words in the title, author and id.
+  highlight?: ArticleHighlight;
 };
 
-export default function ArticlePreview({ data, onEdit }: ArticlePreviewProps) {
+export default function ArticlePreview({ data, onEdit, highlight }: ArticlePreviewProps) {
   const editArticle = () => {
     onEdit(data);
   };
@@ -58,10 +63,15 @@ export default function ArticlePreview({ data, onEdit }: ArticlePreviewProps) {
               data-bs-placement="right"
               title="Click to copy to clipboard!"
             >
-              id : {data.id}
+              id : {parsex(highlightHtml(data.id, highlightWordsFor(highlight, "id")))}
             </button>
           </TopActionBox>
-          <h5 className="card-title">{parsex(data.title)}</h5>
+          <h5 className="card-title">{parsex(highlightHtml(data.title, highlightWordsFor(highlight, "title")))}</h5>
+          {data.author && (
+            <div className="card-text article-author">
+              By <b>{parsex(highlightHtml(data.author, highlightWordsFor(highlight, "author")))}</b>
+            </div>
+          )}
           <div className="card-text">
             Created:<b>{getDate(data.createdAt)}</b> | Last Updated:
             <b>{getDate(data.updatedAt)}</b>
@@ -70,14 +80,21 @@ export default function ArticlePreview({ data, onEdit }: ArticlePreviewProps) {
             if (item.componenType === "Image" && !breaker) {
               breaker = true;
               return (
-                <CardImage className="card-img-top" src={`${item.data}`} alt="..." />
+                <Cover
+                  key={`articlecomp_${item.componentId}`}
+                  className="card-img-top my-2 rounded"
+                  image={typeof item.data === "string" ? item.data : item.data[0] || ""}
+                  category={data.categryId}
+                  imageAs={CardImage}
+                  lazy
+                />
               );
             }
           })}
 
-          <a href="#" onClick={editArticle} className="btn btn-primary">
+          <button type="button" onClick={editArticle} className="btn btn-primary">
             Edit
-          </a>
+          </button>
         </div>
       </div>
     </React.Fragment>

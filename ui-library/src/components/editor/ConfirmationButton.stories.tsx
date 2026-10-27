@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { expect, fn, userEvent, within } from "storybook/test";
+import { expect, fn, screen, userEvent, within } from "storybook/test";
 import ConfirmationButton from "./ConfirmationButton";
 
 const meta = {
@@ -23,12 +23,32 @@ export const Default: Story = {
     const canvas = within(canvasElement);
     const trigger = canvas.getByRole("button", { name: /Delete/ });
 
-    expect(canvas.getByText("Are you sure?")).toBeInTheDocument();
+    await userEvent.click(trigger);
+    // The dialog is portalled to document.body, outside the canvas.
+    const dialog = within(await screen.findByRole("alertdialog"));
+    expect(dialog.getByText("Are you sure?")).toBeInTheDocument();
 
-    await userEvent.click(canvas.getByRole("button", { name: "Yes" }));
+    await userEvent.click(dialog.getByRole("button", { name: "Delete" }));
     expect(args.confirmationClick).toHaveBeenCalledTimes(1);
-    expect(trigger).toBeInTheDocument();
+    expect(screen.queryByRole("alertdialog")).not.toBeInTheDocument();
   },
+};
+
+export const Open: Story = {
+  args: {
+    buttonText: "Logout",
+    title: "Log out?",
+    confirmationMessage: "Are you sure want to log out?",
+    confirmText: "Log out",
+    iconComp: <i className="bi bi-x-square-fill" />,
+  },
+  play: async ({ canvasElement }) => {
+    await userEvent.click(within(canvasElement).getByRole("button", { name: /Logout/ }));
+  },
+};
+
+export const IconOnly: Story = {
+  args: { buttonText: "" },
 };
 
 export const Disabled: Story = {

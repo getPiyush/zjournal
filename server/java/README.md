@@ -9,8 +9,11 @@ Requires Java 17+. No local Maven install needed — use the wrapper:
 
 ```sh
 cd server/java
-./mvnw spring-boot:run
+ZJOURNAL_ENV=development ./mvnw spring-boot:run
 ```
+
+`ZJOURNAL_ENV=development` lets the app start with admin auth unconfigured (see
+[Admin auth](#admin-auth)). `npm run server -- --backend=java` sets it for you.
 
 The server starts on **port 8080** (same as the other two backends — stop `server/node` or
 `server/php` first if one is already running there, or override with `--server.port=<port>`).
@@ -18,7 +21,7 @@ The server starts on **port 8080** (same as the other two backends — stop `ser
 To run it in the background instead of holding a terminal:
 
 ```sh
-./mvnw -q spring-boot:run > /tmp/zjournal-java.log 2>&1 &
+ZJOURNAL_ENV=development ./mvnw -q spring-boot:run > /tmp/zjournal-java.log 2>&1 &
 ```
 
 ## Stopping
@@ -35,6 +38,34 @@ lsof -nP -iTCP:8080 -sTCP:LISTEN -t | xargs kill
 ```sh
 ./mvnw test
 ```
+
+The tests include the admin gate: route rules, the allowlist, Google token verification against
+locally signed RS256 tokens, and a MockMvc test checking that 401s still carry CORS headers. They
+only read the shared `db.json`, never write it.
+
+## Admin auth
+
+`com.zjournal.auth.AdminAuthInterceptor` checks every request except `GET`/`HEAD` on `/`,
+`/health`, `/articles`, `/journal`, `/qna` and the Swagger routes, and `POST /contacts` (the
+public contact form). Those requests need `Authorization: Bearer <Google ID token>`. These are
+the same rules as the other three backends. The token is verified with nimbus-jose-jwt against
+Google's signing keys (signature, audience, issuer and expiry), and its verified email must be on
+the allowlist. Failures return `401 UNAUTHORIZED` or `403 FORBIDDEN`. The interceptor runs inside
+`EncryptionFilter`, so the error body is encrypted like any other response; clients should go by
+the status code.
+
+| Property | Env var | Meaning |
+| --- | --- | --- |
+| `zjournal.auth.google-client-id` | `ZJOURNAL_GOOGLE_CLIENT_ID` | Client id the tokens must be issued for (same as `REACT_APP_GOOGLE_CLIENT_ID` in `web-app`) |
+| `zjournal.auth.admin-emails` | `ZJOURNAL_ADMIN_EMAILS` | Comma-separated admin allowlist |
+| `zjournal.env` | `ZJOURNAL_ENV` | Defaults to `production`, where the app refuses to start without the two values above. `development` allows it, with a warning |
+
+**Public view:** anonymous `GET /articles` and `/articles/<id>` return only published articles
+that aren't flagged for deletion (hidden ones return 404). Anonymous `GET /journal` omits
+`currentArticle` and `adminDetails`. A request with an `Authorization` header must be a valid admin
+(401/403 otherwise) and then sees everything.
+
+With auth on, Swagger's **Try it out** only works for the public routes.
 
 ## Testing via Swagger
 
@@ -91,7 +122,8 @@ the override) before testing against a client that expects the encrypted envelop
 ```
 src/main/java/com/zjournal/
 ├── ZJournalApplication.java     # entry point
-├── config/                       # AppProperties (port/passphrase/db file), CORS
+├── auth/                         # admin gate: interceptor, Google token verifier, route rules
+├── config/                       # AppProperties (port/passphrase/db file/auth), CORS
 ├── crypto/CryptoService.java      # PBKDF2 + AES-256-CBC encrypt/decrypt
 ├── filter/EncryptionFilter.java    # {ezjData} envelope handling for every request/response
 ├── store/DataStore.java            # in-memory db.json, periodic + shutdown flush

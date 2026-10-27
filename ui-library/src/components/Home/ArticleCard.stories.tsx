@@ -35,9 +35,9 @@ export const View: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     expect(canvas.getByText("Shipping with confidence")).toBeInTheDocument();
-    expect(canvas.getByRole("link", { name: "more.." })).toHaveAttribute(
+    expect(canvas.getByRole("link", { name: "Read article" })).toHaveAttribute(
       "href",
-      "article/article-card-1"
+      "/web/article/article-card-1"
     );
   },
 };

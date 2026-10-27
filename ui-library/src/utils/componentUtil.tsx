@@ -5,6 +5,7 @@ import EditWrapper from "../components/editor/EditWrapper";
 import { ArticleT, ComponentObject } from "../Types";
 import { List } from "../components/List";
 import { Table } from "../components/Table";
+import { Cover } from "../components/Home/Cover";
 
 export const months = [
   "January",
@@ -82,7 +83,37 @@ export const deleteComponent = (id: string, compArray: ComponentObject[]) => {
   return resultArray;
 };
 
-export const populateComponentFromCode = (code: string, text: string) => {
+export type DropPosition = "before" | "after";
+
+export type ComponentReorderHandler = (
+  draggedId: string,
+  targetId: string,
+  position: DropPosition
+) => void;
+
+export const moveComponent = (
+  draggedId: string,
+  targetId: string,
+  compArray: ComponentObject[],
+  position: DropPosition = "before"
+) => {
+  const fromIndex = compArray.findIndex((c) => c.componentId === draggedId);
+  if (fromIndex === -1 || draggedId === targetId) return compArray;
+
+  const resultArray = [...compArray];
+  const [dragged] = resultArray.splice(fromIndex, 1);
+  const targetIndex = resultArray.findIndex((c) => c.componentId === targetId);
+  if (targetIndex === -1) return compArray;
+
+  resultArray.splice(
+    position === "after" ? targetIndex + 1 : targetIndex,
+    0,
+    dragged
+  );
+  return resultArray;
+};
+
+export const populateComponentFromCode =(code: string, text: string) => {
   let comp: any;
   switch (code.toUpperCase()) {
     case "H1":
@@ -133,7 +164,9 @@ export const populateComponentFromCode = (code: string, text: string) => {
 const getComponentFromObject = (
   obj: ComponentObject,
   componentClicked?: (event: React.MouseEvent<HTMLDivElement>) => void,
-  editable?: boolean
+  editable?: boolean,
+  onReorder?: ComponentReorderHandler,
+  category?: string
 ) => {
   let comp: any;
   switch (obj.componenType.toUpperCase()) {
@@ -191,12 +224,15 @@ const getComponentFromObject = (
 
     case "IMAGE":
       comp = (
-        <img
+        // Keeps the image's own shape; a broken one becomes the category placeholder.
+        <Cover
           id={obj.componenType + "_" + obj.componentId}
           key={"key_" + obj.componentId}
-          src={`${obj.data}`}
+          image={typeof obj.data === "string" ? obj.data : obj.data[0] || ""}
+          category={category}
           className="img-fluid"
           alt={obj.altText}
+          imageAs="img"
         />
       );
       break;
@@ -231,31 +267,33 @@ const getComponentFromObject = (
       children={comp}
       id={obj.componentId}
       key={"key_" + obj.componentId}
+      onReorder={onReorder}
     />
   ) : (
     comp
   );
 };
 
+// `category` tints the placeholder that stands in for a broken image.
 export const populateContentFromJsonArray = (
   content: ComponentObject[],
   componentClicked?: (event: React.MouseEvent<HTMLDivElement>) => void,
-  editable?: boolean
+  editable?: boolean,
+  onReorder?: ComponentReorderHandler,
+  category?: string
 ) => {
   return (
     <React.Fragment>
       {content.map((component: ComponentObject) =>
-        getComponentFromObject(component, componentClicked, editable)
+        getComponentFromObject(component, componentClicked, editable, onReorder, category)
       )}
     </React.Fragment>
   );
 };
 
-export const getDate = (date: Date | string) => {
-  let dateOut = new Date(date);
-  if (typeof date === "string") dateOut = new Date(date);
-  return dateOut.toDateString();
-};
+// e.g. "Aug 27, 2026", in the reader's own locale.
+export const getDate = (date: Date | string) =>
+  new Date(date).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
 
 export const getMonths = (from: string, to: string) => {
   const fromDate = new Date(from);
@@ -278,8 +316,12 @@ export const getMonths = (from: string, to: string) => {
   return months;
 };
 
+// Slices at word boundaries: from the start of the string (start 0) or the first space at/after
+// `start`, up to the first space at/after `end`, or the end of the string when there is none.
 export const sliceWords = (str, start, end) => {
-  return str.slice(str.indexOf(" ", start), str.indexOf(" ", end));
+  const from = start === 0 ? 0 : str.indexOf(" ", start);
+  const to = str.indexOf(" ", end);
+  return str.slice(from === -1 ? str.length : from, to === -1 ? str.length : to);
 };
 
 export const removeHTML = (htmlStr) => {

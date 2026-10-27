@@ -20,9 +20,8 @@ export default function Header() {
     }
   };
 
-  const linkClicked = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    const target: any = event.target;
-    const buttonFlag = target.getAttribute("button-flag");
+  const panelButtonClicked = (event: React.MouseEvent<HTMLButtonElement>) => {
+    const buttonFlag = event.currentTarget.getAttribute("button-flag");
     updatePage(buttonFlag, dispatch);
     closeMobileNav();
   };
@@ -98,33 +97,42 @@ export default function Header() {
                   Q&amp;A
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link
+                  className={`nav-link ${
+                    location === "/web/articles" ? "active" : ""
+                  }`}
+                  to="/web/articles"
+                  onClick={closeMobileNav}
+                >
+                  <i className="bi bi-search me-1" aria-hidden="true"></i>Search
+                </Link>
+              </li>
               <li className="nav-item dropdown dropstart">
-                <a
-                  href="#"
-                  role="button"
-                  className="nav-link"
+                <button
+                  type="button"
+                  className="nav-link nav-panel-button"
                   data-bs-toggle="offcanvas"
                   data-bs-target="#offcanvasRight"
                   aria-controls="offcanvasRight"
-                  onClick={linkClicked}
+                  onClick={panelButtonClicked}
                   button-flag="categories"
                 >
                   Categories
-                </a>
+                </button>
               </li>
               <li className="nav-item">
-                <a
-                  href="#"
-                  role="button"
-                  className="nav-link"
+                <button
+                  type="button"
+                  className="nav-link nav-panel-button"
                   data-bs-toggle="offcanvas"
                   data-bs-target="#offcanvasRight"
                   aria-controls="offcanvasRight"
-                  onClick={linkClicked}
+                  onClick={panelButtonClicked}
                   button-flag="blogs"
                 >
-                  More
-                </a>
+                  Archive
+                </button>
               </li>
             </ul>
           </div>

@@ -34,15 +34,18 @@ it.
 
 ## Running locally
 
-Patrikaz needs three things running:
+Patrikaz needs four things running:
 
 1. The zjournal API server (same one `web-app`/`localhost/web` uses), default `http://localhost:8080`.
 2. The `ui-library` Module Federation remote — serves `remoteEntry.js` on
    `http://localhost:3001`.
-3. Patrikaz itself.
+3. The standalone [analytics](../analytics/README.md) service, default `http://localhost:4400` —
+   patrikaz's [`trackArticleView.ts`](src/analytics/trackArticleView.ts) reports article views
+   there the same way `web-app` does.
+4. Patrikaz itself.
 
-`npm start` runs all three together (via `concurrently`), assuming this
-package still sits next to `ui-library` and `server/node` inside the
+`npm start` runs all four together (via `concurrently`), assuming this
+package still sits next to `ui-library`, `server/node`, and `analytics` inside the
 zjournal monorepo checkout:
 
 ```bash
@@ -65,8 +68,9 @@ to `0.0.0.0` instead, so another device on the same network can load it via the 
 IP, e.g. `http://192.168.0.198:3002` — and, per the runtime host-detection in
 [properties.ts](src/properties.ts) and [webpack.config.js](webpack.config.js), the API and MFE
 remote calls automatically follow that same IP rather than falling back to `localhost`.
-`start:host` also runs `ui-library`'s dev server in host mode (`mfe:start:host`); the API server
-(`server:dev`) already listens on all interfaces by default, so it needs no separate host variant.
+`start:host` also runs `ui-library`'s dev server and the analytics service in host mode
+(`mfe:start:host`, `analytics:dev:host`); the API server (`server:dev`) already listens on all
+interfaces by default, so it needs no separate host variant.
 
 Host mode also skips loading `.env` (see `webpack.config.js`) — otherwise its `localhost`-pinned
 `REMOTE_UI_LIBRARY_URL`/`SERVER_URL` would still be baked into the bundle even with `--host

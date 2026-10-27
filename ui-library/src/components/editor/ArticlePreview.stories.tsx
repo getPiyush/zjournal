@@ -39,7 +39,7 @@ export const Default: Story = {
     expect(canvas.getByText("Published")).toBeInTheDocument();
     expect(canvas.getByText(/id : preview-001/)).toBeInTheDocument();
 
-    await userEvent.click(canvas.getByRole("link", { name: "Edit" }));
+    await userEvent.click(canvas.getByRole("button", { name: "Edit" }));
     expect(args.onEdit).toHaveBeenCalledWith(sampleArticle);
   },
 };

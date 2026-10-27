@@ -4,13 +4,25 @@ import { CardImage } from "../../styles/shared";
 import { parsex } from "../../utils/parserUtil";
 
 import { ArticleT } from "../../Types";
-import { getDate, removeHTML, sliceWords } from "../../utils/componentUtil";
+import { getDate, removeHTML } from "../../utils/componentUtil";
+import { highlightHtml } from "../../utils/highlight";
+import { ArticleHighlight, highlightWordsFor } from "./articleFilters";
+import { Cover } from "../Home/Cover";
 
 type ArticleProps = {
   data: ArticleT;
+  // Marks the searched words in the title, author and snippet.
+  highlight?: ArticleHighlight;
+  basePath?: string;
 };
 
-export default function ArticlePreviewWeb({ data }: ArticleProps) {
+// The start of the text, cut at the first space after `length` characters.
+const snippet = (text: string, length: number) => {
+  const end = text.indexOf(" ", length);
+  return end === -1 ? text : text.slice(0, end);
+};
+
+export default function ArticlePreviewWeb({ data, highlight, basePath = "/web" }: ArticleProps) {
   const contentArray: Array<string | null> = [null, null];
   return (
     <div
@@ -19,9 +31,17 @@ export default function ArticlePreviewWeb({ data }: ArticleProps) {
     >
       <div className="card-body">
         <h5 className="card-title">
-          <a href={`article/${data.id}`}>{parsex(data.title)}</a>
+          <a href={`article/${data.id}`}>{parsex(highlightHtml(data.title, highlightWordsFor(highlight, "title")))}</a>
         </h5>
         <div className="card-text">
+          {data.author && (
+            <div className="article-author">
+              By{" "}
+              <a href={`${basePath}/articles?authorId=${encodeURIComponent(data.author)}`}>
+                {parsex(highlightHtml(data.author, highlightWordsFor(highlight, "author")))}
+              </a>
+            </div>
+          )}
           <div>
             Created:<b>{getDate(data.createdAt)}</b>{" "}
           </div>
@@ -35,20 +55,22 @@ export default function ArticlePreviewWeb({ data }: ArticleProps) {
             if (item.componenType === "Image" && !contentArray[0]) {
               contentArray[0] = typeof item.data === "string" ? item.data : item.data[0] || "";
               return (
-                <CardImage
+                <Cover
                   key={`articlecomp_${index}_${data.id}`}
-                  className="card-img-top"
-                  src={`${contentArray[0]}`}
-                  alt="..."
+                  className="card-img-top my-2 rounded"
+                  image={contentArray[0]}
+                  category={data.categryId}
+                  imageAs={CardImage}
+                  lazy
                 />
               );
             }
 
             if (item.componenType === "Paragraph" && !contentArray[1]) {
-              contentArray[1] = sliceWords(removeHTML(item.data), 0, 200);
+              contentArray[1] = snippet(removeHTML(item.data), 200);
               return (
                 <div  key={`articlecomp_${index}_${data.id}`} className="card-text">
-                  {parsex(contentArray[1])}...{" "}
+                  {parsex(highlightHtml(contentArray[1], highlightWordsFor(highlight, "content")))}...{" "}
                   <a href={`article/${data.id}`}>read more</a>
                 </div>
               );

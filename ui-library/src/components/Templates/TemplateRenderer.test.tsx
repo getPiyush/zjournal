@@ -1,6 +1,7 @@
-import { render, screen } from "@testing-library/react";
+import { render as rtlRender, screen } from "@testing-library/react";
+import { MemoryRouter } from "react-router-dom";
 
-import { TemplateRenderer, parseTemplateArticleIds } from "./TemplateRenderer";
+import { TemplateRenderer, parseTemplateArticleIds, getTemplateHeading } from "./TemplateRenderer";
 
 const articles = [
   {
@@ -17,9 +18,16 @@ const articles = [
   },
 ];
 
+// Rendered articles contain react-router <Link>s, which need a router around them.
+const render = (ui: React.ReactElement) => rtlRender(ui, { wrapper: MemoryRouter });
+
 describe("parseTemplateArticleIds", () => {
   test("splits on commas, pipes and newlines and drops empty entries", () => {
     expect(parseTemplateArticleIds("a,b|c\nd,,")).toEqual(["a", "b", "c", "d"]);
+  });
+
+  test("skips heading lines", () => {
+    expect(parseTemplateArticleIds("# Featured\na\n## More reading\nb|c")).toEqual(["a", "b", "c"]);
   });
 });
 
@@ -64,5 +72,86 @@ describe("TemplateRenderer", () => {
     );
     expect(screen.getByText(/Please wait while the Article gets loaded/)).toBeInTheDocument();
     expect(screen.queryByText("Invalid Article")).toBeNull();
+  });
+
+  test("hides an article that cannot be found in view mode once loading is done", () => {
+    const { container } = render(
+      <TemplateRenderer
+        dataString="missing-id|article-001"
+        mode="view"
+        articles={articles}
+        status="success"
+        invalidArticleError={jest.fn()}
+      />
+    );
+    expect(screen.queryByText(/Please wait while the Article gets loaded/)).toBeNull();
+    expect(screen.queryByText("Invalid Article")).toBeNull();
+    expect(container.querySelectorAll(".container > .row > div")).toHaveLength(1);
+  });
+
+  test("shows a loading card in view mode while loading", () => {
+    render(
+      <TemplateRenderer
+        dataString="missing-id"
+        mode="view"
+        articles={articles}
+        status="loading"
+        invalidArticleError={jest.fn()}
+      />
+    );
+    expect(screen.getByText(/Please wait while the Article gets loaded/)).toBeInTheDocument();
+  });
+
+  test("stacks multi-column rows on small screens and spans single-article rows", () => {
+    const { container } = render(
+      <TemplateRenderer
+        dataString={"article-001\narticle-001|article-001"}
+        mode="view"
+        articles={articles}
+        status="success"
+        invalidArticleError={jest.fn()}
+      />
+    );
+    const rows = container.querySelectorAll(".container > .row");
+    expect(rows[0].firstElementChild).toHaveClass("col-12");
+    expect(rows[0].firstElementChild).not.toHaveClass("col-md-6");
+    rows[1].querySelectorAll(":scope > div").forEach((col) => {
+      expect(col).toHaveClass("col-12", "col-md-6", "col-lg");
+    });
+  });
+
+  test("renders heading lines as section headings", () => {
+    render(
+      <TemplateRenderer
+        dataString={"# Featured\narticle-001\n# More reading\narticle-001|article-001"}
+        mode="view"
+        articles={articles}
+        status="success"
+        invalidArticleError={jest.fn()}
+      />
+    );
+    expect(screen.getByRole("heading", { name: "Featured" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "More reading" })).toBeInTheDocument();
+  });
+
+  test("makes only the first article row a hero; later single rows get a horizontal card", () => {
+    const { container } = render(
+      <TemplateRenderer
+        dataString={"# Featured\narticle-001\narticle-001"}
+        mode="view"
+        articles={articles}
+        status="success"
+        invalidArticleError={jest.fn()}
+      />
+    );
+    expect(container.querySelectorAll(".hero-article")).toHaveLength(1);
+    expect(container.querySelectorAll(".article-card")).toHaveLength(1);
+  });
+});
+
+describe("getTemplateHeading", () => {
+  test("returns the heading text, or null for an article row", () => {
+    expect(getTemplateHeading("# Latest stories ")).toBe("Latest stories");
+    expect(getTemplateHeading("a|b")).toBeNull();
   });
 });

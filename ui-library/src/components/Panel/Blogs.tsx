@@ -12,7 +12,7 @@ export default function Blogs({ startDate, basePath = "/web" }: BlogsProps) {
   return (
     <React.Fragment>
       <div className="offcanvas-header">
-        <h5>Blogs</h5>
+        <h5>Archive</h5>
         <button
           type="button"
           className="btn-close text-reset"
@@ -22,7 +22,7 @@ export default function Blogs({ startDate, basePath = "/web" }: BlogsProps) {
       </div>
       <div className="offcanvas-body">
         <div className="p-4">
-          <span className="fst-italic">Archives</span>
+          <span className="fst-italic">By month</span>
           <ol className="list-unstyled mb-0">
             {monthsYear.map((monthY) => {
               return (

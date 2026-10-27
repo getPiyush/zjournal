@@ -46,6 +46,7 @@ class ArticleMeta:
     snippet: str
     image: Optional[str]
     is_article: bool = True
+    site_name: Optional[str] = None
 
 
 def fetch(url: str, throttle: Optional[DomainThrottle] = None) -> Tuple[Optional[str], bool]:
@@ -196,6 +197,16 @@ def _extract_author(soup: BeautifulSoup, ld: dict) -> Optional[str]:
     return None
 
 
+def _extract_site_name(soup: BeautifulSoup, ld: dict) -> Optional[str]:
+    """The publication's own name, used as the author when an article carries no byline."""
+    publisher = ld.get("publisher")
+    if isinstance(publisher, list) and publisher:
+        publisher = publisher[0]
+    if isinstance(publisher, dict) and isinstance(publisher.get("name"), str) and publisher["name"].strip():
+        return publisher["name"].strip()
+    return _meta(soup, "og:site_name", "application-name")
+
+
 def _extract_date(soup: BeautifulSoup, ld: dict) -> Optional[str]:
     raw = ld.get("datePublished") or ld.get("dateCreated")
     if not raw:
@@ -303,4 +314,5 @@ def extract_article(url: str, html: str) -> ArticleMeta:
         snippet=_extract_snippet(soup, ld),
         image=_meta(soup, "og:image", "twitter:image"),
         is_article=_looks_like_article(soup, ld) and not is_hub_titled,
+        site_name=_extract_site_name(soup, ld),
     )

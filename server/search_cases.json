@@ -1,0 +1,107 @@
+{
+  "_comment": "Shared conformance cases for GET /articles/search (see server/SEARCH.md). Every backend's tests run these, so the four implementations can't drift apart. `public: true` runs the case as an anonymous reader.",
+  "articles": [
+    {
+      "id": "a1",
+      "title": "Water on Mars",
+      "author": "Carl Sagan",
+      "createdAt": "2026-02-10T09:00:00",
+      "categryId": "Space",
+      "published": true,
+      "deleteFlag": false,
+      "content": [
+        { "componenType": "Image", "data": "https://example.com/mars-rover.png" },
+        { "componenType": "Paragraph", "data": "The <b>rover</b> found ice near the pole." },
+        { "componenType": "List", "data": ["Perseverance", "Curiosity"] }
+      ]
+    },
+    {
+      "id": "a2",
+      "title": "Elegant proofs",
+      "author": "Ada Lovelace",
+      "createdAt": "2026-03-31T23:30:00.000Z",
+      "categryId": "Mathematics",
+      "published": true,
+      "deleteFlag": false,
+      "content": [{ "componenType": "Paragraph", "data": "Proofs about primes." }]
+    },
+    {
+      "id": "a3",
+      "title": "Unfinished Mars notes",
+      "author": "Carl Sagan",
+      "createdAt": "2025-12-01T00:00:00",
+      "categryId": "Space",
+      "published": false,
+      "deleteFlag": false,
+      "content": []
+    },
+    {
+      "id": "a4",
+      "title": "apollo history",
+      "author": "Ada Lovelace",
+      "createdAt": "2026-02-10T18:00:00",
+      "categryId": "History",
+      "published": true,
+      "deleteFlag": true,
+      "content": [{ "componenType": "Paragraph", "data": "Moon landing" }]
+    },
+    {
+      "id": "a5",
+      "title": "Zebra stripes",
+      "author": "Jane Goodall",
+      "createdAt": "2026-01-05T08:00:00",
+      "categryId": "Science",
+      "published": "true",
+      "deleteFlag": "false",
+      "content": [{ "componenType": "Paragraph", "data": "Why do zebras have stripes?" }]
+    },
+    {
+      "id": "a6",
+      "title": "Broken date über",
+      "author": "Nobody",
+      "createdAt": "unknown",
+      "categryId": "Science",
+      "published": true,
+      "deleteFlag": false,
+      "content": []
+    }
+  ],
+  "cases": [
+    { "name": "public: no filters lists published, non-purged articles, newest first, undated last", "public": true, "params": {}, "ids": ["a2", "a1", "a5", "a6"], "total": 4 },
+    { "name": "admin: no filters lists everything", "public": false, "params": {}, "ids": ["a2", "a4", "a1", "a5", "a3", "a6"], "total": 6 },
+    { "name": "view=public gives an admin the public view too", "public": false, "params": { "view": "public" }, "ids": ["a2", "a1", "a5", "a6"], "total": 4 },
+    { "name": "public: drafts never match", "public": true, "params": { "q": "mars" }, "ids": ["a1"], "total": 1 },
+    { "name": "admin: search ignores case", "public": false, "params": { "q": "MARS" }, "ids": ["a1", "a3"], "total": 2 },
+    { "name": "all fields includes the author", "public": false, "params": { "q": "sagan" }, "ids": ["a1", "a3"], "total": 2 },
+    { "name": "title search ignores the author", "public": false, "params": { "q": "sagan", "in": "title" }, "ids": [], "total": 0 },
+    { "name": "every word must match, across fields", "public": false, "params": { "q": "carl  water" }, "ids": ["a1"], "total": 1 },
+    { "name": "content search reads paragraphs without their tags", "public": false, "params": { "q": "rover found", "in": "content" }, "ids": ["a1"], "total": 1 },
+    { "name": "content search reads lists", "public": false, "params": { "q": "curiosity", "in": "content" }, "ids": ["a1"], "total": 1 },
+    { "name": "content search skips image URLs", "public": false, "params": { "q": "mars-rover", "in": "content" }, "ids": [], "total": 0 },
+    { "name": "content search skips HTML tags", "public": false, "params": { "q": "<b>", "in": "content" }, "ids": [], "total": 0 },
+    { "name": "id search", "public": false, "params": { "q": "a2", "in": "id" }, "ids": ["a2"], "total": 1 },
+    { "name": "author search", "public": false, "params": { "q": "lovelace", "in": "author" }, "ids": ["a2", "a4"], "total": 2 },
+    { "name": "case is ignored beyond ASCII too", "public": false, "params": { "q": "ÜBER", "in": "title" }, "ids": ["a6"], "total": 1 },
+    { "name": "an unknown field searches all fields", "public": false, "params": { "q": "goodall", "in": "nonsense" }, "ids": ["a5"], "total": 1 },
+    { "name": "from includes its own day and drops undated articles", "public": true, "params": { "from": "2026-02-10" }, "ids": ["a2", "a1"], "total": 2 },
+    { "name": "to includes its own day", "public": false, "params": { "to": "2026-02-10" }, "ids": ["a4", "a1", "a5", "a3"], "total": 4 },
+    { "name": "a reversed range means between the two dates", "public": false, "params": { "from": "2026-03-31", "to": "2026-02-11" }, "ids": ["a2"], "total": 1 },
+    { "name": "a month as a range", "public": false, "params": { "from": "2026-02-01", "to": "2026-02-31" }, "ids": ["a4", "a1"], "total": 2 },
+    { "name": "admin: drafts", "public": false, "params": { "status": "draft" }, "ids": ["a3"], "total": 1 },
+    { "name": "admin: published, including purged ones", "public": false, "params": { "status": "published" }, "ids": ["a2", "a4", "a1", "a5", "a6"], "total": 5 },
+    { "name": "public: asking for drafts finds nothing", "public": true, "params": { "status": "draft" }, "ids": [], "total": 0 },
+    { "name": "category matches exactly, ignoring case", "public": false, "params": { "categryId": "space" }, "ids": ["a1", "a3"], "total": 2 },
+    { "name": "author filter matches exactly, ignoring case", "public": false, "params": { "author": "ada lovelace" }, "ids": ["a2", "a4"], "total": 2 },
+    { "name": "author filter is not a substring match", "public": false, "params": { "author": "ada" }, "ids": [], "total": 0 },
+    { "name": "oldest first, undated still last", "public": true, "params": { "sort": "oldest" }, "ids": ["a5", "a1", "a2", "a6"], "total": 4 },
+    { "name": "title A-Z ignores case", "public": false, "params": { "sort": "title-asc" }, "ids": ["a4", "a6", "a2", "a3", "a1", "a5"], "total": 6 },
+    { "name": "title Z-A", "public": true, "params": { "sort": "title-desc" }, "ids": ["a5", "a1", "a2", "a6"], "total": 4 },
+    { "name": "filters combine", "public": false, "params": { "q": "mars", "status": "published", "from": "2026-01-01" }, "ids": ["a1"], "total": 1 },
+    { "name": "second page", "public": false, "params": { "limit": "2", "page": "2" }, "ids": ["a1", "a5"], "total": 6, "page": 2, "limit": 2 },
+    { "name": "past the last page is empty but keeps the total", "public": false, "params": { "limit": "2", "page": "4" }, "ids": [], "total": 6, "page": 4, "limit": 2 },
+    { "name": "limit is at least 1", "public": true, "params": { "limit": "0" }, "ids": ["a2"], "total": 4, "page": 1, "limit": 1 },
+    { "name": "limit is at most 100", "public": true, "params": { "limit": "500" }, "ids": ["a2", "a1", "a5", "a6"], "total": 4, "page": 1, "limit": 100 },
+    { "name": "unreadable page and limit fall back to defaults", "public": false, "params": { "page": "abc", "limit": "x" }, "ids": ["a2", "a4", "a1", "a5", "a3", "a6"], "total": 6, "page": 1, "limit": 20 },
+    { "name": "page is at least 1", "public": true, "params": { "page": "-3", "limit": "1" }, "ids": ["a2"], "total": 4, "page": 1, "limit": 1 }
+  ]
+}

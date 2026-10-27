@@ -1,6 +1,8 @@
 package com.zjournal.web;
 
+import com.zjournal.auth.PublicView;
 import com.zjournal.store.DataStore;
+import jakarta.servlet.http.HttpServletRequest;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,8 +32,9 @@ public class JournalController {
 
     @Operation(summary = "Get the journal settings object")
     @GetMapping
-    public Map<String, Object> get() {
-        return dataStore.getJournal();
+    public Map<String, Object> get(HttpServletRequest request) {
+        Map<String, Object> journal = dataStore.getJournal();
+        return PublicView.applies(request) ? PublicView.publicJournal(journal) : journal;
     }
 
     @Operation(summary = "Replace the journal settings object")

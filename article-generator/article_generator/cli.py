@@ -70,7 +70,7 @@ def build_parser() -> argparse.ArgumentParser:
         "--author",
         default=None,
         help="Fallback author name for articles with no detected byline "
-             "(default: most common author found in --db, else 'Article Generator').",
+             "(default: the website's name, e.g. 'Hackaday').",
     )
     parser.add_argument("--max-per-site", type=int, default=5, help="Max articles to pull per website (default: 5).")
     parser.add_argument("--workers", type=int, default=6, help="Parallel worker threads (default: 6).")
@@ -96,6 +96,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     logging.basicConfig(level=logging.INFO if args.verbose else logging.WARNING, format="%(levelname)s %(message)s")
 
     site_categories = None
+    site_names = None
     if args.categories_file:
         only_categories = [c.strip() for c in args.categories.split(",")] if args.categories else None
         sites = load_categorized_websites(
@@ -110,6 +111,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
                 print(f"Skipping {skipped_invalid} site(s) already marked invalid (use --retry-invalid to recheck).")
         websites = [s.url for s in sites]
         site_categories = {s.url: s.category_id for s in sites}
+        site_names = {s.url: s.name for s in sites}
     else:
         websites_raw = args.websites or input("Enter website(s) to browse (comma/space/newline separated): ")
         websites = parse_websites(websites_raw)
@@ -118,7 +120,6 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
             return 1
 
     profile = DbProfile.analyze(args.db) if args.db and args.db.exists() else DbProfile()
-    author = args.author or profile.default_author or "Article Generator"
 
     seen_urls = set()
     if not args.no_dedupe:
@@ -134,12 +135,13 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     result = run(
         websites,
         profile,
-        author,
+        args.author,
         max_per_site=args.max_per_site,
         workers=args.workers,
         delay=args.delay,
         site_categories=site_categories,
         seen_urls=seen_urls,
+        site_names=site_names,
     )
     articles = result.articles
     print(f"Generated {len(articles)} new article(s).")

@@ -11,6 +11,7 @@ from article_generator.categorize import categorize
 from article_generator.category_map import count_invalid, load_categorized_websites, update_site_status
 from article_generator.db_profile import DbProfile
 from article_generator.dedupe import (
+    extract_urls_from_articles,
     extract_urls_from_articles_file,
     load_seen_urls,
     save_seen_urls,
@@ -95,6 +96,31 @@ class BuildArticleTests(unittest.TestCase):
         self.assertIn(meta.url, paragraph)
         self.assertTrue(paragraph.strip().endswith(f'">{meta.url}</a>'))
 
+    def test_escapes_scraped_markup(self):
+        meta = ArticleMeta(
+            url='https://example.com/a?x=1&y="2"',
+            title="CSS for the <Component> Age",
+            author=None,
+            published_at=None,
+            snippet='<iframe srcdoc="<script>alert(1)</script>"></iframe> & more',
+            image=None,
+        )
+        article = build_article(meta, category="Art", author="Fallback")
+        paragraph = article["content"][-1]["data"]
+
+        self.assertEqual(article["title"], "CSS for the &lt;Component&gt; Age")
+        self.assertNotIn("<iframe", paragraph)
+        self.assertIn("&lt;iframe", paragraph)
+        self.assertIn("&amp; more", paragraph)
+        self.assertIn('href="https://example.com/a?x=1&amp;y=&quot;2&quot;"', paragraph)
+
+    def test_escaped_source_urls_still_dedupe(self):
+        url = "https://example.com/a?x=1&y=2"
+        meta = ArticleMeta(url=url, title="A", author=None, published_at=None, snippet="", image=None)
+        article = build_article(meta, category="Art", author="Fallback")
+
+        self.assertEqual(extract_urls_from_articles([article]), {url})
+
     def test_detected_author_overrides_fallback(self):
         meta = ArticleMeta(
             url="https://example.com/a",
@@ -106,6 +132,39 @@ class BuildArticleTests(unittest.TestCase):
         )
         article = build_article(meta, category="Art", author="Fallback")
         self.assertEqual(article["author"], "Byline Author")
+
+    def _meta_without_byline(self, site_name=None):
+        return ArticleMeta(
+            url="https://www.example.com/a",
+            title="A",
+            author=None,
+            published_at=None,
+            snippet="",
+            image=None,
+            site_name=site_name,
+        )
+
+    def test_no_byline_prefers_configured_site_name_over_page_site_name(self):
+        article = build_article(self._meta_without_byline("Example Section"), category="Art", site_name="Example Times")
+        self.assertEqual(article["author"], "Example Times")
+
+    def test_no_byline_falls_back_to_page_site_name(self):
+        article = build_article(self._meta_without_byline("Example Times"), category="Art")
+        self.assertEqual(article["author"], "Example Times")
+
+    def test_no_byline_falls_back_to_configured_site_name_without_section_suffix(self):
+        article = build_article(
+            self._meta_without_byline(), category="Mathematics", site_name="Quanta Magazine (Mathematics)"
+        )
+        self.assertEqual(article["author"], "Quanta Magazine")
+
+    def test_no_byline_and_no_site_name_falls_back_to_domain(self):
+        article = build_article(self._meta_without_byline(), category="Art")
+        self.assertEqual(article["author"], "example.com")
+
+    def test_explicit_fallback_author_beats_site_name(self):
+        article = build_article(self._meta_without_byline("Example Times"), category="Art", author="Fallback")
+        self.assertEqual(article["author"], "Fallback")
 
 
 class LoadCategorizedWebsitesTests(unittest.TestCase):
@@ -194,7 +253,7 @@ class RunDedupeTests(unittest.TestCase):
         def fake_extract_links(homepage_url, html, max_links):
             return ["https://site.example/old-story", "https://site.example/new-story"]
 
-        def fake_process_article(url, profile, author, throttle, forced_category=None):
+        def fake_process_article(url, profile, author, throttle, forced_category=None, site_name=None):
             return {"id": "x", "title": url}
 
         original_fetch = pipeline_module.fetch

@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { MemoryRouter } from "react-router-dom";
 
@@ -24,7 +24,8 @@ describe("admin Header", () => {
       </MemoryRouter>
     );
 
-    await userEvent.click(screen.getByRole("button", { name: "Yes" }));
+    await userEvent.click(screen.getByRole("button", { name: /Logout/ }));
+    await userEvent.click(within(screen.getByRole("alertdialog")).getByRole("button", { name: /Logout/ }));
 
     expect(onLogout).toHaveBeenCalledTimes(1);
   });

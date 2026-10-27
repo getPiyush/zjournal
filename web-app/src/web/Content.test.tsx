@@ -43,7 +43,8 @@ describe("Content", () => {
   });
 
   test("falls back to Home for an unmatched path", () => {
+    document.title = "";
     renderContent("/web/does-not-exist");
-    expect(screen.getByText(/Please wait while the Article gets loaded/)).toBeInTheDocument();
+    expect(document.title).toMatch(/^Home - /);
   });
 });

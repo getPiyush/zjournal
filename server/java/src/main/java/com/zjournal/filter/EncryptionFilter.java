@@ -132,30 +132,24 @@ public class EncryptionFilter extends OncePerRequestFilter {
     private static final class BufferingResponseWrapper extends HttpServletResponseWrapper {
         private final ByteArrayOutputStream buffer = new ByteArrayOutputStream();
         private PrintWriter writer;
-        private int status = HttpServletResponse.SC_OK;
 
         BufferingResponseWrapper(HttpServletResponse response) {
             super(response);
         }
 
-        @Override
-        public void setStatus(int sc) {
-            this.status = sc;
-        }
+        // The status lives on the wrapped response rather than in a field here: Spring MVC can set
+        // it on the underlying response directly (a ResponseEntity 404 did), and a separate copy
+        // then went out as a stale 200. Nothing is written to the underlying response until the
+        // filter does, so setting it there commits nothing early.
 
         @Override
         public void sendError(int sc) {
-            this.status = sc;
+            super.setStatus(sc);
         }
 
         @Override
         public void sendError(int sc, String msg) {
-            this.status = sc;
-        }
-
-        @Override
-        public int getStatus() {
-            return status;
+            super.setStatus(sc);
         }
 
         @Override

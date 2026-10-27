@@ -18,6 +18,6 @@ describe("LandingPage", () => {
 
     expect(getJournalFromDB).toHaveBeenCalledWith(expect.any(Function));
     expect(screen.getByRole("link", { name: "Home" })).toBeInTheDocument();
-    expect(screen.getByText(/Copyright 2022/)).toBeInTheDocument();
+    expect(screen.getByText(new RegExp(`© ${new Date().getFullYear()}`))).toBeInTheDocument();
   });
 });
