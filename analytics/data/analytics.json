@@ -2,11 +2,11 @@
   "meta": {
     "version": 1,
     "createdAt": "2026-08-29T00:00:00.000Z",
-    "updatedAt": "2026-10-24T01:12:15.348Z"
+    "updatedAt": "2026-10-27T02:33:17.006Z"
   },
   "applications": {
     "web-app": {
-      "totalViews": 486,
+      "totalViews": 547,
       "articles": {
         "yaowvy2iu0hzpob": {
           "views": 14,
@@ -182,20 +182,20 @@
           "lastViewedAt": "2026-08-31T23:03:37.845Z"
         },
         "r9q0t64rbty7f5r": {
-          "views": 1,
+          "views": 2,
           "title": "A (hi)story of geometry",
           "category": "Mathematics",
           "author": "Sara Lindqvist",
           "firstViewedAt": "2026-08-31T23:03:44.945Z",
-          "lastViewedAt": "2026-08-31T23:03:44.945Z"
+          "lastViewedAt": "2026-10-26T00:06:53.081Z"
         },
         "jicdgtup8u7sau4": {
-          "views": 18,
+          "views": 27,
           "title": "Celebrating 20 years of MDN",
           "category": "Software Development",
           "author": "Sara Lindqvist",
           "firstViewedAt": "2026-08-31T23:03:54.302Z",
-          "lastViewedAt": "2026-10-24T01:12:15.348Z"
+          "lastViewedAt": "2026-10-26T00:07:41.308Z"
         },
         "64ero1pioqtpk1k": {
           "views": 4,
@@ -342,12 +342,12 @@
           "lastViewedAt": "2026-09-01T04:21:23.138Z"
         },
         "e3qztl6tekou9wh": {
-          "views": 36,
+          "views": 37,
           "title": "Mirando tus pasos - Rodolfo Morales - Google Arts & Culture",
           "category": "Art",
           "author": "Sara Lindqvist",
           "firstViewedAt": "2026-09-01T05:14:44.201Z",
-          "lastViewedAt": "2026-09-01T23:49:33.203Z"
+          "lastViewedAt": "2026-10-25T19:36:20.523Z"
         },
         "s47n8plx1499bxs": {
           "views": 1,
@@ -374,20 +374,20 @@
           "lastViewedAt": "2026-09-01T05:32:20.349Z"
         },
         "507ofwe21nfcr0n": {
-          "views": 23,
+          "views": 24,
           "title": "Samsung's New Galaxy Book 6 Model Is A Budget-Friendly $799 Laptop",
           "category": "Technology",
           "author": "Mariella Moon",
           "firstViewedAt": "2026-09-01T22:25:11.134Z",
-          "lastViewedAt": "2026-09-01T22:31:13.368Z"
+          "lastViewedAt": "2026-10-25T19:55:20.395Z"
         },
         "yoe4xqlyeos5dbj": {
-          "views": 32,
+          "views": 33,
           "title": "The Hugging Face hack could indicate cultural issues at OpenAI",
           "category": "Technology",
           "author": "Grace Huckins",
           "firstViewedAt": "2026-09-01T22:25:38.040Z",
-          "lastViewedAt": "2026-09-01T22:26:10.760Z"
+          "lastViewedAt": "2026-10-25T19:23:30.584Z"
         },
         "jif9khytyho76hl": {
           "views": 7,
@@ -414,12 +414,12 @@
           "lastViewedAt": "2026-09-01T22:27:38.700Z"
         },
         "k6tk38ew0ej782x": {
-          "views": 50,
+          "views": 51,
           "title": "A new era dawns for astronomy",
           "category": "Space",
           "author": "Sara Lindqvist",
           "firstViewedAt": "2026-09-01T22:27:52.366Z",
-          "lastViewedAt": "2026-09-01T22:31:20.426Z"
+          "lastViewedAt": "2026-10-26T00:07:41.502Z"
         },
         "4ypfbytockiqgmt": {
           "views": 7,
@@ -430,17 +430,193 @@
           "lastViewedAt": "2026-09-01T23:45:47.898Z"
         },
         "c9q7hr9vxguf03a": {
-          "views": 36,
+          "views": 38,
           "title": "From relativity to quantum theory – our physical world explored through coffee",
           "category": "Philosophy",
           "author": "Sara Lindqvist",
           "firstViewedAt": "2026-09-01T23:45:52.330Z",
-          "lastViewedAt": "2026-09-01T23:49:39.156Z"
+          "lastViewedAt": "2026-10-25T19:54:43.997Z"
+        },
+        "y7hy2mut6g4xlsu": {
+          "views": 1,
+          "title": "Scott Jenson on Evolving Desktop OS, Local-First, &amp; Agentic UX",
+          "category": "Software Development",
+          "author": "Olimpiu Pop",
+          "firstViewedAt": "2026-10-25T02:55:19.868Z",
+          "lastViewedAt": "2026-10-25T02:55:19.868Z"
+        },
+        "smw78pdl911f1ic": {
+          "views": 10,
+          "title": "Nietzsche’s startling provocation: you’re edible and delicious",
+          "category": "Philosophy",
+          "author": "Nicholas E Low",
+          "firstViewedAt": "2026-10-25T02:55:57.742Z",
+          "lastViewedAt": "2026-10-26T00:04:43.488Z"
+        },
+        "82qet7xubunz7td": {
+          "views": 1,
+          "title": "Artificial intelligence and deep learning: Your questions answered",
+          "category": "Mathematics",
+          "author": "Sara Lindqvist",
+          "firstViewedAt": "2026-10-27T00:33:15.767Z",
+          "lastViewedAt": "2026-10-27T00:33:15.767Z"
+        },
+        "3uy7x8ryasv0da8": {
+          "views": 9,
+          "title": "Automation and testing with Chrome",
+          "category": "Software Development",
+          "author": "Chrome for Developers Blog",
+          "firstViewedAt": "2026-10-27T00:53:42.291Z",
+          "lastViewedAt": "2026-10-27T02:30:49.279Z"
+        },
+        "91w9hoczrfnm3y5": {
+          "views": 2,
+          "title": "Patrick Flores, Chris Lee Leave National Gallery of Singapore",
+          "category": "Art",
+          "author": "Leigh Anne Miller",
+          "firstViewedAt": "2026-10-27T00:53:42.427Z",
+          "lastViewedAt": "2026-10-27T02:30:01.513Z"
+        },
+        "3k7omo2qsgexpdy": {
+          "views": 1,
+          "title": "Mack DeGeurin Archives",
+          "category": "Physics",
+          "author": "Mack DeGeurin AI AI-powered",
+          "firstViewedAt": "2026-10-27T00:54:25.084Z",
+          "lastViewedAt": "2026-10-27T00:54:25.084Z"
+        },
+        "j5tqx6rnf1lpjn0": {
+          "views": 1,
+          "title": "first drive: rolls-royce spectre series II brings more range, speed and material craft to stockholm",
+          "category": "Art",
+          "author": "tim spears I designboom",
+          "firstViewedAt": "2026-10-27T00:54:44.253Z",
+          "lastViewedAt": "2026-10-27T00:54:44.253Z"
+        },
+        "q2eqb81xvaaqu4s": {
+          "views": 1,
+          "title": "The inside story behind OpenAI’s million-dollar math proof",
+          "category": "Mathematics",
+          "author": "Joseph Howlett",
+          "firstViewedAt": "2026-10-27T00:55:07.929Z",
+          "lastViewedAt": "2026-10-27T00:55:07.929Z"
+        },
+        "3gkh2bqty3p2jo6": {
+          "views": 1,
+          "title": "First 16 US Presidents: From Washington to Lincoln",
+          "category": "History",
+          "author": "Harrison W. Mark",
+          "firstViewedAt": "2026-10-27T00:55:28.956Z",
+          "lastViewedAt": "2026-10-27T00:55:28.956Z"
+        },
+        "yuqhxtj4ou4z5kw": {
+          "views": 1,
+          "title": "Manhattan’s evolution over centuries captured via meticulous animation",
+          "category": "Philosophy",
+          "author": "Aeon",
+          "firstViewedAt": "2026-10-27T00:55:42.634Z",
+          "lastViewedAt": "2026-10-27T00:55:42.634Z"
+        },
+        "3xqy3w8pv9oqivo": {
+          "views": 1,
+          "title": "What the West can learn from AI optimists in the rest of the world",
+          "category": "Technology",
+          "author": "Payal Arora",
+          "firstViewedAt": "2026-10-27T00:55:49.903Z",
+          "lastViewedAt": "2026-10-27T00:55:49.903Z"
+        },
+        "cl7r6fmb3le7cpi": {
+          "views": 1,
+          "title": "9to5Mac Daily Podcast Archives",
+          "category": "Technology",
+          "author": "9to5Mac",
+          "firstViewedAt": "2026-10-27T00:56:10.332Z",
+          "lastViewedAt": "2026-10-27T00:56:10.332Z"
+        },
+        "ne6jezn2cgkq7sh": {
+          "views": 1,
+          "title": "Google says Gemini 4 Argon ranks well behind Claude and GPT-6 for Android coding",
+          "category": "Technology",
+          "author": "Ben Schoon",
+          "firstViewedAt": "2026-10-27T00:56:19.315Z",
+          "lastViewedAt": "2026-10-27T00:56:19.315Z"
+        },
+        "6es6uza2g3r120h": {
+          "views": 1,
+          "title": "Case Studies",
+          "category": "Software Development",
+          "author": "Chrome for Developers Blog",
+          "firstViewedAt": "2026-10-27T01:40:41.763Z",
+          "lastViewedAt": "2026-10-27T01:40:41.763Z"
+        },
+        "8c3erq9d9ucr11r": {
+          "views": 2,
+          "title": "Lost in Space-Time",
+          "category": "Physics",
+          "author": "New Scientist Newsletters",
+          "firstViewedAt": "2026-10-27T01:46:15.006Z",
+          "lastViewedAt": "2026-10-27T02:28:44.119Z"
+        },
+        "adfoo2j047jyowu": {
+          "views": 1,
+          "title": "The Ship of Theseus: What Makes an Object the Same Object Over Time? - 1000-Word Philosophy: An Introductory Anthology",
+          "category": "Philosophy",
+          "author": "1000-Word Philosophy: An Introductory Anthology",
+          "firstViewedAt": "2026-10-27T01:47:50.215Z",
+          "lastViewedAt": "2026-10-27T01:47:50.215Z"
+        },
+        "la2ezpz1nsiiveo": {
+          "views": 2,
+          "title": "Prevention and Treatment - Vaccines, Aging, and More",
+          "category": "Medicine",
+          "author": "Verywell",
+          "firstViewedAt": "2026-10-27T01:48:26.802Z",
+          "lastViewedAt": "2026-10-27T02:31:51.318Z"
+        },
+        "c2kzgqembfjf8od": {
+          "views": 2,
+          "title": "Recently Published Book Spotlight: Philosophy of the Short Term",
+          "category": "Philosophy",
+          "author": "Jay Lampert",
+          "firstViewedAt": "2026-10-27T01:49:51.613Z",
+          "lastViewedAt": "2026-10-27T01:52:16.751Z"
+        },
+        "9obo5ttr7zsazup": {
+          "views": 1,
+          "title": "Advertise on MHN",
+          "category": "History",
+          "author": "Military History Now",
+          "firstViewedAt": "2026-10-27T02:06:38.666Z",
+          "lastViewedAt": "2026-10-27T02:06:38.666Z"
+        },
+        "ubvsfcwsyvmkk2b": {
+          "views": 3,
+          "title": "DE STAAT—FREEDOM (Official Music Video)",
+          "category": "Software Development",
+          "author": "Simon Willison",
+          "firstViewedAt": "2026-10-27T02:23:35.310Z",
+          "lastViewedAt": "2026-10-27T02:24:34.832Z"
+        },
+        "szd1d0o403412e4": {
+          "views": 1,
+          "title": "Research: webframe: evaluated as a scraper and a sandbox",
+          "category": "Software Development",
+          "author": "Simon Willison",
+          "firstViewedAt": "2026-10-27T02:29:10.764Z",
+          "lastViewedAt": "2026-10-27T02:29:10.764Z"
+        },
+        "4rndr0gy1xe8pf7": {
+          "views": 1,
+          "title": "Oxbridge of America",
+          "category": "Mathematics",
+          "author": "Math with Bad Drawings",
+          "firstViewedAt": "2026-10-27T02:33:17.006Z",
+          "lastViewedAt": "2026-10-27T02:33:17.006Z"
         }
       },
       "authors": {
         "Sara Lindqvist": {
-          "views": 249,
+          "views": 264,
           "articles": [
             "yaowvy2iu0hzpob",
             "9x2mon19ukcnimo",
@@ -465,7 +641,8 @@
             "t07525124sgfnh3",
             "k6tk38ew0ej782x",
             "4ypfbytockiqgmt",
-            "c9q7hr9vxguf03a"
+            "c9q7hr9vxguf03a",
+            "82qet7xubunz7td"
           ]
         },
         "Vito Technology, Inc.": {
@@ -567,48 +744,159 @@
           ]
         },
         "Mariella Moon": {
-          "views": 23,
+          "views": 24,
           "articles": [
             "507ofwe21nfcr0n"
           ]
         },
         "Grace Huckins": {
-          "views": 32,
+          "views": 33,
           "articles": [
             "yoe4xqlyeos5dbj"
           ]
         },
         "Verywell": {
-          "views": 6,
+          "views": 8,
           "articles": [
-            "kkskvgx3sty9y62"
+            "kkskvgx3sty9y62",
+            "la2ezpz1nsiiveo"
+          ]
+        },
+        "Olimpiu Pop": {
+          "views": 1,
+          "articles": [
+            "y7hy2mut6g4xlsu"
+          ]
+        },
+        "Nicholas E Low": {
+          "views": 10,
+          "articles": [
+            "smw78pdl911f1ic"
+          ]
+        },
+        "Chrome for Developers Blog": {
+          "views": 10,
+          "articles": [
+            "3uy7x8ryasv0da8",
+            "6es6uza2g3r120h"
+          ]
+        },
+        "Leigh Anne Miller": {
+          "views": 2,
+          "articles": [
+            "91w9hoczrfnm3y5"
+          ]
+        },
+        "Mack DeGeurin AI AI-powered": {
+          "views": 1,
+          "articles": [
+            "3k7omo2qsgexpdy"
+          ]
+        },
+        "tim spears I designboom": {
+          "views": 1,
+          "articles": [
+            "j5tqx6rnf1lpjn0"
+          ]
+        },
+        "Joseph Howlett": {
+          "views": 1,
+          "articles": [
+            "q2eqb81xvaaqu4s"
+          ]
+        },
+        "Harrison W. Mark": {
+          "views": 1,
+          "articles": [
+            "3gkh2bqty3p2jo6"
+          ]
+        },
+        "Aeon": {
+          "views": 1,
+          "articles": [
+            "yuqhxtj4ou4z5kw"
+          ]
+        },
+        "Payal Arora": {
+          "views": 1,
+          "articles": [
+            "3xqy3w8pv9oqivo"
+          ]
+        },
+        "9to5Mac": {
+          "views": 1,
+          "articles": [
+            "cl7r6fmb3le7cpi"
+          ]
+        },
+        "Ben Schoon": {
+          "views": 1,
+          "articles": [
+            "ne6jezn2cgkq7sh"
+          ]
+        },
+        "New Scientist Newsletters": {
+          "views": 2,
+          "articles": [
+            "8c3erq9d9ucr11r"
+          ]
+        },
+        "1000-Word Philosophy: An Introductory Anthology": {
+          "views": 1,
+          "articles": [
+            "adfoo2j047jyowu"
+          ]
+        },
+        "Jay Lampert": {
+          "views": 2,
+          "articles": [
+            "c2kzgqembfjf8od"
+          ]
+        },
+        "Military History Now": {
+          "views": 1,
+          "articles": [
+            "9obo5ttr7zsazup"
+          ]
+        },
+        "Simon Willison": {
+          "views": 4,
+          "articles": [
+            "ubvsfcwsyvmkk2b",
+            "szd1d0o403412e4"
+          ]
+        },
+        "Math with Bad Drawings": {
+          "views": 1,
+          "articles": [
+            "4rndr0gy1xe8pf7"
           ]
         }
       },
       "categories": {
         "Philosophy": {
-          "views": 62
+          "views": 78
         },
         "History": {
-          "views": 8
+          "views": 10
         },
         "Space": {
-          "views": 65
+          "views": 66
         },
         "Art": {
-          "views": 90
+          "views": 94
         },
         "Psychology": {
           "views": 35
         },
         "Technology": {
-          "views": 65
+          "views": 70
         },
         "Mathematics": {
-          "views": 8
+          "views": 12
         },
         "Software Development": {
-          "views": 6
+          "views": 30
         },
         "general": {
           "views": 105
@@ -617,7 +905,10 @@
           "views": 35
         },
         "Medicine": {
-          "views": 7
+          "views": 9
+        },
+        "Physics": {
+          "views": 3
         }
       }
     },
@@ -7251,6 +7542,677 @@
       "articleTitle": "Celebrating 20 years of MDN",
       "category": "Software Development",
       "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "7020e065-f801-4d2d-8341-7b09dec73ae9",
+      "timestamp": "2026-10-25T02:55:19.868Z",
+      "application": "web-app",
+      "articleId": "y7hy2mut6g4xlsu",
+      "articleTitle": "Scott Jenson on Evolving Desktop OS, Local-First, &amp; Agentic UX",
+      "category": "Software Development",
+      "author": "Olimpiu Pop",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "8cfd075c-d032-4448-809c-f606f1dd7648",
+      "timestamp": "2026-10-25T02:55:57.742Z",
+      "application": "web-app",
+      "articleId": "smw78pdl911f1ic",
+      "articleTitle": "Nietzsche’s startling provocation: you’re edible and delicious",
+      "category": "Philosophy",
+      "author": "Nicholas E Low",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "9067f145-a3f9-4025-876f-d7321ed3bfd5",
+      "timestamp": "2026-10-25T14:47:27.220Z",
+      "application": "web-app",
+      "articleId": "smw78pdl911f1ic",
+      "articleTitle": "Nietzsche’s startling provocation: you’re edible and delicious",
+      "category": "Philosophy",
+      "author": "Nicholas E Low",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "5fc5a274-78ba-4888-9093-7299d42184f0",
+      "timestamp": "2026-10-25T14:48:09.897Z",
+      "application": "web-app",
+      "articleId": "smw78pdl911f1ic",
+      "articleTitle": "Nietzsche’s startling provocation: you’re edible and delicious",
+      "category": "Philosophy",
+      "author": "Nicholas E Low",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "12a89fbd-6ef8-4554-ab42-8efe3a9a112d",
+      "timestamp": "2026-10-25T19:18:39.582Z",
+      "application": "web-app",
+      "articleId": "smw78pdl911f1ic",
+      "articleTitle": "Nietzsche’s startling provocation: you’re edible and delicious",
+      "category": "Philosophy",
+      "author": "Nicholas E Low",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "5145c260-b73a-4c94-a7dd-cdd7bc51d75e",
+      "timestamp": "2026-10-25T19:21:57.659Z",
+      "application": "web-app",
+      "articleId": "smw78pdl911f1ic",
+      "articleTitle": "Nietzsche’s startling provocation: you’re edible and delicious",
+      "category": "Philosophy",
+      "author": "Nicholas E Low",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "bc0afb98-3cd6-481f-b97a-e05f626f8e8b",
+      "timestamp": "2026-10-25T19:23:30.584Z",
+      "application": "web-app",
+      "articleId": "yoe4xqlyeos5dbj",
+      "articleTitle": "The Hugging Face hack could indicate cultural issues at OpenAI",
+      "category": "Technology",
+      "author": "Grace Huckins",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "364bc2a8-bdc1-4c84-9b0b-b77bbe99adf2",
+      "timestamp": "2026-10-25T19:36:20.409Z",
+      "application": "web-app",
+      "articleId": "jicdgtup8u7sau4",
+      "articleTitle": "Celebrating 20 years of MDN",
+      "category": "Software Development",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "fc02c4e4-1021-45bc-b7d7-9b609abfb00d",
+      "timestamp": "2026-10-25T19:36:20.523Z",
+      "application": "web-app",
+      "articleId": "e3qztl6tekou9wh",
+      "articleTitle": "Mirando tus pasos - Rodolfo Morales - Google Arts & Culture",
+      "category": "Art",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "06150639-5925-47ed-8172-8a7d3042c660",
+      "timestamp": "2026-10-25T19:36:24.777Z",
+      "application": "web-app",
+      "articleId": "jicdgtup8u7sau4",
+      "articleTitle": "Celebrating 20 years of MDN",
+      "category": "Software Development",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "ba1c9296-6b6d-48c7-97c4-3795b1fe1e06",
+      "timestamp": "2026-10-25T19:36:24.926Z",
+      "application": "web-app",
+      "articleId": "smw78pdl911f1ic",
+      "articleTitle": "Nietzsche’s startling provocation: you’re edible and delicious",
+      "category": "Philosophy",
+      "author": "Nicholas E Low",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "68bae92c-625e-41e1-ad03-afb4a0270622",
+      "timestamp": "2026-10-25T19:39:19.639Z",
+      "application": "web-app",
+      "articleId": "jicdgtup8u7sau4",
+      "articleTitle": "Celebrating 20 years of MDN",
+      "category": "Software Development",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "8050d102-7fb2-4234-84f0-ea6eca43d769",
+      "timestamp": "2026-10-25T19:39:19.780Z",
+      "application": "web-app",
+      "articleId": "smw78pdl911f1ic",
+      "articleTitle": "Nietzsche’s startling provocation: you’re edible and delicious",
+      "category": "Philosophy",
+      "author": "Nicholas E Low",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "f8a3eb39-569a-45be-8b46-50e797de7945",
+      "timestamp": "2026-10-25T19:48:19.281Z",
+      "application": "web-app",
+      "articleId": "smw78pdl911f1ic",
+      "articleTitle": "Nietzsche’s startling provocation: you’re edible and delicious",
+      "category": "Philosophy",
+      "author": "Nicholas E Low",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "ee73dcdd-fb86-4dff-bb6e-f728864a5683",
+      "timestamp": "2026-10-25T19:51:00.348Z",
+      "application": "web-app",
+      "articleId": "jicdgtup8u7sau4",
+      "articleTitle": "Celebrating 20 years of MDN",
+      "category": "Software Development",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "657570a8-1dd2-481a-a6d7-5069498ffaa9",
+      "timestamp": "2026-10-25T19:51:00.446Z",
+      "application": "web-app",
+      "articleId": "c9q7hr9vxguf03a",
+      "articleTitle": "From relativity to quantum theory – our physical world explored through coffee",
+      "category": "Philosophy",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "787b98ac-40bb-4de4-bc0b-79357b6dbc42",
+      "timestamp": "2026-10-25T19:53:55.819Z",
+      "application": "web-app",
+      "articleId": "jicdgtup8u7sau4",
+      "articleTitle": "Celebrating 20 years of MDN",
+      "category": "Software Development",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "2df1f14c-5089-4c9b-a832-0521779ab216",
+      "timestamp": "2026-10-25T19:53:55.947Z",
+      "application": "web-app",
+      "articleId": "smw78pdl911f1ic",
+      "articleTitle": "Nietzsche’s startling provocation: you’re edible and delicious",
+      "category": "Philosophy",
+      "author": "Nicholas E Low",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "eaa54990-0f8e-40e7-9c3b-11700bda237e",
+      "timestamp": "2026-10-25T19:54:43.854Z",
+      "application": "web-app",
+      "articleId": "jicdgtup8u7sau4",
+      "articleTitle": "Celebrating 20 years of MDN",
+      "category": "Software Development",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "c99b3a5c-e534-4c7e-8aa9-40d007abf39f",
+      "timestamp": "2026-10-25T19:54:43.997Z",
+      "application": "web-app",
+      "articleId": "c9q7hr9vxguf03a",
+      "articleTitle": "From relativity to quantum theory – our physical world explored through coffee",
+      "category": "Philosophy",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "aa3e8ed6-da91-48c3-8f72-6cf7ec18347f",
+      "timestamp": "2026-10-25T19:55:20.158Z",
+      "application": "web-app",
+      "articleId": "jicdgtup8u7sau4",
+      "articleTitle": "Celebrating 20 years of MDN",
+      "category": "Software Development",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "36c7af53-2632-41da-a6e5-76a4cbfb191f",
+      "timestamp": "2026-10-25T19:55:20.395Z",
+      "application": "web-app",
+      "articleId": "507ofwe21nfcr0n",
+      "articleTitle": "Samsung's New Galaxy Book 6 Model Is A Budget-Friendly $799 Laptop",
+      "category": "Technology",
+      "author": "Mariella Moon",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "0e571c62-b56f-4f68-b950-1def08108849",
+      "timestamp": "2026-10-26T00:04:43.239Z",
+      "application": "web-app",
+      "articleId": "jicdgtup8u7sau4",
+      "articleTitle": "Celebrating 20 years of MDN",
+      "category": "Software Development",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "0283da6e-53b5-47a4-bbcc-8a149337b84c",
+      "timestamp": "2026-10-26T00:04:43.488Z",
+      "application": "web-app",
+      "articleId": "smw78pdl911f1ic",
+      "articleTitle": "Nietzsche’s startling provocation: you’re edible and delicious",
+      "category": "Philosophy",
+      "author": "Nicholas E Low",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "88e07069-5f79-4c21-837a-0919d8774899",
+      "timestamp": "2026-10-26T00:06:53.081Z",
+      "application": "web-app",
+      "articleId": "r9q0t64rbty7f5r",
+      "articleTitle": "A (hi)story of geometry",
+      "category": "Mathematics",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "e4ff7fef-4c9b-4ef3-b804-23c881a526ed",
+      "timestamp": "2026-10-26T00:07:41.308Z",
+      "application": "web-app",
+      "articleId": "jicdgtup8u7sau4",
+      "articleTitle": "Celebrating 20 years of MDN",
+      "category": "Software Development",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "6c925dfe-1ac5-4aa8-b5cd-cbf60fb3cb5f",
+      "timestamp": "2026-10-26T00:07:41.502Z",
+      "application": "web-app",
+      "articleId": "k6tk38ew0ej782x",
+      "articleTitle": "A new era dawns for astronomy",
+      "category": "Space",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "4478a09a-2dcd-4e6e-b43b-e61925388ac8",
+      "timestamp": "2026-10-27T00:33:15.767Z",
+      "application": "web-app",
+      "articleId": "82qet7xubunz7td",
+      "articleTitle": "Artificial intelligence and deep learning: Your questions answered",
+      "category": "Mathematics",
+      "author": "Sara Lindqvist",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "024a36a2-6afa-4695-8194-c0d44da7f8f9",
+      "timestamp": "2026-10-27T00:53:42.291Z",
+      "application": "web-app",
+      "articleId": "3uy7x8ryasv0da8",
+      "articleTitle": "Automation and testing with Chrome",
+      "category": "Software Development",
+      "author": "Chrome for Developers Blog",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "59712f27-33b9-4192-bbf2-6501acbb0ab9",
+      "timestamp": "2026-10-27T00:53:42.427Z",
+      "application": "web-app",
+      "articleId": "91w9hoczrfnm3y5",
+      "articleTitle": "Patrick Flores, Chris Lee Leave National Gallery of Singapore",
+      "category": "Art",
+      "author": "Leigh Anne Miller",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "fd4960c1-ed11-49b3-9dd8-3d6882f16b15",
+      "timestamp": "2026-10-27T00:54:25.084Z",
+      "application": "web-app",
+      "articleId": "3k7omo2qsgexpdy",
+      "articleTitle": "Mack DeGeurin Archives",
+      "category": "Physics",
+      "author": "Mack DeGeurin AI AI-powered",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "a529c39d-42ab-4ce8-90e3-825bc66fe86e",
+      "timestamp": "2026-10-27T00:54:44.136Z",
+      "application": "web-app",
+      "articleId": "3uy7x8ryasv0da8",
+      "articleTitle": "Automation and testing with Chrome",
+      "category": "Software Development",
+      "author": "Chrome for Developers Blog",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "f1892cce-d683-422e-b6e0-6e352b8b4649",
+      "timestamp": "2026-10-27T00:54:44.253Z",
+      "application": "web-app",
+      "articleId": "j5tqx6rnf1lpjn0",
+      "articleTitle": "first drive: rolls-royce spectre series II brings more range, speed and material craft to stockholm",
+      "category": "Art",
+      "author": "tim spears I designboom",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "4834b880-41fb-409a-ac51-3fba99d31464",
+      "timestamp": "2026-10-27T00:55:07.929Z",
+      "application": "web-app",
+      "articleId": "q2eqb81xvaaqu4s",
+      "articleTitle": "The inside story behind OpenAI’s million-dollar math proof",
+      "category": "Mathematics",
+      "author": "Joseph Howlett",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "397a16f9-bd27-4825-9717-3fb311b8234c",
+      "timestamp": "2026-10-27T00:55:28.956Z",
+      "application": "web-app",
+      "articleId": "3gkh2bqty3p2jo6",
+      "articleTitle": "First 16 US Presidents: From Washington to Lincoln",
+      "category": "History",
+      "author": "Harrison W. Mark",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "f80aff00-743b-4244-9762-c6872bea58f9",
+      "timestamp": "2026-10-27T00:55:42.634Z",
+      "application": "web-app",
+      "articleId": "yuqhxtj4ou4z5kw",
+      "articleTitle": "Manhattan’s evolution over centuries captured via meticulous animation",
+      "category": "Philosophy",
+      "author": "Aeon",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "bb9def5a-0aaf-447c-a397-ea07c77e99e9",
+      "timestamp": "2026-10-27T00:55:49.765Z",
+      "application": "web-app",
+      "articleId": "3uy7x8ryasv0da8",
+      "articleTitle": "Automation and testing with Chrome",
+      "category": "Software Development",
+      "author": "Chrome for Developers Blog",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "9e2ca002-d4c3-46c7-8de3-c92a93ecb363",
+      "timestamp": "2026-10-27T00:55:49.903Z",
+      "application": "web-app",
+      "articleId": "3xqy3w8pv9oqivo",
+      "articleTitle": "What the West can learn from AI optimists in the rest of the world",
+      "category": "Technology",
+      "author": "Payal Arora",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "14e216e5-0ad9-48c8-9902-fe4f07bc863f",
+      "timestamp": "2026-10-27T00:56:10.332Z",
+      "application": "web-app",
+      "articleId": "cl7r6fmb3le7cpi",
+      "articleTitle": "9to5Mac Daily Podcast Archives",
+      "category": "Technology",
+      "author": "9to5Mac",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "f46a1531-7f05-4a40-9685-d58002bcbeb7",
+      "timestamp": "2026-10-27T00:56:19.315Z",
+      "application": "web-app",
+      "articleId": "ne6jezn2cgkq7sh",
+      "articleTitle": "Google says Gemini 4 Argon ranks well behind Claude and GPT-6 for Android coding",
+      "category": "Technology",
+      "author": "Ben Schoon",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "bdd62f60-7e1f-4598-9911-f0ce3b5bd727",
+      "timestamp": "2026-10-27T01:40:20.162Z",
+      "application": "web-app",
+      "articleId": "3uy7x8ryasv0da8",
+      "articleTitle": "Automation and testing with Chrome",
+      "category": "Software Development",
+      "author": "Chrome for Developers Blog",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "66724162-7275-48ef-ab76-cdebada008d6",
+      "timestamp": "2026-10-27T01:40:41.763Z",
+      "application": "web-app",
+      "articleId": "6es6uza2g3r120h",
+      "articleTitle": "Case Studies",
+      "category": "Software Development",
+      "author": "Chrome for Developers Blog",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "8655fe27-4a53-448d-a148-572b0ac90aaa",
+      "timestamp": "2026-10-27T01:46:15.006Z",
+      "application": "web-app",
+      "articleId": "8c3erq9d9ucr11r",
+      "articleTitle": "Lost in Space-Time",
+      "category": "Physics",
+      "author": "New Scientist Newsletters",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "b1f80079-b948-4e10-b15d-ce6605be7f90",
+      "timestamp": "2026-10-27T01:47:50.215Z",
+      "application": "web-app",
+      "articleId": "adfoo2j047jyowu",
+      "articleTitle": "The Ship of Theseus: What Makes an Object the Same Object Over Time? - 1000-Word Philosophy: An Introductory Anthology",
+      "category": "Philosophy",
+      "author": "1000-Word Philosophy: An Introductory Anthology",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "eaf69866-1dcc-41f6-a875-73c6967dd4e5",
+      "timestamp": "2026-10-27T01:48:26.802Z",
+      "application": "web-app",
+      "articleId": "la2ezpz1nsiiveo",
+      "articleTitle": "Prevention and Treatment - Vaccines, Aging, and More",
+      "category": "Medicine",
+      "author": "Verywell",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "a16834cc-7bbd-46cc-8385-86075fc13d7a",
+      "timestamp": "2026-10-27T01:49:51.387Z",
+      "application": "web-app",
+      "articleId": "3uy7x8ryasv0da8",
+      "articleTitle": "Automation and testing with Chrome",
+      "category": "Software Development",
+      "author": "Chrome for Developers Blog",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "e224c633-0bc8-420c-b028-b796900e6b8e",
+      "timestamp": "2026-10-27T01:49:51.613Z",
+      "application": "web-app",
+      "articleId": "c2kzgqembfjf8od",
+      "articleTitle": "Recently Published Book Spotlight: Philosophy of the Short Term",
+      "category": "Philosophy",
+      "author": "Jay Lampert",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "4c951a5d-8728-451b-9428-64f9fc5e5115",
+      "timestamp": "2026-10-27T01:52:16.751Z",
+      "application": "web-app",
+      "articleId": "c2kzgqembfjf8od",
+      "articleTitle": "Recently Published Book Spotlight: Philosophy of the Short Term",
+      "category": "Philosophy",
+      "author": "Jay Lampert",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "7d18bbea-3828-42a4-884f-02a7bb35016d",
+      "timestamp": "2026-10-27T01:52:28.301Z",
+      "application": "web-app",
+      "articleId": "3uy7x8ryasv0da8",
+      "articleTitle": "Automation and testing with Chrome",
+      "category": "Software Development",
+      "author": "Chrome for Developers Blog",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "d958759a-0dba-4422-96ed-f972f168b2c4",
+      "timestamp": "2026-10-27T01:55:59.442Z",
+      "application": "web-app",
+      "articleId": "3uy7x8ryasv0da8",
+      "articleTitle": "Automation and testing with Chrome",
+      "category": "Software Development",
+      "author": "Chrome for Developers Blog",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "3b32bb2b-2f8d-428e-99ea-9cbe942c1091",
+      "timestamp": "2026-10-27T02:06:38.666Z",
+      "application": "web-app",
+      "articleId": "9obo5ttr7zsazup",
+      "articleTitle": "Advertise on MHN",
+      "category": "History",
+      "author": "Military History Now",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "ef00a2ea-03b2-4d2f-91c9-002a9fb63085",
+      "timestamp": "2026-10-27T02:23:35.310Z",
+      "application": "web-app",
+      "articleId": "ubvsfcwsyvmkk2b",
+      "articleTitle": "DE STAAT—FREEDOM (Official Music Video)",
+      "category": "Software Development",
+      "author": "Simon Willison",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "d02adebe-404a-4533-9ff4-9a869ca40152",
+      "timestamp": "2026-10-27T02:24:20.791Z",
+      "application": "web-app",
+      "articleId": "ubvsfcwsyvmkk2b",
+      "articleTitle": "DE STAAT—FREEDOM (Official Music Video)",
+      "category": "Software Development",
+      "author": "Simon Willison",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "a6ed8489-ccf9-4ff4-951e-c9db5eaa8954",
+      "timestamp": "2026-10-27T02:24:34.832Z",
+      "application": "web-app",
+      "articleId": "ubvsfcwsyvmkk2b",
+      "articleTitle": "DE STAAT—FREEDOM (Official Music Video)",
+      "category": "Software Development",
+      "author": "Simon Willison",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "98bd91df-9161-477f-bbff-d52f7472664c",
+      "timestamp": "2026-10-27T02:28:44.119Z",
+      "application": "web-app",
+      "articleId": "8c3erq9d9ucr11r",
+      "articleTitle": "Lost in Space-Time",
+      "category": "Physics",
+      "author": "New Scientist Newsletters",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "2f8ea13f-edc5-4de7-bf29-15474e503826",
+      "timestamp": "2026-10-27T02:29:10.764Z",
+      "application": "web-app",
+      "articleId": "szd1d0o403412e4",
+      "articleTitle": "Research: webframe: evaluated as a scraper and a sandbox",
+      "category": "Software Development",
+      "author": "Simon Willison",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "7f6f8818-d9f4-4522-bc82-ed31ce1a73f7",
+      "timestamp": "2026-10-27T02:30:01.319Z",
+      "application": "web-app",
+      "articleId": "3uy7x8ryasv0da8",
+      "articleTitle": "Automation and testing with Chrome",
+      "category": "Software Development",
+      "author": "Chrome for Developers Blog",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "99342144-6831-420e-ab69-7c3523ed6a30",
+      "timestamp": "2026-10-27T02:30:01.513Z",
+      "application": "web-app",
+      "articleId": "91w9hoczrfnm3y5",
+      "articleTitle": "Patrick Flores, Chris Lee Leave National Gallery of Singapore",
+      "category": "Art",
+      "author": "Leigh Anne Miller",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "3890c351-4f65-42b2-ba9d-7094f1564842",
+      "timestamp": "2026-10-27T02:30:49.279Z",
+      "application": "web-app",
+      "articleId": "3uy7x8ryasv0da8",
+      "articleTitle": "Automation and testing with Chrome",
+      "category": "Software Development",
+      "author": "Chrome for Developers Blog",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "58a1ca6d-5f5c-444f-8c4a-b3b5b7c06313",
+      "timestamp": "2026-10-27T02:31:51.318Z",
+      "application": "web-app",
+      "articleId": "la2ezpz1nsiiveo",
+      "articleTitle": "Prevention and Treatment - Vaccines, Aging, and More",
+      "category": "Medicine",
+      "author": "Verywell",
+      "ip": "127.0.0.1",
+      "location": null
+    },
+    {
+      "id": "fb249c92-49c5-4d4a-a295-dfe7d88a306b",
+      "timestamp": "2026-10-27T02:33:17.006Z",
+      "application": "web-app",
+      "articleId": "4rndr0gy1xe8pf7",
+      "articleTitle": "Oxbridge of America",
+      "category": "Mathematics",
+      "author": "Math with Bad Drawings",
       "ip": "127.0.0.1",
       "location": null
     }
