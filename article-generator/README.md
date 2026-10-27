@@ -7,7 +7,7 @@ into article entries shaped exactly like the ones in zJournal's `db.json`
 ## What it does
 
 1. **Analyzes an existing `db.json`** (`--db`) to learn the conventions already in use: the
-   set of categories, the most common author (used as a fallback), and the id length/style.
+   set of categories and the id length/style.
 2. **Takes a string of websites** (comma/space/newline separated), either via `--websites` or
    typed in when prompted.
 3. **Browses each website in parallel** (a thread pool fetches every homepage at once, then
@@ -15,7 +15,9 @@ into article entries shaped exactly like the ones in zJournal's `db.json`
    fetching anything and rate-limits requests per domain (`--delay`).
 4. For each site, finds candidate article links, then for each article page collects:
    - **title** (JSON-LD `headline` / `og:title` / `<title>` / first `<h1>`)
-   - **author** (JSON-LD `author` / meta tags / a "By <Name>" byline pattern)
+   - **author** (JSON-LD `author` / meta tags / a "By <Name>" byline pattern); with no byline,
+     the website's own name is credited instead (the site's `name` in `--categories-file`, else
+     JSON-LD `publisher` / `og:site_name`, else the domain)
    - **published date** (JSON-LD `datePublished` / meta tags / `<time datetime>`)
    - **a snippet** — the meta description if present, otherwise the first few real paragraphs
      of the article body
@@ -95,7 +97,7 @@ python3 -m venv .venv
 | `--db` | *(none)* | Path to an existing `db.json` to analyze conventions from, seed duplicate-avoidance from, and to write into with `--append` |
 | `--append` | off | Append generated articles into `--db` instead of writing `--output` |
 | `--output` | `./generated_articles.json` | Where to write generated articles when not using `--append` (merged into whatever's already there) |
-| `--author` | most common author in `--db`, else `"Article Generator"` | Fallback author for articles with no detected byline |
+| `--author` | the website's name | Fallback author for articles with no detected byline |
 | `--max-per-site` | `5` | Max articles to pull per website |
 | `--workers` | `6` | Parallel worker threads |
 | `--delay` | `0.5` | Polite per-domain delay, in seconds, between requests |

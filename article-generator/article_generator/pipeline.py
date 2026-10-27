@@ -38,9 +38,10 @@ def parse_websites(raw: str) -> List[str]:
 def _process_article(
     url: str,
     profile: DbProfile,
-    author: str,
+    author: Optional[str],
     throttle: DomainThrottle,
     forced_category: Optional[str] = None,
+    site_name: Optional[str] = None,
 ) -> Optional[dict]:
     html, _ = fetch(url, throttle)
     if not html:
@@ -52,24 +53,29 @@ def _process_article(
     category = forced_category or categorize(
         meta.title, meta.snippet, profile.categories, default=profile.categories[0]
     )
-    return build_article(meta, category, author, profile.id_length)
+    return build_article(meta, category, author, profile.id_length, site_name=site_name)
 
 
 def run(
     websites: List[str],
     profile: DbProfile,
-    author: str,
+    author: Optional[str],
     max_per_site: int = 5,
     workers: int = 6,
     delay: float = 0.5,
     site_categories: Optional[Dict[str, str]] = None,
     seen_urls: Optional[Set[str]] = None,
+    site_names: Optional[Dict[str, str]] = None,
 ) -> RunResult:
     """Browse `websites` in parallel and build articles.
 
     `site_categories`, if given, maps a homepage URL to a known category id (e.g. loaded from
     a websites-by-category file). Articles found on that site are tagged with that category
     directly instead of being run through the keyword classifier.
+
+    `author` is the fallback for articles with no detected byline; if it's None, the website's
+    name is used instead (see builder.resolve_author). `site_names`, if given, maps a homepage
+    URL to that website's name, for pages that don't declare their own.
 
     `seen_urls`, if given, is a set of article URLs already generated in a prior run (or
     already present in the target db.json) — candidates matching it are skipped before ever
@@ -89,7 +95,7 @@ def run(
     with ThreadPoolExecutor(max_workers=min(workers, max(1, len(websites)))) as pool:
         homepages = dict(zip(websites, pool.map(lambda site: fetch(site, throttle), websites)))
 
-    article_links: List[Tuple[str, Optional[str]]] = []
+    article_links: List[Tuple[str, Optional[str], Optional[str]]] = []
     seen_this_run = set()
     skipped_duplicates = 0
     invalid_sites: Set[str] = set()
@@ -102,6 +108,7 @@ def run(
             continue
         valid_sites.add(site)
         forced_category = site_categories.get(site) if site_categories else None
+        site_name = site_names.get(site) if site_names else None
         links = extract_article_links(site, html, max_per_site)
         logger.info("Found %d candidate article(s) on %s", len(links), site)
         for link in links:
@@ -109,7 +116,7 @@ def run(
                 skipped_duplicates += 1
                 continue
             seen_this_run.add(link)
-            article_links.append((link, forced_category))
+            article_links.append((link, forced_category, site_name))
 
     if skipped_duplicates:
         logger.info("Skipped %d already-seen article link(s)", skipped_duplicates)
@@ -117,8 +124,10 @@ def run(
     articles: List[dict] = []
     with ThreadPoolExecutor(max_workers=workers) as pool:
         futures = {
-            pool.submit(_process_article, url, profile, author, throttle, forced_category): url
-            for url, forced_category in article_links
+            pool.submit(
+                _process_article, url, profile, author, throttle, forced_category, site_name=site_name
+            ): url
+            for url, forced_category, site_name in article_links
         }
         for future in as_completed(futures):
             url = futures[future]

@@ -133,6 +133,39 @@ class BuildArticleTests(unittest.TestCase):
         article = build_article(meta, category="Art", author="Fallback")
         self.assertEqual(article["author"], "Byline Author")
 
+    def _meta_without_byline(self, site_name=None):
+        return ArticleMeta(
+            url="https://www.example.com/a",
+            title="A",
+            author=None,
+            published_at=None,
+            snippet="",
+            image=None,
+            site_name=site_name,
+        )
+
+    def test_no_byline_prefers_configured_site_name_over_page_site_name(self):
+        article = build_article(self._meta_without_byline("Example Section"), category="Art", site_name="Example Times")
+        self.assertEqual(article["author"], "Example Times")
+
+    def test_no_byline_falls_back_to_page_site_name(self):
+        article = build_article(self._meta_without_byline("Example Times"), category="Art")
+        self.assertEqual(article["author"], "Example Times")
+
+    def test_no_byline_falls_back_to_configured_site_name_without_section_suffix(self):
+        article = build_article(
+            self._meta_without_byline(), category="Mathematics", site_name="Quanta Magazine (Mathematics)"
+        )
+        self.assertEqual(article["author"], "Quanta Magazine")
+
+    def test_no_byline_and_no_site_name_falls_back_to_domain(self):
+        article = build_article(self._meta_without_byline(), category="Art")
+        self.assertEqual(article["author"], "example.com")
+
+    def test_explicit_fallback_author_beats_site_name(self):
+        article = build_article(self._meta_without_byline("Example Times"), category="Art", author="Fallback")
+        self.assertEqual(article["author"], "Fallback")
+
 
 class LoadCategorizedWebsitesTests(unittest.TestCase):
     def _write(self, tmp: str) -> Path:
@@ -220,7 +253,7 @@ class RunDedupeTests(unittest.TestCase):
         def fake_extract_links(homepage_url, html, max_links):
             return ["https://site.example/old-story", "https://site.example/new-story"]
 
-        def fake_process_article(url, profile, author, throttle, forced_category=None):
+        def fake_process_article(url, profile, author, throttle, forced_category=None, site_name=None):
             return {"id": "x", "title": url}
 
         original_fetch = pipeline_module.fetch
