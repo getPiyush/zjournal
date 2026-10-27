@@ -3,6 +3,9 @@ import { ArticleT } from "../../Types";
 export type ArticleSortOption = "newest" | "oldest" | "title-asc" | "title-desc";
 export type ArticleSearchField = "all" | "title" | "author" | "content" | "id";
 export type ArticleStatusFilter = "any" | "published" | "draft";
+// How big the article tiles are: small fits three to a row, medium two, large one.
+export type ArticleTileSize = "small" | "medium" | "large";
+export const TILE_SIZES: ArticleTileSize[] = ["small", "medium", "large"];
 
 export type ArticleFilters = {
   search: string;

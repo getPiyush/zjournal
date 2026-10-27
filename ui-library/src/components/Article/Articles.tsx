@@ -11,6 +11,7 @@ import ArticlesToolbar from "./ArticlesToolbar";
 import {
   ArticleSearchState,
   ArticleSortOption,
+  ArticleTileSize,
   emptyArticleFilters,
   filterArticles,
   hasActiveFilters,
@@ -26,6 +27,9 @@ export type ServerSearchProps = {
   total: number;
   pageSize: number;
   showDateFilter?: boolean;
+  // Offer a choice of page size; the caller starts again from the first page.
+  pageSizeOptions?: number[];
+  onPageSizeChange?: (size: number) => void;
 };
 
 type ArticlesProps = {
@@ -37,6 +41,15 @@ type ArticlesProps = {
   basePath?: string;
   // Without this, the list filters, sorts and searches `articles` in the browser.
   search?: ServerSearchProps;
+  // Medium (two to a row) unless given; the toolbar offers a choice when there is a handler.
+  tileSize?: ArticleTileSize;
+  onTileSizeChange?: (size: ArticleTileSize) => void;
+};
+
+const TILE_COLUMNS: Record<ArticleTileSize, string> = {
+  small: "col-md-6 col-lg-4",
+  medium: "col-md-6",
+  large: "col-12",
 };
 
 export default function Articles({
@@ -47,6 +60,8 @@ export default function Articles({
   onBrowseCategories,
   basePath,
   search,
+  tileSize = "medium",
+  onTileSizeChange,
 }: ArticlesProps) {
   const [localFilters, setLocalFilters] = useState(emptyArticleFilters);
   const [localSort, setLocalSort] = useState<ArticleSortOption>("newest");
@@ -105,12 +120,17 @@ export default function Articles({
             shownCount={search ? search.total : visibleArticles.length}
             totalCount={search ? undefined : articles.length}
             showDateFilter={search?.showDateFilter ?? true}
+            pageSize={search?.pageSize}
+            pageSizeOptions={search?.pageSizeOptions}
+            onPageSizeChange={search?.onPageSizeChange}
+            tileSize={tileSize}
+            onTileSizeChange={onTileSizeChange}
           />
         )}
 
         <div className={`row${loading ? " opacity-50" : ""}`} aria-busy={loading}>
           {visibleArticles.map((article, index) => (
-            <div key={`article_${index}_${article.id}`} className="col-md-6">
+            <div key={`article_${index}_${article.id}`} className={TILE_COLUMNS[tileSize]}>
               <ArticlePreviewWeb data={article} highlight={highlight} basePath={basePath} />
             </div>
           ))}

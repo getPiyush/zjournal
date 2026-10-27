@@ -136,6 +136,34 @@ describe("Articles", () => {
       expect(onChange).toHaveBeenLastCalledWith({ ...state, page: 3 });
     });
 
+    test("offers a page size only when the caller handles it", async () => {
+      const { unmount } = renderServer();
+      expect(screen.queryByRole("combobox", { name: "Articles per page" })).toBeNull();
+      unmount();
+
+      const onPageSizeChange = jest.fn();
+      renderServer({}, { pageSizeOptions: [10, 20, 50], onPageSizeChange });
+      const select = screen.getByRole("combobox", { name: "Articles per page" });
+      expect(select).toHaveValue("20");
+      await userEvent.selectOptions(select, "50");
+      expect(onPageSizeChange).toHaveBeenCalledWith(50);
+    });
+
+    test("lays the tiles out by size, and offers a choice only when the caller handles it", async () => {
+      const { container, unmount } = renderServer();
+      expect(screen.queryByRole("combobox", { name: "Tile size" })).toBeNull();
+      expect(container.querySelectorAll(".col-md-6:not(.col-lg-4)")).toHaveLength(2);
+      unmount();
+
+      const onTileSizeChange = jest.fn();
+      const view = renderServer({ tileSize: "large", onTileSizeChange });
+      expect(view.container.querySelectorAll(".col-12")).toHaveLength(2);
+      const select = screen.getByRole("combobox", { name: "Tile size" });
+      expect(select).toHaveValue("large");
+      await userEvent.selectOptions(select, "small");
+      expect(onTileSizeChange).toHaveBeenCalledWith("small");
+    });
+
     test("keeps the search box on screen while the next search loads", () => {
       renderServer(
         { status: "loading" },

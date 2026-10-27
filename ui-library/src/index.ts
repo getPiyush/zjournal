@@ -17,6 +17,7 @@ export {
   readSearchParams,
   writeSearchParams,
   SEARCH_PARAMS,
+  TILE_SIZES,
 } from './components/Article/articleFilters';
 export { highlightHtml } from './utils/highlight';
 export type {
@@ -26,6 +27,7 @@ export type {
   ArticleStatusFilter,
   ArticleHighlight,
   ArticleSearchState,
+  ArticleTileSize,
 } from './components/Article/articleFilters';
 export { Table } from './components/Table';
 export { List } from './components/List';

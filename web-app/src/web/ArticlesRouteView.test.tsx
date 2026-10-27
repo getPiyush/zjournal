@@ -146,4 +146,42 @@ describe("ArticlesRouteView", () => {
 
     await waitFor(() => expect(router.state.location.search).toBe("?q=mars&page=3"));
   });
+
+  test("choosing how many articles per page searches that many, from the first page", async () => {
+    answerWith(45);
+    const user = userEvent.setup();
+    const { router } = renderWithProviders(<ArticlesRouteView />, { route: "/web/articles?q=mars&page=2" });
+
+    await user.selectOptions(await screen.findByRole("combobox", { name: "Articles per page" }), "50");
+
+    expect(router.state.location.search).toBe("?q=mars&size=50");
+    await waitFor(() => expect(lastQuery()).toEqual({ ...base, q: "mars", limit: "50" }));
+    expect(screen.queryByRole("button", { name: "Page 2" })).toBeNull();
+
+    // The default size keeps the URL plain.
+    await user.selectOptions(screen.getByRole("combobox", { name: "Articles per page" }), String(PAGE_SIZE));
+    expect(router.state.location.search).toBe("?q=mars");
+  });
+
+  test("a page size that isn't offered falls back to the default", async () => {
+    renderWithProviders(<ArticlesRouteView />, { route: "/web/articles?size=7" });
+    await waitFor(() => expect(lastQuery()).toEqual(base));
+  });
+
+  test("choosing a tile size keeps the search and page, and doesn't search again", async () => {
+    answerWith(45);
+    const user = userEvent.setup();
+    const { router } = renderWithProviders(<ArticlesRouteView />, { route: "/web/articles?q=mars&page=2" });
+    await waitFor(() => expect(searchArticles).toHaveBeenCalledTimes(1));
+
+    await user.selectOptions(await screen.findByRole("combobox", { name: "Tile size" }), "large");
+
+    expect(router.state.location.search).toBe("?q=mars&page=2&tiles=large");
+    expect(screen.getByRole("combobox", { name: "Tile size" })).toHaveValue("large");
+    expect(searchArticles).toHaveBeenCalledTimes(1);
+
+    // Medium is the default, so it keeps the URL plain.
+    await user.selectOptions(screen.getByRole("combobox", { name: "Tile size" }), "medium");
+    expect(router.state.location.search).toBe("?q=mars&page=2");
+  });
 });

@@ -4,6 +4,8 @@ import {
   ArticleSearchField,
   ArticleSortOption,
   ArticleStatusFilter,
+  ArticleTileSize,
+  TILE_SIZES,
   activeFilterCount,
   emptyArticleFilters,
   hasActiveFilters,
@@ -26,6 +28,19 @@ type ArticlesToolbarProps = {
   showDateFilter?: boolean;
   // Prefix for the inputs' ids, so two toolbars on one page don't clash.
   idPrefix?: string;
+  // Articles per page; the select only shows when there are options and a handler.
+  pageSize?: number;
+  pageSizeOptions?: number[];
+  onPageSizeChange?: (size: number) => void;
+  // Tile size; the select only shows with a handler.
+  tileSize?: ArticleTileSize;
+  onTileSizeChange?: (size: ArticleTileSize) => void;
+};
+
+const TILE_SIZE_LABELS: Record<ArticleTileSize, string> = {
+  small: "Small tiles",
+  medium: "Medium tiles",
+  large: "Large tiles",
 };
 
 const SEARCH_FIELDS: { value: ArticleSearchField; label: string }[] = [
@@ -54,6 +69,11 @@ export default function ArticlesToolbar({
   showStatusFilter = false,
   showDateFilter = true,
   idPrefix = "articles",
+  pageSize,
+  pageSizeOptions,
+  onPageSizeChange,
+  tileSize = "medium",
+  onTileSizeChange,
 }: ArticlesToolbarProps) {
   const extraFilters = activeFilterCount(filters);
   const hasFilterPanel = showDateFilter || showStatusFilter;
@@ -102,6 +122,38 @@ export default function ArticlesToolbar({
             <option value="title-desc">Title Z-A</option>
           </select>
         </div>
+        {pageSizeOptions && onPageSizeChange && (
+          <div className="col-6 col-md-auto">
+            <select
+              className="form-select"
+              aria-label="Articles per page"
+              value={pageSize}
+              onChange={(event) => onPageSizeChange(Number(event.target.value))}
+            >
+              {pageSizeOptions.map((size) => (
+                <option key={size} value={size}>
+                  {size} per page
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
+        {onTileSizeChange && (
+          <div className="col-6 col-md-auto">
+            <select
+              className="form-select"
+              aria-label="Tile size"
+              value={tileSize}
+              onChange={(event) => onTileSizeChange(event.target.value as ArticleTileSize)}
+            >
+              {TILE_SIZES.map((size) => (
+                <option key={size} value={size}>
+                  {TILE_SIZE_LABELS[size]}
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
         {hasFilterPanel && (
           <div className="col-md-auto d-grid">
             <button
